@@ -1,0 +1,643 @@
+[
+    {
+        "menu_order": 60,
+        "position": "normal",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": "",
+        "active": true,
+        "description": "",
+        "show_in_rest": 0,
+        "modified": 1778755818,
+        "key": "group_mer_buyout",
+        "title": "🏢 Skup biur rachunkowych",
+        "fields": [
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_mer_buy_label",
+                "label": "Etykieta sekcji",
+                "name": "buyout_label",
+                "type": "text",
+                "default_value": "Dla biur rachunkowych",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_mer_buy_title",
+                "label": "Tytuł",
+                "name": "buyout_title",
+                "type": "textarea",
+                "rows": 2,
+                "default_value": "Kupimy Biuro\nRachunkowe",
+                "placeholder": "",
+                "maxlength": "",
+                "new_lines": ""
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_mer_buy_desc",
+                "label": "Opis",
+                "name": "buyout_desc",
+                "type": "textarea",
+                "default_value": "Od lat współpracujemy z biurami rachunkowymi, które stoją przed decyzją o zmianie, sprzedaży lub dalszym rozwoju. Oferujemy wsparcie na każdym etapie — od wyceny po finalne ustalenia.",
+                "placeholder": "",
+                "maxlength": "",
+                "rows": 4,
+                "new_lines": ""
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_mer_buy_cta_text",
+                "label": "Przycisk — tekst",
+                "name": "buyout_cta_text",
+                "type": "text",
+                "default_value": "Wyceń wartość biura",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_mer_buy_cta_url",
+                "label": "Przycisk — link",
+                "name": "buyout_cta_url",
+                "type": "text",
+                "default_value": "#kontakt",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_mer_buy_bg",
+                "label": "Zdjęcie tła banera",
+                "name": "buyout_bg_image",
+                "type": "image",
+                "return_format": "array",
+                "preview_size": "medium",
+                "library": "all",
+                "min_width": "",
+                "min_height": "",
+                "min_size": "",
+                "max_width": "",
+                "max_height": "",
+                "max_size": "",
+                "mime_types": ""
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "key": "field_mer_buy_tab_stats",
+                "label": "◆ Statystyki",
+                "name": "buy_tab_stats",
+                "type": "tab",
+                "placement": "top",
+                "endpoint": 0
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_mer_bs1_icon",
+                "label": "Karta 1 — Ikona (Lucide)",
+                "name": "buyout_stat_1_icon",
+                "type": "text",
+                "default_value": "trending-up",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_mer_bs1_val",
+                "label": "Karta 1 — Wartość",
+                "name": "buyout_stat_1_value",
+                "type": "text",
+                "default_value": "100%",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_mer_bs1_lbl",
+                "label": "Karta 1 — Etykieta",
+                "name": "buyout_stat_1_label",
+                "type": "text",
+                "default_value": "Przejrzystych warunków",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_mer_bs1_acc",
+                "label": "Karta 1 — Zielone tło",
+                "name": "buyout_stat_1_accent",
+                "type": "true_false",
+                "ui": 1,
+                "default_value": 0,
+                "message": "",
+                "ui_on_text": "",
+                "ui_off_text": ""
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_mer_bs2_icon",
+                "label": "Karta 2 — Ikona (Lucide)",
+                "name": "buyout_stat_2_icon",
+                "type": "text",
+                "default_value": "handshake",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_mer_bs2_val",
+                "label": "Karta 2 — Wartość",
+                "name": "buyout_stat_2_value",
+                "type": "text",
+                "default_value": "20+",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_mer_bs2_lbl",
+                "label": "Karta 2 — Etykieta",
+                "name": "buyout_stat_2_label",
+                "type": "text",
+                "default_value": "Przejętych biur",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_mer_bs2_acc",
+                "label": "Karta 2 — Zielone tło",
+                "name": "buyout_stat_2_accent",
+                "type": "true_false",
+                "ui": 1,
+                "default_value": 0,
+                "message": "",
+                "ui_on_text": "",
+                "ui_off_text": ""
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_mer_bs3_icon",
+                "label": "Karta 3 — Ikona (Lucide)",
+                "name": "buyout_stat_3_icon",
+                "type": "text",
+                "default_value": "clock",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_mer_bs3_val",
+                "label": "Karta 3 — Wartość",
+                "name": "buyout_stat_3_value",
+                "type": "text",
+                "default_value": "14 dni",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_mer_bs3_lbl",
+                "label": "Karta 3 — Etykieta",
+                "name": "buyout_stat_3_label",
+                "type": "text",
+                "default_value": "Do wstępnej wyceny",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_mer_bs3_acc",
+                "label": "Karta 3 — Zielone tło",
+                "name": "buyout_stat_3_accent",
+                "type": "true_false",
+                "ui": 1,
+                "default_value": 0,
+                "message": "",
+                "ui_on_text": "",
+                "ui_off_text": ""
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_mer_bs4_icon",
+                "label": "Karta 4 — Ikona (Lucide)",
+                "name": "buyout_stat_4_icon",
+                "type": "text",
+                "default_value": "shield-check",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_mer_bs4_val",
+                "label": "Karta 4 — Wartość",
+                "name": "buyout_stat_4_value",
+                "type": "text",
+                "default_value": "NDA",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_mer_bs4_lbl",
+                "label": "Karta 4 — Etykieta",
+                "name": "buyout_stat_4_label",
+                "type": "text",
+                "default_value": "Pełna poufność",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_mer_bs4_acc",
+                "label": "Karta 4 — Zielone tło",
+                "name": "buyout_stat_4_accent",
+                "type": "true_false",
+                "ui": 1,
+                "default_value": 1,
+                "message": "",
+                "ui_on_text": "",
+                "ui_off_text": ""
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "key": "field_mer_buy_tab_tech",
+                "label": "◆ Logotypy ERP",
+                "name": "buy_tab_tech",
+                "type": "tab",
+                "placement": "top",
+                "endpoint": 0
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_mer_tech_label",
+                "label": "Etykieta sekcji logotypów ERP",
+                "name": "tech_label",
+                "type": "text",
+                "default_value": "Obsługujemy systemy ERP i finansowe wiodących dostawców",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_mer_tech_1_name",
+                "label": "System 1 — Nazwa",
+                "name": "tech_1_name",
+                "type": "text",
+                "default_value": "COMARCH",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_mer_tech_1_sub",
+                "label": "System 1 — Podtytuł",
+                "name": "tech_1_subtitle",
+                "type": "text",
+                "default_value": "ERP Optima",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_mer_tech_2_name",
+                "label": "System 2 — Nazwa",
+                "name": "tech_2_name",
+                "type": "text",
+                "default_value": "enova",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_mer_tech_2_sub",
+                "label": "System 2 — Podtytuł",
+                "name": "tech_2_subtitle",
+                "type": "text",
+                "default_value": "365",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_mer_tech_3_name",
+                "label": "System 3 — Nazwa",
+                "name": "tech_3_name",
+                "type": "text",
+                "default_value": "symfonia",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_mer_tech_3_sub",
+                "label": "System 3 — Podtytuł",
+                "name": "tech_3_subtitle",
+                "type": "text",
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_mer_tech_4_name",
+                "label": "System 4 — Nazwa",
+                "name": "tech_4_name",
+                "type": "text",
+                "default_value": "Microsoft Dynamics 365",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_mer_tech_4_sub",
+                "label": "System 4 — Podtytuł",
+                "name": "tech_4_subtitle",
+                "type": "text",
+                "default_value": "Business Central",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "page_type",
+                    "operator": "==",
+                    "value": "front_page"
+                }
+            ]
+        ]
+    }
+]

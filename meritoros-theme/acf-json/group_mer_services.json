@@ -1,0 +1,587 @@
+[
+    {
+        "menu_order": 30,
+        "position": "normal",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": "",
+        "active": true,
+        "description": "",
+        "show_in_rest": 0,
+        "modified": 1778755818,
+        "key": "group_mer_services",
+        "title": "⚙️ Usługi",
+        "fields": [
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_mer_svc_label",
+                "label": "Etykieta sekcji",
+                "name": "services_label",
+                "type": "text",
+                "default_value": "Nasze Kompetencje",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_mer_svc_title",
+                "label": "Tytuł sekcji",
+                "name": "services_title",
+                "type": "textarea",
+                "rows": 2,
+                "default_value": "Obszary, w których przejmujemy odpowiedzialność",
+                "placeholder": "",
+                "maxlength": "",
+                "new_lines": ""
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_mer_svc_desc",
+                "label": "Opis sekcji",
+                "name": "services_desc",
+                "type": "textarea",
+                "default_value": "Nasze doświadczenie obejmuje rozliczanie firm o różnorodnych profilach działalności, takich jak CIT Estoński, Fundacje Rodzinne, Spółki ASI, e-commerce, VAT OSS, Intrastat oraz rozliczenia delegacji pracowniczych.",
+                "placeholder": "",
+                "maxlength": "",
+                "rows": 4,
+                "new_lines": ""
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "key": "field_mer_svc_tab_1",
+                "label": "◆ Usługa 1",
+                "name": "svc_tab_1",
+                "type": "tab",
+                "placement": "top",
+                "endpoint": 0
+            },
+            {
+                "instructions": "np. calculator, network, file-text, heart-handshake, cpu",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_mer_svc_1_icon",
+                "label": "Ikona (Lucide)",
+                "name": "service_1_icon",
+                "type": "text",
+                "default_value": "calculator",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_mer_svc_1_title",
+                "label": "Tytuł",
+                "name": "service_1_title",
+                "type": "text",
+                "default_value": "Usługi Rachunkowe",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_mer_svc_1_desc",
+                "label": "Opis",
+                "name": "service_1_desc",
+                "type": "textarea",
+                "rows": 2,
+                "default_value": "Kompleksowa obsługa księgowa firm o różnej skali działalności.",
+                "placeholder": "",
+                "maxlength": "",
+                "new_lines": ""
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_mer_svc_1_url",
+                "label": "Link",
+                "name": "service_1_url",
+                "type": "text",
+                "default_value": "#",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "key": "field_mer_svc_tab_2",
+                "label": "◆ Usługa 2",
+                "name": "svc_tab_2",
+                "type": "tab",
+                "placement": "top",
+                "endpoint": 0
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_mer_svc_2_icon",
+                "label": "Ikona (Lucide)",
+                "name": "service_2_icon",
+                "type": "text",
+                "default_value": "network",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_mer_svc_2_title",
+                "label": "Tytuł",
+                "name": "service_2_title",
+                "type": "text",
+                "default_value": "BPO",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_mer_svc_2_desc",
+                "label": "Opis",
+                "name": "service_2_desc",
+                "type": "textarea",
+                "rows": 2,
+                "default_value": "Outsourcing wybranych lub pełnych procesów finansowych i administracyjnych dla większych firm.",
+                "placeholder": "",
+                "maxlength": "",
+                "new_lines": ""
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_mer_svc_2_url",
+                "label": "Link",
+                "name": "service_2_url",
+                "type": "text",
+                "default_value": "#",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "key": "field_mer_svc_tab_3",
+                "label": "◆ Usługa 3",
+                "name": "svc_tab_3",
+                "type": "tab",
+                "placement": "top",
+                "endpoint": 0
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_mer_svc_3_icon",
+                "label": "Ikona (Lucide)",
+                "name": "service_3_icon",
+                "type": "text",
+                "default_value": "file-text",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_mer_svc_3_title",
+                "label": "Tytuł",
+                "name": "service_3_title",
+                "type": "text",
+                "default_value": "Usługi Kadrowe",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_mer_svc_3_desc",
+                "label": "Opis",
+                "name": "service_3_desc",
+                "type": "textarea",
+                "rows": 2,
+                "default_value": "Obsługa kadrowo-płacowa dopasowana do potrzeb organizacji.",
+                "placeholder": "",
+                "maxlength": "",
+                "new_lines": ""
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_mer_svc_3_url",
+                "label": "Link",
+                "name": "service_3_url",
+                "type": "text",
+                "default_value": "#",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "key": "field_mer_svc_tab_4",
+                "label": "◆ Usługa 4",
+                "name": "svc_tab_4",
+                "type": "tab",
+                "placement": "top",
+                "endpoint": 0
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_mer_svc_4_icon",
+                "label": "Ikona (Lucide)",
+                "name": "service_4_icon",
+                "type": "text",
+                "default_value": "heart-handshake",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_mer_svc_4_title",
+                "label": "Tytuł",
+                "name": "service_4_title",
+                "type": "text",
+                "default_value": "Fundacje rodzinne",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_mer_svc_4_desc",
+                "label": "Opis",
+                "name": "service_4_desc",
+                "type": "textarea",
+                "rows": 2,
+                "default_value": "Obsługa rachunkowa fundacji z uwzględnieniem specyfiki regulacyjnej.",
+                "placeholder": "",
+                "maxlength": "",
+                "new_lines": ""
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_mer_svc_4_url",
+                "label": "Link",
+                "name": "service_4_url",
+                "type": "text",
+                "default_value": "#",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "key": "field_mer_svc_tab_5",
+                "label": "◆ Usługa 5",
+                "name": "svc_tab_5",
+                "type": "tab",
+                "placement": "top",
+                "endpoint": 0
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_mer_svc_5_icon",
+                "label": "Ikona (Lucide)",
+                "name": "service_5_icon",
+                "type": "text",
+                "default_value": "cpu",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_mer_svc_5_title",
+                "label": "Tytuł",
+                "name": "service_5_title",
+                "type": "text",
+                "default_value": "Transformacja Cyfrowa",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_mer_svc_5_desc",
+                "label": "Opis",
+                "name": "service_5_desc",
+                "type": "textarea",
+                "rows": 2,
+                "default_value": "Wsparcie we wdrażaniu narzędzi, automatyzacji i usprawnianiu procesów biznesowych.",
+                "placeholder": "",
+                "maxlength": "",
+                "new_lines": ""
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_mer_svc_5_url",
+                "label": "Link",
+                "name": "service_5_url",
+                "type": "text",
+                "default_value": "#",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "key": "field_mer_svc_tab_cta",
+                "label": "◆ Karta CTA",
+                "name": "svc_tab_cta",
+                "type": "tab",
+                "placement": "top",
+                "endpoint": 0
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_mer_svc_cta_title",
+                "label": "Karta CTA — Tytuł",
+                "name": "services_cta_title",
+                "type": "text",
+                "default_value": "Zapytaj o ofertę",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_mer_svc_cta_sub",
+                "label": "Karta CTA — Podtytuł",
+                "name": "services_cta_sub",
+                "type": "text",
+                "default_value": "Skontaktuj się z nami",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_mer_svc_cta_url",
+                "label": "Karta CTA — Link",
+                "name": "services_cta_url",
+                "type": "text",
+                "default_value": "#kontakt",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "page_type",
+                    "operator": "==",
+                    "value": "front_page"
+                }
+            ]
+        ]
+    }
+]

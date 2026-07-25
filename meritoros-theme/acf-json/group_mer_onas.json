@@ -1,0 +1,1981 @@
+[
+    {
+        "menu_order": 0,
+        "position": "normal",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": "",
+        "active": true,
+        "description": "",
+        "show_in_rest": 0,
+        "modified": 1778755818,
+        "key": "group_mer_onas",
+        "title": "🏢 Strona O nas",
+        "fields": [
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "key": "field_onas_tab_hero",
+                "label": "Hero",
+                "name": "",
+                "type": "tab",
+                "placement": "top",
+                "endpoint": 0
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_onas_hero_bg",
+                "label": "Zdjęcie tła (Hero)",
+                "name": "onas_hero_bg",
+                "type": "image",
+                "return_format": "array",
+                "preview_size": "medium",
+                "library": "all",
+                "min_width": "",
+                "min_height": "",
+                "min_size": "",
+                "max_width": "",
+                "max_height": "",
+                "max_size": "",
+                "mime_types": ""
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_onas_hero_title",
+                "label": "Nagłówek H1",
+                "name": "onas_hero_title",
+                "type": "textarea",
+                "rows": 3,
+                "default_value": "Poznaj nasze biuro rachunkowe\ni wartości które stoją za naszą\ncodzienną pracą",
+                "placeholder": "",
+                "maxlength": "",
+                "new_lines": ""
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_onas_hero_sub",
+                "label": "Podtytuł",
+                "name": "onas_hero_sub",
+                "type": "textarea",
+                "rows": 2,
+                "default_value": "Pracujemy tak, by być dumni z jakości informacji dostarczanych naszym klientom.",
+                "placeholder": "",
+                "maxlength": "",
+                "new_lines": ""
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_onas_hero_btn1_text",
+                "label": "Przycisk 1 — tekst",
+                "name": "onas_hero_btn1_text",
+                "type": "text",
+                "default_value": "Poznaj ofertę",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_onas_hero_btn1_url",
+                "label": "Przycisk 1 — link",
+                "name": "onas_hero_btn1_url",
+                "type": "text",
+                "default_value": "#",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_onas_hero_btn2_text",
+                "label": "Przycisk 2 — tekst",
+                "name": "onas_hero_btn2_text",
+                "type": "text",
+                "default_value": "Porozmawiamy",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_onas_hero_btn2_url",
+                "label": "Przycisk 2 — link",
+                "name": "onas_hero_btn2_url",
+                "type": "text",
+                "default_value": "\/kontakt\/",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "key": "field_onas_tab_kim",
+                "label": "Kim jesteśmy",
+                "name": "",
+                "type": "tab",
+                "placement": "top",
+                "endpoint": 0
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_onas_kim_title",
+                "label": "Tytuł sekcji",
+                "name": "onas_kim_title",
+                "type": "text",
+                "default_value": "Kim jesteśmy",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_onas_kim_text",
+                "label": "Tekst opisu",
+                "name": "onas_kim_text",
+                "type": "textarea",
+                "rows": 4,
+                "default_value": "Od ponad 20 lat wspieramy firmy w prowadzeniu księgowości, kadr i procesów finansowych. Pracujemy w modelu zespołowym i procesowym, z jasno określoną odpowiedzialnością, standaryzacją działań i nadzorem nad jakością.",
+                "placeholder": "",
+                "maxlength": "",
+                "new_lines": ""
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "key": "field_onas_tab_stats",
+                "label": "◆ Statystyki \/ ikony",
+                "name": "",
+                "type": "tab",
+                "placement": "top",
+                "endpoint": 0
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_onas_stat_1",
+                "label": "Ikona 1",
+                "name": "onas_stat_1",
+                "type": "group",
+                "sub_fields": [
+                    {
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "key": "field_onas_s1_icon",
+                        "label": "Ikona (Lucide)",
+                        "name": "icon",
+                        "type": "text",
+                        "default_value": "monitor",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": ""
+                    },
+                    {
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "key": "field_onas_s1_text",
+                        "label": "Tekst",
+                        "name": "text",
+                        "type": "textarea",
+                        "rows": 2,
+                        "default_value": "Wewnętrzny\ndział IT i RPA",
+                        "placeholder": "",
+                        "maxlength": "",
+                        "new_lines": ""
+                    }
+                ],
+                "layout": "block"
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_onas_stat_2",
+                "label": "Ikona 2",
+                "name": "onas_stat_2",
+                "type": "group",
+                "sub_fields": [
+                    {
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "key": "field_onas_s2_icon",
+                        "label": "Ikona (Lucide)",
+                        "name": "icon",
+                        "type": "text",
+                        "default_value": "globe",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": ""
+                    },
+                    {
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "key": "field_onas_s2_text",
+                        "label": "Tekst",
+                        "name": "text",
+                        "type": "textarea",
+                        "rows": 2,
+                        "default_value": "Certyfikacja ISO\n9001 i ISO\/IEC 27001",
+                        "placeholder": "",
+                        "maxlength": "",
+                        "new_lines": ""
+                    }
+                ],
+                "layout": "block"
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_onas_stat_3",
+                "label": "Ikona 3",
+                "name": "onas_stat_3",
+                "type": "group",
+                "sub_fields": [
+                    {
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "key": "field_onas_s3_icon",
+                        "label": "Ikona (Lucide)",
+                        "name": "icon",
+                        "type": "text",
+                        "default_value": "database",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": ""
+                    },
+                    {
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "key": "field_onas_s3_text",
+                        "label": "Tekst",
+                        "name": "text",
+                        "type": "textarea",
+                        "rows": 2,
+                        "default_value": "Ubezpieczenie\ndo 3 mln PLN",
+                        "placeholder": "",
+                        "maxlength": "",
+                        "new_lines": ""
+                    }
+                ],
+                "layout": "block"
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_onas_stat_4",
+                "label": "Ikona 4",
+                "name": "onas_stat_4",
+                "type": "group",
+                "sub_fields": [
+                    {
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "key": "field_onas_s4_icon",
+                        "label": "Ikona (Lucide)",
+                        "name": "icon",
+                        "type": "text",
+                        "default_value": "user-check",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": ""
+                    },
+                    {
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "key": "field_onas_s4_text",
+                        "label": "Tekst",
+                        "name": "text",
+                        "type": "textarea",
+                        "rows": 2,
+                        "default_value": "Ponad 170\nexpertów na pokładzie",
+                        "placeholder": "",
+                        "maxlength": "",
+                        "new_lines": ""
+                    }
+                ],
+                "layout": "block"
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_onas_stat_5",
+                "label": "Ikona 5",
+                "name": "onas_stat_5",
+                "type": "group",
+                "sub_fields": [
+                    {
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "key": "field_onas_s5_icon",
+                        "label": "Ikona (Lucide)",
+                        "name": "icon",
+                        "type": "text",
+                        "default_value": "users",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": ""
+                    },
+                    {
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "key": "field_onas_s5_text",
+                        "label": "Tekst",
+                        "name": "text",
+                        "type": "textarea",
+                        "rows": 2,
+                        "default_value": "Ponad 1200\nklientów",
+                        "placeholder": "",
+                        "maxlength": "",
+                        "new_lines": ""
+                    }
+                ],
+                "layout": "block"
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_onas_stat_6",
+                "label": "Ikona 6",
+                "name": "onas_stat_6",
+                "type": "group",
+                "sub_fields": [
+                    {
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "key": "field_onas_s6_icon",
+                        "label": "Ikona (Lucide)",
+                        "name": "icon",
+                        "type": "text",
+                        "default_value": "map-pin",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": ""
+                    },
+                    {
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "key": "field_onas_s6_text",
+                        "label": "Tekst",
+                        "name": "text",
+                        "type": "textarea",
+                        "rows": 2,
+                        "default_value": "7 oddziałów\nw Polsce oraz\noddziały wirtualne",
+                        "placeholder": "",
+                        "maxlength": "",
+                        "new_lines": ""
+                    }
+                ],
+                "layout": "block"
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "key": "field_onas_tab_jak",
+                "label": "Jak pracujemy",
+                "name": "",
+                "type": "tab",
+                "placement": "top",
+                "endpoint": 0
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_onas_jak_title",
+                "label": "Tytuł sekcji",
+                "name": "onas_jak_title",
+                "type": "text",
+                "default_value": "Jak pracujemy?",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_onas_jak_photo",
+                "label": "Zdjęcie (prawa strona)",
+                "name": "onas_jak_photo",
+                "type": "image",
+                "return_format": "array",
+                "preview_size": "medium",
+                "library": "all",
+                "min_width": "",
+                "min_height": "",
+                "min_size": "",
+                "max_width": "",
+                "max_height": "",
+                "max_size": "",
+                "mime_types": ""
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_onas_jak_1",
+                "label": "Punkt 1",
+                "name": "onas_jak_1",
+                "type": "group",
+                "sub_fields": [
+                    {
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "key": "field_onas_j1_icon",
+                        "label": "Ikona (Lucide)",
+                        "name": "icon",
+                        "type": "text",
+                        "default_value": "users-round",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": ""
+                    },
+                    {
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "key": "field_onas_j1_title",
+                        "label": "Tytuł",
+                        "name": "title",
+                        "type": "text",
+                        "default_value": "Dedykowany zespół",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": ""
+                    },
+                    {
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "key": "field_onas_j1_text",
+                        "label": "Opis",
+                        "name": "text",
+                        "type": "textarea",
+                        "rows": 3,
+                        "default_value": "Każdy klient współpracuje z przypisanym zespołem specjalistów oraz Liderem odpowiedzialnym za jakość i terminowość.",
+                        "placeholder": "",
+                        "maxlength": "",
+                        "new_lines": ""
+                    }
+                ],
+                "layout": "block"
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_onas_jak_2",
+                "label": "Punkt 2",
+                "name": "onas_jak_2",
+                "type": "group",
+                "sub_fields": [
+                    {
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "key": "field_onas_j2_icon",
+                        "label": "Ikona (Lucide)",
+                        "name": "icon",
+                        "type": "text",
+                        "default_value": "workflow",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": ""
+                    },
+                    {
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "key": "field_onas_j2_title",
+                        "label": "Tytuł",
+                        "name": "title",
+                        "type": "text",
+                        "default_value": "Podejście procesowe",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": ""
+                    },
+                    {
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "key": "field_onas_j2_text",
+                        "label": "Opis",
+                        "name": "text",
+                        "type": "textarea",
+                        "rows": 3,
+                        "default_value": "Wszystkie działania opieramy na udokumentowanych procesach z określonymi SLA, checklistami i punktami kontroli jakości.",
+                        "placeholder": "",
+                        "maxlength": "",
+                        "new_lines": ""
+                    }
+                ],
+                "layout": "block"
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_onas_jak_3",
+                "label": "Punkt 3",
+                "name": "onas_jak_3",
+                "type": "group",
+                "sub_fields": [
+                    {
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "key": "field_onas_j3_icon",
+                        "label": "Ikona (Lucide)",
+                        "name": "icon",
+                        "type": "text",
+                        "default_value": "repeat-2",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": ""
+                    },
+                    {
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "key": "field_onas_j3_title",
+                        "label": "Tytuł",
+                        "name": "title",
+                        "type": "text",
+                        "default_value": "Pełna zastępowalność",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": ""
+                    },
+                    {
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "key": "field_onas_j3_text",
+                        "label": "Opis",
+                        "name": "text",
+                        "type": "textarea",
+                        "rows": 3,
+                        "default_value": "Procesy są tak zorganizowane, by urlopy i rotacja kadry nie wpływały na ciągłość obsługi.",
+                        "placeholder": "",
+                        "maxlength": "",
+                        "new_lines": ""
+                    }
+                ],
+                "layout": "block"
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_onas_jak_4",
+                "label": "Punkt 4",
+                "name": "onas_jak_4",
+                "type": "group",
+                "sub_fields": [
+                    {
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "key": "field_onas_j4_icon",
+                        "label": "Ikona (Lucide)",
+                        "name": "icon",
+                        "type": "text",
+                        "default_value": "handshake",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": ""
+                    },
+                    {
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "key": "field_onas_j4_title",
+                        "label": "Tytuł",
+                        "name": "title",
+                        "type": "text",
+                        "default_value": "Elastyczność współpracy",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": ""
+                    },
+                    {
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "key": "field_onas_j4_text",
+                        "label": "Opis",
+                        "name": "text",
+                        "type": "textarea",
+                        "rows": 3,
+                        "default_value": "Dopasowujemy zakres, terminy raportowania i sposób komunikacji do realnych potrzeb firmy.",
+                        "placeholder": "",
+                        "maxlength": "",
+                        "new_lines": ""
+                    }
+                ],
+                "layout": "block"
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "key": "field_onas_tab_wartosci",
+                "label": "Nasze Wartości",
+                "name": "",
+                "type": "tab",
+                "placement": "top",
+                "endpoint": 0
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_onas_w_label",
+                "label": "Etykieta sekcji",
+                "name": "onas_w_label",
+                "type": "text",
+                "default_value": "Nasze Wartości",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_onas_w_title",
+                "label": "Tytuł sekcji",
+                "name": "onas_w_title",
+                "type": "textarea",
+                "rows": 2,
+                "default_value": "Dlaczego Meritoros to spokój\nw Twoim biznesie?",
+                "placeholder": "",
+                "maxlength": "",
+                "new_lines": ""
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_onas_w1_icon",
+                "label": "Karta 1 — Ikona",
+                "name": "onas_w1_icon",
+                "type": "text",
+                "default_value": "infinity",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_onas_w1_title",
+                "label": "Karta 1 — Tytuł",
+                "name": "onas_w1_title",
+                "type": "textarea",
+                "rows": 2,
+                "default_value": "Skala i ciągłość\nobsługi",
+                "placeholder": "",
+                "maxlength": "",
+                "new_lines": ""
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_onas_w1_text",
+                "label": "Karta 1 — Opis",
+                "name": "onas_w1_text",
+                "type": "textarea",
+                "rows": 3,
+                "default_value": "Pracujemy zespołowo i procesowo, dzięki czemu obsługa nie zależy od jednej osoby.",
+                "placeholder": "",
+                "maxlength": "",
+                "new_lines": ""
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_onas_w2_image",
+                "label": "Karta 2 — Zdjęcie",
+                "name": "onas_w2_image",
+                "type": "image",
+                "return_format": "array",
+                "preview_size": "medium",
+                "library": "all",
+                "min_width": "",
+                "min_height": "",
+                "min_size": "",
+                "max_width": "",
+                "max_height": "",
+                "max_size": "",
+                "mime_types": ""
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_onas_w2_hover",
+                "label": "Karta 2 — Tekst hover",
+                "name": "onas_w2_hover",
+                "type": "text",
+                "default_value": "Współpracuj z profesjonalistami",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_onas_w2_url",
+                "label": "Karta 2 — Link",
+                "name": "onas_w2_url",
+                "type": "text",
+                "default_value": "\/kontakt\/",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_onas_w3_icon",
+                "label": "Karta 3 — Ikona",
+                "name": "onas_w3_icon",
+                "type": "text",
+                "default_value": "shield-check",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_onas_w3_title",
+                "label": "Karta 3 — Tytuł",
+                "name": "onas_w3_title",
+                "type": "textarea",
+                "rows": 2,
+                "default_value": "Bezpieczeństwo\ni compliance",
+                "placeholder": "",
+                "maxlength": "",
+                "new_lines": ""
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_onas_w3_text",
+                "label": "Karta 3 — Opis",
+                "name": "onas_w3_text",
+                "type": "textarea",
+                "rows": 3,
+                "default_value": "Działamy zgodnie z obowiązującymi regulacjami i standardami bezpieczeństwa danych.",
+                "placeholder": "",
+                "maxlength": "",
+                "new_lines": ""
+            },
+            {
+                "instructions": "Logo ISO 27001",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_onas_w3_badge",
+                "label": "Karta 3 — Odznaka ISO",
+                "name": "onas_w3_badge",
+                "type": "image",
+                "return_format": "array",
+                "preview_size": "thumbnail",
+                "library": "all",
+                "min_width": "",
+                "min_height": "",
+                "min_size": "",
+                "max_width": "",
+                "max_height": "",
+                "max_size": "",
+                "mime_types": ""
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_onas_w4_icon",
+                "label": "Karta 4 — Ikona",
+                "name": "onas_w4_icon",
+                "type": "text",
+                "default_value": "bot",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_onas_w4_title",
+                "label": "Karta 4 — Tytuł",
+                "name": "onas_w4_title",
+                "type": "textarea",
+                "rows": 2,
+                "default_value": "Technologia\ni automatyzacja",
+                "placeholder": "",
+                "maxlength": "",
+                "new_lines": ""
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_onas_w4_text",
+                "label": "Karta 4 — Opis",
+                "name": "onas_w4_text",
+                "type": "textarea",
+                "rows": 3,
+                "default_value": "Wykorzystujemy narzędzia i automatyzację (RPA), które porządkują obieg dokumentów.",
+                "placeholder": "",
+                "maxlength": "",
+                "new_lines": ""
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_onas_w5_title",
+                "label": "Karta 5 — Tytuł",
+                "name": "onas_w5_title",
+                "type": "text",
+                "default_value": "Nagrody i wyróżnienia",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_onas_w5_text",
+                "label": "Karta 5 — Opis",
+                "name": "onas_w5_text",
+                "type": "textarea",
+                "rows": 2,
+                "default_value": "Wyróżnienia są efektem tego, jak rozwijamy Meritoros: konsekwentnie i procesowo.",
+                "placeholder": "",
+                "maxlength": "",
+                "new_lines": ""
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_onas_w5_logo1",
+                "label": "Karta 5 — Logo 1",
+                "name": "onas_w5_logo1",
+                "type": "image",
+                "return_format": "array",
+                "preview_size": "thumbnail",
+                "library": "all",
+                "min_width": "",
+                "min_height": "",
+                "min_size": "",
+                "max_width": "",
+                "max_height": "",
+                "max_size": "",
+                "mime_types": ""
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_onas_w5_logo2",
+                "label": "Karta 5 — Logo 2",
+                "name": "onas_w5_logo2",
+                "type": "image",
+                "return_format": "array",
+                "preview_size": "thumbnail",
+                "library": "all",
+                "min_width": "",
+                "min_height": "",
+                "min_size": "",
+                "max_width": "",
+                "max_height": "",
+                "max_size": "",
+                "mime_types": ""
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_onas_w6_icon",
+                "label": "Karta 6 — Ikona",
+                "name": "onas_w6_icon",
+                "type": "text",
+                "default_value": "award",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_onas_w6_title",
+                "label": "Karta 6 — Tytuł",
+                "name": "onas_w6_title",
+                "type": "textarea",
+                "rows": 2,
+                "default_value": "Jakość potwierdzona\nstandardami",
+                "placeholder": "",
+                "maxlength": "",
+                "new_lines": ""
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_onas_w6_text",
+                "label": "Karta 6 — Opis",
+                "name": "onas_w6_text",
+                "type": "textarea",
+                "rows": 2,
+                "default_value": "Mamy wdrożone procedury kontroli jakości i weryfikacji danych.",
+                "placeholder": "",
+                "maxlength": "",
+                "new_lines": ""
+            },
+            {
+                "instructions": "Logo ISO 9001",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_onas_w6_badge",
+                "label": "Karta 6 — Odznaka ISO",
+                "name": "onas_w6_badge",
+                "type": "image",
+                "return_format": "array",
+                "preview_size": "thumbnail",
+                "library": "all",
+                "min_width": "",
+                "min_height": "",
+                "min_size": "",
+                "max_width": "",
+                "max_height": "",
+                "max_size": "",
+                "mime_types": ""
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "key": "field_onas_tab_mapa",
+                "label": "Gdzie działamy",
+                "name": "",
+                "type": "tab",
+                "placement": "top",
+                "endpoint": 0
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_onas_mapa_title",
+                "label": "Tytuł sekcji",
+                "name": "onas_mapa_title",
+                "type": "text",
+                "default_value": "Gdzie działamy",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_onas_mapa_text",
+                "label": "Opis pod tytułem",
+                "name": "onas_mapa_text",
+                "type": "textarea",
+                "rows": 2,
+                "default_value": "Posiadamy 7 oddziałów stacjonarnych w miastach Polski oraz oddziały wirtualne, dzięki czemu obsługujemy firmy niezależnie od ich lokalizacji:",
+                "placeholder": "",
+                "maxlength": "",
+                "new_lines": ""
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_onas_mapa_image",
+                "label": "Mapa Polski (SVG\/PNG)",
+                "name": "onas_mapa_image",
+                "type": "file",
+                "return_format": "array",
+                "library": "all",
+                "min_size": "",
+                "max_size": "",
+                "mime_types": ""
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_onas_mapa_cities",
+                "label": "Lista miast (jeden wpis = jedna linia)",
+                "name": "onas_mapa_cities",
+                "type": "textarea",
+                "rows": 10,
+                "default_value": "Kraków (siedziba główna oraz 3 oddziały)\nWarszawa\nKatowice\nRzeszów\nWrocław\nŁódź\nBytom\n2 oddziały wirtualne działające w pełni online",
+                "placeholder": "",
+                "maxlength": "",
+                "new_lines": ""
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "key": "field_onas_tab_zespol",
+                "label": "Zespół",
+                "name": "",
+                "type": "tab",
+                "placement": "top",
+                "endpoint": 0
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_onas_team_title",
+                "label": "Tytuł sekcji",
+                "name": "onas_team_title",
+                "type": "text",
+                "default_value": "Zespół",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_onas_member_1",
+                "label": "Osoba 1",
+                "name": "onas_member_1",
+                "type": "group",
+                "sub_fields": [
+                    {
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "key": "field_onas_m1_photo",
+                        "label": "Zdjęcie",
+                        "name": "photo",
+                        "type": "image",
+                        "return_format": "array",
+                        "preview_size": "medium",
+                        "library": "all",
+                        "min_width": "",
+                        "min_height": "",
+                        "min_size": "",
+                        "max_width": "",
+                        "max_height": "",
+                        "max_size": "",
+                        "mime_types": ""
+                    },
+                    {
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "key": "field_onas_m1_name",
+                        "label": "Imię i nazwisko",
+                        "name": "name",
+                        "type": "text",
+                        "default_value": "Maciej Paraszczak",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": ""
+                    },
+                    {
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "key": "field_onas_m1_role",
+                        "label": "Stanowisko",
+                        "name": "role",
+                        "type": "text",
+                        "default_value": "prezes zarządu, CEO",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": ""
+                    },
+                    {
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "key": "field_onas_m1_bio",
+                        "label": "Biogram",
+                        "name": "bio",
+                        "type": "textarea",
+                        "rows": 3,
+                        "default_value": "",
+                        "placeholder": "",
+                        "maxlength": "",
+                        "new_lines": ""
+                    },
+                    {
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "key": "field_onas_m1_url",
+                        "label": "Link \"Czytaj więcej\"",
+                        "name": "url",
+                        "type": "text",
+                        "default_value": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": ""
+                    }
+                ],
+                "layout": "block"
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_onas_member_2",
+                "label": "Osoba 2",
+                "name": "onas_member_2",
+                "type": "group",
+                "sub_fields": [
+                    {
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "key": "field_onas_m2_photo",
+                        "label": "Zdjęcie",
+                        "name": "photo",
+                        "type": "image",
+                        "return_format": "array",
+                        "preview_size": "medium",
+                        "library": "all",
+                        "min_width": "",
+                        "min_height": "",
+                        "min_size": "",
+                        "max_width": "",
+                        "max_height": "",
+                        "max_size": "",
+                        "mime_types": ""
+                    },
+                    {
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "key": "field_onas_m2_name",
+                        "label": "Imię i nazwisko",
+                        "name": "name",
+                        "type": "text",
+                        "default_value": "Agnieszka Tomczyk-Pieniądz",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": ""
+                    },
+                    {
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "key": "field_onas_m2_role",
+                        "label": "Stanowisko",
+                        "name": "role",
+                        "type": "text",
+                        "default_value": "członek zarządu, COO",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": ""
+                    },
+                    {
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "key": "field_onas_m2_bio",
+                        "label": "Biogram",
+                        "name": "bio",
+                        "type": "textarea",
+                        "rows": 3,
+                        "default_value": "",
+                        "placeholder": "",
+                        "maxlength": "",
+                        "new_lines": ""
+                    },
+                    {
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "key": "field_onas_m2_url",
+                        "label": "Link \"Czytaj więcej\"",
+                        "name": "url",
+                        "type": "text",
+                        "default_value": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": ""
+                    }
+                ],
+                "layout": "block"
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_onas_member_3",
+                "label": "Osoba 3",
+                "name": "onas_member_3",
+                "type": "group",
+                "sub_fields": [
+                    {
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "key": "field_onas_m3_photo",
+                        "label": "Zdjęcie",
+                        "name": "photo",
+                        "type": "image",
+                        "return_format": "array",
+                        "preview_size": "medium",
+                        "library": "all",
+                        "min_width": "",
+                        "min_height": "",
+                        "min_size": "",
+                        "max_width": "",
+                        "max_height": "",
+                        "max_size": "",
+                        "mime_types": ""
+                    },
+                    {
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "key": "field_onas_m3_name",
+                        "label": "Imię i nazwisko",
+                        "name": "name",
+                        "type": "text",
+                        "default_value": "Krzysztof Gargas",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": ""
+                    },
+                    {
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "key": "field_onas_m3_role",
+                        "label": "Stanowisko",
+                        "name": "role",
+                        "type": "text",
+                        "default_value": "członek zarządu, COO",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": ""
+                    },
+                    {
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "key": "field_onas_m3_bio",
+                        "label": "Biogram",
+                        "name": "bio",
+                        "type": "textarea",
+                        "rows": 3,
+                        "default_value": "",
+                        "placeholder": "",
+                        "maxlength": "",
+                        "new_lines": ""
+                    },
+                    {
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "key": "field_onas_m3_url",
+                        "label": "Link \"Czytaj więcej\"",
+                        "name": "url",
+                        "type": "text",
+                        "default_value": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": ""
+                    }
+                ],
+                "layout": "block"
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_onas_member_4",
+                "label": "Osoba 4",
+                "name": "onas_member_4",
+                "type": "group",
+                "sub_fields": [
+                    {
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "key": "field_onas_m4_photo",
+                        "label": "Zdjęcie",
+                        "name": "photo",
+                        "type": "image",
+                        "return_format": "array",
+                        "preview_size": "medium",
+                        "library": "all",
+                        "min_width": "",
+                        "min_height": "",
+                        "min_size": "",
+                        "max_width": "",
+                        "max_height": "",
+                        "max_size": "",
+                        "mime_types": ""
+                    },
+                    {
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "key": "field_onas_m4_name",
+                        "label": "Imię i nazwisko",
+                        "name": "name",
+                        "type": "text",
+                        "default_value": "Joanna Małek",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": ""
+                    },
+                    {
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "key": "field_onas_m4_role",
+                        "label": "Stanowisko",
+                        "name": "role",
+                        "type": "text",
+                        "default_value": "członek zarządu, COO",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": ""
+                    },
+                    {
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "key": "field_onas_m4_bio",
+                        "label": "Biogram",
+                        "name": "bio",
+                        "type": "textarea",
+                        "rows": 3,
+                        "default_value": "",
+                        "placeholder": "",
+                        "maxlength": "",
+                        "new_lines": ""
+                    },
+                    {
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "key": "field_onas_m4_url",
+                        "label": "Link \"Czytaj więcej\"",
+                        "name": "url",
+                        "type": "text",
+                        "default_value": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": ""
+                    }
+                ],
+                "layout": "block"
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "page_slug",
+                    "operator": "==",
+                    "value": "o-nas"
+                }
+            ],
+            [
+                {
+                    "param": "page_template",
+                    "operator": "==",
+                    "value": "page-o-nas.php"
+                }
+            ]
+        ]
+    }
+]

@@ -1,0 +1,3393 @@
+[
+    {
+        "menu_order": 10,
+        "position": "normal",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": "",
+        "active": true,
+        "description": "",
+        "show_in_rest": 0,
+        "modified": 1778755818,
+        "key": "group_mer_kariera",
+        "title": "💼 Kariera",
+        "fields": [
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "key": "field_kar_tab_hero",
+                "label": "Hero",
+                "name": "",
+                "type": "tab",
+                "placement": "top",
+                "endpoint": 0
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_kar_hero_bg",
+                "label": "Zdjęcie tła",
+                "name": "kar_hero_bg",
+                "type": "image",
+                "return_format": "array",
+                "preview_size": "medium",
+                "library": "all",
+                "min_width": "",
+                "min_height": "",
+                "min_size": "",
+                "max_width": "",
+                "max_height": "",
+                "max_size": "",
+                "mime_types": ""
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_kar_hero_title",
+                "label": "Tytuł",
+                "name": "kar_hero_title",
+                "type": "textarea",
+                "rows": 2,
+                "default_value": "Dołącz do\nnaszego zespołu",
+                "placeholder": "",
+                "maxlength": "",
+                "new_lines": ""
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_kar_hero_text",
+                "label": "Opis",
+                "name": "kar_hero_text",
+                "type": "textarea",
+                "rows": 3,
+                "default_value": "Budujemy uporządkowane procesy i dobrą atmosferę.\nJeśli cenisz jasne zasady, rozwój i pracę zespołową – sprawdź,\nczy mamy ofertę dla Ciebie.",
+                "placeholder": "",
+                "maxlength": "",
+                "new_lines": ""
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_kar_hero_btn_text",
+                "label": "Tekst przycisku",
+                "name": "kar_hero_btn_text",
+                "type": "text",
+                "default_value": "Aktualne oferty pracy",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_kar_hero_btn_url",
+                "label": "Link przycisku",
+                "name": "kar_hero_btn_url",
+                "type": "text",
+                "default_value": "#oferty",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "key": "field_kar_tab_jakosc",
+                "label": "Twórz z nami jakość",
+                "name": "",
+                "type": "tab",
+                "placement": "top",
+                "endpoint": 0
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_kar_jakosc_title",
+                "label": "Tytuł",
+                "name": "kar_jakosc_title",
+                "type": "text",
+                "default_value": "Twórz z nami jakość",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_kar_jakosc_green",
+                "label": "Tekst zielony",
+                "name": "kar_jakosc_green",
+                "type": "text",
+                "default_value": "#Meritoros",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_kar_jakosc_text1",
+                "label": "Akapit 1",
+                "name": "kar_jakosc_text1",
+                "type": "textarea",
+                "rows": 3,
+                "default_value": "W Meritoros wspieramy firmy w księgowości, kadrach i płacach oraz procesach back-office od 2004 roku. Pracujemy tak, żeby być dumni z jakości informacji, które dostarczamy.",
+                "placeholder": "",
+                "maxlength": "",
+                "new_lines": ""
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_kar_jakosc_text2",
+                "label": "Akapit 2",
+                "name": "kar_jakosc_text2",
+                "type": "textarea",
+                "rows": 3,
+                "default_value": "Jednocześnie wiemy, że dobre wyniki robią ludzie: dbamy o partnerską współpracę, szacunek i realne wsparcie w zespole. Pracujemy w zadaniowym z elastycznością, która działa wtedy, gdy idzie w parze z odpowiedzialnością i dotrzymywaniem ustaleń.",
+                "placeholder": "",
+                "maxlength": "",
+                "new_lines": ""
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_kar_jakosc_img1",
+                "label": "Slider – zdjęcie 1",
+                "name": "kar_jakosc_img1",
+                "type": "image",
+                "return_format": "array",
+                "preview_size": "thumbnail",
+                "library": "all",
+                "min_width": "",
+                "min_height": "",
+                "min_size": "",
+                "max_width": "",
+                "max_height": "",
+                "max_size": "",
+                "mime_types": ""
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_kar_jakosc_img2",
+                "label": "Slider – zdjęcie 2",
+                "name": "kar_jakosc_img2",
+                "type": "image",
+                "return_format": "array",
+                "preview_size": "thumbnail",
+                "library": "all",
+                "min_width": "",
+                "min_height": "",
+                "min_size": "",
+                "max_width": "",
+                "max_height": "",
+                "max_size": "",
+                "mime_types": ""
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_kar_jakosc_img3",
+                "label": "Slider – zdjęcie 3",
+                "name": "kar_jakosc_img3",
+                "type": "image",
+                "return_format": "array",
+                "preview_size": "thumbnail",
+                "library": "all",
+                "min_width": "",
+                "min_height": "",
+                "min_size": "",
+                "max_width": "",
+                "max_height": "",
+                "max_size": "",
+                "mime_types": ""
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_kar_jakosc_img4",
+                "label": "Slider – zdjęcie 4",
+                "name": "kar_jakosc_img4",
+                "type": "image",
+                "return_format": "array",
+                "preview_size": "thumbnail",
+                "library": "all",
+                "min_width": "",
+                "min_height": "",
+                "min_size": "",
+                "max_width": "",
+                "max_height": "",
+                "max_size": "",
+                "mime_types": ""
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_kar_jakosc_card1",
+                "label": "Karta wartości 1",
+                "name": "kar_jakosc_card1",
+                "type": "group",
+                "layout": "row",
+                "sub_fields": [
+                    {
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "key": "field_kar_jc1_icon",
+                        "label": "Ikona (lucide)",
+                        "name": "icon",
+                        "type": "text",
+                        "default_value": "award",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": ""
+                    },
+                    {
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "key": "field_kar_jc1_text",
+                        "label": "Tekst",
+                        "name": "text",
+                        "type": "text",
+                        "default_value": "Jakość i standard",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": ""
+                    }
+                ]
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_kar_jakosc_card2",
+                "label": "Karta wartości 2",
+                "name": "kar_jakosc_card2",
+                "type": "group",
+                "layout": "row",
+                "sub_fields": [
+                    {
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "key": "field_kar_jc2_icon",
+                        "label": "Ikona (lucide)",
+                        "name": "icon",
+                        "type": "text",
+                        "default_value": "handshake",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": ""
+                    },
+                    {
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "key": "field_kar_jc2_text",
+                        "label": "Tekst",
+                        "name": "text",
+                        "type": "text",
+                        "default_value": "Szacunek i współpraca",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": ""
+                    }
+                ]
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_kar_jakosc_card3",
+                "label": "Karta wartości 3",
+                "name": "kar_jakosc_card3",
+                "type": "group",
+                "layout": "row",
+                "sub_fields": [
+                    {
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "key": "field_kar_jc3_icon",
+                        "label": "Ikona (lucide)",
+                        "name": "icon",
+                        "type": "text",
+                        "default_value": "users-round",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": ""
+                    },
+                    {
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "key": "field_kar_jc3_text",
+                        "label": "Tekst",
+                        "name": "text",
+                        "type": "text",
+                        "default_value": "Elastyczność i odpowiedzialność",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": ""
+                    }
+                ]
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "key": "field_kar_tab_dlaczego",
+                "label": "Dlaczego warto",
+                "name": "",
+                "type": "tab",
+                "placement": "top",
+                "endpoint": 0
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_kar_dlaczego_title",
+                "label": "Tytuł",
+                "name": "kar_dlaczego_title",
+                "type": "text",
+                "default_value": "Dlaczego warto do nas dołączyć?",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_kar_dlaczego_1",
+                "label": "Karta 1",
+                "name": "kar_dlaczego_1",
+                "type": "group",
+                "layout": "row",
+                "sub_fields": [
+                    {
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "key": "field_kar_d1_title",
+                        "label": "Tytuł",
+                        "name": "title",
+                        "type": "textarea",
+                        "rows": 2,
+                        "default_value": "",
+                        "placeholder": "",
+                        "maxlength": "",
+                        "new_lines": ""
+                    },
+                    {
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "key": "field_kar_d1_text",
+                        "label": "Tekst",
+                        "name": "text",
+                        "type": "textarea",
+                        "rows": 3,
+                        "default_value": "",
+                        "placeholder": "",
+                        "maxlength": "",
+                        "new_lines": ""
+                    },
+                    {
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "key": "field_kar_d1_tag",
+                        "label": "Tag",
+                        "name": "tag",
+                        "type": "text",
+                        "default_value": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": ""
+                    },
+                    {
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "key": "field_kar_d1_image",
+                        "label": "Zdjęcie",
+                        "name": "image",
+                        "type": "image",
+                        "return_format": "array",
+                        "preview_size": "thumbnail",
+                        "library": "all",
+                        "min_width": "",
+                        "min_height": "",
+                        "min_size": "",
+                        "max_width": "",
+                        "max_height": "",
+                        "max_size": "",
+                        "mime_types": ""
+                    }
+                ]
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_kar_dlaczego_2",
+                "label": "Karta 2",
+                "name": "kar_dlaczego_2",
+                "type": "group",
+                "layout": "row",
+                "sub_fields": [
+                    {
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "key": "field_kar_d2_title",
+                        "label": "Tytuł",
+                        "name": "title",
+                        "type": "textarea",
+                        "rows": 2,
+                        "default_value": "",
+                        "placeholder": "",
+                        "maxlength": "",
+                        "new_lines": ""
+                    },
+                    {
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "key": "field_kar_d2_text",
+                        "label": "Tekst",
+                        "name": "text",
+                        "type": "textarea",
+                        "rows": 3,
+                        "default_value": "",
+                        "placeholder": "",
+                        "maxlength": "",
+                        "new_lines": ""
+                    },
+                    {
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "key": "field_kar_d2_tag",
+                        "label": "Tag",
+                        "name": "tag",
+                        "type": "text",
+                        "default_value": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": ""
+                    },
+                    {
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "key": "field_kar_d2_image",
+                        "label": "Zdjęcie",
+                        "name": "image",
+                        "type": "image",
+                        "return_format": "array",
+                        "preview_size": "thumbnail",
+                        "library": "all",
+                        "min_width": "",
+                        "min_height": "",
+                        "min_size": "",
+                        "max_width": "",
+                        "max_height": "",
+                        "max_size": "",
+                        "mime_types": ""
+                    }
+                ]
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_kar_dlaczego_3",
+                "label": "Karta 3",
+                "name": "kar_dlaczego_3",
+                "type": "group",
+                "layout": "row",
+                "sub_fields": [
+                    {
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "key": "field_kar_d3_title",
+                        "label": "Tytuł",
+                        "name": "title",
+                        "type": "textarea",
+                        "rows": 2,
+                        "default_value": "",
+                        "placeholder": "",
+                        "maxlength": "",
+                        "new_lines": ""
+                    },
+                    {
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "key": "field_kar_d3_text",
+                        "label": "Tekst",
+                        "name": "text",
+                        "type": "textarea",
+                        "rows": 3,
+                        "default_value": "",
+                        "placeholder": "",
+                        "maxlength": "",
+                        "new_lines": ""
+                    },
+                    {
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "key": "field_kar_d3_tag",
+                        "label": "Tag",
+                        "name": "tag",
+                        "type": "text",
+                        "default_value": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": ""
+                    },
+                    {
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "key": "field_kar_d3_image",
+                        "label": "Zdjęcie",
+                        "name": "image",
+                        "type": "image",
+                        "return_format": "array",
+                        "preview_size": "thumbnail",
+                        "library": "all",
+                        "min_width": "",
+                        "min_height": "",
+                        "min_size": "",
+                        "max_width": "",
+                        "max_height": "",
+                        "max_size": "",
+                        "mime_types": ""
+                    }
+                ]
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_kar_dlaczego_4",
+                "label": "Karta 4",
+                "name": "kar_dlaczego_4",
+                "type": "group",
+                "layout": "row",
+                "sub_fields": [
+                    {
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "key": "field_kar_d4_title",
+                        "label": "Tytuł",
+                        "name": "title",
+                        "type": "textarea",
+                        "rows": 2,
+                        "default_value": "",
+                        "placeholder": "",
+                        "maxlength": "",
+                        "new_lines": ""
+                    },
+                    {
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "key": "field_kar_d4_text",
+                        "label": "Tekst",
+                        "name": "text",
+                        "type": "textarea",
+                        "rows": 3,
+                        "default_value": "",
+                        "placeholder": "",
+                        "maxlength": "",
+                        "new_lines": ""
+                    },
+                    {
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "key": "field_kar_d4_tag",
+                        "label": "Tag",
+                        "name": "tag",
+                        "type": "text",
+                        "default_value": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": ""
+                    },
+                    {
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "key": "field_kar_d4_image",
+                        "label": "Zdjęcie",
+                        "name": "image",
+                        "type": "image",
+                        "return_format": "array",
+                        "preview_size": "thumbnail",
+                        "library": "all",
+                        "min_width": "",
+                        "min_height": "",
+                        "min_size": "",
+                        "max_width": "",
+                        "max_height": "",
+                        "max_size": "",
+                        "mime_types": ""
+                    }
+                ]
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "key": "field_kar_tab_ben",
+                "label": "Benefity",
+                "name": "",
+                "type": "tab",
+                "placement": "top",
+                "endpoint": 0
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_kar_ben_title",
+                "label": "Tytuł sekcji",
+                "name": "kar_ben_title",
+                "type": "text",
+                "default_value": "Nasze benefity",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_kar_ben_1",
+                "label": "Benefit 1",
+                "name": "kar_ben_1",
+                "type": "group",
+                "layout": "row",
+                "sub_fields": [
+                    {
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "key": "field_kar_b1_icon",
+                        "label": "Ikona",
+                        "name": "icon",
+                        "type": "text",
+                        "default_value": "clock",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": ""
+                    },
+                    {
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "key": "field_kar_b1_title",
+                        "label": "Tytuł (bold)",
+                        "name": "title",
+                        "type": "text",
+                        "default_value": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": ""
+                    },
+                    {
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "key": "field_kar_b1_text",
+                        "label": "Opis drobny",
+                        "name": "text",
+                        "type": "text",
+                        "default_value": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": ""
+                    }
+                ]
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_kar_ben_2",
+                "label": "Benefit 2",
+                "name": "kar_ben_2",
+                "type": "group",
+                "layout": "row",
+                "sub_fields": [
+                    {
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "key": "field_kar_b2_icon",
+                        "label": "Ikona",
+                        "name": "icon",
+                        "type": "text",
+                        "default_value": "dumbbell",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": ""
+                    },
+                    {
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "key": "field_kar_b2_title",
+                        "label": "Tytuł (bold)",
+                        "name": "title",
+                        "type": "text",
+                        "default_value": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": ""
+                    },
+                    {
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "key": "field_kar_b2_text",
+                        "label": "Opis drobny",
+                        "name": "text",
+                        "type": "text",
+                        "default_value": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": ""
+                    }
+                ]
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_kar_ben_3",
+                "label": "Benefit 3",
+                "name": "kar_ben_3",
+                "type": "group",
+                "layout": "row",
+                "sub_fields": [
+                    {
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "key": "field_kar_b3_icon",
+                        "label": "Ikona",
+                        "name": "icon",
+                        "type": "text",
+                        "default_value": "heart-pulse",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": ""
+                    },
+                    {
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "key": "field_kar_b3_title",
+                        "label": "Tytuł (bold)",
+                        "name": "title",
+                        "type": "text",
+                        "default_value": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": ""
+                    },
+                    {
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "key": "field_kar_b3_text",
+                        "label": "Opis drobny",
+                        "name": "text",
+                        "type": "text",
+                        "default_value": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": ""
+                    }
+                ]
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_kar_ben_4",
+                "label": "Benefit 4",
+                "name": "kar_ben_4",
+                "type": "group",
+                "layout": "row",
+                "sub_fields": [
+                    {
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "key": "field_kar_b4_icon",
+                        "label": "Ikona",
+                        "name": "icon",
+                        "type": "text",
+                        "default_value": "sun",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": ""
+                    },
+                    {
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "key": "field_kar_b4_title",
+                        "label": "Tytuł (bold)",
+                        "name": "title",
+                        "type": "text",
+                        "default_value": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": ""
+                    },
+                    {
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "key": "field_kar_b4_text",
+                        "label": "Opis drobny",
+                        "name": "text",
+                        "type": "text",
+                        "default_value": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": ""
+                    }
+                ]
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_kar_ben_5",
+                "label": "Benefit 5",
+                "name": "kar_ben_5",
+                "type": "group",
+                "layout": "row",
+                "sub_fields": [
+                    {
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "key": "field_kar_b5_icon",
+                        "label": "Ikona",
+                        "name": "icon",
+                        "type": "text",
+                        "default_value": "presentation",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": ""
+                    },
+                    {
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "key": "field_kar_b5_title",
+                        "label": "Tytuł (bold)",
+                        "name": "title",
+                        "type": "text",
+                        "default_value": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": ""
+                    },
+                    {
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "key": "field_kar_b5_text",
+                        "label": "Opis drobny",
+                        "name": "text",
+                        "type": "text",
+                        "default_value": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": ""
+                    }
+                ]
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_kar_ben_6",
+                "label": "Benefit 6",
+                "name": "kar_ben_6",
+                "type": "group",
+                "layout": "row",
+                "sub_fields": [
+                    {
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "key": "field_kar_b6_icon",
+                        "label": "Ikona",
+                        "name": "icon",
+                        "type": "text",
+                        "default_value": "wallet",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": ""
+                    },
+                    {
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "key": "field_kar_b6_title",
+                        "label": "Tytuł (bold)",
+                        "name": "title",
+                        "type": "text",
+                        "default_value": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": ""
+                    },
+                    {
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "key": "field_kar_b6_text",
+                        "label": "Opis drobny",
+                        "name": "text",
+                        "type": "text",
+                        "default_value": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": ""
+                    }
+                ]
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_kar_ben_7",
+                "label": "Benefit 7",
+                "name": "kar_ben_7",
+                "type": "group",
+                "layout": "row",
+                "sub_fields": [
+                    {
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "key": "field_kar_b7_icon",
+                        "label": "Ikona",
+                        "name": "icon",
+                        "type": "text",
+                        "default_value": "languages",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": ""
+                    },
+                    {
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "key": "field_kar_b7_title",
+                        "label": "Tytuł (bold)",
+                        "name": "title",
+                        "type": "text",
+                        "default_value": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": ""
+                    },
+                    {
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "key": "field_kar_b7_text",
+                        "label": "Opis drobny",
+                        "name": "text",
+                        "type": "text",
+                        "default_value": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": ""
+                    }
+                ]
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_kar_ben_8",
+                "label": "Benefit 8",
+                "name": "kar_ben_8",
+                "type": "group",
+                "layout": "row",
+                "sub_fields": [
+                    {
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "key": "field_kar_b8_icon",
+                        "label": "Ikona",
+                        "name": "icon",
+                        "type": "text",
+                        "default_value": "heart-handshake",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": ""
+                    },
+                    {
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "key": "field_kar_b8_title",
+                        "label": "Tytuł (bold)",
+                        "name": "title",
+                        "type": "text",
+                        "default_value": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": ""
+                    },
+                    {
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "key": "field_kar_b8_text",
+                        "label": "Opis drobny",
+                        "name": "text",
+                        "type": "text",
+                        "default_value": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": ""
+                    }
+                ]
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "key": "field_kar_tab_oferty",
+                "label": "Oferty pracy",
+                "name": "",
+                "type": "tab",
+                "placement": "top",
+                "endpoint": 0
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_kar_oferty_title",
+                "label": "Tytuł sekcji",
+                "name": "kar_oferty_title",
+                "type": "text",
+                "default_value": "Aktualne oferty",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_kar_oferta_1",
+                "label": "Oferta 1",
+                "name": "kar_oferta_1",
+                "type": "group",
+                "layout": "row",
+                "sub_fields": [
+                    {
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "key": "field_kar_o1_title",
+                        "label": "Stanowisko",
+                        "name": "title",
+                        "type": "text",
+                        "default_value": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": ""
+                    },
+                    {
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "key": "field_kar_o1_salary",
+                        "label": "Wynagrodzenie \/ lokalizacja",
+                        "name": "salary",
+                        "type": "text",
+                        "default_value": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": ""
+                    },
+                    {
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "key": "field_kar_o1_cat",
+                        "label": "Kategoria (ksiegowosc \/ kadry \/ it \/ inne \/ praktyki)",
+                        "name": "cat",
+                        "type": "text",
+                        "default_value": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": ""
+                    },
+                    {
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "key": "field_kar_o1_url",
+                        "label": "Link \"Aplikuj\"",
+                        "name": "url",
+                        "type": "text",
+                        "default_value": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": ""
+                    }
+                ]
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_kar_oferta_2",
+                "label": "Oferta 2",
+                "name": "kar_oferta_2",
+                "type": "group",
+                "layout": "row",
+                "sub_fields": [
+                    {
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "key": "field_kar_o2_title",
+                        "label": "Stanowisko",
+                        "name": "title",
+                        "type": "text",
+                        "default_value": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": ""
+                    },
+                    {
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "key": "field_kar_o2_salary",
+                        "label": "Wynagrodzenie \/ lokalizacja",
+                        "name": "salary",
+                        "type": "text",
+                        "default_value": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": ""
+                    },
+                    {
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "key": "field_kar_o2_cat",
+                        "label": "Kategoria",
+                        "name": "cat",
+                        "type": "text",
+                        "default_value": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": ""
+                    },
+                    {
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "key": "field_kar_o2_url",
+                        "label": "Link \"Aplikuj\"",
+                        "name": "url",
+                        "type": "text",
+                        "default_value": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": ""
+                    }
+                ]
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_kar_oferta_3",
+                "label": "Oferta 3",
+                "name": "kar_oferta_3",
+                "type": "group",
+                "layout": "row",
+                "sub_fields": [
+                    {
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "key": "field_kar_o3_title",
+                        "label": "Stanowisko",
+                        "name": "title",
+                        "type": "text",
+                        "default_value": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": ""
+                    },
+                    {
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "key": "field_kar_o3_salary",
+                        "label": "Wynagrodzenie \/ lokalizacja",
+                        "name": "salary",
+                        "type": "text",
+                        "default_value": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": ""
+                    },
+                    {
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "key": "field_kar_o3_cat",
+                        "label": "Kategoria",
+                        "name": "cat",
+                        "type": "text",
+                        "default_value": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": ""
+                    },
+                    {
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "key": "field_kar_o3_url",
+                        "label": "Link \"Aplikuj\"",
+                        "name": "url",
+                        "type": "text",
+                        "default_value": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": ""
+                    }
+                ]
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_kar_oferta_4",
+                "label": "Oferta 4",
+                "name": "kar_oferta_4",
+                "type": "group",
+                "layout": "row",
+                "sub_fields": [
+                    {
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "key": "field_kar_o4_title",
+                        "label": "Stanowisko",
+                        "name": "title",
+                        "type": "text",
+                        "default_value": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": ""
+                    },
+                    {
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "key": "field_kar_o4_salary",
+                        "label": "Wynagrodzenie \/ lokalizacja",
+                        "name": "salary",
+                        "type": "text",
+                        "default_value": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": ""
+                    },
+                    {
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "key": "field_kar_o4_cat",
+                        "label": "Kategoria",
+                        "name": "cat",
+                        "type": "text",
+                        "default_value": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": ""
+                    },
+                    {
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "key": "field_kar_o4_url",
+                        "label": "Link \"Aplikuj\"",
+                        "name": "url",
+                        "type": "text",
+                        "default_value": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": ""
+                    }
+                ]
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_kar_oferta_5",
+                "label": "Oferta 5",
+                "name": "kar_oferta_5",
+                "type": "group",
+                "layout": "row",
+                "sub_fields": [
+                    {
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "key": "field_kar_o5_title",
+                        "label": "Stanowisko",
+                        "name": "title",
+                        "type": "text",
+                        "default_value": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": ""
+                    },
+                    {
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "key": "field_kar_o5_salary",
+                        "label": "Wynagrodzenie \/ lokalizacja",
+                        "name": "salary",
+                        "type": "text",
+                        "default_value": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": ""
+                    },
+                    {
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "key": "field_kar_o5_cat",
+                        "label": "Kategoria",
+                        "name": "cat",
+                        "type": "text",
+                        "default_value": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": ""
+                    },
+                    {
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "key": "field_kar_o5_url",
+                        "label": "Link \"Aplikuj\"",
+                        "name": "url",
+                        "type": "text",
+                        "default_value": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": ""
+                    }
+                ]
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_kar_oferta_6",
+                "label": "Oferta 6",
+                "name": "kar_oferta_6",
+                "type": "group",
+                "layout": "row",
+                "sub_fields": [
+                    {
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "key": "field_kar_o6_title",
+                        "label": "Stanowisko",
+                        "name": "title",
+                        "type": "text",
+                        "default_value": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": ""
+                    },
+                    {
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "key": "field_kar_o6_salary",
+                        "label": "Wynagrodzenie \/ lokalizacja",
+                        "name": "salary",
+                        "type": "text",
+                        "default_value": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": ""
+                    },
+                    {
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "key": "field_kar_o6_cat",
+                        "label": "Kategoria",
+                        "name": "cat",
+                        "type": "text",
+                        "default_value": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": ""
+                    },
+                    {
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "key": "field_kar_o6_url",
+                        "label": "Link \"Aplikuj\"",
+                        "name": "url",
+                        "type": "text",
+                        "default_value": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": ""
+                    }
+                ]
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "key": "field_kar_tab_cv",
+                "label": "Formularz CV",
+                "name": "",
+                "type": "tab",
+                "placement": "top",
+                "endpoint": 0
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_kar_cv_title",
+                "label": "Tytuł",
+                "name": "kar_cv_title",
+                "type": "textarea",
+                "rows": 2,
+                "default_value": "Chcesz do nas dołączyć?\nZostaw swoje CV",
+                "placeholder": "",
+                "maxlength": "",
+                "new_lines": ""
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_kar_cv_rodo",
+                "label": "Treść RODO",
+                "name": "kar_cv_rodo",
+                "type": "textarea",
+                "rows": 3,
+                "default_value": "Wyrażam zgodę na przetwarzanie moich danych osobowych przez Meritoros SA w celu przeprowadzenia procesu rekrutacji, zgodnie z obowiązującymi przepisami o ochronie danych osobowych (RODO).",
+                "placeholder": "",
+                "maxlength": "",
+                "new_lines": ""
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_kar_cv_btn_text",
+                "label": "Tekst przycisku",
+                "name": "kar_cv_btn_text",
+                "type": "text",
+                "default_value": "Wyślij wiadomość",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_kar_cv_tag_text",
+                "label": "Tag na zdjęciu",
+                "name": "kar_cv_tag_text",
+                "type": "text",
+                "default_value": "Dołącz do nas!",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_kar_cv_form_action",
+                "label": "Form action URL (opcjonalnie)",
+                "name": "kar_cv_form_action",
+                "type": "text",
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_kar_cv_photo",
+                "label": "Zdjęcie",
+                "name": "kar_cv_photo",
+                "type": "image",
+                "return_format": "array",
+                "preview_size": "medium",
+                "library": "all",
+                "min_width": "",
+                "min_height": "",
+                "min_size": "",
+                "max_width": "",
+                "max_height": "",
+                "max_size": "",
+                "mime_types": ""
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "key": "field_kar_tab_rek",
+                "label": "Proces rekrutacji",
+                "name": "",
+                "type": "tab",
+                "placement": "top",
+                "endpoint": 0
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_kar_rek_title",
+                "label": "Tytuł",
+                "name": "kar_rek_title",
+                "type": "text",
+                "default_value": "Jak wygląda nasz proces rekrutacji",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_kar_rek_subtitle",
+                "label": "Podtytuł",
+                "name": "kar_rek_subtitle",
+                "type": "textarea",
+                "rows": 2,
+                "default_value": "Zależy nam na przejrzystości — dlatego chcemy, żebyś wiedział\/-a, czego się spodziewać na każdym etapie.",
+                "placeholder": "",
+                "maxlength": "",
+                "new_lines": ""
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_kar_rek_1",
+                "label": "Krok 1",
+                "name": "kar_rek_1",
+                "type": "group",
+                "layout": "row",
+                "sub_fields": [
+                    {
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "key": "field_kar_r1_icon",
+                        "label": "Ikona",
+                        "name": "icon",
+                        "type": "text",
+                        "default_value": "file-text",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": ""
+                    },
+                    {
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "key": "field_kar_r1_title",
+                        "label": "Tytuł",
+                        "name": "title",
+                        "type": "text",
+                        "default_value": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": ""
+                    },
+                    {
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "key": "field_kar_r1_text",
+                        "label": "Opis",
+                        "name": "text",
+                        "type": "textarea",
+                        "rows": 2,
+                        "default_value": "",
+                        "placeholder": "",
+                        "maxlength": "",
+                        "new_lines": ""
+                    }
+                ]
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_kar_rek_2",
+                "label": "Krok 2",
+                "name": "kar_rek_2",
+                "type": "group",
+                "layout": "row",
+                "sub_fields": [
+                    {
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "key": "field_kar_r2_icon",
+                        "label": "Ikona",
+                        "name": "icon",
+                        "type": "text",
+                        "default_value": "phone-call",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": ""
+                    },
+                    {
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "key": "field_kar_r2_title",
+                        "label": "Tytuł",
+                        "name": "title",
+                        "type": "text",
+                        "default_value": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": ""
+                    },
+                    {
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "key": "field_kar_r2_text",
+                        "label": "Opis",
+                        "name": "text",
+                        "type": "textarea",
+                        "rows": 2,
+                        "default_value": "",
+                        "placeholder": "",
+                        "maxlength": "",
+                        "new_lines": ""
+                    }
+                ]
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_kar_rek_3",
+                "label": "Krok 3",
+                "name": "kar_rek_3",
+                "type": "group",
+                "layout": "row",
+                "sub_fields": [
+                    {
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "key": "field_kar_r3_icon",
+                        "label": "Ikona",
+                        "name": "icon",
+                        "type": "text",
+                        "default_value": "video",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": ""
+                    },
+                    {
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "key": "field_kar_r3_title",
+                        "label": "Tytuł",
+                        "name": "title",
+                        "type": "text",
+                        "default_value": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": ""
+                    },
+                    {
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "key": "field_kar_r3_text",
+                        "label": "Opis",
+                        "name": "text",
+                        "type": "textarea",
+                        "rows": 2,
+                        "default_value": "",
+                        "placeholder": "",
+                        "maxlength": "",
+                        "new_lines": ""
+                    }
+                ]
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_kar_rek_4",
+                "label": "Krok 4",
+                "name": "kar_rek_4",
+                "type": "group",
+                "layout": "row",
+                "sub_fields": [
+                    {
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "key": "field_kar_r4_icon",
+                        "label": "Ikona",
+                        "name": "icon",
+                        "type": "text",
+                        "default_value": "clipboard-check",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": ""
+                    },
+                    {
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "key": "field_kar_r4_title",
+                        "label": "Tytuł",
+                        "name": "title",
+                        "type": "text",
+                        "default_value": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": ""
+                    },
+                    {
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "key": "field_kar_r4_text",
+                        "label": "Opis",
+                        "name": "text",
+                        "type": "textarea",
+                        "rows": 2,
+                        "default_value": "",
+                        "placeholder": "",
+                        "maxlength": "",
+                        "new_lines": ""
+                    }
+                ]
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "key": "field_kar_tab_opinie",
+                "label": "Opinie",
+                "name": "",
+                "type": "tab",
+                "placement": "top",
+                "endpoint": 0
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_kar_opinie_title",
+                "label": "Tytuł sekcji",
+                "name": "kar_opinie_title",
+                "type": "text",
+                "default_value": "Co mówią nasi pracownicy",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_kar_opinia_1",
+                "label": "Opinia 1",
+                "name": "kar_opinia_1",
+                "type": "group",
+                "layout": "row",
+                "sub_fields": [
+                    {
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "key": "field_kar_op1_quote",
+                        "label": "Cytat",
+                        "name": "quote",
+                        "type": "textarea",
+                        "rows": 3,
+                        "default_value": "",
+                        "placeholder": "",
+                        "maxlength": "",
+                        "new_lines": ""
+                    },
+                    {
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "key": "field_kar_op1_name",
+                        "label": "Imię",
+                        "name": "name",
+                        "type": "text",
+                        "default_value": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": ""
+                    },
+                    {
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "key": "field_kar_op1_role",
+                        "label": "Stanowisko",
+                        "name": "role",
+                        "type": "text",
+                        "default_value": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": ""
+                    },
+                    {
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "key": "field_kar_op1_photo",
+                        "label": "Zdjęcie",
+                        "name": "photo",
+                        "type": "image",
+                        "return_format": "array",
+                        "preview_size": "thumbnail",
+                        "library": "all",
+                        "min_width": "",
+                        "min_height": "",
+                        "min_size": "",
+                        "max_width": "",
+                        "max_height": "",
+                        "max_size": "",
+                        "mime_types": ""
+                    }
+                ]
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_kar_opinia_2",
+                "label": "Opinia 2",
+                "name": "kar_opinia_2",
+                "type": "group",
+                "layout": "row",
+                "sub_fields": [
+                    {
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "key": "field_kar_op2_quote",
+                        "label": "Cytat",
+                        "name": "quote",
+                        "type": "textarea",
+                        "rows": 3,
+                        "default_value": "",
+                        "placeholder": "",
+                        "maxlength": "",
+                        "new_lines": ""
+                    },
+                    {
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "key": "field_kar_op2_name",
+                        "label": "Imię",
+                        "name": "name",
+                        "type": "text",
+                        "default_value": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": ""
+                    },
+                    {
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "key": "field_kar_op2_role",
+                        "label": "Stanowisko",
+                        "name": "role",
+                        "type": "text",
+                        "default_value": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": ""
+                    },
+                    {
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "key": "field_kar_op2_photo",
+                        "label": "Zdjęcie",
+                        "name": "photo",
+                        "type": "image",
+                        "return_format": "array",
+                        "preview_size": "thumbnail",
+                        "library": "all",
+                        "min_width": "",
+                        "min_height": "",
+                        "min_size": "",
+                        "max_width": "",
+                        "max_height": "",
+                        "max_size": "",
+                        "mime_types": ""
+                    }
+                ]
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_kar_opinia_3",
+                "label": "Opinia 3",
+                "name": "kar_opinia_3",
+                "type": "group",
+                "layout": "row",
+                "sub_fields": [
+                    {
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "key": "field_kar_op3_quote",
+                        "label": "Cytat",
+                        "name": "quote",
+                        "type": "textarea",
+                        "rows": 3,
+                        "default_value": "",
+                        "placeholder": "",
+                        "maxlength": "",
+                        "new_lines": ""
+                    },
+                    {
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "key": "field_kar_op3_name",
+                        "label": "Imię",
+                        "name": "name",
+                        "type": "text",
+                        "default_value": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": ""
+                    },
+                    {
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "key": "field_kar_op3_role",
+                        "label": "Stanowisko",
+                        "name": "role",
+                        "type": "text",
+                        "default_value": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": ""
+                    },
+                    {
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "key": "field_kar_op3_photo",
+                        "label": "Zdjęcie",
+                        "name": "photo",
+                        "type": "image",
+                        "return_format": "array",
+                        "preview_size": "thumbnail",
+                        "library": "all",
+                        "min_width": "",
+                        "min_height": "",
+                        "min_size": "",
+                        "max_width": "",
+                        "max_height": "",
+                        "max_size": "",
+                        "mime_types": ""
+                    }
+                ]
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_kar_opinia_4",
+                "label": "Opinia 4",
+                "name": "kar_opinia_4",
+                "type": "group",
+                "layout": "row",
+                "sub_fields": [
+                    {
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "key": "field_kar_op4_quote",
+                        "label": "Cytat",
+                        "name": "quote",
+                        "type": "textarea",
+                        "rows": 3,
+                        "default_value": "",
+                        "placeholder": "",
+                        "maxlength": "",
+                        "new_lines": ""
+                    },
+                    {
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "key": "field_kar_op4_name",
+                        "label": "Imię",
+                        "name": "name",
+                        "type": "text",
+                        "default_value": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": ""
+                    },
+                    {
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "key": "field_kar_op4_role",
+                        "label": "Stanowisko",
+                        "name": "role",
+                        "type": "text",
+                        "default_value": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": ""
+                    },
+                    {
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "key": "field_kar_op4_photo",
+                        "label": "Zdjęcie",
+                        "name": "photo",
+                        "type": "image",
+                        "return_format": "array",
+                        "preview_size": "thumbnail",
+                        "library": "all",
+                        "min_width": "",
+                        "min_height": "",
+                        "min_size": "",
+                        "max_width": "",
+                        "max_height": "",
+                        "max_size": "",
+                        "mime_types": ""
+                    }
+                ]
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "key": "field_kar_tab_cult",
+                "label": "Culturebook",
+                "name": "",
+                "type": "tab",
+                "placement": "top",
+                "endpoint": 0
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_kar_cult_title",
+                "label": "Tytuł",
+                "name": "kar_cult_title",
+                "type": "text",
+                "default_value": "Poznaj nasz Culturebook",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_kar_cult_text1",
+                "label": "Akapit 1",
+                "name": "kar_cult_text1",
+                "type": "textarea",
+                "rows": 3,
+                "default_value": "Culturebook powstał po to, żebyśmy wszyscy w Meritoros w ten sam sposób rozumieli, kim jesteśmy, dokąd zmierzamy i jakie wartości są dla nas ważne. Opisuje naszą misję, sposób działania i standard współpracy – wewnątrz zespołu i z klientami.",
+                "placeholder": "",
+                "maxlength": "",
+                "new_lines": ""
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_kar_cult_text2",
+                "label": "Akapit 2 (pogrubiony)",
+                "name": "kar_cult_text2",
+                "type": "textarea",
+                "rows": 2,
+                "default_value": "Jeśli chcesz lepiej poznać nasz styl pracy, pobierz Culturebook i sprawdź, czy to podejście jest Ci bliskie",
+                "placeholder": "",
+                "maxlength": "",
+                "new_lines": ""
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_kar_cult_btn_text",
+                "label": "Tekst przycisku",
+                "name": "kar_cult_btn_text",
+                "type": "text",
+                "default_value": "Pobierz plik",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_kar_cult_btn_url",
+                "label": "Link do pliku",
+                "name": "kar_cult_btn_url",
+                "type": "text",
+                "default_value": "#",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_kar_cult_cover",
+                "label": "Okładka (ekran laptopa)",
+                "name": "kar_cult_cover",
+                "type": "image",
+                "return_format": "array",
+                "preview_size": "thumbnail",
+                "library": "all",
+                "min_width": "",
+                "min_height": "",
+                "min_size": "",
+                "max_width": "",
+                "max_height": "",
+                "max_size": "",
+                "mime_types": ""
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "key": "field_kar_tab_vid",
+                "label": "Wideo",
+                "name": "",
+                "type": "tab",
+                "placement": "top",
+                "endpoint": 0
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_kar_vid_title",
+                "label": "Tytuł",
+                "name": "kar_vid_title",
+                "type": "text",
+                "default_value": "Sprawdź jak się u nas pracuje",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_kar_vid_thumbnail",
+                "label": "Miniatura (thumb)",
+                "name": "kar_vid_thumbnail",
+                "type": "image",
+                "return_format": "array",
+                "preview_size": "medium",
+                "library": "all",
+                "min_width": "",
+                "min_height": "",
+                "min_size": "",
+                "max_width": "",
+                "max_height": "",
+                "max_size": "",
+                "mime_types": ""
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_kar_vid_file",
+                "label": "Plik wideo (mp4\/webm)",
+                "name": "kar_vid_file",
+                "type": "file",
+                "return_format": "array",
+                "mime_types": "mp4,webm",
+                "library": "all",
+                "min_size": "",
+                "max_size": ""
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_kar_vid_url",
+                "label": "URL wideo (YouTube\/Vimeo) – alternatywnie",
+                "name": "kar_vid_url",
+                "type": "text",
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "key": "field_kar_tab_pyt",
+                "label": "Kontakt HR",
+                "name": "",
+                "type": "tab",
+                "placement": "top",
+                "endpoint": 0
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_kar_pyt_title",
+                "label": "Tytuł",
+                "name": "kar_pyt_title",
+                "type": "text",
+                "default_value": "Masz pytania? Chętnie odpowiemy",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_kar_pyt_name",
+                "label": "Imię i nazwisko",
+                "name": "kar_pyt_name",
+                "type": "text",
+                "default_value": "Anna Kowalska",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_kar_pyt_role",
+                "label": "Stanowisko",
+                "name": "kar_pyt_role",
+                "type": "text",
+                "default_value": "Marketing manager",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_kar_pyt_phone",
+                "label": "Telefon (wyświetlany)",
+                "name": "kar_pyt_phone",
+                "type": "text",
+                "default_value": "(+48) 12 423 32 99",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_kar_pyt_btn_text",
+                "label": "Tekst przycisku",
+                "name": "kar_pyt_btn_text",
+                "type": "text",
+                "default_value": "Wyślij zapytanie",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_kar_pyt_btn_url",
+                "label": "Link przycisku",
+                "name": "kar_pyt_btn_url",
+                "type": "text",
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_kar_pyt_photo",
+                "label": "Zdjęcie osoby",
+                "name": "kar_pyt_photo",
+                "type": "image",
+                "return_format": "array",
+                "preview_size": "medium",
+                "library": "all",
+                "min_width": "",
+                "min_height": "",
+                "min_size": "",
+                "max_width": "",
+                "max_height": "",
+                "max_size": "",
+                "mime_types": ""
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "page_slug",
+                    "operator": "==",
+                    "value": "kariera"
+                }
+            ],
+            [
+                {
+                    "param": "page_template",
+                    "operator": "==",
+                    "value": "page-kariera.php"
+                }
+            ]
+        ]
+    }
+]

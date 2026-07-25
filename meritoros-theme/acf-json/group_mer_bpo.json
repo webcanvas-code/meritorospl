@@ -1,0 +1,2455 @@
+[
+    {
+        "menu_order": 0,
+        "position": "normal",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": "",
+        "active": true,
+        "description": "",
+        "show_in_rest": 0,
+        "modified": 1778755818,
+        "key": "group_mer_bpo",
+        "title": "💼 Strona BPO",
+        "fields": [
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "key": "field_bpo_tab_hero",
+                "label": "Hero",
+                "name": "",
+                "type": "tab",
+                "placement": "top",
+                "endpoint": 0
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_bpo_hero_title_normal",
+                "label": "Tytuł — czarna część",
+                "name": "bpo_hero_title_normal",
+                "type": "text",
+                "default_value": "Rozwiązania BPO",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_bpo_hero_title_green",
+                "label": "Tytuł — zielona część",
+                "name": "bpo_hero_title_green",
+                "type": "text",
+                "default_value": "dla większych organizacji",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_bpo_hero_subtitle",
+                "label": "Podtytuł",
+                "name": "bpo_hero_subtitle",
+                "type": "textarea",
+                "rows": 3,
+                "default_value": "Zapewniamy kompleksową obsługę kadrowo-płacową firm o różnej skali działalności.",
+                "placeholder": "",
+                "maxlength": "",
+                "new_lines": ""
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_bpo_hero_btn1_text",
+                "label": "Przycisk 1 — tekst",
+                "name": "bpo_hero_btn1_text",
+                "type": "text",
+                "default_value": "Poznaj ofertę",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_bpo_hero_btn1_url",
+                "label": "Przycisk 1 — link",
+                "name": "bpo_hero_btn1_url",
+                "type": "text",
+                "default_value": "#",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_bpo_hero_btn2_text",
+                "label": "Przycisk 2 — tekst",
+                "name": "bpo_hero_btn2_text",
+                "type": "text",
+                "default_value": "Porozmawiajmy",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_bpo_hero_btn2_url",
+                "label": "Przycisk 2 — link",
+                "name": "bpo_hero_btn2_url",
+                "type": "text",
+                "default_value": "\/kontakt\/",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_bpo_hero_logos_title",
+                "label": "Tekst nad logotypami",
+                "name": "bpo_hero_logos_title",
+                "type": "text",
+                "default_value": "Zaufało nam ponad 1200 klientów",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_bpo_hero_logo_1",
+                "label": "Logo klienta 1",
+                "name": "bpo_hero_logo_1",
+                "type": "image",
+                "return_format": "array",
+                "preview_size": "thumbnail",
+                "library": "all",
+                "min_width": "",
+                "min_height": "",
+                "min_size": "",
+                "max_width": "",
+                "max_height": "",
+                "max_size": "",
+                "mime_types": ""
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_bpo_hero_logo_2",
+                "label": "Logo klienta 2",
+                "name": "bpo_hero_logo_2",
+                "type": "image",
+                "return_format": "array",
+                "preview_size": "thumbnail",
+                "library": "all",
+                "min_width": "",
+                "min_height": "",
+                "min_size": "",
+                "max_width": "",
+                "max_height": "",
+                "max_size": "",
+                "mime_types": ""
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_bpo_hero_logo_3",
+                "label": "Logo klienta 3",
+                "name": "bpo_hero_logo_3",
+                "type": "image",
+                "return_format": "array",
+                "preview_size": "thumbnail",
+                "library": "all",
+                "min_width": "",
+                "min_height": "",
+                "min_size": "",
+                "max_width": "",
+                "max_height": "",
+                "max_size": "",
+                "mime_types": ""
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_bpo_hero_logo_4",
+                "label": "Logo klienta 4",
+                "name": "bpo_hero_logo_4",
+                "type": "image",
+                "return_format": "array",
+                "preview_size": "thumbnail",
+                "library": "all",
+                "min_width": "",
+                "min_height": "",
+                "min_size": "",
+                "max_width": "",
+                "max_height": "",
+                "max_size": "",
+                "mime_types": ""
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "key": "field_bpo_tab_info",
+                "label": "Info & Nagrody",
+                "name": "",
+                "type": "tab",
+                "placement": "top",
+                "endpoint": 0
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_bpo_info_title",
+                "label": "Tytuł sekcji",
+                "name": "bpo_info_title",
+                "type": "textarea",
+                "rows": 2,
+                "default_value": "Stabilne procesy. Rzetelne\ndane. Spokój zarządu.",
+                "placeholder": "",
+                "maxlength": "",
+                "new_lines": ""
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_bpo_info_text",
+                "label": "Opis",
+                "name": "bpo_info_text",
+                "type": "textarea",
+                "rows": 4,
+                "default_value": "",
+                "placeholder": "",
+                "maxlength": "",
+                "new_lines": ""
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_bpo_info_items",
+                "label": "Lista punktów (1 = 1 linia)",
+                "name": "bpo_info_items",
+                "type": "textarea",
+                "rows": 4,
+                "default_value": "raportowanie zarządcze i sprawozdawcze dopasowane do potrzeb organizacji\ncyfrowy obieg dokumentów i uporządkowane procesy\npełna zastępowalność i ciągłość obsługi oraz gotowość do skalowania",
+                "placeholder": "",
+                "maxlength": "",
+                "new_lines": ""
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_bpo_awards_title",
+                "label": "Nagrody — tytuł",
+                "name": "bpo_awards_title",
+                "type": "text",
+                "default_value": "Nagrody i wyróżnienia",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_bpo_awards_text",
+                "label": "Nagrody — opis",
+                "name": "bpo_awards_text",
+                "type": "textarea",
+                "rows": 2,
+                "default_value": "",
+                "placeholder": "",
+                "maxlength": "",
+                "new_lines": ""
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_bpo_awards_logo1",
+                "label": "Nagrody — Logo 1",
+                "name": "bpo_awards_logo1",
+                "type": "image",
+                "return_format": "array",
+                "preview_size": "thumbnail",
+                "library": "all",
+                "min_width": "",
+                "min_height": "",
+                "min_size": "",
+                "max_width": "",
+                "max_height": "",
+                "max_size": "",
+                "mime_types": ""
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_bpo_awards_logo2",
+                "label": "Nagrody — Logo 2",
+                "name": "bpo_awards_logo2",
+                "type": "image",
+                "return_format": "array",
+                "preview_size": "thumbnail",
+                "library": "all",
+                "min_width": "",
+                "min_height": "",
+                "min_size": "",
+                "max_width": "",
+                "max_height": "",
+                "max_size": "",
+                "mime_types": ""
+            },
+            {
+                "instructions": "Logo ISO 27001",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_bpo_stat1_image",
+                "label": "Karta 1 — Odznaka ISO",
+                "name": "bpo_stat1_image",
+                "type": "image",
+                "return_format": "array",
+                "preview_size": "thumbnail",
+                "library": "all",
+                "min_width": "",
+                "min_height": "",
+                "min_size": "",
+                "max_width": "",
+                "max_height": "",
+                "max_size": "",
+                "mime_types": ""
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_bpo_stat1_text",
+                "label": "Karta 1 — Tekst",
+                "name": "bpo_stat1_text",
+                "type": "text",
+                "default_value": "Bezpieczeństwo\ni compliance",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "instructions": "Logo ISO 9001",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_bpo_stat2_image",
+                "label": "Karta 2 — Odznaka ISO",
+                "name": "bpo_stat2_image",
+                "type": "image",
+                "return_format": "array",
+                "preview_size": "thumbnail",
+                "library": "all",
+                "min_width": "",
+                "min_height": "",
+                "min_size": "",
+                "max_width": "",
+                "max_height": "",
+                "max_size": "",
+                "mime_types": ""
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_bpo_stat2_text",
+                "label": "Karta 2 — Tekst",
+                "name": "bpo_stat2_text",
+                "type": "text",
+                "default_value": "Jakość potwierdzona\nstandardami",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_bpo_stat3_text",
+                "label": "Karta 3 — Tekst",
+                "name": "bpo_stat3_text",
+                "type": "text",
+                "default_value": "Ponad 170\nexpertów",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "key": "field_bpo_tab_obszary",
+                "label": "Obszary współpracy",
+                "name": "",
+                "type": "tab",
+                "placement": "top",
+                "endpoint": 0
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_bpo_areas_title",
+                "label": "Tytuł sekcji",
+                "name": "bpo_areas_title",
+                "type": "text",
+                "default_value": "Obszar współpracy",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_bpo_area1_title",
+                "label": "Karta 1 — Tytuł",
+                "name": "bpo_area1_title",
+                "type": "text",
+                "default_value": "Rozwiązania kadrowe",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_bpo_area1_image",
+                "label": "Karta 1 — Zdjęcie",
+                "name": "bpo_area1_image",
+                "type": "image",
+                "return_format": "array",
+                "preview_size": "medium",
+                "library": "all",
+                "min_width": "",
+                "min_height": "",
+                "min_size": "",
+                "max_width": "",
+                "max_height": "",
+                "max_size": "",
+                "mime_types": ""
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_bpo_area2_title",
+                "label": "Karta 2 — Tytuł",
+                "name": "bpo_area2_title",
+                "type": "text",
+                "default_value": "Rozwiązania księgowe",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_bpo_area2_image",
+                "label": "Karta 2 — Zdjęcie",
+                "name": "bpo_area2_image",
+                "type": "image",
+                "return_format": "array",
+                "preview_size": "medium",
+                "library": "all",
+                "min_width": "",
+                "min_height": "",
+                "min_size": "",
+                "max_width": "",
+                "max_height": "",
+                "max_size": "",
+                "mime_types": ""
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_bpo_area3_title",
+                "label": "Karta 3 — Tytuł",
+                "name": "bpo_area3_title",
+                "type": "text",
+                "default_value": "Transformacja cyfrowa",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_bpo_area3_image",
+                "label": "Karta 3 — Zdjęcie",
+                "name": "bpo_area3_image",
+                "type": "image",
+                "return_format": "array",
+                "preview_size": "medium",
+                "library": "all",
+                "min_width": "",
+                "min_height": "",
+                "min_size": "",
+                "max_width": "",
+                "max_height": "",
+                "max_size": "",
+                "mime_types": ""
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "key": "field_bpo_tab_kad",
+                "label": "BPO Kadrowe",
+                "name": "",
+                "type": "tab",
+                "placement": "top",
+                "endpoint": 0
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_bpo_kad_title",
+                "label": "Tytuł (zielony fragment)",
+                "name": "bpo_kad_title_suffix",
+                "type": "text",
+                "default_value": "Rozwiązania Kadrowe",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_bpo_kad_text",
+                "label": "Opis",
+                "name": "bpo_kad_text",
+                "type": "textarea",
+                "rows": 4,
+                "default_value": "",
+                "placeholder": "",
+                "maxlength": "",
+                "new_lines": ""
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_bpo_kad_items",
+                "label": "Usługi (1 linia = 1 kafelek)",
+                "name": "bpo_kad_items",
+                "type": "textarea",
+                "rows": 10,
+                "default_value": "",
+                "placeholder": "",
+                "maxlength": "",
+                "new_lines": ""
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_bpo_kad_btn1_text",
+                "label": "Przycisk 1 — tekst",
+                "name": "bpo_kad_btn1_text",
+                "type": "text",
+                "default_value": "Dlaczego BPO z nami",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_bpo_kad_btn1_url",
+                "label": "Przycisk 1 — link",
+                "name": "bpo_kad_btn1_url",
+                "type": "text",
+                "default_value": "#",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_bpo_kad_btn2_text",
+                "label": "Przycisk 2 — tekst",
+                "name": "bpo_kad_btn2_text",
+                "type": "text",
+                "default_value": "Sprawdź rozwiązania kadrowe",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_bpo_kad_btn2_url",
+                "label": "Przycisk 2 — link",
+                "name": "bpo_kad_btn2_url",
+                "type": "text",
+                "default_value": "\/kontakt\/",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "key": "field_bpo_tab_ks",
+                "label": "BPO Księgowe",
+                "name": "",
+                "type": "tab",
+                "placement": "top",
+                "endpoint": 0
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_bpo_ks_title",
+                "label": "Tytuł (zielony fragment)",
+                "name": "bpo_ks_title_suffix",
+                "type": "text",
+                "default_value": "Rozwiązania księgowe",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_bpo_ks_text",
+                "label": "Opis",
+                "name": "bpo_ks_text",
+                "type": "textarea",
+                "rows": 4,
+                "default_value": "",
+                "placeholder": "",
+                "maxlength": "",
+                "new_lines": ""
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_bpo_ks_items",
+                "label": "Usługi (1 linia = 1 kafelek)",
+                "name": "bpo_ks_items",
+                "type": "textarea",
+                "rows": 10,
+                "default_value": "",
+                "placeholder": "",
+                "maxlength": "",
+                "new_lines": ""
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_bpo_ks_btn_text",
+                "label": "Przycisk — tekst",
+                "name": "bpo_ks_btn_text",
+                "type": "text",
+                "default_value": "Dlaczego BPO z nami",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_bpo_ks_btn_url",
+                "label": "Przycisk — link",
+                "name": "bpo_ks_btn_url",
+                "type": "text",
+                "default_value": "#",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "key": "field_bpo_tab_cta",
+                "label": "CTA Baner",
+                "name": "",
+                "type": "tab",
+                "placement": "top",
+                "endpoint": 0
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_bpo_cta_title",
+                "label": "Tytuł banera",
+                "name": "bpo_cta_title",
+                "type": "textarea",
+                "rows": 2,
+                "default_value": "Porozmawiajmy o obsłudze księgowej dla Twojej firmy",
+                "placeholder": "",
+                "maxlength": "",
+                "new_lines": ""
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_bpo_cta_subtitle",
+                "label": "Podtytuł",
+                "name": "bpo_cta_subtitle",
+                "type": "text",
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_bpo_cta_btn_text",
+                "label": "Przycisk — tekst",
+                "name": "bpo_cta_btn_text",
+                "type": "text",
+                "default_value": "Umów się na rozmowę",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_bpo_cta_btn_url",
+                "label": "Przycisk — link",
+                "name": "bpo_cta_btn_url",
+                "type": "text",
+                "default_value": "\/kontakt\/",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "key": "field_bpo_tab_td",
+                "label": "Transformacja cyfrowa",
+                "name": "",
+                "type": "tab",
+                "placement": "top",
+                "endpoint": 0
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_bpo_td_title",
+                "label": "Tytuł",
+                "name": "bpo_td_title",
+                "type": "text",
+                "default_value": "Transformacja Cyfrowa",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_bpo_td_text",
+                "label": "Opis",
+                "name": "bpo_td_text",
+                "type": "textarea",
+                "rows": 4,
+                "default_value": "",
+                "placeholder": "",
+                "maxlength": "",
+                "new_lines": ""
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_bpo_td_bg",
+                "label": "Zdjęcie tła (ciemne)",
+                "name": "bpo_td_bg",
+                "type": "image",
+                "return_format": "array",
+                "preview_size": "medium",
+                "library": "all",
+                "min_width": "",
+                "min_height": "",
+                "min_size": "",
+                "max_width": "",
+                "max_height": "",
+                "max_size": "",
+                "mime_types": ""
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_bpo_td_items",
+                "label": "Lista punktów (1 linia = 1 pkt)",
+                "name": "bpo_td_items",
+                "type": "textarea",
+                "rows": 6,
+                "default_value": "Robotyzacja RPA\nE-teczki\nOptymalizacja procesów\nElektroniczny obieg dokumentów\nAutomatyzacja raportowania",
+                "placeholder": "",
+                "maxlength": "",
+                "new_lines": ""
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "key": "field_bpo_tab_dlaczego",
+                "label": "Dlaczego BPO",
+                "name": "",
+                "type": "tab",
+                "placement": "top",
+                "endpoint": 0
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_bpo_dlaczego_title",
+                "label": "Tytuł sekcji",
+                "name": "bpo_dlaczego_title",
+                "type": "text",
+                "default_value": "Dlaczego BPO z Meritoros?",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_bpo_d1",
+                "label": "Karta 1",
+                "name": "bpo_d1",
+                "type": "group",
+                "sub_fields": [
+                    {
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "key": "field_bpo_d1_icon",
+                        "label": "Ikona (Lucide)",
+                        "name": "icon",
+                        "type": "text",
+                        "default_value": "trending-up",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": ""
+                    },
+                    {
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "key": "field_bpo_d1_title",
+                        "label": "Tytuł",
+                        "name": "title",
+                        "type": "text",
+                        "default_value": "Efektywność kosztowa",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": ""
+                    },
+                    {
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "key": "field_bpo_d1_text",
+                        "label": "Opis",
+                        "name": "text",
+                        "type": "textarea",
+                        "rows": 3,
+                        "default_value": "",
+                        "placeholder": "",
+                        "maxlength": "",
+                        "new_lines": ""
+                    }
+                ],
+                "layout": "block"
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_bpo_d2",
+                "label": "Karta 2",
+                "name": "bpo_d2",
+                "type": "group",
+                "sub_fields": [
+                    {
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "key": "field_bpo_d2_icon",
+                        "label": "Ikona (Lucide)",
+                        "name": "icon",
+                        "type": "text",
+                        "default_value": "clock",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": ""
+                    },
+                    {
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "key": "field_bpo_d2_title",
+                        "label": "Tytuł",
+                        "name": "title",
+                        "type": "text",
+                        "default_value": "Uwolnienie czasu\ni usprawnienie procesów",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": ""
+                    },
+                    {
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "key": "field_bpo_d2_text",
+                        "label": "Opis",
+                        "name": "text",
+                        "type": "textarea",
+                        "rows": 3,
+                        "default_value": "",
+                        "placeholder": "",
+                        "maxlength": "",
+                        "new_lines": ""
+                    }
+                ],
+                "layout": "block"
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_bpo_d3",
+                "label": "Karta 3",
+                "name": "bpo_d3",
+                "type": "group",
+                "sub_fields": [
+                    {
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "key": "field_bpo_d3_icon",
+                        "label": "Ikona (Lucide)",
+                        "name": "icon",
+                        "type": "text",
+                        "default_value": "expand",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": ""
+                    },
+                    {
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "key": "field_bpo_d3_title",
+                        "label": "Tytuł",
+                        "name": "title",
+                        "type": "text",
+                        "default_value": "Elastyczność i skalowanie\noperacji",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": ""
+                    },
+                    {
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "key": "field_bpo_d3_text",
+                        "label": "Opis",
+                        "name": "text",
+                        "type": "textarea",
+                        "rows": 3,
+                        "default_value": "",
+                        "placeholder": "",
+                        "maxlength": "",
+                        "new_lines": ""
+                    }
+                ],
+                "layout": "block"
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "key": "field_bpo_tab_model",
+                "label": "Model współpracy",
+                "name": "",
+                "type": "tab",
+                "placement": "top",
+                "endpoint": 0
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_bpo_model_title",
+                "label": "Tytuł sekcji",
+                "name": "bpo_model_title",
+                "type": "text",
+                "default_value": "Model współpracy",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_bpo_model_subtitle",
+                "label": "Opis",
+                "name": "bpo_model_subtitle",
+                "type": "textarea",
+                "rows": 2,
+                "default_value": "",
+                "placeholder": "",
+                "maxlength": "",
+                "new_lines": ""
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_bpo_model1",
+                "label": "Karta 1 (biała)",
+                "name": "bpo_model1",
+                "type": "group",
+                "sub_fields": [
+                    {
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "key": "field_bpo_m1_icon",
+                        "label": "Ikona (Lucide)",
+                        "name": "icon",
+                        "type": "text",
+                        "default_value": "network",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": ""
+                    },
+                    {
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "key": "field_bpo_m1_title",
+                        "label": "Tytuł",
+                        "name": "title",
+                        "type": "text",
+                        "default_value": "Kompleksowa obsługa",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": ""
+                    },
+                    {
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "key": "field_bpo_m1_text",
+                        "label": "Opis (tył karty)",
+                        "name": "text",
+                        "type": "textarea",
+                        "rows": 3,
+                        "default_value": "",
+                        "placeholder": "",
+                        "maxlength": "",
+                        "new_lines": ""
+                    }
+                ],
+                "layout": "block"
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_bpo_model2",
+                "label": "Karta 2 (ze zdjęciem)",
+                "name": "bpo_model2",
+                "type": "group",
+                "sub_fields": [
+                    {
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "key": "field_bpo_m2_image",
+                        "label": "Zdjęcie tła",
+                        "name": "image",
+                        "type": "image",
+                        "return_format": "array",
+                        "preview_size": "medium",
+                        "library": "all",
+                        "min_width": "",
+                        "min_height": "",
+                        "min_size": "",
+                        "max_width": "",
+                        "max_height": "",
+                        "max_size": "",
+                        "mime_types": ""
+                    },
+                    {
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "key": "field_bpo_m2_title",
+                        "label": "Tytuł",
+                        "name": "title",
+                        "type": "textarea",
+                        "rows": 2,
+                        "default_value": "Outsourcing wybranych\nprocesów",
+                        "placeholder": "",
+                        "maxlength": "",
+                        "new_lines": ""
+                    },
+                    {
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "key": "field_bpo_m2_text",
+                        "label": "Opis (tył)",
+                        "name": "text",
+                        "type": "textarea",
+                        "rows": 3,
+                        "default_value": "",
+                        "placeholder": "",
+                        "maxlength": "",
+                        "new_lines": ""
+                    }
+                ],
+                "layout": "block"
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "key": "field_bpo_tab_wsp",
+                "label": "Jak wygląda współpraca",
+                "name": "",
+                "type": "tab",
+                "placement": "top",
+                "endpoint": 0
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_bpo_wsp_title",
+                "label": "Tytuł sekcji",
+                "name": "bpo_wsp_title",
+                "type": "text",
+                "default_value": "Jak wygląda bieżąca współpraca",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_bpo_wsp_btn_text",
+                "label": "Przycisk — tekst",
+                "name": "bpo_wsp_btn_text",
+                "type": "text",
+                "default_value": "Poznaj więcej historii",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_bpo_wsp_btn_url",
+                "label": "Przycisk — link",
+                "name": "bpo_wsp_btn_url",
+                "type": "text",
+                "default_value": "#",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_bpo_wsp_step_1",
+                "label": "Krok 01",
+                "name": "bpo_wsp_step_1",
+                "type": "group",
+                "sub_fields": [
+                    {
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "key": "field_bpo_wsp1_title",
+                        "label": "Tytuł",
+                        "name": "title",
+                        "type": "text",
+                        "default_value": "Indywidualna organizacja pracy",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": ""
+                    },
+                    {
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "key": "field_bpo_wsp1_lead",
+                        "label": "Intro",
+                        "name": "lead",
+                        "type": "text",
+                        "default_value": "W zależności od potrzeb możemy pracować:",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": ""
+                    },
+                    {
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "key": "field_bpo_wsp1_items",
+                        "label": "Punkty (1 linia = 1 pkt)",
+                        "name": "items",
+                        "type": "textarea",
+                        "rows": 3,
+                        "default_value": "na bieżąco – obsługując codzienne procesy\nw cyklach tygodniowych\nw innych ustalonych odstępach czasu",
+                        "placeholder": "",
+                        "maxlength": "",
+                        "new_lines": ""
+                    }
+                ],
+                "layout": "block"
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_bpo_wsp_step_2",
+                "label": "Krok 02",
+                "name": "bpo_wsp_step_2",
+                "type": "group",
+                "sub_fields": [
+                    {
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "key": "field_bpo_wsp2_title",
+                        "label": "Tytuł",
+                        "name": "title",
+                        "type": "text",
+                        "default_value": "Elastyczne zamknięcie miesiąca",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": ""
+                    },
+                    {
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "key": "field_bpo_wsp2_lead",
+                        "label": "Intro",
+                        "name": "lead",
+                        "type": "textarea",
+                        "rows": 2,
+                        "default_value": "",
+                        "placeholder": "",
+                        "maxlength": "",
+                        "new_lines": ""
+                    },
+                    {
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "key": "field_bpo_wsp2_items",
+                        "label": "Punkty (1 linia = 1 pkt)",
+                        "name": "items",
+                        "type": "textarea",
+                        "rows": 3,
+                        "default_value": "część firm potrzebuje raportów do 20. dnia miesiąca\ninne wymagają wyników już w 3. lub 4. dniu roboczym",
+                        "placeholder": "",
+                        "maxlength": "",
+                        "new_lines": ""
+                    }
+                ],
+                "layout": "block"
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_bpo_wsp_step_3",
+                "label": "Krok 03",
+                "name": "bpo_wsp_step_3",
+                "type": "group",
+                "sub_fields": [
+                    {
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "key": "field_bpo_wsp3_title",
+                        "label": "Tytuł",
+                        "name": "title",
+                        "type": "text",
+                        "default_value": "Zakres i częstotliwość raportowania ustalamy indywidualnie.",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": ""
+                    },
+                    {
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "key": "field_bpo_wsp3_lead",
+                        "label": "Intro",
+                        "name": "lead",
+                        "type": "text",
+                        "default_value": "W standardzie klient otrzymuje:",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": ""
+                    },
+                    {
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "key": "field_bpo_wsp3_items",
+                        "label": "Punkty (1 linia = 1 pkt)",
+                        "name": "items",
+                        "type": "textarea",
+                        "rows": 3,
+                        "default_value": "rachunek zysków i strat\nbilans\nzestawienie należności i zobowiązań",
+                        "placeholder": "",
+                        "maxlength": "",
+                        "new_lines": ""
+                    }
+                ],
+                "layout": "block"
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "key": "field_bpo_tab_hist",
+                "label": "Historie klientów",
+                "name": "",
+                "type": "tab",
+                "placement": "top",
+                "endpoint": 0
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_bpo_hist_title",
+                "label": "Tytuł sekcji",
+                "name": "bpo_hist_title",
+                "type": "text",
+                "default_value": "Historie naszych klientów",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_bpo_hist_btn_text",
+                "label": "Przycisk — tekst",
+                "name": "bpo_hist_btn_text",
+                "type": "text",
+                "default_value": "Poznaj więcej historii",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_bpo_hist_btn_url",
+                "label": "Przycisk — link",
+                "name": "bpo_hist_btn_url",
+                "type": "text",
+                "default_value": "#",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_bpo_hist_1",
+                "label": "Slajd 1",
+                "name": "bpo_hist_1",
+                "type": "group",
+                "sub_fields": [
+                    {
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "key": "field_bpo_h1_logo",
+                        "label": "Logo firmy",
+                        "name": "logo",
+                        "type": "image",
+                        "return_format": "array",
+                        "preview_size": "thumbnail",
+                        "library": "all",
+                        "min_width": "",
+                        "min_height": "",
+                        "min_size": "",
+                        "max_width": "",
+                        "max_height": "",
+                        "max_size": "",
+                        "mime_types": ""
+                    },
+                    {
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "key": "field_bpo_h1_industries",
+                        "label": "Branże (1 linia = 1 tag)",
+                        "name": "industries",
+                        "type": "textarea",
+                        "rows": 2,
+                        "default_value": "",
+                        "placeholder": "",
+                        "maxlength": "",
+                        "new_lines": ""
+                    },
+                    {
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "key": "field_bpo_h1_scope",
+                        "label": "Zakres współpracy",
+                        "name": "scope",
+                        "type": "textarea",
+                        "rows": 2,
+                        "default_value": "",
+                        "placeholder": "",
+                        "maxlength": "",
+                        "new_lines": ""
+                    },
+                    {
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "key": "field_bpo_h1_text",
+                        "label": "Opis sytuacji",
+                        "name": "text",
+                        "type": "textarea",
+                        "rows": 3,
+                        "default_value": "",
+                        "placeholder": "",
+                        "maxlength": "",
+                        "new_lines": ""
+                    },
+                    {
+                        "instructions": "Wgraj plik wideo. Ma pierwszeństwo przed linkiem YouTube\/Vimeo.",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "key": "field_bpo_h1_video_file",
+                        "label": "Wideo — własny plik (mp4\/webm)",
+                        "name": "video_file",
+                        "type": "file",
+                        "return_format": "array",
+                        "mime_types": "mp4,webm,mov",
+                        "library": "all",
+                        "min_size": "",
+                        "max_size": ""
+                    },
+                    {
+                        "instructions": "Używane gdy nie wgrano pliku. Np. https:\/\/www.youtube.com\/watch?v=...",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "key": "field_bpo_h1_video_url",
+                        "label": "Wideo — link YouTube \/ Vimeo",
+                        "name": "video_url",
+                        "type": "text",
+                        "placeholder": "https:\/\/www.youtube.com\/watch?v=",
+                        "default_value": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": ""
+                    },
+                    {
+                        "instructions": "Jeśli puste — dla YouTube pobierany jest automatyczny podgląd z URL wideo.",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "key": "field_bpo_h1_image",
+                        "label": "Miniatura (opcjonalna)",
+                        "name": "image",
+                        "type": "image",
+                        "return_format": "array",
+                        "preview_size": "medium",
+                        "library": "all",
+                        "min_width": "",
+                        "min_height": "",
+                        "min_size": "",
+                        "max_width": "",
+                        "max_height": "",
+                        "max_size": "",
+                        "mime_types": ""
+                    },
+                    {
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "key": "field_bpo_h1_url",
+                        "label": "Link do historii (przycisk)",
+                        "name": "url",
+                        "type": "text",
+                        "default_value": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": ""
+                    }
+                ],
+                "layout": "block"
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_bpo_hist_2",
+                "label": "Slajd 2",
+                "name": "bpo_hist_2",
+                "type": "group",
+                "sub_fields": [
+                    {
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "key": "field_bpo_h2_logo",
+                        "label": "Logo firmy",
+                        "name": "logo",
+                        "type": "image",
+                        "return_format": "array",
+                        "preview_size": "thumbnail",
+                        "library": "all",
+                        "min_width": "",
+                        "min_height": "",
+                        "min_size": "",
+                        "max_width": "",
+                        "max_height": "",
+                        "max_size": "",
+                        "mime_types": ""
+                    },
+                    {
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "key": "field_bpo_h2_industries",
+                        "label": "Branże (1 linia = 1 tag)",
+                        "name": "industries",
+                        "type": "textarea",
+                        "rows": 2,
+                        "default_value": "",
+                        "placeholder": "",
+                        "maxlength": "",
+                        "new_lines": ""
+                    },
+                    {
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "key": "field_bpo_h2_scope",
+                        "label": "Zakres współpracy",
+                        "name": "scope",
+                        "type": "textarea",
+                        "rows": 2,
+                        "default_value": "",
+                        "placeholder": "",
+                        "maxlength": "",
+                        "new_lines": ""
+                    },
+                    {
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "key": "field_bpo_h2_text",
+                        "label": "Opis sytuacji",
+                        "name": "text",
+                        "type": "textarea",
+                        "rows": 3,
+                        "default_value": "",
+                        "placeholder": "",
+                        "maxlength": "",
+                        "new_lines": ""
+                    },
+                    {
+                        "instructions": "Wgraj plik wideo. Ma pierwszeństwo przed linkiem YouTube\/Vimeo.",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "key": "field_bpo_h2_video_file",
+                        "label": "Wideo — własny plik (mp4\/webm)",
+                        "name": "video_file",
+                        "type": "file",
+                        "return_format": "array",
+                        "mime_types": "mp4,webm,mov",
+                        "library": "all",
+                        "min_size": "",
+                        "max_size": ""
+                    },
+                    {
+                        "instructions": "Używane gdy nie wgrano pliku. Np. https:\/\/www.youtube.com\/watch?v=...",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "key": "field_bpo_h2_video_url",
+                        "label": "Wideo — link YouTube \/ Vimeo",
+                        "name": "video_url",
+                        "type": "text",
+                        "placeholder": "https:\/\/www.youtube.com\/watch?v=",
+                        "default_value": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": ""
+                    },
+                    {
+                        "instructions": "Jeśli puste — dla YouTube pobierany jest automatyczny podgląd z URL wideo.",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "key": "field_bpo_h2_image",
+                        "label": "Miniatura (opcjonalna)",
+                        "name": "image",
+                        "type": "image",
+                        "return_format": "array",
+                        "preview_size": "medium",
+                        "library": "all",
+                        "min_width": "",
+                        "min_height": "",
+                        "min_size": "",
+                        "max_width": "",
+                        "max_height": "",
+                        "max_size": "",
+                        "mime_types": ""
+                    },
+                    {
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "key": "field_bpo_h2_url",
+                        "label": "Link do historii (przycisk)",
+                        "name": "url",
+                        "type": "text",
+                        "default_value": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": ""
+                    }
+                ],
+                "layout": "block"
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "key": "field_bpo_tab_sys",
+                "label": "Systemy ERP",
+                "name": "",
+                "type": "tab",
+                "placement": "top",
+                "endpoint": 0
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_bpo_sys_title",
+                "label": "Tytuł sekcji",
+                "name": "bpo_sys_title",
+                "type": "textarea",
+                "rows": 2,
+                "default_value": "Obsługa wielu systemów\nksięgowych",
+                "placeholder": "",
+                "maxlength": "",
+                "new_lines": ""
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_bpo_sys_text",
+                "label": "Opis",
+                "name": "bpo_sys_text",
+                "type": "textarea",
+                "rows": 2,
+                "default_value": "",
+                "placeholder": "",
+                "maxlength": "",
+                "new_lines": ""
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_bpo_sys_logo1",
+                "label": "Logo systemu 1",
+                "name": "bpo_sys_logo1",
+                "type": "image",
+                "return_format": "array",
+                "preview_size": "thumbnail",
+                "library": "all",
+                "min_width": "",
+                "min_height": "",
+                "min_size": "",
+                "max_width": "",
+                "max_height": "",
+                "max_size": "",
+                "mime_types": ""
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_bpo_sys_logo2",
+                "label": "Logo systemu 2",
+                "name": "bpo_sys_logo2",
+                "type": "image",
+                "return_format": "array",
+                "preview_size": "thumbnail",
+                "library": "all",
+                "min_width": "",
+                "min_height": "",
+                "min_size": "",
+                "max_width": "",
+                "max_height": "",
+                "max_size": "",
+                "mime_types": ""
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_bpo_sys_logo3",
+                "label": "Logo systemu 3",
+                "name": "bpo_sys_logo3",
+                "type": "image",
+                "return_format": "array",
+                "preview_size": "thumbnail",
+                "library": "all",
+                "min_width": "",
+                "min_height": "",
+                "min_size": "",
+                "max_width": "",
+                "max_height": "",
+                "max_size": "",
+                "mime_types": ""
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_bpo_sys_logo4",
+                "label": "Logo systemu 4",
+                "name": "bpo_sys_logo4",
+                "type": "image",
+                "return_format": "array",
+                "preview_size": "thumbnail",
+                "library": "all",
+                "min_width": "",
+                "min_height": "",
+                "min_size": "",
+                "max_width": "",
+                "max_height": "",
+                "max_size": "",
+                "mime_types": ""
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "page_slug",
+                    "operator": "==",
+                    "value": "bpo"
+                }
+            ],
+            [
+                {
+                    "param": "page_template",
+                    "operator": "==",
+                    "value": "page-bpo.php"
+                }
+            ]
+        ]
+    }
+]

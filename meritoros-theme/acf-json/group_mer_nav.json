@@ -1,0 +1,148 @@
+[
+    {
+        "menu_order": 0,
+        "position": "normal",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": "",
+        "active": true,
+        "description": "",
+        "show_in_rest": 0,
+        "key": "group_mer_nav",
+        "title": "🧭 Nawigacja",
+        "fields": [
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": { "width": "", "class": "", "id": "" },
+                "key": "field_mer_nav_cta_text",
+                "label": "Tekst przycisku CTA",
+                "name": "nav_cta_text",
+                "type": "text",
+                "default_value": "Umów rozmowę",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": { "width": "", "class": "", "id": "" },
+                "key": "field_mer_nav_cta_url",
+                "label": "Link przycisku CTA",
+                "name": "nav_cta_url",
+                "type": "text",
+                "default_value": "#kontakt",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "instructions": "Każdy element może mieć opcjonalne linki w dropdown. Jeśli dodasz linki — pojawi się strzałka i rozwijane menu. Jeśli pole zostanie puste — pozycja będzie zwykłym linkiem.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": { "width": "", "class": "", "id": "" },
+                "key": "field_mer_nav_items",
+                "label": "Elementy menu",
+                "name": "nav_items",
+                "type": "repeater",
+                "button_label": "Dodaj pozycję menu",
+                "layout": "block",
+                "min": 0,
+                "max": 0,
+                "sub_fields": [
+                    {
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": { "width": "50", "class": "", "id": "" },
+                        "key": "field_mer_nav_item_label",
+                        "label": "Etykieta",
+                        "name": "label",
+                        "type": "text",
+                        "default_value": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": ""
+                    },
+                    {
+                        "instructions": "Uzupełnij jeśli pozycja ma być bezpośrednim linkiem (bez dropdown).",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": { "width": "50", "class": "", "id": "" },
+                        "key": "field_mer_nav_item_url",
+                        "label": "Link (opcjonalnie)",
+                        "name": "url",
+                        "type": "text",
+                        "default_value": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": ""
+                    },
+                    {
+                        "instructions": "Dodaj linki żeby pozycja stała się dropdownem. Zostaw puste jeśli to zwykły link.",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": { "width": "", "class": "", "id": "" },
+                        "key": "field_mer_nav_item_dropdown",
+                        "label": "Linki w dropdown",
+                        "name": "dropdown_links",
+                        "type": "repeater",
+                        "button_label": "Dodaj link",
+                        "layout": "table",
+                        "min": 0,
+                        "max": 0,
+                        "sub_fields": [
+                            {
+                                "instructions": "",
+                                "required": 0,
+                                "conditional_logic": 0,
+                                "wrapper": { "width": "50", "class": "", "id": "" },
+                                "key": "field_mer_nav_dd_label",
+                                "label": "Etykieta",
+                                "name": "label",
+                                "type": "text",
+                                "default_value": "",
+                                "placeholder": "",
+                                "prepend": "",
+                                "append": "",
+                                "maxlength": ""
+                            },
+                            {
+                                "instructions": "",
+                                "required": 0,
+                                "conditional_logic": 0,
+                                "wrapper": { "width": "50", "class": "", "id": "" },
+                                "key": "field_mer_nav_dd_url",
+                                "label": "Link",
+                                "name": "url",
+                                "type": "text",
+                                "default_value": "",
+                                "placeholder": "",
+                                "prepend": "",
+                                "append": "",
+                                "maxlength": ""
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "page_type",
+                    "operator": "==",
+                    "value": "front_page"
+                }
+            ]
+        ]
+    }
+]

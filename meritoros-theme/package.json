@@ -1,0 +1,12 @@
+{
+  "name": "meritoros-theme",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "build": "tailwindcss -i ./assets/css/tailwind.css -o ./assets/css/tailwind.build.css --minify",
+    "watch": "tailwindcss -i ./assets/css/tailwind.css -o ./assets/css/tailwind.build.css --watch"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.4.0"
+  }
+}

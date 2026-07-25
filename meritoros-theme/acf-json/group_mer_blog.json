@@ -1,0 +1,103 @@
+[
+    {
+        "menu_order": 70,
+        "position": "normal",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": "",
+        "active": true,
+        "description": "",
+        "show_in_rest": 0,
+        "modified": 1778755818,
+        "key": "group_mer_blog",
+        "title": "📝 Blog (sekcja główna)",
+        "fields": [
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_mer_blog_label",
+                "label": "Etykieta sekcji",
+                "name": "blog_label",
+                "type": "text",
+                "default_value": "Wiedza i aktualności",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_mer_blog_title",
+                "label": "Tytuł sekcji",
+                "name": "blog_title",
+                "type": "text",
+                "default_value": "Blog",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_mer_blog_link_text",
+                "label": "Link — tekst",
+                "name": "blog_link_text",
+                "type": "text",
+                "default_value": "Wszystkie wpisy",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_mer_blog_link_url",
+                "label": "Link — adres",
+                "name": "blog_link_url",
+                "type": "text",
+                "default_value": "\/blog",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "page_type",
+                    "operator": "==",
+                    "value": "front_page"
+                }
+            ]
+        ]
+    }
+]

@@ -1,0 +1,2253 @@
+[
+    {
+        "menu_order": 10,
+        "position": "normal",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": "",
+        "active": true,
+        "description": "",
+        "show_in_rest": 0,
+        "modified": 1778755818,
+        "key": "group_mer_uk",
+        "title": "📒 Usługi księgowe",
+        "fields": [
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "key": "field_uk_tab_hero",
+                "label": "Hero",
+                "name": "",
+                "type": "tab",
+                "placement": "top",
+                "endpoint": 0
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_uk_hero_title_before",
+                "label": "Nagłówek — przed zieloną częścią",
+                "name": "uk_hero_title_before",
+                "type": "text",
+                "default_value": "Rozwiązania księgowe dla firm, które",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_uk_hero_title_green",
+                "label": "Nagłówek — zielona część",
+                "name": "uk_hero_title_green",
+                "type": "text",
+                "default_value": "chcą mieć porządek",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_uk_hero_title_after",
+                "label": "Nagłówek — po zielonej części",
+                "name": "uk_hero_title_after",
+                "type": "text",
+                "default_value": "i spokój w biznesie",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_uk_hero_subtitle",
+                "label": "Podtytuł",
+                "name": "uk_hero_subtitle",
+                "type": "textarea",
+                "rows": 3,
+                "default_value": "Zapewniamy kompleksową obsługę księgową firm o różnej skali działalności. Przejmujemy odpowiedzialność za poprawność, terminowość i ciągłość procesów księgowych, aby nasi klienci mogli skupić się na prowadzeniu i rozwoju biznesu.",
+                "placeholder": "",
+                "maxlength": "",
+                "new_lines": ""
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_uk_hero_btn1_text",
+                "label": "Przycisk 1 — tekst",
+                "name": "uk_hero_btn1_text",
+                "type": "text",
+                "default_value": "Poznaj ofertę",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_uk_hero_btn1_url",
+                "label": "Przycisk 1 — link",
+                "name": "uk_hero_btn1_url",
+                "type": "text",
+                "default_value": "#oferta",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_uk_hero_btn2_text",
+                "label": "Przycisk 2 — tekst",
+                "name": "uk_hero_btn2_text",
+                "type": "text",
+                "default_value": "Porozmawiajmy",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_uk_hero_btn2_url",
+                "label": "Przycisk 2 — link",
+                "name": "uk_hero_btn2_url",
+                "type": "text",
+                "default_value": "\/kontakt\/",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "key": "field_uk_tab_ks",
+                "label": "Twoja księgowość",
+                "name": "",
+                "type": "tab",
+                "placement": "top",
+                "endpoint": 0
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_uk_ks_title1",
+                "label": "Nagłówek — linia 1",
+                "name": "uk_ks_title1",
+                "type": "text",
+                "default_value": "Twoja księgowość",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_uk_ks_title2",
+                "label": "Nagłówek — linia 2 (przed zielonym)",
+                "name": "uk_ks_title2",
+                "type": "text",
+                "default_value": "w",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_uk_ks_title_green",
+                "label": "Nagłówek — zielona część",
+                "name": "uk_ks_title_green",
+                "type": "text",
+                "default_value": "dobrych rękach",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_uk_ks_text1",
+                "label": "Akapit 1",
+                "name": "uk_ks_text1",
+                "type": "textarea",
+                "rows": 4,
+                "default_value": "Oferujemy kompleksową obsługę księgową działalności i spółek zarówno w zakresie prowadzenia pełnych ksiąg rachunkowych, jak i uproszczonych form ewidencji. Klienci mogą powierzyć nam całość procesów księgowych lub wybrane obszary wymagające wsparcia.",
+                "placeholder": "",
+                "maxlength": "",
+                "new_lines": ""
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_uk_ks_text2",
+                "label": "Akapit 2 (pogrubiony)",
+                "name": "uk_ks_text2",
+                "type": "textarea",
+                "rows": 2,
+                "default_value": "Zakres współpracy dopasowujemy do skali działalności i stopnia złożoności operacji finansowych.",
+                "placeholder": "",
+                "maxlength": "",
+                "new_lines": ""
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_uk_ks_btn_text",
+                "label": "Przycisk — tekst",
+                "name": "uk_ks_btn_text",
+                "type": "text",
+                "default_value": "Sprawdź jak wygląda współpraca",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_uk_ks_btn_url",
+                "label": "Przycisk — link",
+                "name": "uk_ks_btn_url",
+                "type": "text",
+                "default_value": "\/kontakt\/",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_uk_ks_image",
+                "label": "Zdjęcie",
+                "name": "uk_ks_image",
+                "type": "image",
+                "return_format": "array",
+                "preview_size": "medium",
+                "library": "all",
+                "min_width": "",
+                "min_height": "",
+                "min_size": "",
+                "max_width": "",
+                "max_height": "",
+                "max_size": "",
+                "mime_types": ""
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "key": "field_uk_tab_oferta",
+                "label": "Oferta",
+                "name": "",
+                "type": "tab",
+                "placement": "top",
+                "endpoint": 0
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_uk_oferta_title",
+                "label": "Tytuł",
+                "name": "uk_oferta_title",
+                "type": "text",
+                "default_value": "Oferta rozwiązań księgowych",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_uk_oferta_sub_pre1",
+                "label": "Podtytuł — część 1",
+                "name": "uk_oferta_sub_pre1",
+                "type": "text",
+                "default_value": "Obsługujemy firmy na różnych formach rozliczeń zarówno w",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_uk_oferta_sub_green1",
+                "label": "Podtytuł — zielona część 1",
+                "name": "uk_oferta_sub_green1",
+                "type": "text",
+                "default_value": "pełnej księgowości (spółki)",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_uk_oferta_sub_pre2",
+                "label": "Podtytuł — część 2",
+                "name": "uk_oferta_sub_pre2",
+                "type": "text",
+                "default_value": ", jak i w",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_uk_oferta_sub_green2",
+                "label": "Podtytuł — zielona część 2",
+                "name": "uk_oferta_sub_green2",
+                "type": "text",
+                "default_value": "uproszczonych formach ewidencji (np. KPiR)",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_uk_oferta_sub_note",
+                "label": "Drobny tekst pod podtytułem",
+                "name": "uk_oferta_sub_note",
+                "type": "text",
+                "default_value": "Poniżej pokazujemy przykładowy zakres działań. Jeśli potrzebujesz innej usługi chętnie porozmawiamy.",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "instructions": "Każda linia to oddzielny kafelek w siatce 3-kolumnowej.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_uk_oferta_items",
+                "label": "Elementy listy (1 linia = 1 kafelek)",
+                "name": "uk_oferta_items",
+                "type": "textarea",
+                "rows": 10,
+                "default_value": "Prowadzenie ksiąg rachunkowych\nObliczanie podatków i składanie deklaracji podatkowych\nBieżące rozliczanie wyciągów i kontrolowanie rozrachunków\nRaportowanie zarządcze i sprawozdawcze\nRaportowanie do instytucji publicznych\nSporządzanie sprawozdań finansowych oraz deklaracji rocznych\nReprezentowanie podczas kontroli i czynności sprawdzających\nObsługa niestandardowych rozliczeń\nAsystowanie i wsparcie podczas audytu",
+                "placeholder": "",
+                "maxlength": "",
+                "new_lines": ""
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_uk_oferta_btn1_text",
+                "label": "Przycisk 1 — tekst",
+                "name": "uk_oferta_btn1_text",
+                "type": "text",
+                "default_value": "Sprawdź również rozwiązania kadrowe",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_uk_oferta_btn1_url",
+                "label": "Przycisk 1 — link",
+                "name": "uk_oferta_btn1_url",
+                "type": "text",
+                "default_value": "\/kadry-i-place\/",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_uk_oferta_btn2_text",
+                "label": "Przycisk 2 — tekst",
+                "name": "uk_oferta_btn2_text",
+                "type": "text",
+                "default_value": "Oszacuj wstępną wycenę",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_uk_oferta_btn2_url",
+                "label": "Przycisk 2 — link",
+                "name": "uk_oferta_btn2_url",
+                "type": "text",
+                "default_value": "\/kontakt\/",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "key": "field_uk_tab_cta",
+                "label": "CTA Banner",
+                "name": "",
+                "type": "tab",
+                "placement": "top",
+                "endpoint": 0
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_uk_cta_title",
+                "label": "Tytuł",
+                "name": "uk_cta_title",
+                "type": "textarea",
+                "rows": 2,
+                "default_value": "Porozmawiajmy o obsłudze księgowej dla Twojej firmy",
+                "placeholder": "",
+                "maxlength": "",
+                "new_lines": ""
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_uk_cta_text",
+                "label": "Tekst",
+                "name": "uk_cta_text",
+                "type": "text",
+                "default_value": "Skontaktuj się z nami i dowiedz się, jak możemy wesprzeć Twoją firmę.",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_uk_cta_btn_text",
+                "label": "Przycisk — tekst",
+                "name": "uk_cta_btn_text",
+                "type": "text",
+                "default_value": "Umów się na rozmowę",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_uk_cta_btn_url",
+                "label": "Przycisk — link",
+                "name": "uk_cta_btn_url",
+                "type": "text",
+                "default_value": "\/kontakt\/",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "key": "field_uk_tab_model",
+                "label": "Model współpracy",
+                "name": "",
+                "type": "tab",
+                "placement": "top",
+                "endpoint": 0
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_uk_model_title",
+                "label": "Tytuł",
+                "name": "uk_model_title",
+                "type": "text",
+                "default_value": "Model współpracy",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_uk_model_subtitle",
+                "label": "Podtytuł",
+                "name": "uk_model_subtitle",
+                "type": "textarea",
+                "rows": 2,
+                "default_value": "Możesz powierzyć nam całość procesów księgowych lub wybrane obszary wymagające uporządkowania. Dopasowujemy zakres wsparcia do realnej sytuacji Twojej firmy.",
+                "placeholder": "",
+                "maxlength": "",
+                "new_lines": ""
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_uk_model1",
+                "label": "Karta 1 — Kompleksowa obsługa",
+                "name": "uk_model1",
+                "type": "group",
+                "layout": "table",
+                "sub_fields": [
+                    {
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "key": "field_uk_model1_icon",
+                        "label": "Ikona (lucide)",
+                        "name": "icon",
+                        "type": "text",
+                        "default_value": "network",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": ""
+                    },
+                    {
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "key": "field_uk_model1_title",
+                        "label": "Tytuł",
+                        "name": "title",
+                        "type": "text",
+                        "default_value": "Kompleksowa obsługa",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": ""
+                    },
+                    {
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "key": "field_uk_model1_text",
+                        "label": "Opis (tył)",
+                        "name": "text",
+                        "type": "textarea",
+                        "rows": 3,
+                        "default_value": "Obsługujemy proces end-to-end: od bieżącej ewidencji po zamknięcie miesiąca i raporty. Pracujesz z zespołem, który zapewnia zastępowalność i stały standard.",
+                        "placeholder": "",
+                        "maxlength": "",
+                        "new_lines": ""
+                    }
+                ]
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_uk_model2",
+                "label": "Karta 2 — Outsourcing",
+                "name": "uk_model2",
+                "type": "group",
+                "layout": "table",
+                "sub_fields": [
+                    {
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "key": "field_uk_model2_image",
+                        "label": "Zdjęcie tła",
+                        "name": "image",
+                        "type": "image",
+                        "return_format": "array",
+                        "preview_size": "medium",
+                        "library": "all",
+                        "min_width": "",
+                        "min_height": "",
+                        "min_size": "",
+                        "max_width": "",
+                        "max_height": "",
+                        "max_size": "",
+                        "mime_types": ""
+                    },
+                    {
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "key": "field_uk_model2_title",
+                        "label": "Tytuł",
+                        "name": "title",
+                        "type": "text",
+                        "default_value": "Outsourcing wybranych\nprocesów",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": ""
+                    },
+                    {
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "key": "field_uk_model2_text",
+                        "label": "Opis (tył)",
+                        "name": "text",
+                        "type": "textarea",
+                        "rows": 3,
+                        "default_value": "Przejmujemy konkretne procesy i dowozimy je w ustalonym standardzie i harmonogramie. To rozwiązanie dla firm, które chcą wzmocnić wewnętrzny dział finansów bez rozbudowy etatów.",
+                        "placeholder": "",
+                        "maxlength": "",
+                        "new_lines": ""
+                    }
+                ]
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "key": "field_uk_tab_wsp",
+                "label": "Jak wygląda współpraca",
+                "name": "",
+                "type": "tab",
+                "placement": "top",
+                "endpoint": 0
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_uk_wsp_title",
+                "label": "Tytuł sekcji",
+                "name": "uk_wsp_title",
+                "type": "text",
+                "default_value": "Jak wygląda bieżąca współpraca",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_uk_wsp_step1",
+                "label": "Krok 01",
+                "name": "uk_wsp_step1",
+                "type": "group",
+                "layout": "block",
+                "sub_fields": [
+                    {
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "key": "field_uk_wsp_s1_title",
+                        "label": "Tytuł",
+                        "name": "title",
+                        "type": "text",
+                        "default_value": "Indywidualna organizacja pracy",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": ""
+                    },
+                    {
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "key": "field_uk_wsp_s1_lead",
+                        "label": "Tekst wprowadzający",
+                        "name": "lead",
+                        "type": "text",
+                        "default_value": "W zależności od potrzeb możemy pracować:",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": ""
+                    },
+                    {
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "key": "field_uk_wsp_s1_items",
+                        "label": "Punkty (1 linia = 1 punkt)",
+                        "name": "items",
+                        "type": "textarea",
+                        "rows": 4,
+                        "default_value": "na bieżąco – obsługując codzienne procesy księgowe lub kadrowe\nw cyklach tygodniowych\nw innych ustalonych odstępach czasu",
+                        "placeholder": "",
+                        "maxlength": "",
+                        "new_lines": ""
+                    }
+                ]
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_uk_wsp_step2",
+                "label": "Krok 02",
+                "name": "uk_wsp_step2",
+                "type": "group",
+                "layout": "block",
+                "sub_fields": [
+                    {
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "key": "field_uk_wsp_s2_title",
+                        "label": "Tytuł",
+                        "name": "title",
+                        "type": "text",
+                        "default_value": "Elastyczne zamknięcie miesiąca",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": ""
+                    },
+                    {
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "key": "field_uk_wsp_s2_lead",
+                        "label": "Tekst wprowadzający",
+                        "name": "lead",
+                        "type": "textarea",
+                        "rows": 3,
+                        "default_value": "Terminy zamknięcia miesiąca ustalamy indywidualnie z każdą firmą, uwzględniając jej wewnętrzne potrzeby raportowe oraz obowiązujące terminy podatkowe.",
+                        "placeholder": "",
+                        "maxlength": "",
+                        "new_lines": ""
+                    },
+                    {
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "key": "field_uk_wsp_s2_items",
+                        "label": "Punkty (1 linia = 1 punkt)",
+                        "name": "items",
+                        "type": "textarea",
+                        "rows": 3,
+                        "default_value": "część firm potrzebuje raportów finansowych do 20. dnia miesiąca\ninne wymagają wyników już w 3. lub 4. dniu roboczym nowego miesiąca",
+                        "placeholder": "",
+                        "maxlength": "",
+                        "new_lines": ""
+                    }
+                ]
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_uk_wsp_step3",
+                "label": "Krok 03",
+                "name": "uk_wsp_step3",
+                "type": "group",
+                "layout": "block",
+                "sub_fields": [
+                    {
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "key": "field_uk_wsp_s3_title",
+                        "label": "Tytuł",
+                        "name": "title",
+                        "type": "textarea",
+                        "rows": 2,
+                        "default_value": "Zakres i częstotliwość raportowania\nustalamy indywidualnie z każdym klientem.",
+                        "placeholder": "",
+                        "maxlength": "",
+                        "new_lines": ""
+                    },
+                    {
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "key": "field_uk_wsp_s3_lead",
+                        "label": "Tekst wprowadzający",
+                        "name": "lead",
+                        "type": "text",
+                        "default_value": "W standardzie klient otrzymuje:",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": ""
+                    },
+                    {
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "key": "field_uk_wsp_s3_items",
+                        "label": "Punkty (1 linia = 1 punkt)",
+                        "name": "items",
+                        "type": "textarea",
+                        "rows": 4,
+                        "default_value": "rachunek zysków i strat\nbilans\nzestawienie należności i zobowiązań",
+                        "placeholder": "",
+                        "maxlength": "",
+                        "new_lines": ""
+                    },
+                    {
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "key": "field_uk_wsp_s3_note",
+                        "label": "Tekst pod punktami",
+                        "name": "note",
+                        "type": "textarea",
+                        "rows": 2,
+                        "default_value": "W zależności od potrzeb przygotowujemy również dodatkowe raporty księgowe, finansowe lub kadrowo-płacowe.",
+                        "placeholder": "",
+                        "maxlength": "",
+                        "new_lines": ""
+                    }
+                ]
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_uk_wsp_btn_text",
+                "label": "Przycisk — tekst",
+                "name": "uk_wsp_btn_text",
+                "type": "text",
+                "default_value": "Poznaj więcej historii",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_uk_wsp_btn_url",
+                "label": "Przycisk — link",
+                "name": "uk_wsp_btn_url",
+                "type": "text",
+                "default_value": "\/blog\/",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "key": "field_uk_tab_dlaczego",
+                "label": "Dlaczego",
+                "name": "",
+                "type": "tab",
+                "placement": "top",
+                "endpoint": 0
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_uk_dlaczego_title",
+                "label": "Tytuł sekcji",
+                "name": "uk_dlaczego_title",
+                "type": "textarea",
+                "rows": 2,
+                "default_value": "Dlaczego firmy wybierają nasze\nrozwiązania księgowe",
+                "placeholder": "",
+                "maxlength": "",
+                "new_lines": ""
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_uk_dlaczego_1",
+                "label": "Karta 1",
+                "name": "uk_dlaczego_1",
+                "type": "group",
+                "layout": "table",
+                "sub_fields": [
+                    {
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "key": "field_uk_dl1_icon",
+                        "label": "Ikona",
+                        "name": "icon",
+                        "type": "text",
+                        "default_value": "badge-check",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": ""
+                    },
+                    {
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "key": "field_uk_dl1_title",
+                        "label": "Tytuł",
+                        "name": "title",
+                        "type": "text",
+                        "default_value": "Jakość potwierdzona\nstandardami",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": ""
+                    },
+                    {
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "key": "field_uk_dl1_text",
+                        "label": "Opis",
+                        "name": "text",
+                        "type": "textarea",
+                        "rows": 3,
+                        "default_value": "Pracujemy zgodnie z normą ISO 9001 — systematyczne procesy, kontrola jakości i ciągłe doskonalenie usług.",
+                        "placeholder": "",
+                        "maxlength": "",
+                        "new_lines": ""
+                    },
+                    {
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "key": "field_uk_dl1_hl",
+                        "label": "Karta zielona?",
+                        "name": "highlighted",
+                        "type": "true_false",
+                        "default_value": 0,
+                        "ui": 1,
+                        "message": "",
+                        "ui_on_text": "",
+                        "ui_off_text": ""
+                    }
+                ]
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_uk_dlaczego_2",
+                "label": "Karta 2",
+                "name": "uk_dlaczego_2",
+                "type": "group",
+                "layout": "table",
+                "sub_fields": [
+                    {
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "key": "field_uk_dl2_icon",
+                        "label": "Ikona",
+                        "name": "icon",
+                        "type": "text",
+                        "default_value": "file-text",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": ""
+                    },
+                    {
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "key": "field_uk_dl2_title",
+                        "label": "Tytuł",
+                        "name": "title",
+                        "type": "text",
+                        "default_value": "Nowoczesne i elastyczne\npodejście",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": ""
+                    },
+                    {
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "key": "field_uk_dl2_text",
+                        "label": "Opis",
+                        "name": "text",
+                        "type": "textarea",
+                        "rows": 3,
+                        "default_value": "Dopasowujemy narzędzia i zakres współpracy do realnych potrzeb Twojej firmy – bez zbędnej biurokracji.",
+                        "placeholder": "",
+                        "maxlength": "",
+                        "new_lines": ""
+                    },
+                    {
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "key": "field_uk_dl2_hl",
+                        "label": "Karta zielona?",
+                        "name": "highlighted",
+                        "type": "true_false",
+                        "default_value": 1,
+                        "ui": 1,
+                        "message": "",
+                        "ui_on_text": "",
+                        "ui_off_text": ""
+                    }
+                ]
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_uk_dlaczego_3",
+                "label": "Karta 3",
+                "name": "uk_dlaczego_3",
+                "type": "group",
+                "layout": "table",
+                "sub_fields": [
+                    {
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "key": "field_uk_dl3_icon",
+                        "label": "Ikona",
+                        "name": "icon",
+                        "type": "text",
+                        "default_value": "refresh-cw",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": ""
+                    },
+                    {
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "key": "field_uk_dl3_title",
+                        "label": "Tytuł",
+                        "name": "title",
+                        "type": "text",
+                        "default_value": "Business continuity",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": ""
+                    },
+                    {
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "key": "field_uk_dl3_text",
+                        "label": "Opis",
+                        "name": "text",
+                        "type": "textarea",
+                        "rows": 3,
+                        "default_value": "Zespołowy model pracy gwarantuje ciągłość obsługi — urlopy i rotacja pracowników nie wpływają na jakość Twojej księgowości.",
+                        "placeholder": "",
+                        "maxlength": "",
+                        "new_lines": ""
+                    },
+                    {
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "key": "field_uk_dl3_hl",
+                        "label": "Karta zielona?",
+                        "name": "highlighted",
+                        "type": "true_false",
+                        "default_value": 0,
+                        "ui": 1,
+                        "message": "",
+                        "ui_on_text": "",
+                        "ui_off_text": ""
+                    }
+                ]
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_uk_dlaczego_4",
+                "label": "Karta 4",
+                "name": "uk_dlaczego_4",
+                "type": "group",
+                "layout": "table",
+                "sub_fields": [
+                    {
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "key": "field_uk_dl4_icon",
+                        "label": "Ikona",
+                        "name": "icon",
+                        "type": "text",
+                        "default_value": "shield-check",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": ""
+                    },
+                    {
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "key": "field_uk_dl4_title",
+                        "label": "Tytuł",
+                        "name": "title",
+                        "type": "text",
+                        "default_value": "Bezpieczeństwo danych",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": ""
+                    },
+                    {
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "key": "field_uk_dl4_text",
+                        "label": "Opis",
+                        "name": "text",
+                        "type": "textarea",
+                        "rows": 3,
+                        "default_value": "Dane klientów chronimy zgodnie z normą ISO 27001 — wdrożone procedury, szyfrowanie i regularne audyty bezpieczeństwa.",
+                        "placeholder": "",
+                        "maxlength": "",
+                        "new_lines": ""
+                    },
+                    {
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "key": "field_uk_dl4_hl",
+                        "label": "Karta zielona?",
+                        "name": "highlighted",
+                        "type": "true_false",
+                        "default_value": 0,
+                        "ui": 1,
+                        "message": "",
+                        "ui_on_text": "",
+                        "ui_off_text": ""
+                    }
+                ]
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "key": "field_uk_tab_kalk",
+                "label": "Kalkulator",
+                "name": "",
+                "type": "tab",
+                "placement": "top",
+                "endpoint": 0
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_uk_kalk_title",
+                "label": "Tytuł",
+                "name": "uk_kalk_title",
+                "type": "textarea",
+                "rows": 2,
+                "default_value": "Kalkulator – oszacuj wstępnie koszt obsługi",
+                "placeholder": "",
+                "maxlength": "",
+                "new_lines": ""
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_uk_kalk_desc",
+                "label": "Opis",
+                "name": "uk_kalk_desc",
+                "type": "textarea",
+                "rows": 3,
+                "default_value": "Oszacuj wstępny koszt usług księgowych w kilka chwil. Wprowadź podstawowe informacje o swojej działalności, a my przygotujemy orientacyjną wycenę dopasowaną do Twoich potrzeb i skali biznesu.",
+                "placeholder": "",
+                "maxlength": "",
+                "new_lines": ""
+            },
+            {
+                "instructions": "Każda linia = jedna opcja. Format: Etykieta | Tekst ceny",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_uk_kalk_options",
+                "label": "Opcje kalkulatora (format: Etykieta | cena)",
+                "name": "uk_kalk_options",
+                "type": "textarea",
+                "rows": 5,
+                "default_value": "Księgowość uproszczona (KPiR, ewidencja ryczałtowa) | od 299 zł \/ mies.\nPełna księgowość (KH) | od 699 zł \/ mies.",
+                "placeholder": "",
+                "maxlength": "",
+                "new_lines": ""
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_uk_kalk_disclaimer",
+                "label": "Zastrzeżenie pod kalkulatorem",
+                "name": "uk_kalk_disclaimer",
+                "type": "text",
+                "default_value": "* to jest wstępny szacunek, każda oferta jest jednak indywidualnie rozpatrywana i odpowiednio wyceniana.",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "key": "field_uk_tab_hist",
+                "label": "Historie klientów",
+                "name": "",
+                "type": "tab",
+                "placement": "top",
+                "endpoint": 0
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_uk_hist_title",
+                "label": "Tytuł sekcji",
+                "name": "uk_hist_title",
+                "type": "text",
+                "default_value": "Historie naszych klientów",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_uk_hist_btn_text",
+                "label": "Przycisk — tekst",
+                "name": "uk_hist_btn_text",
+                "type": "text",
+                "default_value": "Poznaj więcej historii",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_uk_hist_btn_url",
+                "label": "Przycisk — link",
+                "name": "uk_hist_btn_url",
+                "type": "text",
+                "default_value": "\/blog\/",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_uk_hist_1",
+                "label": "Historia 1",
+                "name": "uk_hist_1",
+                "type": "group",
+                "layout": "block",
+                "sub_fields": [
+                    {
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "key": "field_uk_h1_logo",
+                        "label": "Logo klienta",
+                        "name": "logo",
+                        "type": "image",
+                        "return_format": "array",
+                        "preview_size": "thumbnail",
+                        "library": "all",
+                        "min_width": "",
+                        "min_height": "",
+                        "min_size": "",
+                        "max_width": "",
+                        "max_height": "",
+                        "max_size": "",
+                        "mime_types": ""
+                    },
+                    {
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "key": "field_uk_h1_industries",
+                        "label": "Branże (1 linia = 1 tag)",
+                        "name": "industries",
+                        "type": "textarea",
+                        "rows": 3,
+                        "default_value": "Geologia inżynierska\nOchrona środowiska",
+                        "placeholder": "",
+                        "maxlength": "",
+                        "new_lines": ""
+                    },
+                    {
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "key": "field_uk_h1_scope",
+                        "label": "Zakres współpracy",
+                        "name": "scope",
+                        "type": "text",
+                        "default_value": "Usługi rachunkowe, kadry i płace, wsparcie w procesie audytu",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": ""
+                    },
+                    {
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "key": "field_uk_h1_desc",
+                        "label": "Opis",
+                        "name": "desc",
+                        "type": "textarea",
+                        "rows": 3,
+                        "default_value": "Po kilku zmianach głównej księgowej spółka potrzebowała szybkiego uporządkowania księgowości i bezpiecznego zamknięcia roku obrotowego.",
+                        "placeholder": "",
+                        "maxlength": "",
+                        "new_lines": ""
+                    },
+                    {
+                        "instructions": "Jeśli puste — dla YouTube pobierany jest automatyczny podgląd.",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "key": "field_uk_h1_image",
+                        "label": "Miniatura (opcjonalna)",
+                        "name": "image",
+                        "type": "image",
+                        "return_format": "array",
+                        "preview_size": "medium",
+                        "library": "all",
+                        "min_width": "",
+                        "min_height": "",
+                        "min_size": "",
+                        "max_width": "",
+                        "max_height": "",
+                        "max_size": "",
+                        "mime_types": ""
+                    },
+                    {
+                        "instructions": "Ma pierwszeństwo przed linkiem YouTube\/Vimeo.",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "key": "field_uk_h1_video_file",
+                        "label": "Wideo — własny plik (mp4\/webm)",
+                        "name": "video_file",
+                        "type": "file",
+                        "return_format": "array",
+                        "mime_types": "mp4,webm,mov",
+                        "library": "all",
+                        "min_size": "",
+                        "max_size": ""
+                    },
+                    {
+                        "instructions": "Używane gdy nie wgrano pliku.",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "key": "field_uk_h1_video_url",
+                        "label": "Wideo — link YouTube \/ Vimeo",
+                        "name": "video_url",
+                        "type": "text",
+                        "default_value": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": ""
+                    }
+                ]
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_uk_hist_2",
+                "label": "Historia 2",
+                "name": "uk_hist_2",
+                "type": "group",
+                "layout": "block",
+                "sub_fields": [
+                    {
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "key": "field_uk_h2_logo",
+                        "label": "Logo klienta",
+                        "name": "logo",
+                        "type": "image",
+                        "return_format": "array",
+                        "preview_size": "thumbnail",
+                        "library": "all",
+                        "min_width": "",
+                        "min_height": "",
+                        "min_size": "",
+                        "max_width": "",
+                        "max_height": "",
+                        "max_size": "",
+                        "mime_types": ""
+                    },
+                    {
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "key": "field_uk_h2_industries",
+                        "label": "Branże (1 linia = 1 tag)",
+                        "name": "industries",
+                        "type": "textarea",
+                        "rows": 3,
+                        "default_value": "E-commerce\nTechnologia",
+                        "placeholder": "",
+                        "maxlength": "",
+                        "new_lines": ""
+                    },
+                    {
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "key": "field_uk_h2_scope",
+                        "label": "Zakres współpracy",
+                        "name": "scope",
+                        "type": "text",
+                        "default_value": "Pełna księgowość, raportowanie zarządcze, wsparcie podczas audytu",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": ""
+                    },
+                    {
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "key": "field_uk_h2_desc",
+                        "label": "Opis",
+                        "name": "desc",
+                        "type": "textarea",
+                        "rows": 3,
+                        "default_value": "Dynamicznie rosnąca spółka technologiczna potrzebowała partnera, który zapewni rzetelną sprawozdawczość i gotowość do pozyskania inwestora.",
+                        "placeholder": "",
+                        "maxlength": "",
+                        "new_lines": ""
+                    },
+                    {
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "key": "field_uk_h2_image",
+                        "label": "Miniatura (opcjonalna)",
+                        "name": "image",
+                        "type": "image",
+                        "return_format": "array",
+                        "preview_size": "medium",
+                        "library": "all",
+                        "min_width": "",
+                        "min_height": "",
+                        "min_size": "",
+                        "max_width": "",
+                        "max_height": "",
+                        "max_size": "",
+                        "mime_types": ""
+                    },
+                    {
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "key": "field_uk_h2_video_file",
+                        "label": "Wideo — własny plik (mp4\/webm)",
+                        "name": "video_file",
+                        "type": "file",
+                        "return_format": "array",
+                        "mime_types": "mp4,webm,mov",
+                        "library": "all",
+                        "min_size": "",
+                        "max_size": ""
+                    },
+                    {
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "key": "field_uk_h2_video_url",
+                        "label": "Wideo — link YouTube \/ Vimeo",
+                        "name": "video_url",
+                        "type": "text",
+                        "default_value": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": ""
+                    }
+                ]
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "key": "field_uk_tab_sys",
+                "label": "Systemy księgowe",
+                "name": "",
+                "type": "tab",
+                "placement": "top",
+                "endpoint": 0
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_uk_sys_title",
+                "label": "Tytuł",
+                "name": "uk_sys_title",
+                "type": "textarea",
+                "rows": 2,
+                "default_value": "Obsługa wielu systemów\nksiągowych",
+                "placeholder": "",
+                "maxlength": "",
+                "new_lines": ""
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_uk_sys_text",
+                "label": "Tekst",
+                "name": "uk_sys_text",
+                "type": "textarea",
+                "rows": 3,
+                "default_value": "Nasz zespół obsługuje wiele systemów księgowych, m.in. Comarch Optima, SAP czy Enova. Współpracę dostosowujemy do istniejących narzędzi i procesów oraz wymagań klienta. Istnieje także możliwość pracy na preferowanych przez klienta programach księgowych.",
+                "placeholder": "",
+                "maxlength": "",
+                "new_lines": ""
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_uk_sys_logo1",
+                "label": "Logo 1",
+                "name": "uk_sys_logo1",
+                "type": "image",
+                "return_format": "array",
+                "preview_size": "thumbnail",
+                "library": "all",
+                "min_width": "",
+                "min_height": "",
+                "min_size": "",
+                "max_width": "",
+                "max_height": "",
+                "max_size": "",
+                "mime_types": ""
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_uk_sys_logo2",
+                "label": "Logo 2",
+                "name": "uk_sys_logo2",
+                "type": "image",
+                "return_format": "array",
+                "preview_size": "thumbnail",
+                "library": "all",
+                "min_width": "",
+                "min_height": "",
+                "min_size": "",
+                "max_width": "",
+                "max_height": "",
+                "max_size": "",
+                "mime_types": ""
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_uk_sys_logo3",
+                "label": "Logo 3",
+                "name": "uk_sys_logo3",
+                "type": "image",
+                "return_format": "array",
+                "preview_size": "thumbnail",
+                "library": "all",
+                "min_width": "",
+                "min_height": "",
+                "min_size": "",
+                "max_width": "",
+                "max_height": "",
+                "max_size": "",
+                "mime_types": ""
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_uk_sys_logo4",
+                "label": "Logo 4",
+                "name": "uk_sys_logo4",
+                "type": "image",
+                "return_format": "array",
+                "preview_size": "thumbnail",
+                "library": "all",
+                "min_width": "",
+                "min_height": "",
+                "min_size": "",
+                "max_width": "",
+                "max_height": "",
+                "max_size": "",
+                "mime_types": ""
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_uk_sys_logo5",
+                "label": "Logo 5",
+                "name": "uk_sys_logo5",
+                "type": "image",
+                "return_format": "array",
+                "preview_size": "thumbnail",
+                "library": "all",
+                "min_width": "",
+                "min_height": "",
+                "min_size": "",
+                "max_width": "",
+                "max_height": "",
+                "max_size": "",
+                "mime_types": ""
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_uk_sys_logo6",
+                "label": "Logo 6",
+                "name": "uk_sys_logo6",
+                "type": "image",
+                "return_format": "array",
+                "preview_size": "thumbnail",
+                "library": "all",
+                "min_width": "",
+                "min_height": "",
+                "min_size": "",
+                "max_width": "",
+                "max_height": "",
+                "max_size": "",
+                "mime_types": ""
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "page_slug",
+                    "operator": "==",
+                    "value": "uslugi-ksiegowe"
+                }
+            ],
+            [
+                {
+                    "param": "page_template",
+                    "operator": "==",
+                    "value": "page-uslugi-ksiegowe.php"
+                }
+            ]
+        ]
+    }
+]

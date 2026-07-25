@@ -1,0 +1,1155 @@
+[
+    {
+        "menu_order": 10,
+        "position": "normal",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": "",
+        "active": true,
+        "description": "",
+        "show_in_rest": 0,
+        "modified": 1778755818,
+        "key": "group_mer_kontakt",
+        "title": "📞 Strona Kontakt",
+        "fields": [
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "key": "field_kon_tab_hero",
+                "label": "Hero & Formularz",
+                "name": "",
+                "type": "tab",
+                "placement": "top",
+                "endpoint": 0
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_kon_title_green",
+                "label": "Tytuł — zielona część",
+                "name": "kon_title_green",
+                "type": "text",
+                "default_value": "Umów rozmowę",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_kon_title_dark",
+                "label": "Tytuł — ciemna część",
+                "name": "kon_title_dark",
+                "type": "text",
+                "default_value": "i sprawdź, jak możemy pomóc",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_kon_subtitle",
+                "label": "Podtytuł",
+                "name": "kon_subtitle",
+                "type": "text",
+                "default_value": "Wysłuchamy, przeanalizujemy sytuację i zaproponujemy kolejne kroki.",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_kon_submit_text",
+                "label": "Tekst przycisku \"Wyślij\"",
+                "name": "kon_submit_text",
+                "type": "text",
+                "default_value": "Wyślij wiadomość",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_kon_area_options",
+                "label": "Opcje obszaru wsparcia (jedna per linia)",
+                "name": "kon_area_options",
+                "type": "textarea",
+                "rows": 6,
+                "default_value": "Usługi księgowe\nKadry i płace\nFundacje rodzinne\nBPO\nInne",
+                "placeholder": "",
+                "maxlength": "",
+                "new_lines": ""
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_kon_rodo",
+                "label": "Tekst zgody RODO",
+                "name": "kon_rodo",
+                "type": "textarea",
+                "rows": 3,
+                "default_value": "Tak, przeczytałem\/am i akceptuję politykę prywatności dotyczącą przetwarzania danych osobowych, którą wypełniający formularz wyraża zgodę na przekazywanie podanych danych osobowych firmie Meritoros oraz na ich przetwarzanie do celów marketingowych.",
+                "placeholder": "",
+                "maxlength": "",
+                "new_lines": ""
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_kon_privacy_url",
+                "label": "Link do polityki prywatności",
+                "name": "kon_privacy_url",
+                "type": "text",
+                "default_value": "\/polityka-prywatnosci",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_kon_email_to",
+                "label": "E-mail odbiorcy formularza",
+                "name": "kon_email_to",
+                "type": "email",
+                "default_value": "biuro@meritoros.pl",
+                "placeholder": "",
+                "prepend": "",
+                "append": ""
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "key": "field_kon_tab_steps",
+                "label": "Kroki procesu",
+                "name": "",
+                "type": "tab",
+                "placement": "top",
+                "endpoint": 0
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_kon_step_1",
+                "label": "Krok 1",
+                "name": "kon_step_1",
+                "type": "group",
+                "layout": "table",
+                "sub_fields": [
+                    {
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "key": "field_kon_step_1_label",
+                        "label": "Etykieta",
+                        "name": "label",
+                        "type": "text",
+                        "default_value": "Analiza potrzeb",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": ""
+                    },
+                    {
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "key": "field_kon_step_1_active",
+                        "label": "Aktywny (zielony)?",
+                        "name": "active",
+                        "type": "true_false",
+                        "ui": 1,
+                        "default_value": 1,
+                        "message": "",
+                        "ui_on_text": "",
+                        "ui_off_text": ""
+                    }
+                ]
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_kon_step_2",
+                "label": "Krok 2",
+                "name": "kon_step_2",
+                "type": "group",
+                "layout": "table",
+                "sub_fields": [
+                    {
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "key": "field_kon_step_2_label",
+                        "label": "Etykieta",
+                        "name": "label",
+                        "type": "text",
+                        "default_value": "Propozycja rozwiązania",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": ""
+                    },
+                    {
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "key": "field_kon_step_2_active",
+                        "label": "Aktywny (zielony)?",
+                        "name": "active",
+                        "type": "true_false",
+                        "ui": 1,
+                        "default_value": 1,
+                        "message": "",
+                        "ui_on_text": "",
+                        "ui_off_text": ""
+                    }
+                ]
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_kon_step_3",
+                "label": "Krok 3",
+                "name": "kon_step_3",
+                "type": "group",
+                "layout": "table",
+                "sub_fields": [
+                    {
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "key": "field_kon_step_3_label",
+                        "label": "Etykieta",
+                        "name": "label",
+                        "type": "text",
+                        "default_value": "Wdrożenie",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": ""
+                    },
+                    {
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "key": "field_kon_step_3_active",
+                        "label": "Aktywny (zielony)?",
+                        "name": "active",
+                        "type": "true_false",
+                        "ui": 1,
+                        "default_value": 1,
+                        "message": "",
+                        "ui_on_text": "",
+                        "ui_off_text": ""
+                    }
+                ]
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_kon_step_4",
+                "label": "Krok 4",
+                "name": "kon_step_4",
+                "type": "group",
+                "layout": "table",
+                "sub_fields": [
+                    {
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "key": "field_kon_step_4_label",
+                        "label": "Etykieta",
+                        "name": "label",
+                        "type": "text",
+                        "default_value": "Stałe wsparcie",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": ""
+                    },
+                    {
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "key": "field_kon_step_4_active",
+                        "label": "Aktywny (zielony)?",
+                        "name": "active",
+                        "type": "true_false",
+                        "ui": 1,
+                        "default_value": 0,
+                        "message": "",
+                        "ui_on_text": "",
+                        "ui_off_text": ""
+                    }
+                ]
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "key": "field_kon_tab_contact",
+                "label": "Dane kontaktowe",
+                "name": "",
+                "type": "tab",
+                "placement": "top",
+                "endpoint": 0
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_kon_phone_label",
+                "label": "Nagłówek karty telefon",
+                "name": "kon_phone_label",
+                "type": "text",
+                "default_value": "Zadzwoń do nas!",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_kon_phone",
+                "label": "Numer telefonu (wyświetlany)",
+                "name": "kon_phone",
+                "type": "text",
+                "default_value": "(+48) 12 423 52 99",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_kon_phone_tel",
+                "label": "Numer telefonu (format tel:, bez spacji)",
+                "name": "kon_phone_tel",
+                "type": "text",
+                "default_value": "+48124235299",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_kon_phone_desc",
+                "label": "Opis pod numerem telefonu",
+                "name": "kon_phone_desc",
+                "type": "textarea",
+                "rows": 2,
+                "default_value": "Nasi specjaliści są do dyspozycji w godzinach pracy biura.\nOdpowiemy na wszystkie Twoje pytania.",
+                "placeholder": "",
+                "maxlength": "",
+                "new_lines": ""
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_kon_company_name",
+                "label": "Nazwa firmy",
+                "name": "kon_company_name",
+                "type": "text",
+                "default_value": "Meritoros SA",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_kon_address",
+                "label": "Adres siedziby",
+                "name": "kon_address",
+                "type": "textarea",
+                "rows": 2,
+                "default_value": "Aleja Pokoju 62\/8\n31-564 Kraków",
+                "placeholder": "",
+                "maxlength": "",
+                "new_lines": ""
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_kon_email_admin",
+                "label": "E-mail administracja",
+                "name": "kon_email_admin",
+                "type": "email",
+                "default_value": "biuro@meritoros.pl",
+                "placeholder": "",
+                "prepend": "",
+                "append": ""
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_kon_email_offers",
+                "label": "E-mail oferty",
+                "name": "kon_email_offers",
+                "type": "email",
+                "default_value": "oferty@meritoros.pl",
+                "placeholder": "",
+                "prepend": "",
+                "append": ""
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_kon_edelivery",
+                "label": "Adres do e-doręczeń",
+                "name": "kon_edelivery",
+                "type": "text",
+                "default_value": "AE:PL-49846-54459-JWEFS-17",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_kon_nip",
+                "label": "NIP",
+                "name": "kon_nip",
+                "type": "text",
+                "default_value": "PL 6792963176",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_kon_regon",
+                "label": "REGON",
+                "name": "kon_regon",
+                "type": "text",
+                "default_value": "120618773",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_kon_krs_court",
+                "label": "Sąd KRS",
+                "name": "kon_krs_court",
+                "type": "textarea",
+                "rows": 2,
+                "default_value": "Sąd Rejonowy dla Krakowa-Śródmieścia w Krakowie\nWydział XI Gospodarczy Krajowego Rejestru Sądowego",
+                "placeholder": "",
+                "maxlength": "",
+                "new_lines": ""
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_kon_krs_number",
+                "label": "Nr KRS",
+                "name": "kon_krs_number",
+                "type": "text",
+                "default_value": "0000935021",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "key": "field_kon_tab_offices",
+                "label": "Oddziały",
+                "name": "",
+                "type": "tab",
+                "placement": "top",
+                "endpoint": 0
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_kon_offices_title",
+                "label": "Tytuł sekcji",
+                "name": "kon_offices_title",
+                "type": "text",
+                "default_value": "Miasta w których\nmamy oddziały",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_kon_map_image",
+                "label": "Mapa Polski (SVG\/PNG)",
+                "name": "kon_map_image",
+                "type": "file",
+                "return_format": "array",
+                "library": "all",
+                "mime_types": "svg, png, jpg",
+                "min_size": "",
+                "max_size": ""
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_kon_office_1",
+                "label": "Oddział 1 — Kraków",
+                "name": "kon_office_1",
+                "type": "group",
+                "layout": "table",
+                "sub_fields": [
+                    {
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "key": "field_kon_off1_city",
+                        "label": "Miasto",
+                        "name": "city",
+                        "type": "text",
+                        "default_value": "Kraków",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": ""
+                    },
+                    {
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "key": "field_kon_off1_addr",
+                        "label": "Adres",
+                        "name": "address",
+                        "type": "textarea",
+                        "rows": 2,
+                        "default_value": "Aleja Pokoju 62\/8\n31-564 Kraków",
+                        "placeholder": "",
+                        "maxlength": "",
+                        "new_lines": ""
+                    }
+                ]
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_kon_office_2",
+                "label": "Oddział 2 — Warszawa",
+                "name": "kon_office_2",
+                "type": "group",
+                "layout": "table",
+                "sub_fields": [
+                    {
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "key": "field_kon_off2_city",
+                        "label": "Miasto",
+                        "name": "city",
+                        "type": "text",
+                        "default_value": "Warszawa",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": ""
+                    },
+                    {
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "key": "field_kon_off2_addr",
+                        "label": "Adres",
+                        "name": "address",
+                        "type": "textarea",
+                        "rows": 2,
+                        "default_value": "ul. Złota 22 AR, 204\n00-400 Warszawa",
+                        "placeholder": "",
+                        "maxlength": "",
+                        "new_lines": ""
+                    }
+                ]
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_kon_office_3",
+                "label": "Oddział 3 — Katowice",
+                "name": "kon_office_3",
+                "type": "group",
+                "layout": "table",
+                "sub_fields": [
+                    {
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "key": "field_kon_off3_city",
+                        "label": "Miasto",
+                        "name": "city",
+                        "type": "text",
+                        "default_value": "Katowice",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": ""
+                    },
+                    {
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "key": "field_kon_off3_addr",
+                        "label": "Adres",
+                        "name": "address",
+                        "type": "textarea",
+                        "rows": 2,
+                        "default_value": "ul. Przykładowa 6\/3\n40-002 Katowice",
+                        "placeholder": "",
+                        "maxlength": "",
+                        "new_lines": ""
+                    }
+                ]
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_kon_office_4",
+                "label": "Oddział 4 — Rzeszów",
+                "name": "kon_office_4",
+                "type": "group",
+                "layout": "table",
+                "sub_fields": [
+                    {
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "key": "field_kon_off4_city",
+                        "label": "Miasto",
+                        "name": "city",
+                        "type": "text",
+                        "default_value": "Rzeszów",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": ""
+                    },
+                    {
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "key": "field_kon_off4_addr",
+                        "label": "Adres",
+                        "name": "address",
+                        "type": "textarea",
+                        "rows": 2,
+                        "default_value": "Ulica Targowa 61\n38-025 Rzeszów",
+                        "placeholder": "",
+                        "maxlength": "",
+                        "new_lines": ""
+                    }
+                ]
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_kon_office_5",
+                "label": "Oddział 5 — Wrocław",
+                "name": "kon_office_5",
+                "type": "group",
+                "layout": "table",
+                "sub_fields": [
+                    {
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "key": "field_kon_off5_city",
+                        "label": "Miasto",
+                        "name": "city",
+                        "type": "text",
+                        "default_value": "Wrocław",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": ""
+                    },
+                    {
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "key": "field_kon_off5_addr",
+                        "label": "Adres",
+                        "name": "address",
+                        "type": "textarea",
+                        "rows": 2,
+                        "default_value": "Rybnicka 77\/34\n53-656 Wrocław",
+                        "placeholder": "",
+                        "maxlength": "",
+                        "new_lines": ""
+                    }
+                ]
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_kon_office_6",
+                "label": "Oddział 6 — Łódź",
+                "name": "kon_office_6",
+                "type": "group",
+                "layout": "table",
+                "sub_fields": [
+                    {
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "key": "field_kon_off6_city",
+                        "label": "Miasto",
+                        "name": "city",
+                        "type": "text",
+                        "default_value": "Łódź",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": ""
+                    },
+                    {
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "key": "field_kon_off6_addr",
+                        "label": "Adres",
+                        "name": "address",
+                        "type": "textarea",
+                        "rows": 2,
+                        "default_value": "Dębina 8\n92-014 Łódź",
+                        "placeholder": "",
+                        "maxlength": "",
+                        "new_lines": ""
+                    }
+                ]
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_kon_office_7",
+                "label": "Oddział 7 — Bytom",
+                "name": "kon_office_7",
+                "type": "group",
+                "layout": "table",
+                "sub_fields": [
+                    {
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "key": "field_kon_off7_city",
+                        "label": "Miasto",
+                        "name": "city",
+                        "type": "text",
+                        "default_value": "Bytom",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": ""
+                    },
+                    {
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "key": "field_kon_off7_addr",
+                        "label": "Adres",
+                        "name": "address",
+                        "type": "textarea",
+                        "rows": 2,
+                        "default_value": "Mazowieckiego 51\n41-900 Bytom",
+                        "placeholder": "",
+                        "maxlength": "",
+                        "new_lines": ""
+                    }
+                ]
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_kon_virtual_label",
+                "label": "Karta wirtualna — etykieta",
+                "name": "kon_virtual_label",
+                "type": "text",
+                "default_value": "Oddziały\nWirtualne",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_kon_virtual_desc",
+                "label": "Karta wirtualna — opis",
+                "name": "kon_virtual_desc",
+                "type": "text",
+                "default_value": "Obsługujemy klientów zdalnie w całej Polsce",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "page_slug",
+                    "operator": "==",
+                    "value": "kontakt"
+                }
+            ],
+            [
+                {
+                    "param": "page_template",
+                    "operator": "==",
+                    "value": "page-kontakt.php"
+                }
+            ]
+        ]
+    }
+]

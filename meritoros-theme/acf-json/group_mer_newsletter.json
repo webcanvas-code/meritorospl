@@ -1,0 +1,350 @@
+[
+    {
+        "menu_order": 80,
+        "position": "normal",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": "",
+        "active": true,
+        "description": "",
+        "show_in_rest": 0,
+        "modified": 1778755818,
+        "key": "group_mer_newsletter",
+        "title": "📧 Newsletter",
+        "fields": [
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_mer_nl_label",
+                "label": "Etykieta sekcji",
+                "name": "nl_label",
+                "type": "text",
+                "default_value": "Newsletter",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_mer_nl_title",
+                "label": "Tytuł (lewa strona)",
+                "name": "nl_title",
+                "type": "text",
+                "default_value": "Bądź na bieżąco ze zmianami podatkowymi",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_mer_nl_desc",
+                "label": "Opis (lewa strona)",
+                "name": "nl_desc",
+                "type": "textarea",
+                "default_value": "Interesują Cię zmiany podatkowe? Szukasz pracy w obszarze księgowości lub kadr? Zapisz się i otrzymuj to, co ważne.",
+                "placeholder": "",
+                "maxlength": "",
+                "rows": 4,
+                "new_lines": ""
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_mer_nl_benefit_1",
+                "label": "Korzyść 1",
+                "name": "nl_benefit_1",
+                "type": "text",
+                "default_value": "Miesięczne podsumowania zmian podatkowych",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_mer_nl_benefit_2",
+                "label": "Korzyść 2",
+                "name": "nl_benefit_2",
+                "type": "text",
+                "default_value": "Aktualne oferty pracy z obszaru finansów i kadr",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_mer_nl_benefit_3",
+                "label": "Korzyść 3",
+                "name": "nl_benefit_3",
+                "type": "text",
+                "default_value": "Praktyczne wskazówki i komentarze ekspertów",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_mer_nl_benefit_4",
+                "label": "Korzyść 4",
+                "name": "nl_benefit_4",
+                "type": "text",
+                "default_value": "Możliwość wypisania się w dowolnym momencie",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_mer_nl_sub_count",
+                "label": "Liczba subskrybentów",
+                "name": "nl_subscriber_count",
+                "type": "text",
+                "default_value": "2 400+ czytelników",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_mer_nl_sub_label",
+                "label": "Etykieta subskrybentów",
+                "name": "nl_subscriber_label",
+                "type": "text",
+                "default_value": "dołączyło do naszego newslettera",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_mer_nl_form_title",
+                "label": "Tytuł formularza",
+                "name": "nl_form_title",
+                "type": "text",
+                "default_value": "Zapisz się bezpłatnie",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_mer_nl_form_sub",
+                "label": "Podtytuł formularza",
+                "name": "nl_form_sub",
+                "type": "text",
+                "default_value": "Dołącz do ponad 2 400 specjalistów finansowych.",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_mer_nl_topic_1",
+                "label": "Checkbox 1",
+                "name": "nl_topic_1",
+                "type": "text",
+                "default_value": "Zmiany podatkowe i księgowe",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_mer_nl_topic_2",
+                "label": "Checkbox 2",
+                "name": "nl_topic_2",
+                "type": "text",
+                "default_value": "Oferty pracy (kadry, płace, finanse)",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_mer_nl_rodo",
+                "label": "Tekst RODO",
+                "name": "nl_rodo",
+                "type": "textarea",
+                "default_value": "Administratorem danych jest Meritoros SA, Aleja Pokoju 62\/8, Kraków. Dane przetwarzane są wyłącznie w celu wysyłki newslettera. Możesz wypisać się w każdej chwili.",
+                "placeholder": "",
+                "maxlength": "",
+                "rows": 4,
+                "new_lines": ""
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_mer_nl_privacy_url",
+                "label": "Link Polityki Prywatności",
+                "name": "nl_privacy_url",
+                "type": "text",
+                "default_value": "\/polityka-prywatnosci",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_mer_nl_terms_url",
+                "label": "Link Regulaminu",
+                "name": "nl_terms_url",
+                "type": "text",
+                "default_value": "\/regulamin-newslettera",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "instructions": "URL do wysyłki formularza, np. MailerLite, Mailchimp embed URL.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_mer_nl_form_action",
+                "label": "Akcja formularza (URL)",
+                "name": "nl_form_action",
+                "type": "text",
+                "default_value": "#",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "page_type",
+                    "operator": "==",
+                    "value": "front_page"
+                }
+            ]
+        ]
+    }
+]

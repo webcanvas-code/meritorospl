@@ -1,0 +1,451 @@
+[
+    {
+        "menu_order": 20,
+        "position": "normal",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": "",
+        "active": true,
+        "description": "",
+        "show_in_rest": 0,
+        "modified": 1778755818,
+        "key": "group_mer_values",
+        "title": "🎯 Wartości (Bento Grid)",
+        "fields": [
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_mer_val_label",
+                "label": "Etykieta sekcji",
+                "name": "values_label",
+                "type": "text",
+                "default_value": "Nasze Wartości",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_mer_val_title",
+                "label": "Tytuł sekcji",
+                "name": "values_title",
+                "type": "textarea",
+                "rows": 2,
+                "default_value": "Dlaczego Meritoros to spokój\nw Twoim biznesie?",
+                "placeholder": "",
+                "maxlength": "",
+                "new_lines": ""
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_mer_val_c1_icon",
+                "label": "Karta 1 — Ikona (Lucide)",
+                "name": "val_c1_icon",
+                "type": "text",
+                "default_value": "infinity",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_mer_val_c1_title",
+                "label": "Karta 1 — Tytuł",
+                "name": "val_c1_title",
+                "type": "textarea",
+                "rows": 2,
+                "default_value": "Skala i ciągłość\nobsługi",
+                "placeholder": "",
+                "maxlength": "",
+                "new_lines": ""
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_mer_val_c1_desc",
+                "label": "Karta 1 — Opis",
+                "name": "val_c1_desc",
+                "type": "textarea",
+                "default_value": "Pracujemy zespołowo i procesowo, dzięki czemu obsługa nie zależy od jednej osoby. Zapewniamy zastępowalność i ciągłość pracy – bez przestojów.",
+                "placeholder": "",
+                "maxlength": "",
+                "rows": 4,
+                "new_lines": ""
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_mer_val_img",
+                "label": "Karta 2 — Zdjęcie (środek)",
+                "name": "val_img",
+                "type": "image",
+                "return_format": "array",
+                "preview_size": "medium",
+                "library": "all",
+                "min_width": "",
+                "min_height": "",
+                "min_size": "",
+                "max_width": "",
+                "max_height": "",
+                "max_size": "",
+                "mime_types": ""
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_mer_val_img_hover",
+                "label": "Karta 2 — Tekst hover",
+                "name": "val_img_hover_text",
+                "type": "text",
+                "default_value": "Współpracuj z profesjonalistami",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_mer_val_c3_icon",
+                "label": "Karta 3 — Ikona",
+                "name": "val_c3_icon",
+                "type": "text",
+                "default_value": "shield-check",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_mer_val_c3_title",
+                "label": "Karta 3 — Tytuł",
+                "name": "val_c3_title",
+                "type": "textarea",
+                "rows": 2,
+                "default_value": "Bezpieczeństwo\ni compliance",
+                "placeholder": "",
+                "maxlength": "",
+                "new_lines": ""
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_mer_val_c3_desc",
+                "label": "Karta 3 — Opis",
+                "name": "val_c3_desc",
+                "type": "textarea",
+                "default_value": "Działamy zgodnie z obowiązującymi regulacjami i standardami bezpieczeństwa danych. Dbamy o poufność informacji oraz jasne zasady współpracy - bez \"skrótów\" i ryzyk.",
+                "placeholder": "",
+                "maxlength": "",
+                "rows": 4,
+                "new_lines": ""
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_mer_val_c4_icon",
+                "label": "Karta 4 — Ikona",
+                "name": "val_c4_icon",
+                "type": "text",
+                "default_value": "bot",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_mer_val_c4_title",
+                "label": "Karta 4 — Tytuł",
+                "name": "val_c4_title",
+                "type": "textarea",
+                "rows": 2,
+                "default_value": "Technologia\ni automatyzacja",
+                "placeholder": "",
+                "maxlength": "",
+                "new_lines": ""
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_mer_val_c4_desc",
+                "label": "Karta 4 — Opis",
+                "name": "val_c4_desc",
+                "type": "textarea",
+                "default_value": "Wykorzystujemy narzędzia i automatyzację (RPA), które porządkują obieg dokumentów, ograniczają ryzyko błędów i usprawniają pracę zespołów.",
+                "placeholder": "",
+                "maxlength": "",
+                "rows": 4,
+                "new_lines": ""
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_mer_val_c5_title",
+                "label": "Karta 5 — Tytuł",
+                "name": "val_c5_title",
+                "type": "text",
+                "default_value": "Nagrody i wyróżnienia",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_mer_val_c5_desc",
+                "label": "Karta 5 — Opis",
+                "name": "val_c5_desc",
+                "type": "textarea",
+                "default_value": "Wyróżnienia są efektem tego, jak rozwijamy Meritoros: konsekwentnie i procesowo. Trzymamy standard, który ma działać w praktyce - codziennie.",
+                "placeholder": "",
+                "maxlength": "",
+                "rows": 4,
+                "new_lines": ""
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_mer_val_awards",
+                "label": "Karta 5 — Nagrody",
+                "name": "val_awards",
+                "type": "repeater",
+                "button_label": "Dodaj nagrodę",
+                "sub_fields": [
+                    {
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "key": "field_mer_val_award_label",
+                        "label": "Nazwa nagrody",
+                        "name": "label",
+                        "type": "text",
+                        "default_value": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": ""
+                    }
+                ],
+                "layout": "table",
+                "min": 0,
+                "max": 0
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_mer_val_c6_icon",
+                "label": "Karta 6 — Ikona",
+                "name": "val_c6_icon",
+                "type": "text",
+                "default_value": "award",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_mer_val_c6_title",
+                "label": "Karta 6 — Tytuł",
+                "name": "val_c6_title",
+                "type": "text",
+                "default_value": "Jakość potwierdzona standardami",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_mer_val_c6_desc",
+                "label": "Karta 6 — Opis",
+                "name": "val_c6_desc",
+                "type": "textarea",
+                "default_value": "Mamy wdrożone procedury kontroli jakości i weryfikacji danych. Dostarczamy spójne dane dla zarządu.",
+                "placeholder": "",
+                "maxlength": "",
+                "rows": 4,
+                "new_lines": ""
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_mer_val_c6_cert_label",
+                "label": "Karta 6 — Etykieta certyfikatu",
+                "name": "val_c6_cert_label",
+                "type": "text",
+                "default_value": "Certyfikat",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_mer_val_c6_cert",
+                "label": "Karta 6 — Nazwa certyfikatu",
+                "name": "val_c6_cert",
+                "type": "text",
+                "default_value": "ISO 9001:2015",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "page_type",
+                    "operator": "==",
+                    "value": "front_page"
+                }
+            ]
+        ]
+    }
+]

@@ -1,0 +1,466 @@
+[
+    {
+        "menu_order": 90,
+        "position": "normal",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": "",
+        "active": true,
+        "description": "",
+        "show_in_rest": 0,
+        "modified": 1778755818,
+        "key": "group_mer_footer",
+        "title": "🔚 Stopka",
+        "fields": [
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_mer_footer_cta_label",
+                "label": "CTA — Etykieta",
+                "name": "footer_cta_label",
+                "type": "text",
+                "default_value": "Zacznij teraz",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_mer_footer_cta_title",
+                "label": "CTA — Tytuł",
+                "name": "footer_cta_title",
+                "type": "textarea",
+                "rows": 2,
+                "default_value": "Dołącz do grona naszych\nklientów i rozwijaj biznes",
+                "placeholder": "",
+                "maxlength": "",
+                "new_lines": ""
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_mer_footer_cta_accent",
+                "label": "CTA — Akcentowany fragment (zielony)",
+                "name": "footer_cta_accent",
+                "type": "text",
+                "default_value": "bez stresu",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_mer_footer_btn1_text",
+                "label": "Przycisk 1 — tekst",
+                "name": "footer_btn1_text",
+                "type": "text",
+                "default_value": "Umów rozmowę",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_mer_footer_btn1_url",
+                "label": "Przycisk 1 — link",
+                "name": "footer_btn1_url",
+                "type": "text",
+                "default_value": "#kontakt",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_mer_footer_btn2_text",
+                "label": "Przycisk 2 — tekst",
+                "name": "footer_btn2_text",
+                "type": "text",
+                "default_value": "Poznaj ofertę",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_mer_footer_btn2_url",
+                "label": "Przycisk 2 — link",
+                "name": "footer_btn2_url",
+                "type": "text",
+                "default_value": "#uslugi",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_mer_footer_tagline",
+                "label": "Tagline (pod logo)",
+                "name": "footer_tagline",
+                "type": "textarea",
+                "rows": 2,
+                "default_value": "Profesjonalne biuro rachunkowe i BPO dla firm z ambicjami.",
+                "placeholder": "",
+                "maxlength": "",
+                "new_lines": ""
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "key": "field_mer_footer_tab_social",
+                "label": "◆ Social media",
+                "name": "footer_tab_social",
+                "type": "tab",
+                "placement": "top",
+                "endpoint": 0
+            },
+            {
+                "instructions": "np. facebook, instagram, linkedin, youtube, twitter",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_mer_social_1_icon",
+                "label": "Social 1 — Ikona (Lucide)",
+                "name": "footer_social_1_icon",
+                "type": "text",
+                "default_value": "facebook",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_mer_social_1_url",
+                "label": "Social 1 — Link",
+                "name": "footer_social_1_url",
+                "type": "text",
+                "default_value": "#",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_mer_social_2_icon",
+                "label": "Social 2 — Ikona (Lucide)",
+                "name": "footer_social_2_icon",
+                "type": "text",
+                "default_value": "instagram",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_mer_social_2_url",
+                "label": "Social 2 — Link",
+                "name": "footer_social_2_url",
+                "type": "text",
+                "default_value": "#",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_mer_social_3_icon",
+                "label": "Social 3 — Ikona (Lucide)",
+                "name": "footer_social_3_icon",
+                "type": "text",
+                "default_value": "linkedin",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_mer_social_3_url",
+                "label": "Social 3 — Link",
+                "name": "footer_social_3_url",
+                "type": "text",
+                "default_value": "#",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_mer_social_4_icon",
+                "label": "Social 4 — Ikona (Lucide)",
+                "name": "footer_social_4_icon",
+                "type": "text",
+                "default_value": "youtube",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_mer_social_4_url",
+                "label": "Social 4 — Link",
+                "name": "footer_social_4_url",
+                "type": "text",
+                "default_value": "#",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "key": "field_mer_footer_tab_contact",
+                "label": "◆ Kontakt",
+                "name": "footer_tab_contact",
+                "type": "tab",
+                "placement": "top",
+                "endpoint": 0
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_mer_footer_address",
+                "label": "Adres",
+                "name": "footer_address",
+                "type": "text",
+                "default_value": "Aleja Pokoju 62\/8, Kraków",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_mer_footer_phone",
+                "label": "Telefon",
+                "name": "footer_phone",
+                "type": "text",
+                "default_value": "+48 000 000 000",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_mer_footer_email",
+                "label": "E-mail",
+                "name": "footer_email",
+                "type": "email",
+                "default_value": "biuro@meritoros.pl",
+                "placeholder": "",
+                "prepend": "",
+                "append": ""
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_mer_footer_copyright",
+                "label": "Copyright",
+                "name": "footer_copyright",
+                "type": "text",
+                "default_value": "© 2026 Meritoros SA. Wszelkie prawa zastrzeżone.",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_mer_footer_credit_text",
+                "label": "Projekt i realizacja — tekst",
+                "name": "footer_credit_text",
+                "type": "text",
+                "default_value": "Web-Canvas",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_mer_footer_credit_url",
+                "label": "Projekt i realizacja — link",
+                "name": "footer_credit_url",
+                "type": "text",
+                "default_value": "https:\/\/web-canvas.pl",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "page_type",
+                    "operator": "==",
+                    "value": "front_page"
+                }
+            ]
+        ]
+    }
+]

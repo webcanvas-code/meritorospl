@@ -1,0 +1,1865 @@
+[
+    {
+        "menu_order": 11,
+        "position": "normal",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": "",
+        "active": true,
+        "description": "",
+        "show_in_rest": 0,
+        "modified": 1778755818,
+        "key": "group_mer_hk_video",
+        "title": "📖 Historie klientów – Wideo",
+        "fields": [
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "key": "field_hk_tab_vid_sec",
+                "label": "Sekcja wideo",
+                "name": "",
+                "type": "tab",
+                "placement": "top",
+                "endpoint": 0
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_hk_vid_sec_title",
+                "label": "Tytuł sekcji",
+                "name": "hk_vid_sec_title",
+                "type": "text",
+                "default_value": "Historie klientów w wideo",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_hk_vid_load_more",
+                "label": "Tekst \"Wczytaj więcej\"",
+                "name": "hk_vid_load_more",
+                "type": "text",
+                "default_value": "Wczytaj więcej",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_hk_vid_1",
+                "label": "Wideo 1",
+                "name": "hk_vid_1",
+                "type": "group",
+                "layout": "row",
+                "sub_fields": [
+                    {
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "key": "field_hk_vid_1_thumb",
+                        "label": "Miniatura",
+                        "name": "thumbnail",
+                        "type": "image",
+                        "return_format": "array",
+                        "preview_size": "thumbnail",
+                        "library": "all",
+                        "min_width": "",
+                        "min_height": "",
+                        "min_size": "",
+                        "max_width": "",
+                        "max_height": "",
+                        "max_size": "",
+                        "mime_types": ""
+                    },
+                    {
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "key": "field_hk_vid_1_vfile",
+                        "label": "Plik wideo (mp4\/webm)",
+                        "name": "video_file",
+                        "type": "file",
+                        "return_format": "array",
+                        "mime_types": "mp4,webm",
+                        "library": "all",
+                        "min_size": "",
+                        "max_size": ""
+                    },
+                    {
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "key": "field_hk_vid_1_vurl",
+                        "label": "URL wideo (YouTube\/Vimeo)",
+                        "name": "video_url",
+                        "type": "text",
+                        "default_value": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": ""
+                    },
+                    {
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "key": "field_hk_vid_1_logo",
+                        "label": "Logo firmy",
+                        "name": "logo",
+                        "type": "image",
+                        "return_format": "array",
+                        "preview_size": "thumbnail",
+                        "library": "all",
+                        "min_width": "",
+                        "min_height": "",
+                        "min_size": "",
+                        "max_width": "",
+                        "max_height": "",
+                        "max_size": "",
+                        "mime_types": ""
+                    },
+                    {
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "key": "field_hk_vid_1_logo_text",
+                        "label": "Nazwa firmy (jeśli brak logo)",
+                        "name": "logo_text",
+                        "type": "text",
+                        "default_value": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": ""
+                    },
+                    {
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "key": "field_hk_vid_1_tags",
+                        "label": "Tagi branży (każdy w nowej linii)",
+                        "name": "tags",
+                        "type": "textarea",
+                        "rows": 2,
+                        "default_value": "",
+                        "placeholder": "",
+                        "maxlength": "",
+                        "new_lines": ""
+                    },
+                    {
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "key": "field_hk_vid_1_title",
+                        "label": "Zakres współpracy",
+                        "name": "title",
+                        "type": "text",
+                        "default_value": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": ""
+                    },
+                    {
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "key": "field_hk_vid_1_desc",
+                        "label": "Opis",
+                        "name": "desc",
+                        "type": "textarea",
+                        "rows": 2,
+                        "default_value": "",
+                        "placeholder": "",
+                        "maxlength": "",
+                        "new_lines": ""
+                    },
+                    {
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "key": "field_hk_vid_1_story_url",
+                        "label": "Link do historii klienta",
+                        "name": "story_url",
+                        "type": "text",
+                        "default_value": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": ""
+                    }
+                ]
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_hk_vid_2",
+                "label": "Wideo 2",
+                "name": "hk_vid_2",
+                "type": "group",
+                "layout": "row",
+                "sub_fields": [
+                    {
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "key": "field_hk_vid_2_thumb",
+                        "label": "Miniatura",
+                        "name": "thumbnail",
+                        "type": "image",
+                        "return_format": "array",
+                        "preview_size": "thumbnail",
+                        "library": "all",
+                        "min_width": "",
+                        "min_height": "",
+                        "min_size": "",
+                        "max_width": "",
+                        "max_height": "",
+                        "max_size": "",
+                        "mime_types": ""
+                    },
+                    {
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "key": "field_hk_vid_2_vfile",
+                        "label": "Plik wideo (mp4\/webm)",
+                        "name": "video_file",
+                        "type": "file",
+                        "return_format": "array",
+                        "mime_types": "mp4,webm",
+                        "library": "all",
+                        "min_size": "",
+                        "max_size": ""
+                    },
+                    {
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "key": "field_hk_vid_2_vurl",
+                        "label": "URL wideo (YouTube\/Vimeo)",
+                        "name": "video_url",
+                        "type": "text",
+                        "default_value": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": ""
+                    },
+                    {
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "key": "field_hk_vid_2_logo",
+                        "label": "Logo firmy",
+                        "name": "logo",
+                        "type": "image",
+                        "return_format": "array",
+                        "preview_size": "thumbnail",
+                        "library": "all",
+                        "min_width": "",
+                        "min_height": "",
+                        "min_size": "",
+                        "max_width": "",
+                        "max_height": "",
+                        "max_size": "",
+                        "mime_types": ""
+                    },
+                    {
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "key": "field_hk_vid_2_logo_text",
+                        "label": "Nazwa firmy (jeśli brak logo)",
+                        "name": "logo_text",
+                        "type": "text",
+                        "default_value": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": ""
+                    },
+                    {
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "key": "field_hk_vid_2_tags",
+                        "label": "Tagi branży (każdy w nowej linii)",
+                        "name": "tags",
+                        "type": "textarea",
+                        "rows": 2,
+                        "default_value": "",
+                        "placeholder": "",
+                        "maxlength": "",
+                        "new_lines": ""
+                    },
+                    {
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "key": "field_hk_vid_2_title",
+                        "label": "Zakres współpracy",
+                        "name": "title",
+                        "type": "text",
+                        "default_value": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": ""
+                    },
+                    {
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "key": "field_hk_vid_2_desc",
+                        "label": "Opis",
+                        "name": "desc",
+                        "type": "textarea",
+                        "rows": 2,
+                        "default_value": "",
+                        "placeholder": "",
+                        "maxlength": "",
+                        "new_lines": ""
+                    },
+                    {
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "key": "field_hk_vid_2_story_url",
+                        "label": "Link do historii klienta",
+                        "name": "story_url",
+                        "type": "text",
+                        "default_value": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": ""
+                    }
+                ]
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_hk_vid_3",
+                "label": "Wideo 3",
+                "name": "hk_vid_3",
+                "type": "group",
+                "layout": "row",
+                "sub_fields": [
+                    {
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "key": "field_hk_vid_3_thumb",
+                        "label": "Miniatura",
+                        "name": "thumbnail",
+                        "type": "image",
+                        "return_format": "array",
+                        "preview_size": "thumbnail",
+                        "library": "all",
+                        "min_width": "",
+                        "min_height": "",
+                        "min_size": "",
+                        "max_width": "",
+                        "max_height": "",
+                        "max_size": "",
+                        "mime_types": ""
+                    },
+                    {
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "key": "field_hk_vid_3_vfile",
+                        "label": "Plik wideo (mp4\/webm)",
+                        "name": "video_file",
+                        "type": "file",
+                        "return_format": "array",
+                        "mime_types": "mp4,webm",
+                        "library": "all",
+                        "min_size": "",
+                        "max_size": ""
+                    },
+                    {
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "key": "field_hk_vid_3_vurl",
+                        "label": "URL wideo (YouTube\/Vimeo)",
+                        "name": "video_url",
+                        "type": "text",
+                        "default_value": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": ""
+                    },
+                    {
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "key": "field_hk_vid_3_logo",
+                        "label": "Logo firmy",
+                        "name": "logo",
+                        "type": "image",
+                        "return_format": "array",
+                        "preview_size": "thumbnail",
+                        "library": "all",
+                        "min_width": "",
+                        "min_height": "",
+                        "min_size": "",
+                        "max_width": "",
+                        "max_height": "",
+                        "max_size": "",
+                        "mime_types": ""
+                    },
+                    {
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "key": "field_hk_vid_3_logo_text",
+                        "label": "Nazwa firmy (jeśli brak logo)",
+                        "name": "logo_text",
+                        "type": "text",
+                        "default_value": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": ""
+                    },
+                    {
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "key": "field_hk_vid_3_tags",
+                        "label": "Tagi branży (każdy w nowej linii)",
+                        "name": "tags",
+                        "type": "textarea",
+                        "rows": 2,
+                        "default_value": "",
+                        "placeholder": "",
+                        "maxlength": "",
+                        "new_lines": ""
+                    },
+                    {
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "key": "field_hk_vid_3_title",
+                        "label": "Zakres współpracy",
+                        "name": "title",
+                        "type": "text",
+                        "default_value": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": ""
+                    },
+                    {
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "key": "field_hk_vid_3_desc",
+                        "label": "Opis",
+                        "name": "desc",
+                        "type": "textarea",
+                        "rows": 2,
+                        "default_value": "",
+                        "placeholder": "",
+                        "maxlength": "",
+                        "new_lines": ""
+                    },
+                    {
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "key": "field_hk_vid_3_story_url",
+                        "label": "Link do historii klienta",
+                        "name": "story_url",
+                        "type": "text",
+                        "default_value": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": ""
+                    }
+                ]
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_hk_vid_4",
+                "label": "Wideo 4",
+                "name": "hk_vid_4",
+                "type": "group",
+                "layout": "row",
+                "sub_fields": [
+                    {
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "key": "field_hk_vid_4_thumb",
+                        "label": "Miniatura",
+                        "name": "thumbnail",
+                        "type": "image",
+                        "return_format": "array",
+                        "preview_size": "thumbnail",
+                        "library": "all",
+                        "min_width": "",
+                        "min_height": "",
+                        "min_size": "",
+                        "max_width": "",
+                        "max_height": "",
+                        "max_size": "",
+                        "mime_types": ""
+                    },
+                    {
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "key": "field_hk_vid_4_vfile",
+                        "label": "Plik wideo (mp4\/webm)",
+                        "name": "video_file",
+                        "type": "file",
+                        "return_format": "array",
+                        "mime_types": "mp4,webm",
+                        "library": "all",
+                        "min_size": "",
+                        "max_size": ""
+                    },
+                    {
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "key": "field_hk_vid_4_vurl",
+                        "label": "URL wideo (YouTube\/Vimeo)",
+                        "name": "video_url",
+                        "type": "text",
+                        "default_value": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": ""
+                    },
+                    {
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "key": "field_hk_vid_4_logo",
+                        "label": "Logo firmy",
+                        "name": "logo",
+                        "type": "image",
+                        "return_format": "array",
+                        "preview_size": "thumbnail",
+                        "library": "all",
+                        "min_width": "",
+                        "min_height": "",
+                        "min_size": "",
+                        "max_width": "",
+                        "max_height": "",
+                        "max_size": "",
+                        "mime_types": ""
+                    },
+                    {
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "key": "field_hk_vid_4_logo_text",
+                        "label": "Nazwa firmy (jeśli brak logo)",
+                        "name": "logo_text",
+                        "type": "text",
+                        "default_value": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": ""
+                    },
+                    {
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "key": "field_hk_vid_4_tags",
+                        "label": "Tagi branży (każdy w nowej linii)",
+                        "name": "tags",
+                        "type": "textarea",
+                        "rows": 2,
+                        "default_value": "",
+                        "placeholder": "",
+                        "maxlength": "",
+                        "new_lines": ""
+                    },
+                    {
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "key": "field_hk_vid_4_title",
+                        "label": "Zakres współpracy",
+                        "name": "title",
+                        "type": "text",
+                        "default_value": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": ""
+                    },
+                    {
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "key": "field_hk_vid_4_desc",
+                        "label": "Opis",
+                        "name": "desc",
+                        "type": "textarea",
+                        "rows": 2,
+                        "default_value": "",
+                        "placeholder": "",
+                        "maxlength": "",
+                        "new_lines": ""
+                    },
+                    {
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "key": "field_hk_vid_4_story_url",
+                        "label": "Link do historii klienta",
+                        "name": "story_url",
+                        "type": "text",
+                        "default_value": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": ""
+                    }
+                ]
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_hk_vid_5",
+                "label": "Wideo 5",
+                "name": "hk_vid_5",
+                "type": "group",
+                "layout": "row",
+                "sub_fields": [
+                    {
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "key": "field_hk_vid_5_thumb",
+                        "label": "Miniatura",
+                        "name": "thumbnail",
+                        "type": "image",
+                        "return_format": "array",
+                        "preview_size": "thumbnail",
+                        "library": "all",
+                        "min_width": "",
+                        "min_height": "",
+                        "min_size": "",
+                        "max_width": "",
+                        "max_height": "",
+                        "max_size": "",
+                        "mime_types": ""
+                    },
+                    {
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "key": "field_hk_vid_5_vfile",
+                        "label": "Plik wideo (mp4\/webm)",
+                        "name": "video_file",
+                        "type": "file",
+                        "return_format": "array",
+                        "mime_types": "mp4,webm",
+                        "library": "all",
+                        "min_size": "",
+                        "max_size": ""
+                    },
+                    {
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "key": "field_hk_vid_5_vurl",
+                        "label": "URL wideo (YouTube\/Vimeo)",
+                        "name": "video_url",
+                        "type": "text",
+                        "default_value": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": ""
+                    },
+                    {
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "key": "field_hk_vid_5_logo",
+                        "label": "Logo firmy",
+                        "name": "logo",
+                        "type": "image",
+                        "return_format": "array",
+                        "preview_size": "thumbnail",
+                        "library": "all",
+                        "min_width": "",
+                        "min_height": "",
+                        "min_size": "",
+                        "max_width": "",
+                        "max_height": "",
+                        "max_size": "",
+                        "mime_types": ""
+                    },
+                    {
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "key": "field_hk_vid_5_logo_text",
+                        "label": "Nazwa firmy (jeśli brak logo)",
+                        "name": "logo_text",
+                        "type": "text",
+                        "default_value": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": ""
+                    },
+                    {
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "key": "field_hk_vid_5_tags",
+                        "label": "Tagi branży (każdy w nowej linii)",
+                        "name": "tags",
+                        "type": "textarea",
+                        "rows": 2,
+                        "default_value": "",
+                        "placeholder": "",
+                        "maxlength": "",
+                        "new_lines": ""
+                    },
+                    {
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "key": "field_hk_vid_5_title",
+                        "label": "Zakres współpracy",
+                        "name": "title",
+                        "type": "text",
+                        "default_value": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": ""
+                    },
+                    {
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "key": "field_hk_vid_5_desc",
+                        "label": "Opis",
+                        "name": "desc",
+                        "type": "textarea",
+                        "rows": 2,
+                        "default_value": "",
+                        "placeholder": "",
+                        "maxlength": "",
+                        "new_lines": ""
+                    },
+                    {
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "key": "field_hk_vid_5_story_url",
+                        "label": "Link do historii klienta",
+                        "name": "story_url",
+                        "type": "text",
+                        "default_value": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": ""
+                    }
+                ]
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_hk_vid_6",
+                "label": "Wideo 6",
+                "name": "hk_vid_6",
+                "type": "group",
+                "layout": "row",
+                "sub_fields": [
+                    {
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "key": "field_hk_vid_6_thumb",
+                        "label": "Miniatura",
+                        "name": "thumbnail",
+                        "type": "image",
+                        "return_format": "array",
+                        "preview_size": "thumbnail",
+                        "library": "all",
+                        "min_width": "",
+                        "min_height": "",
+                        "min_size": "",
+                        "max_width": "",
+                        "max_height": "",
+                        "max_size": "",
+                        "mime_types": ""
+                    },
+                    {
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "key": "field_hk_vid_6_vfile",
+                        "label": "Plik wideo (mp4\/webm)",
+                        "name": "video_file",
+                        "type": "file",
+                        "return_format": "array",
+                        "mime_types": "mp4,webm",
+                        "library": "all",
+                        "min_size": "",
+                        "max_size": ""
+                    },
+                    {
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "key": "field_hk_vid_6_vurl",
+                        "label": "URL wideo (YouTube\/Vimeo)",
+                        "name": "video_url",
+                        "type": "text",
+                        "default_value": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": ""
+                    },
+                    {
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "key": "field_hk_vid_6_logo",
+                        "label": "Logo firmy",
+                        "name": "logo",
+                        "type": "image",
+                        "return_format": "array",
+                        "preview_size": "thumbnail",
+                        "library": "all",
+                        "min_width": "",
+                        "min_height": "",
+                        "min_size": "",
+                        "max_width": "",
+                        "max_height": "",
+                        "max_size": "",
+                        "mime_types": ""
+                    },
+                    {
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "key": "field_hk_vid_6_logo_text",
+                        "label": "Nazwa firmy (jeśli brak logo)",
+                        "name": "logo_text",
+                        "type": "text",
+                        "default_value": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": ""
+                    },
+                    {
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "key": "field_hk_vid_6_tags",
+                        "label": "Tagi branży (każdy w nowej linii)",
+                        "name": "tags",
+                        "type": "textarea",
+                        "rows": 2,
+                        "default_value": "",
+                        "placeholder": "",
+                        "maxlength": "",
+                        "new_lines": ""
+                    },
+                    {
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "key": "field_hk_vid_6_title",
+                        "label": "Zakres współpracy",
+                        "name": "title",
+                        "type": "text",
+                        "default_value": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": ""
+                    },
+                    {
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "key": "field_hk_vid_6_desc",
+                        "label": "Opis",
+                        "name": "desc",
+                        "type": "textarea",
+                        "rows": 2,
+                        "default_value": "",
+                        "placeholder": "",
+                        "maxlength": "",
+                        "new_lines": ""
+                    },
+                    {
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "key": "field_hk_vid_6_story_url",
+                        "label": "Link do historii klienta",
+                        "name": "story_url",
+                        "type": "text",
+                        "default_value": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": ""
+                    }
+                ]
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_hk_vid_7",
+                "label": "Wideo 7",
+                "name": "hk_vid_7",
+                "type": "group",
+                "layout": "row",
+                "sub_fields": [
+                    {
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "key": "field_hk_vid_7_thumb",
+                        "label": "Miniatura",
+                        "name": "thumbnail",
+                        "type": "image",
+                        "return_format": "array",
+                        "preview_size": "thumbnail",
+                        "library": "all",
+                        "min_width": "",
+                        "min_height": "",
+                        "min_size": "",
+                        "max_width": "",
+                        "max_height": "",
+                        "max_size": "",
+                        "mime_types": ""
+                    },
+                    {
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "key": "field_hk_vid_7_vfile",
+                        "label": "Plik wideo (mp4\/webm)",
+                        "name": "video_file",
+                        "type": "file",
+                        "return_format": "array",
+                        "mime_types": "mp4,webm",
+                        "library": "all",
+                        "min_size": "",
+                        "max_size": ""
+                    },
+                    {
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "key": "field_hk_vid_7_vurl",
+                        "label": "URL wideo (YouTube\/Vimeo)",
+                        "name": "video_url",
+                        "type": "text",
+                        "default_value": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": ""
+                    },
+                    {
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "key": "field_hk_vid_7_logo",
+                        "label": "Logo firmy",
+                        "name": "logo",
+                        "type": "image",
+                        "return_format": "array",
+                        "preview_size": "thumbnail",
+                        "library": "all",
+                        "min_width": "",
+                        "min_height": "",
+                        "min_size": "",
+                        "max_width": "",
+                        "max_height": "",
+                        "max_size": "",
+                        "mime_types": ""
+                    },
+                    {
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "key": "field_hk_vid_7_logo_text",
+                        "label": "Nazwa firmy (jeśli brak logo)",
+                        "name": "logo_text",
+                        "type": "text",
+                        "default_value": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": ""
+                    },
+                    {
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "key": "field_hk_vid_7_tags",
+                        "label": "Tagi branży (każdy w nowej linii)",
+                        "name": "tags",
+                        "type": "textarea",
+                        "rows": 2,
+                        "default_value": "",
+                        "placeholder": "",
+                        "maxlength": "",
+                        "new_lines": ""
+                    },
+                    {
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "key": "field_hk_vid_7_title",
+                        "label": "Zakres współpracy",
+                        "name": "title",
+                        "type": "text",
+                        "default_value": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": ""
+                    },
+                    {
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "key": "field_hk_vid_7_desc",
+                        "label": "Opis",
+                        "name": "desc",
+                        "type": "textarea",
+                        "rows": 2,
+                        "default_value": "",
+                        "placeholder": "",
+                        "maxlength": "",
+                        "new_lines": ""
+                    },
+                    {
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "key": "field_hk_vid_7_story_url",
+                        "label": "Link do historii klienta",
+                        "name": "story_url",
+                        "type": "text",
+                        "default_value": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": ""
+                    }
+                ]
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_hk_vid_8",
+                "label": "Wideo 8",
+                "name": "hk_vid_8",
+                "type": "group",
+                "layout": "row",
+                "sub_fields": [
+                    {
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "key": "field_hk_vid_8_thumb",
+                        "label": "Miniatura",
+                        "name": "thumbnail",
+                        "type": "image",
+                        "return_format": "array",
+                        "preview_size": "thumbnail",
+                        "library": "all",
+                        "min_width": "",
+                        "min_height": "",
+                        "min_size": "",
+                        "max_width": "",
+                        "max_height": "",
+                        "max_size": "",
+                        "mime_types": ""
+                    },
+                    {
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "key": "field_hk_vid_8_vfile",
+                        "label": "Plik wideo (mp4\/webm)",
+                        "name": "video_file",
+                        "type": "file",
+                        "return_format": "array",
+                        "mime_types": "mp4,webm",
+                        "library": "all",
+                        "min_size": "",
+                        "max_size": ""
+                    },
+                    {
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "key": "field_hk_vid_8_vurl",
+                        "label": "URL wideo (YouTube\/Vimeo)",
+                        "name": "video_url",
+                        "type": "text",
+                        "default_value": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": ""
+                    },
+                    {
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "key": "field_hk_vid_8_logo",
+                        "label": "Logo firmy",
+                        "name": "logo",
+                        "type": "image",
+                        "return_format": "array",
+                        "preview_size": "thumbnail",
+                        "library": "all",
+                        "min_width": "",
+                        "min_height": "",
+                        "min_size": "",
+                        "max_width": "",
+                        "max_height": "",
+                        "max_size": "",
+                        "mime_types": ""
+                    },
+                    {
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "key": "field_hk_vid_8_logo_text",
+                        "label": "Nazwa firmy (jeśli brak logo)",
+                        "name": "logo_text",
+                        "type": "text",
+                        "default_value": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": ""
+                    },
+                    {
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "key": "field_hk_vid_8_tags",
+                        "label": "Tagi branży (każdy w nowej linii)",
+                        "name": "tags",
+                        "type": "textarea",
+                        "rows": 2,
+                        "default_value": "",
+                        "placeholder": "",
+                        "maxlength": "",
+                        "new_lines": ""
+                    },
+                    {
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "key": "field_hk_vid_8_title",
+                        "label": "Zakres współpracy",
+                        "name": "title",
+                        "type": "text",
+                        "default_value": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": ""
+                    },
+                    {
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "key": "field_hk_vid_8_desc",
+                        "label": "Opis",
+                        "name": "desc",
+                        "type": "textarea",
+                        "rows": 2,
+                        "default_value": "",
+                        "placeholder": "",
+                        "maxlength": "",
+                        "new_lines": ""
+                    },
+                    {
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "key": "field_hk_vid_8_story_url",
+                        "label": "Link do historii klienta",
+                        "name": "story_url",
+                        "type": "text",
+                        "default_value": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": ""
+                    }
+                ]
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_hk_vid_9",
+                "label": "Wideo 9",
+                "name": "hk_vid_9",
+                "type": "group",
+                "layout": "row",
+                "sub_fields": [
+                    {
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "key": "field_hk_vid_9_thumb",
+                        "label": "Miniatura",
+                        "name": "thumbnail",
+                        "type": "image",
+                        "return_format": "array",
+                        "preview_size": "thumbnail",
+                        "library": "all",
+                        "min_width": "",
+                        "min_height": "",
+                        "min_size": "",
+                        "max_width": "",
+                        "max_height": "",
+                        "max_size": "",
+                        "mime_types": ""
+                    },
+                    {
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "key": "field_hk_vid_9_vfile",
+                        "label": "Plik wideo (mp4\/webm)",
+                        "name": "video_file",
+                        "type": "file",
+                        "return_format": "array",
+                        "mime_types": "mp4,webm",
+                        "library": "all",
+                        "min_size": "",
+                        "max_size": ""
+                    },
+                    {
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "key": "field_hk_vid_9_vurl",
+                        "label": "URL wideo (YouTube\/Vimeo)",
+                        "name": "video_url",
+                        "type": "text",
+                        "default_value": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": ""
+                    },
+                    {
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "key": "field_hk_vid_9_logo",
+                        "label": "Logo firmy",
+                        "name": "logo",
+                        "type": "image",
+                        "return_format": "array",
+                        "preview_size": "thumbnail",
+                        "library": "all",
+                        "min_width": "",
+                        "min_height": "",
+                        "min_size": "",
+                        "max_width": "",
+                        "max_height": "",
+                        "max_size": "",
+                        "mime_types": ""
+                    },
+                    {
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "key": "field_hk_vid_9_logo_text",
+                        "label": "Nazwa firmy (jeśli brak logo)",
+                        "name": "logo_text",
+                        "type": "text",
+                        "default_value": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": ""
+                    },
+                    {
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "key": "field_hk_vid_9_tags",
+                        "label": "Tagi branży (każdy w nowej linii)",
+                        "name": "tags",
+                        "type": "textarea",
+                        "rows": 2,
+                        "default_value": "",
+                        "placeholder": "",
+                        "maxlength": "",
+                        "new_lines": ""
+                    },
+                    {
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "key": "field_hk_vid_9_title",
+                        "label": "Zakres współpracy",
+                        "name": "title",
+                        "type": "text",
+                        "default_value": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": ""
+                    },
+                    {
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "key": "field_hk_vid_9_desc",
+                        "label": "Opis",
+                        "name": "desc",
+                        "type": "textarea",
+                        "rows": 2,
+                        "default_value": "",
+                        "placeholder": "",
+                        "maxlength": "",
+                        "new_lines": ""
+                    },
+                    {
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "key": "field_hk_vid_9_story_url",
+                        "label": "Link do historii klienta",
+                        "name": "story_url",
+                        "type": "text",
+                        "default_value": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": ""
+                    }
+                ]
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "page_slug",
+                    "operator": "==",
+                    "value": "historie-klientow"
+                }
+            ],
+            [
+                {
+                    "param": "page_template",
+                    "operator": "==",
+                    "value": "page-historie-klientow.php"
+                }
+            ]
+        ]
+    }
+]

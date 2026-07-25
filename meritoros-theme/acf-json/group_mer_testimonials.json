@@ -1,0 +1,736 @@
+[
+    {
+        "menu_order": 50,
+        "position": "normal",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": "",
+        "active": true,
+        "description": "",
+        "show_in_rest": 0,
+        "modified": 1778755818,
+        "key": "group_mer_testimonials",
+        "title": "⭐ Opinie klientów",
+        "fields": [
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_mer_test_label",
+                "label": "Etykieta sekcji",
+                "name": "testimonials_label",
+                "type": "text",
+                "default_value": "Opinie klientów",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_mer_test_title",
+                "label": "Tytuł sekcji",
+                "name": "testimonials_title",
+                "type": "text",
+                "default_value": "Sprawdź, co mówią o nas inni",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "key": "field_mer_test_tab_1",
+                "label": "◆ Opinia 1",
+                "name": "test_tab_1",
+                "type": "tab",
+                "placement": "top",
+                "endpoint": 0
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_mer_t1_company",
+                "label": "Firma",
+                "name": "test_1_company",
+                "type": "text",
+                "default_value": "HPC",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "instructions": "Opcjonalnie. Jeśli puste — wyświetlana jest nazwa firmy.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_mer_t1_logo",
+                "label": "Logo firmy (HTML)",
+                "name": "test_1_logo_html",
+                "type": "textarea",
+                "rows": 2,
+                "default_value": "",
+                "placeholder": "",
+                "maxlength": "",
+                "new_lines": ""
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_mer_t1_quote",
+                "label": "Treść opinii",
+                "name": "test_1_quote",
+                "type": "textarea",
+                "rows": 3,
+                "default_value": "Mam księgowość w bezpiecznych rękach i wiem, że nie muszę się o to już martwić.",
+                "placeholder": "",
+                "maxlength": "",
+                "new_lines": ""
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_mer_t1_author",
+                "label": "Imię i nazwisko",
+                "name": "test_1_author",
+                "type": "text",
+                "default_value": "Sebastian Wiśniewski",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_mer_t1_role",
+                "label": "Stanowisko \/ firma",
+                "name": "test_1_role",
+                "type": "text",
+                "default_value": "HP Cepolgol S.A.",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_mer_t1_init",
+                "label": "Inicjały (awatar, 2 znaki)",
+                "name": "test_1_initials",
+                "type": "text",
+                "default_value": "SW",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_mer_t1_hl",
+                "label": "Wyróżniona karta (zielona)",
+                "name": "test_1_highlighted",
+                "type": "true_false",
+                "ui": 1,
+                "default_value": 0,
+                "message": "",
+                "ui_on_text": "",
+                "ui_off_text": ""
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "key": "field_mer_test_tab_2",
+                "label": "◆ Opinia 2",
+                "name": "test_tab_2",
+                "type": "tab",
+                "placement": "top",
+                "endpoint": 0
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_mer_t2_company",
+                "label": "Firma",
+                "name": "test_2_company",
+                "type": "text",
+                "default_value": "Printbox",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_mer_t2_logo",
+                "label": "Logo firmy (HTML)",
+                "name": "test_2_logo_html",
+                "type": "textarea",
+                "rows": 2,
+                "default_value": "",
+                "placeholder": "",
+                "maxlength": "",
+                "new_lines": ""
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_mer_t2_quote",
+                "label": "Treść opinii",
+                "name": "test_2_quote",
+                "type": "textarea",
+                "rows": 3,
+                "default_value": "Meritoros dostarczył nam stabilność i pewność, w trudnych momentach zawsze mamy właściwe odpowiedzi.",
+                "placeholder": "",
+                "maxlength": "",
+                "new_lines": ""
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_mer_t2_author",
+                "label": "Imię i nazwisko",
+                "name": "test_2_author",
+                "type": "text",
+                "default_value": "Michał Czaicki",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_mer_t2_role",
+                "label": "Stanowisko \/ firma",
+                "name": "test_2_role",
+                "type": "text",
+                "default_value": "CEO & Co-Founder, Printbox",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_mer_t2_init",
+                "label": "Inicjały (awatar, 2 znaki)",
+                "name": "test_2_initials",
+                "type": "text",
+                "default_value": "MC",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_mer_t2_hl",
+                "label": "Wyróżniona karta (zielona)",
+                "name": "test_2_highlighted",
+                "type": "true_false",
+                "ui": 1,
+                "default_value": 1,
+                "message": "",
+                "ui_on_text": "",
+                "ui_off_text": ""
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "key": "field_mer_test_tab_3",
+                "label": "◆ Opinia 3",
+                "name": "test_tab_3",
+                "type": "tab",
+                "placement": "top",
+                "endpoint": 0
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_mer_t3_company",
+                "label": "Firma",
+                "name": "test_3_company",
+                "type": "text",
+                "default_value": "SITECH",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_mer_t3_logo",
+                "label": "Logo firmy (HTML)",
+                "name": "test_3_logo_html",
+                "type": "textarea",
+                "rows": 2,
+                "default_value": "",
+                "placeholder": "",
+                "maxlength": "",
+                "new_lines": ""
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_mer_t3_quote",
+                "label": "Treść opinii",
+                "name": "test_3_quote",
+                "type": "textarea",
+                "rows": 3,
+                "default_value": "Profesjonalizm na każdym kroku. Polecamy Meritoros każdej firmie, która ceni sobie bezpieczeństwo i jakość obsługi.",
+                "placeholder": "",
+                "maxlength": "",
+                "new_lines": ""
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_mer_t3_author",
+                "label": "Imię i nazwisko",
+                "name": "test_3_author",
+                "type": "text",
+                "default_value": "Anna Kowalczyk",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_mer_t3_role",
+                "label": "Stanowisko \/ firma",
+                "name": "test_3_role",
+                "type": "text",
+                "default_value": "Dyrektor Finansowy, SITECH",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_mer_t3_init",
+                "label": "Inicjały (awatar, 2 znaki)",
+                "name": "test_3_initials",
+                "type": "text",
+                "default_value": "AK",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_mer_t3_hl",
+                "label": "Wyróżniona karta (zielona)",
+                "name": "test_3_highlighted",
+                "type": "true_false",
+                "ui": 1,
+                "default_value": 0,
+                "message": "",
+                "ui_on_text": "",
+                "ui_off_text": ""
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "key": "field_mer_test_tab_stats",
+                "label": "◆ Statystyki",
+                "name": "test_tab_stats",
+                "type": "tab",
+                "placement": "top",
+                "endpoint": 0
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_mer_ts1_val",
+                "label": "Statystyka 1 — Wartość",
+                "name": "test_stat_1_value",
+                "type": "text",
+                "default_value": "1200+",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_mer_ts1_lbl",
+                "label": "Statystyka 1 — Etykieta",
+                "name": "test_stat_1_label",
+                "type": "text",
+                "default_value": "Obsługiwanych klientów",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_mer_ts1_acc",
+                "label": "Statystyka 1 — Zielony",
+                "name": "test_stat_1_accent",
+                "type": "true_false",
+                "ui": 1,
+                "default_value": 0,
+                "message": "",
+                "ui_on_text": "",
+                "ui_off_text": ""
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_mer_ts2_val",
+                "label": "Statystyka 2 — Wartość",
+                "name": "test_stat_2_value",
+                "type": "text",
+                "default_value": "18+",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_mer_ts2_lbl",
+                "label": "Statystyka 2 — Etykieta",
+                "name": "test_stat_2_label",
+                "type": "text",
+                "default_value": "Lat na rynku",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_mer_ts2_acc",
+                "label": "Statystyka 2 — Zielony",
+                "name": "test_stat_2_accent",
+                "type": "true_false",
+                "ui": 1,
+                "default_value": 0,
+                "message": "",
+                "ui_on_text": "",
+                "ui_off_text": ""
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_mer_ts3_val",
+                "label": "Statystyka 3 — Wartość",
+                "name": "test_stat_3_value",
+                "type": "text",
+                "default_value": "98%",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_mer_ts3_lbl",
+                "label": "Statystyka 3 — Etykieta",
+                "name": "test_stat_3_label",
+                "type": "text",
+                "default_value": "Klientów poleca nas dalej",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_mer_ts3_acc",
+                "label": "Statystyka 3 — Zielony",
+                "name": "test_stat_3_accent",
+                "type": "true_false",
+                "ui": 1,
+                "default_value": 1,
+                "message": "",
+                "ui_on_text": "",
+                "ui_off_text": ""
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_mer_ts4_val",
+                "label": "Statystyka 4 — Wartość",
+                "name": "test_stat_4_value",
+                "type": "text",
+                "default_value": "35+",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_mer_ts4_lbl",
+                "label": "Statystyka 4 — Etykieta",
+                "name": "test_stat_4_label",
+                "type": "text",
+                "default_value": "Ekspertów w zespole",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_mer_ts4_acc",
+                "label": "Statystyka 4 — Zielony",
+                "name": "test_stat_4_accent",
+                "type": "true_false",
+                "ui": 1,
+                "default_value": 0,
+                "message": "",
+                "ui_on_text": "",
+                "ui_off_text": ""
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "page_type",
+                    "operator": "==",
+                    "value": "front_page"
+                }
+            ]
+        ]
+    }
+]

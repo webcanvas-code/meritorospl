@@ -1,0 +1,223 @@
+[
+    {
+        "menu_order": 10,
+        "position": "normal",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": "",
+        "active": true,
+        "description": "",
+        "show_in_rest": 0,
+        "modified": 1778755818,
+        "key": "group_mer_hero",
+        "title": "🏠 Hero",
+        "fields": [
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_mer_hero_bg",
+                "label": "Zdjęcie tła",
+                "name": "hero_bg_image",
+                "type": "image",
+                "return_format": "array",
+                "preview_size": "medium",
+                "library": "all",
+                "min_width": "",
+                "min_height": "",
+                "min_size": "",
+                "max_width": "",
+                "max_height": "",
+                "max_size": "",
+                "mime_types": ""
+            },
+            {
+                "instructions": "Każda linia tekstu będzie wyświetlona w nowej linii.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_mer_hero_headline",
+                "label": "Nagłówek główny",
+                "name": "hero_headline",
+                "type": "textarea",
+                "rows": 3,
+                "default_value": "Eksperci w księgowości.\nTechnologia i pewność\nw działaniu.",
+                "placeholder": "",
+                "maxlength": "",
+                "new_lines": ""
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_mer_hero_subheadline",
+                "label": "Podtytuł",
+                "name": "hero_subheadline",
+                "type": "textarea",
+                "rows": 3,
+                "default_value": "Zapewniamy księgowość kadry i outsourcing procesów w standardzie, który daje firmom spokój i bezpieczeństwo. Przejmujemy odpowiedzialność za jakość, terminowość i ciągłość obsługi.",
+                "placeholder": "",
+                "maxlength": "",
+                "new_lines": ""
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_mer_hero_btn1_text",
+                "label": "Przycisk 1 — tekst",
+                "name": "hero_btn1_text",
+                "type": "text",
+                "default_value": "Poznaj ofertę",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_mer_hero_btn1_url",
+                "label": "Przycisk 1 — link",
+                "name": "hero_btn1_url",
+                "type": "text",
+                "default_value": "#uslugi",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_mer_hero_btn2_text",
+                "label": "Przycisk 2 — tekst",
+                "name": "hero_btn2_text",
+                "type": "text",
+                "default_value": "Porozmawiajmy",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_mer_hero_btn2_url",
+                "label": "Przycisk 2 — link",
+                "name": "hero_btn2_url",
+                "type": "text",
+                "default_value": "#kontakt",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "instructions": "Możesz użyć HTML np. <span class=\"text-white\">...",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_mer_hero_trust_text",
+                "label": "Tekst pod paskiem klientów",
+                "name": "hero_trust_text",
+                "type": "text",
+                "default_value": "Zaufało nam ponad <span class=\"text-white\">1200 klientów<\/span>",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_mer_hero_clients",
+                "label": "Logotypy klientów (pasek)",
+                "name": "hero_clients",
+                "type": "repeater",
+                "button_label": "Dodaj klienta",
+                "sub_fields": [
+                    {
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "key": "field_mer_hero_client_name",
+                        "label": "Nazwa klienta",
+                        "name": "name",
+                        "type": "text",
+                        "default_value": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": ""
+                    }
+                ],
+                "layout": "table",
+                "min": 0,
+                "max": 0
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "page_type",
+                    "operator": "==",
+                    "value": "front_page"
+                }
+            ]
+        ]
+    }
+]

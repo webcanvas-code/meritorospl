@@ -1,0 +1,1096 @@
+[
+    {
+        "menu_order": 10,
+        "position": "normal",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": "",
+        "active": true,
+        "description": "",
+        "show_in_rest": 0,
+        "modified": 1778755818,
+        "key": "group_mer_fr",
+        "title": "🏛️ Fundacje rodzinne",
+        "fields": [
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "key": "field_fr_tab_hero",
+                "label": "Hero",
+                "name": "",
+                "type": "tab",
+                "placement": "top",
+                "endpoint": 0
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_fr_hero_title_normal",
+                "label": "Nagłówek — część 1 (czarna)",
+                "name": "fr_hero_title_normal",
+                "type": "text",
+                "default_value": "Fundacja rodzinna",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_fr_hero_title_green",
+                "label": "Nagłówek — wyróżnienie (zielone)",
+                "name": "fr_hero_title_green",
+                "type": "text",
+                "default_value": "bez stresu",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_fr_hero_title_line2",
+                "label": "Nagłówek — linia 2",
+                "name": "fr_hero_title_line2",
+                "type": "text",
+                "default_value": "księgowość pod kontrolą",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_fr_hero_subtitle",
+                "label": "Podtytuł",
+                "name": "fr_hero_subtitle",
+                "type": "textarea",
+                "rows": 3,
+                "default_value": "Prowadzimy pełną obsługę księgową fundacji rodzinnych. Zajmujemy się ewidencją, sprawozdawczością i terminami, żebyś mógł skupić się na tym, co ważne.",
+                "placeholder": "",
+                "maxlength": "",
+                "new_lines": ""
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_fr_hero_btn1_text",
+                "label": "Przycisk 1 — tekst",
+                "name": "fr_hero_btn1_text",
+                "type": "text",
+                "default_value": "Umów konsultację",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_fr_hero_btn1_url",
+                "label": "Przycisk 1 — link",
+                "name": "fr_hero_btn1_url",
+                "type": "text",
+                "default_value": "\/kontakt\/",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_fr_hero_btn2_text",
+                "label": "Przycisk 2 — tekst",
+                "name": "fr_hero_btn2_text",
+                "type": "text",
+                "default_value": "Poznaj ofertę",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_fr_hero_btn2_url",
+                "label": "Przycisk 2 — link",
+                "name": "fr_hero_btn2_url",
+                "type": "text",
+                "default_value": "#oferta",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "key": "field_fr_tab_obsluga",
+                "label": "Obsługa",
+                "name": "",
+                "type": "tab",
+                "placement": "top",
+                "endpoint": 0
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_fr_obs_title",
+                "label": "Tytuł sekcji",
+                "name": "fr_obs_title",
+                "type": "textarea",
+                "rows": 2,
+                "default_value": "Obsługa księgowa fundacji rodzinnej dla właścicieli myślących długoterminowo",
+                "placeholder": "",
+                "maxlength": "",
+                "new_lines": ""
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_fr_obs_text",
+                "label": "Tekst",
+                "name": "fr_obs_text",
+                "type": "textarea",
+                "rows": 4,
+                "default_value": "Prowadzimy księgowość fundacji rodzinnych dla przedsiębiorców, którzy chcą uporządkować kwestie majątku i sukcesji w sposób bezpieczny, transparentny i zgodny z przepisami. Bierzemy na siebie bieżącą obsługę, sprawozdawczość i kontrolę terminów, tak aby fundacja działała stabilnie.",
+                "placeholder": "",
+                "maxlength": "",
+                "new_lines": ""
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_fr_obs_image",
+                "label": "Zdjęcie",
+                "name": "fr_obs_image",
+                "type": "image",
+                "return_format": "array",
+                "preview_size": "medium",
+                "library": "all",
+                "min_width": "",
+                "min_height": "",
+                "min_size": "",
+                "max_width": "",
+                "max_height": "",
+                "max_size": "",
+                "mime_types": ""
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "key": "field_fr_tab_oferta",
+                "label": "Oferta",
+                "name": "",
+                "type": "tab",
+                "placement": "top",
+                "endpoint": 0
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_fr_oferta_title",
+                "label": "Tytuł",
+                "name": "fr_oferta_title",
+                "type": "text",
+                "default_value": "Poznaj naszą ofertę",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_fr_oferta_subtitle",
+                "label": "Podtytuł",
+                "name": "fr_oferta_subtitle",
+                "type": "textarea",
+                "rows": 3,
+                "default_value": "Zapewniamy kompleksową obsługę księgową i podatkową, która porządkuje finanse fundacji i daje poczucie bezpieczeństwa jej fundatorom.",
+                "placeholder": "",
+                "maxlength": "",
+                "new_lines": ""
+            },
+            {
+                "instructions": "Każda linia to oddzielny kafelek w siatce.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_fr_oferta_items",
+                "label": "Elementy listy (1 linia = 1 kafelek)",
+                "name": "fr_oferta_items",
+                "type": "textarea",
+                "rows": 8,
+                "default_value": "Prowadzenie ksiąg rachunkowych\nRozliczanie i składanie deklaracji podatkowych\nPrzygotowywanie sprawozdań finansowych\nAsystowanie podczas badania sprawozdania finansowego oraz kontroli urzędów\nRaportowanie na cele zarządcze\nSporządzanie polityki rachunkowości",
+                "placeholder": "",
+                "maxlength": "",
+                "new_lines": ""
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_fr_oferta_btn_text",
+                "label": "Przycisk — tekst",
+                "name": "fr_oferta_btn_text",
+                "type": "text",
+                "default_value": "Wyceń usługę",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_fr_oferta_btn_url",
+                "label": "Przycisk — link",
+                "name": "fr_oferta_btn_url",
+                "type": "text",
+                "default_value": "\/kontakt\/",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "key": "field_fr_tab_zyski",
+                "label": "Co zyskujesz",
+                "name": "",
+                "type": "tab",
+                "placement": "top",
+                "endpoint": 0
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_fr_zysk_title",
+                "label": "Tytuł sekcji",
+                "name": "fr_zysk_title",
+                "type": "textarea",
+                "rows": 2,
+                "default_value": "Co zyskujesz, gdy księgowość\nfundacji jest poukładana",
+                "placeholder": "",
+                "maxlength": "",
+                "new_lines": ""
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_fr_zysk_1",
+                "label": "Karta 1",
+                "name": "fr_zysk_1",
+                "type": "group",
+                "layout": "table",
+                "sub_fields": [
+                    {
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "key": "field_fr_zysk1_icon",
+                        "label": "Ikona (lucide)",
+                        "name": "icon",
+                        "type": "text",
+                        "default_value": "shield-check",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": ""
+                    },
+                    {
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "key": "field_fr_zysk1_title",
+                        "label": "Tytuł",
+                        "name": "title",
+                        "type": "text",
+                        "default_value": "Bezpieczne zarządzanie\nmajątkiem",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": ""
+                    },
+                    {
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "key": "field_fr_zysk1_text",
+                        "label": "Opis",
+                        "name": "text",
+                        "type": "textarea",
+                        "rows": 3,
+                        "default_value": "Porządek w danych i dokumentach, jasna sprawozdawczość i kontrola nad obowiązkami.",
+                        "placeholder": "",
+                        "maxlength": "",
+                        "new_lines": ""
+                    }
+                ]
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_fr_zysk_2",
+                "label": "Karta 2",
+                "name": "fr_zysk_2",
+                "type": "group",
+                "layout": "table",
+                "sub_fields": [
+                    {
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "key": "field_fr_zysk2_icon",
+                        "label": "Ikona (lucide)",
+                        "name": "icon",
+                        "type": "text",
+                        "default_value": "clipboard-list",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": ""
+                    },
+                    {
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "key": "field_fr_zysk2_title",
+                        "label": "Tytuł",
+                        "name": "title",
+                        "type": "text",
+                        "default_value": "Sukcesja na trwałych\nregułach",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": ""
+                    },
+                    {
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "key": "field_fr_zysk2_text",
+                        "label": "Opis",
+                        "name": "text",
+                        "type": "textarea",
+                        "rows": 3,
+                        "default_value": "Przejrzyste zasady i przewidywalność – tak, aby rozwiązanie działało długoterminowo.",
+                        "placeholder": "",
+                        "maxlength": "",
+                        "new_lines": ""
+                    }
+                ]
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_fr_zysk_3",
+                "label": "Karta 3",
+                "name": "fr_zysk_3",
+                "type": "group",
+                "layout": "table",
+                "sub_fields": [
+                    {
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "key": "field_fr_zysk3_icon",
+                        "label": "Ikona (lucide)",
+                        "name": "icon",
+                        "type": "text",
+                        "default_value": "calendar-check",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": ""
+                    },
+                    {
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "key": "field_fr_zysk3_title",
+                        "label": "Tytuł",
+                        "name": "title",
+                        "type": "text",
+                        "default_value": "Spokój w kwestiach\nformalnych",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": ""
+                    },
+                    {
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "key": "field_fr_zysk3_text",
+                        "label": "Opis",
+                        "name": "text",
+                        "type": "textarea",
+                        "rows": 3,
+                        "default_value": "Dopilnujemy terminów i obowiązków sprawozdawczych, żeby nic „nie wyskakiwało\" w ostatniej chwili.",
+                        "placeholder": "",
+                        "maxlength": "",
+                        "new_lines": ""
+                    }
+                ]
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_fr_zysk_4",
+                "label": "Karta 4",
+                "name": "fr_zysk_4",
+                "type": "group",
+                "layout": "table",
+                "sub_fields": [
+                    {
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "key": "field_fr_zysk4_icon",
+                        "label": "Ikona (lucide)",
+                        "name": "icon",
+                        "type": "text",
+                        "default_value": "badge-check",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": ""
+                    },
+                    {
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "key": "field_fr_zysk4_title",
+                        "label": "Tytuł",
+                        "name": "title",
+                        "type": "text",
+                        "default_value": "Mniej ryzyk,\nmniej poprawek",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": ""
+                    },
+                    {
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "key": "field_fr_zysk4_text",
+                        "label": "Opis",
+                        "name": "text",
+                        "type": "textarea",
+                        "rows": 3,
+                        "default_value": "Praca procesowa, weryfikacja danych i standardy, które ograniczają błędy.",
+                        "placeholder": "",
+                        "maxlength": "",
+                        "new_lines": ""
+                    }
+                ]
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "key": "field_fr_tab_dlaczego",
+                "label": "Dlaczego",
+                "name": "",
+                "type": "tab",
+                "placement": "top",
+                "endpoint": 0
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_fr_dlaczego_title",
+                "label": "Tytuł sekcji",
+                "name": "fr_dlaczego_title",
+                "type": "text",
+                "default_value": "Dlaczego warto nam zaufać?",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_fr_d1_title",
+                "label": "Karta 1 — tytuł",
+                "name": "fr_d1_title",
+                "type": "text",
+                "default_value": "Bezpieczeństwo\ni compliance",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_fr_d1_text",
+                "label": "Karta 1 — opis",
+                "name": "fr_d1_text",
+                "type": "textarea",
+                "rows": 4,
+                "default_value": "Działamy zgodnie z obowiązującymi regulacjami i standardami bezpieczeństwa danych. Dbamy o poufność informacji oraz jasne zasady współpracy – bez „skrótów\" i ryzyk.",
+                "placeholder": "",
+                "maxlength": "",
+                "new_lines": ""
+            },
+            {
+                "instructions": "Logo wyświetlane w stopce karty. Jeśli puste — pokazana zostanie ikona tarczy.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_fr_d1_logo",
+                "label": "Karta 1 — logo (np. ISO 27001)",
+                "name": "fr_d1_logo",
+                "type": "image",
+                "return_format": "array",
+                "preview_size": "thumbnail",
+                "library": "all",
+                "min_width": "",
+                "min_height": "",
+                "min_size": "",
+                "max_width": "",
+                "max_height": "",
+                "max_size": "",
+                "mime_types": ""
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_fr_d2_title",
+                "label": "Karta 2 — tytuł",
+                "name": "fr_d2_title",
+                "type": "text",
+                "default_value": "Jakość potwierdzona\nstandardami",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_fr_d2_text",
+                "label": "Karta 2 — opis",
+                "name": "fr_d2_text",
+                "type": "textarea",
+                "rows": 4,
+                "default_value": "Mamy wdrożone procedury kontroli jakości i weryfikacji danych. Dostarczamy informacje finansowe kompletne, spójne i użyteczne dla zarządu.",
+                "placeholder": "",
+                "maxlength": "",
+                "new_lines": ""
+            },
+            {
+                "instructions": "Logo wyświetlane w stopce karty. Jeśli puste — pokazana zostanie ikona nagrody.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_fr_d2_logo",
+                "label": "Karta 2 — logo (np. ISO 9001)",
+                "name": "fr_d2_logo",
+                "type": "image",
+                "return_format": "array",
+                "preview_size": "thumbnail",
+                "library": "all",
+                "min_width": "",
+                "min_height": "",
+                "min_size": "",
+                "max_width": "",
+                "max_height": "",
+                "max_size": "",
+                "mime_types": ""
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_fr_d3_title",
+                "label": "Karta 3 — tytuł",
+                "name": "fr_d3_title",
+                "type": "text",
+                "default_value": "Ponad 170 ekspertów",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_fr_d3_text",
+                "label": "Karta 3 — opis",
+                "name": "fr_d3_text",
+                "type": "textarea",
+                "rows": 4,
+                "default_value": "Jakość potwierdzona standardami. Mamy wdrożone procedury kontroli jakości i weryfikacji danych. Dostarczamy informacje finansowe kompletne, spójne i użyteczne dla zarządu.",
+                "placeholder": "",
+                "maxlength": "",
+                "new_lines": ""
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "key": "field_fr_tab_model",
+                "label": "Model współpracy",
+                "name": "",
+                "type": "tab",
+                "placement": "top",
+                "endpoint": 0
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_fr_model_title",
+                "label": "Tytuł sekcji",
+                "name": "fr_model_title",
+                "type": "text",
+                "default_value": "Model współpracy",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_fr_model_subtitle",
+                "label": "Podtytuł",
+                "name": "fr_model_subtitle",
+                "type": "textarea",
+                "rows": 2,
+                "default_value": "Możesz powierzyć nam całość procesów księgowych lub wybrane obszary wymagające uporządkowania. Dopasowujemy zakres wsparcia do realnej sytuacji Twojej firmy.",
+                "placeholder": "",
+                "maxlength": "",
+                "new_lines": ""
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_fr_model1",
+                "label": "Karta 1 — Kompleksowa obsługa",
+                "name": "fr_model1",
+                "type": "group",
+                "layout": "table",
+                "sub_fields": [
+                    {
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "key": "field_fr_model1_icon",
+                        "label": "Ikona (lucide)",
+                        "name": "icon",
+                        "type": "text",
+                        "default_value": "network",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": ""
+                    },
+                    {
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "key": "field_fr_model1_title",
+                        "label": "Tytuł",
+                        "name": "title",
+                        "type": "text",
+                        "default_value": "Kompleksowa obsługa",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": ""
+                    },
+                    {
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "key": "field_fr_model1_text",
+                        "label": "Opis (tył karty)",
+                        "name": "text",
+                        "type": "textarea",
+                        "rows": 3,
+                        "default_value": "Obsługujemy proces end-to-end: od bieżącej ewidencji po zamknięcie miesiąca i raporty. Pracujesz z zespołem, który zapewnia zastępowalność i stały standard.",
+                        "placeholder": "",
+                        "maxlength": "",
+                        "new_lines": ""
+                    }
+                ]
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "key": "field_fr_model2",
+                "label": "Karta 2 — Outsourcing wybranych procesów",
+                "name": "fr_model2",
+                "type": "group",
+                "layout": "table",
+                "sub_fields": [
+                    {
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "key": "field_fr_model2_image",
+                        "label": "Zdjęcie tła",
+                        "name": "image",
+                        "type": "image",
+                        "return_format": "array",
+                        "preview_size": "medium",
+                        "library": "all",
+                        "min_width": "",
+                        "min_height": "",
+                        "min_size": "",
+                        "max_width": "",
+                        "max_height": "",
+                        "max_size": "",
+                        "mime_types": ""
+                    },
+                    {
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "key": "field_fr_model2_title",
+                        "label": "Tytuł",
+                        "name": "title",
+                        "type": "text",
+                        "default_value": "Outsourcing wybranych\nprocesów",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": ""
+                    },
+                    {
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "key": "field_fr_model2_text",
+                        "label": "Opis (tył karty)",
+                        "name": "text",
+                        "type": "textarea",
+                        "rows": 3,
+                        "default_value": "Przejmujemy konkretne procesy i dowozimy je w ustalonym standardzie i harmonogramie. To rozwiązanie dla firm, które chcą wzmocnić wewnętrzny dział finansów bez rozbudowy etatów.",
+                        "placeholder": "",
+                        "maxlength": "",
+                        "new_lines": ""
+                    }
+                ]
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "page_slug",
+                    "operator": "==",
+                    "value": "fundacje-rodzinne"
+                }
+            ],
+            [
+                {
+                    "param": "page_template",
+                    "operator": "==",
+                    "value": "page-fundacje-rodzinne.php"
+                }
+            ]
+        ]
+    }
+]
