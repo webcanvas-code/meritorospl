@@ -79,7 +79,7 @@ unset($__item);
         </a>
 
         <!-- Desktop Nav -->
-        <nav class="hidden lg:flex flex-1 items-center justify-center <?php echo ($mer_current === 'ru') ? 'gap-1.5 xl:gap-3 text-[15px]' : 'gap-4 xl:gap-7 text-[17px]'; ?> text-slate-900 font-medium" aria-label="<?php esc_attr_e('Menu główne', 'meritoros'); ?>">
+        <nav class="hidden lg:flex flex-1 items-center justify-center <?php echo ($mer_current === 'ru') ? 'gap-1.5 xl:gap-3 text-[15px]' : 'gap-4 xl:gap-7 text-[15px] xl:text-[17px]'; ?> text-slate-900 font-medium" aria-label="<?php esc_attr_e('Menu główne', 'meritoros'); ?>">
             <?php foreach ($nav_items as $item) :
                 $label       = esc_html($item['label'] ?? '');
                 $url         = esc_url($item['url'] ?? '#');
@@ -158,7 +158,7 @@ unset($__item);
             </div>
             <?php endif; ?>
             <a href="https://pulpit.meritoros.pl/login" target="_blank" rel="noopener"
-               class="flex items-center gap-2 px-5 py-3 rounded-full border border-slate-200 text-slate-700 text-base font-medium hover:border-slate-300 hover:bg-white transition-colors shrink-0 whitespace-nowrap">
+               class="hidden xl:flex items-center gap-2 px-5 py-3 rounded-full border border-slate-200 text-slate-700 text-base font-medium hover:border-slate-300 hover:bg-white transition-colors whitespace-nowrap">
                 <i data-lucide="user" class="w-4 h-4 stroke-[1.5]"></i>
                 <?php echo mer_esc($_panel_label); ?>
             </a>

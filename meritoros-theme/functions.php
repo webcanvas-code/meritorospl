@@ -29,12 +29,12 @@ add_action('after_setup_theme', 'meritoros_setup');
    Auto-create Primary nav menu if missing or incomplete
 ------------------------------------------------------------------ */
 function mer_create_primary_menu(): void {
-    // Sprawdź czy Primary ma menu z co najmniej 2 pozycjami
+    // Sprawdź czy Primary ma menu z co najmniej 5 pozycjami
     $locations = get_nav_menu_locations();
     if (!empty($locations['primary'])) {
         $existing_obj   = wp_get_nav_menu_object($locations['primary']);
         $existing_items = $existing_obj ? wp_get_nav_menu_items($existing_obj->term_id) : [];
-        if (count(array_filter($existing_items, fn($i) => !$i->menu_item_parent)) >= 2) {
+        if (count(array_filter($existing_items, fn($i) => !$i->menu_item_parent)) >= 5) {
             return; // Menu jest OK — nie ruszamy
         }
     }
