@@ -25,7 +25,7 @@ $img_alt = is_array($image) ? esc_attr($image['alt'] ?: 'Twoja księgowość') :
             <div>
                 <h2 class="text-pretty text-4xl font-bold tracking-tight text-slate-900 mb-6 leading-tight">
                     <?php echo mer_esc($title1); ?><br>
-                    <?php echo mer_esc($title2); ?> <span class="text-[#48c279]"><?php echo mer_esc($title_green); ?></span>
+                    <?php echo mer_esc($title2); ?> <span class="text-[#2d8650]"><?php echo mer_esc($title_green); ?></span>
                 </h2>
                 <p class="text-base sm:text-lg text-slate-500 leading-relaxed mb-6">
                     <?php echo mer_esc($text1); ?>
@@ -34,7 +34,7 @@ $img_alt = is_array($image) ? esc_attr($image['alt'] ?: 'Twoja księgowość') :
                     <?php echo mer_esc($text2); ?>
                 </p>
                 <a href="#wspolpraca"
-                   class="inline-flex px-7 py-3.5 rounded-full bg-[#48c279] text-white text-base font-semibold hover:bg-[#3ea868] transition-colors">
+                   class="inline-flex px-7 py-3.5 rounded-full bg-[#2d8650] text-white text-base font-semibold hover:bg-[#246e41] transition-colors">
                     <?php echo mer_esc($btn_text); ?>
                 </a>
             </div>

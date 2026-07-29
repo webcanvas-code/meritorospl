@@ -47,17 +47,17 @@ for ($i = 1; $i <= 4; $i++) {
         <!-- Footer CTA Banner -->
         <div class="border-b border-white/10 py-12 sm:py-16 lg:py-20 flex flex-col lg:flex-row lg:items-center justify-between gap-8 sm:gap-10">
             <div class="max-w-2xl">
-                <span class="text-[#48c279] uppercase tracking-widest text-base font-bold mb-4 block">
+                <span class="text-[#2d8650] uppercase tracking-widest text-base font-bold mb-4 block">
                     <?php echo mer_esc($cta_label); ?>
                 </span>
                 <h2 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight leading-tight">
                     <?php echo nl2br(esc_html($cta_title)); ?><br>
-                    <span class="text-[#48c279]"><?php echo mer_esc($cta_accent); ?></span>
+                    <span class="text-[#2d8650]"><?php echo mer_esc($cta_accent); ?></span>
                 </h2>
             </div>
             <div class="flex flex-col sm:flex-row gap-5 shrink-0">
                 <a href="<?php echo esc_url($btn1_url); ?>"
-                   class="inline-flex items-center gap-3 bg-[#48c279] text-white px-9 py-4 rounded-full text-lg font-bold hover:bg-[#3ea868] hover:shadow-lg hover:shadow-[#48c279]/30 transition-all duration-300 group">
+                   class="inline-flex items-center gap-3 bg-[#2d8650] text-white px-9 py-4 rounded-full text-lg font-bold hover:bg-[#246e41] hover:shadow-lg hover:shadow-[#2d8650]/30 transition-all duration-300 group">
                     <?php echo mer_esc($btn1_text); ?>
                     <i data-lucide="arrow-right" class="w-5 h-5 group-hover:translate-x-1 transition-transform"></i>
                 </a>
@@ -103,7 +103,7 @@ for ($i = 1; $i <= 4; $i++) {
                         if (!$svg || !$url || $url === '#') continue;
                     ?>
                         <a href="<?php echo $url; ?>" rel="noopener noreferrer" target="_blank"
-                           class="w-9 h-9 rounded-full bg-white/10 flex items-center justify-center hover:bg-[#48c279] transition-colors duration-300 text-white"
+                           class="w-9 h-9 rounded-full bg-white/10 flex items-center justify-center hover:bg-[#2d8650] transition-colors duration-300 text-white"
                            aria-label="<?php echo esc_attr($label); ?>">
                             <?php echo $svg; ?>
                         </a>
@@ -144,13 +144,13 @@ for ($i = 1; $i <= 4; $i++) {
                 <ul class="space-y-3 text-sm text-slate-300">
                     <?php if ($address) : ?>
                         <li class="flex items-start gap-2">
-                            <i data-lucide="map-pin" class="w-4 h-4 text-[#48c279] mt-0.5 shrink-0 stroke-[1.5]"></i>
+                            <i data-lucide="map-pin" class="w-4 h-4 text-[#2d8650] mt-0.5 shrink-0 stroke-[1.5]"></i>
                             <span><?php echo nl2br(esc_html($address)); ?></span>
                         </li>
                     <?php endif; ?>
                     <?php if ($phone) : ?>
                         <li class="flex items-center gap-2">
-                            <i data-lucide="phone" class="w-4 h-4 text-[#48c279] shrink-0 stroke-[1.5]"></i>
+                            <i data-lucide="phone" class="w-4 h-4 text-[#2d8650] shrink-0 stroke-[1.5]"></i>
                             <a href="tel:<?php echo esc_attr(preg_replace('/\s+/', '', $phone)); ?>" class="hover:text-white transition-colors">
                                 <?php echo mer_esc($phone); ?>
                             </a>
@@ -158,7 +158,7 @@ for ($i = 1; $i <= 4; $i++) {
                     <?php endif; ?>
                     <?php if ($email) : ?>
                         <li class="flex items-center gap-2">
-                            <i data-lucide="mail" class="w-4 h-4 text-[#48c279] shrink-0 stroke-[1.5]"></i>
+                            <i data-lucide="mail" class="w-4 h-4 text-[#2d8650] shrink-0 stroke-[1.5]"></i>
                             <a href="mailto:<?php echo esc_attr($email); ?>" class="hover:text-white transition-colors">
                                 <?php echo mer_esc($email); ?>
                             </a>

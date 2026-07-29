@@ -40,7 +40,7 @@ $bg_url = is_array($hero_bg) ? esc_url($hero_bg['url']) : '';
                     <?php echo mer_esc($btn1_text); ?>
                 </a>
                 <a href="<?php echo esc_url($btn2_url); ?>"
-                    class="px-7 py-3.5 rounded-full bg-[#48c279] text-white text-base font-semibold hover:bg-[#3ea868] transition-colors">
+                    class="px-7 py-3.5 rounded-full bg-[#2d8650] text-white text-base font-semibold hover:bg-[#246e41] transition-colors">
                     <?php echo mer_esc($btn2_text); ?>
                 </a>
             </div>

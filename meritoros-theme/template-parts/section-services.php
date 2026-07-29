@@ -32,7 +32,7 @@ $icon_classes = ['rotate-3', '-rotate-3', 'rotate-3', '-rotate-3', 'rotate-3'];
     <div class="max-w-[1400px] mx-auto">
 
         <div class="max-w-4xl mb-6">
-            <span class="text-[#48c279] uppercase tracking-widest text-base font-bold mb-2 block">
+            <span class="text-[#2d8650] uppercase tracking-widest text-base font-bold mb-2 block">
                 <?php echo mer_esc($label); ?>
             </span>
             <h2 class="text-pretty text-3xl lg:text-4xl font-bold tracking-tight mb-3 text-slate-900">
@@ -56,10 +56,10 @@ $icon_classes = ['rotate-3', '-rotate-3', 'rotate-3', '-rotate-3', 'rotate-3'];
             ?>
                 <a href="<?php echo $s_url; ?>"
                    class="bg-white border border-slate-200 rounded-[2rem] p-4 lg:p-6 hover:-translate-y-1 hover:shadow-xl hover:shadow-slate-200/50 transition-all duration-300 flex flex-col min-h-[180px] lg:min-h-[220px] group relative overflow-hidden">
-                    <div class="w-10 h-10 bg-slate-50 border border-slate-100 rounded-2xl flex items-center justify-center mb-4 text-[#48c279] group-hover:scale-110 group-hover:<?php echo $rot; ?> transition-all duration-300">
+                    <div class="w-10 h-10 bg-slate-50 border border-slate-100 rounded-2xl flex items-center justify-center mb-4 text-[#2d8650] group-hover:scale-110 group-hover:<?php echo $rot; ?> transition-all duration-300">
                         <i data-lucide="<?php echo $icon; ?>" class="w-6 h-6 stroke-[1.5]"></i>
                     </div>
-                    <div class="absolute top-6 right-6 w-10 h-10 rounded-full border border-slate-100 bg-slate-50 flex items-center justify-center opacity-0 -translate-x-4 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-300 text-slate-400 group-hover:text-[#48c279]">
+                    <div class="absolute top-6 right-6 w-10 h-10 rounded-full border border-slate-100 bg-slate-50 flex items-center justify-center opacity-0 -translate-x-4 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-300 text-slate-400 group-hover:text-[#2d8650]">
                         <i data-lucide="arrow-right" class="w-5 h-5 stroke-[2]"></i>
                     </div>
                     <h3 class="text-lg lg:text-xl font-bold tracking-tight mb-3 mt-auto text-slate-900"><?php echo $s_title; ?></h3>
@@ -69,7 +69,7 @@ $icon_classes = ['rotate-3', '-rotate-3', 'rotate-3', '-rotate-3', 'rotate-3'];
 
             <!-- CTA Card -->
             <a href="<?php echo esc_url($cta_url); ?>"
-               class="bg-[#48c279] rounded-[2rem] p-4 lg:p-6 hover:-translate-y-1 hover:shadow-xl hover:shadow-[#48c279]/30 transition-all duration-300 flex flex-col items-center justify-center text-center text-white min-h-[180px] lg:min-h-[220px] group relative overflow-hidden">
+               class="bg-[#2d8650] rounded-[2rem] p-4 lg:p-6 hover:-translate-y-1 hover:shadow-xl hover:shadow-[#2d8650]/30 transition-all duration-300 flex flex-col items-center justify-center text-center text-white min-h-[180px] lg:min-h-[220px] group relative overflow-hidden">
                 <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-700 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-white/20 via-transparent to-transparent"></div>
                 <div class="relative w-12 h-12 mb-4">
                     <i data-lucide="plus-circle" class="w-12 h-12 stroke-[1.5] absolute inset-0 opacity-100 group-hover:scale-50 group-hover:opacity-0 transition-all duration-500"></i>

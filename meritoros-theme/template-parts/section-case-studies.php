@@ -151,7 +151,7 @@ $total = count($items);
     <div class="max-w-[1200px] mx-auto w-full">
         <!-- Nagłówek: tylko kontekst — nawigacja slajdera jest pod kartą (lepszy UX na mobile) -->
         <header class="mb-8 lg:mb-10 text-center lg:text-left">
-            <span class="text-[#48c279] uppercase tracking-widest text-base font-bold mb-4 block">
+            <span class="text-[#2d8650] uppercase tracking-widest text-base font-bold mb-4 block">
                 <?php echo mer_esc($label); ?>
             </span>
             <h2 id="cs-section-title" class="text-pretty text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-slate-900 max-w-3xl mx-auto lg:mx-0">
@@ -192,7 +192,7 @@ $total = count($items);
                                     data-src="<?php echo esc_attr($item['play_src']); ?>"
                                     data-type="<?php echo esc_attr($item['play_type']); ?>"
                                     aria-label="<?php esc_attr_e('Odtwórz wideo', 'meritoros'); ?>">
-                                <span class="flex h-16 w-16 sm:h-[4.5rem] sm:w-[4.5rem] items-center justify-center rounded-full bg-white/95 text-[#48c279] shadow-lg shadow-black/15 ring-4 ring-white/30 transition-transform duration-300 group-hover/play:scale-105">
+                                <span class="flex h-16 w-16 sm:h-[4.5rem] sm:w-[4.5rem] items-center justify-center rounded-full bg-white/95 text-[#2d8650] shadow-lg shadow-black/15 ring-4 ring-white/30 transition-transform duration-300 group-hover/play:scale-105">
                                     <i data-lucide="play" class="w-7 h-7 sm:w-8 sm:h-8 fill-current ml-0.5"></i>
                                 </span>
                                 <span class="rounded-full bg-black/35 px-3 py-1 text-xs font-medium text-white backdrop-blur-sm">
@@ -224,7 +224,7 @@ $total = count($items);
                     <!-- Treść -->
                     <div class="order-2 lg:order-1 lg:col-span-5 flex flex-col justify-center p-6 sm:p-8 lg:p-10 xl:p-12">
                         <?php if (empty($item['is_general'])) : ?>
-                            <p class="text-[11px] uppercase tracking-[0.2em] font-semibold text-[#48c279] mb-2">
+                            <p class="text-[11px] uppercase tracking-[0.2em] font-semibold text-[#2d8650] mb-2">
                                 <?php esc_html_e('Case study', 'meritoros'); ?>
                             </p>
                             <div class="flex flex-wrap items-center gap-3 mb-5">
@@ -266,7 +266,7 @@ $total = count($items);
                         <?php endif; ?>
 
                         <a href="<?php echo esc_url($item['cta_url']); ?>"
-                           class="inline-flex w-full sm:w-auto min-h-[48px] items-center justify-center gap-2 rounded-xl bg-[#48c279] px-5 py-3.5 text-sm font-semibold text-white shadow-md shadow-[#48c279]/25 transition hover:bg-[#3ea868] hover:shadow-lg hover:shadow-[#48c279]/30 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#48c279] group/cta">
+                           class="inline-flex w-full sm:w-auto min-h-[48px] items-center justify-center gap-2 rounded-xl bg-[#2d8650] px-5 py-3.5 text-sm font-semibold text-white shadow-md shadow-[#2d8650]/25 transition hover:bg-[#246e41] hover:shadow-lg hover:shadow-[#2d8650]/30 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#2d8650] group/cta">
                             <?php esc_html_e('Poznaj więcej historii', 'meritoros'); ?>
                             <i data-lucide="arrow-right" class="w-4 h-4 transition group-hover/cta:translate-x-0.5"></i>
                         </a>
@@ -282,7 +282,7 @@ $total = count($items);
         <div class="mt-6 flex flex-col items-stretch gap-4 sm:flex-row sm:items-center sm:justify-between">
             <div class="flex items-center justify-center gap-2 sm:justify-start">
                 <button type="button" id="cs-prev"
-                        class="inline-flex h-11 w-11 shrink-0 items-center justify-center rounded-full border border-slate-200 bg-white text-slate-600 shadow-sm transition hover:border-slate-300 hover:bg-slate-50 hover:text-slate-900 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#48c279]"
+                        class="inline-flex h-11 w-11 shrink-0 items-center justify-center rounded-full border border-slate-200 bg-white text-slate-600 shadow-sm transition hover:border-slate-300 hover:bg-slate-50 hover:text-slate-900 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#2d8650]"
                         aria-label="<?php esc_attr_e('Poprzednia historia', 'meritoros'); ?>">
                     <i data-lucide="chevron-left" class="w-5 h-5 stroke-[2]"></i>
                 </button>
@@ -290,7 +290,7 @@ $total = count($items);
                     <?php echo $total > 0 ? '1 / ' . (int) $total : '0 / 0'; ?>
                 </span>
                 <button type="button" id="cs-next"
-                        class="inline-flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-[#48c279] text-white shadow-md shadow-[#48c279]/25 transition hover:bg-[#3ea868] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#48c279]"
+                        class="inline-flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-[#2d8650] text-white shadow-md shadow-[#2d8650]/25 transition hover:bg-[#246e41] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#2d8650]"
                         aria-label="<?php esc_attr_e('Następna historia', 'meritoros'); ?>">
                     <i data-lucide="chevron-right" class="w-5 h-5 stroke-[2]"></i>
                 </button>
@@ -299,7 +299,7 @@ $total = count($items);
             <div id="cs-dots" class="flex flex-wrap justify-center gap-2 sm:justify-end" aria-label="<?php esc_attr_e('Nawigacja slajdów', 'meritoros'); ?>">
                 <?php for ($i = 0; $i < $total; $i++) : ?>
                     <button type="button" data-index="<?php echo $i; ?>"
-                            class="cs-dot h-2 rounded-full transition-all duration-300 <?php echo $i === 0 ? 'w-8 bg-[#48c279] ring-2 ring-[#48c279]/25' : 'w-2 bg-slate-200 hover:bg-slate-300'; ?>"
+                            class="cs-dot h-2 rounded-full transition-all duration-300 <?php echo $i === 0 ? 'w-8 bg-[#2d8650] ring-2 ring-[#2d8650]/25' : 'w-2 bg-slate-200 hover:bg-slate-300'; ?>"
                             aria-label="<?php printf(esc_attr__('Historia %d z %d', 'meritoros'), $i + 1, $total); ?>"
                             aria-current="<?php echo $i === 0 ? 'true' : 'false'; ?>">
                     </button>

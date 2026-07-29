@@ -95,7 +95,7 @@ for ($i = 1; $i <= 2; $i++) {
             <button id="historie-prev" type="button" class="w-12 h-12 rounded-full bg-white border border-slate-200 flex items-center justify-center shadow-sm hover:bg-slate-50 transition-colors" style="opacity:0.35;pointer-events:none">
                 <i data-lucide="chevron-left" class="w-5 h-5 text-slate-700 stroke-[2]"></i>
             </button>
-            <button id="historie-next" type="button" class="w-12 h-12 rounded-full bg-[#48c279] flex items-center justify-center shadow-md hover:bg-[#3ea868] transition-colors">
+            <button id="historie-next" type="button" class="w-12 h-12 rounded-full bg-[#2d8650] flex items-center justify-center shadow-md hover:bg-[#246e41] transition-colors">
                 <i data-lucide="chevron-right" class="w-5 h-5 text-white stroke-[2]"></i>
             </button>
         </div>
@@ -131,7 +131,7 @@ for ($i = 1; $i <= 2; $i++) {
                         <?php else : ?>
                         <div class="absolute inset-0 flex items-center justify-center pointer-events-none">
                         <?php endif; ?>
-                            <div class="w-12 h-12 rounded-full bg-[#48c279] flex items-center justify-center shadow-xl group-hover:scale-110 transition-transform duration-200">
+                            <div class="w-12 h-12 rounded-full bg-[#2d8650] flex items-center justify-center shadow-xl group-hover:scale-110 transition-transform duration-200">
                                 <i data-lucide="play" fill="#fff" class="w-4 h-4 text-white ml-0.5" stroke-width="0"></i>
                             </div>
                         <?php if ($has_video) : ?>
@@ -152,7 +152,7 @@ for ($i = 1; $i <= 2; $i++) {
                             <?php endforeach; ?>
                         </div>
                         <p class="text-xs text-slate-500 leading-relaxed line-clamp-3 mb-3"><?php echo mer_esc($slide['text']); ?></p>
-                        <a href="<?php echo esc_url($slide['slide_url']); ?>" class="mt-auto inline-flex px-5 py-2.5 rounded-full bg-[#48c279] text-white text-xs font-semibold hover:bg-[#3ea868] transition-colors self-start">
+                        <a href="<?php echo esc_url($slide['slide_url']); ?>" class="mt-auto inline-flex px-5 py-2.5 rounded-full bg-[#2d8650] text-white text-xs font-semibold hover:bg-[#246e41] transition-colors self-start">
                             <?php echo mer_esc($slide['btn_text']); ?>
                         </a>
                     </div>
@@ -165,7 +165,7 @@ for ($i = 1; $i <= 2; $i++) {
 
     <div class="max-w-7xl mx-auto px-6 mt-6 flex items-center justify-center gap-2" id="historie-dots">
         <?php foreach ($slides as $idx => $slide) : ?>
-        <button class="rounded-full transition-all duration-300 <?php echo $idx === 0 ? 'w-6 h-2 bg-[#48c279]' : 'w-2 h-2 bg-slate-300'; ?>" data-i="<?php echo $idx; ?>"></button>
+        <button class="rounded-full transition-all duration-300 <?php echo $idx === 0 ? 'w-6 h-2 bg-[#2d8650]' : 'w-2 h-2 bg-slate-300'; ?>" data-i="<?php echo $idx; ?>"></button>
         <?php endforeach; ?>
     </div>
 </section>
@@ -208,7 +208,7 @@ for ($i = 1; $i <= 2; $i++) {
 
     function updateDots() {
         dots.forEach(function (d, i) {
-            d.className = 'rounded-full transition-all duration-300 ' + (i === current ? 'w-6 h-2 bg-[#48c279]' : 'w-2 h-2 bg-slate-300');
+            d.className = 'rounded-full transition-all duration-300 ' + (i === current ? 'w-6 h-2 bg-[#2d8650]' : 'w-2 h-2 bg-slate-300');
         });
     }
 

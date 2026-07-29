@@ -42,13 +42,13 @@ $s3_items = array_values(array_filter(array_map('trim', explode("\n", $s3_items_
             <div class="relative w-[95%] sm:w-[90%] ml-auto">
                 <div class="border-t border-r border-b border-slate-300 rounded-r-[3rem] sm:rounded-r-[4rem] p-10 sm:p-14 md:p-20 flex flex-col md:flex-row items-center gap-10 md:gap-20">
                     <div class="absolute top-0 right-full w-screen h-px bg-slate-300"></div>
-                    <div class="text-[5rem] sm:text-[8rem] md:text-[10rem] font-medium text-[#48c279] leading-none shrink-0 tracking-tighter">01</div>
+                    <div class="text-[5rem] sm:text-[8rem] md:text-[10rem] font-medium text-[#2d8650] leading-none shrink-0 tracking-tighter">01</div>
                     <div class="flex-1">
                         <h3 class="text-2xl font-bold mb-5 text-slate-900"><?php echo mer_esc($s1_title); ?></h3>
                         <?php if ($s1_lead) : ?><p class="text-slate-700 font-medium mb-4 text-lg"><?php echo mer_esc($s1_lead); ?></p><?php endif; ?>
                         <ul class="space-y-3 text-slate-600">
                             <?php foreach ($s1_items as $item) : ?>
-                            <li class="flex items-start gap-3"><i data-lucide="check-circle-2" class="w-5 h-5 text-[#48c279] shrink-0 mt-0.5"></i> <?php echo mer_esc($item); ?></li>
+                            <li class="flex items-start gap-3"><i data-lucide="check-circle-2" class="w-5 h-5 text-[#2d8650] shrink-0 mt-0.5"></i> <?php echo mer_esc($item); ?></li>
                             <?php endforeach; ?>
                         </ul>
                     </div>
@@ -63,7 +63,7 @@ $s3_items = array_values(array_filter(array_map('trim', explode("\n", $s3_items_
                         <?php if ($s2_lead) : ?><p class="text-slate-700 font-medium mb-4 max-w-lg text-lg"><?php echo mer_esc($s2_lead); ?></p><?php endif; ?>
                         <ul class="space-y-3 text-slate-600 max-w-lg">
                             <?php foreach ($s2_items as $item) : ?>
-                            <li class="flex items-start gap-3"><i data-lucide="check-circle-2" class="w-5 h-5 text-[#48c279] shrink-0 mt-0.5"></i> <?php echo mer_esc($item); ?></li>
+                            <li class="flex items-start gap-3"><i data-lucide="check-circle-2" class="w-5 h-5 text-[#2d8650] shrink-0 mt-0.5"></i> <?php echo mer_esc($item); ?></li>
                             <?php endforeach; ?>
                         </ul>
                     </div>
@@ -74,13 +74,13 @@ $s3_items = array_values(array_filter(array_map('trim', explode("\n", $s3_items_
             <!-- Krok 03 -->
             <div class="relative w-[95%] sm:w-[90%] ml-auto">
                 <div class="border-t border-r border-b border-slate-300 rounded-r-[3rem] sm:rounded-r-[4rem] p-10 sm:p-14 md:p-20 flex flex-col md:flex-row items-center gap-10 md:gap-20 mt-[-1px]">
-                    <div class="text-[5rem] sm:text-[8rem] md:text-[10rem] font-medium text-[#48c279] leading-none shrink-0 tracking-tighter">03</div>
+                    <div class="text-[5rem] sm:text-[8rem] md:text-[10rem] font-medium text-[#2d8650] leading-none shrink-0 tracking-tighter">03</div>
                     <div class="flex-1">
                         <h3 class="text-2xl font-bold mb-5 text-slate-900 leading-snug"><?php echo mer_esc($s3_title); ?></h3>
                         <?php if ($s3_lead) : ?><p class="text-slate-700 font-medium mb-4 text-lg"><?php echo mer_esc($s3_lead); ?></p><?php endif; ?>
                         <ul class="space-y-3 text-slate-600 mb-6">
                             <?php foreach ($s3_items as $item) : ?>
-                            <li class="flex items-start gap-3"><i data-lucide="check-circle-2" class="w-5 h-5 text-[#48c279] shrink-0 mt-0.5"></i> <?php echo mer_esc($item); ?></li>
+                            <li class="flex items-start gap-3"><i data-lucide="check-circle-2" class="w-5 h-5 text-[#2d8650] shrink-0 mt-0.5"></i> <?php echo mer_esc($item); ?></li>
                             <?php endforeach; ?>
                         </ul>
                         <?php if ($s3_note) : ?><p class="text-slate-600 text-lg"><?php echo mer_esc($s3_note); ?></p><?php endif; ?>
@@ -90,7 +90,7 @@ $s3_items = array_values(array_filter(array_map('trim', explode("\n", $s3_items_
         </div>
 
         <div class="mt-20 text-center">
-            <a href="<?php echo esc_url($btn_url); ?>" class="px-7 py-3.5 rounded-full bg-[#48c279] text-white text-base font-semibold hover:bg-[#3ea868] transition-colors inline-block shadow-lg shadow-emerald-500/30">
+            <a href="<?php echo esc_url($btn_url); ?>" class="px-7 py-3.5 rounded-full bg-[#2d8650] text-white text-base font-semibold hover:bg-[#246e41] transition-colors inline-block shadow-lg shadow-emerald-500/30">
                 <?php echo mer_esc($btn_text); ?>
             </a>
         </div>

@@ -55,14 +55,14 @@ if (is_array($video_file) && !empty($video_file['url'])) {
                     <?php echo mer_esc($text); ?>
                 </p>
                 <?php if ($play_src) : ?>
-                    <button class="mvid-open inline-flex items-center gap-2 px-8 py-4 rounded-full bg-[#48c279] text-white text-base font-medium hover:bg-[#3ea868] transition-colors"
+                    <button class="mvid-open inline-flex items-center gap-2 px-8 py-4 rounded-full bg-[#2d8650] text-white text-base font-medium hover:bg-[#246e41] transition-colors"
                             data-src="<?php echo $play_src; ?>"
                             data-type="<?php echo esc_attr($play_type); ?>">
                         <?php echo mer_esc($btn_text); ?>
                     </button>
                 <?php else : ?>
                     <a href="<?php echo esc_url($btn_url); ?>"
-                       class="inline-flex items-center gap-2 px-8 py-4 rounded-full bg-[#48c279] text-white text-base font-medium hover:bg-[#3ea868] transition-colors">
+                       class="inline-flex items-center gap-2 px-8 py-4 rounded-full bg-[#2d8650] text-white text-base font-medium hover:bg-[#246e41] transition-colors">
                         <?php echo mer_esc($btn_text); ?>
                     </a>
                 <?php endif; ?>
@@ -79,7 +79,7 @@ if (is_array($video_file) && !empty($video_file['url'])) {
                         <div class="absolute inset-0 bg-slate-900/30 group-hover:bg-slate-900/20 transition-colors duration-300"></div>
                         <?php if ($play_src) : ?>
                             <div class="absolute inset-0 flex items-center justify-center">
-                                <div class="w-20 h-20 rounded-full bg-[#48c279] flex items-center justify-center shadow-xl group-hover:scale-110 transition-transform duration-300">
+                                <div class="w-20 h-20 rounded-full bg-[#2d8650] flex items-center justify-center shadow-xl group-hover:scale-110 transition-transform duration-300">
                                     <i data-lucide="play" fill="#fff" class="w-8 h-8 text-white ml-1" stroke-width="0"></i>
                                 </div>
                             </div>

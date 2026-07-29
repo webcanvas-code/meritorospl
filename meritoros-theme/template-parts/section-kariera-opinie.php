@@ -77,7 +77,7 @@ for ($i = 1; $i <= 4; $i++) {
 
     for (var i = 0; i < total; i++) {
         var dot = document.createElement('button');
-        dot.className = 'rounded-full transition-all duration-300 ' + (i === 0 ? 'w-5 h-2 bg-[#48c279]' : 'w-2 h-2 bg-slate-300');
+        dot.className = 'rounded-full transition-all duration-300 ' + (i === 0 ? 'w-5 h-2 bg-[#2d8650]' : 'w-2 h-2 bg-slate-300');
         dot.setAttribute('data-i', i);
         dot.addEventListener('click', function () { goTo(parseInt(this.getAttribute('data-i'))); });
         dotsContainer.appendChild(dot);
@@ -93,7 +93,7 @@ for ($i = 1; $i <= 4; $i++) {
 
     function updateDots() {
         dotsContainer.querySelectorAll('button').forEach(function (d, i) {
-            d.className = 'rounded-full transition-all duration-300 ' + (i === current ? 'w-5 h-2 bg-[#48c279]' : 'w-2 h-2 bg-slate-300');
+            d.className = 'rounded-full transition-all duration-300 ' + (i === current ? 'w-5 h-2 bg-[#2d8650]' : 'w-2 h-2 bg-slate-300');
         });
     }
 

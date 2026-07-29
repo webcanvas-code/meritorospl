@@ -42,7 +42,7 @@ $m2_img_alt = is_array($m2_image) ? esc_attr($m2_image['alt'] ?: 'Outsourcing') 
             <div class="flip-card h-[320px] md:h-[380px]">
                 <div class="flip-card-inner">
                     <div class="flip-card-front bg-white border border-slate-200 flex flex-col items-center justify-center text-center p-8 md:p-12">
-                        <i data-lucide="<?php echo esc_attr($m1_icon); ?>" stroke-width="1" class="w-16 h-16 md:w-24 md:h-24 text-[#48c279] mb-5 md:mb-8 opacity-80"></i>
+                        <i data-lucide="<?php echo esc_attr($m1_icon); ?>" stroke-width="1" class="w-16 h-16 md:w-24 md:h-24 text-[#2d8650] mb-5 md:mb-8 opacity-80"></i>
                         <h3 class="text-2xl md:text-3xl font-bold tracking-tight text-slate-900"><?php echo mer_esc($m1_title); ?></h3>
                         <span class="flip-hint items-center gap-1.5 mt-4 text-xs text-slate-400">
                             <i data-lucide="hand-metal" class="w-3.5 h-3.5"></i> Dotknij, aby zobaczyć więcej

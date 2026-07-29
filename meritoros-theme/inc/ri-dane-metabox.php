@@ -67,7 +67,7 @@ function _ri_dane_mb_render(WP_Post $post): void {
     #ri-dane-tbl  { border-collapse: collapse; font-size: 13px; }
     #ri-dane-tbl th,
     #ri-dane-tbl td { border: 1px solid #ddd; padding: 0; }
-    #ri-dane-tbl thead th { background: #48c279; color: #fff; }
+    #ri-dane-tbl thead th { background: #2d8650; color: #fff; }
     #ri-dane-tbl thead th:first-child { min-width: 200px; }
     #ri-dane-tbl tbody td:first-child { background: #f8fafc; }
     #ri-dane-tbl input[type=text] {
@@ -96,7 +96,7 @@ function _ri_dane_mb_render(WP_Post $post): void {
                     <?php foreach ($years as $y) : ?>
                     <th><input type="text" class="ri-year" value="<?php echo esc_attr($y); ?>" placeholder="Rok"></th>
                     <?php endforeach; ?>
-                    <th style="background:#3ea868; min-width:32px;"></th><!-- kolumna na przycisk del-col -->
+                    <th style="background:#246e41; min-width:32px;"></th><!-- kolumna na przycisk del-col -->
                 </tr>
             </thead>
             <tbody>

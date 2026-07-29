@@ -55,7 +55,7 @@ if (is_array($video_file) && !empty($video_file['url'])) {
             <div>
                 <h2 class="text-pretty text-3xl sm:text-4xl md:text-5xl font-bold tracking-tight leading-tight text-slate-900 mb-8">
                     <?php echo mer_esc($title_pre); ?><br>
-                    <span class="text-[#48c279]"><?php echo mer_esc($title_green); ?></span>
+                    <span class="text-[#2d8650]"><?php echo mer_esc($title_green); ?></span>
                 </h2>
                 <p class="text-base sm:text-lg text-slate-500 leading-relaxed mb-6">
                     <?php echo mer_esc($text); ?>
@@ -78,7 +78,7 @@ if (is_array($video_file) && !empty($video_file['url'])) {
                 <?php else : ?>
                 <div class="absolute inset-0 flex items-center justify-center pointer-events-none">
                 <?php endif; ?>
-                    <div class="w-16 h-16 rounded-full bg-[#48c279] flex items-center justify-center shadow-xl group-hover:scale-110 transition-transform duration-300">
+                    <div class="w-16 h-16 rounded-full bg-[#2d8650] flex items-center justify-center shadow-xl group-hover:scale-110 transition-transform duration-300">
                         <i data-lucide="play" fill="#fff" class="w-6 h-6 text-white ml-1"></i>
                     </div>
                 <?php if ($play_src) : ?>

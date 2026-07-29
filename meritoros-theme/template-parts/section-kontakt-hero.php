@@ -36,7 +36,7 @@ for ($i = 1; $i <= 4; $i++) {
         </div>
 
         <div class="max-w-3xl mb-6 sm:mb-8">
-            <h1 class="text-pretty text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight mb-3 sm:mb-4 leading-[1.1] text-[#48c279]">
+            <h1 class="text-pretty text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight mb-3 sm:mb-4 leading-[1.1] text-[#2d8650]">
                 <?php echo mer_esc($title_green); ?><br>
                 <span class="text-slate-900"><?php echo mer_esc($title_dark); ?></span>
             </h1>

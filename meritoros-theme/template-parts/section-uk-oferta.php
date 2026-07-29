@@ -20,7 +20,7 @@ $items = array_values(array_filter(array_map('trim', preg_split('/(\r?\n){2,}/',
     <div class="max-w-7xl mx-auto px-6 relative z-10">
         <h2 class="text-pretty text-3xl md:text-4xl font-bold tracking-tight text-slate-900 mb-4"><?php echo mer_esc($title); ?></h2>
         <p class="text-base text-slate-800 font-medium leading-relaxed mb-2 max-w-3xl">
-            <?php echo mer_esc($sub_pre1); ?> <span class="text-[#48c279]"><?php echo mer_esc($sub_green1); ?></span><?php echo mer_esc($sub_pre2); ?> <span class="text-[#48c279]"><?php echo mer_esc($sub_green2); ?></span>
+            <?php echo mer_esc($sub_pre1); ?> <span class="text-[#2d8650]"><?php echo mer_esc($sub_green1); ?></span><?php echo mer_esc($sub_pre2); ?> <span class="text-[#2d8650]"><?php echo mer_esc($sub_green2); ?></span>
         </p>
         <p class="text-sm text-slate-400 mb-8"><?php echo mer_esc($sub_note); ?></p>
 
@@ -38,7 +38,7 @@ $items = array_values(array_filter(array_map('trim', preg_split('/(\r?\n){2,}/',
                 ?>
                     <div class="flex items-start gap-4 p-4 md:block md:p-6<?php echo $border; ?> border-slate-200 hover:bg-slate-50 transition-colors">
                         <div class="w-8 h-8 rounded-full border border-emerald-200 flex items-center justify-center shrink-0 md:mb-4">
-                            <i data-lucide="check" stroke-width="2" class="w-4 h-4 text-[#48c279]"></i>
+                            <i data-lucide="check" stroke-width="2" class="w-4 h-4 text-[#2d8650]"></i>
                         </div>
                         <h3 class="text-sm md:text-base font-bold text-slate-900 leading-snug"><?php echo mer_esc($item); ?></h3>
                     </div>
@@ -51,7 +51,7 @@ $items = array_values(array_filter(array_map('trim', preg_split('/(\r?\n){2,}/',
                 <?php echo mer_esc($btn1_text); ?>
             </a>
             <a href="#kalkulator"
-               class="px-7 py-3.5 rounded-full bg-[#48c279] text-white text-base font-semibold hover:bg-[#3ea868] transition-colors">
+               class="px-7 py-3.5 rounded-full bg-[#2d8650] text-white text-base font-semibold hover:bg-[#246e41] transition-colors">
                 <?php echo mer_esc($btn2_text); ?>
             </a>
         </div>

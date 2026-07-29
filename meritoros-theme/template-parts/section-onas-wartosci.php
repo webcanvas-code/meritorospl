@@ -56,7 +56,7 @@ $_iso9_url    = is_array($w6_badge) ? esc_url($w6_badge['url']) : esc_url($_img 
 
 <section class="min-h-screen flex flex-col justify-center py-8 lg:py-12 px-6 lg:px-12 max-w-[1400px] mx-auto">
     <div class="text-center mb-6">
-        <span class="text-[#48c279] uppercase tracking-widest text-base font-bold mb-2 block">
+        <span class="text-[#2d8650] uppercase tracking-widest text-base font-bold mb-2 block">
             <?php echo mer_esc($w_label); ?>
         </span>
         <h2 class="text-pretty text-2xl md:text-3xl lg:text-4xl font-bold tracking-tight max-w-3xl mx-auto text-slate-900">
@@ -67,8 +67,8 @@ $_iso9_url    = is_array($w6_badge) ? esc_url($w6_badge['url']) : esc_url($_img 
     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
 
         <!-- Card 1: white -->
-        <div class="bg-white border border-slate-200 rounded-[2rem] p-5 lg:p-6 col-span-1 flex flex-col hover:-translate-y-1 hover:shadow-xl hover:shadow-slate-200/50 transition-all duration-300 group">
-            <div class="w-12 h-12 bg-slate-50 border border-slate-100 rounded-2xl flex items-center justify-center mb-4 text-[#48c279] group-hover:scale-110 group-hover:bg-[#48c279] group-hover:text-white transition-all duration-300">
+        <div class="bg-white border border-slate-200 rounded-[2rem] p-5 lg:p-6 col-span-1 flex flex-col">
+            <div class="w-12 h-12 bg-slate-50 border border-slate-100 rounded-2xl flex items-center justify-center mb-4 text-[#2d8650]">
                 <i data-lucide="<?php echo esc_attr($w1_icon); ?>" class="w-6 h-6 stroke-[1.5]"></i>
             </div>
             <h3 class="text-lg lg:text-xl font-bold tracking-tight mb-2 text-slate-900">
@@ -98,9 +98,9 @@ $_iso9_url    = is_array($w6_badge) ? esc_url($w6_badge['url']) : esc_url($_img 
         </div>
 
         <!-- Card 3: dark -->
-        <div class="bg-slate-900 rounded-[2rem] p-5 lg:p-6 text-white col-span-1 flex flex-col hover:-translate-y-1 hover:shadow-xl hover:shadow-slate-900/20 transition-all duration-300 relative overflow-hidden group">
-            <div class="absolute -right-10 -top-10 w-40 h-40 bg-[#48c279]/20 blur-3xl rounded-full group-hover:bg-[#48c279]/30 transition-colors"></div>
-            <div class="w-12 h-12 bg-white/10 rounded-2xl flex items-center justify-center mb-4 text-[#48c279] group-hover:scale-110 transition-transform duration-300">
+        <div class="bg-slate-900 rounded-[2rem] p-5 lg:p-6 text-white col-span-1 flex flex-col relative overflow-hidden">
+            <div class="absolute -right-10 -top-10 w-40 h-40 bg-[#2d8650]/20 blur-3xl rounded-full"></div>
+            <div class="w-12 h-12 bg-white/10 rounded-2xl flex items-center justify-center mb-4 text-[#2d8650]">
                 <i data-lucide="<?php echo esc_attr($w3_icon); ?>" class="w-6 h-6 stroke-[1.5]"></i>
             </div>
             <h3 class="text-lg lg:text-xl font-bold tracking-tight mb-2">
@@ -115,23 +115,23 @@ $_iso9_url    = is_array($w6_badge) ? esc_url($w6_badge['url']) : esc_url($_img 
         </div>
 
         <!-- Card 4: green accent -->
-        <div class="bg-[#48c279] rounded-[2rem] p-5 lg:p-6 text-white col-span-1 flex flex-col hover:-translate-y-1 hover:shadow-xl hover:shadow-[#48c279]/30 transition-all duration-300 group overflow-hidden relative">
-            <div class="absolute -right-6 -bottom-6 opacity-10 group-hover:scale-110 group-hover:rotate-6 transition-all duration-500">
+        <div class="bg-[#2d8650] rounded-[2rem] p-5 lg:p-6 text-white col-span-1 flex flex-col overflow-hidden relative">
+            <div class="absolute -right-6 -bottom-6 opacity-10">
                 <i data-lucide="cpu" class="w-40 h-40 stroke-[1]"></i>
             </div>
-            <div class="w-fit bg-white/20 backdrop-blur-sm rounded-2xl flex items-center justify-center mb-4 text-white group-hover:scale-110 transition-transform duration-300 relative z-10 p-3">
+            <div class="w-fit bg-white/20 backdrop-blur-sm rounded-2xl flex items-center justify-center mb-4 text-white relative z-10 p-3">
                 <i data-lucide="<?php echo esc_attr($w4_icon); ?>" class="w-6 h-6 stroke-[1.5]"></i>
             </div>
             <h3 class="text-lg lg:text-xl font-bold tracking-tight mb-2 relative z-10">
                 <?php echo nl2br(esc_html($w4_title)); ?>
             </h3>
-            <p class="text-base text-white/90 leading-relaxed font-light relative z-10">
+            <p class="text-base text-white leading-relaxed font-light relative z-10">
                 <?php echo mer_esc($w4_text); ?>
             </p>
         </div>
 
         <!-- Card 5: awards -->
-        <div class="bg-white border border-slate-200 rounded-[2rem] p-5 lg:p-6 sm:col-span-2 lg:col-span-2 flex flex-col justify-between hover:-translate-y-1 hover:shadow-xl hover:shadow-slate-200/50 transition-all duration-300 group">
+        <div class="bg-white border border-slate-200 rounded-[2rem] p-5 lg:p-6 sm:col-span-2 lg:col-span-2 flex flex-col justify-between">
             <div>
                 <h3 class="text-lg lg:text-xl font-bold tracking-tight mb-2 text-slate-900">
                     <?php echo mer_esc($w5_title); ?>
@@ -147,14 +147,14 @@ $_iso9_url    = is_array($w6_badge) ? esc_url($w6_badge['url']) : esc_url($_img 
         </div>
 
         <!-- Card 6: quality (green — jak na homepage) -->
-        <div class="bg-[#48c279] rounded-[2rem] p-5 lg:p-6 col-span-1 flex flex-col hover:-translate-y-1 hover:shadow-xl hover:shadow-[#48c279]/30 transition-all duration-300 group overflow-hidden relative">
-            <div class="w-12 h-12 bg-white/20 rounded-2xl flex items-center justify-center mb-4 text-white group-hover:scale-110 group-hover:rotate-3 transition-transform duration-300">
+        <div class="bg-[#2d8650] rounded-[2rem] p-5 lg:p-6 col-span-1 flex flex-col overflow-hidden relative">
+            <div class="w-12 h-12 bg-white/20 rounded-2xl flex items-center justify-center mb-4 text-white">
                 <i data-lucide="<?php echo esc_attr($w6_icon); ?>" class="w-6 h-6 stroke-[1.5]"></i>
             </div>
             <h3 class="text-lg lg:text-xl font-bold tracking-tight mb-2 text-white">
                 <?php echo nl2br(esc_html($w6_title)); ?>
             </h3>
-            <p class="text-base text-white/90 leading-relaxed font-light">
+            <p class="text-base text-white leading-relaxed font-light">
                 <?php echo mer_esc($w6_text); ?>
             </p>
             <div class="mt-auto pt-4">

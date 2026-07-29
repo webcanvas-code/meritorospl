@@ -31,7 +31,7 @@ for ($i = 1; $i <= 6; $i++) {
 
         <div class="grid lg:grid-cols-2 gap-12 lg:gap-24 mb-20">
             <div>
-                <h2 class="text-pretty text-5xl lg:text-6xl font-bold tracking-tight text-[#48c279] leading-tight">
+                <h2 class="text-pretty text-5xl lg:text-6xl font-bold tracking-tight text-[#2d8650] leading-tight">
                     <?php echo mer_esc($kim_title); ?>
                 </h2>
             </div>
@@ -45,7 +45,7 @@ for ($i = 1; $i <= 6; $i++) {
         <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 divide-y md:divide-y-0 divide-x-0 md:divide-x divide-slate-200">
             <?php foreach ($stats as $stat) : ?>
                 <div class="flex flex-col items-center text-center px-6 py-8 gap-5">
-                    <i data-lucide="<?php echo esc_attr($stat['icon']); ?>" stroke-width="1" class="w-16 h-16 text-[#48c279]"></i>
+                    <i data-lucide="<?php echo esc_attr($stat['icon']); ?>" stroke-width="1" class="w-16 h-16 text-[#2d8650]"></i>
                     <p class="text-sm text-slate-600 leading-snug"><?php echo nl2br(esc_html($stat['text'])); ?></p>
                 </div>
             <?php endforeach; ?>

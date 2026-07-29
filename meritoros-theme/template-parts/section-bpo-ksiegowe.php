@@ -13,7 +13,7 @@ $items = array_values(array_filter(array_map('trim', preg_split('/(\r?\n){2,}/',
 
     <div class="max-w-7xl mx-auto px-6 relative z-10">
         <h2 class="text-pretty text-4xl md:text-5xl font-bold tracking-tight mb-6">
-            BPO: <span class="text-[#48c279]"><?php echo mer_esc($title); ?></span>
+            BPO: <span class="text-[#2d8650]"><?php echo mer_esc($title); ?></span>
         </h2>
         <p class="text-base md:text-lg text-slate-500 mb-8 md:mb-16 max-w-4xl leading-relaxed">
             <?php echo mer_esc($text); ?>
@@ -33,7 +33,7 @@ $items = array_values(array_filter(array_map('trim', preg_split('/(\r?\n){2,}/',
                 ?>
                     <div class="flex items-start gap-4 p-5 md:block md:p-8<?php echo $border; ?> border-slate-200 hover:bg-slate-50 transition-colors">
                         <div class="w-8 h-8 md:w-10 md:h-10 rounded-full border border-emerald-200 flex items-center justify-center shrink-0 md:mb-6">
-                            <i data-lucide="check" stroke-width="2" class="w-4 h-4 md:w-5 md:h-5 text-[#48c279]"></i>
+                            <i data-lucide="check" stroke-width="2" class="w-4 h-4 md:w-5 md:h-5 text-[#2d8650]"></i>
                         </div>
                         <h3 class="text-sm md:text-xl font-bold text-slate-900 leading-snug"><?php echo mer_esc($item); ?></h3>
                     </div>

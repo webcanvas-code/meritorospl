@@ -54,7 +54,7 @@ $rate_sub = (float) mer_field('kp_kalk_rate_sub', 42);
                     </div>
 
                     <!-- Przycisk -->
-                    <button id="kp-kalk-submit" class="w-full py-3.5 rounded-full bg-[#48c279] text-white text-base font-semibold hover:bg-[#3ea868] transition-colors mb-5">
+                    <button id="kp-kalk-submit" class="w-full py-3.5 rounded-full bg-[#2d8650] text-white text-base font-semibold hover:bg-[#246e41] transition-colors mb-5">
                         Oblicz kwotę obsługi
                     </button>
 

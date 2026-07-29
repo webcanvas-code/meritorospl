@@ -50,7 +50,7 @@ for ($i = 1; $i <= 4; $i++) {
 
         <div class="flex flex-col md:flex-row md:items-end justify-between mb-8 gap-4">
             <div>
-                <span class="text-[#48c279] uppercase tracking-widest text-base font-bold mb-4 block">
+                <span class="text-[#2d8650] uppercase tracking-widest text-base font-bold mb-4 block">
                     <?php echo mer_esc($label); ?>
                 </span>
                 <h2 class="text-3xl lg:text-4xl xl:text-5xl font-bold tracking-tight text-slate-900 whitespace-nowrap">
@@ -77,14 +77,14 @@ for ($i = 1; $i <= 4; $i++) {
                 $initials = esc_html($item['initials'] ?? mb_substr($item['author'] ?? 'XX', 0, 2));
             ?>
                 <?php if ($highlighted) : ?>
-                    <div class="bg-[#48c279] rounded-[2rem] p-5 lg:p-6 flex flex-col justify-between hover:-translate-y-1 hover:shadow-xl hover:shadow-[#48c279]/30 transition-all duration-300">
+                    <div class="bg-[#2d8650] rounded-[2rem] p-5 lg:p-6 flex flex-col justify-between">
                         <div>
                             <div class="flex items-center gap-1 mb-4">
                                 <?php for ($s = 0; $s < 5; $s++) : ?>
                                     <i data-lucide="star" class="w-5 h-5 fill-white text-white stroke-none"></i>
                                 <?php endfor; ?>
                             </div>
-                            <p class="text-lg italic font-light text-white/90 leading-relaxed mb-4">
+                            <p class="text-lg italic font-light text-white leading-relaxed mb-4">
                                 &ldquo;<?php echo $quote; ?>&rdquo;
                             </p>
                         </div>
@@ -92,17 +92,17 @@ for ($i = 1; $i <= 4; $i++) {
                             <div>
                                 <p class="text-white font-semibold text-sm"><?php echo $author; ?></p>
                                 <?php if ($role) : ?>
-                                    <p class="text-white/70 text-xs mt-0.5"><?php echo $role; ?></p>
+                                    <p class="text-white text-xs mt-0.5"><?php echo $role; ?></p>
                                 <?php endif; ?>
                             </div>
                         </div>
                     </div>
                 <?php else : ?>
-                    <div class="bg-white border border-slate-200 rounded-[2rem] p-5 sm:p-6 lg:p-8 flex flex-col justify-between hover:-translate-y-1 hover:shadow-xl hover:shadow-slate-200/50 transition-all duration-300">
+                    <div class="bg-white border border-slate-200 rounded-[2rem] p-5 sm:p-6 lg:p-8 flex flex-col justify-between">
                         <div>
                             <div class="flex items-center gap-1 mb-6">
                                 <?php for ($s = 0; $s < 5; $s++) : ?>
-                                    <i data-lucide="star" class="w-5 h-5 fill-[#48c279] text-[#48c279] stroke-none"></i>
+                                    <i data-lucide="star" class="w-5 h-5 fill-[#2d8650] text-[#2d8650] stroke-none"></i>
                                 <?php endfor; ?>
                             </div>
                             <p class="text-lg italic font-light text-slate-600 leading-relaxed mb-5">
@@ -131,7 +131,7 @@ for ($i = 1; $i <= 4; $i++) {
                     $accent = !empty($stat['accent']);
                 ?>
                     <div class="text-center">
-                        <p class="text-4xl font-bold <?php echo $accent ? 'text-[#48c279]' : 'text-slate-900'; ?> mb-1">
+                        <p class="text-4xl font-bold <?php echo $accent ? 'text-[#2d8650]' : 'text-slate-900'; ?> mb-1">
                             <?php echo $val; ?>
                         </p>
                         <p class="text-slate-500 text-base font-medium"><?php echo $slabel; ?></p>

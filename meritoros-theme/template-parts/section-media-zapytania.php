@@ -26,7 +26,7 @@ $photo_alt = is_array($photo) ? ($photo['alt'] ?? $title) : $title;
 
                 <?php if ($email) : ?>
                 <a href="mailto:<?php echo esc_attr($email); ?>"
-                   class="inline-flex items-center gap-3 px-7 py-4 rounded-full bg-[#48c279] text-white text-base font-semibold hover:bg-[#3ea868] transition-colors">
+                   class="inline-flex items-center gap-3 px-7 py-4 rounded-full bg-[#2d8650] text-white text-base font-semibold hover:bg-[#246e41] transition-colors">
                     <i data-lucide="mail" class="w-5 h-5 flex-shrink-0"></i>
                     <?php echo mer_esc($email); ?>
                 </a>

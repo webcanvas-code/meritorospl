@@ -102,14 +102,14 @@ $hk_url  = $hk_page ? get_permalink($hk_page) : home_url('/historie-klientow/');
             <!-- Breadcrumbs + przycisk wstecz -->
             <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 mb-10">
                 <nav class="flex items-center gap-1.5 text-base text-slate-400" aria-label="<?php esc_attr_e('Breadcrumb', 'meritoros'); ?>">
-                    <a href="<?php echo esc_url(home_url('/')); ?>" class="hover:text-[#48c279] transition-colors"><?php esc_html_e('Strona główna', 'meritoros'); ?></a>
+                    <a href="<?php echo esc_url(home_url('/')); ?>" class="hover:text-[#2d8650] transition-colors"><?php esc_html_e('Strona główna', 'meritoros'); ?></a>
                     <span>/</span>
-                    <a href="<?php echo esc_url($hk_url); ?>" class="hover:text-[#48c279] transition-colors"><?php esc_html_e('Historie klientów', 'meritoros'); ?></a>
+                    <a href="<?php echo esc_url($hk_url); ?>" class="hover:text-[#2d8650] transition-colors"><?php esc_html_e('Historie klientów', 'meritoros'); ?></a>
                     <span>/</span>
                     <span class="text-slate-600"><?php the_title(); ?></span>
                 </nav>
                 <a href="<?php echo esc_url($hk_url); ?>"
-                   class="inline-flex items-center gap-2 px-5 py-2.5 rounded-full border border-slate-200 bg-white text-slate-700 text-sm font-semibold hover:border-[#48c279] hover:text-[#48c279] transition-colors duration-200 self-start sm:self-auto shrink-0">
+                   class="inline-flex items-center gap-2 px-5 py-2.5 rounded-full border border-slate-200 bg-white text-slate-700 text-sm font-semibold hover:border-[#2d8650] hover:text-[#2d8650] transition-colors duration-200 self-start sm:self-auto shrink-0">
                     <i data-lucide="arrow-left" class="w-4 h-4"></i>
                     <?php esc_html_e('Historie klientów', 'meritoros'); ?>
                 </a>
@@ -129,7 +129,7 @@ $hk_url  = $hk_page ? get_permalink($hk_page) : home_url('/historie-klientow/');
                     <?php if ( $logo_url ) : ?>
                     <a href="<?php echo esc_url($logo_url); ?>"
                        target="_blank" rel="noopener noreferrer"
-                       class="text-sm text-slate-400 hover:text-[#48c279] transition-colors duration-200 flex items-center gap-1">
+                       class="text-sm text-slate-400 hover:text-[#2d8650] transition-colors duration-200 flex items-center gap-1">
                         <?php echo esc_html(preg_replace('#^https?://(www\.)?#', '', rtrim($logo_url, '/'))); ?>
                         <i data-lucide="arrow-up-right" class="w-3.5 h-3.5"></i>
                     </a>
@@ -143,7 +143,7 @@ $hk_url  = $hk_page ? get_permalink($hk_page) : home_url('/historie-klientow/');
             <div class="flex flex-wrap gap-3">
                 <?php foreach ( $tags as $i => $tag ) : ?>
                 <?php if ( $i === 0 ) : ?>
-                <span class="inline-flex items-center px-6 py-2.5 rounded-full bg-[#48c279] text-white text-base font-semibold">
+                <span class="inline-flex items-center px-6 py-2.5 rounded-full bg-[#2d8650] text-white text-base font-semibold">
                     <?php echo mer_esc($tag); ?>
                 </span>
                 <?php else : ?>
@@ -211,7 +211,7 @@ $hk_url  = $hk_page ? get_permalink($hk_page) : home_url('/historie-klientow/');
                              class="w-full h-full object-contain transition-transform duration-500 group-hover:scale-105" loading="lazy">
                         <?php endif; ?>
                         <div class="absolute inset-0 flex items-center justify-center bg-slate-900/25 group-hover:bg-slate-900/20 transition-colors duration-300">
-                            <div class="w-20 h-20 rounded-full bg-[#48c279] flex items-center justify-center shadow-xl group-hover:scale-110 transition-transform duration-300<?php echo ! $play_src ? ' pointer-events-none' : ''; ?>">
+                            <div class="w-20 h-20 rounded-full bg-[#2d8650] flex items-center justify-center shadow-xl group-hover:scale-110 transition-transform duration-300<?php echo ! $play_src ? ' pointer-events-none' : ''; ?>">
                                 <i data-lucide="play" fill="#fff" class="w-8 h-8 text-white ml-0.5" stroke-width="0"></i>
                             </div>
                         </div>
@@ -223,13 +223,13 @@ $hk_url  = $hk_page ? get_permalink($hk_page) : home_url('/historie-klientow/');
                 <div class="lg:col-span-2 flex flex-col gap-10">
 
                     <div class="mt-auto rounded-2xl bg-slate-900 p-6 relative overflow-hidden">
-                        <div class="absolute -right-8 -top-8 w-32 h-32 bg-[#48c279]/20 blur-2xl rounded-full pointer-events-none"></div>
-                        <span class="text-[#48c279] text-xs font-bold uppercase tracking-widest mb-3 block relative z-10">Skontaktuj się</span>
+                        <div class="absolute -right-8 -top-8 w-32 h-32 bg-[#2d8650]/20 blur-2xl rounded-full pointer-events-none"></div>
+                        <span class="text-[#2d8650] text-xs font-bold uppercase tracking-widest mb-3 block relative z-10">Skontaktuj się</span>
                         <p class="text-white text-lg font-bold leading-snug mb-5 relative z-10">
                             <?php echo mer_esc($cta_title); ?>
                         </p>
                         <a href="<?php echo esc_url($cta_btn_url ?: '#'); ?>"
-                           class="relative z-10 inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-[#48c279] text-white text-sm font-semibold hover:bg-[#3ea868] transition-colors duration-200">
+                           class="relative z-10 inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-[#2d8650] text-white text-sm font-semibold hover:bg-[#246e41] transition-colors duration-200">
                             <?php echo mer_esc($cta_btn_text); ?>
                             <i data-lucide="arrow-right" class="w-4 h-4"></i>
                         </a>
@@ -265,14 +265,14 @@ $hk_url  = $hk_page ? get_permalink($hk_page) : home_url('/historie-klientow/');
                 <?php endif; ?>
 
                 <div class="rounded-2xl bg-slate-900 p-8 relative overflow-hidden text-center">
-                    <div class="absolute -right-8 -top-8 w-40 h-40 bg-[#48c279]/20 blur-2xl rounded-full pointer-events-none"></div>
-                    <div class="absolute -left-8 -bottom-8 w-40 h-40 bg-[#48c279]/10 blur-2xl rounded-full pointer-events-none"></div>
-                    <span class="text-[#48c279] text-xs font-bold uppercase tracking-widest mb-3 block relative z-10">Skontaktuj się</span>
+                    <div class="absolute -right-8 -top-8 w-40 h-40 bg-[#2d8650]/20 blur-2xl rounded-full pointer-events-none"></div>
+                    <div class="absolute -left-8 -bottom-8 w-40 h-40 bg-[#2d8650]/10 blur-2xl rounded-full pointer-events-none"></div>
+                    <span class="text-[#2d8650] text-xs font-bold uppercase tracking-widest mb-3 block relative z-10">Skontaktuj się</span>
                     <p class="text-white text-xl md:text-2xl font-bold leading-snug mb-6 relative z-10">
                         <?php echo mer_esc($cta_title); ?>
                     </p>
                     <a href="<?php echo esc_url($cta_btn_url ?: '#'); ?>"
-                       class="relative z-10 inline-flex items-center gap-2 px-6 py-3 rounded-full bg-[#48c279] text-white text-base font-semibold hover:bg-[#3ea868] transition-colors duration-200">
+                       class="relative z-10 inline-flex items-center gap-2 px-6 py-3 rounded-full bg-[#2d8650] text-white text-base font-semibold hover:bg-[#246e41] transition-colors duration-200">
                         <?php echo mer_esc($cta_btn_text); ?>
                         <i data-lucide="arrow-right" class="w-4 h-4"></i>
                     </a>
@@ -293,7 +293,7 @@ $hk_url  = $hk_page ? get_permalink($hk_page) : home_url('/historie-klientow/');
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="max-w-4xl">
 
-                <h2 class="text-pretty text-3xl md:text-4xl lg:text-5xl font-bold text-[#48c279] mb-6">
+                <h2 class="text-pretty text-3xl md:text-4xl lg:text-5xl font-bold text-[#2d8650] mb-6">
                     <?php echo mer_esc($solution_sec_title); ?>
                 </h2>
 
@@ -307,7 +307,7 @@ $hk_url  = $hk_page ? get_permalink($hk_page) : home_url('/historie-klientow/');
                 <ul class="space-y-4 mb-8">
                     <?php foreach ( $solution_items as $item ) : ?>
                     <li class="flex items-start gap-4">
-                        <span class="flex-shrink-0 mt-1 w-6 h-6 rounded-full bg-[#48c279] flex items-center justify-center">
+                        <span class="flex-shrink-0 mt-1 w-6 h-6 rounded-full bg-[#2d8650] flex items-center justify-center">
                             <i data-lucide="check" class="w-3.5 h-3.5 text-white" stroke-width="3"></i>
                         </span>
                         <span class="text-lg text-slate-700 leading-relaxed"><?php echo mer_esc($item); ?></span>
@@ -372,7 +372,7 @@ $hk_url  = $hk_page ? get_permalink($hk_page) : home_url('/historie-klientow/');
                 <ul class="space-y-4">
                     <?php foreach ( $effects_items as $item ) : ?>
                     <li class="flex items-start gap-4">
-                        <span class="flex-shrink-0 mt-1 w-6 h-6 rounded-full bg-[#48c279] flex items-center justify-center">
+                        <span class="flex-shrink-0 mt-1 w-6 h-6 rounded-full bg-[#2d8650] flex items-center justify-center">
                             <i data-lucide="check" class="w-3.5 h-3.5 text-white" stroke-width="3"></i>
                         </span>
                         <span class="text-lg text-slate-700 leading-relaxed"><?php echo mer_esc($item); ?></span>
@@ -402,7 +402,7 @@ $hk_url  = $hk_page ? get_permalink($hk_page) : home_url('/historie-klientow/');
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
                 <?php foreach ( $benefits as $b ) : ?>
                 <div class="rounded-2xl border border-slate-200 bg-white p-7 flex flex-col gap-5">
-                    <i data-lucide="circle-check" class="w-7 h-7 text-[#48c279] flex-shrink-0" stroke-width="1.5"></i>
+                    <i data-lucide="circle-check" class="w-7 h-7 text-[#2d8650] flex-shrink-0" stroke-width="1.5"></i>
                     <div>
                         <?php if ( ! empty($b['label']) ) : ?>
                         <p class="text-lg font-bold text-slate-900 leading-snug mb-3">

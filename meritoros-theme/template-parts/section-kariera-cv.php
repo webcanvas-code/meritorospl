@@ -29,7 +29,7 @@ $photo_alt = is_array($photo) ? esc_attr($photo['alt'] ?: '') : '';
                 <div class="relative rounded-2xl overflow-hidden">
                     <img src="<?php echo $photo_url; ?>" alt="<?php echo $photo_alt; ?>" class="w-full object-cover aspect-[4/3]" loading="lazy">
                 </div>
-                <div class="absolute -bottom-4 right-4 bg-[#48c279] text-white text-sm font-semibold px-6 py-3 rounded-xl shadow-lg rotate-[-2deg]">
+                <div class="absolute -bottom-4 right-4 bg-[#2d8650] text-white text-sm font-semibold px-6 py-3 rounded-xl shadow-lg rotate-[-2deg]">
                     <?php echo mer_esc($tag_text); ?>
                 </div>
             </div>

@@ -16,7 +16,7 @@ $photo_url = is_array($photo) ? $photo['url'] : 'https://images.unsplash.com/pho
              alt=""
              class="w-full h-full object-cover"
              aria-hidden="true" loading="lazy">
-        <div class="absolute inset-0 bg-[#48c279]/80"></div>
+        <div class="absolute inset-0 bg-[#2d8650]/80"></div>
     </div>
 
     <!-- Treść -->

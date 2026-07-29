@@ -57,7 +57,7 @@ for ($i = 1; $i <= 5; $i++) {
 
             <div class="relative z-10 p-6 sm:p-10 lg:p-16 grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
                 <div class="text-white">
-                    <span class="text-[#48c279] uppercase tracking-widest text-base font-bold mb-4 block">
+                    <span class="text-[#2d8650] uppercase tracking-widest text-base font-bold mb-4 block">
                         <?php echo mer_esc($label); ?>
                     </span>
                     <h2 class="text-pretty text-2xl sm:text-3xl md:text-5xl font-bold tracking-tight mb-4 lg:mb-6 leading-tight">
@@ -67,7 +67,7 @@ for ($i = 1; $i <= 5; $i++) {
                         <?php echo mer_esc($desc); ?>
                     </p>
                     <a href="<?php echo esc_url($cta_url); ?>"
-                       class="inline-flex items-center gap-2 bg-[#48c279] text-white px-6 py-3 lg:px-8 lg:py-4 rounded-full text-sm lg:text-base font-semibold hover:bg-[#3ea868] hover:shadow-lg hover:shadow-[#48c279]/30 transition-all duration-300 group">
+                       class="inline-flex items-center gap-2 bg-[#2d8650] text-white px-6 py-3 lg:px-8 lg:py-4 rounded-full text-sm lg:text-base font-semibold hover:bg-[#246e41] hover:shadow-lg hover:shadow-[#2d8650]/30 transition-all duration-300 group">
                         <?php echo mer_esc($cta_text); ?>
                         <i data-lucide="arrow-right" class="w-4 h-4 lg:w-5 lg:h-5 group-hover:translate-x-1 transition-transform"></i>
                     </a>
@@ -80,9 +80,9 @@ for ($i = 1; $i <= 5; $i++) {
                         $slabel = esc_html($stat['label'] ?? '');
                         $accent = !empty($stat['accent']);
                     ?>
-                        <div class="<?php echo $accent ? 'bg-[#48c279] border border-[#3ea868] hover:bg-[#3ea868]' : 'bg-white/10 backdrop-blur-sm border border-white/20 hover:bg-white/15'; ?> rounded-xl lg:rounded-2xl p-4 lg:p-6 transition-colors overflow-hidden min-w-0">
-                            <div class="w-8 h-8 lg:w-10 lg:h-10 <?php echo $accent ? 'bg-white/20' : 'bg-[#48c279]/20'; ?> rounded-lg lg:rounded-xl flex items-center justify-center mb-3 lg:mb-4 shrink-0">
-                                <i data-lucide="<?php echo $icon; ?>" class="w-4 h-4 lg:w-5 lg:h-5 <?php echo $accent ? 'text-white' : 'text-[#48c279]'; ?> stroke-[1.5]"></i>
+                        <div class="<?php echo $accent ? 'bg-[#2d8650] border border-[#246e41] hover:bg-[#246e41]' : 'bg-white/10 backdrop-blur-sm border border-white/20 hover:bg-white/15'; ?> rounded-xl lg:rounded-2xl p-4 lg:p-6 transition-colors overflow-hidden min-w-0">
+                            <div class="w-8 h-8 lg:w-10 lg:h-10 <?php echo $accent ? 'bg-white/20' : 'bg-[#2d8650]/20'; ?> rounded-lg lg:rounded-xl flex items-center justify-center mb-3 lg:mb-4 shrink-0">
+                                <i data-lucide="<?php echo $icon; ?>" class="w-4 h-4 lg:w-5 lg:h-5 <?php echo $accent ? 'text-white' : 'text-[#2d8650]'; ?> stroke-[1.5]"></i>
                             </div>
                             <p class="text-sm sm:text-lg lg:text-2xl font-bold text-white mb-1 leading-tight break-words"><?php echo $val; ?></p>
                             <p class="text-[11px] sm:text-xs lg:text-sm <?php echo $accent ? 'text-white/80' : 'text-white/60'; ?> font-light leading-snug mt-1"><?php echo $slabel; ?></p>

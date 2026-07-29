@@ -21,7 +21,7 @@ $bg_url = is_array($bg_img) ? esc_url($bg_img['url']) : 'https://images.unsplash
             <ul class="space-y-5">
                 <?php foreach ($items as $item) : ?>
                     <li class="flex items-center gap-4">
-                        <i data-lucide="check-circle-2" stroke-width="1.5" class="w-6 h-6 text-[#48c279] shrink-0"></i>
+                        <i data-lucide="check-circle-2" stroke-width="1.5" class="w-6 h-6 text-[#2d8650] shrink-0"></i>
                         <span class="text-xl font-medium"><?php echo mer_esc($item); ?></span>
                     </li>
                 <?php endforeach; ?>
@@ -34,7 +34,7 @@ $bg_url = is_array($bg_img) ? esc_url($bg_img['url']) : 'https://images.unsplash
             $btn_url  = mer_field('bpo_td_btn_url',  home_url('/kontakt/'));
             ?>
             <a href="<?php echo esc_url($btn_url); ?>"
-               class="inline-flex items-center gap-2 px-8 py-4 rounded-full bg-[#48c279] text-white text-base font-medium hover:bg-[#3ea868] transition-colors">
+               class="inline-flex items-center gap-2 px-8 py-4 rounded-full bg-[#2d8650] text-white text-base font-medium hover:bg-[#246e41] transition-colors">
                 <?php echo mer_esc($btn_text); ?>
             </a>
         </div>

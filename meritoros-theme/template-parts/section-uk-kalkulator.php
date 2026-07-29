@@ -45,7 +45,7 @@ $disclaimer  = mer_field('uk_kalk_disclaimer', '* to jest wstępny szacunek, ka�
                     </div>
 
                     <!-- Przycisk -->
-                    <button id="uk-kalk-submit" class="w-full py-3.5 rounded-full bg-[#48c279] text-white text-base font-semibold hover:bg-[#3ea868] transition-colors mb-5">
+                    <button id="uk-kalk-submit" class="w-full py-3.5 rounded-full bg-[#2d8650] text-white text-base font-semibold hover:bg-[#246e41] transition-colors mb-5">
                         Oblicz kwotę obsługi
                     </button>
 

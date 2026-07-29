@@ -29,7 +29,7 @@ $nonce = wp_create_nonce('mer_ebook_nonce');
 
             <!-- Lewa: treść + formularz -->
             <div class="flex-1 max-w-xl">
-                <span class="text-[#48c279] uppercase tracking-widest text-base font-bold mb-4 block">
+                <span class="text-[#2d8650] uppercase tracking-widest text-base font-bold mb-4 block">
                     <?php echo mer_esc($label); ?>
                 </span>
                 <h2 class="text-pretty text-4xl md:text-5xl font-bold tracking-tight text-slate-900 leading-tight mb-5">
@@ -53,10 +53,10 @@ $nonce = wp_create_nonce('mer_ebook_nonce');
 
                     <input type="email" id="ebook-email" name="email" required
                            placeholder="<?php esc_attr_e('Adres e-mail', 'meritoros'); ?>"
-                           class="w-full px-6 py-4 rounded-full border border-slate-200 bg-white text-slate-900 text-base placeholder:text-slate-400 focus:outline-none focus:border-[#48c279] transition-colors duration-200 shadow-sm">
+                           class="w-full px-6 py-4 rounded-full border border-slate-200 bg-white text-slate-900 text-base placeholder:text-slate-400 focus:outline-none focus:border-[#2d8650] transition-colors duration-200 shadow-sm">
 
                     <button type="submit" id="ebook-submit"
-                            class="inline-flex items-center justify-center gap-2 bg-[#48c279] text-white px-8 py-4 rounded-full text-base font-bold hover:bg-[#3ea868] transition-colors duration-200 w-fit">
+                            class="inline-flex items-center justify-center gap-2 bg-[#2d8650] text-white px-8 py-4 rounded-full text-base font-bold hover:bg-[#246e41] transition-colors duration-200 w-fit">
                         <span id="ebook-btn-label"><?php echo mer_esc($btn); ?></span>
                         <i data-lucide="download" class="w-5 h-5 stroke-[2]" id="ebook-btn-icon"></i>
                         <svg id="ebook-spinner" class="hidden animate-spin w-5 h-5" viewBox="0 0 24 24" fill="none">
@@ -65,7 +65,7 @@ $nonce = wp_create_nonce('mer_ebook_nonce');
                         </svg>
                     </button>
 
-                    <p id="ebook-success" class="hidden items-center gap-2 text-[#48c279] font-semibold text-sm">
+                    <p id="ebook-success" class="hidden items-center gap-2 text-[#2d8650] font-semibold text-sm">
                         <i data-lucide="check-circle" class="w-5 h-5 stroke-[2]"></i>
                         Ebook został wysłany na podany adres e-mail!
                     </p>

@@ -21,7 +21,7 @@ if (!$posts->have_posts()) return;
 
         <div class="flex flex-col md:flex-row md:items-end justify-between mb-10 gap-6">
             <div>
-                <span class="text-[#48c279] uppercase tracking-widest text-base font-bold mb-4 block">
+                <span class="text-[#2d8650] uppercase tracking-widest text-base font-bold mb-4 block">
                     <?php echo mer_esc($section_label); ?>
                 </span>
                 <h2 class="text-pretty text-4xl md:text-5xl font-bold tracking-tight text-slate-900">
@@ -29,7 +29,7 @@ if (!$posts->have_posts()) return;
                 </h2>
             </div>
             <a href="<?php echo esc_url($link_url); ?>"
-               class="inline-flex items-center gap-2 text-base font-semibold text-slate-500 hover:text-[#48c279] transition-colors group shrink-0">
+               class="inline-flex items-center gap-2 text-base font-semibold text-slate-500 hover:text-[#2d8650] transition-colors group shrink-0">
                 <?php echo mer_esc($link_text); ?>
                 <i data-lucide="arrow-up-right" class="w-5 h-5 stroke-[2] group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform"></i>
             </a>
@@ -66,7 +66,7 @@ if (!$posts->have_posts()) return;
 
                     <div class="p-6 flex flex-col flex-1 gap-3">
                         <?php if ($cat_name) : ?>
-                            <span class="text-xs font-semibold text-[#48c279] uppercase tracking-wide"><?php echo $cat_name; ?></span>
+                            <span class="text-xs font-semibold text-[#2d8650] uppercase tracking-wide"><?php echo $cat_name; ?></span>
                         <?php endif; ?>
 
                         <h3 class="text-pretty font-semibold text-slate-900 text-base leading-snug line-clamp-3">

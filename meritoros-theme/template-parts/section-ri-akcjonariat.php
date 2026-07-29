@@ -38,7 +38,7 @@ if (empty($rows)) {
 
                 <!-- Nagłówek -->
                 <thead>
-                    <tr class="bg-[#48c279] text-white">
+                    <tr class="bg-[#2d8650] text-white">
                         <th class="text-left px-6 py-4 font-medium rounded-tl-2xl w-1/2"><?php echo mer_esc($col1); ?></th>
                         <th class="text-left px-6 py-4 font-medium"><?php echo mer_esc($col2); ?></th>
                         <th class="text-left px-6 py-4 font-medium rounded-tr-2xl"><?php echo mer_esc($col3); ?></th>

@@ -22,12 +22,12 @@ if (empty($posts)) return;
             </h2>
             <div class="flex items-center gap-2">
                 <button id="mprz-prev"
-                        class="w-11 h-11 rounded-full bg-white border border-slate-200 hover:border-emerald-400 hover:text-[#48c279] flex items-center justify-center text-slate-500 transition-colors duration-200 shadow-sm"
+                        class="w-11 h-11 rounded-full bg-white border border-slate-200 hover:border-emerald-400 hover:text-[#2d8650] flex items-center justify-center text-slate-500 transition-colors duration-200 shadow-sm"
                         aria-label="Poprzedni">
                     <i data-lucide="chevron-left" class="w-5 h-5"></i>
                 </button>
                 <button id="mprz-next"
-                        class="w-11 h-11 rounded-full bg-[#48c279] hover:bg-[#3ea868] flex items-center justify-center text-white transition-colors duration-200 shadow-sm"
+                        class="w-11 h-11 rounded-full bg-[#2d8650] hover:bg-[#246e41] flex items-center justify-center text-white transition-colors duration-200 shadow-sm"
                         aria-label="Następny">
                     <i data-lucide="chevron-right" class="w-5 h-5"></i>
                 </button>
@@ -69,7 +69,7 @@ if (empty($posts)) return;
                         <!-- Treść -->
                         <div class="p-6 flex flex-col flex-1">
                             <?php if ($source) : ?>
-                                <span class="text-xs font-semibold text-[#48c279] uppercase tracking-wide mb-2 block">
+                                <span class="text-xs font-semibold text-[#2d8650] uppercase tracking-wide mb-2 block">
                                     <?php echo mer_esc($source); ?>
                                 </span>
                             <?php endif; ?>

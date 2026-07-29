@@ -42,7 +42,7 @@ $photo_alt  = is_array($photo) ? ($photo['alt'] ?? $title) : $title;
                     </p>
                 <?php endif; ?>
                 <a href="<?php echo esc_url($btn_url); ?>"
-                   class="inline-flex items-center gap-2 px-8 py-4 rounded-full bg-[#48c279] text-white text-base font-medium hover:bg-[#3ea868] transition-colors">
+                   class="inline-flex items-center gap-2 px-8 py-4 rounded-full bg-[#2d8650] text-white text-base font-medium hover:bg-[#246e41] transition-colors">
                     <?php echo mer_esc($btn_text); ?>
                 </a>
             </div>

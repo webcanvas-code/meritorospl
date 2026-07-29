@@ -54,9 +54,9 @@ document.addEventListener('DOMContentLoaded', function () {
 
     function setActive(el, active) {
         if (active) {
-            el.style.color        = '#48c279';
+            el.style.color        = '#2d8650';
             el.style.fontWeight   = '700';
-            el.style.borderBottomColor = '#48c279';
+            el.style.borderBottomColor = '#2d8650';
             el.style.borderRadius = '4px 4px 0 0';
         } else {
             el.style.color        = '#64748b';

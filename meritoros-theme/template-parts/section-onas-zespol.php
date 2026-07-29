@@ -51,7 +51,7 @@ for ($i = 1; $i <= 4; $i++) {
                         <?php echo mer_esc($member['bio']); ?>
                     </p>
                     <?php if ($member['url'] && $member['url'] !== '#') : ?>
-                        <a href="<?php echo esc_url($member['url']); ?>" class="text-sm font-medium text-[#48c279] hover:text-emerald-700 transition-colors mt-auto">
+                        <a href="<?php echo esc_url($member['url']); ?>" class="text-sm font-medium text-[#2d8650] hover:text-emerald-700 transition-colors mt-auto">
                             <?php esc_html_e('Czytaj więcej...', 'meritoros'); ?>
                         </a>
                     <?php endif; ?>

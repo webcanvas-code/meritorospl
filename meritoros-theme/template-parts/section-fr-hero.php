@@ -41,7 +41,7 @@ $btn2_url     = mer_field('fr_hero_btn2_url',  home_url('/kontakt/'));
 
         <div class="max-w-4xl">
             <h1 class="text-pretty text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight mb-6 leading-[1.1] text-slate-900">
-                <?php echo mer_esc($title_normal); ?> <span class="text-[#48c279]"><?php echo mer_esc($title_green); ?></span><br>
+                <?php echo mer_esc($title_normal); ?> <span class="text-[#2d8650]"><?php echo mer_esc($title_green); ?></span><br>
                 <?php echo mer_esc($title_line2); ?>
             </h1>
             <p class="text-base sm:text-lg text-slate-500 mb-8 leading-relaxed max-w-5xl">
@@ -51,7 +51,7 @@ $btn2_url     = mer_field('fr_hero_btn2_url',  home_url('/kontakt/'));
                 <a href="<?php echo esc_url($btn1_url); ?>" class="px-7 py-3.5 rounded-full border border-slate-300 text-slate-700 text-base font-semibold hover:bg-white transition-colors">
                     <?php echo mer_esc($btn1_text); ?>
                 </a>
-                <a href="<?php echo esc_url($btn2_url); ?>" class="px-7 py-3.5 rounded-full bg-[#48c279] text-white text-base font-semibold hover:bg-[#3ea868] transition-colors">
+                <a href="<?php echo esc_url($btn2_url); ?>" class="px-7 py-3.5 rounded-full bg-[#2d8650] text-white text-base font-semibold hover:bg-[#246e41] transition-colors">
                     <?php echo mer_esc($btn2_text); ?>
                 </a>
             </div>

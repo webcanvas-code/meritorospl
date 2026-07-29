@@ -54,7 +54,7 @@ if (is_array($video_file) && !empty($video_file['url'])) {
         <?php else : ?>
         <div class="absolute inset-0 flex items-center justify-center pointer-events-none">
         <?php endif; ?>
-            <div class="w-20 h-20 rounded-full bg-[#48c279] flex items-center justify-center shadow-xl group-hover:scale-110 transition-transform duration-300">
+            <div class="w-20 h-20 rounded-full bg-[#2d8650] flex items-center justify-center shadow-xl group-hover:scale-110 transition-transform duration-300">
                 <i data-lucide="play" fill="#fff" class="w-8 h-8 text-white ml-1"></i>
             </div>
         <?php if ($play_src) : ?>

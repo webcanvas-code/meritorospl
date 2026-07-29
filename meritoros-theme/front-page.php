@@ -6,7 +6,7 @@
 get_header();
 ?>
 
-<main class="bg-slate-50 text-slate-900 antialiased selection:bg-[#48c279] selection:text-white">
+<main class="bg-slate-50 text-slate-900 antialiased selection:bg-[#2d8650] selection:text-white">
 
     <?php get_template_part('template-parts/section', 'hero'); ?>
     <?php get_template_part('template-parts/section', 'values'); ?>

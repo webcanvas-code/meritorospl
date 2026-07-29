@@ -95,7 +95,7 @@ usort($all_posts, function ($a, $b) {
 <section class="pt-36 pb-16 bg-[#f0faf4] relative overflow-hidden">
 
     <!-- Decorative circle -->
-    <div class="absolute top-0 right-0 w-[480px] h-[480px] rounded-full bg-[#48c279]/10 -translate-y-1/4 translate-x-1/4 pointer-events-none" aria-hidden="true">
+    <div class="absolute top-0 right-0 w-[480px] h-[480px] rounded-full bg-[#2d8650]/10 -translate-y-1/4 translate-x-1/4 pointer-events-none" aria-hidden="true">
         <img src="<?php echo esc_url(get_template_directory_uri() . '/images/logo.svg'); ?>"
              alt=""
              class="absolute inset-0 m-auto w-48 opacity-10" loading="eager" aria-hidden="true">
@@ -125,7 +125,7 @@ usort($all_posts, function ($a, $b) {
                     </a>
                 <?php endif; ?>
                 <a href="<?php echo esc_url($btn2_url); ?>"
-                   class="inline-flex items-center gap-2 bg-[#48c279] text-white rounded-full px-7 py-3.5 text-base font-semibold hover:bg-[#3ea868] transition-colors duration-200">
+                   class="inline-flex items-center gap-2 bg-[#2d8650] text-white rounded-full px-7 py-3.5 text-base font-semibold hover:bg-[#246e41] transition-colors duration-200">
                     <?php echo mer_esc($btn2_text); ?>
                 </a>
             </div>
@@ -154,7 +154,7 @@ usort($all_posts, function ($a, $b) {
             ?>
                 <button
                     data-filter="<?php echo esc_attr($slug); ?>"
-                    class="shrink-0 px-5 py-2 rounded-full text-sm font-medium whitespace-nowrap transition-colors duration-200 <?php echo $is_active ? 'bg-[#48c279] text-white border-transparent' : 'border border-slate-200 text-slate-700'; ?>">
+                    class="shrink-0 px-5 py-2 rounded-full text-sm font-medium whitespace-nowrap transition-colors duration-200 <?php echo $is_active ? 'bg-[#2d8650] text-white border-transparent' : 'border border-slate-200 text-slate-700'; ?>">
                     <?php echo mer_esc($label); ?>
                 </button>
             <?php endforeach; ?>
@@ -252,7 +252,7 @@ usort($all_posts, function ($a, $b) {
                             <?php endif; ?>
                             <!-- Play button -->
                             <div class="absolute inset-0 flex items-center justify-center">
-                                <div class="w-16 h-16 rounded-full bg-[#48c279] flex items-center justify-center shadow-xl group-hover:scale-110 transition-transform duration-300">
+                                <div class="w-16 h-16 rounded-full bg-[#2d8650] flex items-center justify-center shadow-xl group-hover:scale-110 transition-transform duration-300">
                                     <i data-lucide="play" fill="#fff" class="w-6 h-6 text-white ml-0.5" stroke-width="0"></i>
                                 </div>
                             </div>
@@ -280,7 +280,7 @@ usort($all_posts, function ($a, $b) {
 
                     <div class="p-6 flex flex-col flex-1 gap-3">
                         <?php if ($source) : ?>
-                            <span class="text-xs font-semibold text-[#48c279] uppercase tracking-wide"><?php echo mer_esc($source); ?></span>
+                            <span class="text-xs font-semibold text-[#2d8650] uppercase tracking-wide"><?php echo mer_esc($source); ?></span>
                         <?php endif; ?>
 
                         <h2 class="text-pretty font-semibold text-slate-900 text-base leading-snug line-clamp-3">
@@ -379,7 +379,7 @@ usort($all_posts, function ($a, $b) {
                                 <div class="w-full h-full bg-slate-800"></div>
                             <?php endif; ?>
                             <div class="absolute inset-0 flex items-center justify-center">
-                                <div class="w-16 h-16 rounded-full bg-[#48c279] flex items-center justify-center shadow-xl group-hover:scale-110 transition-transform duration-300">
+                                <div class="w-16 h-16 rounded-full bg-[#2d8650] flex items-center justify-center shadow-xl group-hover:scale-110 transition-transform duration-300">
                                     <i data-lucide="play" fill="#fff" class="w-6 h-6 text-white ml-0.5" stroke-width="0"></i>
                                 </div>
                             </div>
@@ -488,7 +488,7 @@ usort($all_posts, function ($a, $b) {
 
                     <div class="p-6 flex flex-col flex-1 gap-3">
                         <?php if ($wp_cat_name) : ?>
-                            <span class="text-xs font-semibold text-[#48c279] uppercase tracking-wide"><?php echo mer_esc($wp_cat_name); ?></span>
+                            <span class="text-xs font-semibold text-[#2d8650] uppercase tracking-wide"><?php echo mer_esc($wp_cat_name); ?></span>
                         <?php endif; ?>
 
                         <h2 class="text-pretty font-semibold text-slate-900 text-base leading-snug line-clamp-3">
@@ -524,7 +524,7 @@ usort($all_posts, function ($a, $b) {
         <!-- Load more -->
         <div id="blog-load-more-wrap" class="mt-12 text-center">
             <button id="blog-load-more"
-                    class="inline-flex items-center gap-2 border border-slate-300 text-slate-700 rounded-full px-8 py-3.5 text-sm font-semibold hover:border-[#48c279] hover:text-[#48c279] transition-colors duration-200">
+                    class="inline-flex items-center gap-2 border border-slate-300 text-slate-700 rounded-full px-8 py-3.5 text-sm font-semibold hover:border-[#2d8650] hover:text-[#2d8650] transition-colors duration-200">
                 <?php esc_html_e('Załaduj więcej', 'meritoros'); ?>
                 <i data-lucide="chevron-down" class="w-4 h-4 stroke-[2.5]"></i>
             </button>
@@ -592,7 +592,7 @@ usort($all_posts, function ($a, $b) {
             activeFilter = btn.dataset.filter;
             visibleCount = PER_PAGE;
             btns.forEach(function(b) {
-                b.classList.toggle('bg-[#48c279]', b === btn);
+                b.classList.toggle('bg-[#2d8650]', b === btn);
                 b.classList.toggle('text-white', b === btn);
                 b.classList.toggle('border-transparent', b === btn);
                 b.classList.toggle('border-slate-200', b !== btn);

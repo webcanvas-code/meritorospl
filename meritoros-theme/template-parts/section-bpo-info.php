@@ -30,7 +30,7 @@ $stat3_text  = mer_field('bpo_stat3_text', "Ponad 170\nexpertów");
                 <ul class="space-y-4">
                     <?php foreach ($info_items as $item) : ?>
                         <li class="flex items-start gap-3">
-                            <i data-lucide="check-circle-2" stroke-width="1.5" class="w-6 h-6 text-[#48c279] shrink-0 mt-0.5"></i>
+                            <i data-lucide="check-circle-2" stroke-width="1.5" class="w-6 h-6 text-[#2d8650] shrink-0 mt-0.5"></i>
                             <span class="text-lg text-slate-700"><?php echo mer_esc($item); ?></span>
                         </li>
                     <?php endforeach; ?>
@@ -54,7 +54,7 @@ $stat3_text  = mer_field('bpo_stat3_text', "Ponad 170\nexpertów");
         </div>
 
         <div class="grid md:grid-cols-3 gap-6 mt-24">
-            <div class="bg-[#48c279] text-white p-8 rounded-2xl flex items-center justify-start text-left min-h-[160px] gap-6">
+            <div class="bg-[#2d8650] text-white p-8 rounded-2xl flex items-center justify-start text-left min-h-[160px] gap-6">
                 <?php if (is_array($stat1_image)) : ?>
                     <img src="<?php echo esc_url($stat1_image['url']); ?>" alt="<?php echo esc_attr($stat1_image['alt']); ?>" class="h-14 w-auto shrink-0 object-contain opacity-90" loading="lazy">
                 <?php else : ?>
@@ -62,7 +62,7 @@ $stat3_text  = mer_field('bpo_stat3_text', "Ponad 170\nexpertów");
                 <?php endif; ?>
                 <h4 class="text-xl font-medium tracking-tight"><?php echo mer_esc($stat1_text); ?></h4>
             </div>
-            <div class="bg-[#48c279] text-white p-8 rounded-2xl flex items-center justify-start text-left min-h-[160px] gap-6">
+            <div class="bg-[#2d8650] text-white p-8 rounded-2xl flex items-center justify-start text-left min-h-[160px] gap-6">
                 <?php if (is_array($stat2_image)) : ?>
                     <img src="<?php echo esc_url($stat2_image['url']); ?>" alt="<?php echo esc_attr($stat2_image['alt']); ?>" class="h-14 w-auto shrink-0 object-contain opacity-90" loading="lazy">
                 <?php else : ?>
@@ -70,7 +70,7 @@ $stat3_text  = mer_field('bpo_stat3_text', "Ponad 170\nexpertów");
                 <?php endif; ?>
                 <h4 class="text-xl font-medium tracking-tight"><?php echo mer_esc($stat2_text); ?></h4>
             </div>
-            <div class="bg-[#48c279] text-white p-8 rounded-2xl flex items-center justify-start text-left min-h-[160px] gap-6">
+            <div class="bg-[#2d8650] text-white p-8 rounded-2xl flex items-center justify-start text-left min-h-[160px] gap-6">
                 <i data-lucide="users" stroke-width="1.5" class="h-12 w-12 shrink-0 opacity-80"></i>
                 <h4 class="text-xl font-medium tracking-tight"><?php echo mer_esc($stat3_text); ?></h4>
             </div>

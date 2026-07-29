@@ -42,7 +42,7 @@ for ($i = 1; $i <= 4; $i++) {
                 <div class="flex flex-col items-center text-center">
                     <div class="relative mb-6">
                         <img src="<?php echo get_template_directory_uri(); ?>/images/<?php echo esc_attr($step['img']); ?>" alt="" class="w-[104px] h-[104px] object-contain">
-                        <div class="absolute -bottom-3 -right-3 w-8 h-8 rounded-full bg-[#48c279] flex items-center justify-center shadow-md">
+                        <div class="absolute -bottom-3 -right-3 w-8 h-8 rounded-full bg-[#2d8650] flex items-center justify-center shadow-md">
                             <span class="text-white text-xs font-bold"><?php echo $num + 1; ?></span>
                         </div>
                     </div>

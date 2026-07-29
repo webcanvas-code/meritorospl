@@ -53,7 +53,7 @@ for ($i = 1; $i <= 4; $i++) {
             <button id="dkar-prev" class="w-12 h-12 rounded-full bg-white border border-slate-200 flex items-center justify-center shadow-sm hover:bg-slate-50 transition-colors" style="opacity:0.35;pointer-events:none">
                 <i data-lucide="chevron-left" class="w-5 h-5 text-slate-700 stroke-[2]"></i>
             </button>
-            <button id="dkar-next" class="w-12 h-12 rounded-full bg-[#48c279] flex items-center justify-center shadow-md hover:bg-[#3ea868] transition-colors">
+            <button id="dkar-next" class="w-12 h-12 rounded-full bg-[#2d8650] flex items-center justify-center shadow-md hover:bg-[#246e41] transition-colors">
                 <i data-lucide="chevron-right" class="w-5 h-5 text-white stroke-[2]"></i>
             </button>
         </div>
@@ -67,7 +67,7 @@ for ($i = 1; $i <= 4; $i++) {
                     <div class="flex flex-col sm:flex-row rounded-2xl overflow-hidden sm:h-[400px] group h-full">
 
                         <!-- Panel tekstowy (55%) -->
-                        <div class="sm:w-[55%] bg-[#48c279] p-7 sm:p-10 flex flex-col relative overflow-hidden min-h-[220px] sm:min-h-0">
+                        <div class="sm:w-[55%] bg-[#2d8650] p-7 sm:p-10 flex flex-col relative overflow-hidden min-h-[220px] sm:min-h-0">
                             <div class="absolute -bottom-14 -right-14 w-56 h-56 rounded-full bg-white/10 pointer-events-none"></div>
                             <div class="absolute -top-8 -left-8 w-32 h-32 rounded-full bg-white/5 pointer-events-none"></div>
 
@@ -91,7 +91,7 @@ for ($i = 1; $i <= 4; $i++) {
                                  alt="<?php echo $card['img_alt']; ?>"
                                  class="absolute inset-0 w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-700"
                                  loading="lazy">
-                            <div class="absolute inset-0 bg-gradient-to-r from-[#48c279]/15 to-transparent pointer-events-none"></div>
+                            <div class="absolute inset-0 bg-gradient-to-r from-[#2d8650]/15 to-transparent pointer-events-none"></div>
                         </div>
 
                     </div>
@@ -103,7 +103,7 @@ for ($i = 1; $i <= 4; $i++) {
 
     <div class="max-w-7xl mx-auto px-6 mt-6 flex items-center justify-center gap-2" id="dkar-dots">
         <?php foreach ($cards as $idx => $card) : ?>
-        <button class="dkar-dot rounded-full transition-all duration-300 <?php echo $idx === 0 ? 'w-6 h-2 bg-[#48c279]' : 'w-2 h-2 bg-slate-300'; ?>" data-i="<?php echo $idx; ?>"></button>
+        <button class="dkar-dot rounded-full transition-all duration-300 <?php echo $idx === 0 ? 'w-6 h-2 bg-[#2d8650]' : 'w-2 h-2 bg-slate-300'; ?>" data-i="<?php echo $idx; ?>"></button>
         <?php endforeach; ?>
     </div>
 </section>
@@ -132,7 +132,7 @@ for ($i = 1; $i <= 4; $i++) {
 
     function updateDots() {
         dots.forEach(function (d, i) {
-            d.className = 'dkar-dot rounded-full transition-all duration-300 ' + (i === current ? 'w-6 h-2 bg-[#48c279]' : 'w-2 h-2 bg-slate-300');
+            d.className = 'dkar-dot rounded-full transition-all duration-300 ' + (i === current ? 'w-6 h-2 bg-[#2d8650]' : 'w-2 h-2 bg-slate-300');
         });
     }
 
