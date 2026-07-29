@@ -71,7 +71,7 @@ unset($__item);
     $mer_current = apply_filters('wpml_current_language', null);
     ?>
 
-    <div id="mer-nav-pill" class="bg-[#f2f4f6]/70 backdrop-blur-md rounded-full px-6 py-3.5 flex items-center shadow-lg shadow-black/5 transition-[background-color,box-shadow] duration-300">
+    <div id="mer-nav-pill" class="bg-white/92 backdrop-blur-md rounded-full px-6 py-3.5 flex items-center shadow-lg shadow-black/5 transition-[background-color,box-shadow] duration-300">
 
         <!-- Logo -->
         <a href="<?php echo esc_url(home_url('/')); ?>" class="flex items-center shrink-0">
