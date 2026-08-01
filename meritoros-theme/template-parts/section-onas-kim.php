@@ -27,11 +27,11 @@ for ($i = 1; $i <= 6; $i++) {
 ?>
 
 <section class="py-12 md:py-24 bg-white">
-    <div class="max-w-7xl mx-auto px-6">
+    <div class="max-w-[1400px] mx-auto px-6 lg:px-12">
 
         <div class="grid lg:grid-cols-2 gap-12 lg:gap-24 mb-20">
             <div>
-                <h2 class="text-pretty text-5xl lg:text-6xl font-bold tracking-tight text-[#2d8650] leading-tight">
+                <h2 class="text-pretty text-5xl lg:text-6xl font-bold tracking-tight text-slate-900 leading-tight">
                     <?php echo mer_esc($kim_title); ?>
                 </h2>
             </div>
