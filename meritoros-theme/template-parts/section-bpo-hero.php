@@ -47,12 +47,12 @@ for ($i = 1; $i <= 4; $i++) {
             <p class="text-base sm:text-lg text-slate-500 mb-10 leading-relaxed max-w-5xl">
                 <?php echo wp_kses_post($subtitle); ?>
             </p>
-            <div class="flex flex-wrap items-center gap-4">
-                <a href="<?php echo esc_url($btn1_url); ?>" class="px-7 py-3.5 rounded-full border border-slate-300 text-slate-700 text-base font-semibold hover:bg-slate-50 transition-colors">
-                    <?php echo mer_esc($btn1_text); ?>
-                </a>
-                <a href="<?php echo esc_url($btn2_url); ?>" class="px-7 py-3.5 rounded-full bg-[#2d8650] text-white text-base font-semibold hover:bg-[#246e41] transition-colors">
+            <div class="flex flex-col sm:flex-row gap-3">
+                <a href="<?php echo esc_url($btn2_url); ?>" class="px-7 py-3.5 rounded-full bg-[#2d8650] text-white text-base font-semibold hover:bg-[#246e41] transition-colors flex items-center justify-center">
                     <?php echo mer_esc($btn2_text); ?>
+                </a>
+                <a href="<?php echo esc_url($btn1_url); ?>" class="px-7 py-3.5 rounded-full border border-slate-300 text-slate-700 text-base font-semibold hover:bg-slate-50 transition-colors flex items-center justify-center">
+                    <?php echo mer_esc($btn1_text); ?>
                 </a>
             </div>
         </div>

@@ -117,17 +117,17 @@ usort($all_posts, function ($a, $b) {
             <p class="text-slate-600 text-base leading-relaxed max-w-2xl mb-10">
                 <?php echo mer_esc($hero_desc); ?>
             </p>
-            <div class="flex flex-wrap gap-4">
+            <div class="flex flex-col sm:flex-row gap-3">
+                <a href="<?php echo esc_url($btn2_url); ?>"
+                   class="inline-flex items-center justify-center gap-2 bg-[#2d8650] text-white rounded-full px-7 py-3.5 text-base font-semibold hover:bg-[#246e41] transition-colors duration-200">
+                    <?php echo mer_esc($btn2_text); ?>
+                </a>
                 <?php if ($btn1_url || $btn1_text) : ?>
                     <a href="<?php echo esc_url($btn1_url ?: '#'); ?>"
-                       class="inline-flex items-center gap-2 border border-slate-800 text-slate-800 rounded-full px-7 py-3.5 text-base font-semibold hover:bg-slate-800 hover:text-white transition-colors duration-200">
+                       class="inline-flex items-center justify-center gap-2 border border-slate-800 text-slate-800 rounded-full px-7 py-3.5 text-base font-semibold hover:bg-slate-800 hover:text-white transition-colors duration-200">
                         <?php echo mer_esc($btn1_text); ?>
                     </a>
                 <?php endif; ?>
-                <a href="<?php echo esc_url($btn2_url); ?>"
-                   class="inline-flex items-center gap-2 bg-[#2d8650] text-white rounded-full px-7 py-3.5 text-base font-semibold hover:bg-[#246e41] transition-colors duration-200">
-                    <?php echo mer_esc($btn2_text); ?>
-                </a>
             </div>
         </div>
     </div>
