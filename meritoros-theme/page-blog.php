@@ -136,7 +136,7 @@ usort($all_posts, function ($a, $b) {
 <!-- ══════════════════════════════════════════════════════════════
      FILTER TABS
 ═══════════════════════════════════════════════════════════════ -->
-<div class="sticky top-0 z-40 bg-white border-b border-slate-100 shadow-sm shadow-black/[0.03]">
+<div class="sticky top-20 z-40 bg-white border-b border-slate-100 shadow-sm shadow-black/[0.03]">
     <div class="max-w-[1400px] mx-auto px-6 lg:px-12">
         <div class="flex items-center gap-2 overflow-x-auto py-4 scrollbar-hide -mx-1 px-1">
             <?php
