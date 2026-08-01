@@ -136,7 +136,7 @@ usort($all_posts, function ($a, $b) {
 <!-- ══════════════════════════════════════════════════════════════
      FILTER TABS
 ═══════════════════════════════════════════════════════════════ -->
-<div class="sticky top-20 z-40 bg-white border-b border-slate-100 shadow-sm shadow-black/[0.03]">
+<div id="blog-filter-bar" class="sticky top-20 z-40 bg-white border-b border-slate-100 shadow-sm shadow-black/[0.03]">
     <div class="max-w-[1400px] mx-auto px-6 lg:px-12">
         <div class="flex items-center gap-2 overflow-x-auto py-4 scrollbar-hide -mx-1 px-1">
             <?php
@@ -613,6 +613,18 @@ usort($all_posts, function ($a, $b) {
     /* ── Init: show first 9 ── */
     visibleCount = PER_PAGE;
     applyPagination();
+
+    /* ── Stick filter bar just below navbar ── */
+    (function () {
+        var header = document.getElementById('mer-header');
+        var bar    = document.getElementById('blog-filter-bar');
+        function updateTop() {
+            if (!header || !bar) return;
+            bar.style.top = header.getBoundingClientRect().bottom + 'px';
+        }
+        updateTop();
+        window.addEventListener('resize', updateTop);
+    })();
 
     /* ── Video modal ── */
     var modal      = document.getElementById('blog-vid-modal');
