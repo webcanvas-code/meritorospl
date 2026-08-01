@@ -9,19 +9,19 @@ $rate_p   = (float) mer_field('kp_kalk_rate_p',   52);
 $rate_sub = (float) mer_field('kp_kalk_rate_sub', 42);
 ?>
 
-<section id="kalkulator" class="py-10 md:py-20 bg-emerald-50 relative overflow-hidden">
+<section id="kalkulator" class="py-10 md:py-20 bg-[#2d8650] relative overflow-hidden">
 
     <!-- Dekoracyjne okręgi -->
-    <div class="absolute -right-24 top-1/2 -translate-y-1/2 w-[420px] h-[420px] rounded-full border-[52px] border-emerald-300/30 pointer-events-none" aria-hidden="true"></div>
+    <div class="absolute -right-24 top-1/2 -translate-y-1/2 w-[420px] h-[420px] rounded-full border-[52px] border-white/20 pointer-events-none" aria-hidden="true"></div>
 
     <div class="max-w-7xl mx-auto px-6 relative z-10">
         <div class="grid lg:grid-cols-2 gap-16 items-start">
 
             <div class="lg:pt-8">
-                <h2 class="text-pretty text-4xl font-bold tracking-tight text-slate-900 mb-6 leading-tight">
+                <h2 class="text-pretty text-4xl font-bold tracking-tight text-white mb-6 leading-tight">
                     <?php echo mer_esc($title); ?>
                 </h2>
-                <p class="text-base sm:text-lg text-slate-500 leading-relaxed max-w-sm">
+                <p class="text-base sm:text-lg text-white/75 leading-relaxed max-w-sm">
                     <?php echo mer_esc($description); ?>
                 </p>
             </div>
@@ -68,7 +68,7 @@ $rate_sub = (float) mer_field('kp_kalk_rate_sub', 42);
                     </div>
 
                 </div>
-                <p class="mt-4 text-xs text-slate-400 leading-relaxed max-w-md"><?php echo mer_esc($disclaimer); ?></p>
+                <p class="mt-4 text-xs text-white/55 leading-relaxed max-w-md"><?php echo mer_esc($disclaimer); ?></p>
             </div>
 
         </div>

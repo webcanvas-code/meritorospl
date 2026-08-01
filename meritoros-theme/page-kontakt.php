@@ -9,6 +9,7 @@ get_header();
 
     <?php get_template_part('template-parts/section', 'kontakt-hero'); ?>
     <?php get_template_part('template-parts/section', 'kontakt-info'); ?>
+    <?php get_template_part('template-parts/section', 'kontakt-kalkulator'); ?>
     <?php get_template_part('template-parts/section', 'newsletter'); ?>
 
 </main>
