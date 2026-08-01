@@ -13,108 +13,105 @@ $rate_sub = (float) mer_field('kp_kalk_rate_sub', 42);
     <!-- Dekoracyjny okrąg -->
     <div class="absolute -left-24 top-1/2 -translate-y-1/2 w-[420px] h-[420px] rounded-full border-[52px] border-white/20 pointer-events-none" aria-hidden="true"></div>
 
-    <div class="max-w-7xl mx-auto px-6 relative z-10">
+    <div class="max-w-lg mx-auto px-6 relative z-10">
 
         <!-- Nagłówek -->
-        <div class="text-center mb-10">
-            <h2 class="text-pretty text-4xl font-bold tracking-tight text-white mb-4 leading-tight">
+        <div class="text-center mb-8">
+            <h2 class="text-pretty text-3xl font-bold tracking-tight text-white mb-3 leading-tight">
                 <?php esc_html_e('Sprawdź orientacyjny koszt obsługi', 'meritoros'); ?>
             </h2>
-            <p class="text-white/75 text-base sm:text-lg max-w-xl mx-auto leading-relaxed">
-                <?php esc_html_e('Wybierz rodzaj usługi, podaj kilka liczb — my podamy orientacyjną cenę.', 'meritoros'); ?>
+            <p class="text-white/75 text-base leading-relaxed">
+                <?php esc_html_e('Podaj kilka liczb — my podamy orientacyjną cenę.', 'meritoros'); ?>
             </p>
-        </div>
-
-        <!-- Selektor usługi -->
-        <div class="flex justify-center gap-3 mb-8">
-            <button id="ktk-tab-kp"
-                class="px-6 py-3 rounded-full text-sm font-semibold transition-colors bg-white text-[#2d8650]"
-                type="button">
-                <?php esc_html_e('Kadry i płace', 'meritoros'); ?>
-            </button>
-            <button id="ktk-tab-uk"
-                class="px-6 py-3 rounded-full text-sm font-semibold transition-colors bg-white/20 text-white hover:bg-white/30"
-                type="button">
-                <?php esc_html_e('Usługi księgowe', 'meritoros'); ?>
-            </button>
         </div>
 
         <!-- Karta kalkulatora -->
-        <div class="max-w-lg mx-auto">
-            <div class="bg-white rounded-2xl p-8 shadow-sm">
+        <div class="bg-white rounded-2xl p-8 shadow-sm">
 
-                <!-- Formularz KP -->
-                <div id="ktk-form-kp">
-
-                    <div class="relative mb-4" id="ktk-kp-wrapper">
-                        <button id="ktk-kp-btn"
-                            class="w-full flex items-center justify-between px-5 py-4 border border-slate-200 rounded-xl text-slate-500 text-sm hover:border-slate-300 transition-colors bg-white"
-                            aria-haspopup="listbox" aria-expanded="false" type="button">
-                            <span id="ktk-kp-label"><?php esc_html_e('Wybierz zakres', 'meritoros'); ?></span>
-                            <i data-lucide="chevron-down" class="w-5 h-5 text-slate-400 stroke-[1.5] shrink-0 transition-transform" id="ktk-kp-chevron"></i>
-                        </button>
-                        <div id="ktk-kp-list" class="absolute top-full left-0 right-0 mt-2 bg-white border border-slate-200 rounded-xl shadow-lg z-20 overflow-hidden hidden">
-                            <button data-value="kadry-place"  class="ktk-kp-option w-full text-left px-5 py-4 text-sm text-slate-700 hover:bg-emerald-50 transition-colors border-b border-slate-100" type="button"><?php esc_html_e('Kadry i płace', 'meritoros'); ?></button>
-                            <button data-value="kadry"        class="ktk-kp-option w-full text-left px-5 py-4 text-sm text-slate-700 hover:bg-emerald-50 transition-colors border-b border-slate-100" type="button"><?php esc_html_e('Same kadry', 'meritoros'); ?></button>
-                            <button data-value="place"        class="ktk-kp-option w-full text-left px-5 py-4 text-sm text-slate-700 hover:bg-emerald-50 transition-colors border-b border-slate-100" type="button"><?php esc_html_e('Same płace', 'meritoros'); ?></button>
-                            <button data-value="podwykonawcy" class="ktk-kp-option w-full text-left px-5 py-4 text-sm text-slate-700 hover:bg-emerald-50 transition-colors" type="button"><?php esc_html_e('Rozliczenie umów (podwykonawcy)', 'meritoros'); ?></button>
-                        </div>
-                    </div>
-
-                    <div class="grid grid-cols-2 gap-4 mb-4">
-                        <input id="ktk-kp-pracownicy" type="number" min="1"
-                            placeholder="<?php esc_attr_e('Liczba pracowników', 'meritoros'); ?>"
-                            class="w-full px-5 py-4 border border-slate-200 rounded-xl text-slate-800 text-sm placeholder-slate-400 hover:border-slate-300 focus:border-emerald-400 focus:outline-none focus:ring-2 focus:ring-emerald-100 transition-colors bg-white" />
-                        <input id="ktk-kp-wyplaty" type="number" min="1"
-                            placeholder="<?php esc_attr_e('Ilość wypłat / mies.', 'meritoros'); ?>"
-                            class="w-full px-5 py-4 border border-slate-200 rounded-xl text-slate-800 text-sm placeholder-slate-400 hover:border-slate-300 focus:border-emerald-400 focus:outline-none focus:ring-2 focus:ring-emerald-100 transition-colors bg-white" />
-                    </div>
-
-                </div>
-
-                <!-- Formularz UK -->
-                <div id="ktk-form-uk" class="hidden">
-
-                    <div class="relative mb-4" id="ktk-uk-wrapper">
-                        <button id="ktk-uk-btn"
-                            class="w-full flex items-center justify-between px-5 py-4 border border-slate-200 rounded-xl text-slate-500 text-sm hover:border-slate-300 transition-colors bg-white"
-                            aria-haspopup="listbox" aria-expanded="false" type="button">
-                            <span id="ktk-uk-label"><?php esc_html_e('Wybierz typ księgowości', 'meritoros'); ?></span>
-                            <i data-lucide="chevron-down" class="w-5 h-5 text-slate-400 stroke-[1.5] shrink-0 transition-transform" id="ktk-uk-chevron"></i>
-                        </button>
-                        <div id="ktk-uk-list" class="absolute top-full left-0 right-0 mt-2 bg-white border border-slate-200 rounded-xl shadow-lg z-20 overflow-hidden hidden">
-                            <button data-value="uproszczona" class="ktk-uk-option w-full text-left px-5 py-4 text-sm text-slate-700 hover:bg-emerald-50 transition-colors border-b border-slate-100" type="button"><?php esc_html_e('Księgowość uproszczona (KPiR, ryczałt)', 'meritoros'); ?></button>
-                            <button data-value="pelna"       class="ktk-uk-option w-full text-left px-5 py-4 text-sm text-slate-700 hover:bg-emerald-50 transition-colors" type="button"><?php esc_html_e('Pełna księgowość (KH)', 'meritoros'); ?></button>
-                        </div>
-                    </div>
-
-                    <div class="mb-4">
-                        <input id="ktk-uk-docs" type="number" min="1"
-                            placeholder="<?php esc_attr_e('Liczba dokumentów miesięcznie', 'meritoros'); ?>"
-                            class="w-full px-5 py-4 border border-slate-200 rounded-xl text-slate-800 text-sm placeholder-slate-400 hover:border-slate-300 focus:border-emerald-400 focus:outline-none focus:ring-2 focus:ring-emerald-100 transition-colors bg-white" />
-                    </div>
-
-                </div>
-
-                <!-- Przycisk -->
-                <button id="ktk-submit" class="w-full py-3.5 rounded-full bg-[#2d8650] text-white text-base font-semibold hover:bg-[#246e41] transition-colors mb-5" type="button">
-                    <?php esc_html_e('Oblicz kwotę obsługi', 'meritoros'); ?>
+            <!-- Segmented control wewnątrz karty -->
+            <div class="flex bg-slate-100 rounded-full p-1 mb-6">
+                <button id="ktk-tab-kp" type="button"
+                    class="flex-1 py-2.5 rounded-full text-sm font-semibold transition-all bg-white text-slate-900 shadow-sm">
+                    <?php esc_html_e('Kadry i płace', 'meritoros'); ?>
                 </button>
+                <button id="ktk-tab-uk" type="button"
+                    class="flex-1 py-2.5 rounded-full text-sm font-semibold transition-all text-slate-500 hover:text-slate-700">
+                    <?php esc_html_e('Usługi księgowe', 'meritoros'); ?>
+                </button>
+            </div>
 
-                <!-- Wynik -->
-                <div>
-                    <p class="text-sm text-slate-400 mb-1"><?php esc_html_e('Orientacyjna cena netto', 'meritoros'); ?></p>
-                    <p class="text-4xl font-bold text-slate-900">
-                        <span id="ktk-price">0,00 zł</span>
-                        <span class="text-lg font-normal text-slate-400 ml-1">(netto)</span>
-                    </p>
+            <!-- Formularz KP -->
+            <div id="ktk-form-kp">
+
+                <div class="relative mb-4" id="ktk-kp-wrapper">
+                    <button id="ktk-kp-btn"
+                        class="w-full flex items-center justify-between px-5 py-4 border border-slate-200 rounded-xl text-slate-500 text-sm hover:border-slate-300 transition-colors bg-white"
+                        aria-haspopup="listbox" aria-expanded="false" type="button">
+                        <span id="ktk-kp-label"><?php esc_html_e('Wybierz zakres', 'meritoros'); ?></span>
+                        <i data-lucide="chevron-down" class="w-5 h-5 text-slate-400 stroke-[1.5] shrink-0 transition-transform" id="ktk-kp-chevron"></i>
+                    </button>
+                    <div id="ktk-kp-list" class="absolute top-full left-0 right-0 mt-2 bg-white border border-slate-200 rounded-xl shadow-lg z-20 overflow-hidden hidden">
+                        <button data-value="kadry-place"  class="ktk-kp-option w-full text-left px-5 py-4 text-sm text-slate-700 hover:bg-emerald-50 transition-colors border-b border-slate-100" type="button"><?php esc_html_e('Kadry i płace', 'meritoros'); ?></button>
+                        <button data-value="kadry"        class="ktk-kp-option w-full text-left px-5 py-4 text-sm text-slate-700 hover:bg-emerald-50 transition-colors border-b border-slate-100" type="button"><?php esc_html_e('Same kadry', 'meritoros'); ?></button>
+                        <button data-value="place"        class="ktk-kp-option w-full text-left px-5 py-4 text-sm text-slate-700 hover:bg-emerald-50 transition-colors border-b border-slate-100" type="button"><?php esc_html_e('Same płace', 'meritoros'); ?></button>
+                        <button data-value="podwykonawcy" class="ktk-kp-option w-full text-left px-5 py-4 text-sm text-slate-700 hover:bg-emerald-50 transition-colors" type="button"><?php esc_html_e('Rozliczenie umów (podwykonawcy)', 'meritoros'); ?></button>
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-2 gap-4 mb-4">
+                    <input id="ktk-kp-pracownicy" type="number" min="1"
+                        placeholder="<?php esc_attr_e('Liczba pracowników', 'meritoros'); ?>"
+                        class="w-full px-5 py-4 border border-slate-200 rounded-xl text-slate-800 text-sm placeholder-slate-400 hover:border-slate-300 focus:border-emerald-400 focus:outline-none focus:ring-2 focus:ring-emerald-100 transition-colors bg-white" />
+                    <input id="ktk-kp-wyplaty" type="number" min="1"
+                        placeholder="<?php esc_attr_e('Ilość wypłat / mies.', 'meritoros'); ?>"
+                        class="w-full px-5 py-4 border border-slate-200 rounded-xl text-slate-800 text-sm placeholder-slate-400 hover:border-slate-300 focus:border-emerald-400 focus:outline-none focus:ring-2 focus:ring-emerald-100 transition-colors bg-white" />
                 </div>
 
             </div>
-            <p class="mt-4 text-xs text-white/55 leading-relaxed">
-                <?php esc_html_e('* to jest wstępny szacunek, każda oferta jest indywidualnie rozpatrywana i odpowiednio wyceniana.', 'meritoros'); ?>
-            </p>
+
+            <!-- Formularz UK -->
+            <div id="ktk-form-uk" class="hidden">
+
+                <div class="relative mb-4" id="ktk-uk-wrapper">
+                    <button id="ktk-uk-btn"
+                        class="w-full flex items-center justify-between px-5 py-4 border border-slate-200 rounded-xl text-slate-500 text-sm hover:border-slate-300 transition-colors bg-white"
+                        aria-haspopup="listbox" aria-expanded="false" type="button">
+                        <span id="ktk-uk-label"><?php esc_html_e('Wybierz typ księgowości', 'meritoros'); ?></span>
+                        <i data-lucide="chevron-down" class="w-5 h-5 text-slate-400 stroke-[1.5] shrink-0 transition-transform" id="ktk-uk-chevron"></i>
+                    </button>
+                    <div id="ktk-uk-list" class="absolute top-full left-0 right-0 mt-2 bg-white border border-slate-200 rounded-xl shadow-lg z-20 overflow-hidden hidden">
+                        <button data-value="uproszczona" class="ktk-uk-option w-full text-left px-5 py-4 text-sm text-slate-700 hover:bg-emerald-50 transition-colors border-b border-slate-100" type="button"><?php esc_html_e('Księgowość uproszczona (KPiR, ryczałt)', 'meritoros'); ?></button>
+                        <button data-value="pelna"       class="ktk-uk-option w-full text-left px-5 py-4 text-sm text-slate-700 hover:bg-emerald-50 transition-colors" type="button"><?php esc_html_e('Pełna księgowość (KH)', 'meritoros'); ?></button>
+                    </div>
+                </div>
+
+                <div class="mb-4">
+                    <input id="ktk-uk-docs" type="number" min="1"
+                        placeholder="<?php esc_attr_e('Liczba dokumentów miesięcznie', 'meritoros'); ?>"
+                        class="w-full px-5 py-4 border border-slate-200 rounded-xl text-slate-800 text-sm placeholder-slate-400 hover:border-slate-300 focus:border-emerald-400 focus:outline-none focus:ring-2 focus:ring-emerald-100 transition-colors bg-white" />
+                </div>
+
+            </div>
+
+            <!-- Przycisk -->
+            <button id="ktk-submit" class="w-full py-3.5 rounded-full bg-[#2d8650] text-white text-base font-semibold hover:bg-[#246e41] transition-colors mb-5" type="button">
+                <?php esc_html_e('Oblicz kwotę obsługi', 'meritoros'); ?>
+            </button>
+
+            <!-- Wynik -->
+            <div>
+                <p class="text-sm text-slate-400 mb-1"><?php esc_html_e('Orientacyjna cena netto', 'meritoros'); ?></p>
+                <p class="text-4xl font-bold text-slate-900">
+                    <span id="ktk-price">0,00 zł</span>
+                    <span class="text-lg font-normal text-slate-400 ml-1">(netto)</span>
+                </p>
+            </div>
+
         </div>
+
+        <p class="mt-4 text-xs text-white/55 leading-relaxed">
+            <?php esc_html_e('* to jest wstępny szacunek, każda oferta jest indywidualnie rozpatrywana i odpowiednio wyceniana.', 'meritoros'); ?>
+        </p>
 
     </div>
 </section>
@@ -171,19 +168,17 @@ $rate_sub = (float) mer_field('kp_kalk_rate_sub', 42);
 
     var activeTab = 'kp';
 
-    // Styl aktywnej / nieaktywnej zakładki
     function setTab(tab) {
         activeTab = tab;
         priceEl.textContent = '0,00 zł';
-
         if (tab === 'kp') {
-            tabKP.className = 'px-6 py-3 rounded-full text-sm font-semibold transition-colors bg-white text-[#2d8650]';
-            tabUK.className = 'px-6 py-3 rounded-full text-sm font-semibold transition-colors bg-white/20 text-white hover:bg-white/30';
+            tabKP.className = 'flex-1 py-2.5 rounded-full text-sm font-semibold transition-all bg-white text-slate-900 shadow-sm';
+            tabUK.className = 'flex-1 py-2.5 rounded-full text-sm font-semibold transition-all text-slate-500 hover:text-slate-700';
             formKP.classList.remove('hidden');
             formUK.classList.add('hidden');
         } else {
-            tabUK.className = 'px-6 py-3 rounded-full text-sm font-semibold transition-colors bg-white text-[#2d8650]';
-            tabKP.className = 'px-6 py-3 rounded-full text-sm font-semibold transition-colors bg-white/20 text-white hover:bg-white/30';
+            tabUK.className = 'flex-1 py-2.5 rounded-full text-sm font-semibold transition-all bg-white text-slate-900 shadow-sm';
+            tabKP.className = 'flex-1 py-2.5 rounded-full text-sm font-semibold transition-all text-slate-500 hover:text-slate-700';
             formUK.classList.remove('hidden');
             formKP.classList.add('hidden');
         }
