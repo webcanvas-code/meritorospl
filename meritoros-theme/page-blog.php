@@ -216,8 +216,9 @@ usort($all_posts, function ($a, $b) {
             <?php if ($cpt === 'media-article') : ?>
 
                 <?php /* ═══════════ KARTA MEDIA-ARTICLE ═══════════ */ ?>
-                <article class="blog-card bg-white rounded-2xl overflow-hidden border border-slate-100 flex flex-col hover:shadow-md hover:shadow-black/5 transition-shadow duration-300"
-                         data-cats="<?php echo esc_attr($data_cats); ?>">
+                <article class="blog-card bg-white rounded-2xl overflow-hidden border border-slate-100 flex flex-col hover:shadow-md hover:shadow-black/5 transition-shadow duration-300<?php echo !$is_film ? ' cursor-pointer' : ''; ?>"
+                         data-cats="<?php echo esc_attr($data_cats); ?>"
+                         <?php if (!$is_film) : ?>onclick="window.location.href='<?php echo esc_js($link); ?>'"<?php endif; ?>>
 
                     <?php
                     $photo     = get_field('ma_photo', $post->ID);
@@ -265,17 +266,18 @@ usort($all_posts, function ($a, $b) {
                         <?php endif; ?>
                     <?php else : ?>
                         <!-- Regular photo -->
-                        <a href="<?php echo esc_url($link); ?>" class="block aspect-video overflow-hidden bg-emerald-50 group">
+                        <div class="relative aspect-video overflow-hidden bg-emerald-50">
                             <?php if ($photo && is_array($photo)) : ?>
                                 <img src="<?php echo esc_url($photo['url']); ?>"
                                      alt="<?php echo esc_attr($photo['alt'] ?: get_the_title($post)); ?>"
-                                     class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy">
+                                     class="w-full h-full object-cover" loading="lazy">
                             <?php else : ?>
                                 <div class="w-full h-full bg-emerald-50 flex items-center justify-center">
                                     <i data-lucide="newspaper" class="w-10 h-10 text-emerald-200"></i>
                                 </div>
                             <?php endif; ?>
-                        </a>
+                            <time class="absolute bottom-3 left-3 bg-black/50 backdrop-blur-sm text-white text-xs font-medium px-2.5 py-1 rounded-full"><?php echo mer_esc($post_date); ?></time>
+                        </div>
                     <?php endif; ?>
 
                     <div class="p-6 flex flex-col flex-1 gap-3">
@@ -293,21 +295,18 @@ usort($all_posts, function ($a, $b) {
                             <p class="text-slate-500 text-sm leading-relaxed line-clamp-2"><?php echo mer_esc($ma_text); ?></p>
                         <?php endif; ?>
 
-                        <div class="mt-auto flex items-center justify-between pt-4 border-t border-slate-100 gap-3">
-                            <time class="text-xs text-slate-400 shrink-0"><?php echo mer_esc($post_date); ?></time>
+                        <div class="mt-auto pt-4 border-t border-slate-100">
                             <?php if ($is_film && $embed_src) : ?>
                                 <?php $show_article_link = get_field('ma_show_article_link', $post->ID); ?>
-                                <div class="flex items-center gap-3 min-w-0">
-                                    <?php if ($show_article_link) : ?>
+                                <?php if ($show_article_link) : ?>
                                     <a href="<?php echo esc_url(get_permalink($post)); ?>"
-                                       class="text-sm font-medium text-slate-700 border-b-2 border-emerald-500 hover:text-emerald-700 transition-colors truncate">
+                                       class="text-sm font-medium text-slate-700 border-b-2 border-emerald-500 hover:text-emerald-700 transition-colors" onclick="event.stopPropagation()">
                                         <?php esc_html_e('Czytaj artykuł', 'meritoros'); ?>
                                     </a>
-                                    <?php endif; ?>
-                                </div>
+                                <?php endif; ?>
                             <?php else : ?>
                                 <a href="<?php echo esc_url($link); ?>"
-                                   class="text-sm font-medium text-slate-700 border-b-2 border-emerald-500 hover:text-emerald-700 transition-colors">
+                                   class="text-sm font-medium text-slate-700 border-b-2 border-emerald-500 hover:text-emerald-700 transition-colors" onclick="event.stopPropagation()">
                                     <?php echo mer_esc($btn_text); ?>
                                 </a>
                             <?php endif; ?>
@@ -358,8 +357,9 @@ usort($all_posts, function ($a, $b) {
                     }
                 }
                 ?>
-                <article class="blog-card bg-white rounded-2xl overflow-hidden border border-slate-100 flex flex-col hover:shadow-md hover:shadow-black/5 transition-shadow duration-300"
-                         data-cats="<?php echo esc_attr($data_cats); ?>">
+                <article class="blog-card bg-white rounded-2xl overflow-hidden border border-slate-100 flex flex-col hover:shadow-md hover:shadow-black/5 transition-shadow duration-300<?php echo !$is_film ? ' cursor-pointer' : ''; ?>"
+                         data-cats="<?php echo esc_attr($data_cats); ?>"
+                         <?php if (!$is_film) : ?>onclick="window.location.href='<?php echo esc_js($cs_link); ?>'"<?php endif; ?>>
 
                     <?php if ($is_film) : ?>
                         <!-- Film overlay -->
@@ -403,11 +403,11 @@ usort($all_posts, function ($a, $b) {
                         ?>
                         <?php if ($cs_static_thumb) : ?>
                             <!-- Miniatura (zdjęcie lub YouTube) -->
-                            <a href="<?php echo esc_url($cs_link); ?>" class="relative block aspect-video overflow-hidden bg-slate-100 group">
+                            <div class="relative aspect-video overflow-hidden bg-slate-100">
                                 <img src="<?php echo esc_url($cs_static_thumb); ?>"
                                      alt="<?php echo esc_attr($cs_static_alt); ?>"
-                                     class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" loading="lazy">
-                            </a>
+                                     class="w-full h-full object-cover" loading="lazy">
+                            </div>
                         <?php else : ?>
                             <!-- Logo / Placeholder -->
                             <div class="p-6 pb-0">
@@ -450,7 +450,7 @@ usort($all_posts, function ($a, $b) {
 
                         <div class="mt-auto pt-4 border-t border-slate-100">
                             <a href="<?php echo esc_url($cs_link); ?>"
-                               class="text-sm font-medium text-slate-700 border-b-2 border-emerald-500 hover:text-emerald-700 transition-colors">
+                               class="text-sm font-medium text-slate-700 border-b-2 border-emerald-500 hover:text-emerald-700 transition-colors" onclick="event.stopPropagation()">
                                 <?php esc_html_e('Czytaj historię', 'meritoros'); ?>
                             </a>
                         </div>
@@ -471,20 +471,22 @@ usort($all_posts, function ($a, $b) {
                 $_wpcats      = get_the_category($post->ID);
                 if (!empty($_wpcats)) $wp_cat_name = $_wpcats[0]->name;
                 ?>
-                <article class="blog-card bg-white rounded-2xl overflow-hidden border border-slate-100 flex flex-col hover:shadow-md hover:shadow-black/5 transition-shadow duration-300"
-                         data-cats="<?php echo esc_attr($data_cats); ?>">
+                <article class="blog-card bg-white rounded-2xl overflow-hidden border border-slate-100 flex flex-col hover:shadow-md hover:shadow-black/5 transition-shadow duration-300 cursor-pointer"
+                         data-cats="<?php echo esc_attr($data_cats); ?>"
+                         onclick="window.location.href='<?php echo esc_js($wp_link); ?>'">
 
-                    <a href="<?php echo esc_url($wp_link); ?>" class="block aspect-video overflow-hidden bg-emerald-50 group">
+                    <div class="relative aspect-video overflow-hidden bg-emerald-50">
                         <?php if ($wp_thumb_url) : ?>
                             <img src="<?php echo esc_url($wp_thumb_url); ?>"
                                  alt="<?php echo esc_attr($wp_thumb_alt); ?>"
-                                 class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy">
+                                 class="w-full h-full object-cover" loading="lazy">
                         <?php else : ?>
                             <div class="w-full h-full bg-emerald-50 flex items-center justify-center">
                                 <i data-lucide="newspaper" class="w-10 h-10 text-emerald-200"></i>
                             </div>
                         <?php endif; ?>
-                    </a>
+                        <time class="absolute bottom-3 left-3 bg-black/50 backdrop-blur-sm text-white text-xs font-medium px-2.5 py-1 rounded-full"><?php echo mer_esc($wp_date); ?></time>
+                    </div>
 
                     <div class="p-6 flex flex-col flex-1 gap-3">
                         <?php if ($wp_cat_name) : ?>
@@ -492,7 +494,7 @@ usort($all_posts, function ($a, $b) {
                         <?php endif; ?>
 
                         <h2 class="text-pretty font-semibold text-slate-900 text-base leading-snug line-clamp-3">
-                            <a href="<?php echo esc_url($wp_link); ?>" class="hover:text-emerald-700 transition-colors">
+                            <a href="<?php echo esc_url($wp_link); ?>" class="hover:text-emerald-700 transition-colors" onclick="event.stopPropagation()">
                                 <?php echo mer_esc(get_the_title($post)); ?>
                             </a>
                         </h2>
@@ -501,10 +503,9 @@ usort($all_posts, function ($a, $b) {
                             <p class="text-slate-500 text-sm leading-relaxed line-clamp-2"><?php echo mer_esc($wp_excerpt); ?></p>
                         <?php endif; ?>
 
-                        <div class="mt-auto flex items-center justify-between pt-4 border-t border-slate-100 gap-3">
-                            <time class="text-xs text-slate-400 shrink-0"><?php echo mer_esc($wp_date); ?></time>
+                        <div class="mt-auto pt-4 border-t border-slate-100">
                             <a href="<?php echo esc_url($wp_link); ?>"
-                               class="text-sm font-medium text-slate-700 border-b-2 border-emerald-500 hover:text-emerald-700 transition-colors">
+                               class="text-sm font-medium text-slate-700 border-b-2 border-emerald-500 hover:text-emerald-700 transition-colors" onclick="event.stopPropagation()">
                                 <?php esc_html_e('Przeczytaj artykuł', 'meritoros'); ?>
                             </a>
                         </div>
