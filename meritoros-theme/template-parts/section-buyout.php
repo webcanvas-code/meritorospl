@@ -81,8 +81,8 @@ for ($i = 1; $i <= 5; $i++) {
                         $accent = !empty($stat['accent']);
                     ?>
                         <div class="<?php echo $accent ? 'bg-[#2d8650] border border-[#246e41] hover:bg-[#246e41]' : 'bg-white/10 backdrop-blur-sm border border-white/20 hover:bg-white/15'; ?> rounded-xl lg:rounded-2xl p-4 lg:p-6 transition-colors overflow-hidden min-w-0">
-                            <div class="w-8 h-8 lg:w-10 lg:h-10 <?php echo $accent ? 'bg-white/20' : 'bg-[#2d8650]/20'; ?> rounded-lg lg:rounded-xl flex items-center justify-center mb-3 lg:mb-4 shrink-0">
-                                <i data-lucide="<?php echo $icon; ?>" class="w-4 h-4 lg:w-5 lg:h-5 <?php echo $accent ? 'text-white' : 'text-[#2d8650]'; ?> stroke-[1.5]"></i>
+                            <div class="w-8 h-8 lg:w-10 lg:h-10 <?php echo $accent ? 'bg-white/20' : 'bg-[#2d8650]'; ?> rounded-lg lg:rounded-xl flex items-center justify-center mb-3 lg:mb-4 shrink-0">
+                                <i data-lucide="<?php echo $icon; ?>" class="w-4 h-4 lg:w-5 lg:h-5 text-white stroke-[1.5]"></i>
                             </div>
                             <p class="text-sm sm:text-lg lg:text-2xl font-bold text-white mb-1 leading-tight break-words"><?php echo $val; ?></p>
                             <p class="text-[11px] sm:text-xs lg:text-sm <?php echo $accent ? 'text-white/80' : 'text-white/60'; ?> font-light leading-snug mt-1"><?php echo $slabel; ?></p>
