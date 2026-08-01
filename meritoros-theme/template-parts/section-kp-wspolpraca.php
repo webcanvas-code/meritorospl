@@ -41,7 +41,7 @@ $s3_items = array_values(array_filter(array_map('trim', explode("\n", $s3_items_
             <!-- Krok 01 -->
             <div class="relative w-[95%] sm:w-[90%] ml-auto">
                 <div class="border-t border-r border-b border-slate-300 rounded-r-[3rem] sm:rounded-r-[4rem] p-10 sm:p-14 md:p-20 flex flex-col md:flex-row items-center gap-10 md:gap-20">
-                    <div class="absolute top-0 right-full w-screen h-px bg-slate-300"></div>
+                    <div class="hidden md:block absolute top-0 right-full w-screen h-px bg-slate-300"></div>
                     <div class="text-[5rem] sm:text-[8rem] md:text-[10rem] font-medium text-[#2d8650] leading-none shrink-0 tracking-tighter">01</div>
                     <div class="flex-1">
                         <h3 class="text-2xl font-bold mb-5 text-slate-900"><?php echo mer_esc($s1_title); ?></h3>

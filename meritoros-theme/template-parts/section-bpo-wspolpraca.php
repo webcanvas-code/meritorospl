@@ -42,7 +42,7 @@ for ($i = 1; $i <= 3; $i++) {
             <!-- Step 01 -->
             <div class="relative w-[95%] sm:w-[90%] ml-auto">
                 <div class="border-t border-r border-b border-slate-300 rounded-r-[3rem] sm:rounded-r-[4rem] p-6 sm:p-14 md:p-20 flex flex-col md:flex-row items-center gap-6 md:gap-20">
-                    <div class="absolute top-0 right-full w-screen h-px bg-slate-300"></div>
+                    <div class="hidden md:block absolute top-0 right-full w-screen h-px bg-slate-300"></div>
                     <div class="text-[5rem] sm:text-[8rem] md:text-[10rem] font-medium text-[#2d8650] leading-none shrink-0 tracking-tighter">01</div>
                     <div class="flex-1">
                         <h3 class="text-2xl font-bold mb-5 text-slate-900"><?php echo mer_esc($steps[0]['title']); ?></h3>
