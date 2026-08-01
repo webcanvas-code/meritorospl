@@ -148,7 +148,7 @@ $total = count($items);
 <section class="relative overflow-hidden bg-gradient-to-b from-slate-50 to-white px-6 lg:px-12 py-16 sm:py-20 lg:py-24" aria-labelledby="cs-section-title">
     <div class="pointer-events-none absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-slate-200 to-transparent"></div>
 
-    <div class="max-w-[1200px] mx-auto w-full">
+    <div class="max-w-[1400px] mx-auto w-full">
         <!-- Nagłówek: tylko kontekst — nawigacja slajdera jest pod kartą (lepszy UX na mobile) -->
         <header class="mb-8 lg:mb-10 text-center lg:text-left">
             <span class="text-[#2d8650] uppercase tracking-widest text-base font-bold mb-4 block">

@@ -30,8 +30,9 @@ $icon_classes = ['rotate-3', '-rotate-3', 'rotate-3', '-rotate-3', 'rotate-3'];
 
 <section class="py-8 lg:py-14 px-6 lg:px-12 bg-slate-50 border-t border-slate-100">
     <div class="max-w-[1400px] mx-auto">
+        <div class="bg-white rounded-3xl p-8 lg:p-10 shadow-sm">
 
-        <div class="max-w-4xl mb-6">
+        <div class="mb-6">
             <span class="text-[#2d8650] uppercase tracking-widest text-base font-bold mb-2 block">
                 <?php echo mer_esc($label); ?>
             </span>
@@ -39,7 +40,7 @@ $icon_classes = ['rotate-3', '-rotate-3', 'rotate-3', '-rotate-3', 'rotate-3'];
                 <?php echo mer_esc($title); ?>
             </h2>
             <?php if ($desc) : ?>
-                <p class="text-base text-slate-600 leading-relaxed font-light">
+                <p class="text-base text-slate-600 leading-relaxed font-light max-w-4xl">
                     <?php echo mer_esc($desc); ?>
                 </p>
             <?php endif; ?>
@@ -79,6 +80,7 @@ $icon_classes = ['rotate-3', '-rotate-3', 'rotate-3', '-rotate-3', 'rotate-3'];
                 <p class="text-white/80 mt-2 text-base font-light relative z-10"><?php echo mer_esc($cta_sub); ?></p>
             </a>
 
+        </div>
         </div>
     </div>
 </section>
