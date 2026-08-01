@@ -19,8 +19,9 @@ $links = [
 
 <nav id="ri-toc-bar"
      class="sticky z-40 bg-white border-b border-slate-200 shadow-sm"
-     style="top:96px;"
+     style="top:80px;"
      aria-label="<?php esc_attr_e('Spis treści', 'meritoros'); ?>">
+
     <div class="max-w-7xl mx-auto px-6">
         <div class="flex items-center gap-1 overflow-x-auto py-4"
              style="-ms-overflow-style:none; scrollbar-width:none;">
@@ -44,8 +45,16 @@ $links = [
 <script>
 document.addEventListener('DOMContentLoaded', function () {
 (function () {
-    var bar   = document.getElementById('ri-toc-bar');
-    var links = Array.from(document.querySelectorAll('#ri-toc-bar [data-ri-toc]'));
+    var bar    = document.getElementById('ri-toc-bar');
+    var header = document.getElementById('mer-header');
+    var links  = Array.from(document.querySelectorAll('#ri-toc-bar [data-ri-toc]'));
+
+    function syncTop() {
+        var hBottom = header ? header.getBoundingClientRect().bottom : 80;
+        bar.style.top = hBottom + 'px';
+    }
+    syncTop();
+    window.addEventListener('resize', syncTop);
 
     var sectionIds = [<?php foreach ($links as $link) { echo '"' . esc_js(ltrim($link['href'], '#')) . '",'; } ?>];
     var sections   = sectionIds.map(function (id) { return document.getElementById(id); }).filter(Boolean);
@@ -81,7 +90,7 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     function getActive() {
-        var offset = bar.offsetHeight + 96 + 8;
+        var offset = bar.getBoundingClientRect().bottom;
         var active = sections[0].id;
         sections.forEach(function (s) {
             if (s.getBoundingClientRect().top <= offset) active = s.id;
@@ -107,7 +116,7 @@ document.addEventListener('DOMContentLoaded', function () {
             activate(id);
             var target = document.getElementById(id);
             if (!target) return;
-            var offset = bar.offsetHeight + 96 + 8;
+            var offset = bar.getBoundingClientRect().bottom;
             window.scrollTo({ top: target.getBoundingClientRect().top + window.scrollY - offset, behavior: 'smooth' });
         });
     });
