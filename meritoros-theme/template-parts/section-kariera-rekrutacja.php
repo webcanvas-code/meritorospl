@@ -25,29 +25,29 @@ for ($i = 1; $i <= 4; $i++) {
 ?>
 
 <section id="rekrutacja" class="py-16 sm:py-20 md:py-24 px-6 lg:px-12 bg-white">
-    <div class="max-w-7xl mx-auto">
+    <div class="max-w-[1400px] mx-auto">
 
         <div class="mb-14">
-            <h2 class="text-pretty text-3xl lg:text-4xl xl:text-5xl font-bold tracking-tight text-slate-900 mb-4"><?php echo mer_esc($title); ?></h2>
-            <p class="text-slate-500 text-base font-light leading-relaxed max-w-2xl"><?php echo mer_esc($subtitle); ?></p>
+            <h2 class="text-pretty text-4xl md:text-5xl font-bold tracking-tight text-slate-900 mb-4"><?php echo mer_esc($title); ?></h2>
+            <p class="text-slate-500 text-base leading-relaxed max-w-2xl"><?php echo mer_esc($subtitle); ?></p>
         </div>
 
         <div class="relative">
-            <div class="hidden lg:block absolute z-0" style="top:52px; left:calc(12.5% + 56px); right:calc(62.5% + 56px); border-top:2px solid #94a3b8;"></div>
-            <div class="hidden lg:block absolute z-0" style="top:52px; left:calc(37.5% + 56px); right:calc(37.5% + 56px); border-top:2px solid #94a3b8;"></div>
-            <div class="hidden lg:block absolute z-0" style="top:52px; left:calc(62.5% + 56px); right:calc(12.5% + 56px); border-top:2px solid #94a3b8;"></div>
+            <div class="hidden lg:block absolute z-0" style="top:32px; left:calc(12.5% + 36px); right:calc(62.5% + 36px); border-top:2px solid #94a3b8;"></div>
+            <div class="hidden lg:block absolute z-0" style="top:32px; left:calc(37.5% + 36px); right:calc(37.5% + 36px); border-top:2px solid #94a3b8;"></div>
+            <div class="hidden lg:block absolute z-0" style="top:32px; left:calc(62.5% + 36px); right:calc(12.5% + 36px); border-top:2px solid #94a3b8;"></div>
 
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 lg:gap-6 relative z-10">
                 <?php foreach ($steps as $num => $step) : ?>
                 <div class="flex flex-col items-center text-center">
                     <div class="relative mb-6">
-                        <img src="<?php echo get_template_directory_uri(); ?>/images/<?php echo esc_attr($step['img']); ?>" alt="" class="w-[104px] h-[104px] object-contain">
-                        <div class="absolute -bottom-3 -right-3 w-8 h-8 rounded-full bg-[#2d8650] flex items-center justify-center shadow-md">
+                        <img src="<?php echo get_template_directory_uri(); ?>/images/<?php echo esc_attr($step['img']); ?>" alt="" class="w-16 h-16 object-contain">
+                        <div class="absolute -bottom-2 -right-2 w-6 h-6 rounded-full bg-[#2d8650] flex items-center justify-center shadow-md">
                             <span class="text-white text-xs font-bold"><?php echo $num + 1; ?></span>
                         </div>
                     </div>
-                    <h3 class="text-lg font-bold text-slate-900 mb-3 flex items-end justify-center" style="min-height:3.375rem"><?php echo mer_esc($step['title']); ?></h3>
-                    <p class="text-lg text-slate-500 font-light leading-relaxed"><?php echo mer_esc($step['text']); ?></p>
+                    <h3 class="text-xl font-semibold text-slate-900 mb-3 flex items-end justify-center" style="min-height:3.5rem"><?php echo mer_esc($step['title']); ?></h3>
+                    <p class="text-sm text-slate-500 leading-relaxed"><?php echo mer_esc($step['text']); ?></p>
                 </div>
                 <?php endforeach; ?>
             </div>
