@@ -19,7 +19,7 @@ $kariera_url = home_url('/kariera/');
     <div class="relative z-10 max-w-7xl mx-auto px-6 flex flex-col justify-center" style="min-height:75vh; padding-top:7rem; padding-bottom:4rem;">
 
         <!-- Breadcrumb -->
-        <div class="flex items-center flex-wrap gap-2 text-sm text-white/80 mb-8">
+        <div class="flex items-center flex-wrap gap-1 text-xs sm:text-sm text-white/80 mb-8">
             <a href="<?php echo esc_url(home_url('/')); ?>" class="hover:text-white transition-colors"><?php esc_html_e('Strona główna', 'meritoros'); ?></a>
             <span>/</span>
             <a href="<?php echo esc_url($kariera_url); ?>" class="hover:text-white transition-colors"><?php esc_html_e('Kariera', 'meritoros'); ?></a>

@@ -41,7 +41,7 @@ $text  = mer_field('media_hero_text',  'Najważniejsze wydarzenia z życia firmy
 
     <div class="max-w-7xl mx-auto px-6 relative z-10">
         <!-- Breadcrumb -->
-        <div class="flex items-center gap-2 text-sm text-slate-400 mb-6">
+        <div class="flex items-center flex-wrap gap-1 text-xs sm:text-sm text-slate-400 mb-6">
             <span><?php esc_html_e('Strona główna', 'meritoros'); ?></span>
             <span>/</span>
             <span class="text-slate-600 font-medium">Media i newsroom</span>
