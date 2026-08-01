@@ -13,7 +13,7 @@ $items = array_values(array_filter(array_map('trim', preg_split('/(\r?\n){2,}/',
     <div class="hidden md:block absolute -right-40 top-1/2 -translate-y-1/2 w-[400px] h-[400px] rounded-full border-[50px] border-emerald-100 pointer-events-none"></div>
 
     <div class="max-w-7xl mx-auto px-6 relative z-10">
-        <h2 class="text-pretty text-3xl md:text-4xl font-bold tracking-tight text-slate-900 mb-3"><?php echo mer_esc($title); ?></h2>
+        <h2 class="text-pretty text-4xl md:text-5xl font-bold tracking-tight text-slate-900 mb-3"><?php echo mer_esc($title); ?></h2>
         <p class="text-base text-slate-500 leading-relaxed mb-8"><?php echo nl2br(esc_html($subtitle)); ?></p>
 
         <div class="rounded-2xl border border-slate-200 overflow-hidden mb-8">

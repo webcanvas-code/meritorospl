@@ -46,7 +46,7 @@ $karty = [
     <div class="relative z-10 max-w-7xl mx-auto px-6">
 
         <div class="mb-12">
-            <h2 class="text-pretty text-3xl md:text-4xl font-bold text-slate-900 mb-3"><?php esc_html_e('Co oferujemy', 'meritoros'); ?></h2>
+            <h2 class="text-pretty text-4xl md:text-5xl font-bold text-slate-900 mb-3"><?php esc_html_e('Co oferujemy', 'meritoros'); ?></h2>
             <p class="text-slate-500 text-lg max-w-xl"><?php esc_html_e('Dołączając do Meritoros, zyskujesz więcej niż tylko pracę.', 'meritoros'); ?></p>
         </div>
 

@@ -55,7 +55,7 @@ $c6_cert       = mer_field('val_c6_cert', 'ISO 9001:2015');
         <span class="text-[#2d8650] uppercase tracking-widest text-base font-bold mb-2 block">
             <?php echo mer_esc($label); ?>
         </span>
-        <h2 class="text-pretty text-2xl md:text-3xl lg:text-4xl font-bold tracking-tight max-w-3xl mx-auto text-slate-900">
+        <h2 class="text-pretty text-4xl md:text-5xl font-bold tracking-tight max-w-3xl mx-auto text-slate-900">
             <?php echo nl2br(esc_html($title)); ?>
         </h2>
     </div>

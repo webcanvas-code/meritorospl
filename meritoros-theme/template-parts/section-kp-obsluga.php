@@ -23,7 +23,7 @@ $img_alt = is_array($image) ? esc_attr($image['alt'] ?: 'Obsługa kadrowo-płaco
             </div>
 
             <div>
-                <h2 class="text-pretty text-4xl font-bold tracking-tight text-slate-900 mb-6 leading-tight">
+                <h2 class="text-pretty text-4xl md:text-5xl font-bold tracking-tight text-slate-900 mb-6 leading-tight">
                     <?php echo mer_esc($title1); ?><br>
                     <?php echo mer_esc($title2); ?> <span class="text-[#2d8650]"><?php echo mer_esc($title_green); ?></span>
                 </h2>

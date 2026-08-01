@@ -27,7 +27,7 @@ if (is_array($mapa_image) && !empty($mapa_image['url'])) {
             </div>
 
             <div>
-                <h2 class="text-pretty text-4xl font-bold tracking-tight text-slate-900 mb-5"><?php echo mer_esc($mapa_title); ?></h2>
+                <h2 class="text-pretty text-4xl md:text-5xl font-bold tracking-tight text-slate-900 mb-5"><?php echo mer_esc($mapa_title); ?></h2>
                 <p class="text-base sm:text-lg text-slate-500 leading-relaxed mb-10 max-w-md">
                     <?php echo mer_esc($mapa_text); ?>
                 </p>

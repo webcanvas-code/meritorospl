@@ -36,7 +36,7 @@ $icon_classes = ['rotate-3', '-rotate-3', 'rotate-3', '-rotate-3', 'rotate-3'];
             <span class="text-[#2d8650] uppercase tracking-widest text-base font-bold mb-2 block">
                 <?php echo mer_esc($label); ?>
             </span>
-            <h2 class="text-pretty text-3xl lg:text-4xl font-bold tracking-tight mb-3 text-slate-900">
+            <h2 class="text-pretty text-4xl md:text-5xl font-bold tracking-tight mb-3 text-slate-900">
                 <?php echo mer_esc($title); ?>
             </h2>
             <?php if ($desc) : ?>

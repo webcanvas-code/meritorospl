@@ -22,7 +22,7 @@ $kroki = [
                     <?php esc_html_e('Rekrutacja', 'meritoros'); ?>
                 </span>
 
-                <h2 class="text-pretty text-3xl md:text-4xl font-bold text-slate-900 mb-4">
+                <h2 class="text-pretty text-4xl md:text-5xl font-bold text-slate-900 mb-4">
                     <?php esc_html_e('Zainteresowana / Zainteresowany?', 'meritoros'); ?><br>
                     <?php esc_html_e('Wyślij nam swoje CV', 'meritoros'); ?>
                 </h2>

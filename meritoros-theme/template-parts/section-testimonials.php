@@ -53,7 +53,7 @@ for ($i = 1; $i <= 4; $i++) {
                 <span class="text-[#2d8650] uppercase tracking-widest text-base font-bold mb-4 block">
                     <?php echo mer_esc($label); ?>
                 </span>
-                <h2 class="text-3xl lg:text-4xl xl:text-5xl font-bold tracking-tight text-slate-900 whitespace-nowrap">
+                <h2 class="text-4xl md:text-5xl font-bold tracking-tight text-slate-900 whitespace-nowrap">
                     <?php echo mer_esc($title); ?>
                 </h2>
             </div>

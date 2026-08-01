@@ -18,7 +18,7 @@ $rate_sub = (float) mer_field('kp_kalk_rate_sub', 42);
         <div class="grid lg:grid-cols-2 gap-16 items-start">
 
             <div class="lg:pt-8">
-                <h2 class="text-pretty text-4xl font-bold tracking-tight text-white mb-6 leading-tight">
+                <h2 class="text-pretty text-4xl md:text-5xl font-bold tracking-tight text-white mb-6 leading-tight">
                     <?php echo mer_esc($title); ?>
                 </h2>
                 <p class="text-base sm:text-lg text-white/75 leading-relaxed max-w-sm">

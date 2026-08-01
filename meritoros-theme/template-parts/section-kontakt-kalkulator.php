@@ -17,7 +17,7 @@ $rate_sub = (float) mer_field('kp_kalk_rate_sub', 42);
 
         <!-- Nagłówek -->
         <div class="text-center mb-8">
-            <h2 class="text-pretty text-3xl font-bold tracking-tight text-white mb-3 leading-tight">
+            <h2 class="text-pretty text-4xl md:text-5xl font-bold tracking-tight text-white mb-3 leading-tight">
                 <?php esc_html_e('Sprawdź orientacyjny koszt obsługi', 'meritoros'); ?>
             </h2>
             <p class="text-white/75 text-base leading-relaxed">
