@@ -82,7 +82,7 @@ for ($i = 1; $i <= 4; $i++) {
             </div>
 
             <!-- Right: CF7 Form -->
-            <div class="bg-white p-7 sm:p-10 lg:p-16 flex flex-col justify-center">
+            <div class="bg-white p-7 sm:p-10 lg:p-16 flex flex-col justify-center rounded-b-2xl md:rounded-b-[3rem] lg:rounded-b-none lg:rounded-r-[3rem]">
                 <h3 class="text-2xl font-bold tracking-tight text-slate-900 mb-2">
                     <?php echo mer_esc($form_title); ?>
                 </h3>

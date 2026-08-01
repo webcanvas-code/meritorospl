@@ -67,7 +67,7 @@ for ($i = 1; $i <= 4; $i++) {
                     <div class="flex flex-col sm:flex-row rounded-2xl overflow-hidden sm:h-[400px] group h-full">
 
                         <!-- Panel tekstowy (55%) -->
-                        <div class="sm:w-[55%] bg-[#2d8650] p-7 sm:p-10 flex flex-col relative overflow-hidden min-h-[220px] sm:min-h-0">
+                        <div class="sm:w-[55%] bg-[#2d8650] p-7 sm:p-10 flex flex-col relative overflow-hidden min-h-[220px] sm:min-h-0 rounded-tl-2xl rounded-tr-2xl sm:rounded-tr-none sm:rounded-bl-2xl">
                             <div class="absolute -bottom-14 -right-14 w-56 h-56 rounded-full bg-white/10 pointer-events-none"></div>
                             <div class="absolute -top-8 -left-8 w-32 h-32 rounded-full bg-white/5 pointer-events-none"></div>
 
@@ -86,7 +86,7 @@ for ($i = 1; $i <= 4; $i++) {
                         </div>
 
                         <!-- Panel ze zdjęciem (45%) -->
-                        <div class="sm:w-[45%] h-56 sm:h-auto relative overflow-hidden">
+                        <div class="sm:w-[45%] h-56 sm:h-auto relative overflow-hidden rounded-bl-2xl rounded-br-2xl sm:rounded-bl-none sm:rounded-tr-2xl">
                             <img src="<?php echo $card['img_url']; ?>"
                                  alt="<?php echo $card['img_alt']; ?>"
                                  class="absolute inset-0 w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-700"
