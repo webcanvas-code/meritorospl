@@ -57,11 +57,13 @@ for ($i = 1; $i <= 4; $i++) {
                     <?php echo mer_esc($title); ?>
                 </h2>
             </div>
+            <?php if (empty($args['hide_cs_link'])) : ?>
             <a href="<?php echo esc_url(home_url('/historie-klientow/')); ?>"
-               class="inline-flex items-center gap-2 text-slate-500 hover:text-slate-900 transition-colors group text-base font-medium shrink-0">
+               class="inline-flex items-center gap-2 text-slate-900 hover:text-[#2d8650] transition-colors group text-base font-medium shrink-0">
                 <?php esc_html_e('Historie klientów', 'meritoros'); ?>
                 <i data-lucide="arrow-up-right" class="w-5 h-5 stroke-[1.5] group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform"></i>
             </a>
+            <?php endif; ?>
         </div>
 
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">

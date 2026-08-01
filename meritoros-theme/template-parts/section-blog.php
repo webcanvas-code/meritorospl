@@ -29,7 +29,7 @@ if (!$posts->have_posts()) return;
                 </h2>
             </div>
             <a href="<?php echo esc_url($link_url); ?>"
-               class="inline-flex items-center gap-2 text-base font-semibold text-slate-500 hover:text-[#2d8650] transition-colors group shrink-0">
+               class="inline-flex items-center gap-2 text-base font-semibold text-slate-900 hover:text-[#2d8650] transition-colors group shrink-0">
                 <?php echo mer_esc($link_text); ?>
                 <i data-lucide="arrow-up-right" class="w-5 h-5 stroke-[2] group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform"></i>
             </a>
