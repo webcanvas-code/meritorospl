@@ -133,7 +133,7 @@ for ($i = 1; $i <= 4; $i++) {
                     $accent = !empty($stat['accent']);
                 ?>
                     <div class="text-center">
-                        <p class="text-4xl font-bold <?php echo $accent ? 'text-[#2d8650]' : 'text-slate-900'; ?> mb-1">
+                        <p class="text-5xl font-bold <?php echo $accent ? 'text-[#2d8650]' : 'text-slate-900'; ?> mb-1">
                             <?php echo $val; ?>
                         </p>
                         <p class="text-slate-500 text-base font-medium"><?php echo $slabel; ?></p>
