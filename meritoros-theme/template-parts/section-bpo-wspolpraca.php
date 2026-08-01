@@ -60,7 +60,7 @@ for ($i = 1; $i <= 3; $i++) {
 
             <!-- Step 02 -->
             <div class="relative w-[95%] sm:w-[90%] mr-auto">
-                <div class="border-t border-l border-b border-slate-300 rounded-l-[3rem] sm:rounded-l-[4rem] p-6 sm:p-14 md:p-20 flex flex-col md:flex-row items-center gap-6 md:gap-20 mt-[-1px]">
+                <div class="border-t border-l border-b border-slate-300 rounded-l-[3rem] sm:rounded-l-[4rem] p-6 sm:p-14 md:p-20 flex flex-col md:flex-row items-center gap-6 md:gap-20 mt-6 md:mt-[-1px]">
                     <div class="flex-1 order-2 md:order-1 pl-0 md:pl-10">
                         <h3 class="text-2xl font-bold mb-5 text-slate-900"><?php echo mer_esc($steps[1]['title']); ?></h3>
                         <?php if ($steps[1]['lead']) : ?>
@@ -78,7 +78,7 @@ for ($i = 1; $i <= 3; $i++) {
 
             <!-- Step 03 -->
             <div class="relative w-[95%] sm:w-[90%] ml-auto">
-                <div class="border-t border-r border-b border-slate-300 rounded-r-[3rem] sm:rounded-r-[4rem] p-6 sm:p-14 md:p-20 flex flex-col md:flex-row items-center gap-6 md:gap-20 mt-[-1px]">
+                <div class="border-t border-r border-b border-slate-300 rounded-r-[3rem] sm:rounded-r-[4rem] p-6 sm:p-14 md:p-20 flex flex-col md:flex-row items-center gap-6 md:gap-20 mt-6 md:mt-[-1px]">
                     <div class="text-[5rem] sm:text-[8rem] md:text-[10rem] font-medium text-[#2d8650] leading-none shrink-0 tracking-tighter">03</div>
                     <div class="flex-1">
                         <h3 class="text-2xl font-bold mb-5 text-slate-900 leading-snug"><?php echo mer_esc($steps[2]['title']); ?></h3>
