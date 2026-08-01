@@ -120,6 +120,21 @@ $photo_alt = is_array($jak_photo) ? esc_attr($jak_photo['alt'] ?: 'Zespół Meri
         });
     });
 
+    // Lock left-column height so the section doesn't jump when items expand
+    (function () {
+        var leftCol = document.getElementById('jak-accordion').parentElement;
+        items.forEach(function (item) {
+            var c = item.querySelector('.jak-content');
+            c.style.transition = 'none';
+            c.style.maxHeight  = '500px';
+            c.style.opacity    = '1';
+        });
+        leftCol.style.minHeight = leftCol.offsetHeight + 'px';
+        items.forEach(function (item) {
+            item.querySelector('.jak-content').style.transition = '';
+        });
+    })();
+
     activate(0);
 })();
 </script>
