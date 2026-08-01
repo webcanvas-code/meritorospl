@@ -120,9 +120,10 @@ $photo_alt = is_array($jak_photo) ? esc_attr($jak_photo['alt'] ?: 'Zespół Meri
         });
     });
 
-    // Lock left-column height so the section doesn't jump when items expand
-    (function () {
-        var leftCol = document.getElementById('jak-accordion').parentElement;
+    // Lock left-column height on desktop so the section doesn't jump when items expand
+    var leftCol = document.getElementById('jak-accordion').parentElement;
+    function lockHeight() {
+        if (window.innerWidth < 1024) { leftCol.style.minHeight = ''; return; }
         items.forEach(function (item) {
             var c = item.querySelector('.jak-content');
             c.style.transition = 'none';
@@ -133,7 +134,10 @@ $photo_alt = is_array($jak_photo) ? esc_attr($jak_photo['alt'] ?: 'Zespół Meri
         items.forEach(function (item) {
             item.querySelector('.jak-content').style.transition = '';
         });
-    })();
+        activate(activeIndex >= 0 ? activeIndex : 0);
+    }
+    lockHeight();
+    window.addEventListener('resize', lockHeight);
 
     activate(0);
 })();

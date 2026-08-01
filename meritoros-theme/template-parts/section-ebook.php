@@ -78,7 +78,7 @@ $nonce = wp_create_nonce('mer_ebook_nonce');
 
             <!-- Prawa: mockup -->
             <?php if ($mockup_url) : ?>
-            <div class="flex-1 flex items-center justify-center lg:justify-end"
+            <div class="flex-1 hidden lg:flex items-center justify-center lg:justify-end"
                  style="margin-right: calc(-1 * (max(0px, (100vw - 1400px) / 2) + 8rem))">
                 <img src="<?php echo esc_url($mockup_url); ?>"
                      alt="<?php echo esc_attr($mockup_alt); ?>"
