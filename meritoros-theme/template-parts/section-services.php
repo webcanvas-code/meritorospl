@@ -28,7 +28,7 @@ for ($i = 1; $i <= 5; $i++) {
 $icon_classes = ['rotate-3', '-rotate-3', 'rotate-3', '-rotate-3', 'rotate-3'];
 ?>
 
-<section class="py-8 lg:py-14 px-6 lg:px-12 bg-slate-50 border-t border-slate-100">
+<section class="py-16 md:py-24 px-6 lg:px-12 bg-slate-50 border-t border-slate-100">
     <div class="max-w-[1400px] mx-auto">
         <div class="bg-white rounded-3xl p-8 lg:p-10 shadow-sm">
 

@@ -45,7 +45,7 @@ for ($i = 1; $i <= 4; $i++) {
 }
 ?>
 
-<section class="overflow-hidden px-6 lg:px-12 bg-slate-50 flex flex-col justify-center py-14 sm:py-16 lg:py-0 lg:h-screen lg:min-h-[700px]">
+<section class="overflow-hidden px-6 lg:px-12 bg-slate-50 py-16 md:py-24">
     <div class="max-w-[1400px] mx-auto w-full">
 
         <div class="flex flex-col md:flex-row md:items-end justify-between mb-8 gap-4">
