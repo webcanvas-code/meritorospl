@@ -49,7 +49,7 @@ for ($i = 1; $i <= 4; $i++) {
 <section class="py-16 md:py-20 bg-emerald-50">
     <div class="max-w-7xl mx-auto px-6 mb-10 flex flex-col sm:flex-row sm:items-end sm:justify-between gap-4">
         <h2 class="text-pretty text-4xl md:text-5xl font-bold tracking-tight text-slate-900"><?php echo mer_esc($title); ?></h2>
-        <div class="flex items-center gap-2 shrink-0">
+        <div class="hidden sm:flex items-center gap-2 shrink-0">
             <button id="dkar-prev" class="w-12 h-12 rounded-full bg-white border border-slate-200 flex items-center justify-center shadow-sm hover:bg-slate-50 transition-colors" style="opacity:0.35;pointer-events:none">
                 <i data-lucide="chevron-left" class="w-5 h-5 text-slate-700 stroke-[2]"></i>
             </button>
@@ -101,10 +101,20 @@ for ($i = 1; $i <= 4; $i++) {
         </div>
     </div>
 
-    <div class="max-w-7xl mx-auto px-6 mt-6 flex items-center justify-center gap-2" id="dkar-dots">
-        <?php foreach ($cards as $idx => $card) : ?>
-        <button class="dkar-dot rounded-full transition-all duration-300 <?php echo $idx === 0 ? 'w-6 h-2 bg-[#2d8650]' : 'w-2 h-2 bg-slate-300'; ?>" data-i="<?php echo $idx; ?>"></button>
-        <?php endforeach; ?>
+    <div class="max-w-7xl mx-auto px-6 mt-6">
+        <div class="flex items-center gap-4 sm:justify-center">
+            <button id="dkar-prev-m" class="sm:hidden w-12 h-12 rounded-full bg-white border border-slate-200 flex items-center justify-center shadow-sm hover:bg-slate-50 transition-colors" style="opacity:0.35;pointer-events:none">
+                <i data-lucide="chevron-left" class="w-5 h-5 text-slate-700 stroke-[2]"></i>
+            </button>
+            <div class="flex flex-1 sm:flex-none items-center justify-center gap-2" id="dkar-dots">
+                <?php foreach ($cards as $idx => $card) : ?>
+                <button class="dkar-dot rounded-full transition-all duration-300 <?php echo $idx === 0 ? 'w-6 h-2 bg-[#2d8650]' : 'w-2 h-2 bg-slate-300'; ?>" data-i="<?php echo $idx; ?>"></button>
+                <?php endforeach; ?>
+            </div>
+            <button id="dkar-next-m" class="sm:hidden w-12 h-12 rounded-full bg-[#2d8650] flex items-center justify-center shadow-md hover:bg-[#246e41] transition-colors">
+                <i data-lucide="chevron-right" class="w-5 h-5 text-white stroke-[2]"></i>
+            </button>
+        </div>
     </div>
 </section>
 
@@ -113,6 +123,8 @@ for ($i = 1; $i <= 4; $i++) {
     var track   = document.getElementById('dkar-track');
     var prevBtn = document.getElementById('dkar-prev');
     var nextBtn = document.getElementById('dkar-next');
+    var prevBtnM = document.getElementById('dkar-prev-m');
+    var nextBtnM = document.getElementById('dkar-next-m');
     var dots    = document.querySelectorAll('#dkar-dots .dkar-dot');
     if (!track) return;
     var cards   = track.querySelectorAll('.dkar-card');
@@ -147,15 +159,15 @@ for ($i = 1; $i <= 4; $i++) {
         if (current > max) current = max;
         var cardWidth = cards[0].offsetWidth + GAP;
         track.style.transform = 'translateX(-' + (current * cardWidth) + 'px)';
-        prevBtn.style.opacity       = current === 0  ? '0.35' : '1';
-        prevBtn.style.pointerEvents = current === 0  ? 'none' : '';
-        nextBtn.style.opacity       = current >= max ? '0.35' : '1';
-        nextBtn.style.pointerEvents = current >= max ? 'none' : '';
+        [prevBtn, prevBtnM].forEach(function(b) { if (b) { b.style.opacity = current === 0  ? '0.35' : '1'; b.style.pointerEvents = current === 0  ? 'none' : ''; } });
+        [nextBtn, nextBtnM].forEach(function(b) { if (b) { b.style.opacity = current >= max ? '0.35' : '1'; b.style.pointerEvents = current >= max ? 'none' : ''; } });
         updateDots();
     }
 
     nextBtn.addEventListener('click', function () { if (current < getMax()) { current++; update(); } });
     prevBtn.addEventListener('click', function () { if (current > 0)        { current--; update(); } });
+    if (nextBtnM) nextBtnM.addEventListener('click', function () { if (current < getMax()) { current++; update(); } });
+    if (prevBtnM) prevBtnM.addEventListener('click', function () { if (current > 0)        { current--; update(); } });
     dots.forEach(function (d) {
         d.addEventListener('click', function () { current = parseInt(d.dataset.i); update(); });
     });
