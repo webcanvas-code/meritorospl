@@ -71,7 +71,7 @@ unset($__item);
     $mer_current = apply_filters('wpml_current_language', null);
     ?>
 
-    <div id="mer-nav-pill" class="bg-white/92 backdrop-blur-md rounded-full px-6 py-3.5 flex items-center shadow-lg shadow-black/5 transition-[background-color,box-shadow] duration-300">
+    <div id="mer-nav-pill" class="bg-white/95 backdrop-blur-md rounded-full px-6 py-3.5 flex items-center shadow-lg shadow-black/5 transition-[background-color,box-shadow] duration-300">
 
         <!-- Logo -->
         <a href="<?php echo esc_url(home_url('/')); ?>" class="flex items-center shrink-0">
@@ -284,10 +284,10 @@ unset($__item);
         scrolled = shouldScroll;
 
         if (shouldScroll) {
-            pill.style.backgroundColor = 'rgba(242,244,246,0.95)';
+            pill.style.backgroundColor = 'rgba(255,255,255,0.98)';
             pill.style.boxShadow       = '0 4px 24px 0 rgba(0,0,0,0.10)';
         } else {
-            pill.style.backgroundColor = '';
+            pill.style.backgroundColor = 'rgba(255,255,255,0.95)';
             pill.style.boxShadow       = '';
         }
     }
