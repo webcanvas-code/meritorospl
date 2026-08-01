@@ -65,8 +65,8 @@ $benefits = array_values(array_filter(array_map('trim', preg_split('/(\r?\n){2,}
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
             <?php foreach ( $benefits as $benefit ) : ?>
             <div class="bg-white rounded-2xl border border-slate-100 p-6 flex flex-col gap-4">
-                <span class="w-6 h-6 rounded-full border-2 border-emerald-500 flex items-center justify-center flex-shrink-0">
-                    <i data-lucide="check" class="w-3 h-3 text-[#2d8650]" stroke-width="3"></i>
+                <span class="w-10 h-10 rounded-full bg-[#2d8650] flex items-center justify-center flex-shrink-0">
+                    <i data-lucide="check" class="w-5 h-5 text-white" stroke-width="2.5"></i>
                 </span>
                 <p class="text-lg text-slate-700 leading-relaxed">
                     <?php echo mer_esc($benefit); ?>
