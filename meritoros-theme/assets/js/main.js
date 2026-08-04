@@ -251,6 +251,39 @@ document.addEventListener('DOMContentLoaded', () => {
     if (mobileBackdrop) mobileBackdrop.addEventListener('click', closeMobileMenu);
 
     // ----------------------------------------------------------------
+    // CF7 consent checkbox — walidacja po kliknięciu "Wyślij"
+    // ----------------------------------------------------------------
+    document.querySelectorAll('.wpcf7-form').forEach(form => {
+        const consentWrap = form.querySelector('.wpcf7-form-control-wrap[data-name="your-consent"]');
+        if (!consentWrap) return;
+        const checkbox = consentWrap.querySelector('input[type="checkbox"]');
+        if (!checkbox) return;
+
+        const clearError = () => {
+            consentWrap.classList.remove('mer-consent-error');
+            const tip = consentWrap.querySelector('.mer-consent-tip');
+            if (tip) tip.remove();
+        };
+
+        form.addEventListener('submit', e => {
+            if (checkbox.checked) { clearError(); return; }
+            e.preventDefault();
+            e.stopImmediatePropagation();
+            consentWrap.classList.add('mer-consent-error');
+            if (!consentWrap.querySelector('.mer-consent-tip')) {
+                const tip = document.createElement('span');
+                tip.className = 'mer-consent-tip';
+                tip.textContent = 'Prosimy o wyrażenie zgody przed wysłaniem formularza.';
+                consentWrap.appendChild(tip);
+            }
+            consentWrap.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        }, true); // capture — uruchamia się przed handlerem CF7
+
+        // Usuń wizualny błąd gdy użytkownik zaznaczy zgodę
+        checkbox.addEventListener('change', () => { if (checkbox.checked) clearError(); });
+    });
+
+    // ----------------------------------------------------------------
     // CF7 textarea: licznik znaków
     // ----------------------------------------------------------------
     document.querySelectorAll('.wpcf7-textarea[maxlength]').forEach(ta => {
