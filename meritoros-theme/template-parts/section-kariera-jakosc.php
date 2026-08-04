@@ -48,6 +48,12 @@ for ($i = 1; $i <= 3; $i++) {
                         <?php endforeach; ?>
                     </div>
                 </div>
+                <button id="jakosc-prev" class="absolute left-3 top-1/2 -translate-y-1/2 z-20 w-12 h-12 rounded-full bg-white border border-slate-200 flex items-center justify-center shadow-sm hover:bg-slate-50 transition-colors" style="opacity:0.35;pointer-events:none" aria-label="<?php esc_attr_e('Poprzednie zdjęcie', 'meritoros'); ?>">
+                    <i data-lucide="chevron-left" class="w-5 h-5 text-slate-700 stroke-[2]"></i>
+                </button>
+                <button id="jakosc-next" class="absolute right-3 top-1/2 -translate-y-1/2 z-20 w-12 h-12 rounded-full bg-[#2d8650] flex items-center justify-center shadow-md hover:bg-[#246e41] transition-colors" aria-label="<?php esc_attr_e('Następne zdjęcie', 'meritoros'); ?>">
+                    <i data-lucide="chevron-right" class="w-5 h-5 text-white stroke-[2]"></i>
+                </button>
                 <div class="flex items-center justify-center gap-2 mt-5" id="jakosc-dots">
                     <?php foreach ($slides as $idx => $slide) : ?>
                     <button class="jakosc-dot <?php echo $idx === 0 ? 'w-2.5 h-2.5 bg-[#2d8650]' : 'w-2 h-2 bg-slate-300 hover:bg-slate-400'; ?> rounded-full transition-all" data-idx="<?php echo $idx; ?>"></button>
@@ -80,10 +86,17 @@ for ($i = 1; $i <= 3; $i++) {
 
 <script>
 (function () {
-    var track = document.getElementById('jakosc-track');
-    var dots  = document.querySelectorAll('.jakosc-dot');
+    var track   = document.getElementById('jakosc-track');
+    var dots    = document.querySelectorAll('.jakosc-dot');
+    var prevBtn = document.getElementById('jakosc-prev');
+    var nextBtn = document.getElementById('jakosc-next');
     if (!track) return;
     var current = 0;
+    var max     = dots.length - 1;
+    function updateBtns() {
+        if (prevBtn) { prevBtn.style.opacity = current === 0   ? '0.35' : '1'; prevBtn.style.pointerEvents = current === 0   ? 'none' : ''; }
+        if (nextBtn) { nextBtn.style.opacity = current >= max  ? '0.35' : '1'; nextBtn.style.pointerEvents = current >= max  ? 'none' : ''; }
+    }
     function goTo(idx) {
         current = idx;
         track.style.transform = 'translateX(-' + (idx * 100) + '%)';
@@ -95,10 +108,14 @@ for ($i = 1; $i <= 3; $i++) {
             d.classList.toggle('w-2',            i !== idx);
             d.classList.toggle('h-2',            i !== idx);
         });
+        updateBtns();
     }
     dots.forEach(function (d) {
         d.addEventListener('click', function () { goTo(parseInt(d.dataset.idx)); });
     });
+    if (prevBtn) prevBtn.addEventListener('click', function () { if (current > 0)   goTo(current - 1); });
+    if (nextBtn) nextBtn.addEventListener('click', function () { if (current < max) goTo(current + 1); });
     setInterval(function () { goTo((current + 1) % dots.length); }, 4000);
+    updateBtns();
 })();
 </script>

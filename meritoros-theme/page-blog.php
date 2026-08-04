@@ -105,7 +105,7 @@ usort($all_posts, function ($a, $b) {
 
         <!-- Breadcrumb -->
         <div class="flex items-center flex-wrap gap-1 text-xs sm:text-sm text-slate-400 mb-6">
-            <span><?php esc_html_e('Strona główna', 'meritoros'); ?></span>
+            <a href="<?php echo esc_url(home_url('/')); ?>" class="hover:text-[#2d8650] transition-colors"><?php esc_html_e('Strona główna', 'meritoros'); ?></a>
             <span>/</span>
             <span class="text-slate-600 font-medium"><?php echo mer_esc($hero_title); ?></span>
         </div>

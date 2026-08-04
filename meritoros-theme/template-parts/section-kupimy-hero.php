@@ -25,7 +25,7 @@ $img_alt = is_array($image) ? esc_attr($image['alt'] ?: 'Kupimy biuro rachunkowe
 
         <!-- Breadcrumbs -->
         <div class="flex items-center flex-wrap gap-1 text-xs sm:text-sm text-white/60 mb-6">
-            <span><?php esc_html_e('Strona główna', 'meritoros'); ?></span>
+            <a href="<?php echo esc_url(home_url('/')); ?>" class="hover:text-white transition-colors"><?php esc_html_e('Strona główna', 'meritoros'); ?></a>
             <span>/</span>
             <span class="text-white/90 font-medium">Kupimy biuro rachunkowe</span>
         </div>

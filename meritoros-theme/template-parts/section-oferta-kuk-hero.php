@@ -18,13 +18,20 @@ $kariera_url = home_url('/kariera/');
 
     <div class="relative z-10 max-w-7xl mx-auto px-6 flex flex-col justify-center" style="min-height:75vh; padding-top:7rem; padding-bottom:4rem;">
 
-        <!-- Breadcrumb -->
-        <div class="flex items-center flex-wrap gap-1 text-xs sm:text-sm text-white/80 mb-8">
-            <a href="<?php echo esc_url(home_url('/')); ?>" class="hover:text-white transition-colors"><?php esc_html_e('Strona główna', 'meritoros'); ?></a>
-            <span>/</span>
-            <a href="<?php echo esc_url($kariera_url); ?>" class="hover:text-white transition-colors"><?php esc_html_e('Kariera', 'meritoros'); ?></a>
-            <span>/</span>
-            <span class="text-white font-medium"><?php echo mer_esc($title ?: get_the_title()); ?></span>
+        <!-- Breadcrumb + przycisk wstecz -->
+        <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 mb-8">
+            <nav class="flex items-center flex-wrap gap-1 text-xs sm:text-sm text-white/80" aria-label="<?php esc_attr_e('Breadcrumb', 'meritoros'); ?>">
+                <a href="<?php echo esc_url(home_url('/')); ?>" class="hover:text-white transition-colors"><?php esc_html_e('Strona główna', 'meritoros'); ?></a>
+                <span>/</span>
+                <a href="<?php echo esc_url($kariera_url); ?>" class="hover:text-white transition-colors"><?php esc_html_e('Kariera', 'meritoros'); ?></a>
+                <span>/</span>
+                <span class="text-white font-medium"><?php echo mer_esc($title ?: get_the_title()); ?></span>
+            </nav>
+            <a href="<?php echo esc_url($kariera_url); ?>"
+               class="inline-flex items-center gap-2 px-5 py-2.5 rounded-full border border-slate-200 bg-white text-slate-700 text-sm font-semibold hover:border-[#2d8650] hover:text-[#2d8650] transition-colors duration-200 self-start sm:self-auto shrink-0">
+                <i data-lucide="arrow-left" class="w-4 h-4"></i>
+                <?php esc_html_e('Kariera', 'meritoros'); ?>
+            </a>
         </div>
 
         <!-- Tagi -->
