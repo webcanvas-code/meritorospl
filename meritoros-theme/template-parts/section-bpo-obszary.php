@@ -29,27 +29,19 @@ for ($i = 1; $i <= 3; $i++) {
                 $img_url = $card['image'] ? esc_url($card['image']['url']) : '';
                 $img_alt = $card['image'] ? esc_attr($card['image']['alt'] ?: $card['title']) : esc_attr($card['title']);
             ?>
-                <div class="relative group rounded-2xl overflow-hidden aspect-[3/2] md:aspect-[4/5] bg-slate-700 shadow-xl cursor-default">
+                <div class="relative rounded-2xl overflow-hidden aspect-[3/2] md:aspect-[4/5] bg-slate-700 shadow-xl">
 
                     <?php if ($img_url) : ?>
                         <img src="<?php echo $img_url; ?>" alt="<?php echo $img_alt; ?>"
-                             class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" loading="lazy">
+                             class="absolute inset-0 w-full h-full object-cover" loading="lazy">
                     <?php endif; ?>
 
-                    <!-- Stan domyślny: ciemna nakładka + tytuł -->
-                    <div class="absolute inset-0 pointer-events-none transition-opacity duration-300 group-hover:opacity-0" style="background: linear-gradient(to top, rgba(15,23,42,0.80) 0%, rgba(15,23,42,0.20) 60%, transparent 100%);"></div>
-                    <div class="absolute bottom-0 left-0 w-full p-6 md:p-8 transition-opacity duration-200 group-hover:opacity-0">
-                        <h3 class="text-xl md:text-2xl font-bold tracking-tight text-white text-center">
+                    <div class="absolute inset-0 pointer-events-none" style="background: linear-gradient(to top, rgba(15,23,42,0.80) 0%, rgba(15,23,42,0.20) 60%, transparent 100%);"></div>
+                    <div class="absolute inset-0 flex flex-col items-center justify-end p-6 md:p-8 text-center">
+                        <h3 class="text-xl md:text-2xl font-bold tracking-tight text-white mb-3">
                             <?php echo mer_esc($card['title']); ?>
                         </h3>
-                    </div>
-
-                    <!-- Stan hover: zielona nakładka + tytuł + opis -->
-                    <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col items-center justify-center p-8 text-center" style="background: rgba(72,194,121,0.88);">
-                        <h3 class="text-xl md:text-2xl font-bold tracking-tight text-white mb-4">
-                            <?php echo mer_esc($card['title']); ?>
-                        </h3>
-                        <p class="text-sm md:text-base leading-relaxed translate-y-3 group-hover:translate-y-0 transition-transform duration-300 delay-75" style="color: rgba(255,255,255,0.90);">
+                        <p class="text-sm md:text-base leading-relaxed" style="color: rgba(255,255,255,0.80);">
                             <?php echo mer_esc($card['desc']); ?>
                         </p>
                     </div>
