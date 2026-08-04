@@ -251,6 +251,21 @@ document.addEventListener('DOMContentLoaded', () => {
     if (mobileBackdrop) mobileBackdrop.addEventListener('click', closeMobileMenu);
 
     // ----------------------------------------------------------------
+    // CF7 textarea: licznik znaków
+    // ----------------------------------------------------------------
+    document.querySelectorAll('.wpcf7-textarea[maxlength]').forEach(ta => {
+        const wrap    = ta.closest('.wpcf7-form-control-wrap');
+        if (!wrap) return;
+        const next    = wrap.nextElementSibling;
+        const counter = next ? next.querySelector('.cf7-char-counter') : null;
+        if (!counter) return;
+        const max = parseInt(ta.getAttribute('maxlength'), 10);
+        ta.addEventListener('input', () => {
+            counter.textContent = ta.value.length + ' / ' + max;
+        });
+    });
+
+    // ----------------------------------------------------------------
     // Smooth scroll z offsetem dla fixed headera
     // ----------------------------------------------------------------
     const getHeaderOffset = () => {
