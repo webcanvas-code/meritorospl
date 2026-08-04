@@ -331,18 +331,20 @@ function mer_cf7_assign_field(array $config, ?int $form_id = null): void {
 
 function mer_cf7_body_kontakt(string $privacy_url): string {
     return '<div class="space-y-4">
-<div class="grid grid-cols-1 md:grid-cols-3 gap-4">
-[text* your-name placeholder "Imię i nazwisko"]
+<div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+[text* your-firstname placeholder "Imię"]
+[text your-lastname placeholder "Nazwisko (opcjonalne)"]
 [email* your-email placeholder "Adres e-mail"]
 [tel your-phone placeholder "Numer telefonu"]
 </div>
 [select* your-area "Usługi księgowe" "Kadry i płace" "Fundacje rodzinne" "BPO" "Inne"]
-[textarea your-message rows:5 placeholder "Treść wiadomości"]
-<div class="space-y-1">
+[textarea your-message rows:5 maxlength:500 placeholder "Treść wiadomości"]
+<div class="flex justify-end mt-1"><span class="cf7-char-counter text-xs text-slate-400">0 / 500</span></div>
+<div class="space-y-1 mt-2">
 <label class="text-xs text-slate-500 font-medium">Załącznik (opcjonalny · maks. 10 MB · pdf, doc, docx, jpg, png)</label>
 [file your-attachment limit:10mb filetypes:pdf|doc|docx|jpg|png]
 </div>
-<label class="flex items-start gap-3 cursor-pointer">
+<label class="flex items-start gap-3 cursor-pointer mt-2">
 [acceptance your-consent] <span class="text-xs text-slate-400 leading-relaxed">Wyrażam zgodę na przetwarzanie moich danych osobowych przez Meritoros SA w celu odpowiedzi na przesłane zapytanie, zgodnie z <a href="' . esc_url($privacy_url) . '" target="_blank" rel="noopener" class="underline hover:text-slate-600">Polityką Prywatności</a>.</span>[/acceptance]
 </label>
 [submit "Wyślij wiadomość"]
@@ -365,13 +367,19 @@ function mer_cf7_body_kupimy(string $privacy_url): string {
 function mer_cf7_body_cv(string $privacy_url): string {
     return '<div class="flex flex-col gap-4">
 <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-[text* your-name placeholder "Imię i nazwisko"]
-[email* your-email placeholder "E-mail"]
+[text* your-firstname placeholder "Imię"]
+[text your-lastname placeholder "Nazwisko (opcjonalne)"]
 </div>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+[email* your-email placeholder "E-mail"]
 [tel your-phone placeholder "Numer telefonu"]
-[textarea your-message rows:4 placeholder "Wiadomość"]
+</div>
+[textarea your-message rows:4 maxlength:500 placeholder "Wiadomość"]
+<div class="flex justify-end mt-1"><span class="cf7-char-counter text-xs text-slate-400">0 / 500</span></div>
+<div class="mt-2">
 [file* your-cv limit:5mb filetypes:pdf|doc|docx]
-<label class="flex items-start gap-3 cursor-pointer">
+</div>
+<label class="flex items-start gap-3 cursor-pointer mt-2">
 [acceptance your-consent] <span class="text-xs text-slate-400 leading-relaxed">Wyrażam zgodę na przetwarzanie moich danych osobowych przez Meritoros SA w celu przeprowadzenia procesu rekrutacji, zgodnie z obowiązującymi przepisami o ochronie danych osobowych (RODO) oraz <a href="' . esc_url($privacy_url) . '" target="_blank" rel="noopener" class="underline hover:text-slate-600">Polityką Prywatności</a>.</span>[/acceptance]
 </label>
 [submit "Wyślij wiadomość"]
@@ -406,6 +414,41 @@ function mer_cf7_update_v2_attachment(): void {
     }
 
     update_option('mer_cf7_v2_attachment', true);
+}
+
+/* ------------------------------------------------------------------
+   CF7 — jednorazowa aktualizacja v3: podział pola imię/nazwisko + maxlength + mt-2
+------------------------------------------------------------------ */
+add_action('admin_init', 'mer_cf7_update_v3_name_split');
+function mer_cf7_update_v3_name_split(): void {
+    if (!class_exists('WPCF7_ContactForm')) return;
+    if (get_option('mer_cf7_v3_name_split'))  return;
+
+    // Formularz kontaktowy
+    $kontakt_id = (int) get_option('mer_cf7_kontakt_id');
+    if ($kontakt_id && get_post_status($kontakt_id) === 'publish') {
+        update_post_meta($kontakt_id, '_form', mer_cf7_body_kontakt(MER_PRIVACY_PDF));
+        $mail = get_post_meta($kontakt_id, '_mail', true);
+        if (is_array($mail)) {
+            $mail['subject'] = str_replace('[your-name]', '[your-firstname] [your-lastname]', $mail['subject']);
+            $mail['body']    = str_replace('[your-name]', '[your-firstname] [your-lastname]', $mail['body']);
+            update_post_meta($kontakt_id, '_mail', $mail);
+        }
+    }
+
+    // Formularz CV / Kariera
+    $cv_id = (int) get_option('mer_cf7_kariera_id');
+    if ($cv_id && get_post_status($cv_id) === 'publish') {
+        update_post_meta($cv_id, '_form', mer_cf7_body_cv(MER_PRIVACY_PDF));
+        $mail = get_post_meta($cv_id, '_mail', true);
+        if (is_array($mail)) {
+            $mail['subject'] = str_replace('[your-name]', '[your-firstname] [your-lastname]', $mail['subject']);
+            $mail['body']    = str_replace('[your-name]', '[your-firstname] [your-lastname]', $mail['body']);
+            update_post_meta($cv_id, '_mail', $mail);
+        }
+    }
+
+    update_option('mer_cf7_v3_name_split', true);
 }
 
 /* ------------------------------------------------------------------
