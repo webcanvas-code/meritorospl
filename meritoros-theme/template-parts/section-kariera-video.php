@@ -42,7 +42,7 @@ if (is_array($video_file) && !empty($video_file['url'])) {
         <h2 class="text-pretty text-4xl md:text-5xl font-bold tracking-tight text-slate-900 text-center mb-8"><?php echo mer_esc($title); ?></h2>
     </div>
 
-    <div class="relative overflow-hidden cursor-pointer group aspect-[16/9] sm:aspect-auto sm:h-[520px] xl:h-[620px] 2xl:h-[760px]" id="kar-video-container">
+    <div class="relative overflow-hidden cursor-pointer group aspect-[16/9] sm:aspect-auto sm:h-[520px] xl:h-[680px] 2xl:h-[960px]" id="kar-video-container">
         <img src="<?php echo $thumb_url; ?>" alt="<?php echo esc_attr($title); ?>" class="w-full h-full object-cover object-center">
         <div class="absolute inset-0 bg-black/45 group-hover:bg-black/35 transition-colors duration-300"></div>
         <?php if ($play_src) : ?>
