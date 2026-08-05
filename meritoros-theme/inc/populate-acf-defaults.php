@@ -438,6 +438,7 @@ function mer_run_populate_acf_defaults(bool $overwrite = false): array {
         [$hk, 'hk_hero_title',           'Historie klientów'],
         [$hk, 'hk_hero_text',            'Konkretne przypadki. Konkretny efekt. Zobacz, jak pomagamy firmom działać stabilnie i bezpiecznie.'],
         [$hk, 'hk_hero_btn_text',        'Poznaj więcej'],
+        [$hk, 'hk_hero_btn_url',         '#hk-video-section'],
         [$hk, 'hk_wsp_title_pre',        'Współpraca, która'],
         [$hk, 'hk_wsp_title_green',      'daje spokój operacyjny'],
         [$hk, 'hk_wsp_text',             'W Meritoros pracujemy tak, aby odciążyć zespół klienta i zapewnić ciągłość obsługi. Działamy elastycznie, dopasowując model współpracy do realiów organizacji, ale trzymamy stały standard jakości, terminowości i bezpieczeństwa danych.'],

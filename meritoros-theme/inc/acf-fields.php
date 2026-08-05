@@ -2540,7 +2540,7 @@ acf_add_local_field_group([
         ['key' => 'field_hk_hero_title',    'label' => 'Tytuł',          'name' => 'hk_hero_title',    'type' => 'textarea', 'rows' => 2, 'default_value' => 'Historie klientów'],
         ['key' => 'field_hk_hero_text',     'label' => 'Opis',           'name' => 'hk_hero_text',     'type' => 'textarea', 'rows' => 2, 'new_lines' => 'br', 'default_value' => 'Konkretne przypadki. Konkretny efekt. Zobacz, jak pomagamy firmom działać stabilnie i bezpiecznie.'],
         ['key' => 'field_hk_hero_btn_text', 'label' => 'Tekst przycisku','name' => 'hk_hero_btn_text', 'type' => 'text',     'default_value' => 'Poznaj więcej'],
-        ['key' => 'field_hk_hero_btn_url',  'label' => 'Link przycisku', 'name' => 'hk_hero_btn_url',  'type' => 'text',     'default_value' => '#case-studies'],
+        ['key' => 'field_hk_hero_btn_url',  'label' => 'Link przycisku', 'name' => 'hk_hero_btn_url',  'type' => 'text',     'default_value' => '#hk-video-section'],
 
         ['key' => 'field_hk_tab_wsp', 'label' => 'Współpraca', 'name' => '', 'type' => 'tab'],
         ['key' => 'field_hk_wsp_title_pre',   'label' => 'Tytuł – linia 1',        'name' => 'hk_wsp_title_pre',   'type' => 'text',     'default_value' => 'Współpraca, która'],
