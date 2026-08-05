@@ -175,7 +175,7 @@ if (empty($offices)) {
                         <i data-lucide="monitor" class="w-4 h-4 text-[#2d8650] stroke-[1.5]"></i>
                         <p class="text-base font-semibold text-emerald-700"><?php echo nl2br(esc_html($virtual_label)); ?></p>
                     </div>
-                    <p class="text-sm text-[#2d8650] leading-relaxed"><?php echo mer_esc($virtual_desc); ?></p>
+                    <p class="text-sm font-semibold text-slate-700 leading-relaxed"><?php echo mer_esc($virtual_desc); ?></p>
                 </div>
             </div>
         </div>

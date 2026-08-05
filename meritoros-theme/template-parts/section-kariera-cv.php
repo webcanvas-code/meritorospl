@@ -29,9 +29,9 @@ $photo_alt = is_array($photo) ? esc_attr($photo['alt'] ?: '') : '';
                 <div class="relative rounded-2xl overflow-hidden">
                     <img src="<?php echo $photo_url; ?>" alt="<?php echo $photo_alt; ?>" class="w-full object-cover aspect-[4/3]" loading="lazy">
                 </div>
-                <div class="absolute -bottom-4 right-4 bg-[#2d8650] text-white text-sm font-semibold px-6 py-3 rounded-xl shadow-lg rotate-[-2deg]">
+                <a href="#zostaw-cv" class="absolute -bottom-4 right-4 bg-[#2d8650] text-white text-sm font-semibold px-6 py-3 rounded-xl shadow-lg rotate-[-2deg] hover:bg-[#246e41] transition-colors duration-200">
                     <?php echo mer_esc($tag_text); ?>
-                </div>
+                </a>
             </div>
 
         </div>

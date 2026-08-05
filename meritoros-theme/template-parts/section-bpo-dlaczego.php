@@ -105,16 +105,17 @@ for ($i = 1; $i <= 4; $i++) {
     var total   = cards.length;
     var current = 0;
 
-    function updateDots() {
-        dots.forEach(function (d, i) {
-            d.className = 'rounded-full transition-all duration-300 ' + (i === current ? 'w-6 h-2 bg-[#2d8650]' : 'w-2 h-2 bg-slate-300');
-        });
-    }
-
     function getMax() {
         var cardWidth = cards[0].offsetWidth + 16;
         var visible   = Math.max(1, Math.round(track.parentElement.offsetWidth / cardWidth));
         return Math.max(0, total - visible);
+    }
+
+    function updateDots(max) {
+        dots.forEach(function (d, i) {
+            d.className = 'rounded-full transition-all duration-300 ' + (i === current ? 'w-6 h-2 bg-[#2d8650]' : 'w-2 h-2 bg-slate-300');
+            d.style.display = i <= max ? '' : 'none';
+        });
     }
 
     function update() {
@@ -124,7 +125,7 @@ for ($i = 1; $i <= 4; $i++) {
         track.style.transform = 'translateX(-' + (current * cardWidth) + 'px)';
         [prevBtn, prevBtnM].forEach(function(b) { if (b) { b.style.opacity = current === 0  ? '0.35' : '1'; b.style.pointerEvents = current === 0  ? 'none' : ''; } });
         [nextBtn, nextBtnM].forEach(function(b) { if (b) { b.style.opacity = current >= max ? '0.35' : '1'; b.style.pointerEvents = current >= max ? 'none' : ''; } });
-        updateDots();
+        updateDots(max);
     }
 
     nextBtn.addEventListener('click', function () { if (current < getMax()) { current++; update(); } });

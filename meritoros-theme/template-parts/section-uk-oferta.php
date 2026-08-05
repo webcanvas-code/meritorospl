@@ -20,7 +20,7 @@ $items = array_values(array_filter(array_map('trim', preg_split('/(\r?\n){2,}/',
     <div class="max-w-7xl mx-auto px-6 relative z-10">
         <h2 class="text-pretty text-4xl md:text-5xl font-bold tracking-tight text-slate-900 mb-4"><?php echo mer_esc($title); ?></h2>
         <p class="text-base text-slate-800 font-medium leading-relaxed mb-2 max-w-3xl">
-            <?php echo mer_esc($sub_pre1); ?> <span class="text-[#2d8650]"><?php echo mer_esc($sub_green1); ?></span><?php echo mer_esc($sub_pre2); ?> <span class="text-[#2d8650]"><?php echo mer_esc($sub_green2); ?></span>
+            <?php echo mer_esc($sub_pre1); ?> <span class="font-semibold text-slate-900"><?php echo mer_esc($sub_green1); ?></span><?php echo mer_esc($sub_pre2); ?> <span class="font-semibold text-slate-900"><?php echo mer_esc($sub_green2); ?></span>
         </p>
         <p class="text-sm text-slate-400 mb-8"><?php echo mer_esc($sub_note); ?></p>
 
