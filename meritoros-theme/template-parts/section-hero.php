@@ -44,7 +44,7 @@ if (empty($clients)) {
 
             <div class="flex flex-col sm:flex-row gap-3">
                 <a href="<?php echo esc_url($btn1_url); ?>"
-                   class="bg-[#2d8650] text-white px-7 py-3 rounded-full text-base font-semibold hover:bg-[#246e41] hover:shadow-lg hover:shadow-[#2d8650]/30 transition-all duration-300 flex items-center justify-center gap-2 group">
+                   class="bg-[#00d084] text-white px-7 py-3 rounded-full text-base font-semibold hover:bg-[#00b872] hover:shadow-lg hover:shadow-[#00d084]/30 transition-all duration-300 flex items-center justify-center gap-2 group">
                     <?php echo mer_esc($btn1_text); ?>
                     <i data-lucide="arrow-right" class="w-5 h-5 group-hover:translate-x-1 transition-transform"></i>
                 </a>

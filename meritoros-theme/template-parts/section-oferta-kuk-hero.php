@@ -14,7 +14,7 @@ $kariera_url = home_url('/kariera/');
     <div class="absolute inset-0 bg-gradient-to-r from-slate-900/95 via-slate-900/80 to-slate-900/50"></div>
 
     <!-- Dekoracyjne kółko (spójność z resztą serwisu) -->
-    <div class="absolute -left-40 top-1/2 -translate-y-1/2 w-64 h-64 rounded-full border-[40px] border-[#2d8650]/60 pointer-events-none"></div>
+    <div class="absolute -left-40 top-1/2 -translate-y-1/2 w-64 h-64 rounded-full border-[40px] border-[#00d084]/60 pointer-events-none"></div>
 
     <div class="relative z-10 max-w-7xl mx-auto px-6 flex flex-col justify-center" style="min-height:75vh; padding-top:7rem; padding-bottom:4rem;">
 
@@ -28,7 +28,7 @@ $kariera_url = home_url('/kariera/');
                 <span class="text-white font-medium"><?php echo mer_esc($title ?: get_the_title()); ?></span>
             </nav>
             <a href="<?php echo esc_url($kariera_url); ?>"
-               class="inline-flex items-center gap-2 px-5 py-2.5 rounded-full border border-slate-200 bg-white text-slate-700 text-sm font-semibold hover:border-[#2d8650] hover:text-[#2d8650] transition-colors duration-200 self-start sm:self-auto shrink-0">
+               class="inline-flex items-center gap-2 px-5 py-2.5 rounded-full border border-slate-200 bg-white text-slate-700 text-sm font-semibold hover:border-[#00d084] hover:text-[#00d084] transition-colors duration-200 self-start sm:self-auto shrink-0">
                 <i data-lucide="arrow-left" class="w-4 h-4"></i>
                 <?php esc_html_e('Kariera', 'meritoros'); ?>
             </a>
@@ -37,7 +37,7 @@ $kariera_url = home_url('/kariera/');
         <!-- Tagi -->
         <div class="flex flex-wrap gap-3 mb-6">
             <?php if ($category) : ?>
-            <span class="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-[#2d8650]/20 text-[#2d8650] text-base font-semibold border border-[#2d8650]/40">
+            <span class="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-[#00d084]/20 text-[#00d084] text-base font-semibold border border-[#00d084]/40">
                 <i data-lucide="briefcase" class="w-4 h-4"></i>
                 <?php echo mer_esc($category); ?>
             </span>
@@ -62,7 +62,7 @@ $kariera_url = home_url('/kariera/');
         </h1>
 
         <!-- CTA -->
-        <a href="#aplikuj" class="inline-flex items-center gap-2 px-7 py-3.5 rounded-full bg-[#2d8650] text-white text-base font-semibold hover:bg-[#246e41] transition-colors self-start">
+        <a href="#aplikuj" class="inline-flex items-center gap-2 px-7 py-3.5 rounded-full bg-[#00d084] text-white text-base font-semibold hover:bg-[#00b872] transition-colors self-start">
             <?php esc_html_e('Aplikuj teraz', 'meritoros'); ?>
             <i data-lucide="arrow-right" class="w-4 h-4"></i>
         </a>

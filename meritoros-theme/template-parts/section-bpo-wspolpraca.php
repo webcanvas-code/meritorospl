@@ -43,7 +43,7 @@ for ($i = 1; $i <= 3; $i++) {
             <div class="relative w-[95%] sm:w-[90%] ml-auto">
                 <div class="border-t border-r border-b border-slate-300 rounded-r-[3rem] sm:rounded-r-[4rem] p-6 sm:p-14 md:p-20 flex flex-col md:flex-row items-center gap-6 md:gap-20">
                     <div class="hidden md:block absolute top-0 right-full w-screen h-px bg-slate-300"></div>
-                    <div class="text-[5rem] sm:text-[8rem] md:text-[10rem] font-medium text-[#2d8650] leading-none shrink-0 tracking-tighter">01</div>
+                    <div class="text-[5rem] sm:text-[8rem] md:text-[10rem] font-medium text-[#00d084] leading-none shrink-0 tracking-tighter">01</div>
                     <div class="flex-1">
                         <h3 class="text-2xl font-bold mb-5 text-slate-900"><?php echo mer_esc($steps[0]['title']); ?></h3>
                         <?php if ($steps[0]['lead']) : ?>
@@ -51,7 +51,7 @@ for ($i = 1; $i <= 3; $i++) {
                         <?php endif; ?>
                         <ul class="space-y-3 text-slate-600">
                             <?php foreach ($steps[0]['items'] as $item) : ?>
-                                <li class="flex items-start gap-3"><i data-lucide="check-circle-2" class="w-5 h-5 text-[#2d8650] shrink-0 mt-0.5"></i> <?php echo mer_esc($item); ?></li>
+                                <li class="flex items-start gap-3"><i data-lucide="check-circle-2" class="w-5 h-5 text-[#00d084] shrink-0 mt-0.5"></i> <?php echo mer_esc($item); ?></li>
                             <?php endforeach; ?>
                         </ul>
                     </div>
@@ -68,7 +68,7 @@ for ($i = 1; $i <= 3; $i++) {
                         <?php endif; ?>
                         <ul class="space-y-3 text-slate-600 max-w-lg">
                             <?php foreach ($steps[1]['items'] as $item) : ?>
-                                <li class="flex items-start gap-3"><i data-lucide="check-circle-2" class="w-5 h-5 text-[#2d8650] shrink-0 mt-0.5"></i> <?php echo mer_esc($item); ?></li>
+                                <li class="flex items-start gap-3"><i data-lucide="check-circle-2" class="w-5 h-5 text-[#00d084] shrink-0 mt-0.5"></i> <?php echo mer_esc($item); ?></li>
                             <?php endforeach; ?>
                         </ul>
                     </div>
@@ -79,7 +79,7 @@ for ($i = 1; $i <= 3; $i++) {
             <!-- Step 03 -->
             <div class="relative w-[95%] sm:w-[90%] ml-auto">
                 <div class="border-t border-r border-b border-slate-300 rounded-r-[3rem] sm:rounded-r-[4rem] p-6 sm:p-14 md:p-20 flex flex-col md:flex-row items-center gap-6 md:gap-20 mt-6 md:mt-[-1px]">
-                    <div class="text-[5rem] sm:text-[8rem] md:text-[10rem] font-medium text-[#2d8650] leading-none shrink-0 tracking-tighter">03</div>
+                    <div class="text-[5rem] sm:text-[8rem] md:text-[10rem] font-medium text-[#00d084] leading-none shrink-0 tracking-tighter">03</div>
                     <div class="flex-1">
                         <h3 class="text-2xl font-bold mb-5 text-slate-900 leading-snug"><?php echo mer_esc($steps[2]['title']); ?></h3>
                         <?php if ($steps[2]['lead']) : ?>
@@ -87,7 +87,7 @@ for ($i = 1; $i <= 3; $i++) {
                         <?php endif; ?>
                         <ul class="space-y-3 text-slate-600 mb-6">
                             <?php foreach ($steps[2]['items'] as $item) : ?>
-                                <li class="flex items-start gap-3"><i data-lucide="check-circle-2" class="w-5 h-5 text-[#2d8650] shrink-0 mt-0.5"></i> <?php echo mer_esc($item); ?></li>
+                                <li class="flex items-start gap-3"><i data-lucide="check-circle-2" class="w-5 h-5 text-[#00d084] shrink-0 mt-0.5"></i> <?php echo mer_esc($item); ?></li>
                             <?php endforeach; ?>
                         </ul>
                     </div>
@@ -96,7 +96,7 @@ for ($i = 1; $i <= 3; $i++) {
         </div>
 
         <div class="mt-10 md:mt-20 text-center">
-            <a href="<?php echo esc_url($btn_url); ?>" class="px-8 py-4 rounded-full bg-[#2d8650] text-white text-base md:text-lg font-medium hover:bg-[#246e41] transition-colors inline-block shadow-lg shadow-emerald-500/30">
+            <a href="<?php echo esc_url($btn_url); ?>" class="px-8 py-4 rounded-full bg-[#00d084] text-white text-base md:text-lg font-medium hover:bg-[#00b872] transition-colors inline-block shadow-lg shadow-emerald-500/30">
                 <?php echo mer_esc($btn_txt); ?>
             </a>
         </div>

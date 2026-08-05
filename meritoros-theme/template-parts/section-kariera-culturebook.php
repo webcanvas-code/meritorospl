@@ -20,7 +20,7 @@ $pdf_url  = is_array($pdf) ? ($pdf['url'] ?? '') : '';
 
 <section class="py-12 sm:py-16 px-6 lg:px-12 bg-white">
     <div class="max-w-7xl mx-auto">
-        <div class="bg-[#2d8650] rounded-3xl overflow-hidden lg:overflow-visible relative min-h-[340px] flex items-center">
+        <div class="bg-[#00d084] rounded-3xl overflow-hidden lg:overflow-visible relative min-h-[340px] flex items-center">
 
             <div class="absolute right-[18%] top-1/2 -translate-y-1/2 w-72 h-72 rounded-full border-[40px] border-emerald-400/50 pointer-events-none"></div>
 

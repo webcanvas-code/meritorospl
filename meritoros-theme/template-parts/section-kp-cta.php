@@ -7,7 +7,7 @@ $btn_url  = mer_field('kp_cta_btn_url',  home_url('/kontakt/'));
 
 <section class="py-10 md:py-12 px-6 lg:px-12 bg-white">
     <div class="max-w-7xl mx-auto">
-        <div class="bg-[#2d8650] rounded-2xl px-8 py-8 md:px-12 md:py-10 flex flex-col md:flex-row items-center gap-8">
+        <div class="bg-[#00d084] rounded-2xl px-8 py-8 md:px-12 md:py-10 flex flex-col md:flex-row items-center gap-8">
             <div class="shrink-0 text-white opacity-90">
                 <svg width="72" height="60" viewBox="0 0 72 60" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
                     <circle cx="20" cy="38" r="8"/>

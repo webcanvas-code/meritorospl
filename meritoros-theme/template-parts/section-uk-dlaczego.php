@@ -33,7 +33,7 @@ for ($i = 1; $i <= 4; $i++) {
             <button id="uk-dlaczego-prev" type="button" class="w-12 h-12 rounded-full bg-white border border-slate-200 flex items-center justify-center shadow-sm hover:bg-slate-50 transition-colors" style="opacity:0.35;pointer-events:none">
                 <i data-lucide="chevron-left" class="w-5 h-5 text-slate-700 stroke-[2]"></i>
             </button>
-            <button id="uk-dlaczego-next" type="button" class="w-12 h-12 rounded-full bg-[#2d8650] flex items-center justify-center shadow-md hover:bg-[#246e41] transition-colors">
+            <button id="uk-dlaczego-next" type="button" class="w-12 h-12 rounded-full bg-[#00d084] flex items-center justify-center shadow-md hover:bg-[#00b872] transition-colors">
                 <i data-lucide="chevron-right" class="w-5 h-5 text-white stroke-[2]"></i>
             </button>
         </div>
@@ -44,8 +44,8 @@ for ($i = 1; $i <= 4; $i++) {
         <div id="uk-dlaczego-track" class="flex gap-4 transition-transform duration-500 ease-in-out">
             <?php foreach ($cards as $card) :
                 $is_green = $card['highlighted'];
-                $bg       = $is_green ? 'bg-[#2d8650]' : 'bg-white border border-slate-200';
-                $icon_cls = $is_green ? 'text-white/80' : 'text-[#2d8650]';
+                $bg       = $is_green ? 'bg-[#00d084]' : 'bg-white border border-slate-200';
+                $icon_cls = $is_green ? 'text-white/80' : 'text-[#00d084]';
                 $title_cls = $is_green ? 'text-white' : 'text-slate-900';
                 $text_cls  = $is_green ? 'text-white/75' : 'text-slate-500';
             ?>
@@ -66,10 +66,10 @@ for ($i = 1; $i <= 4; $i++) {
             </button>
             <div class="flex flex-1 sm:flex-none items-center justify-center gap-2" id="uk-dlaczego-dots">
                 <?php foreach ($cards as $idx => $card) : ?>
-                <button class="rounded-full transition-all duration-300 <?php echo $idx === 0 ? 'w-6 h-2 bg-[#2d8650]' : 'w-2 h-2 bg-slate-300'; ?>" data-i="<?php echo $idx; ?>"></button>
+                <button class="rounded-full transition-all duration-300 <?php echo $idx === 0 ? 'w-6 h-2 bg-[#00d084]' : 'w-2 h-2 bg-slate-300'; ?>" data-i="<?php echo $idx; ?>"></button>
                 <?php endforeach; ?>
             </div>
-            <button id="uk-dlaczego-next-m" class="sm:hidden w-12 h-12 rounded-full bg-[#2d8650] flex items-center justify-center shadow-md hover:bg-[#246e41] transition-colors">
+            <button id="uk-dlaczego-next-m" class="sm:hidden w-12 h-12 rounded-full bg-[#00d084] flex items-center justify-center shadow-md hover:bg-[#00b872] transition-colors">
                 <i data-lucide="chevron-right" class="w-5 h-5 text-white stroke-[2]"></i>
             </button>
         </div>
@@ -97,7 +97,7 @@ for ($i = 1; $i <= 4; $i++) {
 
     function updateDots(max) {
         dots.forEach(function (d, i) {
-            d.className = 'rounded-full transition-all duration-300 ' + (i === current ? 'w-6 h-2 bg-[#2d8650]' : 'w-2 h-2 bg-slate-300');
+            d.className = 'rounded-full transition-all duration-300 ' + (i === current ? 'w-6 h-2 bg-[#00d084]' : 'w-2 h-2 bg-slate-300');
             d.style.display = i <= max ? '' : 'none';
         });
     }

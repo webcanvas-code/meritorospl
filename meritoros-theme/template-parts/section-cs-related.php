@@ -29,12 +29,12 @@ $use_demo = !$related->have_posts();
             <h2 class="text-pretty text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight text-slate-900">Przeczytaj również</h2>
             <div class="flex items-center gap-2">
                 <button id="cs-rel-prev"
-                        class="w-11 h-11 rounded-full bg-white border border-slate-200 hover:border-emerald-400 hover:text-[#2d8650] flex items-center justify-center text-slate-500 transition-colors duration-200 shadow-sm"
+                        class="w-11 h-11 rounded-full bg-white border border-slate-200 hover:border-emerald-400 hover:text-[#00d084] flex items-center justify-center text-slate-500 transition-colors duration-200 shadow-sm"
                         aria-label="Poprzedni">
                     <i data-lucide="chevron-left" class="w-5 h-5"></i>
                 </button>
                 <button id="cs-rel-next"
-                        class="w-11 h-11 rounded-full bg-[#2d8650] hover:bg-[#246e41] flex items-center justify-center text-white transition-colors duration-200 shadow-sm"
+                        class="w-11 h-11 rounded-full bg-[#00d084] hover:bg-[#00b872] flex items-center justify-center text-white transition-colors duration-200 shadow-sm"
                         aria-label="Następny">
                     <i data-lucide="chevron-right" class="w-5 h-5"></i>
                 </button>
@@ -56,7 +56,7 @@ $use_demo = !$related->have_posts();
                              class="w-full h-full object-cover" loading="lazy">
                         <div class="absolute inset-0 bg-slate-900/30"></div>
                         <div class="absolute inset-0 flex items-center justify-center">
-                            <div class="w-14 h-14 rounded-full bg-[#2d8650] flex items-center justify-center shadow-xl">
+                            <div class="w-14 h-14 rounded-full bg-[#00d084] flex items-center justify-center shadow-xl">
                                 <i data-lucide="play" fill="#fff" class="w-5 h-5 text-white ml-0.5" stroke-width="0"></i>
                             </div>
                         </div>
@@ -106,7 +106,7 @@ $use_demo = !$related->have_posts();
                         <?php endif; ?>
                         <div class="absolute inset-0 bg-slate-900/30 group-hover:bg-slate-900/40 transition-colors"></div>
                         <div class="absolute inset-0 flex items-center justify-center">
-                            <div class="w-14 h-14 rounded-full bg-[#2d8650] flex items-center justify-center shadow-xl group-hover:scale-110 transition-transform duration-200">
+                            <div class="w-14 h-14 rounded-full bg-[#00d084] flex items-center justify-center shadow-xl group-hover:scale-110 transition-transform duration-200">
                                 <i data-lucide="play" fill="#fff" class="w-5 h-5 text-white ml-0.5" stroke-width="0"></i>
                             </div>
                         </div>

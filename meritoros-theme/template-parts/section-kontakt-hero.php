@@ -30,13 +30,13 @@ for ($i = 1; $i <= 4; $i++) {
 
         <!-- Breadcrumb -->
         <div class="flex items-center flex-wrap gap-1 text-xs sm:text-sm text-slate-400 mb-6">
-            <a href="<?php echo esc_url(home_url('/')); ?>" class="hover:text-[#2d8650] transition-colors"><?php esc_html_e('Strona główna', 'meritoros'); ?></a>
+            <a href="<?php echo esc_url(home_url('/')); ?>" class="hover:text-[#00d084] transition-colors"><?php esc_html_e('Strona główna', 'meritoros'); ?></a>
             <span>/</span>
             <span class="text-slate-600 font-medium"><?php echo mer_esc(get_the_title()); ?></span>
         </div>
 
         <div class="max-w-3xl mb-6 sm:mb-8">
-            <h1 class="text-pretty text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight mb-3 sm:mb-4 leading-[1.1] text-[#2d8650]">
+            <h1 class="text-pretty text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight mb-3 sm:mb-4 leading-[1.1] text-[#00d084]">
                 <?php echo mer_esc($title_green); ?><br>
                 <span class="text-slate-900"><?php echo mer_esc($title_dark); ?></span>
             </h1>

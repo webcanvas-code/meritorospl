@@ -74,7 +74,7 @@ foreach ($sections as $sec) {
     border-top: 1px solid #e2e8f0;
 }
 .toc-link { border-left: 2px solid transparent; margin-left: -2px; }
-.toc-link.is-active { border-left-color: #2d8650; color: #16a34a; font-weight: 600; }
+.toc-link.is-active { border-left-color: #00d084; color: #16a34a; font-weight: 600; }
 </style>
 
 <main class="bg-white text-slate-900 antialiased">
@@ -96,7 +96,7 @@ foreach ($sections as $sec) {
 
             <div class="flex items-center gap-3 mb-6">
                 <?php if ($source) : ?>
-                    <span class="text-xs font-semibold text-white bg-[#2d8650] px-3 py-1 rounded-full">
+                    <span class="text-xs font-semibold text-white bg-[#00d084] px-3 py-1 rounded-full">
                         <?php echo mer_esc($source); ?>
                     </span>
                 <?php endif; ?>
@@ -128,7 +128,7 @@ foreach ($sections as $sec) {
                     <?php if ($sections_html) : ?>
                     <div class="prose prose-slate prose-lg max-w-none
                                 prose-headings:tracking-tight
-                                prose-a:text-[#2d8650] prose-a:no-underline hover:prose-a:underline
+                                prose-a:text-[#00d084] prose-a:no-underline hover:prose-a:underline
                                 prose-strong:text-slate-900">
                         <?php echo $sections_html; ?>
                     </div>
@@ -151,7 +151,7 @@ foreach ($sections as $sec) {
                         <!-- Meta artykułu -->
                         <div class="mb-8 pb-8 border-b border-slate-100">
                             <?php if ($source) : ?>
-                                <span class="inline-block text-xs font-semibold text-white bg-[#2d8650] px-3 py-1 rounded-full mb-3">
+                                <span class="inline-block text-xs font-semibold text-white bg-[#00d084] px-3 py-1 rounded-full mb-3">
                                     <?php echo mer_esc($source); ?>
                                 </span>
                             <?php endif; ?>

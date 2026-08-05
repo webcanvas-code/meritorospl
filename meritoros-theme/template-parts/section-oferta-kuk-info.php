@@ -44,7 +44,7 @@ for ($i = 1; $i <= 6; $i++) {
 ?>
 
 <section class="py-16 md:py-24 bg-white relative overflow-hidden">
-    <div class="absolute -right-32 top-1/4 w-[420px] h-[420px] rounded-full border-[40px] border-[#2d8650]/20 pointer-events-none"></div>
+    <div class="absolute -right-32 top-1/4 w-[420px] h-[420px] rounded-full border-[40px] border-[#00d084]/20 pointer-events-none"></div>
 
     <div class="relative z-10 max-w-7xl mx-auto px-6">
 
@@ -62,16 +62,16 @@ for ($i = 1; $i <= 6; $i++) {
             <?php if ($obowiazki) : ?>
             <div>
                 <div class="flex items-center gap-3 mb-8">
-                    <span class="w-10 h-10 rounded-xl bg-[#2d8650]/10 flex items-center justify-center flex-shrink-0">
-                        <i data-lucide="list-checks" class="w-5 h-5 text-[#2d8650]"></i>
+                    <span class="w-10 h-10 rounded-xl bg-[#00d084]/10 flex items-center justify-center flex-shrink-0">
+                        <i data-lucide="list-checks" class="w-5 h-5 text-[#00d084]"></i>
                     </span>
                     <h2 class="text-2xl md:text-3xl font-bold text-slate-900">Zakres obowiązków</h2>
                 </div>
                 <ul class="space-y-4">
                     <?php foreach ($obowiazki as $item) : ?>
                     <li class="flex items-start gap-3">
-                        <span class="w-6 h-6 rounded-full bg-[#2d8650]/15 flex items-center justify-center flex-shrink-0 mt-0.5">
-                            <i data-lucide="check" class="w-3.5 h-3.5 text-[#2d8650]"></i>
+                        <span class="w-6 h-6 rounded-full bg-[#00d084]/15 flex items-center justify-center flex-shrink-0 mt-0.5">
+                            <i data-lucide="check" class="w-3.5 h-3.5 text-[#00d084]"></i>
                         </span>
                         <span class="text-lg text-slate-700 leading-relaxed"><?php echo mer_esc($item); ?></span>
                     </li>
@@ -107,16 +107,16 @@ for ($i = 1; $i <= 6; $i++) {
         <?php if ($technologie) : ?>
         <div class="mt-16 pt-16 border-t border-slate-100">
             <div class="flex items-center gap-3 mb-8">
-                <span class="w-10 h-10 rounded-xl bg-[#2d8650]/10 flex items-center justify-center flex-shrink-0">
-                    <i data-lucide="cpu" class="w-5 h-5 text-[#2d8650]"></i>
+                <span class="w-10 h-10 rounded-xl bg-[#00d084]/10 flex items-center justify-center flex-shrink-0">
+                    <i data-lucide="cpu" class="w-5 h-5 text-[#00d084]"></i>
                 </span>
                 <h2 class="text-2xl md:text-3xl font-bold text-slate-900">Nasze środowisko technologiczne</h2>
             </div>
             <ul class="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 <?php foreach ($technologie as $item) : ?>
                 <li class="flex items-start gap-3">
-                    <span class="w-6 h-6 rounded-full bg-[#2d8650]/15 flex items-center justify-center flex-shrink-0 mt-0.5">
-                        <i data-lucide="check" class="w-3.5 h-3.5 text-[#2d8650]"></i>
+                    <span class="w-6 h-6 rounded-full bg-[#00d084]/15 flex items-center justify-center flex-shrink-0 mt-0.5">
+                        <i data-lucide="check" class="w-3.5 h-3.5 text-[#00d084]"></i>
                     </span>
                     <span class="text-lg text-slate-700 leading-relaxed"><?php echo mer_esc($item); ?></span>
                 </li>

@@ -39,7 +39,7 @@ $btn_url  = mer_field('hk_hero_btn_url',  '#hk-video-section');
             <p class="text-lg sm:text-xl text-slate-500 leading-relaxed mb-10 max-w-4xl">
                 <?php echo wp_kses_post($text); ?>
             </p>
-            <a href="<?php echo esc_url($btn_url); ?>" class="inline-flex items-center gap-2 px-7 py-3.5 rounded-full bg-[#2d8650] text-white text-base font-semibold hover:bg-[#246e41] transition-colors">
+            <a href="<?php echo esc_url($btn_url); ?>" class="inline-flex items-center gap-2 px-7 py-3.5 rounded-full bg-[#00d084] text-white text-base font-semibold hover:bg-[#00b872] transition-colors">
                 <?php echo mer_esc($btn_text); ?>
             </a>
         </div>

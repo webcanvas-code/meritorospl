@@ -4,7 +4,7 @@ $description = mer_field('uk_kalk_desc',  'Oszacuj wstępny koszt usług księgo
 $disclaimer  = mer_field('uk_kalk_disclaimer', '* to jest wstępny szacunek, każda oferta jest jednak indywidualnie rozpatrywana i odpowiednio wyceniana.');
 ?>
 
-<section id="kalkulator" class="py-10 md:py-20 bg-[#2d8650] relative overflow-hidden">
+<section id="kalkulator" class="py-10 md:py-20 bg-[#00d084] relative overflow-hidden">
 
     <!-- Dekoracyjny okrąg -->
     <div class="absolute -right-24 top-1/2 -translate-y-1/2 w-[420px] h-[420px] rounded-full border-[52px] border-white/20 pointer-events-none" aria-hidden="true"></div>
@@ -45,7 +45,7 @@ $disclaimer  = mer_field('uk_kalk_disclaimer', '* to jest wstępny szacunek, ka�
                     </div>
 
                     <!-- Przycisk -->
-                    <button id="uk-kalk-submit" class="w-full py-3.5 rounded-full bg-[#2d8650] text-white text-base font-semibold hover:bg-[#246e41] transition-colors mb-5">
+                    <button id="uk-kalk-submit" class="w-full py-3.5 rounded-full bg-[#00d084] text-white text-base font-semibold hover:bg-[#00b872] transition-colors mb-5">
                         Oblicz kwotę obsługi
                     </button>
 

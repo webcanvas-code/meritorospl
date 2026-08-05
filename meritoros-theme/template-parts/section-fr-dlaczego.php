@@ -17,13 +17,13 @@ $d3_text  = mer_field('fr_d3_text',  'Jakość potwierdzona standardami. Mamy wd
     <div class="max-w-7xl mx-auto px-6">
 
         <h2 class="text-pretty text-4xl md:text-5xl font-bold tracking-tight text-slate-900 mb-12">
-            <?php echo nl2br(str_replace('Meritoros', '<span class="text-[#2d8650]">Meritoros</span>', esc_html($title))); ?>
+            <?php echo nl2br(str_replace('Meritoros', '<span class="text-[#00d084]">Meritoros</span>', esc_html($title))); ?>
         </h2>
 
         <div class="grid md:grid-cols-3 gap-6">
 
             <!-- Card 1 -->
-            <div class="bg-[#2d8650] rounded-3xl p-8 flex flex-col min-h-[380px] relative overflow-hidden">
+            <div class="bg-[#00d084] rounded-3xl p-8 flex flex-col min-h-[380px] relative overflow-hidden">
                 <?php
                 $raw1 = $d1_title;
                 if (strpos($raw1, "\n") !== false) {
@@ -53,7 +53,7 @@ $d3_text  = mer_field('fr_d3_text',  'Jakość potwierdzona standardami. Mamy wd
             </div>
 
             <!-- Card 2 -->
-            <div class="bg-[#2d8650] rounded-3xl p-8 flex flex-col min-h-[380px] relative overflow-hidden">
+            <div class="bg-[#00d084] rounded-3xl p-8 flex flex-col min-h-[380px] relative overflow-hidden">
                 <?php
                 $raw2 = $d2_title;
                 if (strpos($raw2, "\n") !== false) {
@@ -83,7 +83,7 @@ $d3_text  = mer_field('fr_d3_text',  'Jakość potwierdzona standardami. Mamy wd
             </div>
 
             <!-- Card 3 -->
-            <div class="bg-[#2d8650] rounded-3xl p-8 flex flex-col min-h-[380px] relative overflow-hidden">
+            <div class="bg-[#00d084] rounded-3xl p-8 flex flex-col min-h-[380px] relative overflow-hidden">
                 <div class="absolute -bottom-4 -right-4 opacity-10">
                     <i data-lucide="users" class="w-48 h-48 text-white stroke-[0.5]"></i>
                 </div>

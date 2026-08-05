@@ -42,7 +42,7 @@ $photo_alt = is_array($jak_photo) ? esc_attr($jak_photo['alt'] ?: 'Zespół Meri
                     <?php foreach ($jak_items as $idx => $item) : ?>
                         <div class="jak-item border-b border-slate-200 py-4 cursor-pointer" data-index="<?php echo $idx; ?>">
                             <div class="flex items-center gap-4">
-                                <i data-lucide="<?php echo esc_attr($item['icon']); ?>" stroke-width="1" class="w-7 h-7 text-[#2d8650] shrink-0"></i>
+                                <i data-lucide="<?php echo esc_attr($item['icon']); ?>" stroke-width="1" class="w-7 h-7 text-[#00d084] shrink-0"></i>
                                 <h3 class="text-lg font-bold jak-title transition-colors duration-300"><?php echo mer_esc($item['title']); ?></h3>
                                 <i data-lucide="chevron-down" class="jak-chevron ml-auto w-4 h-4 text-slate-400 shrink-0 transition-transform duration-300"></i>
                             </div>
@@ -84,12 +84,12 @@ $photo_alt = is_array($jak_photo) ? esc_attr($jak_photo['alt'] ?: 'Zespół Meri
             if (i === index) {
                 content.style.maxHeight = '500px';
                 content.style.opacity   = '1';
-                if (title)   { title.classList.add('text-[#2d8650]'); title.classList.remove('text-slate-900'); }
+                if (title)   { title.classList.add('text-[#00d084]'); title.classList.remove('text-slate-900'); }
                 if (chevron) chevron.style.transform = 'rotate(180deg)';
             } else {
                 content.style.maxHeight = '0';
                 content.style.opacity   = '0';
-                if (title)   { title.classList.remove('text-[#2d8650]'); title.classList.add('text-slate-900'); }
+                if (title)   { title.classList.remove('text-[#00d084]'); title.classList.add('text-slate-900'); }
                 if (chevron) chevron.style.transform = '';
             }
         });
@@ -112,7 +112,7 @@ $photo_alt = is_array($jak_photo) ? esc_attr($jak_photo['alt'] ?: 'Zespół Meri
                 var chevron = item.querySelector('.jak-chevron');
                 content.style.maxHeight = '0';
                 content.style.opacity   = '0';
-                if (title)   { title.classList.remove('text-[#2d8650]'); title.classList.add('text-slate-900'); }
+                if (title)   { title.classList.remove('text-[#00d084]'); title.classList.add('text-slate-900'); }
                 if (chevron) chevron.style.transform = '';
             } else {
                 activate(idx);

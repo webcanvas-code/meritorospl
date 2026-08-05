@@ -38,7 +38,7 @@ $items = array_values(array_filter(array_map('trim', preg_split('/(\r?\n){2,}/',
                 ?>
                     <div class="flex items-start gap-4 p-4 md:block md:p-6<?php echo $border; ?> border-slate-200">
                         <div class="w-8 h-8 rounded-full border border-emerald-200 flex items-center justify-center shrink-0 md:mb-4">
-                            <i data-lucide="check" stroke-width="2" class="w-4 h-4 text-[#2d8650]"></i>
+                            <i data-lucide="check" stroke-width="2" class="w-4 h-4 text-[#00d084]"></i>
                         </div>
                         <h3 class="text-sm md:text-base font-bold text-slate-900 leading-snug"><?php echo mer_esc($item); ?></h3>
                     </div>
@@ -51,7 +51,7 @@ $items = array_values(array_filter(array_map('trim', preg_split('/(\r?\n){2,}/',
                 <?php echo mer_esc($btn1_text); ?>
             </a>
             <a href="#kalkulator"
-               class="px-7 py-3.5 rounded-full bg-[#2d8650] text-white text-base font-semibold hover:bg-[#246e41] transition-colors">
+               class="px-7 py-3.5 rounded-full bg-[#00d084] text-white text-base font-semibold hover:bg-[#00b872] transition-colors">
                 <?php echo mer_esc($btn2_text); ?>
             </a>
         </div>

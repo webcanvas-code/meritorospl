@@ -29,7 +29,7 @@ $photo_alt = is_array($photo) ? ($photo['alt'] ?: $heading) : 'Spotkanie';
             <!-- Lewa kolumna: treść -->
             <div>
                 <?php if ( $label ) : ?>
-                <p class="text-[#2d8650] uppercase tracking-widest text-base font-bold mb-4 block">
+                <p class="text-[#00d084] uppercase tracking-widest text-base font-bold mb-4 block">
                     <?php echo mer_esc($label); ?>
                 </p>
                 <?php endif; ?>
@@ -48,7 +48,7 @@ $photo_alt = is_array($photo) ? ($photo['alt'] ?: $heading) : 'Spotkanie';
                 <ul class="space-y-4">
                     <?php foreach ( $items as $item ) : ?>
                     <li class="flex items-start gap-3">
-                        <span class="flex-shrink-0 mt-0.5 w-5 h-5 rounded-full bg-[#2d8650] flex items-center justify-center">
+                        <span class="flex-shrink-0 mt-0.5 w-5 h-5 rounded-full bg-[#00d084] flex items-center justify-center">
                             <i data-lucide="check" class="w-3 h-3 text-white" stroke-width="3"></i>
                         </span>
                         <span class="text-base text-slate-700 leading-relaxed"><?php echo mer_esc($item); ?></span>
@@ -68,7 +68,7 @@ $photo_alt = is_array($photo) ? ($photo['alt'] ?: $heading) : 'Spotkanie';
         </div>
 
         <!-- Banner CTA -->
-        <div class="mt-10 rounded-3xl bg-[#2d8650] px-8 py-8 flex flex-col sm:flex-row items-center gap-6">
+        <div class="mt-10 rounded-3xl bg-[#00d084] px-8 py-8 flex flex-col sm:flex-row items-center gap-6">
             <div class="flex-shrink-0 w-16 h-16 flex items-center justify-center">
                 <i data-lucide="users" class="w-12 h-12 text-white" stroke-width="1"></i>
             </div>

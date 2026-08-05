@@ -49,7 +49,7 @@ $m2_img_alt = is_array($m2_image) ? esc_attr($m2_image['alt'] ?: 'Outsourcing') 
             <div class="kp-flip-card h-[420px]">
                 <div class="kp-flip-card-inner">
                     <div class="kp-flip-card-front bg-white border border-slate-200 flex flex-col items-center justify-center text-center p-12">
-                        <i data-lucide="<?php echo esc_attr($m1_icon); ?>" stroke-width="1" class="w-24 h-24 text-[#2d8650] mb-8 opacity-80"></i>
+                        <i data-lucide="<?php echo esc_attr($m1_icon); ?>" stroke-width="1" class="w-24 h-24 text-[#00d084] mb-8 opacity-80"></i>
                         <h3 class="text-3xl font-bold tracking-tight text-slate-900"><?php echo mer_esc($m1_title); ?></h3>
                         <span class="kp-flip-hint items-center gap-1.5 mt-4 text-xs text-slate-400">
                             <i data-lucide="hand-metal" class="w-3.5 h-3.5"></i> Dotknij, aby zobaczyć więcej
@@ -59,7 +59,7 @@ $m2_img_alt = is_array($m2_image) ? esc_attr($m2_image['alt'] ?: 'Outsourcing') 
                         <i data-lucide="<?php echo esc_attr($m1_icon); ?>" stroke-width="0.5" class="absolute right-6 top-6 w-36 h-36 text-emerald-100 pointer-events-none"></i>
                         <h3 class="text-2xl font-bold tracking-tight text-slate-900 mb-5"><?php echo mer_esc($m1_title); ?></h3>
                         <p class="text-base sm:text-lg text-slate-500 leading-relaxed mb-8"><?php echo mer_esc($m1_text); ?></p>
-                        <a href="<?php echo esc_url($m1_btn_url); ?>" class="inline-flex px-7 py-3 rounded-full bg-[#2d8650] text-white text-sm font-medium hover:bg-[#246e41] transition-colors self-start">
+                        <a href="<?php echo esc_url($m1_btn_url); ?>" class="inline-flex px-7 py-3 rounded-full bg-[#00d084] text-white text-sm font-medium hover:bg-[#00b872] transition-colors self-start">
                             <?php echo mer_esc($m1_btn_text); ?>
                         </a>
                     </div>
@@ -85,7 +85,7 @@ $m2_img_alt = is_array($m2_image) ? esc_attr($m2_image['alt'] ?: 'Outsourcing') 
                         <div class="relative z-10">
                             <h3 class="text-2xl font-bold tracking-tight text-white mb-5"><?php echo nl2br(esc_html($m2_title)); ?></h3>
                             <p class="text-base sm:text-lg text-white/80 leading-relaxed mb-8"><?php echo mer_esc($m2_text); ?></p>
-                            <a href="<?php echo esc_url($m2_btn_url); ?>" class="inline-flex px-7 py-3 rounded-full bg-[#2d8650] text-white text-sm font-medium hover:bg-[#246e41] transition-colors self-start">
+                            <a href="<?php echo esc_url($m2_btn_url); ?>" class="inline-flex px-7 py-3 rounded-full bg-[#00d084] text-white text-sm font-medium hover:bg-[#00b872] transition-colors self-start">
                                 <?php echo mer_esc($m2_btn_text); ?>
                             </a>
                         </div>

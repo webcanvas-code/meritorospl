@@ -41,7 +41,7 @@ for ($i = 1; $i <= 8; $i++) {
                     <?php if (!empty($ben['img_url'])) : ?>
                     <img src="<?php echo $ben['img_url']; ?>" alt="<?php echo $ben['img_alt']; ?>" class="w-7 h-7 object-contain">
                     <?php else : ?>
-                    <i data-lucide="<?php echo esc_attr($ben['icon']); ?>" stroke-width="1.5" class="w-7 h-7 text-[#2d8650]"></i>
+                    <i data-lucide="<?php echo esc_attr($ben['icon']); ?>" stroke-width="1.5" class="w-7 h-7 text-[#00d084]"></i>
                     <?php endif; ?>
                 </div>
                 <p class="text-sm md:text-base font-semibold text-slate-900 leading-snug <?php echo $ben['text'] ? 'mb-2' : ''; ?>"><?php echo mer_esc($ben['title']); ?></p>

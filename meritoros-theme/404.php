@@ -23,7 +23,7 @@ $nav_cta_url = get_field('nav_cta_url', (int) get_option('page_on_front')) ?: ho
 
         <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
             <a href="<?php echo esc_url(home_url('/')); ?>"
-               class="bg-[#2d8650] text-white px-8 py-3.5 rounded-full text-base font-semibold hover:bg-[#246e41] transition-colors flex items-center gap-2">
+               class="bg-[#00d084] text-white px-8 py-3.5 rounded-full text-base font-semibold hover:bg-[#00b872] transition-colors flex items-center gap-2">
                 <i data-lucide="home" class="w-5 h-5 stroke-[1.5]"></i>
                 <?php esc_html_e('Strona główna', 'meritoros'); ?>
             </a>

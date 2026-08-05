@@ -10,7 +10,7 @@ $bg_url   = is_array($bg) ? esc_url($bg['url']) : 'https://images.unsplash.com/p
 <section class="relative overflow-hidden" style="min-height:100vh;">
     <img src="<?php echo $bg_url; ?>" alt="" class="absolute inset-0 w-full h-full object-cover object-center" loading="eager">
     <div class="absolute inset-0 bg-gradient-to-r from-slate-900/85 via-slate-900/60 to-slate-900/10"></div>
-    <div class="absolute -left-40 top-1/2 -translate-y-1/2 w-64 h-64 rounded-full border-[40px] border-[#2d8650]/70 pointer-events-none"></div>
+    <div class="absolute -left-40 top-1/2 -translate-y-1/2 w-64 h-64 rounded-full border-[40px] border-[#00d084]/70 pointer-events-none"></div>
 
     <div class="relative z-10 max-w-7xl mx-auto px-6 flex flex-col justify-center" style="min-height:100vh; padding-top:7rem;">
         <div class="flex items-center gap-2 text-sm text-white/60 mb-6">
@@ -25,7 +25,7 @@ $bg_url   = is_array($bg) ? esc_url($bg['url']) : 'https://images.unsplash.com/p
             <p class="text-base sm:text-lg text-white/75 leading-relaxed mb-10 max-w-3xl">
                 <?php echo wp_kses_post($text); ?>
             </p>
-            <a href="<?php echo esc_url($btn_url); ?>" class="inline-flex items-center gap-2 px-7 py-3.5 rounded-full bg-[#2d8650] text-white text-base font-semibold hover:bg-[#246e41] transition-colors">
+            <a href="<?php echo esc_url($btn_url); ?>" class="inline-flex items-center gap-2 px-7 py-3.5 rounded-full bg-[#00d084] text-white text-base font-semibold hover:bg-[#00b872] transition-colors">
                 <?php echo mer_esc($btn_text); ?>
                 <i data-lucide="arrow-right" class="w-4 h-4"></i>
             </a>

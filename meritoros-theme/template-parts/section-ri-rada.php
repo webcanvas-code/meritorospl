@@ -58,7 +58,7 @@ for ($i = 1; $i <= 9; $i++) {
         <button id="ri-rada-prev" class="absolute left-6 top-1/2 -translate-y-1/2 w-14 h-14 rounded-full bg-white text-slate-400 border border-slate-200 flex items-center justify-center shadow hover:bg-slate-50 transition-colors z-10 opacity-0 pointer-events-none" aria-label="Poprzedni">
             <i data-lucide="chevron-left" class="w-6 h-6 stroke-[2]"></i>
         </button>
-        <button id="ri-rada-next" class="absolute right-6 top-1/2 -translate-y-1/2 w-14 h-14 rounded-full bg-[#2d8650] text-white flex items-center justify-center shadow-lg hover:bg-[#246e41] transition-colors z-10" aria-label="Następny">
+        <button id="ri-rada-next" class="absolute right-6 top-1/2 -translate-y-1/2 w-14 h-14 rounded-full bg-[#00d084] text-white flex items-center justify-center shadow-lg hover:bg-[#00b872] transition-colors z-10" aria-label="Następny">
             <i data-lucide="chevron-right" class="w-6 h-6 stroke-[2]"></i>
         </button>
     </div>

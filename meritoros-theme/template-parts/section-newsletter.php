@@ -31,15 +31,15 @@ for ($i = 1; $i <= 4; $i++) {
 
             <!-- Left: Branding + Benefits -->
             <div class="relative p-7 sm:p-10 lg:p-16 flex flex-col justify-between overflow-hidden">
-                <div class="absolute -bottom-16 -left-16 w-72 h-72 rounded-full bg-[#2d8650]/10 blur-3xl pointer-events-none"></div>
-                <div class="absolute top-8 right-8 w-40 h-40 rounded-full bg-[#2d8650]/5 blur-2xl pointer-events-none"></div>
+                <div class="absolute -bottom-16 -left-16 w-72 h-72 rounded-full bg-[#00d084]/10 blur-3xl pointer-events-none"></div>
+                <div class="absolute top-8 right-8 w-40 h-40 rounded-full bg-[#00d084]/5 blur-2xl pointer-events-none"></div>
 
                 <div class="relative z-10">
                     <div class="flex items-center mb-8 lg:mb-12">
                         <img src="<?php echo esc_url(get_template_directory_uri() . '/images/logo.svg'); ?>" alt="<?php bloginfo('name'); ?>" class="h-8 w-auto brightness-0 invert" loading="lazy">
                     </div>
 
-                    <span class="text-[#2d8650] uppercase tracking-widest text-base font-bold mb-4 block">
+                    <span class="text-[#00d084] uppercase tracking-widest text-base font-bold mb-4 block">
                         <?php echo mer_esc($nl_label); ?>
                     </span>
                     <h2 class="text-pretty text-3xl lg:text-4xl xl:text-5xl font-bold tracking-tight text-white leading-snug mb-6">
@@ -52,8 +52,8 @@ for ($i = 1; $i <= 4; $i++) {
                     <div class="flex flex-col gap-3">
                         <?php foreach ($benefits as $benefit) : ?>
                             <div class="flex items-center gap-3">
-                                <div class="w-7 h-7 rounded-full bg-[#2d8650]/20 flex items-center justify-center shrink-0">
-                                    <i data-lucide="check" class="w-4 h-4 text-[#2d8650] stroke-[2.5]"></i>
+                                <div class="w-7 h-7 rounded-full bg-[#00d084]/20 flex items-center justify-center shrink-0">
+                                    <i data-lucide="check" class="w-4 h-4 text-[#00d084] stroke-[2.5]"></i>
                                 </div>
                                 <span class="text-slate-300 text-sm font-medium">
                                     <?php echo mer_esc($benefit['text'] ?? ''); ?>
@@ -66,7 +66,7 @@ for ($i = 1; $i <= 4; $i++) {
                 <div class="relative z-10 mt-12 flex items-center gap-4">
                     <div class="flex -space-x-2">
                         <?php
-                        $avatar_colors   = ['bg-[#2d8650]', 'bg-blue-500', 'bg-purple-500', 'bg-slate-600'];
+                        $avatar_colors   = ['bg-[#00d084]', 'bg-blue-500', 'bg-purple-500', 'bg-slate-600'];
                         $avatar_initials = ['AK', 'MC', 'SW', '+'];
                         foreach ($avatar_colors as $i => $color) : ?>
                             <div class="w-9 h-9 rounded-full <?php echo $color; ?> border-2 border-slate-900 flex items-center justify-center text-white text-xs font-bold">

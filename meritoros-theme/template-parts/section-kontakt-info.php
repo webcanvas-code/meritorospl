@@ -48,15 +48,15 @@ if (empty($offices)) {
 <section class="py-16 md:py-20 bg-emerald-50 relative overflow-hidden">
     <div class="absolute inset-0 pointer-events-none opacity-5">
         <svg viewBox="0 0 800 500" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-full h-full" aria-hidden="true">
-            <circle cx="650" cy="250" r="300" fill="#2d8650"/>
-            <circle cx="750" cy="150" r="200" fill="#2d8650"/>
+            <circle cx="650" cy="250" r="300" fill="#00d084"/>
+            <circle cx="750" cy="150" r="200" fill="#00d084"/>
         </svg>
     </div>
 
     <div class="relative z-10 max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-10 items-start">
 
         <!-- Phone card -->
-        <div class="bg-[#2d8650] rounded-2xl p-10 flex flex-col gap-6">
+        <div class="bg-[#00d084] rounded-2xl p-10 flex flex-col gap-6">
             <div class="w-14 h-14 rounded-full bg-white/20 flex items-center justify-center">
                 <i data-lucide="phone" class="w-7 h-7 text-white stroke-[1.5]"></i>
             </div>
@@ -77,7 +77,7 @@ if (empty($offices)) {
             <div class="space-y-5 text-base text-slate-600">
 
                 <div class="flex items-start gap-3">
-                    <i data-lucide="map-pin" class="w-4 h-4 text-[#2d8650] mt-0.5 shrink-0 stroke-[1.5]"></i>
+                    <i data-lucide="map-pin" class="w-4 h-4 text-[#00d084] mt-0.5 shrink-0 stroke-[1.5]"></i>
                     <div>
                         <p class="text-slate-400 text-xs mb-0.5"><?php esc_html_e('Adres', 'meritoros'); ?></p>
                         <p class="text-slate-700"><?php echo nl2br(esc_html($address)); ?></p>
@@ -85,29 +85,29 @@ if (empty($offices)) {
                 </div>
 
                 <div class="flex items-start gap-3">
-                    <i data-lucide="phone" class="w-4 h-4 text-[#2d8650] mt-0.5 shrink-0 stroke-[1.5]"></i>
+                    <i data-lucide="phone" class="w-4 h-4 text-[#00d084] mt-0.5 shrink-0 stroke-[1.5]"></i>
                     <div>
-                        <a href="tel:<?php echo esc_attr($phone_tel); ?>" class="text-slate-700 hover:text-[#2d8650] transition-colors">
+                        <a href="tel:<?php echo esc_attr($phone_tel); ?>" class="text-slate-700 hover:text-[#00d084] transition-colors">
                             <?php echo mer_esc($phone); ?>
                         </a>
                     </div>
                 </div>
 
                 <div class="flex items-start gap-3">
-                    <i data-lucide="mail" class="w-4 h-4 text-[#2d8650] mt-0.5 shrink-0 stroke-[1.5]"></i>
+                    <i data-lucide="mail" class="w-4 h-4 text-[#00d084] mt-0.5 shrink-0 stroke-[1.5]"></i>
                     <div>
                         <p class="text-slate-400 text-xs mb-0.5"><?php esc_html_e('Administracja', 'meritoros'); ?></p>
-                        <a href="mailto:<?php echo esc_attr($email_admin); ?>" class="text-slate-700 hover:text-[#2d8650] transition-colors">
+                        <a href="mailto:<?php echo esc_attr($email_admin); ?>" class="text-slate-700 hover:text-[#00d084] transition-colors">
                             <?php echo mer_esc($email_admin); ?>
                         </a>
                     </div>
                 </div>
 
                 <div class="flex items-start gap-3">
-                    <i data-lucide="mail" class="w-4 h-4 text-[#2d8650] mt-0.5 shrink-0 stroke-[1.5]"></i>
+                    <i data-lucide="mail" class="w-4 h-4 text-[#00d084] mt-0.5 shrink-0 stroke-[1.5]"></i>
                     <div>
                         <p class="text-slate-400 text-xs mb-0.5"><?php esc_html_e('Zapytaj o ofertę', 'meritoros'); ?></p>
-                        <a href="mailto:<?php echo esc_attr($email_offers); ?>" class="text-slate-700 hover:text-[#2d8650] transition-colors">
+                        <a href="mailto:<?php echo esc_attr($email_offers); ?>" class="text-slate-700 hover:text-[#00d084] transition-colors">
                             <?php echo mer_esc($email_offers); ?>
                         </a>
                     </div>
@@ -172,7 +172,7 @@ if (empty($offices)) {
                 <!-- Virtual offices card -->
                 <div class="border-2 border-emerald-400 bg-emerald-50 rounded-xl p-4 hover:bg-emerald-100 transition-all col-span-1">
                     <div class="flex items-center gap-2 mb-1.5">
-                        <i data-lucide="monitor" class="w-4 h-4 text-[#2d8650] stroke-[1.5]"></i>
+                        <i data-lucide="monitor" class="w-4 h-4 text-[#00d084] stroke-[1.5]"></i>
                         <p class="text-base font-semibold text-emerald-700"><?php echo nl2br(esc_html($virtual_label)); ?></p>
                     </div>
                     <p class="text-sm font-semibold text-slate-700 leading-relaxed"><?php echo mer_esc($virtual_desc); ?></p>

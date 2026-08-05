@@ -35,7 +35,7 @@ if (is_array($mapa_image) && !empty($mapa_image['url'])) {
                 <ul class="space-y-4">
                     <?php foreach ($mapa_items as $item) : ?>
                         <li class="flex items-center gap-3">
-                            <i data-lucide="circle-check" stroke-width="1.5" class="w-6 h-6 text-[#2d8650] shrink-0"></i>
+                            <i data-lucide="circle-check" stroke-width="1.5" class="w-6 h-6 text-[#00d084] shrink-0"></i>
                             <span class="text-base text-slate-700"><?php echo mer_esc($item); ?></span>
                         </li>
                     <?php endforeach; ?>

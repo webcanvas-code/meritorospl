@@ -81,7 +81,7 @@ section, main > * {
 .wpcf7 input[type="tel"]:focus,
 .wpcf7 textarea:focus,
 .wpcf7 select:focus {
-    border-color: #2d8650;
+    border-color: #00d084;
     box-shadow: 0 0 0 3px rgba(16,185,129,0.1);
 }
 
@@ -90,7 +90,7 @@ section, main > * {
 .wpcf7 input[type="file"] {
     width: 100%;
     padding: 0.75rem 1rem;
-    border: 2px dashed #2d8650;
+    border: 2px dashed #00d084;
     border-radius: 0.75rem;
     background: transparent;
     font-size: 0.875rem;
@@ -103,7 +103,7 @@ section, main > * {
     gap: 0.5rem;
     padding: 1rem 2rem;
     border-radius: 9999px;
-    background-color: #2d8650;
+    background-color: #00d084;
     color: #ffffff;
     font-size: 1rem;
     font-weight: 600;
@@ -113,7 +113,7 @@ section, main > * {
     font-family: 'Host Grotesk', sans-serif;
 }
 
-.wpcf7 input[type="submit"]:hover { background-color: #246e41; }
+.wpcf7 input[type="submit"]:hover { background-color: #00b872; }
 
 .wpcf7-form-controls-wrap { display: block; width: 100%; }
 
@@ -149,7 +149,7 @@ section, main > * {
     width: 1rem;
     height: 1rem;
     flex-shrink: 0;
-    accent-color: #2d8650;
+    accent-color: #00d084;
     cursor: pointer;
 }
 
@@ -185,10 +185,10 @@ section, main > * {
     border-radius: 1rem;
     font-size: 1rem;
     font-weight: 700;
-    background-color: #2d8650;
+    background-color: #00d084;
 }
 
-.mer-nl-form .wpcf7 input[type="submit"]:hover { background-color: #246e41; }
+.mer-nl-form .wpcf7 input[type="submit"]:hover { background-color: #00b872; }
 
 /* CF7 — mobile tweaks */
 @media (max-width: 639px) {
@@ -230,7 +230,7 @@ section, main > * {
 }
 
 /* Kariera — badge wynagrodzenia na hover kafla oferty */
-.group:hover .group-hover\:bg-\[\#246e41\] { background-color: #246e41; }
+.group:hover .group-hover\:bg-\[\#00b872\] { background-color: #00b872; }
 
 /* Navbar — odstęp między separatorem a linkami menu */
 .mer-nav-sep { margin-right: 3rem; }
@@ -239,10 +239,10 @@ section, main > * {
 .prose ol { list-style: decimal; padding-left: 1.5rem; }
 .prose ul { list-style: disc; padding-left: 1.5rem; }
 .prose li { margin-top: 0.375rem; margin-bottom: 0.375rem; }
-.prose li::marker { color: #2d8650; }
+.prose li::marker { color: #00d084; }
 
 /* Tabela danych finansowych — zawsze widoczny scrollbar poziomy */
 .ri-table-scroll::-webkit-scrollbar { height: 6px; }
 .ri-table-scroll::-webkit-scrollbar-track { background: #e2e8f0; border-radius: 9999px; }
-.ri-table-scroll::-webkit-scrollbar-thumb { background: #2d8650; border-radius: 9999px; }
-.ri-table-scroll { scrollbar-width: thin; scrollbar-color: #2d8650 #e2e8f0; }
+.ri-table-scroll::-webkit-scrollbar-thumb { background: #00d084; border-radius: 9999px; }
+.ri-table-scroll { scrollbar-width: thin; scrollbar-color: #00d084 #e2e8f0; }

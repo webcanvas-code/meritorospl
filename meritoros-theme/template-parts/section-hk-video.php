@@ -81,7 +81,7 @@ if ($total === 0) return;
     <div class="max-w-7xl mx-auto px-6">
 
         <div class="mb-10">
-            <span class="text-[#2d8650] uppercase tracking-widest text-base font-bold mb-4 block">
+            <span class="text-[#00d084] uppercase tracking-widest text-base font-bold mb-4 block">
                 <?php echo mer_esc($section_label); ?>
             </span>
             <h2 class="text-pretty text-4xl md:text-5xl font-bold tracking-tight text-slate-900">
@@ -109,7 +109,7 @@ if ($total === 0) return;
                     <?php endif; ?>
                     <?php if ($vid['play_src']) : ?>
                     <div class="absolute inset-0 flex items-center justify-center">
-                        <div class="w-14 h-14 rounded-full bg-[#2d8650] flex items-center justify-center shadow-xl group-hover:scale-110 transition-transform duration-300">
+                        <div class="w-14 h-14 rounded-full bg-[#00d084] flex items-center justify-center shadow-xl group-hover:scale-110 transition-transform duration-300">
                             <i data-lucide="play" fill="#fff" class="w-5 h-5 text-white ml-0.5" stroke-width="0"></i>
                         </div>
                     </div>
@@ -136,7 +136,7 @@ if ($total === 0) return;
                 <?php endif; ?>
 
                 <a href="<?php echo esc_url($vid['story_url']); ?>"
-                   class="mt-auto inline-flex items-center justify-center gap-2 px-5 py-2.5 rounded-full bg-[#2d8650] hover:bg-[#246e41] text-white text-sm font-semibold transition-colors duration-200 group/link">
+                   class="mt-auto inline-flex items-center justify-center gap-2 px-5 py-2.5 rounded-full bg-[#00d084] hover:bg-[#00b872] text-white text-sm font-semibold transition-colors duration-200 group/link">
                     Czytaj historię
                     <i data-lucide="arrow-right" class="w-4 h-4 transition-transform duration-200 group-hover/link:translate-x-1"></i>
                 </a>
@@ -148,7 +148,7 @@ if ($total === 0) return;
         <?php if ($total > $per_page) : ?>
         <div class="flex justify-center mt-14" id="hk-vid-loadmore-wrap">
             <button id="hk-vid-loadmore"
-                class="px-8 py-3.5 rounded-full border border-emerald-500 text-[#2d8650] text-sm font-medium hover:bg-[#2d8650] hover:text-white transition-colors duration-200">
+                class="px-8 py-3.5 rounded-full border border-emerald-500 text-[#00d084] text-sm font-medium hover:bg-[#00d084] hover:text-white transition-colors duration-200">
                 <?php echo mer_esc($btn_text); ?>
             </button>
         </div>

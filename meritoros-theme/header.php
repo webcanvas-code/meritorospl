@@ -90,7 +90,7 @@ unset($__item);
                         <a href="<?php echo $url; ?>"
                            class="flex items-center gap-1.5 hover:text-slate-600 transition-colors py-4 -my-4 cursor-pointer whitespace-nowrap">
                             <?php echo $label; ?>
-                            <i data-lucide="chevron-down" class="w-4 h-4 text-[#2d8650] stroke-[1.5]"></i>
+                            <i data-lucide="chevron-down" class="w-4 h-4 text-[#00d084] stroke-[1.5]"></i>
                         </a>
                         <div class="absolute top-full left-1/2 -translate-x-1/2 pt-6 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all z-50 w-[260px]">
                             <div class="bg-[#f2f4f6] rounded-[2rem] p-7 flex flex-col gap-5 shadow-xl shadow-black/5 border border-white/60">
@@ -98,7 +98,7 @@ unset($__item);
                                     <a href="<?php echo esc_url($dd['url'] ?? '#'); ?>"
                                        class="flex items-center justify-between text-slate-900 hover:text-slate-600 group/item transition-colors">
                                         <span class="text-[17px]"><?php echo mer_esc($dd['label'] ?? ''); ?></span>
-                                        <i data-lucide="arrow-up-right" class="w-5 h-5 text-[#2d8650] stroke-[1.5] group-hover/item:translate-x-0.5 group-hover/item:-translate-y-0.5 transition-transform"></i>
+                                        <i data-lucide="arrow-up-right" class="w-5 h-5 text-[#00d084] stroke-[1.5] group-hover/item:translate-x-0.5 group-hover/item:-translate-y-0.5 transition-transform"></i>
                                     </a>
                                 <?php endforeach; ?>
                             </div>
@@ -163,7 +163,7 @@ unset($__item);
                 <?php echo mer_esc($_panel_label); ?>
             </a>
             <a href="<?php echo esc_url($nav_cta_url); ?>"
-               class="bg-[#2d8650] text-white <?php echo ($mer_current === 'ru') ? 'px-5' : 'px-7'; ?> py-3 rounded-full text-base font-medium hover:bg-[#246e41] transition-colors">
+               class="bg-[#00d084] text-white <?php echo ($mer_current === 'ru') ? 'px-5' : 'px-7'; ?> py-3 rounded-full text-base font-medium hover:bg-[#00b872] transition-colors">
                 <?php echo mer_esc($nav_cta_text); ?>
             </a>
         </div>
@@ -192,7 +192,7 @@ unset($__item);
                     <div>
                         <button type="button" class="mobile-acc-btn w-full flex items-center justify-between py-2.5 px-2 rounded-xl hover:bg-white/60 transition-colors" aria-expanded="false">
                             <span><?php echo mer_esc($item['label'] ?? ''); ?></span>
-                            <i data-lucide="chevron-down" class="mobile-acc-icon w-4 h-4 text-[#2d8650] stroke-[1.5] transition-transform duration-200"></i>
+                            <i data-lucide="chevron-down" class="mobile-acc-icon w-4 h-4 text-[#00d084] stroke-[1.5] transition-transform duration-200"></i>
                         </button>
                         <div class="hidden pl-4 flex flex-col gap-1 mt-1 mb-2">
                             <?php foreach ($item['dropdown_links'] as $dd) : ?>
@@ -218,7 +218,7 @@ unset($__item);
                     <?php echo mer_esc($_panel_label); ?>
                 </a>
                 <a href="<?php echo esc_url($nav_cta_url); ?>"
-                   class="bg-[#2d8650] text-white px-6 py-3 rounded-full text-center font-medium hover:bg-[#246e41] transition-colors">
+                   class="bg-[#00d084] text-white px-6 py-3 rounded-full text-center font-medium hover:bg-[#00b872] transition-colors">
                     <?php echo mer_esc($nav_cta_text); ?>
                 </a>
             </div>
@@ -245,7 +245,7 @@ unset($__item);
                         <?php endif; ?>
                         <?php echo mer_esc($mer_current_lang_mob['native_name'] ?? strtoupper($mer_current)); ?>
                     </span>
-                    <i data-lucide="chevron-down" id="mobile-lang-icon" class="w-4 h-4 text-[#2d8650] stroke-[1.5] transition-transform duration-200"></i>
+                    <i data-lucide="chevron-down" id="mobile-lang-icon" class="w-4 h-4 text-[#00d084] stroke-[1.5] transition-transform duration-200"></i>
                 </button>
                 <div id="mobile-lang-dd" class="hidden pl-4 flex flex-col gap-1 mt-1 mb-2">
                     <?php foreach ($mer_langs as $lang) :

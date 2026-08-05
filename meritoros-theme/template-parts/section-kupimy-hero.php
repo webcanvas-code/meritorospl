@@ -38,7 +38,7 @@ $img_alt = is_array($image) ? esc_attr($image['alt'] ?: 'Kupimy biuro rachunkowe
                 <?php echo wp_kses_post($subtitle); ?>
             </p>
             <a href="#porozmawiajmy"
-               class="inline-flex items-center gap-2 px-7 py-3.5 rounded-full bg-[#2d8650] hover:bg-[#246e41] text-white text-base font-semibold transition-colors duration-200">
+               class="inline-flex items-center gap-2 px-7 py-3.5 rounded-full bg-[#00d084] hover:bg-[#00b872] text-white text-base font-semibold transition-colors duration-200">
                 <?php echo mer_esc($btn_text); ?>
             </a>
         </div>

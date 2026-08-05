@@ -39,7 +39,7 @@ $total = count($cards);
     <div class="max-w-[1400px] mx-auto px-6 lg:px-12">
 
         <div class="mb-10">
-            <span class="text-[#2d8650] uppercase tracking-widest text-base font-bold mb-4 block">
+            <span class="text-[#00d084] uppercase tracking-widest text-base font-bold mb-4 block">
                 <?php echo mer_esc($label); ?>
             </span>
             <h2 class="text-pretty text-3xl lg:text-5xl font-bold tracking-tight text-slate-900">
@@ -76,7 +76,7 @@ $total = count($cards);
                         <?php endif; ?>
 
                         <div class="absolute inset-0 flex items-center justify-center pointer-events-none">
-                            <span class="flex h-14 w-14 items-center justify-center rounded-full bg-white/90 text-[#2d8650] shadow-lg ring-4 ring-white/20 group-hover:scale-105 transition-transform duration-200">
+                            <span class="flex h-14 w-14 items-center justify-center rounded-full bg-white/90 text-[#00d084] shadow-lg ring-4 ring-white/20 group-hover:scale-105 transition-transform duration-200">
                                 <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 fill-current ml-0.5" viewBox="0 0 24 24"><polygon points="5 3 19 12 5 21 5 3"/></svg>
                             </span>
                         </div>
@@ -84,7 +84,7 @@ $total = count($cards);
 
                     <div class="px-5 py-4 flex items-center gap-3">
                         <i data-lucide="youtube" class="w-5 h-5 shrink-0 text-red-500 stroke-[1.5]"></i>
-                        <p class="text-sm font-semibold text-slate-800 leading-snug group-hover:text-[#2d8650] transition-colors">
+                        <p class="text-sm font-semibold text-slate-800 leading-snug group-hover:text-[#00d084] transition-colors">
                             <?php echo mer_esc($card['title']); ?>
                         </p>
                     </div>
@@ -95,7 +95,7 @@ $total = count($cards);
         <?php if ($total > $per_page) : ?>
         <div id="wi-load-more-wrap" class="mt-10 text-center">
             <button id="wi-load-more"
-                    class="inline-flex items-center gap-2 border border-slate-300 text-slate-700 rounded-full px-8 py-3.5 text-sm font-semibold hover:border-[#2d8650] hover:text-[#2d8650] transition-colors duration-200">
+                    class="inline-flex items-center gap-2 border border-slate-300 text-slate-700 rounded-full px-8 py-3.5 text-sm font-semibold hover:border-[#00d084] hover:text-[#00d084] transition-colors duration-200">
                 <?php esc_html_e('Załaduj więcej', 'meritoros'); ?>
                 <i data-lucide="chevron-down" class="w-4 h-4 stroke-[2.5]"></i>
             </button>

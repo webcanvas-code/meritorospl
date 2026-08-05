@@ -38,11 +38,11 @@ if (empty($items)) {
                         class="faq-btn w-full flex items-center justify-between gap-4 text-left group"
                         aria-expanded="false"
                         aria-controls="faq-ans-<?php echo $i; ?>">
-                        <span class="text-lg sm:text-xl font-semibold text-slate-900 leading-snug group-hover:text-[#2d8650] transition-colors duration-200">
+                        <span class="text-lg sm:text-xl font-semibold text-slate-900 leading-snug group-hover:text-[#00d084] transition-colors duration-200">
                             <?php echo mer_esc($item['question']); ?>
                         </span>
                         <i data-lucide="plus"
-                           class="w-5 h-5 text-[#2d8650] shrink-0"
+                           class="w-5 h-5 text-[#00d084] shrink-0"
                            style="transition: transform .25s ease"></i>
                     </button>
                     <div id="faq-ans-<?php echo $i; ?>"

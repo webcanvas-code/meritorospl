@@ -65,7 +65,7 @@ if ( $yt_id ) {
                      <?php endif; ?>>
 
                 <div class="absolute inset-0 flex items-center justify-center bg-slate-900/25 group-hover:bg-slate-900/20 transition-colors duration-300">
-                    <div class="w-20 h-20 rounded-full bg-[#2d8650] flex items-center justify-center shadow-xl group-hover:scale-110 transition-transform duration-300<?php echo ! $play_src ? ' pointer-events-none' : ''; ?>">
+                    <div class="w-20 h-20 rounded-full bg-[#00d084] flex items-center justify-center shadow-xl group-hover:scale-110 transition-transform duration-300<?php echo ! $play_src ? ' pointer-events-none' : ''; ?>">
                         <i data-lucide="play" fill="#fff" class="w-8 h-8 text-white ml-0.5" stroke-width="0"></i>
                     </div>
                 </div>

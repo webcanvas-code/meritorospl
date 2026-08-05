@@ -32,7 +32,7 @@ for ($i = 1; $i <= 4; $i++) {
             <button id="kp-dlaczego-prev" type="button" class="w-12 h-12 rounded-full bg-white border border-slate-200 flex items-center justify-center shadow-sm hover:bg-slate-50 transition-colors" style="opacity:0.35;pointer-events:none">
                 <i data-lucide="chevron-left" class="w-5 h-5 text-slate-700 stroke-[2]"></i>
             </button>
-            <button id="kp-dlaczego-next" type="button" class="w-12 h-12 rounded-full bg-[#2d8650] flex items-center justify-center shadow-md hover:bg-[#246e41] transition-colors">
+            <button id="kp-dlaczego-next" type="button" class="w-12 h-12 rounded-full bg-[#00d084] flex items-center justify-center shadow-md hover:bg-[#00b872] transition-colors">
                 <i data-lucide="chevron-right" class="w-5 h-5 text-white stroke-[2]"></i>
             </button>
         </div>
@@ -43,7 +43,7 @@ for ($i = 1; $i <= 4; $i++) {
         <div id="kp-dlaczego-track" class="flex gap-4 transition-transform duration-500 ease-in-out">
             <?php foreach ($cards as $card) : ?>
             <div class="bg-white rounded-2xl p-8 flex flex-col min-w-[85%] sm:min-w-[calc(50%-12px)] lg:w-[400px] lg:min-w-[400px] lg:h-[325px] border border-emerald-200">
-                <i data-lucide="<?php echo esc_attr($card['icon']); ?>" stroke-width="1" class="w-14 h-14 text-[#2d8650] mb-8"></i>
+                <i data-lucide="<?php echo esc_attr($card['icon']); ?>" stroke-width="1" class="w-14 h-14 text-[#00d084] mb-8"></i>
                 <h3 class="text-xl md:text-2xl font-bold text-slate-900 mb-3 leading-snug"><?php echo nl2br(esc_html($card['title'])); ?></h3>
                 <p class="text-base md:text-lg text-slate-500 leading-relaxed"><?php echo mer_esc($card['text']); ?></p>
             </div>
@@ -59,10 +59,10 @@ for ($i = 1; $i <= 4; $i++) {
             </button>
             <div class="flex flex-1 sm:flex-none items-center justify-center gap-2" id="kp-dlaczego-dots">
                 <?php foreach ($cards as $idx => $card) : ?>
-                <button class="rounded-full transition-all duration-300 <?php echo $idx === 0 ? 'w-6 h-2 bg-[#2d8650]' : 'w-2 h-2 bg-slate-300'; ?>" data-i="<?php echo $idx; ?>"></button>
+                <button class="rounded-full transition-all duration-300 <?php echo $idx === 0 ? 'w-6 h-2 bg-[#00d084]' : 'w-2 h-2 bg-slate-300'; ?>" data-i="<?php echo $idx; ?>"></button>
                 <?php endforeach; ?>
             </div>
-            <button id="kp-dlaczego-next-m" class="sm:hidden w-12 h-12 rounded-full bg-[#2d8650] flex items-center justify-center shadow-md hover:bg-[#246e41] transition-colors">
+            <button id="kp-dlaczego-next-m" class="sm:hidden w-12 h-12 rounded-full bg-[#00d084] flex items-center justify-center shadow-md hover:bg-[#00b872] transition-colors">
                 <i data-lucide="chevron-right" class="w-5 h-5 text-white stroke-[2]"></i>
             </button>
         </div>
@@ -84,7 +84,7 @@ for ($i = 1; $i <= 4; $i++) {
 
     function updateDots() {
         dots.forEach(function (d, i) {
-            d.className = 'rounded-full transition-all duration-300 ' + (i === current ? 'w-6 h-2 bg-[#2d8650]' : 'w-2 h-2 bg-slate-300');
+            d.className = 'rounded-full transition-all duration-300 ' + (i === current ? 'w-6 h-2 bg-[#00d084]' : 'w-2 h-2 bg-slate-300');
         });
     }
 

@@ -53,7 +53,7 @@ $award_text  = mer_field('ri_award_text',  'Wyróżnienia są efektem tego, jak 
                                     $text = preg_replace('/^[-–—]\s/', '', $line);
                                 ?>
                                 <div class="flex items-start gap-2 mt-1">
-                                    <span class="mt-2 w-1.5 h-1.5 rounded-full bg-[#2d8650] shrink-0"></span>
+                                    <span class="mt-2 w-1.5 h-1.5 rounded-full bg-[#00d084] shrink-0"></span>
                                     <span><?php echo esc_html($text); ?></span>
                                 </div>
                                 <?php else : ?>
@@ -73,7 +73,7 @@ $award_text  = mer_field('ri_award_text',  'Wyróżnienia są efektem tego, jak 
                         <ul class="space-y-2 text-base text-slate-500 leading-relaxed mt-2">
                             <?php foreach ($sub['companies'] as $company) : ?>
                                 <li class="flex items-start gap-2">
-                                    <span class="mt-2 w-1.5 h-1.5 rounded-full bg-[#2d8650] shrink-0"></span>
+                                    <span class="mt-2 w-1.5 h-1.5 rounded-full bg-[#00d084] shrink-0"></span>
                                     <span><?php echo esc_html($company); ?></span>
                                 </li>
                             <?php endforeach; ?>

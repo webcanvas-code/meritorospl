@@ -18,7 +18,7 @@ if (empty($items)) {
 <section id="ri-sprawozdania-zarzadu" class="py-10 md:py-14 bg-emerald-50 relative overflow-hidden">
 
     <!-- Dekoracyjny okrąg lewy -->
-    <div class="absolute -left-32 top-1/2 -translate-y-1/2 w-[500px] h-[500px] rounded-full border-[80px] border-[#2d8650]/25 pointer-events-none" aria-hidden="true"></div>
+    <div class="absolute -left-32 top-1/2 -translate-y-1/2 w-[500px] h-[500px] rounded-full border-[80px] border-[#00d084]/25 pointer-events-none" aria-hidden="true"></div>
 
     <div class="max-w-7xl mx-auto px-6 relative z-10">
 
@@ -38,7 +38,7 @@ if (empty($items)) {
                             <a href="<?php echo esc_url($url_pdf); ?>"
                                target="_blank"
                                rel="noopener"
-                               class="inline-flex items-center gap-2 bg-[#2d8650] hover:bg-[#246e41] text-white text-sm font-medium px-5 py-2.5 rounded-full transition-colors">
+                               class="inline-flex items-center gap-2 bg-[#00d084] hover:bg-[#00b872] text-white text-sm font-medium px-5 py-2.5 rounded-full transition-colors">
                                 <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
                                 <?php echo mer_esc(mer_t('ri_pobierz_pdf', 'Pobierz PDF')); ?>
                             </a>

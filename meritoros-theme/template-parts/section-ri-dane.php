@@ -85,7 +85,7 @@ $col_count = count($years);
 
                 <!-- Nagłówek -->
                 <thead>
-                    <tr class="bg-[#2d8650] text-white">
+                    <tr class="bg-[#00d084] text-white">
                         <th class="text-left px-6 py-4 font-medium rounded-tl-2xl whitespace-nowrap">
                             <?php echo mer_esc(mer_t('ri_dane_naglowek', 'Dane finansowe (tys. PLN)')); ?>
                         </th>

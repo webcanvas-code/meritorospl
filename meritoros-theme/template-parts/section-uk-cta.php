@@ -7,7 +7,7 @@ $btn_url  = mer_field('uk_cta_btn_url',  home_url('/kontakt/'));
 
 <section class="py-8 bg-white">
     <div class="max-w-7xl mx-auto px-6">
-        <div class="bg-[#2d8650] rounded-2xl px-10 py-8 flex flex-col md:flex-row items-center justify-between gap-6">
+        <div class="bg-[#00d084] rounded-2xl px-10 py-8 flex flex-col md:flex-row items-center justify-between gap-6">
             <div class="flex items-center gap-6">
                 <div class="shrink-0 hidden sm:block">
                     <i data-lucide="message-square-text" stroke-width="1" class="w-16 h-16 text-white opacity-90"></i>

@@ -41,7 +41,7 @@ $karty = [
 ?>
 
 <section class="py-16 md:py-24 bg-slate-50 relative overflow-hidden">
-    <div class="absolute -left-24 bottom-0 w-[300px] h-[300px] rounded-full border-[40px] border-[#2d8650]/8 pointer-events-none"></div>
+    <div class="absolute -left-24 bottom-0 w-[300px] h-[300px] rounded-full border-[40px] border-[#00d084]/8 pointer-events-none"></div>
 
     <div class="relative z-10 max-w-7xl mx-auto px-6">
 
@@ -53,14 +53,14 @@ $karty = [
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
             <?php foreach ($karty as $karta) : ?>
             <div class="bg-white rounded-2xl p-8 border border-slate-200 flex flex-col gap-5">
-                <span class="w-12 h-12 rounded-xl bg-[#2d8650]/10 flex items-center justify-center flex-shrink-0">
-                    <i data-lucide="<?php echo esc_attr($karta['icon']); ?>" class="w-6 h-6 text-[#2d8650]"></i>
+                <span class="w-12 h-12 rounded-xl bg-[#00d084]/10 flex items-center justify-center flex-shrink-0">
+                    <i data-lucide="<?php echo esc_attr($karta['icon']); ?>" class="w-6 h-6 text-[#00d084]"></i>
                 </span>
                 <h3 class="text-xl font-bold text-slate-900"><?php echo mer_esc($karta['title']); ?></h3>
                 <ul class="space-y-2.5 mt-auto">
                     <?php foreach ($karta['items'] as $item) : ?>
                     <li class="flex items-start gap-2 text-lg text-slate-600 leading-snug">
-                        <i data-lucide="check" class="w-4 h-4 text-[#2d8650] flex-shrink-0 mt-0.5"></i>
+                        <i data-lucide="check" class="w-4 h-4 text-[#00d084] flex-shrink-0 mt-0.5"></i>
                         <?php echo mer_esc($item); ?>
                     </li>
                     <?php endforeach; ?>

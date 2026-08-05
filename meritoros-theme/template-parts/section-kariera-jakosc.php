@@ -51,12 +51,12 @@ for ($i = 1; $i <= 3; $i++) {
                 <button id="jakosc-prev" class="absolute left-3 top-1/2 -translate-y-1/2 z-20 w-12 h-12 rounded-full bg-white border border-slate-200 flex items-center justify-center shadow-sm hover:bg-slate-50 transition-colors" style="opacity:0.35;pointer-events:none" aria-label="<?php esc_attr_e('Poprzednie zdjęcie', 'meritoros'); ?>">
                     <i data-lucide="chevron-left" class="w-5 h-5 text-slate-700 stroke-[2]"></i>
                 </button>
-                <button id="jakosc-next" class="absolute right-3 top-1/2 -translate-y-1/2 z-20 w-12 h-12 rounded-full bg-[#2d8650] flex items-center justify-center shadow-md hover:bg-[#246e41] transition-colors" aria-label="<?php esc_attr_e('Następne zdjęcie', 'meritoros'); ?>">
+                <button id="jakosc-next" class="absolute right-3 top-1/2 -translate-y-1/2 z-20 w-12 h-12 rounded-full bg-[#00d084] flex items-center justify-center shadow-md hover:bg-[#00b872] transition-colors" aria-label="<?php esc_attr_e('Następne zdjęcie', 'meritoros'); ?>">
                     <i data-lucide="chevron-right" class="w-5 h-5 text-white stroke-[2]"></i>
                 </button>
                 <div class="flex items-center justify-center gap-2 mt-5" id="jakosc-dots">
                     <?php foreach ($slides as $idx => $slide) : ?>
-                    <button class="jakosc-dot <?php echo $idx === 0 ? 'w-2.5 h-2.5 bg-[#2d8650]' : 'w-2 h-2 bg-slate-300 hover:bg-slate-400'; ?> rounded-full transition-all" data-idx="<?php echo $idx; ?>"></button>
+                    <button class="jakosc-dot <?php echo $idx === 0 ? 'w-2.5 h-2.5 bg-[#00d084]' : 'w-2 h-2 bg-slate-300 hover:bg-slate-400'; ?> rounded-full transition-all" data-idx="<?php echo $idx; ?>"></button>
                     <?php endforeach; ?>
                 </div>
             </div>
@@ -65,7 +65,7 @@ for ($i = 1; $i <= 3; $i++) {
                 <div class="absolute -right-32 top-1/2 -translate-y-1/2 w-72 h-72 rounded-full border-[40px] border-emerald-100 pointer-events-none hidden lg:block"></div>
                 <div class="relative z-10">
                     <h2 class="text-pretty text-4xl md:text-5xl font-bold tracking-tight leading-tight mb-2 text-slate-900"><?php echo mer_esc($title); ?></h2>
-                    <h2 class="text-pretty text-4xl md:text-5xl font-bold tracking-tight leading-tight mb-8 text-[#2d8650]"><?php echo mer_esc($green); ?></h2>
+                    <h2 class="text-pretty text-4xl md:text-5xl font-bold tracking-tight leading-tight mb-8 text-[#00d084]"><?php echo mer_esc($green); ?></h2>
                     <p class="text-base sm:text-lg text-slate-500 leading-relaxed mb-5"><?php echo mer_esc($text1); ?></p>
                     <p class="text-base sm:text-lg text-slate-500 leading-relaxed"><?php echo mer_esc($text2); ?></p>
                 </div>
@@ -75,7 +75,7 @@ for ($i = 1; $i <= 3; $i++) {
         <div class="grid grid-cols-1 sm:grid-cols-3 gap-6">
             <?php foreach ($cards as $card) : ?>
             <div class="border border-emerald-200 rounded-2xl p-8 flex flex-col items-start gap-5 hover:shadow-sm transition-shadow">
-                <i data-lucide="<?php echo esc_attr($card['icon']); ?>" stroke-width="1" class="w-12 h-12 text-[#2d8650]"></i>
+                <i data-lucide="<?php echo esc_attr($card['icon']); ?>" stroke-width="1" class="w-12 h-12 text-[#00d084]"></i>
                 <p class="text-lg font-semibold text-slate-900"><?php echo mer_esc($card['text']); ?></p>
             </div>
             <?php endforeach; ?>
@@ -101,7 +101,7 @@ for ($i = 1; $i <= 3; $i++) {
         current = idx;
         track.style.transform = 'translateX(-' + (idx * 100) + '%)';
         dots.forEach(function (d, i) {
-            d.classList.toggle('bg-[#2d8650]', i === idx);
+            d.classList.toggle('bg-[#00d084]', i === idx);
             d.classList.toggle('w-2.5',          i === idx);
             d.classList.toggle('h-2.5',          i === idx);
             d.classList.toggle('bg-slate-300',   i !== idx);

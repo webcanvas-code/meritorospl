@@ -19,7 +19,7 @@ $img_alt = is_array($image) ? esc_attr($image['alt'] ?: 'Obsługa księgowa fund
                 <h2 class="text-pretty text-4xl md:text-5xl font-bold tracking-tight text-slate-900 mb-6 leading-tight">
                     <?php echo nl2br(str_replace(
                         'myślących długoterminowo',
-                        '<span class="text-[#2d8650]">myślących długoterminowo</span>',
+                        '<span class="text-[#00d084]">myślących długoterminowo</span>',
                         esc_html($title)
                     )); ?>
                 </h2>

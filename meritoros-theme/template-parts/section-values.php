@@ -52,7 +52,7 @@ $c6_cert       = mer_field('val_c6_cert', 'ISO 9001:2015');
 </style>
 <section class="py-16 md:py-24 px-6 lg:px-12 max-w-[1400px] mx-auto">
     <div class="text-center mb-6">
-        <span class="text-[#2d8650] uppercase tracking-widest text-base font-bold mb-2 block">
+        <span class="text-[#00d084] uppercase tracking-widest text-base font-bold mb-2 block">
             <?php echo mer_esc($label); ?>
         </span>
         <h2 class="text-pretty text-4xl md:text-5xl font-bold tracking-tight max-w-3xl mx-auto text-slate-900">
@@ -64,7 +64,7 @@ $c6_cert       = mer_field('val_c6_cert', 'ISO 9001:2015');
 
         <!-- Card 1: White -->
         <div class="bg-white border border-slate-200 rounded-[2rem] p-5 lg:p-6 col-span-1 flex flex-col">
-            <div class="w-12 h-12 bg-slate-50 border border-slate-100 rounded-2xl flex items-center justify-center mb-4 text-[#2d8650]">
+            <div class="w-12 h-12 bg-slate-50 border border-slate-100 rounded-2xl flex items-center justify-center mb-4 text-[#00d084]">
                 <i data-lucide="<?php echo esc_attr($c1_icon); ?>" class="w-6 h-6 stroke-[1.5]"></i>
             </div>
             <h3 class="text-lg lg:text-xl font-bold tracking-tight mb-2 text-slate-900">
@@ -84,8 +84,8 @@ $c6_cert       = mer_field('val_c6_cert', 'ISO 9001:2015');
 
         <!-- Card 3: Dark -->
         <div class="bg-slate-900 rounded-[2rem] p-5 lg:p-6 text-white col-span-1 flex flex-col relative overflow-hidden">
-            <div class="absolute -right-10 -top-10 w-40 h-40 bg-[#2d8650]/20 blur-3xl rounded-full"></div>
-            <div class="w-12 h-12 bg-white/10 rounded-2xl flex items-center justify-center mb-4 text-[#2d8650]">
+            <div class="absolute -right-10 -top-10 w-40 h-40 bg-[#00d084]/20 blur-3xl rounded-full"></div>
+            <div class="w-12 h-12 bg-white/10 rounded-2xl flex items-center justify-center mb-4 text-[#00d084]">
                 <i data-lucide="<?php echo esc_attr($c3_icon); ?>" class="w-6 h-6 stroke-[1.5]"></i>
             </div>
             <h3 class="text-lg lg:text-xl font-bold tracking-tight mb-2">
@@ -103,7 +103,7 @@ $c6_cert       = mer_field('val_c6_cert', 'ISO 9001:2015');
         </div>
 
         <!-- Card 4: Green -->
-        <div class="bg-[#2d8650] rounded-[2rem] p-5 lg:p-6 text-white col-span-1 flex flex-col overflow-hidden relative">
+        <div class="bg-[#00d084] rounded-[2rem] p-5 lg:p-6 text-white col-span-1 flex flex-col overflow-hidden relative">
             <div class="absolute -right-6 -bottom-6 opacity-10">
                 <i data-lucide="cpu" class="w-40 h-40 stroke-[1]"></i>
             </div>
@@ -139,7 +139,7 @@ $c6_cert       = mer_field('val_c6_cert', 'ISO 9001:2015');
         </div>
 
         <!-- Card 6: Quality -->
-        <div class="bg-[#2d8650] rounded-[2rem] p-5 lg:p-6 col-span-1 flex flex-col overflow-hidden relative">
+        <div class="bg-[#00d084] rounded-[2rem] p-5 lg:p-6 col-span-1 flex flex-col overflow-hidden relative">
             <div class="w-12 h-12 bg-white/20 rounded-2xl flex items-center justify-center mb-4 text-white">
                 <i data-lucide="<?php echo esc_attr($c6_icon); ?>" class="w-6 h-6 stroke-[1.5]"></i>
             </div>

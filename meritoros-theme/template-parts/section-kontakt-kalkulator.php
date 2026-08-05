@@ -8,7 +8,7 @@ $rate_p   = (float) mer_field('kp_kalk_rate_p',   52);
 $rate_sub = (float) mer_field('kp_kalk_rate_sub', 42);
 ?>
 
-<section class="py-10 md:py-20 bg-[#2d8650] relative overflow-hidden">
+<section class="py-10 md:py-20 bg-[#00d084] relative overflow-hidden">
 
     <!-- Dekoracyjny okrąg -->
     <div class="absolute -left-24 top-1/2 -translate-y-1/2 w-[420px] h-[420px] rounded-full border-[52px] border-white/20 pointer-events-none" aria-hidden="true"></div>
@@ -94,7 +94,7 @@ $rate_sub = (float) mer_field('kp_kalk_rate_sub', 42);
             </div>
 
             <!-- Przycisk -->
-            <button id="ktk-submit" class="w-full py-3.5 rounded-full bg-[#2d8650] text-white text-base font-semibold hover:bg-[#246e41] transition-colors mb-5" type="button">
+            <button id="ktk-submit" class="w-full py-3.5 rounded-full bg-[#00d084] text-white text-base font-semibold hover:bg-[#00b872] transition-colors mb-5" type="button">
                 <?php esc_html_e('Oblicz kwotę obsługi', 'meritoros'); ?>
             </button>
 
