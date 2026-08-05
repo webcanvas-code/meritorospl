@@ -3,6 +3,7 @@ $title    = mer_field('hk_hero_title',    'Historie klientów');
 $text     = mer_field('hk_hero_text',     'Konkretne przypadki. Konkretny efekt. Zobacz, jak pomagamy firmom działać stabilnie i bezpiecznie.');
 $btn_text = mer_field('hk_hero_btn_text', 'Poznaj historie');
 $btn_url  = mer_field('hk_hero_btn_url',  '#hk-video-section');
+if (!$btn_url || $btn_url === '#case-studies') $btn_url = '#hk-video-section';
 ?>
 
 <section class="pt-36 pb-16 bg-white relative">
