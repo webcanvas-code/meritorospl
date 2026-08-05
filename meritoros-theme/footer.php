@@ -117,10 +117,10 @@ for ($i = 1; $i <= 4; $i++) {
                     <?php esc_html_e('Usługi', 'meritoros'); ?>
                 </h4>
                 <ul class="space-y-3 text-sm text-slate-300">
-                    <li><a href="#" class="hover:text-white hover:translate-x-0.5 transition-all inline-block"><?php esc_html_e('Usługi księgowe', 'meritoros'); ?></a></li>
-                    <li><a href="#" class="hover:text-white hover:translate-x-0.5 transition-all inline-block"><?php esc_html_e('Kadry i płace', 'meritoros'); ?></a></li>
-                    <li><a href="#" class="hover:text-white hover:translate-x-0.5 transition-all inline-block"><?php esc_html_e('Fundacje rodzinne', 'meritoros'); ?></a></li>
-                    <li><a href="#" class="hover:text-white hover:translate-x-0.5 transition-all inline-block"><?php esc_html_e('Skup biur rachunkowych', 'meritoros'); ?></a></li>
+                    <li><a href="<?php echo esc_url(get_permalink(get_page_by_path('uslugi-ksiegowe'))); ?>" class="hover:text-white hover:translate-x-0.5 transition-all inline-block"><?php esc_html_e('Usługi księgowe', 'meritoros'); ?></a></li>
+                    <li><a href="<?php echo esc_url(get_permalink(get_page_by_path('kadry-i-place'))); ?>" class="hover:text-white hover:translate-x-0.5 transition-all inline-block"><?php esc_html_e('Kadry i płace', 'meritoros'); ?></a></li>
+                    <li><a href="<?php echo esc_url(get_permalink(get_page_by_path('fundacje-rodzinne'))); ?>" class="hover:text-white hover:translate-x-0.5 transition-all inline-block"><?php esc_html_e('Fundacje rodzinne', 'meritoros'); ?></a></li>
+                    <li><a href="<?php echo esc_url(get_permalink(get_page_by_path('kupimy-biuro-rachunkowe'))); ?>" class="hover:text-white hover:translate-x-0.5 transition-all inline-block"><?php esc_html_e('Skup biur rachunkowych', 'meritoros'); ?></a></li>
                 </ul>
             </div>
 
