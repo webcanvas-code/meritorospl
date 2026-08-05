@@ -123,19 +123,8 @@ if (empty($offices)) {
                     <div>
                         <p class="text-slate-400 text-xs mb-0.5"><?php esc_html_e('Siedziba główna', 'meritoros'); ?></p>
                         <p class="text-slate-700 text-sm"><?php esc_html_e('Kraków', 'meritoros'); ?></p>
+                        <p class="text-slate-400 text-xs">NIP: <?php echo mer_esc($nip); ?> &nbsp;/&nbsp; REGON: <?php echo mer_esc($regon); ?></p>
                     </div>
-                    <?php if ($nip) : ?>
-                    <div>
-                        <p class="text-slate-400 text-xs mb-0.5"><?php esc_html_e('NIP', 'meritoros'); ?></p>
-                        <p class="text-slate-700 text-sm"><?php echo mer_esc($nip); ?></p>
-                    </div>
-                    <?php endif; ?>
-                    <?php if ($regon) : ?>
-                    <div>
-                        <p class="text-slate-400 text-xs mb-0.5"><?php esc_html_e('REGON', 'meritoros'); ?></p>
-                        <p class="text-slate-700 text-sm"><?php echo mer_esc($regon); ?></p>
-                    </div>
-                    <?php endif; ?>
                     <?php if ($krs_court || $krs_number) : ?>
                         <div>
                             <p class="text-slate-400 text-xs mb-0.5"><?php esc_html_e('Krajowy Rejestr Sądowy (KRS)', 'meritoros'); ?></p>
