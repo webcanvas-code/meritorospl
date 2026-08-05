@@ -42,7 +42,7 @@ for ($i = 1; $i <= 6; $i++) {
 
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6" id="oferty-grid">
             <?php foreach ($oferty as $o) : ?>
-            <div class="oferta-card group border border-slate-200 rounded-2xl p-8 flex flex-col gap-5 bg-white hover:bg-[#00d084] hover:border-transparent transition-all duration-300 cursor-pointer" data-cat="<?php echo esc_attr($o['cat']); ?>">
+            <div class="oferta-card group border border-slate-200 rounded-2xl p-8 flex flex-col gap-5 bg-white hover:bg-[#00d084] hover:border-transparent transition-all duration-300" data-cat="<?php echo esc_attr($o['cat']); ?>">
                 <i data-lucide="file-text" stroke-width="1" class="w-10 h-10 text-[#00d084] group-hover:text-white/80 transition-colors duration-300"></i>
                 <div class="flex-1">
                     <h3 class="text-xl font-bold text-slate-900 group-hover:text-white leading-snug mb-4 transition-colors duration-300"><?php echo mer_esc($o['title']); ?></h3>
