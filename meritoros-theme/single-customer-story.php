@@ -10,6 +10,11 @@ the_post();
 
 /* ── ACF pola ────────────────────────────────────────────────────── */
 $tags    = array_values(array_filter(array_map('trim', explode("\n", get_field('cs_tags') ?: ''))));
+
+$tag_urls = [
+    'Księgowość' => get_permalink(get_page_by_path('uslugi-ksiegowe')),
+    'Kadry'      => get_permalink(get_page_by_path('kadry-i-place')),
+];
 $lead    = get_field('cs_video_desc');
 $logo     = get_field('cs_logo');
 $logo_url = get_field('cs_logo_url');
@@ -141,13 +146,19 @@ $hk_url  = $hk_page ? get_permalink($hk_page) : home_url('/historie-klientow/');
             <!-- Tagi -->
             <?php if ( $tags ) : ?>
             <div class="flex flex-wrap gap-3">
-                <?php foreach ( $tags as $i => $tag ) : ?>
-                <?php if ( $i === 0 ) : ?>
-                <span class="inline-flex items-center px-6 py-2.5 rounded-full bg-[#00d084] text-white text-base font-semibold">
+                <?php foreach ( $tags as $i => $tag ) :
+                    $tag_url = $tag_urls[$tag] ?? '';
+                    if ($i === 0) :
+                        $cls = 'inline-flex items-center px-6 py-2.5 rounded-full bg-[#00d084] text-white text-base font-semibold';
+                    else :
+                        $cls = 'inline-flex items-center px-6 py-2.5 rounded-full bg-white text-slate-700 text-base font-semibold border border-slate-300';
+                    endif;
+                    if ($tag_url) : ?>
+                <a href="<?php echo esc_url($tag_url); ?>" class="<?php echo $cls; ?> hover:opacity-80 transition-opacity">
                     <?php echo mer_esc($tag); ?>
-                </span>
+                </a>
                 <?php else : ?>
-                <span class="inline-flex items-center px-6 py-2.5 rounded-full bg-white text-slate-700 text-base font-semibold border border-slate-300">
+                <span class="<?php echo $cls; ?>">
                     <?php echo mer_esc($tag); ?>
                 </span>
                 <?php endif; ?>
