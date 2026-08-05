@@ -2454,6 +2454,14 @@ acf_add_local_field_group([
             'type'         => 'email',
             'instructions' => 'Jeśli podany, na ten adres trafi kopia powiadomienia o każdym pobraniu.',
         ],
+        [
+            'key'           => 'field_kar_cult_consent',
+            'label'         => 'Tekst zgody pod formularzem',
+            'name'          => 'kar_cult_consent',
+            'type'          => 'textarea',
+            'rows'          => 3,
+            'default_value' => 'Klikając przycisk, zgadzasz się, że Meritoros może wykorzystać te dane, aby kontaktować się z Tobą w związku z materiałami i usługami, które mogą Cię zainteresować. Możesz zrezygnować w każdej chwili. Więcej informacji znajdziesz w naszej Polityce Prywatności.',
+        ],
 
         // ── WIDEO ─────────────────────────────────────────────────────
         ['key' => 'field_kar_tab_vid', 'label' => 'Wideo', 'name' => '', 'type' => 'tab'],
