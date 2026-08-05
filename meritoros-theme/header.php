@@ -75,7 +75,7 @@ unset($__item);
 
         <!-- Logo -->
         <a href="<?php echo esc_url(home_url('/')); ?>" class="flex items-center shrink-0">
-            <img src="<?php echo esc_url(get_template_directory_uri() . '/images/logo.svg'); ?>" alt="<?php bloginfo('name'); ?>" class="h-9 w-auto block -translate-y-[10px]" loading="eager" width="160" height="36">
+            <img src="<?php echo esc_url(get_template_directory_uri() . '/images/logo.svg'); ?>" alt="<?php bloginfo('name'); ?>" class="h-9 w-auto block" loading="eager" width="160" height="36">
         </a>
 
         <!-- Desktop Nav -->
