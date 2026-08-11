@@ -1036,12 +1036,15 @@ acf_add_local_field_group([
         ['key' => 'field_bpo_area1_title',   'label' => 'Karta 1 — Tytuł',  'name' => 'bpo_area1_title',  'type' => 'textarea', 'rows' => 1, 'default_value' => 'Rozwiązania kadrowe'],
         ['key' => 'field_bpo_area1_desc',    'label' => 'Karta 1 — Opis',   'name' => 'bpo_area1_desc',   'type' => 'textarea', 'rows' => 2, 'default_value' => 'Kompleksowa obsługa kadrowo-płacowa – od umów i list płac po rozliczenia z ZUS i US, z pełną zastępowalnością zespołu.'],
         ['key' => 'field_bpo_area1_image',   'label' => 'Karta 1 — Zdjęcie','name' => 'bpo_area1_image',  'type' => 'image',    'return_format' => 'array', 'preview_size' => 'medium'],
+        ['key' => 'field_bpo_area1_url',     'label' => 'Karta 1 — Link',   'name' => 'bpo_area1_url',    'type' => 'url'],
         ['key' => 'field_bpo_area2_title',   'label' => 'Karta 2 — Tytuł',  'name' => 'bpo_area2_title',  'type' => 'textarea', 'rows' => 1, 'default_value' => 'Rozwiązania księgowe'],
         ['key' => 'field_bpo_area2_desc',    'label' => 'Karta 2 — Opis',   'name' => 'bpo_area2_desc',   'type' => 'textarea', 'rows' => 2, 'default_value' => 'Pełna księgowość, raportowanie zarządcze i sprawozdawcze – terminowo i zgodnie ze standardami, bez zakłóceń operacyjnych.'],
         ['key' => 'field_bpo_area2_image',   'label' => 'Karta 2 — Zdjęcie','name' => 'bpo_area2_image',  'type' => 'image',    'return_format' => 'array', 'preview_size' => 'medium'],
+        ['key' => 'field_bpo_area2_url',     'label' => 'Karta 2 — Link',   'name' => 'bpo_area2_url',    'type' => 'url'],
         ['key' => 'field_bpo_area3_title',   'label' => 'Karta 3 — Tytuł',  'name' => 'bpo_area3_title',  'type' => 'textarea', 'rows' => 1, 'default_value' => 'Transformacja cyfrowa'],
         ['key' => 'field_bpo_area3_desc',    'label' => 'Karta 3 — Opis',   'name' => 'bpo_area3_desc',   'type' => 'textarea', 'rows' => 2, 'default_value' => 'Wdrożenie RPA, e-teczek i elektronicznego obiegu dokumentów – automatyzujemy procesy, żeby organizacja działała sprawniej.'],
         ['key' => 'field_bpo_area3_image',   'label' => 'Karta 3 — Zdjęcie','name' => 'bpo_area3_image',  'type' => 'image',    'return_format' => 'array', 'preview_size' => 'medium'],
+        ['key' => 'field_bpo_area3_url',     'label' => 'Karta 3 — Link',   'name' => 'bpo_area3_url',    'type' => 'url'],
 
         // ── TAB: BPO Kadrowe ──────────────────────────────────────
         ['key' => 'field_bpo_tab_kad', 'label' => 'BPO Kadrowe', 'name' => '', 'type' => 'tab'],

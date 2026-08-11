@@ -14,6 +14,7 @@ for ($i = 1; $i <= 3; $i++) {
         'title' => mer_field("bpo_area{$i}_title", $area_defaults[$i - 1]['title']),
         'desc'  => mer_field("bpo_area{$i}_desc",  $area_defaults[$i - 1]['desc']),
         'image' => is_array($img) ? $img : null,
+        'url'   => mer_field("bpo_area{$i}_url",   ''),
     ];
 }
 ?>
@@ -76,6 +77,14 @@ for ($i = 1; $i <= 3; $i++) {
                                 <p class="text-sm md:text-base leading-relaxed" style="color: rgba(255,255,255,0.88);">
                                     <?php echo mer_esc($card['desc']); ?>
                                 </p>
+                                <?php if (!empty($card['url'])) : ?>
+                                <a href="<?php echo esc_url($card['url']); ?>"
+                                   class="inline-flex items-center gap-2 mt-6 text-sm font-semibold text-white border border-white/40 rounded-full px-5 py-2 hover:bg-white/20 transition-colors duration-200"
+                                   onclick="event.stopPropagation()">
+                                    Przejdź
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                                </a>
+                                <?php endif; ?>
                             </div>
                         </div>
 
