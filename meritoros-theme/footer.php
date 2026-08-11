@@ -8,8 +8,6 @@ $cta_title   = (get_field('footer_cta_title',  $_ft_id) ?: __("Dołącz do grona
 $cta_accent  = (get_field('footer_cta_accent', $_ft_id) ?: __('bez stresu', 'meritoros'));
 $btn1_text   = (get_field('footer_btn1_text',  $_ft_id) ?: __('Umów rozmowę', 'meritoros'));
 $btn1_url    = (get_field('footer_btn1_url',   $_ft_id) ?: '#kontakt');
-$btn2_text   = (get_field('footer_btn2_text',  $_ft_id) ?: __('Poznaj ofertę', 'meritoros'));
-$btn2_url    = (get_field('footer_btn2_url',   $_ft_id) ?: '#uslugi');
 $tagline     = (get_field('footer_tagline',    $_ft_id) ?: __('Profesjonalne biuro rachunkowe i BPO dla firm z ambicjami.', 'meritoros'));
 
 // Pola wspólne dla wszystkich języków — dane kontaktowe i meta
@@ -60,10 +58,6 @@ for ($i = 1; $i <= 4; $i++) {
                    class="inline-flex items-center gap-3 bg-[#00d084] text-white px-9 py-4 rounded-full text-lg font-bold hover:bg-[#00b872] hover:shadow-lg hover:shadow-[#00d084]/30 transition-all duration-300 group">
                     <?php echo mer_esc($btn1_text); ?>
                     <i data-lucide="arrow-right" class="w-5 h-5 group-hover:translate-x-1 transition-transform"></i>
-                </a>
-                <a href="<?php echo esc_url($btn2_url); ?>"
-                   class="inline-flex items-center gap-3 border border-white/20 text-white px-9 py-4 rounded-full text-lg font-semibold hover:bg-white/10 transition-all duration-300">
-                    <?php echo mer_esc($btn2_text); ?>
                 </a>
             </div>
         </div>
