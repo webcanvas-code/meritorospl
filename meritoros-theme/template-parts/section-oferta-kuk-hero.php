@@ -62,7 +62,7 @@ $kariera_url = home_url('/kariera/');
         </h1>
 
         <!-- CTA -->
-        <a href="#aplikuj" class="inline-flex items-center gap-2 px-7 py-3.5 rounded-full bg-[#00d084] text-white text-base font-semibold hover:bg-[#00b872] transition-colors self-start">
+        <a href="#aplikuj" class="inline-flex items-center gap-2 px-7 py-3.5 rounded-full bg-white/10 backdrop-blur-md border border-white/20 text-white text-base font-semibold hover:bg-white/20 hover:border-white/30 transition-colors self-start">
             <?php esc_html_e('Aplikuj teraz', 'meritoros'); ?>
             <i data-lucide="arrow-right" class="w-4 h-4"></i>
         </a>

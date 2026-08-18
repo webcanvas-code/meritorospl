@@ -57,12 +57,12 @@ for ($i = 1; $i <= 6; $i++) {
                 <div class="flex flex-wrap gap-2">
                     <?php if (!empty($o['traffit_url'])) : ?>
                     <a href="<?php echo esc_url($o['traffit_url']); ?>" target="_blank" rel="noopener noreferrer"
-                       class="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-[#00d084] text-white group-hover:bg-white group-hover:text-slate-900 text-sm font-medium transition-all duration-300">
+                       class="inline-flex items-center gap-2 px-5 py-2.5 rounded-full border border-slate-300 text-slate-700 group-hover:bg-white group-hover:text-slate-900 group-hover:border-transparent text-sm font-medium transition-all duration-300">
                         <?php esc_html_e('Aplikuj teraz', 'meritoros'); ?> <i data-lucide="arrow-right" class="w-4 h-4"></i>
                     </a>
                     <?php else : ?>
                     <button onclick="document.getElementById('zostaw-cv').scrollIntoView({behavior:'smooth'})"
-                            class="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-[#00d084] text-white group-hover:bg-white group-hover:text-slate-900 text-sm font-medium transition-all duration-300">
+                            class="inline-flex items-center gap-2 px-5 py-2.5 rounded-full border border-slate-300 text-slate-700 group-hover:bg-white group-hover:text-slate-900 group-hover:border-transparent text-sm font-medium transition-all duration-300">
                         <?php esc_html_e('Aplikuj teraz', 'meritoros'); ?> <i data-lucide="arrow-right" class="w-4 h-4"></i>
                     </button>
                     <?php endif; ?>
