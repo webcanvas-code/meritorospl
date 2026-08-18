@@ -78,49 +78,26 @@ for ($i = 1; $i <= 4; $i++) {
                 $role     = esc_html($item['role'] ?? '');
                 $initials = esc_html($item['initials'] ?? mb_substr($item['author'] ?? 'XX', 0, 2));
             ?>
-                <?php if ($highlighted) : ?>
-                    <div class="bg-[#00d084] rounded-[2rem] p-5 lg:p-6 flex flex-col justify-between">
-                        <div>
-                            <div class="flex items-center gap-1 mb-4">
-                                <?php for ($s = 0; $s < 5; $s++) : ?>
-                                    <i data-lucide="star" class="w-5 h-5 fill-white text-white stroke-none"></i>
-                                <?php endfor; ?>
-                            </div>
-                            <p class="text-lg italic font-light text-white leading-relaxed mb-4">
-                                &ldquo;<?php echo $quote; ?>&rdquo;
-                            </p>
+                <div class="bg-white border border-slate-200 rounded-[2rem] p-5 sm:p-6 lg:p-8 flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center gap-1 mb-6">
+                            <?php for ($s = 0; $s < 5; $s++) : ?>
+                                <i data-lucide="star" class="w-5 h-5 fill-[#00d084] text-[#00d084] stroke-none"></i>
+                            <?php endfor; ?>
                         </div>
-                        <div class="flex items-center gap-3 pt-4 border-t border-white/20">
-                            <div>
-                                <p class="text-white font-semibold text-sm"><?php echo $author; ?></p>
-                                <?php if ($role) : ?>
-                                    <p class="text-white text-xs mt-0.5"><?php echo $role; ?></p>
-                                <?php endif; ?>
-                            </div>
+                        <p class="text-lg italic font-light text-slate-600 leading-relaxed mb-5">
+                            &ldquo;<?php echo $quote; ?>&rdquo;
+                        </p>
+                    </div>
+                    <div class="flex items-center gap-3 pt-4 border-t border-slate-100">
+                        <div>
+                            <p class="text-slate-900 font-semibold text-sm"><?php echo $author; ?></p>
+                            <?php if ($role) : ?>
+                                <p class="text-slate-500 text-xs mt-0.5"><?php echo $role; ?></p>
+                            <?php endif; ?>
                         </div>
                     </div>
-                <?php else : ?>
-                    <div class="bg-white border border-slate-200 rounded-[2rem] p-5 sm:p-6 lg:p-8 flex flex-col justify-between">
-                        <div>
-                            <div class="flex items-center gap-1 mb-6">
-                                <?php for ($s = 0; $s < 5; $s++) : ?>
-                                    <i data-lucide="star" class="w-5 h-5 fill-[#00d084] text-[#00d084] stroke-none"></i>
-                                <?php endfor; ?>
-                            </div>
-                            <p class="text-lg italic font-light text-slate-600 leading-relaxed mb-5">
-                                &ldquo;<?php echo $quote; ?>&rdquo;
-                            </p>
-                        </div>
-                        <div class="flex items-center gap-3 pt-4 border-t border-slate-100">
-                            <div>
-                                <p class="text-slate-900 font-semibold text-sm"><?php echo $author; ?></p>
-                                <?php if ($role) : ?>
-                                    <p class="text-slate-500 text-xs mt-0.5"><?php echo $role; ?></p>
-                                <?php endif; ?>
-                            </div>
-                        </div>
-                    </div>
-                <?php endif; ?>
+                </div>
             <?php endforeach; ?>
         </div>
 
