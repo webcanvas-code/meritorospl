@@ -8,7 +8,7 @@ $items    = array_filter(array_map('trim', preg_split('/(\r?\n){2,}/', $items_r)
 $bg_url = is_array($bg_img) ? esc_url($bg_img['url']) : 'https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&q=80&w=2000';
 ?>
 
-<section class="py-16 md:py-24 bg-slate-900 text-white relative overflow-hidden">
+<section id="bpo-cyfrowa" class="py-16 md:py-24 bg-slate-900 text-white relative overflow-hidden">
     <div class="absolute inset-0 opacity-65">
         <img src="<?php echo $bg_url; ?>" alt="" class="w-full h-full object-cover" loading="lazy">
         <div class="absolute inset-0 bg-slate-900/30 mix-blend-multiply"></div>

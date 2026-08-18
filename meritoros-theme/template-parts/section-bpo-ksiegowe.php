@@ -8,7 +8,7 @@ $items_raw = mer_field('bpo_ks_items', "Prowadzenie ksiąg rachunkowych\n\nOblic
 $items = array_values(array_filter(array_map('trim', preg_split('/(\r?\n){2,}/', $items_raw))));
 ?>
 
-<section class="py-12 md:py-24 bg-white relative overflow-hidden">
+<section id="bpo-ksiegowe" class="py-12 md:py-24 bg-white relative overflow-hidden">
     <div class="absolute bottom-1/4 left-0 w-[500px] h-[500px] bg-emerald-200/40 rounded-full blur-[100px] -translate-x-1/4 pointer-events-none"></div>
 
     <div class="max-w-7xl mx-auto px-6 relative z-10">
