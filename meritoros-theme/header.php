@@ -93,12 +93,11 @@ unset($__item);
                             <i data-lucide="chevron-down" class="w-4 h-4 text-[#00d084] stroke-[1.5]"></i>
                         </a>
                         <div class="absolute top-full left-1/2 -translate-x-1/2 pt-6 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all z-50 w-[260px]">
-                            <div class="bg-[#f2f4f6] rounded-[2rem] p-7 flex flex-col gap-5 shadow-xl shadow-black/5 border border-white/60">
+                            <div class="bg-[#f2f4f6] rounded-[2rem] p-3 flex flex-col gap-0.5 shadow-xl shadow-black/5 border border-white/60">
                                 <?php foreach ($dropdown as $dd) : ?>
                                     <a href="<?php echo esc_url($dd['url'] ?? '#'); ?>"
-                                       class="flex items-center justify-between text-slate-900 hover:text-slate-600 group/item transition-colors">
-                                        <span class="text-[17px]"><?php echo mer_esc($dd['label'] ?? ''); ?></span>
-                                        <i data-lucide="arrow-up-right" class="w-5 h-5 text-[#00d084] stroke-[1.5] group-hover/item:translate-x-0.5 group-hover/item:-translate-y-0.5 transition-transform"></i>
+                                       class="flex items-center px-4 py-2.5 rounded-2xl text-slate-900 hover:bg-white hover:shadow-sm transition-colors text-[17px]">
+                                        <?php echo mer_esc($dd['label'] ?? ''); ?>
                                     </a>
                                 <?php endforeach; ?>
                             </div>
