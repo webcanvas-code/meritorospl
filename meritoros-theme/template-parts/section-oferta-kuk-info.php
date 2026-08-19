@@ -99,6 +99,22 @@ for ($i = 1; $i <= 6; $i++) {
                     </li>
                     <?php endforeach; ?>
                 </ul>
+
+                <?php if ($mile_widziane) : ?>
+                <div class="mt-8 pt-8 border-t border-slate-100">
+                    <h3 class="text-lg font-semibold text-slate-600 mb-4">Mile widziane</h3>
+                    <ul class="space-y-4">
+                        <?php foreach ($mile_widziane as $item) : ?>
+                        <li class="flex items-start gap-3">
+                            <span class="w-6 h-6 rounded-full bg-amber-50 flex items-center justify-center flex-shrink-0 mt-0.5">
+                                <i data-lucide="plus" class="w-3.5 h-3.5 text-amber-500"></i>
+                            </span>
+                            <span class="text-lg text-slate-700 leading-relaxed"><?php echo mer_esc($item); ?></span>
+                        </li>
+                        <?php endforeach; ?>
+                    </ul>
+                </div>
+                <?php endif; ?>
             </div>
             <?php endif; ?>
 
@@ -125,26 +141,6 @@ for ($i = 1; $i <= 6; $i++) {
         </div>
         <?php endif; ?>
 
-        <?php if ($mile_widziane) : ?>
-        <div class="mt-12 pt-12 border-t border-slate-100">
-            <div class="flex items-center gap-3 mb-8">
-                <span class="w-10 h-10 rounded-xl bg-amber-50 flex items-center justify-center flex-shrink-0">
-                    <i data-lucide="star" class="w-5 h-5 text-amber-500"></i>
-                </span>
-                <h2 class="text-2xl md:text-3xl font-bold text-slate-900">Mile widziane</h2>
-            </div>
-            <ul class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                <?php foreach ($mile_widziane as $item) : ?>
-                <li class="flex items-start gap-3">
-                    <span class="w-6 h-6 rounded-full bg-amber-50 flex items-center justify-center flex-shrink-0 mt-0.5">
-                        <i data-lucide="plus" class="w-3.5 h-3.5 text-amber-500"></i>
-                    </span>
-                    <span class="text-lg text-slate-700 leading-relaxed"><?php echo mer_esc($item); ?></span>
-                </li>
-                <?php endforeach; ?>
-            </ul>
-        </div>
-        <?php endif; ?>
 
     </div>
 </section>
