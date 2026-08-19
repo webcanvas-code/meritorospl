@@ -3013,6 +3013,9 @@ acf_add_local_field_group([
         ['key' => 'field_op_intro', 'label' => 'Akapit wstępny', 'name' => 'op_intro', 'type' => 'textarea',
          'instructions' => 'Opcjonalny akapit wyświetlany nad zakresem obowiązków i wymaganiami. Zostaw puste, jeśli nie potrzebujesz.',
          'rows' => 6, 'new_lines' => 'br'],
+        ['key' => 'field_op_team_info', 'label' => 'Informacje o zespole', 'name' => 'op_team_info', 'type' => 'textarea',
+         'instructions' => 'Opcjonalny akapit o zespole, wyświetlany pod wstępem. Zostaw puste, jeśli nie potrzebujesz.',
+         'rows' => 5, 'new_lines' => 'br'],
 
         // ── TAB: Obowiązki ────────────────────────────────────
         ['key' => 'field_op_tab_duty', 'label' => 'Zakres obowiązków', 'name' => '', 'type' => 'tab'],

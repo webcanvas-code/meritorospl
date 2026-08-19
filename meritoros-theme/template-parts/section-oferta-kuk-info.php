@@ -1,5 +1,6 @@
 <?php
-$intro = mer_field('op_intro', '');
+$intro     = mer_field('op_intro', '');
+$team_info = mer_field('op_team_info', '');
 
 // Obowiązki – do 12 pól ACF; jeśli puste, fallback dla oferty Księgowej z j. ukraińskim
 $duty_fallbacks = [
@@ -48,11 +49,21 @@ for ($i = 1; $i <= 6; $i++) {
 
     <div class="relative z-10 max-w-7xl mx-auto px-6">
 
-        <?php if ($intro) : ?>
-        <div class="mb-12 max-w-5xl">
+        <?php if ($intro || $team_info) : ?>
+        <div class="mb-12 max-w-5xl space-y-6">
+            <?php if ($intro) : ?>
             <div class="text-lg text-slate-600 leading-relaxed">
                 <?php echo wp_kses_post($intro); ?>
             </div>
+            <?php endif; ?>
+            <?php if ($team_info) : ?>
+            <div>
+                <h3 class="text-base font-semibold text-slate-400 uppercase tracking-wider mb-2">Informacje o zespole</h3>
+                <div class="text-lg text-slate-600 leading-relaxed">
+                    <?php echo wp_kses_post($team_info); ?>
+                </div>
+            </div>
+            <?php endif; ?>
         </div>
         <?php endif; ?>
 
