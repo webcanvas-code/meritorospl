@@ -299,7 +299,7 @@ $total = count($items);
             <div id="cs-dots" class="flex flex-wrap justify-center gap-2 sm:justify-end" aria-label="<?php esc_attr_e('Nawigacja slajdów', 'meritoros'); ?>">
                 <?php for ($i = 0; $i < $total; $i++) : ?>
                     <button type="button" data-index="<?php echo $i; ?>"
-                            class="cs-dot h-2 rounded-full transition-all duration-300 <?php echo $i === 0 ? 'w-8 bg-[#00d084] ring-2 ring-[#00d084]/25' : 'w-2 bg-slate-200 hover:bg-slate-300'; ?>"
+                            class="cs-dot h-2 rounded-full transition-all duration-300 <?php echo $i === 0 ? 'w-6 bg-[#00d084]' : 'w-2 bg-slate-300'; ?>"
                             aria-label="<?php printf(esc_attr__('Historia %d z %d', 'meritoros'), $i + 1, $total); ?>"
                             aria-current="<?php echo $i === 0 ? 'true' : 'false'; ?>">
                     </button>

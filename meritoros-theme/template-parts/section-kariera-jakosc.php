@@ -56,7 +56,7 @@ for ($i = 1; $i <= 3; $i++) {
                 </button>
                 <div class="flex items-center justify-center gap-2 mt-5" id="jakosc-dots">
                     <?php foreach ($slides as $idx => $slide) : ?>
-                    <button class="jakosc-dot <?php echo $idx === 0 ? 'w-2.5 h-2.5 bg-[#00d084]' : 'w-2 h-2 bg-slate-300 hover:bg-slate-400'; ?> rounded-full transition-all" data-idx="<?php echo $idx; ?>"></button>
+                    <button class="jakosc-dot <?php echo $idx === 0 ? 'w-6 h-2 bg-[#00d084]' : 'w-2 h-2 bg-slate-300'; ?> rounded-full transition-all duration-300" data-idx="<?php echo $idx; ?>"></button>
                     <?php endforeach; ?>
                 </div>
             </div>
@@ -101,12 +101,7 @@ for ($i = 1; $i <= 3; $i++) {
         current = idx;
         track.style.transform = 'translateX(-' + (idx * 100) + '%)';
         dots.forEach(function (d, i) {
-            d.classList.toggle('bg-[#00d084]', i === idx);
-            d.classList.toggle('w-2.5',          i === idx);
-            d.classList.toggle('h-2.5',          i === idx);
-            d.classList.toggle('bg-slate-300',   i !== idx);
-            d.classList.toggle('w-2',            i !== idx);
-            d.classList.toggle('h-2',            i !== idx);
+            d.className = 'jakosc-dot rounded-full transition-all duration-300 ' + (i === idx ? 'w-6 h-2 bg-[#00d084]' : 'w-2 h-2 bg-slate-300');
         });
         updateBtns();
     }

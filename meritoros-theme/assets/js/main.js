@@ -81,12 +81,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         dots.forEach((dot, i) => {
             const active = i === current;
-            dot.classList.toggle('bg-[#48c279]',      active);
-            dot.classList.toggle('w-8',                active);
-            dot.classList.toggle('ring-2',             active);
-            dot.classList.toggle('ring-[#48c279]/25',  active);
-            dot.classList.toggle('bg-slate-200',      !active);
-            dot.classList.toggle('w-2',               !active);
+            dot.className = 'cs-dot h-2 rounded-full transition-all duration-300 ' + (active ? 'w-6 bg-[#00d084]' : 'w-2 bg-slate-300');
             dot.setAttribute('aria-current', active ? 'true' : 'false');
         });
     };
