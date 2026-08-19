@@ -266,10 +266,24 @@ usort($all_posts, function ($a, $b) {
                         <?php endif; ?>
                     <?php else : ?>
                         <!-- Regular photo -->
+                        <?php
+                        // Obsłuż oba formaty ACF (array lub integer ID) + fallback na Featured Image
+                        $_ma_url = '';
+                        $_ma_alt = get_the_title($post);
+                        if (is_array($photo) && !empty($photo['url'])) {
+                            $_ma_url = $photo['url'];
+                            $_ma_alt = $photo['alt'] ?: $_ma_alt;
+                        } elseif (is_numeric($photo) && (int) $photo > 0) {
+                            $_ma_url = wp_get_attachment_url((int) $photo) ?: '';
+                        }
+                        if (!$_ma_url) {
+                            $_ma_url = get_the_post_thumbnail_url($post, 'large') ?: '';
+                        }
+                        ?>
                         <div class="relative aspect-video overflow-hidden bg-emerald-50">
-                            <?php if ($photo && is_array($photo)) : ?>
-                                <img src="<?php echo esc_url($photo['url']); ?>"
-                                     alt="<?php echo esc_attr($photo['alt'] ?: get_the_title($post)); ?>"
+                            <?php if ($_ma_url) : ?>
+                                <img src="<?php echo esc_url($_ma_url); ?>"
+                                     alt="<?php echo esc_attr($_ma_alt); ?>"
                                      class="w-full h-full object-cover" loading="lazy">
                             <?php else : ?>
                                 <div class="w-full h-full bg-emerald-50 flex items-center justify-center">
