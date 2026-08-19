@@ -29,7 +29,8 @@ if (empty($logos)) {
 
         <div class="flex flex-wrap items-center justify-between gap-y-8">
             <?php foreach ($logos as $logo) : ?>
-            <img src="<?php echo esc_url($logo['url']); ?>" alt="<?php echo esc_attr($logo['alt'] ?: 'System ERP'); ?>" class="h-11 w-auto object-contain" loading="lazy">
+            <?php $h = (stripos($logo['alt'] ?? '', 'enova') !== false) ? 'h-16' : 'h-11'; ?>
+            <img src="<?php echo esc_url($logo['url']); ?>" alt="<?php echo esc_attr($logo['alt'] ?: 'System ERP'); ?>" class="<?php echo $h; ?> w-auto object-contain" loading="lazy">
             <?php endforeach; ?>
         </div>
     </div>
