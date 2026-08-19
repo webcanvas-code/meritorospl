@@ -37,17 +37,17 @@ for ($i = 1; $i <= 8; $i++) {
         <div class="grid grid-cols-2 lg:grid-cols-4 gap-3 md:gap-4">
             <?php foreach ($bens as $ben) : ?>
             <div class="flex flex-col items-center text-center p-6 md:p-8 rounded-2xl border border-slate-100 bg-slate-50">
-                <div class="w-14 h-14 rounded-2xl bg-white border border-slate-100 shadow-sm flex items-center justify-center shrink-0 mb-5">
+                <p class="text-sm md:text-base font-semibold text-slate-900 leading-snug grow <?php echo $ben['text'] ? 'mb-2' : 'mb-5'; ?>"><?php echo mer_esc($ben['title']); ?></p>
+                <?php if ($ben['text']) : ?>
+                <p class="text-xs md:text-sm text-slate-400 leading-relaxed grow mb-5"><?php echo mer_esc($ben['text']); ?></p>
+                <?php endif; ?>
+                <div class="w-14 h-14 rounded-2xl bg-white border border-slate-100 shadow-sm flex items-center justify-center shrink-0">
                     <?php if (!empty($ben['img_url'])) : ?>
                     <img src="<?php echo $ben['img_url']; ?>" alt="<?php echo $ben['img_alt']; ?>" class="w-7 h-7 object-contain">
                     <?php else : ?>
                     <i data-lucide="<?php echo esc_attr($ben['icon']); ?>" stroke-width="1.5" class="w-7 h-7 text-[#00d084]"></i>
                     <?php endif; ?>
                 </div>
-                <p class="text-sm md:text-base font-semibold text-slate-900 leading-snug <?php echo $ben['text'] ? 'mb-2' : ''; ?>"><?php echo mer_esc($ben['title']); ?></p>
-                <?php if ($ben['text']) : ?>
-                <p class="text-xs md:text-sm text-slate-400 leading-relaxed"><?php echo mer_esc($ben['text']); ?></p>
-                <?php endif; ?>
             </div>
             <?php endforeach; ?>
         </div>
