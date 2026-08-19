@@ -152,7 +152,7 @@ for ($i = 1; $i <= 2; $i++) {
                             <?php endforeach; ?>
                         </div>
                         <p class="text-xs text-slate-500 leading-relaxed line-clamp-3 mb-3"><?php echo mer_esc($slide['text']); ?></p>
-                        <a href="<?php echo esc_url($slide['slide_url']); ?>" class="mt-auto inline-flex px-5 py-2.5 rounded-full bg-[#00d084] text-white text-xs font-semibold hover:bg-[#00b872] transition-colors self-start">
+                        <a href="<?php echo esc_url($slide['slide_url']); ?>" class="mt-auto inline-flex px-5 py-2.5 rounded-full bg-white text-slate-700 text-xs font-semibold border border-slate-200 hover:border-slate-300 hover:bg-slate-50 transition-colors self-start">
                             <?php echo mer_esc($slide['btn_text']); ?>
                         </a>
                     </div>

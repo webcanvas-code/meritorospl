@@ -42,17 +42,11 @@ for ($i = 1; $i <= 4; $i++) {
     <div class="max-w-7xl mx-auto px-6">
         <div class="overflow-hidden">
         <div id="uk-dlaczego-track" class="flex gap-4 transition-transform duration-500 ease-in-out">
-            <?php foreach ($cards as $card) :
-                $is_green = $card['highlighted'];
-                $bg       = $is_green ? 'bg-[#00d084]' : 'bg-white border border-slate-200';
-                $icon_cls = $is_green ? 'text-white/80' : 'text-[#00d084]';
-                $title_cls = $is_green ? 'text-white' : 'text-slate-900';
-                $text_cls  = $is_green ? 'text-white/75' : 'text-slate-500';
-            ?>
-            <div class="<?php echo $bg; ?> rounded-2xl p-8 flex flex-col min-w-[85%] sm:min-w-[calc(50%-12px)] lg:w-[400px] lg:min-w-[400px] lg:h-[325px]">
-                <i data-lucide="<?php echo esc_attr($card['icon']); ?>" stroke-width="1" class="w-14 h-14 <?php echo $icon_cls; ?> mb-8"></i>
-                <h3 class="text-xl md:text-2xl font-bold <?php echo $title_cls; ?> mb-3 leading-snug"><?php echo nl2br(esc_html($card['title'])); ?></h3>
-                <p class="text-base md:text-lg <?php echo $text_cls; ?> leading-relaxed"><?php echo mer_esc($card['text']); ?></p>
+            <?php foreach ($cards as $card) : ?>
+            <div class="bg-white border border-slate-200 rounded-2xl p-8 flex flex-col min-w-[85%] sm:min-w-[calc(50%-12px)] lg:w-[400px] lg:min-w-[400px] lg:h-[325px]">
+                <i data-lucide="<?php echo esc_attr($card['icon']); ?>" stroke-width="1" class="w-14 h-14 text-[#00d084] mb-8"></i>
+                <h3 class="text-xl md:text-2xl font-bold text-slate-900 mb-3 leading-snug"><?php echo nl2br(esc_html($card['title'])); ?></h3>
+                <p class="text-base md:text-lg text-slate-500 leading-relaxed"><?php echo mer_esc($card['text']); ?></p>
             </div>
             <?php endforeach; ?>
         </div>

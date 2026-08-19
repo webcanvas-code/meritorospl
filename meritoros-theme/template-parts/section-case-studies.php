@@ -266,7 +266,7 @@ $total = count($items);
                         <?php endif; ?>
 
                         <a href="<?php echo esc_url($item['cta_url']); ?>"
-                           class="inline-flex w-full sm:w-auto min-h-[48px] items-center justify-center gap-2 rounded-full bg-[#00d084] px-5 py-3.5 text-sm font-semibold text-white shadow-md shadow-[#00d084]/25 transition hover:bg-[#00b872] hover:shadow-lg hover:shadow-[#00d084]/30 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#00d084] group/cta">
+                           class="inline-flex w-full sm:w-auto min-h-[48px] items-center justify-center gap-2 rounded-full bg-white border border-slate-200 px-5 py-3.5 text-sm font-semibold text-slate-700 transition hover:border-slate-300 hover:bg-slate-50 group/cta">
                             <?php esc_html_e('Poznaj więcej historii', 'meritoros'); ?>
                             <i data-lucide="arrow-right" class="w-4 h-4 transition group-hover/cta:translate-x-0.5"></i>
                         </a>
