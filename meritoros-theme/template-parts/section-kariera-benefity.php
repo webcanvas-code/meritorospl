@@ -36,8 +36,8 @@ for ($i = 1; $i <= 8; $i++) {
         <h2 class="text-pretty text-4xl md:text-5xl font-bold tracking-tight text-slate-900 text-center mb-12"><?php echo mer_esc($title); ?></h2>
         <div class="grid grid-cols-2 lg:grid-cols-4 gap-3 md:gap-4">
             <?php foreach ($bens as $ben) : ?>
-            <div class="group flex flex-col items-center text-center p-6 md:p-8 rounded-2xl border border-slate-100 bg-slate-50 hover:border-emerald-200 hover:bg-emerald-50/40 transition-all duration-300">
-                <div class="w-14 h-14 rounded-2xl bg-white border border-slate-100 shadow-sm flex items-center justify-center shrink-0 mb-5 group-hover:border-emerald-200 group-hover:shadow-emerald-100/50 group-hover:shadow-md transition-all duration-300">
+            <div class="flex flex-col items-center text-center p-6 md:p-8 rounded-2xl border border-slate-100 bg-slate-50">
+                <div class="w-14 h-14 rounded-2xl bg-white border border-slate-100 shadow-sm flex items-center justify-center shrink-0 mb-5">
                     <?php if (!empty($ben['img_url'])) : ?>
                     <img src="<?php echo $ben['img_url']; ?>" alt="<?php echo $ben['img_alt']; ?>" class="w-7 h-7 object-contain">
                     <?php else : ?>
@@ -50,6 +50,11 @@ for ($i = 1; $i <= 8; $i++) {
                 <?php endif; ?>
             </div>
             <?php endforeach; ?>
+        </div>
+        <div class="mt-10 flex justify-center">
+            <a href="#faq" class="inline-flex items-center gap-2 px-7 py-3 rounded-full bg-slate-100 text-slate-700 text-base font-medium hover:bg-slate-200 transition-colors">
+                Pytania od kandydatów
+            </a>
         </div>
     </div>
 </section>
