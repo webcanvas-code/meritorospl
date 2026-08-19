@@ -69,7 +69,8 @@ $first_cat  = ! empty($categories) ? $categories[0] : null;
 
         <div class="absolute -right-32 top-0 w-[560px] h-[560px] rounded-full border-[48px] border-emerald-100/60 pointer-events-none" aria-hidden="true"></div>
 
-        <div class="max-w-2xl mx-auto px-6 relative z-10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        <div class="max-w-4xl">
 
             <!-- Breadcrumbs -->
             <nav class="flex items-center gap-2 text-sm text-slate-400 mb-10 flex-wrap">
@@ -110,21 +111,25 @@ $first_cat  = ! empty($categories) ? $categories[0] : null;
             <?php endif; ?>
 
         </div>
+        </div>
     </section>
 
     <!-- Featured image -->
     <?php if (has_post_thumbnail()) : ?>
-    <div class="max-w-3xl mx-auto px-6 mb-12">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-12">
+        <div class="max-w-4xl">
         <?php the_post_thumbnail('large', [
             'class' => 'w-full rounded-2xl object-cover',
             'style' => 'max-height: 480px;',
         ]); ?>
+        </div>
     </div>
     <?php endif; ?>
 
     <!-- Treść -->
     <section class="pb-20 md:pb-28">
-        <div class="max-w-2xl mx-auto px-6">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="max-w-4xl">
 
             <div class="post-content text-base">
                 <?php the_content(); ?>
@@ -154,6 +159,7 @@ $first_cat  = ! empty($categories) ? $categories[0] : null;
                 </a>
             </div>
 
+        </div>
         </div>
     </section>
 
