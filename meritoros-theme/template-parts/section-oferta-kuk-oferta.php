@@ -61,10 +61,12 @@ $karty = [
                     </li>
                     <?php endforeach; ?>
                 </ul>
-                <h3 class="text-xl font-bold text-slate-900"><?php echo mer_esc($karta['title']); ?></h3>
-                <span class="w-12 h-12 rounded-xl bg-[#00d084]/10 flex items-center justify-center flex-shrink-0">
-                    <i data-lucide="<?php echo esc_attr($karta['icon']); ?>" class="w-6 h-6 text-[#00d084]"></i>
-                </span>
+                <div class="mt-auto flex items-center gap-3">
+                    <span class="w-12 h-12 rounded-xl bg-[#00d084]/10 flex items-center justify-center flex-shrink-0">
+                        <i data-lucide="<?php echo esc_attr($karta['icon']); ?>" class="w-6 h-6 text-[#00d084]"></i>
+                    </span>
+                    <h3 class="text-xl font-bold text-slate-900"><?php echo mer_esc($karta['title']); ?></h3>
+                </div>
             </div>
             <?php endforeach; ?>
         </div>
