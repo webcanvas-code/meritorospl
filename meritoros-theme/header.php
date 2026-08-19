@@ -81,7 +81,7 @@ unset($__item);
 
         <!-- Logo -->
         <a href="<?php echo esc_url(home_url('/')); ?>" class="flex items-center shrink-0">
-            <img src="<?php echo esc_url(get_template_directory_uri() . '/images/logo.svg'); ?>" alt="<?php bloginfo('name'); ?>" class="h-7 w-auto block" loading="eager" width="160" height="28">
+            <img src="<?php echo esc_url(get_template_directory_uri() . '/images/logo.svg'); ?>" alt="<?php bloginfo('name'); ?>" class="h-8 w-auto block" loading="eager" width="160" height="32">
         </a>
 
         <!-- Desktop Nav -->
