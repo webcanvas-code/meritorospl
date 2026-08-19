@@ -1,10 +1,7 @@
 <?php
-$title        = mer_field('uk_oferta_title',       'Oferta rozwiązań księgowych');
-$sub_pre1     = mer_field('uk_oferta_sub_pre1',    'Obsługujemy firmy na różnych formach rozliczeń zarówno w');
-$sub_green1   = mer_field('uk_oferta_sub_green1',  'pełnej księgowości (spółki)');
-$sub_pre2     = mer_field('uk_oferta_sub_pre2',    ', jak i w');
-$sub_green2   = mer_field('uk_oferta_sub_green2',  'uproszczonych formach ewidencji (np. KPiR)');
-$sub_note     = mer_field('uk_oferta_sub_note',    'Poniżej pokazujemy przykładowy zakres działań. Jeśli potrzebujesz innej usługi chętnie porozmawiamy.');
+$title        = mer_field('uk_oferta_title',    'Oferta rozwiązań księgowych');
+$subtitle     = mer_field('uk_oferta_subtitle', "Obsługujemy firmy na różnych formach rozliczeń zarówno w pełnej księgowości (spółki),\njak i w uproszczonych formach ewidencji (np. KPiR)");
+$sub_note     = mer_field('uk_oferta_sub_note', 'Poniżej pokazujemy przykładowy zakres działań. Jeśli potrzebujesz innej usługi chętnie porozmawiamy.');
 $btn1_text    = mer_field('uk_oferta_btn1_text',   'Sprawdź również rozwiązania kadrowe');
 $btn1_url     = mer_field('uk_oferta_btn1_url',    home_url('/kadry-i-place/'));
 $btn2_text    = mer_field('uk_oferta_btn2_text',   'Oszacuj wstępną wycenę');
@@ -19,10 +16,8 @@ $items = array_values(array_filter(array_map('trim', preg_split('/(\r?\n){2,}/',
 
     <div class="max-w-7xl mx-auto px-6 relative z-10">
         <h2 class="text-pretty text-4xl md:text-5xl font-bold tracking-tight text-slate-900 mb-4"><?php echo mer_esc($title); ?></h2>
-        <p class="text-base text-slate-800 font-medium leading-relaxed mb-2 max-w-3xl">
-            <?php echo mer_esc($sub_pre1); ?> <span class="font-semibold text-slate-900"><?php echo mer_esc($sub_green1); ?></span><?php echo mer_esc($sub_pre2); ?> <span class="font-semibold text-slate-900"><?php echo mer_esc($sub_green2); ?></span>
-        </p>
-        <p class="text-sm text-slate-400 mb-8"><?php echo mer_esc($sub_note); ?></p>
+        <p class="text-base text-slate-800 font-medium leading-relaxed mb-2 max-w-3xl"><?php echo nl2br(esc_html($subtitle)); ?></p>
+        <p class="text-sm text-slate-600 mb-8"><?php echo mer_esc($sub_note); ?></p>
 
         <div class="rounded-2xl border border-slate-200 overflow-hidden mb-8">
             <div class="grid md:grid-cols-2 lg:grid-cols-3">
