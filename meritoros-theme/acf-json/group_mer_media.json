@@ -275,6 +275,58 @@
                 "mime_types": "mp4,webm",
                 "library": "all",
                 "min_size": "", "max_size": ""
+            },
+            {
+                "instructions": "Wideo 2 — zostaw puste jeśli nieużywane",
+                "required": 0, "conditional_logic": 0,
+                "wrapper": {"width": "", "class": "", "id": ""},
+                "key": "field_media_vid_2", "label": "Wideo 2", "name": "media_vid_2", "type": "group", "layout": "block",
+                "sub_fields": [
+                    {"key": "field_media_vid_2_title", "label": "Tytuł", "name": "title", "type": "text", "default_value": "", "placeholder": "", "prepend": "", "append": "", "maxlength": "", "required": 0, "conditional_logic": 0, "wrapper": {"width": "", "class": "", "id": ""}},
+                    {"key": "field_media_vid_2_text", "label": "Opis", "name": "text", "type": "textarea", "rows": 3, "default_value": "", "placeholder": "", "maxlength": "", "new_lines": "", "required": 0, "conditional_logic": 0, "wrapper": {"width": "", "class": "", "id": ""}},
+                    {"key": "field_media_vid_2_btn", "label": "Tekst przycisku", "name": "btn_text", "type": "text", "default_value": "Obejrzyj materiał", "placeholder": "", "prepend": "", "append": "", "maxlength": "", "required": 0, "conditional_logic": 0, "wrapper": {"width": "", "class": "", "id": ""}},
+                    {"key": "field_media_vid_2_url", "label": "URL wideo (YouTube / Vimeo)", "name": "vid_url", "type": "text", "instructions": "Wklej link YouTube lub Vimeo.", "default_value": "", "placeholder": "", "prepend": "", "append": "", "maxlength": "", "required": 0, "conditional_logic": 0, "wrapper": {"width": "", "class": "", "id": ""}},
+                    {"key": "field_media_vid_2_thumb", "label": "Miniatura wideo", "name": "thumbnail", "type": "image", "return_format": "array", "preview_size": "medium", "library": "all", "min_width": "", "min_height": "", "min_size": "", "max_width": "", "max_height": "", "max_size": "", "mime_types": "", "required": 0, "conditional_logic": 0, "wrapper": {"width": "", "class": "", "id": ""}}
+                ]
+            },
+            {
+                "instructions": "Wideo 3 — zostaw puste jeśli nieużywane",
+                "required": 0, "conditional_logic": 0,
+                "wrapper": {"width": "", "class": "", "id": ""},
+                "key": "field_media_vid_3", "label": "Wideo 3", "name": "media_vid_3", "type": "group", "layout": "block",
+                "sub_fields": [
+                    {"key": "field_media_vid_3_title", "label": "Tytuł", "name": "title", "type": "text", "default_value": "", "placeholder": "", "prepend": "", "append": "", "maxlength": "", "required": 0, "conditional_logic": 0, "wrapper": {"width": "", "class": "", "id": ""}},
+                    {"key": "field_media_vid_3_text", "label": "Opis", "name": "text", "type": "textarea", "rows": 3, "default_value": "", "placeholder": "", "maxlength": "", "new_lines": "", "required": 0, "conditional_logic": 0, "wrapper": {"width": "", "class": "", "id": ""}},
+                    {"key": "field_media_vid_3_btn", "label": "Tekst przycisku", "name": "btn_text", "type": "text", "default_value": "Obejrzyj materiał", "placeholder": "", "prepend": "", "append": "", "maxlength": "", "required": 0, "conditional_logic": 0, "wrapper": {"width": "", "class": "", "id": ""}},
+                    {"key": "field_media_vid_3_url", "label": "URL wideo (YouTube / Vimeo)", "name": "vid_url", "type": "text", "instructions": "Wklej link YouTube lub Vimeo.", "default_value": "", "placeholder": "", "prepend": "", "append": "", "maxlength": "", "required": 0, "conditional_logic": 0, "wrapper": {"width": "", "class": "", "id": ""}},
+                    {"key": "field_media_vid_3_thumb", "label": "Miniatura wideo", "name": "thumbnail", "type": "image", "return_format": "array", "preview_size": "medium", "library": "all", "min_width": "", "min_height": "", "min_size": "", "max_width": "", "max_height": "", "max_size": "", "mime_types": "", "required": 0, "conditional_logic": 0, "wrapper": {"width": "", "class": "", "id": ""}}
+                ]
+            },
+            {
+                "instructions": "Wideo 4 — zostaw puste jeśli nieużywane",
+                "required": 0, "conditional_logic": 0,
+                "wrapper": {"width": "", "class": "", "id": ""},
+                "key": "field_media_vid_4", "label": "Wideo 4", "name": "media_vid_4", "type": "group", "layout": "block",
+                "sub_fields": [
+                    {"key": "field_media_vid_4_title", "label": "Tytuł", "name": "title", "type": "text", "default_value": "", "placeholder": "", "prepend": "", "append": "", "maxlength": "", "required": 0, "conditional_logic": 0, "wrapper": {"width": "", "class": "", "id": ""}},
+                    {"key": "field_media_vid_4_text", "label": "Opis", "name": "text", "type": "textarea", "rows": 3, "default_value": "", "placeholder": "", "maxlength": "", "new_lines": "", "required": 0, "conditional_logic": 0, "wrapper": {"width": "", "class": "", "id": ""}},
+                    {"key": "field_media_vid_4_btn", "label": "Tekst przycisku", "name": "btn_text", "type": "text", "default_value": "Obejrzyj materiał", "placeholder": "", "prepend": "", "append": "", "maxlength": "", "required": 0, "conditional_logic": 0, "wrapper": {"width": "", "class": "", "id": ""}},
+                    {"key": "field_media_vid_4_url", "label": "URL wideo (YouTube / Vimeo)", "name": "vid_url", "type": "text", "instructions": "Wklej link YouTube lub Vimeo.", "default_value": "", "placeholder": "", "prepend": "", "append": "", "maxlength": "", "required": 0, "conditional_logic": 0, "wrapper": {"width": "", "class": "", "id": ""}},
+                    {"key": "field_media_vid_4_thumb", "label": "Miniatura wideo", "name": "thumbnail", "type": "image", "return_format": "array", "preview_size": "medium", "library": "all", "min_width": "", "min_height": "", "min_size": "", "max_width": "", "max_height": "", "max_size": "", "mime_types": "", "required": 0, "conditional_logic": 0, "wrapper": {"width": "", "class": "", "id": ""}}
+                ]
+            },
+            {
+                "instructions": "Wideo 5 — zostaw puste jeśli nieużywane",
+                "required": 0, "conditional_logic": 0,
+                "wrapper": {"width": "", "class": "", "id": ""},
+                "key": "field_media_vid_5", "label": "Wideo 5", "name": "media_vid_5", "type": "group", "layout": "block",
+                "sub_fields": [
+                    {"key": "field_media_vid_5_title", "label": "Tytuł", "name": "title", "type": "text", "default_value": "", "placeholder": "", "prepend": "", "append": "", "maxlength": "", "required": 0, "conditional_logic": 0, "wrapper": {"width": "", "class": "", "id": ""}},
+                    {"key": "field_media_vid_5_text", "label": "Opis", "name": "text", "type": "textarea", "rows": 3, "default_value": "", "placeholder": "", "maxlength": "", "new_lines": "", "required": 0, "conditional_logic": 0, "wrapper": {"width": "", "class": "", "id": ""}},
+                    {"key": "field_media_vid_5_btn", "label": "Tekst przycisku", "name": "btn_text", "type": "text", "default_value": "Obejrzyj materiał", "placeholder": "", "prepend": "", "append": "", "maxlength": "", "required": 0, "conditional_logic": 0, "wrapper": {"width": "", "class": "", "id": ""}},
+                    {"key": "field_media_vid_5_url", "label": "URL wideo (YouTube / Vimeo)", "name": "vid_url", "type": "text", "instructions": "Wklej link YouTube lub Vimeo.", "default_value": "", "placeholder": "", "prepend": "", "append": "", "maxlength": "", "required": 0, "conditional_logic": 0, "wrapper": {"width": "", "class": "", "id": ""}},
+                    {"key": "field_media_vid_5_thumb", "label": "Miniatura wideo", "name": "thumbnail", "type": "image", "return_format": "array", "preview_size": "medium", "library": "all", "min_width": "", "min_height": "", "min_size": "", "max_width": "", "max_height": "", "max_size": "", "mime_types": "", "required": 0, "conditional_logic": 0, "wrapper": {"width": "", "class": "", "id": ""}}
+                ]
             }
         ],
         "location": [

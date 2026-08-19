@@ -246,3 +246,7 @@ section, main > * {
 .ri-table-scroll::-webkit-scrollbar-track { background: #e2e8f0; border-radius: 9999px; }
 .ri-table-scroll::-webkit-scrollbar-thumb { background: #00d084; border-radius: 9999px; }
 .ri-table-scroll { scrollbar-width: thin; scrollbar-color: #00d084 #e2e8f0; }
+
+/* Slider wideo — ukryj scrollbar */
+#mvid-slider::-webkit-scrollbar { display: none; }
+#mvid-slider { -ms-overflow-style: none; scrollbar-width: none; }
