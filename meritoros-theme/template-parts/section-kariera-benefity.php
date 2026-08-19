@@ -2,7 +2,7 @@
 $title = mer_field('kar_ben_title', __('Nasze benefity', 'meritoros'));
 
 $ben_defaults = [
-    ['icon' => 'clock',          'title' => __('Elastyczny czas pracy sam wybierasz o jakiej porze pracujesz', 'meritoros'),       'text' => __('Zadaniowy tryb pracy: możesz dopasować start i przerwy do swojego dnia', 'meritoros')],
+    ['icon' => 'clock',          'title' => __('Elastyczny czas pracy', 'meritoros'),       'text' => __('Zadaniowy tryb pracy: możesz dopasować start i przerwy do swojego dnia', 'meritoros')],
     ['icon' => 'dumbbell',       'title' => __('Kartę Multisport', 'meritoros'),                                                    'text' => ''],
     ['icon' => 'heart-pulse',    'title' => __('Prywatną opiekę zdrowotną', 'meritoros'),                                          'text' => ''],
     ['icon' => 'sun',            'title' => __('Dodatkowe dni płatnego urlopu wypoczynkowego', 'meritoros'),                        'text' => __('razem z urlopem ustawowym jest to aż do 41 dni w roku!', 'meritoros')],
@@ -37,19 +37,19 @@ for ($i = 1; $i <= 8; $i++) {
         <div class="grid grid-cols-2 lg:grid-cols-4 gap-3 md:gap-4">
             <?php foreach ($bens as $ben) : ?>
             <div class="flex flex-col items-center text-center p-6 md:p-8 rounded-2xl border border-slate-100 bg-slate-50">
-                <?php if ($ben['text']) : ?>
-                <p class="text-xs md:text-sm text-slate-400 leading-relaxed grow mb-4"><?php echo mer_esc($ben['text']); ?></p>
-                <?php else : ?>
-                <div class="grow"></div>
-                <?php endif; ?>
-                <p class="text-sm md:text-base font-semibold text-slate-900 leading-snug mb-4"><?php echo mer_esc($ben['title']); ?></p>
-                <div class="w-14 h-14 rounded-2xl bg-white border border-slate-100 shadow-sm flex items-center justify-center shrink-0">
+                <div class="w-14 h-14 rounded-2xl bg-white border border-slate-100 shadow-sm flex items-center justify-center shrink-0 mb-4">
                     <?php if (!empty($ben['img_url'])) : ?>
                     <img src="<?php echo $ben['img_url']; ?>" alt="<?php echo $ben['img_alt']; ?>" class="w-7 h-7 object-contain">
                     <?php else : ?>
                     <i data-lucide="<?php echo esc_attr($ben['icon']); ?>" stroke-width="1.5" class="w-7 h-7 text-[#00d084]"></i>
                     <?php endif; ?>
                 </div>
+                <p class="text-sm md:text-base font-semibold text-slate-900 leading-snug mb-4"><?php echo mer_esc($ben['title']); ?></p>
+                <?php if ($ben['text']) : ?>
+                <p class="text-xs md:text-sm text-slate-400 leading-relaxed grow"><?php echo mer_esc($ben['text']); ?></p>
+                <?php else : ?>
+                <div class="grow"></div>
+                <?php endif; ?>
             </div>
             <?php endforeach; ?>
         </div>

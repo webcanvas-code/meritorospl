@@ -53,11 +53,7 @@ $karty = [
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
             <?php foreach ($karty as $karta) : ?>
             <div class="bg-white rounded-2xl p-8 border border-slate-200 flex flex-col gap-5">
-                <span class="w-12 h-12 rounded-xl bg-[#00d084]/10 flex items-center justify-center flex-shrink-0">
-                    <i data-lucide="<?php echo esc_attr($karta['icon']); ?>" class="w-6 h-6 text-[#00d084]"></i>
-                </span>
-                <h3 class="text-xl font-bold text-slate-900"><?php echo mer_esc($karta['title']); ?></h3>
-                <ul class="space-y-2.5 mt-auto">
+                <ul class="space-y-2.5 grow">
                     <?php foreach ($karta['items'] as $item) : ?>
                     <li class="flex items-start gap-2 text-lg text-slate-600 leading-snug">
                         <i data-lucide="check" class="w-4 h-4 text-[#00d084] flex-shrink-0 mt-0.5"></i>
@@ -65,6 +61,10 @@ $karty = [
                     </li>
                     <?php endforeach; ?>
                 </ul>
+                <h3 class="text-xl font-bold text-slate-900"><?php echo mer_esc($karta['title']); ?></h3>
+                <span class="w-12 h-12 rounded-xl bg-[#00d084]/10 flex items-center justify-center flex-shrink-0">
+                    <i data-lucide="<?php echo esc_attr($karta['icon']); ?>" class="w-6 h-6 text-[#00d084]"></i>
+                </span>
             </div>
             <?php endforeach; ?>
         </div>
