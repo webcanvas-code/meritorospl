@@ -24,75 +24,79 @@ $m2_img_alt = is_array($m2_image) ? esc_attr($m2_image['alt'] ?: 'Outsourcing') 
 ?>
 
 <style>
-.mer-model-expand {
-    display: grid;
-    grid-template-rows: 0fr;
-    transition: grid-template-rows 0.45s cubic-bezier(.4,0,.2,1);
+.mer-model-panel {
+    transform: translateY(100%);
+    transition: transform 0.4s cubic-bezier(.4,0,.2,1);
 }
-.mer-model-expand > div { overflow: hidden; }
-.mer-model-chevron { transition: transform 0.3s ease; }
 @media (hover: hover) {
-    .mer-model-card:hover .mer-model-expand { grid-template-rows: 1fr; }
-    .mer-model-card:hover .mer-model-chevron { transform: rotate(180deg); }
+    .mer-model-card:hover .mer-model-panel { transform: translateY(0); }
 }
-.mer-model-card.open .mer-model-expand { grid-template-rows: 1fr; }
-.mer-model-card.open .mer-model-chevron { transform: rotate(180deg); }
+.mer-model-card.open .mer-model-panel { transform: translateY(0); }
 </style>
 
-<section class="py-12 md:py-24 bg-emerald-50 relative overflow-hidden">
-    <div class="max-w-7xl mx-auto px-6 relative z-10">
+<section class="py-12 md:py-24 bg-emerald-50">
+    <div class="max-w-7xl mx-auto px-6">
         <div class="text-center mb-8 md:mb-16">
             <h2 class="text-pretty text-4xl md:text-5xl font-bold tracking-tight mb-6"><?php echo mer_esc($title); ?></h2>
-            <p class="text-base sm:text-lg text-slate-500 max-w-4xl mx-auto"><?php echo nl2br(esc_html($subtitle)); ?></p>
+            <p class="text-base md:text-lg text-slate-500 max-w-4xl mx-auto"><?php echo nl2br(esc_html($subtitle)); ?></p>
         </div>
 
-        <div class="grid md:grid-cols-2 gap-6 md:gap-8 items-start">
+        <div class="grid md:grid-cols-2 gap-8">
 
             <!-- Karta 1: biała z ikoną -->
-            <div class="mer-model-card rounded-3xl bg-white border border-slate-200 p-8 md:p-10 cursor-pointer">
-                <div class="flex flex-col items-center text-center">
-                    <i data-lucide="<?php echo esc_attr($m1_icon); ?>" stroke-width="1" class="w-16 h-16 md:w-20 md:h-20 text-[#00d084] mb-6 opacity-80"></i>
-                    <h3 class="text-2xl md:text-3xl font-bold tracking-tight text-slate-900"><?php echo mer_esc($m1_title); ?></h3>
-                    <div class="mer-model-expand w-full mt-1">
-                        <div>
-                            <p class="text-base md:text-lg text-slate-500 leading-relaxed pt-4"><?php echo mer_esc($m1_text); ?></p>
-                            <?php if ($m1_btn_url) : ?>
-                            <div class="mt-6">
-                                <a href="<?php echo esc_url($m1_btn_url); ?>" class="inline-flex px-7 py-3 rounded-full bg-white text-slate-700 text-sm font-medium border border-slate-200 hover:border-slate-300 hover:bg-slate-50 transition-colors">
-                                    <?php echo mer_esc($m1_btn_text); ?>
-                                </a>
-                            </div>
-                            <?php endif; ?>
-                        </div>
-                    </div>
-                    <div class="mer-model-chevron mt-5">
-                        <i data-lucide="chevron-down" class="w-5 h-5 text-slate-300 stroke-[2]"></i>
-                    </div>
+            <div class="mer-model-card relative rounded-3xl overflow-hidden h-[420px] bg-white border border-slate-200 cursor-pointer">
+
+                <!-- Warstwa domyślna -->
+                <div class="absolute inset-0 flex flex-col items-center justify-center text-center p-10">
+                    <i data-lucide="<?php echo esc_attr($m1_icon); ?>" stroke-width="1" class="w-20 h-20 text-[#00d084] opacity-80 mb-6"></i>
+                    <h3 class="text-3xl font-bold text-slate-900"><?php echo mer_esc($m1_title); ?></h3>
                 </div>
+
+                <!-- Panel hover -->
+                <div class="mer-model-panel absolute inset-x-0 bottom-0 h-full bg-white p-10 flex flex-col justify-center">
+                    <i data-lucide="<?php echo esc_attr($m1_icon); ?>" stroke-width="0.5" class="absolute right-6 top-6 w-32 h-32 text-slate-100 pointer-events-none"></i>
+                    <h3 class="text-2xl font-bold text-slate-900 mb-4"><?php echo mer_esc($m1_title); ?></h3>
+                    <p class="text-lg text-slate-500 leading-relaxed"><?php echo mer_esc($m1_text); ?></p>
+                    <?php if ($m1_btn_url) : ?>
+                    <div class="mt-6">
+                        <a href="<?php echo esc_url($m1_btn_url); ?>" class="inline-flex px-7 py-3 rounded-full bg-white text-slate-700 text-sm font-medium border border-slate-200 hover:border-slate-300 hover:bg-slate-50 transition-colors">
+                            <?php echo mer_esc($m1_btn_text); ?>
+                        </a>
+                    </div>
+                    <?php endif; ?>
+                </div>
+
             </div>
 
             <!-- Karta 2: ze zdjęciem -->
-            <div class="mer-model-card rounded-3xl overflow-hidden relative cursor-pointer min-h-[280px]">
+            <div class="mer-model-card relative rounded-3xl overflow-hidden h-[420px] cursor-pointer">
+
                 <img src="<?php echo $m2_img_url; ?>" alt="<?php echo $m2_img_alt; ?>" class="absolute inset-0 w-full h-full object-cover" loading="lazy">
-                <div class="absolute inset-0 bg-gradient-to-t from-slate-900/85 via-slate-900/25 to-transparent"></div>
-                <div class="relative z-10 flex flex-col justify-end p-8 md:p-10 min-h-[280px]">
-                    <h3 class="text-2xl md:text-3xl font-bold tracking-tight text-white"><?php echo nl2br(esc_html($m2_title)); ?></h3>
-                    <div class="mer-model-expand mt-1">
-                        <div>
-                            <p class="text-base md:text-lg text-white/80 leading-relaxed pt-4"><?php echo mer_esc($m2_text); ?></p>
-                            <?php if ($m2_btn_url) : ?>
-                            <div class="mt-6">
-                                <a href="<?php echo esc_url($m2_btn_url); ?>" class="inline-flex px-7 py-3 rounded-full bg-white text-slate-800 text-sm font-medium border border-white/30 hover:bg-white/90 transition-colors">
-                                    <?php echo mer_esc($m2_btn_text); ?>
-                                </a>
-                            </div>
-                            <?php endif; ?>
+
+                <!-- Overlay domyślny -->
+                <div class="absolute inset-0 bg-slate-900/45"></div>
+
+                <!-- Warstwa domyślna -->
+                <div class="absolute inset-0 flex items-center justify-center text-center p-10">
+                    <h3 class="text-3xl font-bold text-white"><?php echo nl2br(esc_html($m2_title)); ?></h3>
+                </div>
+
+                <!-- Panel hover -->
+                <div class="mer-model-panel absolute inset-x-0 bottom-0 h-full flex flex-col justify-end p-10">
+                    <div class="absolute inset-0 bg-slate-900/75"></div>
+                    <div class="relative z-10">
+                        <h3 class="text-2xl font-bold text-white mb-4"><?php echo nl2br(esc_html($m2_title)); ?></h3>
+                        <p class="text-lg text-white/80 leading-relaxed"><?php echo mer_esc($m2_text); ?></p>
+                        <?php if ($m2_btn_url) : ?>
+                        <div class="mt-6">
+                            <a href="<?php echo esc_url($m2_btn_url); ?>" class="inline-flex px-7 py-3 rounded-full bg-white text-slate-800 text-sm font-medium border border-white/30 hover:bg-white/90 transition-colors">
+                                <?php echo mer_esc($m2_btn_text); ?>
+                            </a>
                         </div>
-                    </div>
-                    <div class="mer-model-chevron mt-4">
-                        <i data-lucide="chevron-down" class="w-5 h-5 text-white/50 stroke-[2]"></i>
+                        <?php endif; ?>
                     </div>
                 </div>
+
             </div>
 
         </div>
