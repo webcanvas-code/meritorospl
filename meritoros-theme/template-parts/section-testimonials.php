@@ -6,24 +6,30 @@ $label = (get_field('testimonials_label', $_test_id) ?: 'Opinie klientów');
 $title = (get_field('testimonials_title', $_test_id) ?: 'Sprawdź, co mówią o nas inni');
 
 $test_defaults = [
-    1 => ['company' => 'HPC',     'logo_html' => '<span class="text-xl font-bold tracking-tight text-[#5ba3d0]">HPC</span>',         'quote' => 'Mam księgowość w bezpiecznych rękach i wiem, że nie muszę się o to już martwić.',                                                         'author' => 'Sebastian Wiśniewski', 'role' => 'HP Cepolgol S.A.',              'initials' => 'SW', 'highlighted' => false],
-    2 => ['company' => 'Printbox','logo_html' => '<span class="text-lg font-bold tracking-tight text-white">Printbox</span>',        'quote' => 'Meritoros dostarczył nam stabilność i pewność, w trudnych momentach zawsze mamy właściwe odpowiedzi.',                                'author' => 'Michał Czaicki',       'role' => 'CEO & Co-Founder, Printbox', 'initials' => 'MC', 'highlighted' => true],
-    3 => ['company' => 'SITECH',  'logo_html' => '<span class="text-lg font-bold tracking-tight text-slate-900">SITECH</span>',      'quote' => 'Profesjonalizm na każdym kroku. Polecamy Meritoros każdej firmie, która ceni sobie bezpieczeństwo i jakość obsługi.',                  'author' => 'Anna Kowalczyk',       'role' => 'Dyrektor Finansowy, SITECH', 'initials' => 'AK', 'highlighted' => false],
+    1 => ['company' => 'HPC',     'logo_html' => '<span class="text-xl font-bold tracking-tight text-[#5ba3d0]">HPC</span>',         'quote' => 'Mam księgowość w bezpiecznych rękach i wiem, że nie muszę się o to już martwić.',                                                         'author' => 'Sebastian Wiśniewski', 'role' => 'HP Cepolgol S.A.',              'initials' => 'SW', 'highlighted' => false, 'industry' => ''],
+    2 => ['company' => 'Printbox','logo_html' => '<span class="text-lg font-bold tracking-tight text-white">Printbox</span>',        'quote' => 'Meritoros dostarczył nam stabilność i pewność, w trudnych momentach zawsze mamy właściwe odpowiedzi.',                                'author' => 'Michał Czaicki',       'role' => 'CEO & Co-Founder, Printbox', 'initials' => 'MC', 'highlighted' => true,  'industry' => ''],
+    3 => ['company' => 'SITECH',  'logo_html' => '<span class="text-lg font-bold tracking-tight text-slate-900">SITECH</span>',      'quote' => 'Profesjonalizm na każdym kroku. Polecamy Meritoros każdej firmie, która ceni sobie bezpieczeństwo i jakość obsługi.',                  'author' => 'Anna Kowalczyk',       'role' => 'Dyrektor Finansowy, SITECH', 'initials' => 'AK', 'highlighted' => false, 'industry' => ''],
+    4 => ['company' => '', 'logo_html' => '', 'quote' => '', 'author' => '', 'role' => '', 'initials' => '', 'highlighted' => false, 'industry' => ''],
+    5 => ['company' => '', 'logo_html' => '', 'quote' => '', 'author' => '', 'role' => '', 'initials' => '', 'highlighted' => false, 'industry' => ''],
+    6 => ['company' => '', 'logo_html' => '', 'quote' => '', 'author' => '', 'role' => '', 'initials' => '', 'highlighted' => false, 'industry' => ''],
 ];
 
 $items = [];
-for ($i = 1; $i <= 3; $i++) {
+for ($i = 1; $i <= 6; $i++) {
     $def          = $test_defaults[$i];
     $_company_acf = get_field("test_{$i}_company",  $_test_id);
     $_logo_acf    = get_field("test_{$i}_logo_html", $_test_id);
+    $quote        = get_field("test_{$i}_quote", $_test_id) ?: $def['quote'];
+    if (!$quote) continue;
     $items[] = [
         'company'           => $_company_acf ?: $def['company'],
         'company_logo_html' => $_logo_acf ?: ($_company_acf ? esc_html($_company_acf) : $def['logo_html']),
-        'quote'             => (get_field("test_{$i}_quote",        $_test_id) ?: $def['quote']),
+        'quote'             => $quote,
         'author'            => (get_field("test_{$i}_author",       $_test_id) ?: $def['author']),
         'role'              => (get_field("test_{$i}_role",         $_test_id) ?: $def['role']),
         'initials'          => (get_field("test_{$i}_initials",     $_test_id) ?: $def['initials']),
         'highlighted'       => (bool) (get_field("test_{$i}_highlighted", $_test_id) ?: $def['highlighted']),
+        'industry'          => (get_field("test_{$i}_industry",     $_test_id) ?: $def['industry']),
     ];
 }
 
@@ -77,6 +83,7 @@ for ($i = 1; $i <= 4; $i++) {
                 $author   = esc_html($item['author'] ?? '');
                 $role     = esc_html($item['role'] ?? '');
                 $initials = esc_html($item['initials'] ?? mb_substr($item['author'] ?? 'XX', 0, 2));
+                $industry = esc_html($item['industry'] ?? '');
             ?>
                 <div class="bg-white border border-slate-200 rounded-[2rem] p-5 sm:p-6 lg:p-8 flex flex-col justify-between">
                     <div>
@@ -94,6 +101,9 @@ for ($i = 1; $i <= 4; $i++) {
                             <p class="text-slate-900 font-semibold text-sm"><?php echo $author; ?></p>
                             <?php if ($role) : ?>
                                 <p class="text-slate-500 text-xs mt-0.5"><?php echo $role; ?></p>
+                            <?php endif; ?>
+                            <?php if ($industry) : ?>
+                                <span class="mt-1.5 inline-block text-xs text-slate-500 bg-slate-100 rounded-full px-2.5 py-0.5"><?php echo $industry; ?></span>
                             <?php endif; ?>
                         </div>
                     </div>
