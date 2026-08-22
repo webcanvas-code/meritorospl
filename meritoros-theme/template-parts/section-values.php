@@ -102,18 +102,19 @@ $c6_cert       = mer_field('val_c6_cert', 'ISO 9001:2015');
             </div>
         </div>
 
-        <!-- Card 4: Green -->
-        <div class="bg-[#00d084] rounded-[2rem] p-5 lg:p-6 text-white col-span-1 flex flex-col overflow-hidden relative">
+        <!-- Card 4: Dark -->
+        <div class="bg-slate-900 rounded-[2rem] p-5 lg:p-6 text-white col-span-1 flex flex-col overflow-hidden relative">
+            <div class="absolute -right-10 -top-10 w-40 h-40 bg-[#00d084]/20 blur-3xl rounded-full"></div>
             <div class="absolute -right-6 -bottom-6 opacity-10">
                 <i data-lucide="cpu" class="w-40 h-40 stroke-[1]"></i>
             </div>
-            <div class="w-fit bg-white/20 backdrop-blur-sm rounded-2xl flex items-center justify-center mb-4 text-white relative z-10 p-3">
+            <div class="w-12 h-12 bg-white/10 rounded-2xl flex items-center justify-center mb-4 text-[#00d084]">
                 <i data-lucide="<?php echo esc_attr($c4_icon); ?>" class="w-6 h-6 stroke-[1.5]"></i>
             </div>
             <h3 class="text-lg lg:text-xl font-bold tracking-tight mb-2 relative z-10">
                 <?php echo nl2br(esc_html($c4_title)); ?>
             </h3>
-            <p class="text-base text-white leading-relaxed font-light relative z-10">
+            <p class="text-base text-slate-300 leading-relaxed font-light relative z-10">
                 <?php echo mer_esc($c4_desc); ?>
             </p>
         </div>
@@ -139,14 +140,14 @@ $c6_cert       = mer_field('val_c6_cert', 'ISO 9001:2015');
         </div>
 
         <!-- Card 6: Quality -->
-        <div class="bg-[#00d084] rounded-[2rem] p-5 lg:p-6 col-span-1 flex flex-col overflow-hidden relative">
-            <div class="w-12 h-12 bg-white/20 rounded-2xl flex items-center justify-center mb-4 text-white">
+        <div class="bg-emerald-50 border border-emerald-100 rounded-[2rem] p-5 lg:p-6 col-span-1 flex flex-col overflow-hidden relative">
+            <div class="w-12 h-12 bg-emerald-100 rounded-2xl flex items-center justify-center mb-4 text-[#00d084]">
                 <i data-lucide="<?php echo esc_attr($c6_icon); ?>" class="w-6 h-6 stroke-[1.5]"></i>
             </div>
-            <h3 class="text-lg lg:text-xl font-bold tracking-tight mb-2 text-white">
+            <h3 class="text-lg lg:text-xl font-bold tracking-tight mb-2 text-slate-900">
                 <?php echo mer_esc($c6_title); ?>
             </h3>
-            <p class="text-base text-white leading-relaxed font-light">
+            <p class="text-base text-slate-600 leading-relaxed font-light">
                 <?php echo mer_esc($c6_desc); ?>
             </p>
             <div class="mt-auto pt-4">
