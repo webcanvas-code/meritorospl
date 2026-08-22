@@ -30,9 +30,6 @@ for ($i = 1; $i <= 6; $i++) {
         'initials'          => (get_field("test_{$i}_initials",     $_test_id) ?: $def['initials']),
         'highlighted'       => (bool) (get_field("test_{$i}_highlighted", $_test_id) ?: $def['highlighted']),
         'industry'          => (get_field("test_{$i}_industry",     $_test_id) ?: $def['industry']),
-        'icon_author'       => (get_field("test_{$i}_icon_author",   $_test_id) ?: 'user'),
-        'icon_role'         => (get_field("test_{$i}_icon_role",     $_test_id) ?: 'briefcase'),
-        'icon_industry'     => (get_field("test_{$i}_icon_industry", $_test_id) ?: 'building-2'),
     ];
 }
 
@@ -86,10 +83,7 @@ for ($i = 1; $i <= 4; $i++) {
                 $author   = esc_html($item['author'] ?? '');
                 $role     = esc_html($item['role'] ?? '');
                 $initials = esc_html($item['initials'] ?? mb_substr($item['author'] ?? 'XX', 0, 2));
-                $industry     = esc_html($item['industry'] ?? '');
-                $icon_author  = esc_attr($item['icon_author']   ?? 'user');
-                $icon_role    = esc_attr($item['icon_role']     ?? 'briefcase');
-                $icon_industry= esc_attr($item['icon_industry'] ?? 'building-2');
+                $industry = esc_html($item['industry'] ?? '');
             ?>
                 <div class="bg-white border border-slate-200 rounded-[2rem] p-5 sm:p-6 lg:p-8 flex flex-col justify-between">
                     <div>
@@ -104,19 +98,13 @@ for ($i = 1; $i <= 4; $i++) {
                     </div>
                     <div class="flex items-center gap-3 pt-4 border-t border-slate-100">
                         <div class="space-y-1">
-                            <p class="flex items-center gap-1.5 text-slate-900 font-semibold text-sm">
-                                <i data-lucide="<?php echo $icon_author; ?>" class="w-3.5 h-3.5 text-slate-400 flex-shrink-0"></i>
-                                <?php echo $author; ?>
-                            </p>
+                            <p class="text-slate-900 font-semibold text-sm"><?php echo $author; ?></p>
                             <?php if ($role) : ?>
-                                <p class="flex items-center gap-1.5 text-slate-500 text-xs">
-                                    <i data-lucide="<?php echo $icon_role; ?>" class="w-3.5 h-3.5 text-slate-400 flex-shrink-0"></i>
-                                    <?php echo $role; ?>
-                                </p>
+                                <p class="text-slate-500 text-xs"><?php echo $role; ?></p>
                             <?php endif; ?>
                             <?php if ($industry) : ?>
-                                <p class="flex items-center gap-1.5 text-slate-500 text-xs">
-                                    <i data-lucide="<?php echo $icon_industry; ?>" class="w-3.5 h-3.5 text-slate-400 flex-shrink-0"></i>
+                                <p class="flex items-center gap-1.5 text-slate-500 text-xs mt-1">
+                                    <i data-lucide="building-2" class="w-3.5 h-3.5 text-slate-400 flex-shrink-0"></i>
                                     <?php echo $industry; ?>
                                 </p>
                             <?php endif; ?>
