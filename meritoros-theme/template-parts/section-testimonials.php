@@ -97,7 +97,7 @@ for ($i = 1; $i <= 4; $i++) {
                         </p>
                     </div>
                     <div class="flex items-start gap-3 pt-4 border-t border-slate-100">
-                        <i data-lucide="user-round" class="w-10 h-10 text-slate-300 flex-shrink-0"></i>
+                        <i data-lucide="building-2" class="w-10 h-10 text-slate-300 flex-shrink-0"></i>
                         <div class="space-y-0.5">
                             <p class="text-slate-900 font-semibold text-sm"><?php echo $author; ?></p>
                             <?php if ($role) : ?>
