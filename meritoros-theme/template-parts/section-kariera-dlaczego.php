@@ -67,19 +67,16 @@ for ($i = 1; $i <= 4; $i++) {
                     <div class="flex flex-col sm:flex-row rounded-2xl overflow-hidden sm:h-[400px] group h-full">
 
                         <!-- Panel tekstowy (55%) -->
-                        <div class="sm:w-[55%] bg-[#00d084] p-7 sm:p-10 flex flex-col relative overflow-hidden min-h-[220px] sm:min-h-0 rounded-tl-2xl rounded-tr-2xl sm:rounded-tr-none sm:rounded-bl-2xl">
-                            <div class="absolute -bottom-14 -right-14 w-56 h-56 rounded-full bg-white/10 pointer-events-none"></div>
-                            <div class="absolute -top-8 -left-8 w-32 h-32 rounded-full bg-white/5 pointer-events-none"></div>
-
-                            <span class="text-xs font-bold text-white/60 uppercase tracking-widest mb-8 relative z-10">
+                        <div class="sm:w-[55%] bg-white p-7 sm:p-10 flex flex-col relative overflow-hidden min-h-[220px] sm:min-h-0 rounded-tl-2xl rounded-tr-2xl sm:rounded-tr-none sm:rounded-bl-2xl border border-slate-100 sm:border-r-0">
+                            <span class="text-xs font-bold text-slate-400 uppercase tracking-widest mb-8 relative z-10">
                                 <?php echo mer_esc($card['tag']); ?>
                             </span>
 
                             <div class="relative z-10">
-                                <h3 class="text-2xl font-bold text-white leading-snug mb-4" style="min-height:3.75rem">
+                                <h3 class="text-2xl font-bold text-[#00d084] leading-snug mb-4" style="min-height:3.75rem">
                                     <?php echo nl2br(esc_html($card['title'])); ?>
                                 </h3>
-                                <p class="text-white/80 text-base leading-relaxed">
+                                <p class="text-slate-600 text-base leading-relaxed">
                                     <?php echo mer_esc($card['text']); ?>
                                 </p>
                             </div>
@@ -91,7 +88,7 @@ for ($i = 1; $i <= 4; $i++) {
                                  alt="<?php echo $card['img_alt']; ?>"
                                  class="absolute inset-0 w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-700"
                                  loading="lazy">
-                            <div class="absolute inset-0 bg-gradient-to-r from-[#00d084]/15 to-transparent pointer-events-none"></div>
+                            <div class="absolute inset-0 bg-gradient-to-r from-slate-900/10 to-transparent pointer-events-none"></div>
                         </div>
 
                     </div>
