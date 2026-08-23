@@ -97,13 +97,14 @@ if (empty($clients)) {
                 4 => ['src' => get_template_directory_uri() . '/images/rofa.png',       'alt' => 'ROFA'],
             ];
             $logo_items = [];
-            for ($i = 1; $i <= 4; $i++) {
+            for ($i = 1; $i <= 8; $i++) {
                 $acf = get_field("hero_logo_{$i}", $_fp);
                 if (is_array($acf) && !empty($acf['url'])) {
                     $logo_items[] = ['src' => $acf['url'], 'alt' => $acf['alt'] ?: "Logo klienta {$i}"];
-                } else {
+                } elseif (isset($_hero_logo_defaults[$i])) {
                     $logo_items[] = $_hero_logo_defaults[$i];
                 }
+                // loga 5–8 bez ACF są pomijane
             }
             ?>
             <div class="mer-marquee-wrap">
