@@ -76,7 +76,7 @@ if (empty($clients)) {
                     align-items: center;
                     gap: 3.5rem;
                     width: max-content;
-                    animation: mer-marquee 40s linear infinite;
+                    animation: mer-marquee 70s linear infinite;
                 }
                 .mer-marquee-track:hover { animation-play-state: paused; }
                 .mer-marquee-track img {
@@ -98,7 +98,7 @@ if (empty($clients)) {
                 4 => ['src' => get_template_directory_uri() . '/images/rofa.png',       'alt' => 'ROFA'],
             ];
             $logo_items = [];
-            for ($i = 1; $i <= 20; $i++) {
+            for ($i = 1; $i <= 24; $i++) {
                 $acf = get_field("hero_logo_{$i}", $_fp);
                 if (is_array($acf) && !empty($acf['url'])) {
                     $logo_items[] = ['src' => $acf['url'], 'alt' => $acf['alt'] ?: "Logo klienta {$i}"];
