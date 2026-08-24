@@ -83,7 +83,8 @@ if (empty($clients)) {
                     height: 36px;
                     width: auto;
                     object-fit: contain;
-                    filter: brightness(0) invert(1);
+                    filter: grayscale(1) invert(1);
+                    mix-blend-mode: screen;
                     opacity: 0.85;
                     flex-shrink: 0;
                 }
@@ -97,7 +98,7 @@ if (empty($clients)) {
                 4 => ['src' => get_template_directory_uri() . '/images/rofa.png',       'alt' => 'ROFA'],
             ];
             $logo_items = [];
-            for ($i = 1; $i <= 15; $i++) {
+            for ($i = 1; $i <= 20; $i++) {
                 $acf = get_field("hero_logo_{$i}", $_fp);
                 if (is_array($acf) && !empty($acf['url'])) {
                     $logo_items[] = ['src' => $acf['url'], 'alt' => $acf['alt'] ?: "Logo klienta {$i}"];
