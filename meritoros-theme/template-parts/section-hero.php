@@ -101,7 +101,7 @@ if (empty($clients)) {
                     width: auto;
                     max-width: 140px;
                     object-fit: contain;
-                    filter: grayscale(1) invert(1);
+                    filter: grayscale(1) contrast(3) invert(1);
                     mix-blend-mode: screen;
                     opacity: 0.85;
                     flex-shrink: 0;
