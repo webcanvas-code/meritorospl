@@ -68,20 +68,38 @@ if (empty($clients)) {
                 }
                 .mer-marquee-wrap {
                     overflow: hidden;
-                    -webkit-mask-image: linear-gradient(to right, transparent, black 12%, black 88%, transparent);
-                    mask-image: linear-gradient(to right, transparent, black 12%, black 88%, transparent);
+                    position: relative;
+                }
+                .mer-marquee-wrap::before,
+                .mer-marquee-wrap::after {
+                    content: '';
+                    position: absolute;
+                    top: 0;
+                    bottom: 0;
+                    width: 80px;
+                    z-index: 2;
+                    pointer-events: none;
+                }
+                .mer-marquee-wrap::before {
+                    left: 0;
+                    background: linear-gradient(to right, #0f172a, transparent);
+                }
+                .mer-marquee-wrap::after {
+                    right: 0;
+                    background: linear-gradient(to left, #0f172a, transparent);
                 }
                 .mer-marquee-track {
                     display: flex;
                     align-items: center;
                     gap: 3.5rem;
                     width: max-content;
-                    animation: mer-marquee 70s linear infinite;
+                    animation: mer-marquee 100s linear infinite;
                 }
                 .mer-marquee-track:hover { animation-play-state: paused; }
                 .mer-marquee-track img {
-                    height: 36px;
+                    height: 48px;
                     width: auto;
+                    max-width: 140px;
                     object-fit: contain;
                     filter: grayscale(1) invert(1);
                     mix-blend-mode: screen;
