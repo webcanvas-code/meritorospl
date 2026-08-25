@@ -42,7 +42,7 @@ for ($i = 1; $i <= 4; $i++) {
                     <?php endif; ?>
                 </div>
                 <h3 class="text-lg font-bold text-slate-900 mb-2"><?php echo mer_esc($member['name']); ?></h3>
-                <span class="inline-flex w-fit items-center text-xs font-medium text-emerald-700 bg-emerald-100 px-3 py-1 rounded-full mb-3">
+                <span class="mer-btn mer-btn--primary inline-flex w-fit items-center text-xs font-medium text-emerald-700 bg-emerald-100 px-3 py-1 rounded-full mb-3">
                     <?php echo mer_esc($member['role']); ?>
                 </span>
                 <p class="text-base text-slate-600 leading-relaxed">

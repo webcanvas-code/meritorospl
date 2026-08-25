@@ -20,7 +20,7 @@ $btn_url  = mer_field('bpo_cta_btn_url',  home_url('/kontakt/'));
                 </div>
             </div>
             <div class="relative z-10 shrink-0">
-                <a href="<?php echo esc_url($btn_url); ?>" class="px-8 py-4 rounded-full bg-white text-[#00d084] text-base font-medium hover:bg-emerald-50 transition-colors inline-block">
+                <a href="<?php echo esc_url($btn_url); ?>" class="mer-btn mer-btn--primary px-8 py-4 rounded-full bg-white text-[#00d084] text-base font-medium hover:bg-emerald-50 transition-colors inline-block">
                     <?php echo mer_esc($btn_text); ?>
                 </a>
             </div>

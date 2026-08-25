@@ -34,7 +34,7 @@ $img_alt = is_array($image) ? esc_attr($image['alt'] ?: 'Twoja księgowość') :
                     <?php echo mer_esc($text2); ?>
                 </p>
                 <a href="#wspolpraca"
-                   class="inline-flex px-7 py-3.5 rounded-full bg-[#00d084] text-white text-base font-semibold hover:bg-[#00b872] transition-colors">
+                   class="mer-btn mer-btn--primary inline-flex px-7 py-3.5 rounded-full bg-[#00d084] text-white text-base font-semibold hover:bg-[#00b872] transition-colors">
                     <?php echo mer_esc($btn_text); ?>
                 </a>
             </div>

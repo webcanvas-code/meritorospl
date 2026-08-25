@@ -66,7 +66,7 @@ $use_demo = !$related->have_posts();
                         <span class="text-base font-bold text-slate-800 mb-3 block">HPC+</span>
                         <div class="flex flex-wrap gap-1.5 mb-4">
                             <?php foreach ($card['tags'] as $tag) : ?>
-                            <span class="text-sm text-slate-500 border border-slate-200 rounded-full px-3 py-1"><?php echo mer_esc($tag); ?></span>
+                            <span class="mer-btn mer-btn--secondary text-sm text-slate-500 border border-slate-200 rounded-full px-3 py-1"><?php echo mer_esc($tag); ?></span>
                             <?php endforeach; ?>
                         </div>
                         <p class="text-sm font-bold text-slate-900 mb-1">Zakres współpracy:</p>
@@ -123,7 +123,7 @@ $use_demo = !$related->have_posts();
                         <?php if ($r_tags) : ?>
                         <div class="flex flex-wrap gap-1.5 mb-4">
                             <?php foreach ($r_tags as $tag) : ?>
-                            <span class="text-sm text-slate-500 border border-slate-200 rounded-full px-3 py-1"><?php echo mer_esc($tag); ?></span>
+                            <span class="mer-btn mer-btn--secondary text-sm text-slate-500 border border-slate-200 rounded-full px-3 py-1"><?php echo mer_esc($tag); ?></span>
                             <?php endforeach; ?>
                         </div>
                         <?php endif; ?>

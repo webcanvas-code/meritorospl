@@ -63,7 +63,7 @@ $cards = [
         <!-- Przycisk CTA -->
         <div class="flex justify-center">
             <a href="<?php echo esc_url($btn_url ?: '#'); ?>"
-               class="inline-flex items-center gap-2 px-7 py-3.5 rounded-full bg-[#00d084] hover:bg-[#00b872] text-white text-base font-semibold transition-colors duration-200">
+               class="mer-btn mer-btn--primary inline-flex items-center gap-2 px-7 py-3.5 rounded-full bg-[#00d084] hover:bg-[#00b872] text-white text-base font-semibold transition-colors duration-200">
                 <?php echo mer_esc($btn_text); ?>
             </a>
         </div>

@@ -48,10 +48,10 @@ for ($i = 1; $i <= 4; $i++) {
                 <?php echo wp_kses_post($subtitle); ?>
             </p>
             <div class="flex flex-col sm:flex-row gap-3">
-                <a href="<?php echo esc_url($btn2_url); ?>" class="px-7 py-3.5 rounded-full bg-[#00d084] text-white text-base font-semibold hover:bg-[#00b872] transition-colors flex items-center justify-center">
+                <a href="<?php echo esc_url($btn2_url); ?>" class="mer-btn mer-btn--primary px-7 py-3.5 rounded-full bg-[#00d084] text-white text-base font-semibold hover:bg-[#00b872] transition-colors flex items-center justify-center">
                     <?php echo mer_esc($btn2_text); ?>
                 </a>
-                <a href="<?php echo esc_url($btn1_url); ?>" class="px-7 py-3.5 rounded-full border border-slate-300 text-slate-700 text-base font-semibold hover:bg-slate-50 transition-colors flex items-center justify-center">
+                <a href="<?php echo esc_url($btn1_url); ?>" class="mer-btn mer-btn--secondary px-7 py-3.5 rounded-full border border-slate-300 text-slate-700 text-base font-semibold hover:bg-slate-50 transition-colors flex items-center justify-center">
                     <?php echo mer_esc($btn1_text); ?>
                 </a>
             </div>

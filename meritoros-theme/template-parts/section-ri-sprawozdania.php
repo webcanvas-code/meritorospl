@@ -36,14 +36,14 @@ if (empty($items)) {
                 $url_pdf  = $item['url_pdf']['url']     ?? '';
                 $url_xlsx = $item['url_xlsx']['url']    ?? '';
             ?>
-                <div class="bg-white rounded-2xl px-6 py-5 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
+                <div class="mer-btn mer-btn--white bg-white rounded-2xl px-6 py-5 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
                     <span class="text-slate-800 font-medium"><?php echo mer_esc($label); ?></span>
                     <div class="flex items-center gap-3 shrink-0">
                         <?php if ($url_pdf) : ?>
                             <a href="<?php echo esc_url($url_pdf); ?>"
                                target="_blank"
                                rel="noopener"
-                               class="inline-flex items-center gap-2 bg-white text-slate-700 border border-slate-200 hover:border-slate-300 hover:bg-slate-50 text-sm font-medium px-5 py-2.5 rounded-full transition-colors">
+                               class="mer-btn mer-btn--white inline-flex items-center gap-2 bg-white text-slate-700 border border-slate-200 hover:border-slate-300 hover:bg-slate-50 text-sm font-medium px-5 py-2.5 rounded-full transition-colors">
                                 <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
                                 <?php echo mer_esc(mer_t('ri_pobierz_pdf', 'Pobierz PDF')); ?>
                             </a>
@@ -52,7 +52,7 @@ if (empty($items)) {
                             <a href="<?php echo esc_url($url_xlsx); ?>"
                                target="_blank"
                                rel="noopener"
-                               class="inline-flex items-center gap-2 bg-white text-slate-700 border border-slate-200 hover:border-slate-300 hover:bg-slate-50 text-sm font-medium px-5 py-2.5 rounded-full transition-colors">
+                               class="mer-btn mer-btn--white inline-flex items-center gap-2 bg-white text-slate-700 border border-slate-200 hover:border-slate-300 hover:bg-slate-50 text-sm font-medium px-5 py-2.5 rounded-full transition-colors">
                                 <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
                                 <?php echo mer_esc(mer_t('ri_pobierz_xlsx', 'Pobierz XLSX')); ?>
                             </a>

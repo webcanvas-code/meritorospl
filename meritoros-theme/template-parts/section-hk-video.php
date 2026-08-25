@@ -125,7 +125,7 @@ if ($total === 0) return;
                 <?php if ($vid['tags']) : ?>
                 <div class="flex flex-wrap gap-1.5 mb-3">
                     <?php foreach ($vid['tags'] as $tag) : ?>
-                    <span class="text-xs text-slate-500 border border-slate-200 rounded-full px-2.5 py-0.5"><?php echo mer_esc($tag); ?></span>
+                    <span class="mer-btn mer-btn--secondary text-xs text-slate-500 border border-slate-200 rounded-full px-2.5 py-0.5"><?php echo mer_esc($tag); ?></span>
                     <?php endforeach; ?>
                 </div>
                 <?php endif; ?>
@@ -136,7 +136,7 @@ if ($total === 0) return;
                 <?php endif; ?>
 
                 <a href="<?php echo esc_url($vid['story_url']); ?>"
-                   class="mt-auto inline-flex items-center justify-center gap-2 px-5 py-2.5 rounded-full bg-[#00d084] hover:bg-[#00b872] text-white text-sm font-semibold transition-colors duration-200 group/link">
+                   class="mer-btn mer-btn--primary mt-auto inline-flex items-center justify-center gap-2 px-5 py-2.5 rounded-full bg-[#00d084] hover:bg-[#00b872] text-white text-sm font-semibold transition-colors duration-200 group/link">
                     Czytaj historię
                     <i data-lucide="arrow-right" class="w-4 h-4 transition-transform duration-200 group-hover/link:translate-x-1"></i>
                 </a>
@@ -148,7 +148,7 @@ if ($total === 0) return;
         <?php if ($total > $per_page) : ?>
         <div class="flex justify-center mt-14" id="hk-vid-loadmore-wrap">
             <button id="hk-vid-loadmore"
-                class="px-8 py-3.5 rounded-full border border-emerald-500 text-[#00d084] text-sm font-medium hover:bg-[#00d084] hover:text-white transition-colors duration-200">
+                class="mer-btn mer-btn--primary px-8 py-3.5 rounded-full border border-emerald-500 text-[#00d084] text-sm font-medium hover:bg-[#00d084] hover:text-white transition-colors duration-200">
                 <?php echo mer_esc($btn_text); ?>
             </button>
         </div>

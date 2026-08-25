@@ -32,7 +32,7 @@ $rate_sub = (float) mer_field('kp_kalk_rate_sub', 42);
                     <!-- Dropdown zakres -->
                     <div class="relative mb-4" id="kp-kalk-wrapper">
                         <button id="kp-kalk-btn"
-                            class="w-full flex items-center justify-between px-5 py-4 border border-slate-200 rounded-xl text-slate-500 text-sm hover:border-slate-300 transition-colors bg-white"
+                            class="mer-btn mer-btn--white w-full flex items-center justify-between px-5 py-4 border border-slate-200 rounded-xl text-slate-500 text-sm hover:border-slate-300 transition-colors bg-white"
                             aria-haspopup="listbox" aria-expanded="false">
                             <span id="kp-kalk-label">Wybierz z listy</span>
                             <i data-lucide="chevron-down" class="w-5 h-5 text-slate-400 stroke-[1.5] shrink-0 transition-transform" id="kp-kalk-chevron"></i>
@@ -48,9 +48,9 @@ $rate_sub = (float) mer_field('kp_kalk_rate_sub', 42);
                     <!-- Dwa inputy obok siebie -->
                     <div class="grid grid-cols-2 gap-4 mb-4">
                         <input id="kp-kalk-pracownicy" type="number" min="1" placeholder="Liczba pracowników"
-                            class="w-full px-5 py-4 border border-slate-200 rounded-xl text-slate-800 text-sm placeholder-slate-400 hover:border-slate-300 focus:border-emerald-400 focus:outline-none focus:ring-2 focus:ring-emerald-100 transition-colors bg-white" />
+                            class="mer-btn mer-btn--white w-full px-5 py-4 border border-slate-200 rounded-xl text-slate-800 text-sm placeholder-slate-400 hover:border-slate-300 focus:border-emerald-400 focus:outline-none focus:ring-2 focus:ring-emerald-100 transition-colors bg-white" />
                         <input id="kp-kalk-wyplaty" type="number" min="1" placeholder="Ilość wypłat na miesiąc"
-                            class="w-full px-5 py-4 border border-slate-200 rounded-xl text-slate-800 text-sm placeholder-slate-400 hover:border-slate-300 focus:border-emerald-400 focus:outline-none focus:ring-2 focus:ring-emerald-100 transition-colors bg-white" />
+                            class="mer-btn mer-btn--white w-full px-5 py-4 border border-slate-200 rounded-xl text-slate-800 text-sm placeholder-slate-400 hover:border-slate-300 focus:border-emerald-400 focus:outline-none focus:ring-2 focus:ring-emerald-100 transition-colors bg-white" />
                     </div>
 
                     <!-- Przycisk -->

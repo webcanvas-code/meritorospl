@@ -28,7 +28,7 @@ $kariera_url = home_url('/kariera/');
                 <span class="text-white font-medium"><?php echo mer_esc($title ?: get_the_title()); ?></span>
             </nav>
             <a href="<?php echo esc_url($kariera_url); ?>"
-               class="inline-flex items-center gap-2 px-5 py-2.5 rounded-full border border-slate-200 bg-white text-slate-700 text-sm font-semibold hover:border-[#00d084] hover:text-[#00d084] transition-colors duration-200 self-start sm:self-auto shrink-0">
+               class="mer-btn mer-btn--primary inline-flex items-center gap-2 px-5 py-2.5 rounded-full border border-slate-200 bg-white text-slate-700 text-sm font-semibold hover:border-[#00d084] hover:text-[#00d084] transition-colors duration-200 self-start sm:self-auto shrink-0">
                 <i data-lucide="arrow-left" class="w-4 h-4"></i>
                 <?php esc_html_e('Kariera', 'meritoros'); ?>
             </a>
@@ -37,19 +37,19 @@ $kariera_url = home_url('/kariera/');
         <!-- Tagi -->
         <div class="flex flex-wrap gap-3 mb-6">
             <?php if ($category) : ?>
-            <span class="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-[#00d084]/20 text-[#00d084] text-base font-semibold border border-[#00d084]/40">
+            <span class="mer-btn mer-btn--primary inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-[#00d084]/20 text-[#00d084] text-base font-semibold border border-[#00d084]/40">
                 <i data-lucide="briefcase" class="w-4 h-4"></i>
                 <?php echo mer_esc($category); ?>
             </span>
             <?php endif; ?>
             <?php if ($location) : ?>
-            <span class="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-white/10 text-white/80 text-base font-medium border border-white/20">
+            <span class="mer-btn mer-btn--ghost inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-white/10 text-white/80 text-base font-medium border border-white/20">
                 <i data-lucide="map-pin" class="w-4 h-4"></i>
                 <?php echo mer_esc($location); ?>
             </span>
             <?php endif; ?>
             <?php if ($salary) : ?>
-            <span class="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-white/10 text-white/80 text-base font-medium border border-white/20">
+            <span class="mer-btn mer-btn--ghost inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-white/10 text-white/80 text-base font-medium border border-white/20">
                 <i data-lucide="banknote" class="w-4 h-4"></i>
                 <?php echo mer_esc($salary); ?>
             </span>
@@ -62,7 +62,7 @@ $kariera_url = home_url('/kariera/');
         </h1>
 
         <!-- CTA -->
-        <a href="#aplikuj" class="inline-flex items-center gap-2 px-7 py-3.5 rounded-full bg-white/10 backdrop-blur-md border border-white/20 text-white text-base font-semibold hover:bg-white/20 hover:border-white/30 transition-colors self-start">
+        <a href="#aplikuj" class="mer-btn mer-btn--ghost inline-flex items-center gap-2 px-7 py-3.5 rounded-full bg-white/10 backdrop-blur-md border border-white/20 text-white text-base font-semibold hover:bg-white/20 hover:border-white/30 transition-colors self-start">
             <?php esc_html_e('Aplikuj teraz', 'meritoros'); ?>
             <i data-lucide="arrow-right" class="w-4 h-4"></i>
         </a>

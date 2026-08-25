@@ -59,7 +59,7 @@ $m2_img_alt = is_array($m2_image) ? esc_attr($m2_image['alt'] ?: 'Outsourcing') 
                     <p class="text-lg text-slate-500 leading-relaxed"><?php echo mer_esc($m1_text); ?></p>
                     <?php if ($m1_btn_url) : ?>
                     <div class="mt-6">
-                        <a href="<?php echo esc_url($m1_btn_url); ?>" class="inline-flex px-7 py-3 rounded-full bg-white text-slate-700 text-sm font-medium border border-slate-200 hover:border-slate-300 hover:bg-slate-50 transition-colors">
+                        <a href="<?php echo esc_url($m1_btn_url); ?>" class="mer-btn mer-btn--white inline-flex px-7 py-3 rounded-full bg-white text-slate-700 text-sm font-medium border border-slate-200 hover:border-slate-300 hover:bg-slate-50 transition-colors">
                             <?php echo mer_esc($m1_btn_text); ?>
                         </a>
                     </div>
@@ -89,7 +89,7 @@ $m2_img_alt = is_array($m2_image) ? esc_attr($m2_image['alt'] ?: 'Outsourcing') 
                         <p class="text-lg text-white/80 leading-relaxed"><?php echo mer_esc($m2_text); ?></p>
                         <?php if ($m2_btn_url) : ?>
                         <div class="mt-6">
-                            <a href="<?php echo esc_url($m2_btn_url); ?>" class="inline-flex px-7 py-3 rounded-full bg-white text-slate-800 text-sm font-medium border border-white/30 hover:bg-white/90 transition-colors">
+                            <a href="<?php echo esc_url($m2_btn_url); ?>" class="mer-btn mer-btn--ghost inline-flex px-7 py-3 rounded-full bg-white text-slate-800 text-sm font-medium border border-white/30 hover:bg-white/90 transition-colors">
                                 <?php echo mer_esc($m2_btn_text); ?>
                             </a>
                         </div>

@@ -22,7 +22,7 @@ $cs_defaults = [
     ],
     2 => [
         'client_name' => 'Printbox',
-        'logo_html'   => '<span class="text-2xl lg:text-3xl font-bold tracking-tight text-slate-900">Printbox</span><span class="bg-slate-100 text-slate-500 rounded-md px-2 py-1 text-xs font-bold uppercase tracking-wider">SaaS</span>',
+        'logo_html'   => '<span class="text-2xl lg:text-3xl font-bold tracking-tight text-slate-900">Printbox</span><span class="mer-btn mer-btn--light bg-slate-100 text-slate-500 rounded-md px-2 py-1 text-xs font-bold uppercase tracking-wider">SaaS</span>',
         'industries'  => 'Technologia druku, E-commerce B2B',
         'scope_title' => 'Pełna obsługa BPO, rozliczenia międzynarodowe VAT OSS',
         'scope_desc'  => 'Przy dynamicznym wzroście sprzedaży cross-border firma potrzebowała partnera gotowego na złożone rozliczenia VAT OSS w wielu krajach UE. Przejęliśmy całość obsługi finansowej.',
@@ -195,7 +195,7 @@ $total = count($items);
                                 <span class="flex h-16 w-16 sm:h-[4.5rem] sm:w-[4.5rem] items-center justify-center rounded-full bg-white/95 text-[#00d084] shadow-lg shadow-black/15 ring-4 ring-white/30 transition-transform duration-300 group-hover/play:scale-105">
                                     <i data-lucide="play" class="w-7 h-7 sm:w-8 sm:h-8 fill-current ml-0.5"></i>
                                 </span>
-                                <span class="rounded-full bg-black/35 px-3 py-1 text-xs font-medium text-white backdrop-blur-sm">
+                                <span class="mer-btn mer-btn--ghost rounded-full bg-black/35 px-3 py-1 text-xs font-medium text-white backdrop-blur-sm">
                                     <?php esc_html_e('Obejrzyj materiał', 'meritoros'); ?>
                                 </span>
                             </button>
@@ -213,7 +213,7 @@ $total = count($items);
                                     <?php echo mer_esc($item['video_label']); ?>
                                 </p>
                                 <?php if ($item['video_dur']) : ?>
-                                    <span class="shrink-0 rounded-md bg-white/15 px-2 py-1 text-xs font-semibold tabular-nums text-white backdrop-blur-sm">
+                                    <span class="mer-btn mer-btn--ghost shrink-0 rounded-md bg-white/15 px-2 py-1 text-xs font-semibold tabular-nums text-white backdrop-blur-sm">
                                         <?php echo mer_esc($item['video_dur']); ?>
                                     </span>
                                 <?php endif; ?>
@@ -238,7 +238,7 @@ $total = count($items);
                                     </p>
                                     <div class="flex flex-wrap gap-2">
                                         <?php foreach ($item['industries'] as $ind) : ?>
-                                            <span class="inline-flex rounded-lg bg-slate-100 px-2.5 py-1 text-xs font-medium text-slate-700">
+                                            <span class="mer-btn mer-btn--light inline-flex rounded-lg bg-slate-100 px-2.5 py-1 text-xs font-medium text-slate-700">
                                                 <?php echo mer_esc($ind); ?>
                                             </span>
                                         <?php endforeach; ?>
@@ -266,7 +266,7 @@ $total = count($items);
                         <?php endif; ?>
 
                         <a href="<?php echo esc_url($item['cta_url']); ?>"
-                           class="inline-flex w-full sm:w-auto min-h-[48px] items-center justify-center gap-2 rounded-full bg-white border border-slate-200 px-5 py-3.5 text-sm font-semibold text-slate-700 transition hover:border-slate-300 hover:bg-slate-50 group/cta">
+                           class="mer-btn mer-btn--white inline-flex w-full sm:w-auto min-h-[48px] items-center justify-center gap-2 rounded-full bg-white border border-slate-200 px-5 py-3.5 text-sm font-semibold text-slate-700 transition hover:border-slate-300 hover:bg-slate-50 group/cta">
                             <?php esc_html_e('Poznaj więcej historii', 'meritoros'); ?>
                             <i data-lucide="arrow-right" class="w-4 h-4 transition group-hover/cta:translate-x-0.5"></i>
                         </a>

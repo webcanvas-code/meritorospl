@@ -44,12 +44,12 @@ if (empty($clients)) {
 
             <div class="flex flex-col sm:flex-row gap-3">
                 <a href="<?php echo esc_url($btn2_url); ?>"
-                   class="bg-[#00d084] text-white px-7 py-3 rounded-full text-base font-semibold hover:bg-[#00b872] hover:shadow-lg hover:shadow-[#00d084]/30 transition-all duration-300 flex items-center justify-center gap-2 group">
+                   class="mer-btn mer-btn--primary bg-[#00d084] text-white px-7 py-3 rounded-full text-base font-semibold hover:bg-[#00b872] hover:shadow-lg hover:shadow-[#00d084]/30 transition-all duration-300 flex items-center justify-center gap-2 group">
                     <?php echo mer_esc($btn2_text); ?>
                     <i data-lucide="message-square" class="w-5 h-5 opacity-80"></i>
                 </a>
                 <a href="<?php echo esc_url($btn1_url); ?>"
-                   class="bg-white/10 backdrop-blur-md border border-white/20 text-white px-7 py-3 rounded-full text-base font-semibold hover:bg-white/20 hover:border-white/30 transition-all duration-300 flex items-center justify-center gap-2">
+                   class="mer-btn mer-btn--ghost bg-white/10 backdrop-blur-md border border-white/20 text-white px-7 py-3 rounded-full text-base font-semibold hover:bg-white/20 hover:border-white/30 transition-all duration-300 flex items-center justify-center gap-2">
                     <?php echo mer_esc($btn1_text); ?>
                     <i data-lucide="arrow-right" class="w-5 h-5 opacity-70"></i>
                 </a>

@@ -49,7 +49,7 @@ for ($i = 1; $i <= 3; $i++) {
                         <h3 class="text-lg md:text-xl font-bold tracking-tight text-white mb-3">
                             <?php echo mer_esc($card['title']); ?>
                         </h3>
-                        <span class="inline-flex items-center gap-1.5 text-xs font-semibold uppercase tracking-wider text-white rounded-full px-4 py-1.5 transition-colors duration-200 group-hover:bg-white/30" style="background: rgba(255,255,255,0.18); border: 1px solid rgba(255,255,255,0.35); backdrop-filter: blur(6px);">
+                        <span class="mer-btn mer-btn--ghost inline-flex items-center gap-1.5 text-xs font-semibold uppercase tracking-wider text-white rounded-full px-4 py-1.5 transition-colors duration-200 group-hover:bg-white/30" style="background: rgba(255,255,255,0.18); border: 1px solid rgba(255,255,255,0.35); backdrop-filter: blur(6px);">
                             Sprawdź
                             <svg xmlns="http://www.w3.org/2000/svg" class="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><polyline points="19 12 12 19 5 12"/></svg>
                         </span>

@@ -27,7 +27,7 @@ $photo_url = is_array($photo) ? $photo['url'] : 'https://images.unsplash.com/pho
         </h2>
 
         <a href="<?php echo esc_url(home_url('/#wycen-biuro')); ?>"
-           class="inline-flex items-center justify-center px-8 py-3.5 rounded-full bg-white text-slate-800 text-base font-semibold hover:bg-emerald-50 transition-colors duration-200">
+           class="mer-btn mer-btn--primary inline-flex items-center justify-center px-8 py-3.5 rounded-full bg-white text-slate-800 text-base font-semibold hover:bg-emerald-50 transition-colors duration-200">
             <?php echo mer_esc($btn_text); ?>
         </a>
 

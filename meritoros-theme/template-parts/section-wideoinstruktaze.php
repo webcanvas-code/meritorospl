@@ -95,7 +95,7 @@ $total = count($cards);
         <?php if ($total > $per_page) : ?>
         <div id="wi-load-more-wrap" class="mt-10 text-center">
             <button id="wi-load-more"
-                    class="inline-flex items-center gap-2 border border-slate-300 text-slate-700 rounded-full px-8 py-3.5 text-sm font-semibold hover:border-[#00d084] hover:text-[#00d084] transition-colors duration-200">
+                    class="mer-btn mer-btn--primary inline-flex items-center gap-2 border border-slate-300 text-slate-700 rounded-full px-8 py-3.5 text-sm font-semibold hover:border-[#00d084] hover:text-[#00d084] transition-colors duration-200">
                 <?php esc_html_e('Załaduj więcej', 'meritoros'); ?>
                 <i data-lucide="chevron-down" class="w-4 h-4 stroke-[2.5]"></i>
             </button>

@@ -36,11 +36,11 @@ $bg_url = is_array($hero_bg) ? esc_url($hero_bg['url']) : '';
             </p>
             <div class="flex flex-col sm:flex-row gap-3">
                 <a href="<?php echo esc_url($btn2_url); ?>"
-                    class="px-7 py-3.5 rounded-full bg-[#00d084] text-white text-base font-semibold hover:bg-[#00b872] transition-colors flex items-center justify-center">
+                    class="mer-btn mer-btn--primary px-7 py-3.5 rounded-full bg-[#00d084] text-white text-base font-semibold hover:bg-[#00b872] transition-colors flex items-center justify-center">
                     <?php echo mer_esc($btn2_text); ?>
                 </a>
                 <a href="<?php echo esc_url($btn1_url); ?>"
-                    class="px-7 py-3.5 rounded-full border border-white/40 text-white text-base font-semibold hover:bg-white/10 transition-colors flex items-center justify-center">
+                    class="mer-btn mer-btn--ghost px-7 py-3.5 rounded-full border border-white/40 text-white text-base font-semibold hover:bg-white/10 transition-colors flex items-center justify-center">
                     <?php echo mer_esc($btn1_text); ?>
                 </a>
             </div>

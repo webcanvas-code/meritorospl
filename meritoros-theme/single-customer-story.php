@@ -114,7 +114,7 @@ $hk_url  = $hk_page ? get_permalink($hk_page) : home_url('/historie-klientow/');
                     <span class="text-slate-600"><?php the_title(); ?></span>
                 </nav>
                 <a href="<?php echo esc_url($hk_url); ?>"
-                   class="inline-flex items-center gap-2 px-5 py-2.5 rounded-full border border-slate-200 bg-white text-slate-700 text-sm font-semibold hover:border-[#00d084] hover:text-[#00d084] transition-colors duration-200 self-start sm:self-auto shrink-0">
+                   class="mer-btn mer-btn--primary inline-flex items-center gap-2 px-5 py-2.5 rounded-full border border-slate-200 bg-white text-slate-700 text-sm font-semibold hover:border-[#00d084] hover:text-[#00d084] transition-colors duration-200 self-start sm:self-auto shrink-0">
                     <i data-lucide="arrow-left" class="w-4 h-4"></i>
                     <?php esc_html_e('Historie klientów', 'meritoros'); ?>
                 </a>
@@ -240,7 +240,7 @@ $hk_url  = $hk_page ? get_permalink($hk_page) : home_url('/historie-klientow/');
                             <?php echo mer_esc($cta_title); ?>
                         </p>
                         <a href="<?php echo esc_url($cta_btn_url ?: '#'); ?>"
-                           class="relative z-10 inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-[#00d084] text-white text-sm font-semibold hover:bg-[#00b872] transition-colors duration-200">
+                           class="mer-btn mer-btn--primary relative z-10 inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-[#00d084] text-white text-sm font-semibold hover:bg-[#00b872] transition-colors duration-200">
                             <?php echo mer_esc($cta_btn_text); ?>
                             <i data-lucide="arrow-right" class="w-4 h-4"></i>
                         </a>
@@ -283,7 +283,7 @@ $hk_url  = $hk_page ? get_permalink($hk_page) : home_url('/historie-klientow/');
                         <?php echo mer_esc($cta_title); ?>
                     </p>
                     <a href="<?php echo esc_url($cta_btn_url ?: '#'); ?>"
-                       class="relative z-10 inline-flex items-center gap-2 px-6 py-3 rounded-full bg-[#00d084] text-white text-base font-semibold hover:bg-[#00b872] transition-colors duration-200">
+                       class="mer-btn mer-btn--primary relative z-10 inline-flex items-center gap-2 px-6 py-3 rounded-full bg-[#00d084] text-white text-base font-semibold hover:bg-[#00b872] transition-colors duration-200">
                         <?php echo mer_esc($cta_btn_text); ?>
                         <i data-lucide="arrow-right" class="w-4 h-4"></i>
                     </a>
@@ -440,7 +440,7 @@ $hk_url  = $hk_page ? get_permalink($hk_page) : home_url('/historie-klientow/');
     <?php if ( $testimonial ) : ?>
     <section class="py-12 md:py-16">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <blockquote class="rounded-2xl border border-slate-200 bg-slate-50 px-10 py-10">
+            <blockquote class="mer-btn mer-btn--secondary rounded-2xl border border-slate-200 bg-slate-50 px-10 py-10">
                 <p class="text-xl md:text-2xl text-slate-600 italic leading-relaxed mb-5">
                     „<?php echo mer_esc($testimonial); ?>"
                 </p>

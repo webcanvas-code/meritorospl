@@ -86,11 +86,11 @@ $col_count = count($years);
                 <!-- Nagłówek -->
                 <thead>
                     <tr class="bg-[#00d084] text-white">
-                        <th class="text-left px-6 py-4 font-medium rounded-tl-2xl whitespace-nowrap">
+                        <th class="mer-btn mer-btn--secondary text-left px-6 py-4 font-medium rounded-tl-2xl whitespace-nowrap">
                             <?php echo mer_esc(mer_t('ri_dane_naglowek', 'Dane finansowe (tys. PLN)')); ?>
                         </th>
                         <?php foreach ($years as $i => $year) : ?>
-                            <th class="px-4 py-4 font-medium text-center whitespace-nowrap<?php echo ($i === $col_count - 1) ? ' rounded-tr-2xl' : ''; ?>">
+                            <th class="mer-btn mer-btn--secondary px-4 py-4 font-medium text-center whitespace-nowrap<?php echo ($i === $col_count - 1) ? ' rounded-tr-2xl' : ''; ?>">
                                 <?php echo mer_esc($year); ?>
                             </th>
                         <?php endforeach; ?>
@@ -105,14 +105,14 @@ $col_count = count($years);
                         $is_last = ($ri === count($rows) - 1);
                     ?>
                         <tr class="<?php echo $is_last ? '' : 'border-b border-slate-100'; ?> hover:bg-slate-50 transition-colors">
-                            <td class="px-6 py-4 text-slate-700 font-medium whitespace-nowrap<?php echo $is_last ? ' rounded-bl-2xl' : ''; ?>">
+                            <td class="mer-btn mer-btn--secondary px-6 py-4 text-slate-700 font-medium whitespace-nowrap<?php echo $is_last ? ' rounded-bl-2xl' : ''; ?>">
                                 <?php echo mer_esc($label); ?>
                             </td>
                             <?php foreach ($years as $ci => $year) :
                                 $val = isset($cells[$ci]) ? $cells[$ci] : '—';
                                 $is_last_col = ($ci === $col_count - 1);
                             ?>
-                                <td class="px-4 py-4 text-center text-slate-500 whitespace-nowrap<?php echo ($is_last && $is_last_col) ? ' rounded-br-2xl' : ''; ?>">
+                                <td class="mer-btn mer-btn--secondary px-4 py-4 text-center text-slate-500 whitespace-nowrap<?php echo ($is_last && $is_last_col) ? ' rounded-br-2xl' : ''; ?>">
                                     <?php echo mer_esc($val); ?>
                                 </td>
                             <?php endforeach; ?>

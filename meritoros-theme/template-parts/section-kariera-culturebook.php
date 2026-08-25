@@ -45,10 +45,10 @@ $nonce = wp_create_nonce('mer_culturebook_nonce');
 
                     <input type="email" id="cult-email" name="email" required
                            placeholder="<?php esc_attr_e('Adres e-mail', 'meritoros'); ?>"
-                           class="w-full px-6 py-4 rounded-full border-2 border-white/30 bg-white/20 text-white placeholder:text-white/60 text-base focus:outline-none focus:border-white transition-colors duration-200">
+                           class="mer-btn mer-btn--ghost w-full px-6 py-4 rounded-full border-2 border-white/30 bg-white/20 text-white placeholder:text-white/60 text-base focus:outline-none focus:border-white transition-colors duration-200">
 
                     <button type="submit" id="cult-submit"
-                            class="inline-flex items-center justify-center gap-2 bg-white text-slate-900 font-semibold text-base px-8 py-3.5 rounded-full hover:bg-slate-100 transition-colors duration-200 w-fit">
+                            class="mer-btn mer-btn--light inline-flex items-center justify-center gap-2 bg-white text-slate-900 font-semibold text-base px-8 py-3.5 rounded-full hover:bg-slate-100 transition-colors duration-200 w-fit">
                         <span id="cult-btn-label"><?php echo mer_esc($btn_text); ?></span>
                         <i data-lucide="download" class="w-5 h-5 stroke-[2]" id="cult-btn-icon"></i>
                         <svg id="cult-spinner" class="hidden animate-spin w-5 h-5" viewBox="0 0 24 24" fill="none">
@@ -61,7 +61,7 @@ $nonce = wp_create_nonce('mer_culturebook_nonce');
                     <p class="text-white/60 text-xs leading-relaxed max-w-sm"><?php echo mer_esc($consent); ?></p>
                     <?php endif; ?>
 
-                    <p id="cult-error" class="hidden text-white font-semibold text-sm bg-white/20 rounded-xl px-4 py-2 w-fit"></p>
+                    <p id="cult-error" class="mer-btn mer-btn--ghost hidden text-white font-semibold text-sm bg-white/20 rounded-xl px-4 py-2 w-fit"></p>
                 </form>
 
                 <p id="cult-success" class="hidden items-center gap-2 text-white font-semibold text-base">
@@ -69,7 +69,7 @@ $nonce = wp_create_nonce('mer_culturebook_nonce');
                     <?php esc_html_e('Wysłano! Sprawdź swoją skrzynkę e-mail.', 'meritoros'); ?>
                 </p>
                 <?php else : ?>
-                <span class="inline-block bg-white/40 text-white/60 font-semibold text-base px-8 py-3.5 rounded-full cursor-default">
+                <span class="mer-btn mer-btn--ghost inline-block bg-white/40 text-white/60 font-semibold text-base px-8 py-3.5 rounded-full cursor-default">
                     <?php echo mer_esc($btn_text); ?>
                 </span>
                 <?php endif; ?>

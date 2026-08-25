@@ -19,7 +19,7 @@ $bg_url   = is_array($bg) && !empty($bg['url']) ? esc_url($bg['url']) : 'https:/
         <p class="text-base sm:text-lg text-white/70 leading-relaxed mb-10 max-w-lg mx-auto">
             <?php echo mer_esc($text); ?>
         </p>
-        <a href="<?php echo esc_url($btn_url); ?>" class="inline-flex items-center gap-2 px-8 py-4 rounded-full bg-[#00d084] text-white text-base font-semibold hover:bg-[#00b872] transition-colors">
+        <a href="<?php echo esc_url($btn_url); ?>" class="mer-btn mer-btn--primary inline-flex items-center gap-2 px-8 py-4 rounded-full bg-[#00d084] text-white text-base font-semibold hover:bg-[#00b872] transition-colors">
             <?php echo mer_esc($btn_text); ?>
         </a>
     </div>

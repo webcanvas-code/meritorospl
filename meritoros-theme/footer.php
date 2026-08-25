@@ -55,7 +55,7 @@ for ($i = 1; $i <= 4; $i++) {
             </div>
             <div class="flex flex-col sm:flex-row gap-5 shrink-0">
                 <a href="<?php echo esc_url($btn1_url); ?>"
-                   class="inline-flex items-center gap-3 bg-[#00d084] text-white px-9 py-4 rounded-full text-lg font-bold hover:bg-[#00b872] hover:shadow-lg hover:shadow-[#00d084]/30 transition-all duration-300 group">
+                   class="mer-btn mer-btn--primary inline-flex items-center gap-3 bg-[#00d084] text-white px-9 py-4 rounded-full text-lg font-bold hover:bg-[#00b872] hover:shadow-lg hover:shadow-[#00d084]/30 transition-all duration-300 group">
                     <?php echo mer_esc($btn1_text); ?>
                     <i data-lucide="arrow-right" class="w-5 h-5 group-hover:translate-x-1 transition-transform"></i>
                 </a>

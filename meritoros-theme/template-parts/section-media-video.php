@@ -97,14 +97,14 @@ $has_multi = $count > 1;
                         <?php echo mer_esc($vid['text']); ?>
                     </p>
                     <?php if ($vid['play_src']) : ?>
-                        <button class="mvid-open inline-flex items-center gap-2 px-8 py-4 rounded-full bg-[#00d084] text-white text-base font-medium hover:bg-[#00b872] transition-colors"
+                        <button class="mer-btn mer-btn--primary mvid-open inline-flex items-center gap-2 px-8 py-4 rounded-full bg-[#00d084] text-white text-base font-medium hover:bg-[#00b872] transition-colors"
                                 data-src="<?php echo $vid['play_src']; ?>"
                                 data-type="<?php echo esc_attr($vid['play_type']); ?>">
                             <?php echo mer_esc($vid['btn_text']); ?>
                         </button>
                     <?php elseif (!empty($vid['btn_url']) && $vid['btn_url'] !== '#') : ?>
                         <a href="<?php echo esc_url($vid['btn_url']); ?>"
-                           class="inline-flex items-center gap-2 px-8 py-4 rounded-full bg-[#00d084] text-white text-base font-medium hover:bg-[#00b872] transition-colors">
+                           class="mer-btn mer-btn--primary inline-flex items-center gap-2 px-8 py-4 rounded-full bg-[#00d084] text-white text-base font-medium hover:bg-[#00b872] transition-colors">
                             <?php echo mer_esc($vid['btn_text']); ?>
                         </a>
                     <?php endif; ?>

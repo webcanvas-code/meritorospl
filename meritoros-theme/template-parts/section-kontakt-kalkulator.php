@@ -45,7 +45,7 @@ $rate_sub = (float) mer_field('kp_kalk_rate_sub', 42);
 
                 <div class="relative mb-4" id="ktk-kp-wrapper">
                     <button id="ktk-kp-btn"
-                        class="w-full flex items-center justify-between px-5 py-4 border border-slate-200 rounded-xl text-slate-500 text-sm hover:border-slate-300 transition-colors bg-white"
+                        class="mer-btn mer-btn--white w-full flex items-center justify-between px-5 py-4 border border-slate-200 rounded-xl text-slate-500 text-sm hover:border-slate-300 transition-colors bg-white"
                         aria-haspopup="listbox" aria-expanded="false" type="button">
                         <span id="ktk-kp-label"><?php esc_html_e('Wybierz zakres', 'meritoros'); ?></span>
                         <i data-lucide="chevron-down" class="w-5 h-5 text-slate-400 stroke-[1.5] shrink-0 transition-transform" id="ktk-kp-chevron"></i>
@@ -61,10 +61,10 @@ $rate_sub = (float) mer_field('kp_kalk_rate_sub', 42);
                 <div class="grid grid-cols-2 gap-4 mb-4">
                     <input id="ktk-kp-pracownicy" type="number" min="1"
                         placeholder="<?php esc_attr_e('Liczba pracowników', 'meritoros'); ?>"
-                        class="w-full px-5 py-4 border border-slate-200 rounded-xl text-slate-800 text-sm placeholder-slate-400 hover:border-slate-300 focus:border-emerald-400 focus:outline-none focus:ring-2 focus:ring-emerald-100 transition-colors bg-white" />
+                        class="mer-btn mer-btn--white w-full px-5 py-4 border border-slate-200 rounded-xl text-slate-800 text-sm placeholder-slate-400 hover:border-slate-300 focus:border-emerald-400 focus:outline-none focus:ring-2 focus:ring-emerald-100 transition-colors bg-white" />
                     <input id="ktk-kp-wyplaty" type="number" min="1"
                         placeholder="<?php esc_attr_e('Ilość wypłat / mies.', 'meritoros'); ?>"
-                        class="w-full px-5 py-4 border border-slate-200 rounded-xl text-slate-800 text-sm placeholder-slate-400 hover:border-slate-300 focus:border-emerald-400 focus:outline-none focus:ring-2 focus:ring-emerald-100 transition-colors bg-white" />
+                        class="mer-btn mer-btn--white w-full px-5 py-4 border border-slate-200 rounded-xl text-slate-800 text-sm placeholder-slate-400 hover:border-slate-300 focus:border-emerald-400 focus:outline-none focus:ring-2 focus:ring-emerald-100 transition-colors bg-white" />
                 </div>
 
             </div>
@@ -74,7 +74,7 @@ $rate_sub = (float) mer_field('kp_kalk_rate_sub', 42);
 
                 <div class="relative mb-4" id="ktk-uk-wrapper">
                     <button id="ktk-uk-btn"
-                        class="w-full flex items-center justify-between px-5 py-4 border border-slate-200 rounded-xl text-slate-500 text-sm hover:border-slate-300 transition-colors bg-white"
+                        class="mer-btn mer-btn--white w-full flex items-center justify-between px-5 py-4 border border-slate-200 rounded-xl text-slate-500 text-sm hover:border-slate-300 transition-colors bg-white"
                         aria-haspopup="listbox" aria-expanded="false" type="button">
                         <span id="ktk-uk-label"><?php esc_html_e('Wybierz typ księgowości', 'meritoros'); ?></span>
                         <i data-lucide="chevron-down" class="w-5 h-5 text-slate-400 stroke-[1.5] shrink-0 transition-transform" id="ktk-uk-chevron"></i>
@@ -88,7 +88,7 @@ $rate_sub = (float) mer_field('kp_kalk_rate_sub', 42);
                 <div class="mb-4">
                     <input id="ktk-uk-docs" type="number" min="1"
                         placeholder="<?php esc_attr_e('Liczba dokumentów miesięcznie', 'meritoros'); ?>"
-                        class="w-full px-5 py-4 border border-slate-200 rounded-xl text-slate-800 text-sm placeholder-slate-400 hover:border-slate-300 focus:border-emerald-400 focus:outline-none focus:ring-2 focus:ring-emerald-100 transition-colors bg-white" />
+                        class="mer-btn mer-btn--white w-full px-5 py-4 border border-slate-200 rounded-xl text-slate-800 text-sm placeholder-slate-400 hover:border-slate-300 focus:border-emerald-400 focus:outline-none focus:ring-2 focus:ring-emerald-100 transition-colors bg-white" />
                 </div>
 
             </div>

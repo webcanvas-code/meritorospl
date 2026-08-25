@@ -68,7 +68,7 @@ $photo_alt = is_array($photo) ? ($photo['alt'] ?: $heading) : 'Spotkanie';
         </div>
 
         <!-- Banner CTA -->
-        <div class="mt-10 rounded-3xl bg-[#00d084] px-8 py-8 flex flex-col sm:flex-row items-center gap-6">
+        <div class="mer-btn mer-btn--primary mt-10 rounded-3xl bg-[#00d084] px-8 py-8 flex flex-col sm:flex-row items-center gap-6">
             <div class="flex-shrink-0 w-16 h-16 flex items-center justify-center">
                 <i data-lucide="users" class="w-12 h-12 text-white" stroke-width="1"></i>
             </div>
@@ -81,7 +81,7 @@ $photo_alt = is_array($photo) ? ($photo['alt'] ?: $heading) : 'Spotkanie';
                 </p>
             </div>
             <a href="<?php echo esc_url($banner_btn_url ?: '#'); ?>"
-               class="flex-shrink-0 inline-flex items-center justify-center px-6 py-3 rounded-full bg-white text-emerald-700 text-base font-semibold hover:bg-emerald-50 transition-colors duration-200 whitespace-nowrap">
+               class="mer-btn mer-btn--primary flex-shrink-0 inline-flex items-center justify-center px-6 py-3 rounded-full bg-white text-emerald-700 text-base font-semibold hover:bg-emerald-50 transition-colors duration-200 whitespace-nowrap">
                 <?php echo mer_esc($banner_btn); ?>
             </a>
         </div>

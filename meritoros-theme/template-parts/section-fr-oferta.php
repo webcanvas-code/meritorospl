@@ -40,7 +40,7 @@ $items = array_values(array_filter(array_map('trim', preg_split('/(\r?\n){2,}/',
         </div>
 
         <div class="flex justify-center">
-            <a href="<?php echo esc_url($btn_url); ?>" class="px-8 py-3.5 rounded-full border border-slate-300 text-slate-700 text-base font-medium hover:bg-slate-50 transition-colors">
+            <a href="<?php echo esc_url($btn_url); ?>" class="mer-btn mer-btn--secondary px-8 py-3.5 rounded-full border border-slate-300 text-slate-700 text-base font-medium hover:bg-slate-50 transition-colors">
                 <?php echo mer_esc($btn_text); ?>
             </a>
         </div>

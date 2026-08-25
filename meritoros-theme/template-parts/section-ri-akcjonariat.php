@@ -39,9 +39,9 @@ if (empty($rows)) {
                 <!-- Nagłówek -->
                 <thead>
                     <tr class="bg-[#00d084] text-white">
-                        <th class="text-left px-6 py-4 font-medium rounded-tl-2xl w-1/2"><?php echo mer_esc($col1); ?></th>
+                        <th class="mer-btn mer-btn--secondary text-left px-6 py-4 font-medium rounded-tl-2xl w-1/2"><?php echo mer_esc($col1); ?></th>
                         <th class="text-left px-6 py-4 font-medium"><?php echo mer_esc($col2); ?></th>
-                        <th class="text-left px-6 py-4 font-medium rounded-tr-2xl"><?php echo mer_esc($col3); ?></th>
+                        <th class="mer-btn mer-btn--secondary text-left px-6 py-4 font-medium rounded-tr-2xl"><?php echo mer_esc($col3); ?></th>
                     </tr>
                 </thead>
 
@@ -54,9 +54,9 @@ if (empty($rows)) {
                         $is_last     = ($ri === count($rows) - 1);
                     ?>
                         <tr class="<?php echo $is_last ? '' : 'border-b border-slate-100'; ?> hover:bg-slate-50 transition-colors">
-                            <td class="px-6 py-4 font-semibold text-slate-800<?php echo $is_last ? ' rounded-bl-2xl' : ''; ?>"><?php echo mer_esc($shareholder); ?></td>
+                            <td class="mer-btn mer-btn--secondary px-6 py-4 font-semibold text-slate-800<?php echo $is_last ? ' rounded-bl-2xl' : ''; ?>"><?php echo mer_esc($shareholder); ?></td>
                             <td class="px-6 py-4 text-slate-500"><?php echo mer_esc($shares); ?></td>
-                            <td class="px-6 py-4 text-slate-500<?php echo $is_last ? ' rounded-br-2xl' : ''; ?>"><?php echo mer_esc($votes); ?></td>
+                            <td class="mer-btn mer-btn--secondary px-6 py-4 text-slate-500<?php echo $is_last ? ' rounded-br-2xl' : ''; ?>"><?php echo mer_esc($votes); ?></td>
                         </tr>
                     <?php endforeach; ?>
                 </tbody>

@@ -25,7 +25,7 @@ $bg_url   = is_array($bg) ? esc_url($bg['url']) : 'https://images.unsplash.com/p
             <p class="text-base sm:text-lg text-white/75 leading-relaxed mb-10 max-w-3xl">
                 <?php echo wp_kses_post($text); ?>
             </p>
-            <a href="<?php echo esc_url($btn_url); ?>" class="inline-flex items-center gap-2 px-7 py-3.5 rounded-full bg-[#00d084] text-white text-base font-semibold hover:bg-[#00b872] transition-colors">
+            <a href="<?php echo esc_url($btn_url); ?>" class="mer-btn mer-btn--primary inline-flex items-center gap-2 px-7 py-3.5 rounded-full bg-[#00d084] text-white text-base font-semibold hover:bg-[#00b872] transition-colors">
                 <?php echo mer_esc($btn_text); ?>
                 <i data-lucide="arrow-right" class="w-4 h-4"></i>
             </a>

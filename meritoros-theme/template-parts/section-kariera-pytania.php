@@ -37,7 +37,7 @@ $phone_clean = preg_replace('/[^0-9+]/', '', $phone);
                 <a href="tel:<?php echo esc_attr($phone_clean); ?>" class="text-3xl font-semibold text-[#00d084] hover:text-[#00d084] transition-colors duration-200"><?php echo mer_esc($phone); ?></a>
                 <p class="text-slate-400 text-lg"><?php esc_html_e('lub napisz wiadomość', 'meritoros'); ?></p>
                 <div>
-                    <a href="<?php echo esc_url($btn_url); ?>" class="inline-block bg-[#00d084] text-white font-semibold text-base px-8 py-3.5 rounded-full hover:bg-[#00b872] transition-colors duration-200">
+                    <a href="<?php echo esc_url($btn_url); ?>" class="mer-btn mer-btn--primary inline-block bg-[#00d084] text-white font-semibold text-base px-8 py-3.5 rounded-full hover:bg-[#00b872] transition-colors duration-200">
                         <?php echo mer_esc($btn_text); ?>
                     </a>
                 </div>

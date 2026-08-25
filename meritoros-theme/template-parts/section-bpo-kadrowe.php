@@ -44,10 +44,10 @@ $items = array_values(array_filter(array_map('trim', preg_split('/(\r?\n){2,}/',
         </div>
 
         <div class="flex flex-col sm:flex-row justify-center gap-3">
-            <a href="<?php echo esc_url($btn1_u); ?>" class="text-center px-8 py-3 rounded-full border border-slate-300 text-slate-700 text-base font-medium hover:bg-slate-50 transition-colors">
+            <a href="<?php echo esc_url($btn1_u); ?>" class="mer-btn mer-btn--secondary text-center px-8 py-3 rounded-full border border-slate-300 text-slate-700 text-base font-medium hover:bg-slate-50 transition-colors">
                 <?php echo mer_esc($btn1_t); ?>
             </a>
-            <a href="<?php echo esc_url($btn2_u); ?>" class="text-center px-8 py-3 rounded-full border border-slate-300 text-slate-700 text-base font-medium hover:bg-slate-50 transition-colors">
+            <a href="<?php echo esc_url($btn2_u); ?>" class="mer-btn mer-btn--secondary text-center px-8 py-3 rounded-full border border-slate-300 text-slate-700 text-base font-medium hover:bg-slate-50 transition-colors">
                 <?php echo mer_esc($btn2_t); ?>
             </a>
         </div>

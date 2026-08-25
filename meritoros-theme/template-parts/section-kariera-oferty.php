@@ -34,9 +34,9 @@ for ($i = 1; $i <= 6; $i++) {
         <h2 class="text-pretty text-4xl md:text-5xl font-bold tracking-tight text-slate-900 mb-8"><?php echo mer_esc($title); ?></h2>
 
         <div class="flex flex-wrap gap-3 mb-10" id="oferty-filters">
-            <button data-filter="all" class="oferty-filter px-5 py-2 rounded-full text-sm font-medium bg-[#00d084] text-white transition-colors"><?php esc_html_e('Wszystkie', 'meritoros'); ?></button>
+            <button data-filter="all" class="mer-btn mer-btn--primary oferty-filter px-5 py-2 rounded-full text-sm font-medium bg-[#00d084] text-white transition-colors"><?php esc_html_e('Wszystkie', 'meritoros'); ?></button>
             <?php foreach ($cat_labels as $slug => $label) : ?>
-            <button data-filter="<?php echo esc_attr($slug); ?>" class="oferty-filter px-5 py-2 rounded-full text-sm font-medium border border-slate-300 text-slate-700 hover:border-emerald-400 transition-colors"><?php echo mer_esc($label); ?></button>
+            <button data-filter="<?php echo esc_attr($slug); ?>" class="mer-btn mer-btn--secondary oferty-filter px-5 py-2 rounded-full text-sm font-medium border border-slate-300 text-slate-700 hover:border-emerald-400 transition-colors"><?php echo mer_esc($label); ?></button>
             <?php endforeach; ?>
         </div>
 
@@ -49,7 +49,7 @@ for ($i = 1; $i <= 6; $i++) {
                     <?php if (!empty($o['salary'])) : ?>
                     <div class="flex flex-wrap gap-2">
                         <?php foreach (array_filter(array_map('trim', explode('·', $o['salary']))) as $badge) : ?>
-                        <span class="inline-flex items-center px-3 py-1.5 rounded-full text-sm font-medium bg-slate-100 text-slate-600 group-hover:bg-[#00b872] group-hover:text-white transition-colors duration-300"><?php echo mer_esc($badge); ?></span>
+                        <span class="mer-btn mer-btn--light inline-flex items-center px-3 py-1.5 rounded-full text-sm font-medium bg-slate-100 text-slate-600 group-hover:bg-[#00b872] group-hover:text-white transition-colors duration-300"><?php echo mer_esc($badge); ?></span>
                         <?php endforeach; ?>
                     </div>
                     <?php endif; ?>
@@ -57,18 +57,18 @@ for ($i = 1; $i <= 6; $i++) {
                 <div class="flex flex-wrap gap-2">
                     <?php if (!empty($o['traffit_url'])) : ?>
                     <a href="<?php echo esc_url($o['traffit_url']); ?>" target="_blank" rel="noopener noreferrer"
-                       class="inline-flex items-center gap-2 px-5 py-2.5 rounded-full border border-slate-300 text-slate-700 group-hover:bg-white group-hover:text-slate-900 group-hover:border-transparent text-sm font-medium transition-all duration-300">
+                       class="mer-btn mer-btn--white inline-flex items-center gap-2 px-5 py-2.5 rounded-full border border-slate-300 text-slate-700 group-hover:bg-white group-hover:text-slate-900 group-hover:border-transparent text-sm font-medium transition-all duration-300">
                         <?php esc_html_e('Aplikuj teraz', 'meritoros'); ?> <i data-lucide="arrow-right" class="w-4 h-4"></i>
                     </a>
                     <?php else : ?>
                     <button onclick="document.getElementById('zostaw-cv').scrollIntoView({behavior:'smooth'})"
-                            class="inline-flex items-center gap-2 px-5 py-2.5 rounded-full border border-slate-300 text-slate-700 group-hover:bg-white group-hover:text-slate-900 group-hover:border-transparent text-sm font-medium transition-all duration-300">
+                            class="mer-btn mer-btn--white inline-flex items-center gap-2 px-5 py-2.5 rounded-full border border-slate-300 text-slate-700 group-hover:bg-white group-hover:text-slate-900 group-hover:border-transparent text-sm font-medium transition-all duration-300">
                         <?php esc_html_e('Aplikuj teraz', 'meritoros'); ?> <i data-lucide="arrow-right" class="w-4 h-4"></i>
                     </button>
                     <?php endif; ?>
                     <?php if (!empty($o['url'])) : ?>
                     <a href="<?php echo esc_url($o['url']); ?>"
-                       class="inline-flex items-center gap-2 px-5 py-2.5 rounded-full border border-[#00d084]/50 text-[#00d084] group-hover:border-white/50 group-hover:text-white text-sm font-medium transition-all duration-300">
+                       class="mer-btn mer-btn--primary inline-flex items-center gap-2 px-5 py-2.5 rounded-full border border-[#00d084]/50 text-[#00d084] group-hover:border-white/50 group-hover:text-white text-sm font-medium transition-all duration-300">
                         <?php esc_html_e('Zobacz szczegóły', 'meritoros'); ?>
                     </a>
                     <?php endif; ?>
@@ -80,7 +80,7 @@ for ($i = 1; $i <= 6; $i++) {
         <div class="mt-12 text-center">
             <a href="#rekrutacja"
                onclick="event.preventDefault();document.getElementById('rekrutacja').scrollIntoView({behavior:'smooth'})"
-               class="inline-flex items-center gap-2 px-8 py-4 rounded-full border-2 border-[#00d084] text-[#00d084] font-semibold text-base hover:bg-[#00d084] hover:text-white transition-colors duration-200">
+               class="mer-btn mer-btn--primary inline-flex items-center gap-2 px-8 py-4 rounded-full border-2 border-[#00d084] text-[#00d084] font-semibold text-base hover:bg-[#00d084] hover:text-white transition-colors duration-200">
                 <?php esc_html_e('Sprawdź proces rekrutacyjny', 'meritoros'); ?>
                 <i data-lucide="arrow-down" class="w-5 h-5 stroke-[2]"></i>
             </a>

@@ -96,7 +96,7 @@ foreach ($sections as $sec) {
 
             <div class="flex items-center gap-3 mb-6">
                 <?php if ($source) : ?>
-                    <span class="text-xs font-semibold text-white bg-[#00d084] px-3 py-1 rounded-full">
+                    <span class="mer-btn mer-btn--primary text-xs font-semibold text-white bg-[#00d084] px-3 py-1 rounded-full">
                         <?php echo mer_esc($source); ?>
                     </span>
                 <?php endif; ?>
@@ -151,7 +151,7 @@ foreach ($sections as $sec) {
                         <!-- Meta artykułu -->
                         <div class="mb-8 pb-8 border-b border-slate-100">
                             <?php if ($source) : ?>
-                                <span class="inline-block text-xs font-semibold text-white bg-[#00d084] px-3 py-1 rounded-full mb-3">
+                                <span class="mer-btn mer-btn--primary inline-block text-xs font-semibold text-white bg-[#00d084] px-3 py-1 rounded-full mb-3">
                                     <?php echo mer_esc($source); ?>
                                 </span>
                             <?php endif; ?>

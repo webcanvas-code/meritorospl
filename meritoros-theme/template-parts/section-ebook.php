@@ -53,10 +53,10 @@ $nonce = wp_create_nonce('mer_ebook_nonce');
 
                     <input type="email" id="ebook-email" name="email" required
                            placeholder="<?php esc_attr_e('Adres e-mail', 'meritoros'); ?>"
-                           class="w-full px-6 py-4 rounded-full border border-slate-200 bg-white text-slate-900 text-base placeholder:text-slate-400 focus:outline-none focus:border-[#00d084] transition-colors duration-200 shadow-sm">
+                           class="mer-btn mer-btn--primary w-full px-6 py-4 rounded-full border border-slate-200 bg-white text-slate-900 text-base placeholder:text-slate-400 focus:outline-none focus:border-[#00d084] transition-colors duration-200 shadow-sm">
 
                     <button type="submit" id="ebook-submit"
-                            class="inline-flex items-center justify-center gap-2 bg-[#00d084] text-white px-8 py-4 rounded-full text-base font-bold hover:bg-[#00b872] transition-colors duration-200 w-fit">
+                            class="mer-btn mer-btn--primary inline-flex items-center justify-center gap-2 bg-[#00d084] text-white px-8 py-4 rounded-full text-base font-bold hover:bg-[#00b872] transition-colors duration-200 w-fit">
                         <span id="ebook-btn-label"><?php echo mer_esc($btn); ?></span>
                         <i data-lucide="download" class="w-5 h-5 stroke-[2]" id="ebook-btn-icon"></i>
                         <svg id="ebook-spinner" class="hidden animate-spin w-5 h-5" viewBox="0 0 24 24" fill="none">

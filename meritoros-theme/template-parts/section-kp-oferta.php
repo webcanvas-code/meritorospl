@@ -40,10 +40,10 @@ $items = array_values(array_filter(array_map('trim', preg_split('/(\r?\n){2,}/',
         </div>
 
         <div class="flex flex-wrap justify-center gap-4">
-            <a href="<?php echo esc_url($btn1_url); ?>" class="px-7 py-3.5 rounded-full border border-slate-300 text-slate-700 text-base font-semibold hover:bg-slate-50 transition-colors">
+            <a href="<?php echo esc_url($btn1_url); ?>" class="mer-btn mer-btn--secondary px-7 py-3.5 rounded-full border border-slate-300 text-slate-700 text-base font-semibold hover:bg-slate-50 transition-colors">
                 <?php echo mer_esc($btn1_text); ?>
             </a>
-            <a href="<?php echo esc_url($btn2_url); ?>" class="inline-flex items-center gap-2 px-7 py-3.5 rounded-full bg-slate-900 text-white text-base font-semibold hover:bg-slate-700 transition-colors">
+            <a href="<?php echo esc_url($btn2_url); ?>" class="mer-btn mer-btn--dark inline-flex items-center gap-2 px-7 py-3.5 rounded-full bg-slate-900 text-white text-base font-semibold hover:bg-slate-700 transition-colors">
                 <?php echo mer_esc($btn2_text); ?>
                 <i data-lucide="arrow-up-right" class="w-4 h-4"></i>
             </a>
