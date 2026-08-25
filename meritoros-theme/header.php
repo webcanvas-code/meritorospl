@@ -163,12 +163,12 @@ unset($__item);
             </div>
             <?php endif; ?>
             <a href="https://pulpit.meritoros.pl/login" target="_blank" rel="noopener"
-               class="hidden xl:flex items-center gap-2 px-5 py-3 rounded-full border border-slate-200 text-slate-700 text-base font-medium hover:border-slate-300 hover:bg-white transition-colors whitespace-nowrap">
+               class="mer-btn mer-btn--secondary hidden xl:flex items-center gap-2 px-5 py-3 rounded-full border border-slate-200 text-slate-700 text-base font-medium hover:border-slate-300 hover:bg-white transition-colors whitespace-nowrap">
                 <i data-lucide="user" class="w-4 h-4 stroke-[1.5]"></i>
                 <?php echo mer_esc($_panel_label); ?>
             </a>
             <a href="<?php echo esc_url($nav_cta_url); ?>"
-               class="bg-[#00d084] text-white <?php echo ($mer_current === 'ru') ? 'px-5' : 'px-7'; ?> py-3 rounded-full text-base font-medium hover:bg-[#00b872] transition-colors">
+               class="mer-btn mer-btn--primary bg-[#00d084] text-white <?php echo ($mer_current === 'ru') ? 'px-5' : 'px-7'; ?> py-3 rounded-full text-base font-medium hover:bg-[#00b872] transition-colors">
                 <?php echo mer_esc($nav_cta_text); ?>
             </a>
         </div>
@@ -218,12 +218,12 @@ unset($__item);
 
             <div class="mt-3 pt-3 border-t border-slate-200 flex flex-col gap-3">
                 <a href="https://pulpit.meritoros.pl/login" target="_blank" rel="noopener"
-                   class="flex items-center justify-center gap-2 border border-slate-200 text-slate-700 px-6 py-3 rounded-full text-center font-medium hover:border-slate-300 transition-colors">
+                   class="mer-btn mer-btn--secondary flex items-center justify-center gap-2 border border-slate-200 text-slate-700 px-6 py-3 rounded-full text-center font-medium hover:border-slate-300 transition-colors">
                     <i data-lucide="user" class="w-4 h-4 stroke-[1.5]"></i>
                     <?php echo mer_esc($_panel_label); ?>
                 </a>
                 <a href="<?php echo esc_url($nav_cta_url); ?>"
-                   class="bg-[#00d084] text-white px-6 py-3 rounded-full text-center font-medium hover:bg-[#00b872] transition-colors">
+                   class="mer-btn mer-btn--primary bg-[#00d084] text-white px-6 py-3 rounded-full text-center font-medium hover:bg-[#00b872] transition-colors">
                     <?php echo mer_esc($nav_cta_text); ?>
                 </a>
             </div>
