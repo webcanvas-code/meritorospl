@@ -32,11 +32,21 @@ if ($_menu_obj) {
     $_all_items = wp_get_nav_menu_items($_menu_obj->term_id) ?: [];
     $_top       = [];
     $_children  = [];
+    $_cur_lang  = apply_filters('wpml_current_language', null);
     foreach ($_all_items as $_mi) {
+        $_label = $_mi->title;
+        $_url   = $_mi->url;
+        if ($_mi->object === 'page' && $_mi->object_id && $_cur_lang) {
+            $_tr_id = apply_filters('wpml_object_id', (int) $_mi->object_id, 'page', false, $_cur_lang);
+            if ($_tr_id) {
+                $_label = get_the_title($_tr_id);
+                $_url   = get_permalink($_tr_id);
+            }
+        }
         if (!$_mi->menu_item_parent) {
-            $_top[$_mi->ID] = ['label' => $_mi->title, 'url' => $_mi->url, 'dropdown_links' => []];
+            $_top[$_mi->ID] = ['label' => $_label, 'url' => $_url, 'dropdown_links' => []];
         } else {
-            $_children[(int) $_mi->menu_item_parent][] = ['label' => $_mi->title, 'url' => $_mi->url];
+            $_children[(int) $_mi->menu_item_parent][] = ['label' => $_label, 'url' => $_url];
         }
     }
     foreach ($_top as $_id => &$_t) {
