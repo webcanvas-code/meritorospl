@@ -20,11 +20,14 @@ $_fp_id       = (int) get_option('page_on_front');
 $nav_cta_text = (get_field('nav_cta_text', $_fp_id) ?: __('Skontaktuj się', 'meritoros'));
 $nav_cta_url  = (get_field('nav_cta_url',  $_fp_id) ?: '#kontakt');
 
+$_uri          = $_SERVER['REQUEST_URI'] ?? '/';
+preg_match('#^/(en|uk|ru)(/|$)#', $_uri, $_lm);
+$_lang         = $_lm[1] ?? (apply_filters('wpml_current_language', null) ?: 'pl');
 $_panel_labels = ['pl' => 'Panel klienta', 'en' => 'Client panel', 'uk' => 'Кабінет клієнта', 'ru' => 'Кабинет клиента'];
-$_panel_label  = $_panel_labels[apply_filters('wpml_current_language', null) ?? 'pl'] ?? 'Panel klienta';
+$_panel_label  = $_panel_labels[$_lang] ?? 'Panel klienta';
 
-// Menu statyczne per język — home_url() zwraca prefix języka automatycznie przez WPML
-$_lang     = apply_filters('wpml_current_language', null) ?: 'pl';
+// Menu statyczne per język — język wykrywany z URL (/en/, /uk/, /ru/)
+
 $_nav_all  = [
     'pl' => [
         ['label' => 'Biuro rachunkowe', 'url' => '#', 'dropdown_links' => [
