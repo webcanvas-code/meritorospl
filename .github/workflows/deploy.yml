@@ -7,24 +7,33 @@ on:
 jobs:
   deploy:
     runs-on: ubuntu-latest
-    timeout-minutes: 10
+    timeout-minutes: 5
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 2
 
       - name: Install lftp
         run: sudo apt-get install -y lftp
 
-      - name: Deploy via FTP
+      - name: Get changed files
+        id: changed
+        run: |
+          git diff --name-only HEAD~1 HEAD -- meritoros-theme/ > changed_files.txt
+          cat changed_files.txt
+
+      - name: Deploy changed files via FTP
         env:
           FTP_PASSWORD: ${{ secrets.FTP_PASSWORD }}
         run: |
-          lftp -c "
-            set net:timeout 30;
-            set net:max-retries 3;
-            set ftp:ssl-allow no;
-            set ftp:passive-mode yes;
-            open -u srv104971,$FTP_PASSWORD ftp://h96.seohost.pl;
-            mirror --reverse --delete --verbose \
-              ./meritoros-theme/ \
-              /public_html/wp-content/themes/meritoros-theme/
-          "
+          while IFS= read -r file; do
+            remote="${file#meritoros-theme/}"
+            echo "Uploading: $file -> /public_html/wp-content/themes/meritoros-theme/$remote"
+            lftp -c "
+              set net:timeout 30;
+              set ftp:ssl-allow no;
+              set ftp:passive-mode yes;
+              open -u srv104971,$FTP_PASSWORD ftp://h96.seohost.pl;
+              put $file -o /public_html/wp-content/themes/meritoros-theme/$remote
+            "
+          done < changed_files.txt
