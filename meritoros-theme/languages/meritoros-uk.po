@@ -1,0 +1,669 @@
+# Translation of Meritoros Theme — Ukrainian
+# Copyright (C) 2026 Meritoros SA
+msgid ""
+msgstr ""
+"Project-Id-Version: Meritoros Theme\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-08-30 00:00+0200\n"
+"PO-Revision-Date: 2026-08-30 00:00+0200\n"
+"Last-Translator: \n"
+"Language-Team: Ukrainian\n"
+"Language: uk\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+
+msgid "* to jest wstępny szacunek, każda oferta jest indywidualnie rozpatrywana i odpowiednio wyceniana."
+msgstr "* це попередній кошторис; кожна пропозиція розглядається індивідуально та оцінюється відповідно."
+
+msgid "15 dni po 3 latach stażu pracy"
+msgstr "15 днів після 3 років стажу"
+
+msgid "2 400+ czytelników"
+msgstr "2 400+ читачів"
+
+msgid "5 dodatkowych dni urlopu po okresie próbnym"
+msgstr "5 додаткових днів відпустки після випробувального терміну"
+
+msgid "5 min czytania"
+msgstr "5 хв читання"
+
+msgid "Administracja"
+msgstr "Адміністрація"
+
+msgid "Adres"
+msgstr "Адреса"
+
+msgid "Adres do e-doręczeń"
+msgstr "Адреса для е-доставки"
+
+msgid "Adres e-mail"
+msgstr "Адреса електронної пошти"
+
+msgid "Akcjonariat"
+msgstr "Акціонери"
+
+msgid "Aktualne oferty"
+msgstr "Актуальні пропозиції"
+
+msgid "Aktualne oferty pracy z obszaru finansów i kadr"
+msgstr "Актуальні вакансії у сфері фінансів та HR"
+
+msgid "Analiza potrzeb"
+msgstr "Аналіз потреб"
+
+msgid "Aplikuj teraz"
+msgstr "Подати заявку"
+
+msgid "Artykuły medialne"
+msgstr "Медіастатті"
+
+msgid "Atrakcyjny system dodatkowych premii"
+msgstr "Привабливa система додаткових премій"
+
+msgid "Bądź na bieżąco ze zmianami podatkowymi"
+msgstr "Будьте в курсі податкових змін"
+
+msgid "Biuro rachunkowe"
+msgstr "Бухгалтерська фірма"
+
+msgid "BPO"
+msgstr "BPO"
+
+msgid "Brak artykułów w tej kategorii."
+msgstr "Немає статей у цій категорії."
+
+msgid "Brak opublikowanych artykułów."
+msgstr "Немає опублікованих статей."
+
+msgid "Branża"
+msgstr "Галузь"
+
+msgid "Breadcrumb"
+msgstr "Навігаційний шлях"
+
+msgid "Case study"
+msgstr "Кейс"
+
+msgid "Co mówią nasi pracownicy"
+msgstr "Що кажуть наші співробітники"
+
+msgid "Co oferujemy"
+msgstr "Що ми пропонуємо"
+
+msgid "Culturebook powstał po to, żebyśmy wszyscy w Meritoros w ten sam sposób rozumieli, kim jesteśmy, dokąd zmierzamy i jakie wartości są dla nas ważne. Opisuje naszą misję, sposób działania i standard współpracy – wewnątrz zespołu i z klientami."
+msgstr "Culturebook створено для того, щоб усі в Meritoros однаково розуміли, хто ми є, куди прямуємо та які цінності для нас важливі. Він описує нашу місію, спосіб роботи та стандарти співпраці — всередині команди і з клієнтами."
+
+msgid "Czy oferujecie pracę zdalną lub hybrydową?"
+msgstr "Чи пропонуєте ви віддалену або гібридну роботу?"
+
+msgid "Czy potrzebuję doświadczenia, żeby aplikować?"
+msgstr "Чи потрібен досвід для подачі заявки?"
+
+msgid "Czytaj artykuł"
+msgstr "Читати статтю"
+
+msgid "Czytaj historię"
+msgstr "Читати історію"
+
+msgid "Czytaj więcej..."
+msgstr "Читати далі..."
+
+msgid "Dane finansowe"
+msgstr "Фінансові дані"
+
+msgid "Decyzja i oferta"
+msgstr "Рішення та пропозиція"
+
+msgid "Dlaczego warto do nas dołączyć?"
+msgstr "Чому варто приєднатися до нас?"
+
+msgid "Dobra atmosfera"
+msgstr "Приємна атмосфера"
+
+msgid "Dodatkowe dni płatnego urlopu wypoczynkowego"
+msgstr "Додаткові дні оплачуваної відпустки"
+
+msgid "Dodatkowe urlopy"
+msgstr "Додаткові відпустки"
+
+msgid "Dołącz do nas!"
+msgstr "Приєднуйтесь до нас!"
+
+msgid "Dołącz do ponad 2 400 specjalistów finansowych."
+msgstr "Приєднуйтесь до понад 2 400 фінансових спеціалістів."
+
+msgid "Dołączając do Meritoros, zyskujesz więcej niż tylko pracę."
+msgstr "Приєднуючись до Meritoros, ви отримуєте більше, ніж просто роботу."
+
+msgid "dołączyło do naszego newslettera"
+msgstr "приєдналися до нашої розсилки"
+
+msgid "Dołączysz do ludzi, którzy naprawdę rozumieją swoją dziedzinę i chętnie dzielą się wiedzą. Cenimy atmosferę wzajemnego szacunku i dobrej komunikacji."
+msgstr "Ви приєднаєтеся до людей, які справді розуміють свою галузь і охоче діляться знаннями. Ми цінуємо атмосферу взаємної поваги та хорошої комунікації."
+
+msgid "Dzień Ziemi, Poland Business Run, Dzień Kundelka i Szlachetna Paczka"
+msgstr "День Землі, Poland Business Run, День Безпородного Пса і Szlachetna Paczka"
+
+msgid "Efekt wdrożenia i korzyści"
+msgstr "Результати та переваги"
+
+msgid "Elastyczne godziny rozpoczęcia pracy (7:00–10:00)"
+msgstr "Гнучкий початок робочого дня (7:00–10:00)"
+
+msgid "Elastyczność i odpowiedzialność"
+msgstr "Гнучкість та відповідальність"
+
+msgid "Elastyczny czas pracy"
+msgstr "Гнучкий графік роботи"
+
+msgid "Film"
+msgstr "Відео"
+
+msgid "Filmy"
+msgstr "Відео"
+
+msgid "Fundacje rodzinne"
+msgstr "Сімейні фонди"
+
+msgid "Grupy dopasowane do poziomu zaawansowania"
+msgstr "Групи відповідно до рівня підготовки"
+
+msgid "Historia %d z %d"
+msgstr "Історія %d з %d"
+
+msgid "Historia klienta"
+msgstr "Історія клієнта"
+
+msgid "Historie klientów"
+msgstr "Історії клієнтів"
+
+msgid "Hybrydowy model pracy, elastyczne godziny i nowoczesne narzędzia pozwalają skupić się na tym, co ważne — bez zbędnych przeszkód."
+msgstr "Гібридна модель роботи, гнучкий графік та сучасні інструменти дозволяють зосередитися на важливому — без зайвих перешкод."
+
+msgid "i sprawdź, jak możemy pomóc"
+msgstr "і дізнайтесь, як ми можемо допомогти"
+
+msgid "Ilość wypłat / mies."
+msgstr "Виплат / місяць"
+
+msgid "Informacje o kliencie:"
+msgstr "Інформація про клієнта:"
+
+msgid "Inicjatywy dobroczynne"
+msgstr "Благодійні ініціативи"
+
+msgid "Inne"
+msgstr "Інші"
+
+msgid "Inne oferty pracy"
+msgstr "Інші вакансії"
+
+msgid "Interesują Cię zmiany podatkowe? Szukasz pracy w obszarze księgowości lub kadr? Zapisz się i otrzymuj to, co ważne."
+msgstr "Цікавлять зміни в законодавстві? Шукаєте роботу в бухгалтерії або HR? Підписуйтесь і отримуйте важливе."
+
+msgid "Jak to zrobiliśmy?"
+msgstr "Як ми це зробили?"
+
+msgid "Jak wygląda nasz proces rekrutacji"
+msgstr "Наш процес рекрутингу"
+
+msgid "Jak wygląda proces rekrutacji w Meritoros?"
+msgstr "Як виглядає процес рекрутингу в Meritoros?"
+
+msgid "Jakie są możliwości rozwoju zawodowego?"
+msgstr "Які можливості для професійного розвитку?"
+
+msgid "Jakość i standard"
+msgstr "Якість та стандарт"
+
+msgid "Jednocześnie wiemy, że dobre wyniki robią ludzie: dbamy o partnerską współpracę, szacunek i realne wsparcie w zespole. Pracujemy w zadaniowym z elastycznością, która działa wtedy, gdy idzie w parze z odpowiedzialnością i dotrzymywaniem ustaleń."
+msgstr "Водночас ми знаємо, що хороші результати роблять люди: дбаємо про партнерську співпрацю, повагу та реальну підтримку в команді. Ми працюємо в завдання-орієнтованому режимі з гнучкістю, яка працює тоді, коли йде поруч з відповідальністю."
+
+msgid "Jeśli chcesz lepiej poznać nasz styl pracy, pobierz Culturebook i sprawdź, czy to podejście jest Ci bliskie"
+msgstr "Якщо хочете краще пізнати наш стиль роботи, завантажте Culturebook і перевірте, чи цей підхід вам близький"
+
+msgid "Jeśli Twój profil spełnia nasze oczekiwania, odezwie się do Ciebie przedstawiciel HR. Rozmowa trwa ok. 15–20 minut i pozwoli nam lepiej Cię poznać."
+msgstr "Якщо ваш профіль відповідає нашим очікуванням, з вами зв'яжеться представник HR. Розмова тривае близько 15–20 хвилин і дозволить нам краще вас пізнати."
+
+msgid "Jeśli zdecydujemy się na współpracę, skontaktujemy się z Tobą telefonicznie z ofertą. Witamy Cię w zespole Meritoros!"
+msgstr "Якщо ми вирішимо співпрацювати, зв'яжемося з вами телефоном з пропозицією. Ласкаво просимо до команди Meritoros!"
+
+msgid "Kadry"
+msgstr "Кадри"
+
+msgid "Kadry i płace"
+msgstr "Кадри та нарахування"
+
+msgid "Kariera"
+msgstr "Кар'єра"
+
+msgid "Karta Multisport"
+msgstr "Карта Multisport"
+
+msgid "Kartę Multisport"
+msgstr "Карта Multisport"
+
+msgid "Klikając przycisk, zgadzasz się, że Meritoros może wykorzystać te dane, aby kontaktować się z Tobą w związku z materiałami i usługami, które mogą Cię zainteresować. Możesz zrezygnować w każdej chwili. Więcej informacji znajdziesz w naszej Polityce Prywatności."
+msgstr "Натискаючи кнопку, ви погоджуєтеся, що Meritoros може використовувати ці дані для зв'язку з вами щодо матеріалів та послуг. Ви можете відписатися будь-коли. Детальніше в нашій Політиці конфіденційності."
+
+msgid "Kolejny etap to spotkanie online z bezpośrednim przełożonym. Porozmawiamy o roli, oczekiwaniach i Twoich dotychczasowych doświadczeniach."
+msgstr "Наступний етап — онлайн-зустріч з безпосереднім керівником. Ми поговоримо про роль, очікування та ваш попередній досвід."
+
+msgid "Kontakt"
+msgstr "Контакт"
+
+msgid "Krajowy Rejestr Sądowy (KRS)"
+msgstr "Державний реєстр (KRS)"
+
+msgid "Kraków"
+msgstr "Краків"
+
+msgid "Krótka rozmowa telefoniczna z HR"
+msgstr "Коротка розмова з HR"
+
+msgid "Księgowość"
+msgstr "Бухгалтерія"
+
+msgid "Księgowość uproszczona (KPiR, ryczałt)"
+msgstr "Спрощений облік (KPiR, паушальна ставка)"
+
+msgid "Kupimy biuro rachunkowe"
+msgstr "Купуємо бухгалтерські бюро"
+
+msgid "Lekcje języka angielskiego w godzinach pracy"
+msgstr "Уроки англійської під час робочого часу"
+
+msgid "Liczba dokumentów miesięcznie"
+msgstr "Кількість документів на місяць"
+
+msgid "Liczba pracowników"
+msgstr "Кількість працівників"
+
+msgid "Lista nadzorcza"
+msgstr "Наглядова рада"
+
+msgid "lub napisz wiadomość"
+msgstr "або напишіть повідомлення"
+
+msgid "Mapa Polski z oddziałami"
+msgstr "Карта Польщі з офісами"
+
+msgid "Marketing manager"
+msgstr "Маркетинг-менеджер"
+
+msgid "Masz pytania? Chętnie odpowiemy"
+msgstr "Маєте запитання? Із задоволенням відповімо"
+
+msgid "Media i newsroom"
+msgstr "Медіа та прес-центр"
+
+msgid "Miesięczne podsumowania zmian podatkowych"
+msgstr "Щомісячні зведення змін у законодавстві"
+
+msgid "Miniatura wideo"
+msgstr "Прев'ю відео"
+
+msgid "Model hybrydowy"
+msgstr "Гібридна модель"
+
+msgid "Możliwość objęcia benefitami członków rodziny"
+msgstr "Можливість поширити пільги на членів сім'ї"
+
+msgid "Możliwość wyjść prywatnych w ciągu dnia"
+msgstr "Можливість особистих виходів протягом дня"
+
+msgid "Możliwość wypisania się w dowolnym momencie"
+msgstr "Можливість відписатися в будь-який момент"
+
+msgid "Najczęściej zadawane pytania"
+msgstr "Часті запитання"
+
+msgid "Najważniejsze efekty:"
+msgstr "Ключові результати:"
+
+msgid "Następna historia"
+msgstr "Наступна історія"
+
+msgid "Następne zdjęcie"
+msgstr "Наступне фото"
+
+msgid "Nasz proces rekrutacji składa się z kilku etapów: przeglądu CV, rozmowy telefonicznej, spotkania rekrutacyjnego i decyzji. Staramy się, aby cały proces trwał nie dłużej niż 2–3 tygodnie."
+msgstr "Наш процес рекрутингу складається з кількох етапів: перегляду CV, телефонної розмови, рекрутингової зустрічі та рішення. Ми намагаємося, щоб весь процес тривав не більше 2–3 тижнів."
+
+msgid "Nasze benefity"
+msgstr "Наші переваги"
+
+msgid "Nauka języków"
+msgstr "Вивчення мов"
+
+msgid "Nawigacja slajdów"
+msgstr "Навігація слайдів"
+
+msgid "Newsletter"
+msgstr "Розсилка"
+
+msgid "Nie stoimy w miejscu. Rozwój i doskonalenie to część naszej codziennej pracy. Szukamy osób, które chcą mieć realny wpływ na usprawnianie procesów i lubią środowisko, w którym można się uczyć i rosnąć."
+msgstr "Ми не стоїмо на місці. Розвиток і вдосконалення — частина нашої щоденної роботи. Ми шукаємо людей, які хочуть мати реальний вплив на вдосконалення процесів і люблять середовище, де можна вчитися і зростати."
+
+msgid "Nr KRS:"
+msgstr "Реєстр. №:"
+
+msgid "O nas"
+msgstr "Про нас"
+
+msgid "Obejrzyj materiał"
+msgstr "Переглянути матеріал"
+
+msgid "Oblicz kwotę obsługi"
+msgstr "Розрахувати вартість"
+
+msgid "Obsługujemy klientów zdalnie w całej Polsce"
+msgstr "Обслуговуємо клієнтів дистанційно по всій Польщі"
+
+msgid "Odkryj"
+msgstr "Дізнатися"
+
+msgid "Odtwórz film"
+msgstr "Відтворити відео"
+
+msgid "Odtwórz wideo"
+msgstr "Відтворити відео"
+
+msgid "Oferta i dołączenie do zespołu"
+msgstr "Пропозиція та вступ до команди"
+
+msgid "Oferujemy umowę o pracę, przewidywalny zakres obowiązków i przejrzyste ścieżki wynagradzania. Wiemy, że komfort i bezpieczeństwo to fundament dobrej pracy."
+msgstr "Ми пропонуємо трудовий договір, передбачуваний обсяг обов'язків та прозорі шляхи оплати. Ми знаємо, що комфорт і безпека — основа гарної роботи."
+
+msgid "Orientacyjna cena netto"
+msgstr "Орієнтовна ціна (нетто)"
+
+msgid "Otrzymasz informację zwrotną i – mamy nadzieję – ofertę współpracy."
+msgstr "Ви отримаєте відгук і — сподіваємося — пропозицію про співпрацю."
+
+msgid "Pakiet benefitów"
+msgstr "Пакет переваг"
+
+msgid "Pełna księgowość (KH)"
+msgstr "Повний бухгалтерський облік (KH)"
+
+msgid "Po złożeniu aplikacji przeglądamy Twoje dokumenty pod kątem naszych kryteriów. Na odpowiedź możesz liczyć w ciągu 21 dni kalendarzowych."
+msgstr "Після подання заявки ми переглядаємо ваші документи відповідно до наших критеріїв. Ви можете розраховувати на відповідь протягом 21 календарного дня."
+
+msgid "Pobierz e-book"
+msgstr "Завантажити e-book"
+
+msgid "Pobierz plik"
+msgstr "Завантажити файл"
+
+msgid "Podaj kilka liczb — my podamy orientacyjną cenę."
+msgstr "Введіть кілька цифр — ми надамо орієнтовну ціну."
+
+msgid "Podatkowo-księgowe"
+msgstr "Податки та бухгалтерія"
+
+msgid "Poprzednia historia"
+msgstr "Попередня історія"
+
+msgid "Poprzednie zdjęcie"
+msgstr "Попереднє фото"
+
+msgid "Porozmawiajmy"
+msgstr "Поговоримо"
+
+msgid "Powrót do Media i newsroom"
+msgstr "Повернутись до Медіа та прес-центру"
+
+msgid "Poznaj nasz Culturebook"
+msgstr "Ознайомтесь з нашим Culturebook"
+
+msgid "Poznaj więcej historii"
+msgstr "Дізнатись більше історій"
+
+msgid "Pracujemy w modelu hybrydowym – część tygodnia w biurze, część zdalnie. Dokładny podział zależy od stanowiska i jest ustalany indywidualnie."
+msgstr "Ми працюємо в гібридній моделі — частину тижня в офісі, частину дистанційно. Точний розподіл залежить від посади і узгоджується індивідуально."
+
+msgid "Praktyczne wskazówki i komentarze ekspertów"
+msgstr "Практичні поради та коментарі експертів"
+
+msgid "Praktyki i staże"
+msgstr "Практики та стажування"
+
+msgid "Propozycja rozwiązania"
+msgstr "Запропоноване рішення"
+
+msgid "Prywatna opieka medyczna Allianz"
+msgstr "Приватна медична страховка Allianz"
+
+msgid "Prywatną opiekę zdrowotną"
+msgstr "приватне медичне страхування"
+
+msgid "Przeczytaj artykuł"
+msgstr "Читати статтю"
+
+msgid "Prześlij swoje CV"
+msgstr "Надіслати CV"
+
+msgid "Prześlij swoje CV przez formularz na stronie Kariery."
+msgstr "Надішліть CV через форму на сторінці Кар'єра."
+
+msgid "Prześlij swoje CV przez formularz na stronie Kariery. Rekrutacja odbywa się w kilku prostych krokach – skontaktujemy się z Tobą tak szybko, jak to możliwe."
+msgstr "Надішліть CV через форму на сторінці Кар'єра. Рекрутинг відбувається в кілька простих кроків — ми зв'яжемося з вами якнайшвидше."
+
+msgid "Przypisz formularz CF7 w ustawieniach strony (zakładka Formularz CV → ID formularza CF7)."
+msgstr "Призначте форму CF7 в налаштуваннях сторінки (вкладка: Форма CV → ID форми CF7)."
+
+msgid "Przypisz formularz CF7 w ustawieniach strony (zakładka Hero & Formularz → ID formularza CF7)."
+msgstr "Призначте форму CF7 в налаштуваннях сторінки (вкладка: Hero & Форма → ID форми CF7)."
+
+msgid "Przypisz formularz CF7 w ustawieniach strony głównej (zakładka Newsletter → ID formularza CF7)."
+msgstr "Призначте форму CF7 в налаштуваннях головної сторінки (вкладка: Розсилка → ID форми CF7)."
+
+msgid "Publikujemy treści dotyczące księgowości, kadr, BPO i zmian, które mają realny wpływ na prowadzenie firmy. Znajdziesz tu zarówno materiały eksperckie, jak i aktualności dotyczące rynku oraz działalności Meritoros."
+msgstr "Публікуємо матеріали з бухгалтерії, кадрів, BPO та змін, що мають реальний вплив на ведення бізнесу. Тут ви знайдете як експертні матеріали, так і новини ринку та діяльності Meritoros."
+
+msgid "razem z urlopem ustawowym jest to aż do 41 dni w roku!"
+msgstr "разом із законною відпусткою це аж до 41 дня на рік!"
+
+msgid "Rekrutacja"
+msgstr "Рекрутинг"
+
+msgid "Relacje inwestorskie"
+msgstr "Відносини з інвесторами"
+
+msgid "Rewident"
+msgstr "Аудитор"
+
+msgid "Rośniemy"
+msgstr "Ми зростаємо"
+
+msgid "Rozliczenie umów (podwykonawcy)"
+msgstr "Розрахунки за договорами (субпідрядники)"
+
+msgid "Rozmowa kwalifikacyjna"
+msgstr "Співбесіда"
+
+msgid "Rozwiązanie"
+msgstr "Рішення"
+
+msgid "Rozwój zawodowy"
+msgstr "Професійний розвиток"
+
+msgid "Rynek biur rachunkowych"
+msgstr "Ринок бухгалтерських фірм"
+
+msgid "Same kadry"
+msgstr "Тільки кадри"
+
+msgid "Same płace"
+msgstr "Тільки нарахування"
+
+msgid "Siedziba główna"
+msgstr "Головний офіс"
+
+msgid "Skontaktuj się"
+msgstr "Зв'яжіться з нами"
+
+msgid "Skontaktujemy się z Tobą, by lepiej się poznać."
+msgstr "Ми зв'яжемося з вами, щоб краще познайомитися."
+
+msgid "Spis treści"
+msgstr "Зміст"
+
+msgid "Spotkanie online z Hiring Managerem"
+msgstr "Онлайн-зустріч з Hiring Manager"
+
+msgid "Sprawdź jak się u nas pracuje"
+msgstr "Дізнайтесь, як у нас працюється"
+
+msgid "Sprawdź orientacyjny koszt obsługi"
+msgstr "Перевірте орієнтовну вартість обслуговування"
+
+msgid "Sprawdź proces rekrutacyjny"
+msgstr "Перевірте процес рекрутингу"
+
+msgid "Sprawozdania"
+msgstr "Звіти"
+
+msgid "Sprawozdania zarządu"
+msgstr "Звіти керівництва"
+
+msgid "Stałe wsparcie"
+msgstr "Постійна підтримка"
+
+msgid "Stawiamy na ciągły rozwój naszych pracowników. Oferujemy szkolenia wewnętrzne, dofinansowanie kursów zewnętrznych oraz możliwość awansu wewnątrz organizacji."
+msgstr "Ми робимо ставку на безперервний розвиток наших співробітників. Пропонуємо внутрішнє навчання, часткове фінансування зовнішніх курсів та можливість кар'єрного зростання всередині організації."
+
+msgid "Strona główna"
+msgstr "Головна"
+
+msgid "Strona nie istnieje"
+msgstr "Сторінку не знайдено"
+
+msgid "Strona, której szukasz, mogła zostać przeniesiona lub usunięta. Wróć na stronę główną lub skontaktuj się z nami."
+msgstr "Сторінку, яку ви шукаєте, можливо переміщено або видалено. Поверніться на головну або зв'яжіться з нами."
+
+msgid "Szacunek i współpraca"
+msgstr "Повага та співпраця"
+
+msgid "Szkolenia i wsparcie"
+msgstr "Навчання та підтримка"
+
+msgid "Szkolenia wewnętrzne"
+msgstr "Внутрішнє навчання"
+
+msgid "Szkolenia, webinary i dostęp do materiałów branżowych"
+msgstr "Навчання, вебінари та доступ до галузевих матеріалів"
+
+msgid "Twórz z nami jakość"
+msgstr "Створюйте якість разом з нами"
+
+msgid "Uchwały"
+msgstr "Рішення зборів"
+
+msgid "Umów rozmowę"
+msgstr "Записатись на дзвінок"
+
+msgid "Umów się na rozmowę"
+msgstr "Записатися на розмову"
+
+msgid "Umowa o pracę"
+msgstr "Трудовий договір"
+
+msgid "Usługi księgowe"
+msgstr "Бухгалтерські послуги"
+
+msgid "W Meritoros wspieramy firmy w księgowości, kadrach i płacach oraz procesach back-office od 2004 roku. Pracujemy tak, żeby być dumni z jakości informacji, które dostarczamy."
+msgstr "У Meritoros ми підтримуємо компанії в бухгалтерії, кадрах і нарахуваннях та back-office процесах з 2004 року. Ми працюємо так, щоб пишатися якістю інформації, яку надаємо."
+
+msgid "Wczasy pod gruszą"
+msgstr "Відпускні"
+
+msgid "Wdrożenie"
+msgstr "Впровадження"
+
+msgid "Wdrożenie przyniosło również konkretne, mierzalne korzyści:"
+msgstr "Впровадження також принесло конкретні, вимірювані результати:"
+
+msgid "Wiedza i poradniki"
+msgstr "Знання та поради"
+
+msgid "Wolontariat pracowniczy i integracje zespołowe"
+msgstr "Волонтерство та командні заходи"
+
+msgid "Work-life balance"
+msgstr "Баланс між роботою та особистим"
+
+msgid "Wszystkie"
+msgstr "Усі"
+
+msgid "Wybierz typ księgowości"
+msgstr "Оберіть тип бухгалтерії"
+
+msgid "Wybierz zakres"
+msgstr "Виберіть тип"
+
+msgid "Wyniki wyszukiwania: %s"
+msgstr "Результати пошуку: %s"
+
+msgid "Wysłano! Sprawdź swoją skrzynkę e-mail."
+msgstr "Надіслано! Перевірте вашу поштову скриньку."
+
+msgid "Wyślij CV"
+msgstr "Надіслати CV"
+
+msgid "Wyślij nam swoje CV"
+msgstr "Надішліть нам ваше CV"
+
+msgid "Wyślij zapytanie"
+msgstr "Надіслати запит"
+
+msgid "Wysłuchamy, przeanalizujemy sytuację i zaproponujemy kolejne kroki."
+msgstr "Вислухаємо, проаналізуємо ситуацію та запропонуємо наступні кроки."
+
+msgid "Wyzwanie"
+msgstr "Виклик"
+
+msgid "Zadaniowy system organizacji pracy"
+msgstr "Завдання-орієнтована система організації праці"
+
+msgid "Zadaniowy tryb pracy: możesz dopasować start i przerwy do swojego dnia"
+msgstr "Завдання-орієнтований режим: можна налаштувати початок і перерви під свій день"
+
+msgid "Zadzwoń do nas!"
+msgstr "Зателефонуйте нам!"
+
+msgid "Zainteresowana / Zainteresowany?"
+msgstr "Зацікавлені?"
+
+msgid "Zakres współpracy"
+msgstr "Сфера співпраці"
+
+msgid "Załaduj więcej"
+msgstr "Завантажити більше"
+
+msgid "Zależy nam na przejrzystości — dlatego chcemy, żebyś wiedział/-a, czego się spodziewać na każdym etapie."
+msgstr "Нам важлива прозорість — тому ми хочемо, щоб ви знали, чого очікувати на кожному етапі."
+
+msgid "Zależy od stanowiska – część ofert skierowana jest do osób bez doświadczenia, które chcą się uczyć. Każdą ofertę pracy opisujemy dokładnie pod kątem wymagań."
+msgstr "Залежить від посади — частина пропозицій орієнтована на людей без досвіду, які хочуть навчатися. Кожну вакансію ми описуємо детально щодо вимог."
+
+msgid "Zamknij"
+msgstr "Закрити"
+
+msgid "Zapisz się bezpłatnie"
+msgstr "Зареєструватись безкоштовно"
+
+msgid "Zapytaj o ofertę"
+msgstr "Запитати про пропозицію"
+
+msgid "Zarząd"
+msgstr "Рада директорів"
+
+msgid "Zdjęcie klienta"
+msgstr "Фото клієнта"
+
+msgid "Zobacz szczegóły"
+msgstr "Переглянути деталі"

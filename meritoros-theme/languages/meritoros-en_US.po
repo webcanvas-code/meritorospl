@@ -1,0 +1,669 @@
+# Translation of Meritoros Theme — English (United States)
+# Copyright (C) 2026 Meritoros SA
+msgid ""
+msgstr ""
+"Project-Id-Version: Meritoros Theme\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-08-30 00:00+0200\n"
+"PO-Revision-Date: 2026-08-30 00:00+0200\n"
+"Last-Translator: \n"
+"Language-Team: English\n"
+"Language: en_US\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+msgid "* to jest wstępny szacunek, każda oferta jest indywidualnie rozpatrywana i odpowiednio wyceniana."
+msgstr "* this is a preliminary estimate; each offer is individually considered and priced accordingly."
+
+msgid "15 dni po 3 latach stażu pracy"
+msgstr "15 days after 3 years of service"
+
+msgid "2 400+ czytelników"
+msgstr "2,400+ readers"
+
+msgid "5 dodatkowych dni urlopu po okresie próbnym"
+msgstr "5 additional vacation days after the probation period"
+
+msgid "5 min czytania"
+msgstr "5 min read"
+
+msgid "Administracja"
+msgstr "Administration"
+
+msgid "Adres"
+msgstr "Address"
+
+msgid "Adres do e-doręczeń"
+msgstr "E-delivery address"
+
+msgid "Adres e-mail"
+msgstr "Email address"
+
+msgid "Akcjonariat"
+msgstr "Shareholders"
+
+msgid "Aktualne oferty"
+msgstr "Current offers"
+
+msgid "Aktualne oferty pracy z obszaru finansów i kadr"
+msgstr "Current finance & HR job offers"
+
+msgid "Analiza potrzeb"
+msgstr "Needs analysis"
+
+msgid "Aplikuj teraz"
+msgstr "Apply now"
+
+msgid "Artykuły medialne"
+msgstr "Media articles"
+
+msgid "Atrakcyjny system dodatkowych premii"
+msgstr "Attractive bonus system"
+
+msgid "Bądź na bieżąco ze zmianami podatkowymi"
+msgstr "Stay up to date with tax changes"
+
+msgid "Biuro rachunkowe"
+msgstr "Accounting firm"
+
+msgid "BPO"
+msgstr "BPO"
+
+msgid "Brak artykułów w tej kategorii."
+msgstr "No articles in this category."
+
+msgid "Brak opublikowanych artykułów."
+msgstr "No published articles."
+
+msgid "Branża"
+msgstr "Industry"
+
+msgid "Breadcrumb"
+msgstr "Breadcrumb"
+
+msgid "Case study"
+msgstr "Case study"
+
+msgid "Co mówią nasi pracownicy"
+msgstr "What our employees say"
+
+msgid "Co oferujemy"
+msgstr "What we offer"
+
+msgid "Culturebook powstał po to, żebyśmy wszyscy w Meritoros w ten sam sposób rozumieli, kim jesteśmy, dokąd zmierzamy i jakie wartości są dla nas ważne. Opisuje naszą misję, sposób działania i standard współpracy – wewnątrz zespołu i z klientami."
+msgstr "Culturebook was created so that everyone at Meritoros understands in the same way who we are, where we're headed, and what values matter to us. It describes our mission, way of working, and collaboration standards — within the team and with clients."
+
+msgid "Czy oferujecie pracę zdalną lub hybrydową?"
+msgstr "Do you offer remote or hybrid work?"
+
+msgid "Czy potrzebuję doświadczenia, żeby aplikować?"
+msgstr "Do I need experience to apply?"
+
+msgid "Czytaj artykuł"
+msgstr "Read article"
+
+msgid "Czytaj historię"
+msgstr "Read story"
+
+msgid "Czytaj więcej..."
+msgstr "Read more..."
+
+msgid "Dane finansowe"
+msgstr "Financial data"
+
+msgid "Decyzja i oferta"
+msgstr "Decision & offer"
+
+msgid "Dlaczego warto do nas dołączyć?"
+msgstr "Why join us?"
+
+msgid "Dobra atmosfera"
+msgstr "Great atmosphere"
+
+msgid "Dodatkowe dni płatnego urlopu wypoczynkowego"
+msgstr "Additional paid vacation days"
+
+msgid "Dodatkowe urlopy"
+msgstr "Additional leave"
+
+msgid "Dołącz do nas!"
+msgstr "Join us!"
+
+msgid "Dołącz do ponad 2 400 specjalistów finansowych."
+msgstr "Join over 2,400 finance professionals."
+
+msgid "Dołączając do Meritoros, zyskujesz więcej niż tylko pracę."
+msgstr "Joining Meritoros, you gain more than just a job."
+
+msgid "dołączyło do naszego newslettera"
+msgstr "joined our newsletter"
+
+msgid "Dołączysz do ludzi, którzy naprawdę rozumieją swoją dziedzinę i chętnie dzielą się wiedzą. Cenimy atmosferę wzajemnego szacunku i dobrej komunikacji."
+msgstr "You'll join people who truly understand their field and enjoy sharing knowledge. We value an atmosphere of mutual respect and good communication."
+
+msgid "Dzień Ziemi, Poland Business Run, Dzień Kundelka i Szlachetna Paczka"
+msgstr "Earth Day, Poland Business Run, Mutt Day and Szlachetna Paczka"
+
+msgid "Efekt wdrożenia i korzyści"
+msgstr "Results & benefits"
+
+msgid "Elastyczne godziny rozpoczęcia pracy (7:00–10:00)"
+msgstr "Flexible start times (7:00–10:00)"
+
+msgid "Elastyczność i odpowiedzialność"
+msgstr "Flexibility & responsibility"
+
+msgid "Elastyczny czas pracy"
+msgstr "Flexible working hours"
+
+msgid "Film"
+msgstr "Video"
+
+msgid "Filmy"
+msgstr "Videos"
+
+msgid "Fundacje rodzinne"
+msgstr "Family foundations"
+
+msgid "Grupy dopasowane do poziomu zaawansowania"
+msgstr "Groups matched to skill level"
+
+msgid "Historia %d z %d"
+msgstr "Story %d of %d"
+
+msgid "Historia klienta"
+msgstr "Customer story"
+
+msgid "Historie klientów"
+msgstr "Customer stories"
+
+msgid "Hybrydowy model pracy, elastyczne godziny i nowoczesne narzędzia pozwalają skupić się na tym, co ważne — bez zbędnych przeszkód."
+msgstr "A hybrid work model, flexible hours, and modern tools let you focus on what matters — without unnecessary obstacles."
+
+msgid "i sprawdź, jak możemy pomóc"
+msgstr "and see how we can help"
+
+msgid "Ilość wypłat / mies."
+msgstr "Payrolls / month"
+
+msgid "Informacje o kliencie:"
+msgstr "Client information:"
+
+msgid "Inicjatywy dobroczynne"
+msgstr "Charitable initiatives"
+
+msgid "Inne"
+msgstr "Other"
+
+msgid "Inne oferty pracy"
+msgstr "Other job offers"
+
+msgid "Interesują Cię zmiany podatkowe? Szukasz pracy w obszarze księgowości lub kadr? Zapisz się i otrzymuj to, co ważne."
+msgstr "Interested in tax changes? Looking for accounting or HR jobs? Sign up and get what matters."
+
+msgid "Jak to zrobiliśmy?"
+msgstr "How did we do it?"
+
+msgid "Jak wygląda nasz proces rekrutacji"
+msgstr "Our recruitment process"
+
+msgid "Jak wygląda proces rekrutacji w Meritoros?"
+msgstr "What does the recruitment process at Meritoros look like?"
+
+msgid "Jakie są możliwości rozwoju zawodowego?"
+msgstr "What are the professional development opportunities?"
+
+msgid "Jakość i standard"
+msgstr "Quality & standard"
+
+msgid "Jednocześnie wiemy, że dobre wyniki robią ludzie: dbamy o partnerską współpracę, szacunek i realne wsparcie w zespole. Pracujemy w zadaniowym z elastycznością, która działa wtedy, gdy idzie w parze z odpowiedzialnością i dotrzymywaniem ustaleń."
+msgstr "At the same time, we know that good results are made by people: we care about partnership, respect, and real team support. We work in a task-oriented manner with flexibility that works when paired with responsibility and keeping commitments."
+
+msgid "Jeśli chcesz lepiej poznać nasz styl pracy, pobierz Culturebook i sprawdź, czy to podejście jest Ci bliskie"
+msgstr "If you want to learn more about our work style, download the Culturebook and see if this approach resonates with you"
+
+msgid "Jeśli Twój profil spełnia nasze oczekiwania, odezwie się do Ciebie przedstawiciel HR. Rozmowa trwa ok. 15–20 minut i pozwoli nam lepiej Cię poznać."
+msgstr "If your profile meets our expectations, an HR representative will contact you. The conversation takes about 15–20 minutes and will help us get to know you better."
+
+msgid "Jeśli zdecydujemy się na współpracę, skontaktujemy się z Tobą telefonicznie z ofertą. Witamy Cię w zespole Meritoros!"
+msgstr "If we decide to work together, we will contact you by phone with an offer. Welcome to the Meritoros team!"
+
+msgid "Kadry"
+msgstr "HR"
+
+msgid "Kadry i płace"
+msgstr "HR & Payroll"
+
+msgid "Kariera"
+msgstr "Career"
+
+msgid "Karta Multisport"
+msgstr "Multisport card"
+
+msgid "Kartę Multisport"
+msgstr "Multisport card"
+
+msgid "Klikając przycisk, zgadzasz się, że Meritoros może wykorzystać te dane, aby kontaktować się z Tobą w związku z materiałami i usługami, które mogą Cię zainteresować. Możesz zrezygnować w każdej chwili. Więcej informacji znajdziesz w naszej Polityce Prywatności."
+msgstr "By clicking the button, you agree that Meritoros may use this data to contact you about materials and services that may interest you. You may withdraw at any time. More information in our Privacy Policy."
+
+msgid "Kolejny etap to spotkanie online z bezpośrednim przełożonym. Porozmawiamy o roli, oczekiwaniach i Twoich dotychczasowych doświadczeniach."
+msgstr "The next stage is an online meeting with your direct supervisor. We'll talk about the role, expectations, and your previous experience."
+
+msgid "Kontakt"
+msgstr "Contact"
+
+msgid "Krajowy Rejestr Sądowy (KRS)"
+msgstr "National Court Register (KRS)"
+
+msgid "Kraków"
+msgstr "Kraków"
+
+msgid "Krótka rozmowa telefoniczna z HR"
+msgstr "Brief call with HR"
+
+msgid "Księgowość"
+msgstr "Accounting"
+
+msgid "Księgowość uproszczona (KPiR, ryczałt)"
+msgstr "Simplified accounting (KPiR, flat rate)"
+
+msgid "Kupimy biuro rachunkowe"
+msgstr "We buy accounting firms"
+
+msgid "Lekcje języka angielskiego w godzinach pracy"
+msgstr "English lessons during working hours"
+
+msgid "Liczba dokumentów miesięcznie"
+msgstr "Documents per month"
+
+msgid "Liczba pracowników"
+msgstr "Number of employees"
+
+msgid "Lista nadzorcza"
+msgstr "Supervisory board"
+
+msgid "lub napisz wiadomość"
+msgstr "or send a message"
+
+msgid "Mapa Polski z oddziałami"
+msgstr "Map of Poland with offices"
+
+msgid "Marketing manager"
+msgstr "Marketing manager"
+
+msgid "Masz pytania? Chętnie odpowiemy"
+msgstr "Questions? We're happy to help"
+
+msgid "Media i newsroom"
+msgstr "Media & Newsroom"
+
+msgid "Miesięczne podsumowania zmian podatkowych"
+msgstr "Monthly tax update summaries"
+
+msgid "Miniatura wideo"
+msgstr "Video thumbnail"
+
+msgid "Model hybrydowy"
+msgstr "Hybrid model"
+
+msgid "Możliwość objęcia benefitami członków rodziny"
+msgstr "Option to extend benefits to family members"
+
+msgid "Możliwość wyjść prywatnych w ciągu dnia"
+msgstr "Option for private outings during the day"
+
+msgid "Możliwość wypisania się w dowolnym momencie"
+msgstr "Unsubscribe anytime"
+
+msgid "Najczęściej zadawane pytania"
+msgstr "Frequently asked questions"
+
+msgid "Najważniejsze efekty:"
+msgstr "Key outcomes:"
+
+msgid "Następna historia"
+msgstr "Next story"
+
+msgid "Następne zdjęcie"
+msgstr "Next photo"
+
+msgid "Nasz proces rekrutacji składa się z kilku etapów: przeglądu CV, rozmowy telefonicznej, spotkania rekrutacyjnego i decyzji. Staramy się, aby cały proces trwał nie dłużej niż 2–3 tygodnie."
+msgstr "Our recruitment process consists of several stages: CV review, phone call, recruitment meeting, and decision. We aim for the entire process to take no longer than 2–3 weeks."
+
+msgid "Nasze benefity"
+msgstr "Our benefits"
+
+msgid "Nauka języków"
+msgstr "Language learning"
+
+msgid "Nawigacja slajdów"
+msgstr "Slide navigation"
+
+msgid "Newsletter"
+msgstr "Newsletter"
+
+msgid "Nie stoimy w miejscu. Rozwój i doskonalenie to część naszej codziennej pracy. Szukamy osób, które chcą mieć realny wpływ na usprawnianie procesów i lubią środowisko, w którym można się uczyć i rosnąć."
+msgstr "We don't stand still. Growth and improvement are part of our daily work. We look for people who want to have a real impact on process improvement and enjoy an environment where you can learn and grow."
+
+msgid "Nr KRS:"
+msgstr "KRS No.:"
+
+msgid "O nas"
+msgstr "About us"
+
+msgid "Obejrzyj materiał"
+msgstr "Watch material"
+
+msgid "Oblicz kwotę obsługi"
+msgstr "Calculate service cost"
+
+msgid "Obsługujemy klientów zdalnie w całej Polsce"
+msgstr "We serve clients remotely across Poland"
+
+msgid "Odkryj"
+msgstr "Discover"
+
+msgid "Odtwórz film"
+msgstr "Play video"
+
+msgid "Odtwórz wideo"
+msgstr "Play video"
+
+msgid "Oferta i dołączenie do zespołu"
+msgstr "Offer & joining the team"
+
+msgid "Oferujemy umowę o pracę, przewidywalny zakres obowiązków i przejrzyste ścieżki wynagradzania. Wiemy, że komfort i bezpieczeństwo to fundament dobrej pracy."
+msgstr "We offer an employment contract, a predictable scope of duties, and transparent salary paths. We know that comfort and security are the foundation of good work."
+
+msgid "Orientacyjna cena netto"
+msgstr "Estimated net price"
+
+msgid "Otrzymasz informację zwrotną i – mamy nadzieję – ofertę współpracy."
+msgstr "You will receive feedback and — we hope — an offer of cooperation."
+
+msgid "Pakiet benefitów"
+msgstr "Benefits package"
+
+msgid "Pełna księgowość (KH)"
+msgstr "Full accounting (KH)"
+
+msgid "Po złożeniu aplikacji przeglądamy Twoje dokumenty pod kątem naszych kryteriów. Na odpowiedź możesz liczyć w ciągu 21 dni kalendarzowych."
+msgstr "After submitting your application, we review your documents against our criteria. You can expect a response within 21 calendar days."
+
+msgid "Pobierz e-book"
+msgstr "Download e-book"
+
+msgid "Pobierz plik"
+msgstr "Download file"
+
+msgid "Podaj kilka liczb — my podamy orientacyjną cenę."
+msgstr "Enter a few numbers — we'll give you an estimate."
+
+msgid "Podatkowo-księgowe"
+msgstr "Tax & accounting"
+
+msgid "Poprzednia historia"
+msgstr "Previous story"
+
+msgid "Poprzednie zdjęcie"
+msgstr "Previous photo"
+
+msgid "Porozmawiajmy"
+msgstr "Let's talk"
+
+msgid "Powrót do Media i newsroom"
+msgstr "Back to Media & Newsroom"
+
+msgid "Poznaj nasz Culturebook"
+msgstr "Discover our Culturebook"
+
+msgid "Poznaj więcej historii"
+msgstr "See more stories"
+
+msgid "Pracujemy w modelu hybrydowym – część tygodnia w biurze, część zdalnie. Dokładny podział zależy od stanowiska i jest ustalany indywidualnie."
+msgstr "We work in a hybrid model — part of the week in the office, part remotely. The exact split depends on the position and is agreed individually."
+
+msgid "Praktyczne wskazówki i komentarze ekspertów"
+msgstr "Practical tips & expert commentary"
+
+msgid "Praktyki i staże"
+msgstr "Internships & apprenticeships"
+
+msgid "Propozycja rozwiązania"
+msgstr "Proposed solution"
+
+msgid "Prywatna opieka medyczna Allianz"
+msgstr "Allianz private healthcare"
+
+msgid "Prywatną opiekę zdrowotną"
+msgstr "private healthcare"
+
+msgid "Przeczytaj artykuł"
+msgstr "Read article"
+
+msgid "Prześlij swoje CV"
+msgstr "Submit your CV"
+
+msgid "Prześlij swoje CV przez formularz na stronie Kariery."
+msgstr "Submit your CV via the form on the Careers page."
+
+msgid "Prześlij swoje CV przez formularz na stronie Kariery. Rekrutacja odbywa się w kilku prostych krokach – skontaktujemy się z Tobą tak szybko, jak to możliwe."
+msgstr "Submit your CV via the form on the Careers page. Recruitment takes place in a few simple steps — we'll contact you as soon as possible."
+
+msgid "Przypisz formularz CF7 w ustawieniach strony (zakładka Formularz CV → ID formularza CF7)."
+msgstr "Assign the CF7 form in page settings (tab: CV Form → CF7 form ID)."
+
+msgid "Przypisz formularz CF7 w ustawieniach strony (zakładka Hero & Formularz → ID formularza CF7)."
+msgstr "Assign the CF7 form in page settings (tab: Hero & Form → CF7 form ID)."
+
+msgid "Przypisz formularz CF7 w ustawieniach strony głównej (zakładka Newsletter → ID formularza CF7)."
+msgstr "Assign the CF7 form in the home page settings (tab: Newsletter → CF7 form ID)."
+
+msgid "Publikujemy treści dotyczące księgowości, kadr, BPO i zmian, które mają realny wpływ na prowadzenie firmy. Znajdziesz tu zarówno materiały eksperckie, jak i aktualności dotyczące rynku oraz działalności Meritoros."
+msgstr "We publish content on accounting, HR, BPO, and changes with real impact on business. You'll find both expert materials and news about the market and Meritoros."
+
+msgid "razem z urlopem ustawowym jest to aż do 41 dni w roku!"
+msgstr "together with statutory leave, that's up to 41 days a year!"
+
+msgid "Rekrutacja"
+msgstr "Recruitment"
+
+msgid "Relacje inwestorskie"
+msgstr "Investor relations"
+
+msgid "Rewident"
+msgstr "Auditor"
+
+msgid "Rośniemy"
+msgstr "We're growing"
+
+msgid "Rozliczenie umów (podwykonawcy)"
+msgstr "Contract settlements (subcontractors)"
+
+msgid "Rozmowa kwalifikacyjna"
+msgstr "Job interview"
+
+msgid "Rozwiązanie"
+msgstr "Solution"
+
+msgid "Rozwój zawodowy"
+msgstr "Professional development"
+
+msgid "Rynek biur rachunkowych"
+msgstr "Accounting firm market"
+
+msgid "Same kadry"
+msgstr "HR only"
+
+msgid "Same płace"
+msgstr "Payroll only"
+
+msgid "Siedziba główna"
+msgstr "Headquarters"
+
+msgid "Skontaktuj się"
+msgstr "Contact us"
+
+msgid "Skontaktujemy się z Tobą, by lepiej się poznać."
+msgstr "We'll contact you to get to know each other better."
+
+msgid "Spis treści"
+msgstr "Table of contents"
+
+msgid "Spotkanie online z Hiring Managerem"
+msgstr "Online meeting with Hiring Manager"
+
+msgid "Sprawdź jak się u nas pracuje"
+msgstr "See what it's like to work with us"
+
+msgid "Sprawdź orientacyjny koszt obsługi"
+msgstr "Check the estimated service cost"
+
+msgid "Sprawdź proces rekrutacyjny"
+msgstr "Check the recruitment process"
+
+msgid "Sprawozdania"
+msgstr "Reports"
+
+msgid "Sprawozdania zarządu"
+msgstr "Management reports"
+
+msgid "Stałe wsparcie"
+msgstr "Ongoing support"
+
+msgid "Stawiamy na ciągły rozwój naszych pracowników. Oferujemy szkolenia wewnętrzne, dofinansowanie kursów zewnętrznych oraz możliwość awansu wewnątrz organizacji."
+msgstr "We invest in the continuous development of our employees. We offer internal training, co-financing of external courses, and opportunities for internal promotion."
+
+msgid "Strona główna"
+msgstr "Home"
+
+msgid "Strona nie istnieje"
+msgstr "Page not found"
+
+msgid "Strona, której szukasz, mogła zostać przeniesiona lub usunięta. Wróć na stronę główną lub skontaktuj się z nami."
+msgstr "The page you're looking for may have been moved or deleted. Return to the home page or contact us."
+
+msgid "Szacunek i współpraca"
+msgstr "Respect & collaboration"
+
+msgid "Szkolenia i wsparcie"
+msgstr "Training & support"
+
+msgid "Szkolenia wewnętrzne"
+msgstr "Internal training"
+
+msgid "Szkolenia, webinary i dostęp do materiałów branżowych"
+msgstr "Training, webinars, and access to industry materials"
+
+msgid "Twórz z nami jakość"
+msgstr "Create quality with us"
+
+msgid "Uchwały"
+msgstr "Resolutions"
+
+msgid "Umów rozmowę"
+msgstr "Schedule a call"
+
+msgid "Umów się na rozmowę"
+msgstr "Book a call"
+
+msgid "Umowa o pracę"
+msgstr "Employment contract"
+
+msgid "Usługi księgowe"
+msgstr "Accounting services"
+
+msgid "W Meritoros wspieramy firmy w księgowości, kadrach i płacach oraz procesach back-office od 2004 roku. Pracujemy tak, żeby być dumni z jakości informacji, które dostarczamy."
+msgstr "At Meritoros we have been supporting companies in accounting, HR & payroll, and back-office processes since 2004. We work to be proud of the quality of information we deliver."
+
+msgid "Wczasy pod gruszą"
+msgstr "Holiday bonus"
+
+msgid "Wdrożenie"
+msgstr "Implementation"
+
+msgid "Wdrożenie przyniosło również konkretne, mierzalne korzyści:"
+msgstr "The implementation also brought specific, measurable benefits:"
+
+msgid "Wiedza i poradniki"
+msgstr "Knowledge & guides"
+
+msgid "Wolontariat pracowniczy i integracje zespołowe"
+msgstr "Employee volunteering & team integration"
+
+msgid "Work-life balance"
+msgstr "Work-life balance"
+
+msgid "Wszystkie"
+msgstr "All"
+
+msgid "Wybierz typ księgowości"
+msgstr "Select accounting type"
+
+msgid "Wybierz zakres"
+msgstr "Select scope"
+
+msgid "Wyniki wyszukiwania: %s"
+msgstr "Search results: %s"
+
+msgid "Wysłano! Sprawdź swoją skrzynkę e-mail."
+msgstr "Sent! Check your inbox."
+
+msgid "Wyślij CV"
+msgstr "Send CV"
+
+msgid "Wyślij nam swoje CV"
+msgstr "Send us your CV"
+
+msgid "Wyślij zapytanie"
+msgstr "Send inquiry"
+
+msgid "Wysłuchamy, przeanalizujemy sytuację i zaproponujemy kolejne kroki."
+msgstr "We'll listen, analyze the situation and propose next steps."
+
+msgid "Wyzwanie"
+msgstr "Challenge"
+
+msgid "Zadaniowy system organizacji pracy"
+msgstr "Task-based work organization"
+
+msgid "Zadaniowy tryb pracy: możesz dopasować start i przerwy do swojego dnia"
+msgstr "Task-based work mode: you can adjust your start time and breaks to fit your day"
+
+msgid "Zadzwoń do nas!"
+msgstr "Call us!"
+
+msgid "Zainteresowana / Zainteresowany?"
+msgstr "Interested?"
+
+msgid "Zakres współpracy"
+msgstr "Scope of cooperation"
+
+msgid "Załaduj więcej"
+msgstr "Load more"
+
+msgid "Zależy nam na przejrzystości — dlatego chcemy, żebyś wiedział/-a, czego się spodziewać na każdym etapie."
+msgstr "Transparency matters to us — so we want you to know what to expect at every stage."
+
+msgid "Zależy od stanowiska – część ofert skierowana jest do osób bez doświadczenia, które chcą się uczyć. Każdą ofertę pracy opisujemy dokładnie pod kątem wymagań."
+msgstr "It depends on the position — some offers are aimed at people without experience who want to learn. We describe each job offer in detail in terms of requirements."
+
+msgid "Zamknij"
+msgstr "Close"
+
+msgid "Zapisz się bezpłatnie"
+msgstr "Sign up for free"
+
+msgid "Zapytaj o ofertę"
+msgstr "Ask about our offer"
+
+msgid "Zarząd"
+msgstr "Board of directors"
+
+msgid "Zdjęcie klienta"
+msgstr "Customer photo"
+
+msgid "Zobacz szczegóły"
+msgstr "View details"

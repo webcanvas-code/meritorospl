@@ -29,38 +29,45 @@ $rate_sub = (float) mer_field('kp_kalk_rate_sub', 42);
             <div>
                 <div class="bg-white rounded-2xl p-8 shadow-sm">
 
+                    <?php
+                    $kp_ph_w   = esc_attr(mer_t('kp_ph_workers', 'Liczba pracowników'));
+                    $kp_ph_s   = esc_attr(mer_t('kp_ph_subs',    'Liczba podwykonawców'));
+                    $kp_ph_p   = esc_attr(mer_t('kp_ph_payouts', 'Ilość wypłat na miesiąc'));
+                    ?>
                     <!-- Dropdown zakres -->
-                    <div class="relative mb-4" id="kp-kalk-wrapper">
+                    <div class="relative mb-4" id="kp-kalk-wrapper"
+                         data-placeholder-workers="<?php echo $kp_ph_w; ?>"
+                         data-placeholder-subs="<?php echo $kp_ph_s; ?>">
                         <button id="kp-kalk-btn"
                             class="mer-btn mer-btn--white w-full flex items-center justify-between px-5 py-4 border border-slate-200 rounded-xl text-slate-500 text-sm hover:border-slate-300 transition-colors bg-white"
                             aria-haspopup="listbox" aria-expanded="false">
-                            <span id="kp-kalk-label">Wybierz z listy</span>
+                            <span id="kp-kalk-label"><?php echo esc_html(mer_t('kalk_select', 'Wybierz z listy')); ?></span>
                             <i data-lucide="chevron-down" class="w-5 h-5 text-slate-400 stroke-[1.5] shrink-0 transition-transform" id="kp-kalk-chevron"></i>
                         </button>
                         <div id="kp-kalk-list" class="absolute top-full left-0 right-0 mt-2 bg-white border border-slate-200 rounded-xl shadow-lg z-20 overflow-hidden hidden">
-                            <button data-value="kadry-place"  class="kp-kalk-option w-full text-left px-5 py-4 text-sm text-slate-700 hover:bg-emerald-50 transition-colors border-b border-slate-100">Kadry i płace</button>
-                            <button data-value="kadry"        class="kp-kalk-option w-full text-left px-5 py-4 text-sm text-slate-700 hover:bg-emerald-50 transition-colors border-b border-slate-100">Same kadry</button>
-                            <button data-value="place"        class="kp-kalk-option w-full text-left px-5 py-4 text-sm text-slate-700 hover:bg-emerald-50 transition-colors border-b border-slate-100">Same płace</button>
-                            <button data-value="podwykonawcy" class="kp-kalk-option w-full text-left px-5 py-4 text-sm text-slate-700 hover:bg-emerald-50 transition-colors">Rozliczenie umów (podwykonawcy)</button>
+                            <button data-value="kadry-place"  data-label="<?php echo esc_attr(mer_t('kp_scope_kp',  'Kadry i płace')); ?>"                     class="kp-kalk-option w-full text-left px-5 py-4 text-sm text-slate-700 hover:bg-emerald-50 transition-colors border-b border-slate-100"><?php echo esc_html(mer_t('kp_scope_kp',  'Kadry i płace')); ?></button>
+                            <button data-value="kadry"        data-label="<?php echo esc_attr(mer_t('kp_scope_k',   'Same kadry')); ?>"                         class="kp-kalk-option w-full text-left px-5 py-4 text-sm text-slate-700 hover:bg-emerald-50 transition-colors border-b border-slate-100"><?php echo esc_html(mer_t('kp_scope_k',   'Same kadry')); ?></button>
+                            <button data-value="place"        data-label="<?php echo esc_attr(mer_t('kp_scope_p',   'Same płace')); ?>"                         class="kp-kalk-option w-full text-left px-5 py-4 text-sm text-slate-700 hover:bg-emerald-50 transition-colors border-b border-slate-100"><?php echo esc_html(mer_t('kp_scope_p',   'Same płace')); ?></button>
+                            <button data-value="podwykonawcy" data-label="<?php echo esc_attr(mer_t('kp_scope_sub', 'Rozliczenie umów (podwykonawcy)')); ?>"    class="kp-kalk-option w-full text-left px-5 py-4 text-sm text-slate-700 hover:bg-emerald-50 transition-colors"><?php echo esc_html(mer_t('kp_scope_sub', 'Rozliczenie umów (podwykonawcy)')); ?></button>
                         </div>
                     </div>
 
                     <!-- Dwa inputy obok siebie -->
                     <div class="grid grid-cols-2 gap-4 mb-4">
-                        <input id="kp-kalk-pracownicy" type="number" min="1" placeholder="Liczba pracowników"
+                        <input id="kp-kalk-pracownicy" type="number" min="1" placeholder="<?php echo $kp_ph_w; ?>"
                             class="mer-btn mer-btn--white w-full px-5 py-4 border border-slate-200 rounded-xl text-slate-800 text-sm placeholder-slate-400 hover:border-slate-300 focus:border-emerald-400 focus:outline-none focus:ring-2 focus:ring-emerald-100 transition-colors bg-white" />
-                        <input id="kp-kalk-wyplaty" type="number" min="1" placeholder="Ilość wypłat na miesiąc"
+                        <input id="kp-kalk-wyplaty" type="number" min="1" placeholder="<?php echo $kp_ph_p; ?>"
                             class="mer-btn mer-btn--white w-full px-5 py-4 border border-slate-200 rounded-xl text-slate-800 text-sm placeholder-slate-400 hover:border-slate-300 focus:border-emerald-400 focus:outline-none focus:ring-2 focus:ring-emerald-100 transition-colors bg-white" />
                     </div>
 
                     <!-- Przycisk -->
                     <button id="kp-kalk-submit" class="w-full py-3.5 rounded-full bg-white text-slate-800 text-base font-semibold border border-slate-200 hover:bg-slate-50 hover:border-slate-300 transition-colors mb-5">
-                        Oblicz kwotę obsługi
+                        <?php echo esc_html(mer_t('kalk_calc_btn', 'Oblicz kwotę obsługi')); ?>
                     </button>
 
                     <!-- Wynik -->
                     <div>
-                        <p class="text-sm text-slate-400 mb-1">Orientacyjna cena netto</p>
+                        <p class="text-sm text-slate-400 mb-1"><?php echo esc_html(mer_t('kalk_result_label', 'Orientacyjna cena netto')); ?></p>
                         <p class="text-4xl font-bold text-slate-900">
                             <span id="kp-kalk-price">0,00 zł</span>
                             <span id="kp-kalk-suffix" class="text-lg font-normal text-slate-400 ml-1">(netto)</span>
@@ -93,12 +100,7 @@ $rate_sub = (float) mer_field('kp_kalk_rate_sub', 42);
         'place':        <?php echo $rate_p; ?>,
         'podwykonawcy': <?php echo $rate_sub; ?>
     };
-    var scopeLabels = {
-        'kadry-place':  'Kadry i płace',
-        'kadry':        'Same kadry',
-        'place':        'Same płace',
-        'podwykonawcy': 'Rozliczenie umów (podwykonawcy)'
-    };
+    var wrapper = document.getElementById('kp-kalk-wrapper');
     var selectedScope = null;
 
     function calcPrice() {
@@ -122,10 +124,10 @@ $rate_sub = (float) mer_field('kp_kalk_rate_sub', 42);
     document.querySelectorAll('.kp-kalk-option').forEach(function (opt) {
         opt.addEventListener('click', function () {
             selectedScope = opt.dataset.value;
-            labelEl.textContent = scopeLabels[selectedScope];
+            labelEl.textContent = opt.dataset.label;
             labelEl.classList.remove('text-slate-500');
             labelEl.classList.add('text-slate-800');
-            inputP.placeholder = selectedScope === 'podwykonawcy' ? 'Liczba podwykonawców' : 'Liczba pracowników';
+            inputP.placeholder = selectedScope === 'podwykonawcy' ? wrapper.dataset.placeholderSubs : wrapper.dataset.placeholderWorkers;
             list.classList.add('hidden');
             chevron.style.transform = '';
             btn.setAttribute('aria-expanded', 'false');

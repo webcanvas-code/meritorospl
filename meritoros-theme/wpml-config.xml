@@ -758,5 +758,189 @@
         <custom-field action="translate">kupimy_part_benefits_4_text</custom-field>
         <custom-field action="translate">kupimy_part_benefits_5_text</custom-field>
 
+        <!-- HERO — loga klientów (obrazy → copy) -->
+        <custom-field action="copy">hero_logo_1</custom-field>
+        <custom-field action="copy">hero_logo_2</custom-field>
+        <custom-field action="copy">hero_logo_3</custom-field>
+        <custom-field action="copy">hero_logo_4</custom-field>
+        <custom-field action="copy">hero_logo_5</custom-field>
+        <custom-field action="copy">hero_logo_6</custom-field>
+        <custom-field action="copy">hero_logo_7</custom-field>
+        <custom-field action="copy">hero_logo_8</custom-field>
+        <custom-field action="copy">hero_logo_9</custom-field>
+        <custom-field action="copy">hero_logo_10</custom-field>
+        <custom-field action="copy">hero_logo_11</custom-field>
+        <custom-field action="copy">hero_logo_12</custom-field>
+        <custom-field action="copy">hero_logo_13</custom-field>
+        <custom-field action="copy">hero_logo_14</custom-field>
+        <custom-field action="copy">hero_logo_15</custom-field>
+        <custom-field action="copy">hero_logo_16</custom-field>
+        <custom-field action="copy">hero_logo_17</custom-field>
+        <custom-field action="copy">hero_logo_18</custom-field>
+        <custom-field action="copy">hero_logo_19</custom-field>
+        <custom-field action="copy">hero_logo_20</custom-field>
+        <custom-field action="copy">hero_logo_21</custom-field>
+        <custom-field action="copy">hero_logo_22</custom-field>
+        <custom-field action="copy">hero_logo_23</custom-field>
+        <custom-field action="copy">hero_logo_24</custom-field>
+
+        <!-- TESTIMONIALS — brakujące pola (branża + 4. statystyka) -->
+        <custom-field action="translate">test_1_industry</custom-field>
+        <custom-field action="translate">test_2_industry</custom-field>
+        <custom-field action="translate">test_3_industry</custom-field>
+        <custom-field action="translate">test_4_industry</custom-field>
+        <custom-field action="translate">test_5_industry</custom-field>
+        <custom-field action="translate">test_6_industry</custom-field>
+
+        <!-- NEWSLETTER — checkboxy tematów -->
+        <custom-field action="translate">nl_topic_1</custom-field>
+        <custom-field action="translate">nl_topic_2</custom-field>
+
+        <!-- KARIERA — benefity (kar_ben_1 do kar_ben_8) -->
+        <custom-field action="copy">kar_ben_1_icon</custom-field>
+        <custom-field action="copy">kar_ben_1_image</custom-field>
+        <custom-field action="translate">kar_ben_1_title</custom-field>
+        <custom-field action="translate">kar_ben_1_text</custom-field>
+        <custom-field action="copy">kar_ben_2_icon</custom-field>
+        <custom-field action="copy">kar_ben_2_image</custom-field>
+        <custom-field action="translate">kar_ben_2_title</custom-field>
+        <custom-field action="translate">kar_ben_2_text</custom-field>
+        <custom-field action="copy">kar_ben_3_icon</custom-field>
+        <custom-field action="copy">kar_ben_3_image</custom-field>
+        <custom-field action="translate">kar_ben_3_title</custom-field>
+        <custom-field action="translate">kar_ben_3_text</custom-field>
+        <custom-field action="copy">kar_ben_4_icon</custom-field>
+        <custom-field action="copy">kar_ben_4_image</custom-field>
+        <custom-field action="translate">kar_ben_4_title</custom-field>
+        <custom-field action="translate">kar_ben_4_text</custom-field>
+        <custom-field action="copy">kar_ben_5_icon</custom-field>
+        <custom-field action="copy">kar_ben_5_image</custom-field>
+        <custom-field action="translate">kar_ben_5_title</custom-field>
+        <custom-field action="translate">kar_ben_5_text</custom-field>
+        <custom-field action="copy">kar_ben_6_icon</custom-field>
+        <custom-field action="copy">kar_ben_6_image</custom-field>
+        <custom-field action="translate">kar_ben_6_title</custom-field>
+        <custom-field action="translate">kar_ben_6_text</custom-field>
+        <custom-field action="copy">kar_ben_7_icon</custom-field>
+        <custom-field action="copy">kar_ben_7_image</custom-field>
+        <custom-field action="translate">kar_ben_7_title</custom-field>
+        <custom-field action="translate">kar_ben_7_text</custom-field>
+        <custom-field action="copy">kar_ben_8_icon</custom-field>
+        <custom-field action="copy">kar_ben_8_image</custom-field>
+        <custom-field action="translate">kar_ben_8_title</custom-field>
+        <custom-field action="translate">kar_ben_8_text</custom-field>
+
+        <!-- KARIERA — FAQ (kar_faq_1 do kar_faq_8) -->
+        <custom-field action="translate">kar_faq_1_question</custom-field>
+        <custom-field action="translate">kar_faq_1_answer</custom-field>
+        <custom-field action="translate">kar_faq_2_question</custom-field>
+        <custom-field action="translate">kar_faq_2_answer</custom-field>
+        <custom-field action="translate">kar_faq_3_question</custom-field>
+        <custom-field action="translate">kar_faq_3_answer</custom-field>
+        <custom-field action="translate">kar_faq_4_question</custom-field>
+        <custom-field action="translate">kar_faq_4_answer</custom-field>
+        <custom-field action="translate">kar_faq_5_question</custom-field>
+        <custom-field action="translate">kar_faq_5_answer</custom-field>
+        <custom-field action="translate">kar_faq_6_question</custom-field>
+        <custom-field action="translate">kar_faq_6_answer</custom-field>
+        <custom-field action="translate">kar_faq_7_question</custom-field>
+        <custom-field action="translate">kar_faq_7_answer</custom-field>
+        <custom-field action="translate">kar_faq_8_question</custom-field>
+        <custom-field action="translate">kar_faq_8_answer</custom-field>
+
+        <!-- UK — dlaczego (uk_dlaczego_1 do uk_dlaczego_4) -->
+        <custom-field action="copy">uk_dlaczego_1_icon</custom-field>
+        <custom-field action="translate">uk_dlaczego_1_title</custom-field>
+        <custom-field action="translate">uk_dlaczego_1_text</custom-field>
+        <custom-field action="copy">uk_dlaczego_1_highlighted</custom-field>
+        <custom-field action="copy">uk_dlaczego_2_icon</custom-field>
+        <custom-field action="translate">uk_dlaczego_2_title</custom-field>
+        <custom-field action="translate">uk_dlaczego_2_text</custom-field>
+        <custom-field action="copy">uk_dlaczego_2_highlighted</custom-field>
+        <custom-field action="copy">uk_dlaczego_3_icon</custom-field>
+        <custom-field action="translate">uk_dlaczego_3_title</custom-field>
+        <custom-field action="translate">uk_dlaczego_3_text</custom-field>
+        <custom-field action="copy">uk_dlaczego_3_highlighted</custom-field>
+        <custom-field action="copy">uk_dlaczego_4_icon</custom-field>
+        <custom-field action="translate">uk_dlaczego_4_title</custom-field>
+        <custom-field action="translate">uk_dlaczego_4_text</custom-field>
+        <custom-field action="copy">uk_dlaczego_4_highlighted</custom-field>
+
+        <!-- KP — dlaczego (kp_dlaczego_1 do kp_dlaczego_4) -->
+        <custom-field action="copy">kp_dlaczego_1_icon</custom-field>
+        <custom-field action="translate">kp_dlaczego_1_title</custom-field>
+        <custom-field action="translate">kp_dlaczego_1_text</custom-field>
+        <custom-field action="copy">kp_dlaczego_1_highlighted</custom-field>
+        <custom-field action="copy">kp_dlaczego_2_icon</custom-field>
+        <custom-field action="translate">kp_dlaczego_2_title</custom-field>
+        <custom-field action="translate">kp_dlaczego_2_text</custom-field>
+        <custom-field action="copy">kp_dlaczego_2_highlighted</custom-field>
+        <custom-field action="copy">kp_dlaczego_3_icon</custom-field>
+        <custom-field action="translate">kp_dlaczego_3_title</custom-field>
+        <custom-field action="translate">kp_dlaczego_3_text</custom-field>
+        <custom-field action="copy">kp_dlaczego_3_highlighted</custom-field>
+        <custom-field action="copy">kp_dlaczego_4_icon</custom-field>
+        <custom-field action="translate">kp_dlaczego_4_title</custom-field>
+        <custom-field action="translate">kp_dlaczego_4_text</custom-field>
+        <custom-field action="copy">kp_dlaczego_4_highlighted</custom-field>
+
+        <!-- FR — zyski (fr_zysk_1 do fr_zysk_4) -->
+        <custom-field action="copy">fr_zysk_1_icon</custom-field>
+        <custom-field action="translate">fr_zysk_1_title</custom-field>
+        <custom-field action="translate">fr_zysk_1_text</custom-field>
+        <custom-field action="copy">fr_zysk_2_icon</custom-field>
+        <custom-field action="translate">fr_zysk_2_title</custom-field>
+        <custom-field action="translate">fr_zysk_2_text</custom-field>
+        <custom-field action="copy">fr_zysk_3_icon</custom-field>
+        <custom-field action="translate">fr_zysk_3_title</custom-field>
+        <custom-field action="translate">fr_zysk_3_text</custom-field>
+        <custom-field action="copy">fr_zysk_4_icon</custom-field>
+        <custom-field action="translate">fr_zysk_4_title</custom-field>
+        <custom-field action="translate">fr_zysk_4_text</custom-field>
+
+        <!-- KONTAKT — biura (kon_office_1 do kon_office_7, sub: city+address) -->
+        <custom-field action="translate">kon_office_1_city</custom-field>
+        <custom-field action="copy">kon_office_1_address</custom-field>
+        <custom-field action="translate">kon_office_2_city</custom-field>
+        <custom-field action="copy">kon_office_2_address</custom-field>
+        <custom-field action="translate">kon_office_3_city</custom-field>
+        <custom-field action="copy">kon_office_3_address</custom-field>
+        <custom-field action="translate">kon_office_4_city</custom-field>
+        <custom-field action="copy">kon_office_4_address</custom-field>
+        <custom-field action="translate">kon_office_5_city</custom-field>
+        <custom-field action="copy">kon_office_5_address</custom-field>
+        <custom-field action="translate">kon_office_6_city</custom-field>
+        <custom-field action="copy">kon_office_6_address</custom-field>
+        <custom-field action="translate">kon_office_7_city</custom-field>
+        <custom-field action="copy">kon_office_7_address</custom-field>
+
+        <!-- O NAS — statystyki (onas_stat_1 do onas_stat_6, sub: icon+text) -->
+        <custom-field action="copy">onas_stat_1_icon</custom-field>
+        <custom-field action="translate">onas_stat_1_text</custom-field>
+        <custom-field action="copy">onas_stat_2_icon</custom-field>
+        <custom-field action="translate">onas_stat_2_text</custom-field>
+        <custom-field action="copy">onas_stat_3_icon</custom-field>
+        <custom-field action="translate">onas_stat_3_text</custom-field>
+        <custom-field action="copy">onas_stat_4_icon</custom-field>
+        <custom-field action="translate">onas_stat_4_text</custom-field>
+        <custom-field action="copy">onas_stat_5_icon</custom-field>
+        <custom-field action="translate">onas_stat_5_text</custom-field>
+        <custom-field action="copy">onas_stat_6_icon</custom-field>
+        <custom-field action="translate">onas_stat_6_text</custom-field>
+
+        <!-- O NAS — jak pracujemy (onas_jak_1 do onas_jak_4, sub: icon+title+text) -->
+        <custom-field action="copy">onas_jak_1_icon</custom-field>
+        <custom-field action="translate">onas_jak_1_title</custom-field>
+        <custom-field action="translate">onas_jak_1_text</custom-field>
+        <custom-field action="copy">onas_jak_2_icon</custom-field>
+        <custom-field action="translate">onas_jak_2_title</custom-field>
+        <custom-field action="translate">onas_jak_2_text</custom-field>
+        <custom-field action="copy">onas_jak_3_icon</custom-field>
+        <custom-field action="translate">onas_jak_3_title</custom-field>
+        <custom-field action="translate">onas_jak_3_text</custom-field>
+        <custom-field action="copy">onas_jak_4_icon</custom-field>
+        <custom-field action="translate">onas_jak_4_title</custom-field>
+        <custom-field action="translate">onas_jak_4_text</custom-field>
+
     </custom-fields>
 </wpml-config>

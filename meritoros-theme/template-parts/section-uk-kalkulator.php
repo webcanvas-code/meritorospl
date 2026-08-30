@@ -24,34 +24,35 @@ $disclaimer  = mer_field('uk_kalk_disclaimer', '* to jest wstępny szacunek, ka�
             <div>
                 <div class="bg-white rounded-2xl p-8 shadow-sm">
 
+                    <?php $uk_ph_d = esc_attr(mer_t('uk_ph_docs', 'Liczba dokumentów miesięcznie')); ?>
                     <!-- Dropdown typ księgowości -->
                     <div class="relative mb-4" id="uk-kalk-wrapper">
                         <button id="uk-kalk-btn"
                             class="mer-btn mer-btn--white w-full flex items-center justify-between px-5 py-4 border border-slate-200 rounded-xl text-slate-500 text-sm hover:border-slate-300 transition-colors bg-white"
                             aria-haspopup="listbox" aria-expanded="false">
-                            <span id="uk-kalk-label">Wybierz z listy</span>
+                            <span id="uk-kalk-label"><?php echo esc_html(mer_t('kalk_select', 'Wybierz z listy')); ?></span>
                             <i data-lucide="chevron-down" class="w-5 h-5 text-slate-400 stroke-[1.5] shrink-0 transition-transform" id="uk-kalk-chevron"></i>
                         </button>
                         <div id="uk-kalk-list" class="absolute top-full left-0 right-0 mt-2 bg-white border border-slate-200 rounded-xl shadow-lg z-20 overflow-hidden hidden">
-                            <button data-value="uproszczona" class="uk-kalk-option w-full text-left px-5 py-4 text-sm text-slate-700 hover:bg-emerald-50 transition-colors border-b border-slate-100">Księgowość uproszczona (KPiR, ewidencja ryczałtowa)</button>
-                            <button data-value="pelna"       class="uk-kalk-option w-full text-left px-5 py-4 text-sm text-slate-700 hover:bg-emerald-50 transition-colors">Pełna księgowość (KH)</button>
+                            <button data-value="uproszczona" data-label="<?php echo esc_attr(mer_t('uk_type_up',    'Księgowość uproszczona (KPiR, ewidencja ryczałtowa)')); ?>" class="uk-kalk-option w-full text-left px-5 py-4 text-sm text-slate-700 hover:bg-emerald-50 transition-colors border-b border-slate-100"><?php echo esc_html(mer_t('uk_type_up',    'Księgowość uproszczona (KPiR, ewidencja ryczałtowa)')); ?></button>
+                            <button data-value="pelna"       data-label="<?php echo esc_attr(mer_t('uk_type_pelna', 'Pełna księgowość (KH)')); ?>"                             class="uk-kalk-option w-full text-left px-5 py-4 text-sm text-slate-700 hover:bg-emerald-50 transition-colors"><?php echo esc_html(mer_t('uk_type_pelna', 'Pełna księgowość (KH)')); ?></button>
                         </div>
                     </div>
 
                     <!-- Input liczba dokumentów -->
                     <div class="mb-4">
-                        <input id="uk-kalk-docs" type="number" min="1" placeholder="Liczba dokumentów miesięcznie"
+                        <input id="uk-kalk-docs" type="number" min="1" placeholder="<?php echo $uk_ph_d; ?>"
                             class="mer-btn mer-btn--white w-full px-5 py-4 border border-slate-200 rounded-xl text-slate-800 text-sm placeholder-slate-400 hover:border-slate-300 focus:border-emerald-400 focus:outline-none focus:ring-2 focus:ring-emerald-100 transition-colors bg-white" />
                     </div>
 
                     <!-- Przycisk -->
                     <button id="uk-kalk-submit" class="w-full py-3.5 rounded-full bg-white text-slate-800 text-base font-semibold border border-slate-200 hover:bg-slate-50 hover:border-slate-300 transition-colors mb-5">
-                        Oblicz kwotę obsługi
+                        <?php echo esc_html(mer_t('kalk_calc_btn', 'Oblicz kwotę obsługi')); ?>
                     </button>
 
                     <!-- Wynik -->
                     <div>
-                        <p class="text-sm text-slate-400 mb-1">Orientacyjna cena netto</p>
+                        <p class="text-sm text-slate-400 mb-1"><?php echo esc_html(mer_t('kalk_result_label', 'Orientacyjna cena netto')); ?></p>
                         <p class="text-4xl font-bold text-slate-900">
                             <span id="uk-kalk-price">0,00 zł</span>
                             <span class="text-lg font-normal text-slate-400 ml-1">(netto)</span>
@@ -106,10 +107,6 @@ $disclaimer  = mer_field('uk_kalk_disclaimer', '* to jest wstępny szacunek, ka�
     ];
 
     var selectedType = null;
-    var typeLabels = {
-        uproszczona: 'Księgowość uproszczona (KPiR, ewidencja ryczałtowa)',
-        pelna: 'Pełna księgowość (KH)'
-    };
 
     function calcPrice() {
         var docs = parseInt(inputD.value, 10);
@@ -140,7 +137,7 @@ $disclaimer  = mer_field('uk_kalk_disclaimer', '* to jest wstępny szacunek, ka�
     document.querySelectorAll('.uk-kalk-option').forEach(function (opt) {
         opt.addEventListener('click', function () {
             selectedType = opt.dataset.value;
-            labelEl.textContent = typeLabels[selectedType];
+            labelEl.textContent = opt.dataset.label;
             labelEl.classList.remove('text-slate-500');
             labelEl.classList.add('text-slate-800');
             list.classList.add('hidden');

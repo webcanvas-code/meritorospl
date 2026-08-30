@@ -74,7 +74,7 @@ if (is_array($video_file) && !empty($video_file['url'])) {
                     class="absolute inset-0 flex items-center justify-center"
                     data-src="<?php echo $play_src; ?>"
                     data-type="<?php echo esc_attr($play_type); ?>"
-                    aria-label="Odtwórz film">
+                    aria-label="<?php echo esc_attr(mer_t('aria_play_video', 'Odtwórz film')); ?>">
                 <?php else : ?>
                 <div class="absolute inset-0 flex items-center justify-center pointer-events-none">
                 <?php endif; ?>
