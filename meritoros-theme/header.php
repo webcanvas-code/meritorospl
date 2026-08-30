@@ -20,63 +20,86 @@ $_fp_id       = (int) get_option('page_on_front');
 $nav_cta_text = (get_field('nav_cta_text', $_fp_id) ?: __('Skontaktuj się', 'meritoros'));
 $nav_cta_url  = (get_field('nav_cta_url',  $_fp_id) ?: '#kontakt');
 
-do_action('wpml_register_single_string', 'meritoros-nav', 'panel_klienta_label', 'Panel klienta', 'pl');
-$_panel_label = function_exists('icl_t') ? icl_t('meritoros-nav', 'panel_klienta_label', 'Panel klienta') : 'Panel klienta';
+$_panel_labels = ['pl' => 'Panel klienta', 'en' => 'Client panel', 'uk' => 'Кабінет клієнта', 'ru' => 'Кабинет клиента'];
+$_panel_label  = $_panel_labels[apply_filters('wpml_current_language', null) ?? 'pl'] ?? 'Panel klienta';
 
-// Buduj nav_items z WordPress Nav Menu (WPML obsługuje tłumaczenia automatycznie)
-$nav_items = [];
-$_locations = get_nav_menu_locations();
-$_menu_obj  = !empty($_locations['primary']) ? wp_get_nav_menu_object($_locations['primary']) : null;
-
-if ($_menu_obj) {
-    $_all_items = wp_get_nav_menu_items($_menu_obj->term_id) ?: [];
-    $_top       = [];
-    $_children  = [];
-    $_cur_lang  = apply_filters('wpml_current_language', null);
-    foreach ($_all_items as $_mi) {
-        $_label = $_mi->title;
-        $_url   = $_mi->url;
-        if ($_mi->object === 'page' && $_mi->object_id && $_cur_lang) {
-            $_tr_id = apply_filters('wpml_object_id', (int) $_mi->object_id, 'page', false, $_cur_lang);
-            if ($_tr_id) {
-                $_label = get_the_title($_tr_id);
-                $_url   = get_permalink($_tr_id);
-            }
-        }
-        if (!$_mi->menu_item_parent) {
-            $_top[$_mi->ID] = ['label' => $_label, 'url' => $_url, 'dropdown_links' => []];
-        } else {
-            $_children[(int) $_mi->menu_item_parent][] = ['label' => $_label, 'url' => $_url];
-        }
-    }
-    foreach ($_top as $_id => &$_t) {
-        if (!empty($_children[$_id])) $_t['dropdown_links'] = $_children[$_id];
-    }
-    unset($_t);
-    $nav_items = array_values($_top);
-}
-
-// Fallback gdy menu nie istnieje
-if (empty($nav_items)) {
-    $nav_items = [
-        ['label' => __('Biuro rachunkowe', 'meritoros'), 'url' => '#', 'dropdown_links' => [
-            ['label' => __('Usługi księgowe', 'meritoros'),   'url' => home_url('/uslugi-ksiegowe/')],
-            ['label' => __('Kadry i płace', 'meritoros'),     'url' => home_url('/kadry-i-place/')],
-            ['label' => __('Fundacje rodzinne', 'meritoros'), 'url' => home_url('/fundacje-rodzinne/')],
+// Menu statyczne per język — home_url() zwraca prefix języka automatycznie przez WPML
+$_lang     = apply_filters('wpml_current_language', null) ?: 'pl';
+$_nav_all  = [
+    'pl' => [
+        ['label' => 'Biuro rachunkowe', 'url' => '#', 'dropdown_links' => [
+            ['label' => 'Usługi księgowe',   'url' => home_url('/uslugi-ksiegowe/')],
+            ['label' => 'Kadry i płace',     'url' => home_url('/kadry-i-place/')],
+            ['label' => 'Fundacje rodzinne', 'url' => home_url('/fundacje-rodzinne/')],
         ]],
-        ['label' => __('BPO', 'meritoros'),     'url' => home_url('/bpo/'),     'dropdown_links' => []],
-        ['label' => __('O nas', 'meritoros'),   'url' => home_url('/o-nas/'),   'dropdown_links' => [
-            ['label' => __('Kupimy biuro rachunkowe', 'meritoros'), 'url' => home_url('/kupimy-biuro-rachunkowe/')],
-            ['label' => __('Relacje inwestorskie', 'meritoros'),    'url' => home_url('/relacje-inwestorskie/')],
+        ['label' => 'BPO',    'url' => home_url('/bpo/'),    'dropdown_links' => []],
+        ['label' => 'O nas',  'url' => home_url('/o-nas/'),  'dropdown_links' => [
+            ['label' => 'Kupimy biuro rachunkowe', 'url' => home_url('/kupimy-biuro-rachunkowe/')],
+            ['label' => 'Relacje inwestorskie',    'url' => home_url('/relacje-inwestorskie/')],
         ]],
-        ['label' => __('Odkryj', 'meritoros'),  'url' => '#', 'dropdown_links' => [
-            ['label' => __('Wiedza i poradniki', 'meritoros'), 'url' => home_url('/blog/')],
-            ['label' => __('Media i newsroom', 'meritoros'),   'url' => home_url('/media/')],
-            ['label' => __('Historie klientów', 'meritoros'),  'url' => home_url('/historie-klientow/')],
+        ['label' => 'Odkryj', 'url' => '#', 'dropdown_links' => [
+            ['label' => 'Wiedza i poradniki', 'url' => home_url('/blog/')],
+            ['label' => 'Media i newsroom',   'url' => home_url('/media/')],
+            ['label' => 'Historie klientów',  'url' => home_url('/historie-klientow/')],
         ]],
-        ['label' => __('Kariera', 'meritoros'), 'url' => home_url('/kariera/'), 'dropdown_links' => []],
-    ];
-}
+        ['label' => 'Kariera', 'url' => home_url('/kariera/'), 'dropdown_links' => []],
+    ],
+    'en' => [
+        ['label' => 'Accounting', 'url' => '#', 'dropdown_links' => [
+            ['label' => 'Accounting services', 'url' => home_url('/uslugi-ksiegowe/')],
+            ['label' => 'HR & Payroll',        'url' => home_url('/kadry-i-place/')],
+            ['label' => 'Family foundations',  'url' => home_url('/fundacje-rodzinne/')],
+        ]],
+        ['label' => 'BPO',      'url' => home_url('/bpo/'),   'dropdown_links' => []],
+        ['label' => 'About us', 'url' => home_url('/o-nas/'), 'dropdown_links' => [
+            ['label' => 'We buy accounting firms', 'url' => home_url('/kupimy-biuro-rachunkowe/')],
+            ['label' => 'Investor relations',      'url' => home_url('/relacje-inwestorskie/')],
+        ]],
+        ['label' => 'Explore', 'url' => '#', 'dropdown_links' => [
+            ['label' => 'Knowledge & guides', 'url' => home_url('/blog/')],
+            ['label' => 'Media & Newsroom',   'url' => home_url('/media/')],
+            ['label' => 'Customer stories',   'url' => home_url('/historie-klientow/')],
+        ]],
+        ['label' => 'Career', 'url' => home_url('/kariera/'), 'dropdown_links' => []],
+    ],
+    'uk' => [
+        ['label' => 'Бухгалтерія', 'url' => '#', 'dropdown_links' => [
+            ['label' => 'Бухгалтерські послуги', 'url' => home_url('/uslugi-ksiegowe/')],
+            ['label' => 'Кадри та нарахування',  'url' => home_url('/kadry-i-place/')],
+            ['label' => 'Сімейні фонди',         'url' => home_url('/fundacje-rodzinne/')],
+        ]],
+        ['label' => 'BPO',       'url' => home_url('/bpo/'),   'dropdown_links' => []],
+        ['label' => 'Про нас',   'url' => home_url('/o-nas/'), 'dropdown_links' => [
+            ['label' => 'Купуємо бухгалтерські бюро', 'url' => home_url('/kupimy-biuro-rachunkowe/')],
+            ['label' => 'Відносини з інвесторами',    'url' => home_url('/relacje-inwestorskie/')],
+        ]],
+        ['label' => 'Дізнатись', 'url' => '#', 'dropdown_links' => [
+            ['label' => 'Знання та поради',  'url' => home_url('/blog/')],
+            ['label' => 'Медіа та прес-центр', 'url' => home_url('/media/')],
+            ['label' => 'Історії клієнтів',  'url' => home_url('/historie-klientow/')],
+        ]],
+        ['label' => "Кар'єра", 'url' => home_url('/kariera/'), 'dropdown_links' => []],
+    ],
+    'ru' => [
+        ['label' => 'Бухгалтерия', 'url' => '#', 'dropdown_links' => [
+            ['label' => 'Бухгалтерские услуги', 'url' => home_url('/uslugi-ksiegowe/')],
+            ['label' => 'Кадры и зарплата',     'url' => home_url('/kadry-i-place/')],
+            ['label' => 'Семейные фонды',       'url' => home_url('/fundacje-rodzinne/')],
+        ]],
+        ['label' => 'BPO',      'url' => home_url('/bpo/'),   'dropdown_links' => []],
+        ['label' => 'О нас',    'url' => home_url('/o-nas/'), 'dropdown_links' => [
+            ['label' => 'Купим бухгалтерские фирмы', 'url' => home_url('/kupimy-biuro-rachunkowe/')],
+            ['label' => 'Отношения с инвесторами',   'url' => home_url('/relacje-inwestorskie/')],
+        ]],
+        ['label' => 'Узнать', 'url' => '#', 'dropdown_links' => [
+            ['label' => 'Знания и советы',   'url' => home_url('/blog/')],
+            ['label' => 'Медиа и пресс-центр', 'url' => home_url('/media/')],
+            ['label' => 'Истории клиентов',  'url' => home_url('/historie-klientow/')],
+        ]],
+        ['label' => 'Карьера', 'url' => home_url('/kariera/'), 'dropdown_links' => []],
+    ],
+];
+$nav_items = $_nav_all[$_lang] ?? $_nav_all['pl'];
 unset($__item);
 ?>
 
