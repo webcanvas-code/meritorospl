@@ -30,12 +30,12 @@ $use_demo = !$related->have_posts();
             <div class="flex items-center gap-2">
                 <button id="cs-rel-prev"
                         class="w-11 h-11 rounded-full bg-white border border-slate-200 hover:border-emerald-400 hover:text-[#00d084] flex items-center justify-center text-slate-500 transition-colors duration-200 shadow-sm"
-                        aria-label="<?php echo esc_attr(mer_t('aria_prev', 'Poprzedni')); ?>">
+                        aria-label="<?php echo esc_attr(__('Poprzedni', 'meritoros')); ?>">
                     <i data-lucide="chevron-left" class="w-5 h-5"></i>
                 </button>
                 <button id="cs-rel-next"
                         class="w-11 h-11 rounded-full bg-[#00d084] hover:bg-[#00b872] flex items-center justify-center text-white transition-colors duration-200 shadow-sm"
-                        aria-label="<?php echo esc_attr(mer_t('aria_next', 'Następny')); ?>">
+                        aria-label="<?php echo esc_attr(__('Następny', 'meritoros')); ?>">
                     <i data-lucide="chevron-right" class="w-5 h-5"></i>
                 </button>
             </div>

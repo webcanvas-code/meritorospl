@@ -667,3 +667,36 @@ msgstr "Фото клієнта"
 
 msgid "Zobacz szczegóły"
 msgstr "Переглянути деталі"
+
+msgid "Poprzedni"
+msgstr "Попередній"
+
+msgid "Następny"
+msgstr "Наступний"
+
+msgid "Oblicz kwotę obsługi"
+msgstr "Розрахувати вартість"
+
+msgid "Orientacyjna cena netto"
+msgstr "Орієнтовна ціна (нетто)"
+
+msgid "Wybierz z listy"
+msgstr "Виберіть зі списку"
+
+msgid "Liczba podwykonawców"
+msgstr "Кількість підрядників"
+
+msgid "Ilość wypłat na miesiąc"
+msgstr "Виплат на місяць"
+
+msgid "Rozliczenie umów (podwykonawcy)"
+msgstr "Розрахунок договорів (підрядники)"
+
+msgid "Liczba dokumentów miesięcznie"
+msgstr "Кількість документів на місяць"
+
+msgid "Księgowość uproszczona (KPiR, ewidencja ryczałtowa)"
+msgstr "Спрощена бухгалтерія (КПіР, єдиний податок)"
+
+msgid "Pełna księgowość (KH)"
+msgstr "Повна бухгалтерія (КГ)"

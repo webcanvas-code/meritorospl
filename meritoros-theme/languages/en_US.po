@@ -667,3 +667,36 @@ msgstr "Customer photo"
 
 msgid "Zobacz szczegóły"
 msgstr "View details"
+
+msgid "Poprzedni"
+msgstr "Previous"
+
+msgid "Następny"
+msgstr "Next"
+
+msgid "Oblicz kwotę obsługi"
+msgstr "Calculate service cost"
+
+msgid "Orientacyjna cena netto"
+msgstr "Estimated net price"
+
+msgid "Wybierz z listy"
+msgstr "Select from list"
+
+msgid "Liczba podwykonawców"
+msgstr "Number of subcontractors"
+
+msgid "Ilość wypłat na miesiąc"
+msgstr "Payrolls per month"
+
+msgid "Rozliczenie umów (podwykonawcy)"
+msgstr "Contract settlements (subcontractors)"
+
+msgid "Liczba dokumentów miesięcznie"
+msgstr "Documents per month"
+
+msgid "Księgowość uproszczona (KPiR, ewidencja ryczałtowa)"
+msgstr "Simplified accounting (Revenue & Expense Ledger, lump sum)"
+
+msgid "Pełna księgowość (KH)"
+msgstr "Full accounting (KH)"

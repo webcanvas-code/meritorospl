@@ -30,9 +30,9 @@ $rate_sub = (float) mer_field('kp_kalk_rate_sub', 42);
                 <div class="bg-white rounded-2xl p-8 shadow-sm">
 
                     <?php
-                    $kp_ph_w   = esc_attr(mer_t('kp_ph_workers', 'Liczba pracowników'));
-                    $kp_ph_s   = esc_attr(mer_t('kp_ph_subs',    'Liczba podwykonawców'));
-                    $kp_ph_p   = esc_attr(mer_t('kp_ph_payouts', 'Ilość wypłat na miesiąc'));
+                    $kp_ph_w   = esc_attr(__('Liczba pracowników', 'meritoros'));
+                    $kp_ph_s   = esc_attr(__('Liczba podwykonawców', 'meritoros'));
+                    $kp_ph_p   = esc_attr(__('Ilość wypłat na miesiąc', 'meritoros'));
                     ?>
                     <!-- Dropdown zakres -->
                     <div class="relative mb-4" id="kp-kalk-wrapper"
@@ -41,14 +41,14 @@ $rate_sub = (float) mer_field('kp_kalk_rate_sub', 42);
                         <button id="kp-kalk-btn"
                             class="mer-btn mer-btn--white w-full flex items-center justify-between px-5 py-4 border border-slate-200 rounded-xl text-slate-500 text-sm hover:border-slate-300 transition-colors bg-white"
                             aria-haspopup="listbox" aria-expanded="false">
-                            <span id="kp-kalk-label"><?php echo esc_html(mer_t('kalk_select', 'Wybierz z listy')); ?></span>
+                            <span id="kp-kalk-label"><?php echo esc_html(__('Wybierz z listy', 'meritoros')); ?></span>
                             <i data-lucide="chevron-down" class="w-5 h-5 text-slate-400 stroke-[1.5] shrink-0 transition-transform" id="kp-kalk-chevron"></i>
                         </button>
                         <div id="kp-kalk-list" class="absolute top-full left-0 right-0 mt-2 bg-white border border-slate-200 rounded-xl shadow-lg z-20 overflow-hidden hidden">
-                            <button data-value="kadry-place"  data-label="<?php echo esc_attr(mer_t('kp_scope_kp',  'Kadry i płace')); ?>"                     class="kp-kalk-option w-full text-left px-5 py-4 text-sm text-slate-700 hover:bg-emerald-50 transition-colors border-b border-slate-100"><?php echo esc_html(mer_t('kp_scope_kp',  'Kadry i płace')); ?></button>
-                            <button data-value="kadry"        data-label="<?php echo esc_attr(mer_t('kp_scope_k',   'Same kadry')); ?>"                         class="kp-kalk-option w-full text-left px-5 py-4 text-sm text-slate-700 hover:bg-emerald-50 transition-colors border-b border-slate-100"><?php echo esc_html(mer_t('kp_scope_k',   'Same kadry')); ?></button>
-                            <button data-value="place"        data-label="<?php echo esc_attr(mer_t('kp_scope_p',   'Same płace')); ?>"                         class="kp-kalk-option w-full text-left px-5 py-4 text-sm text-slate-700 hover:bg-emerald-50 transition-colors border-b border-slate-100"><?php echo esc_html(mer_t('kp_scope_p',   'Same płace')); ?></button>
-                            <button data-value="podwykonawcy" data-label="<?php echo esc_attr(mer_t('kp_scope_sub', 'Rozliczenie umów (podwykonawcy)')); ?>"    class="kp-kalk-option w-full text-left px-5 py-4 text-sm text-slate-700 hover:bg-emerald-50 transition-colors"><?php echo esc_html(mer_t('kp_scope_sub', 'Rozliczenie umów (podwykonawcy)')); ?></button>
+                            <button data-value="kadry-place"  data-label="<?php echo esc_attr(__('Kadry i płace', 'meritoros')); ?>"                     class="kp-kalk-option w-full text-left px-5 py-4 text-sm text-slate-700 hover:bg-emerald-50 transition-colors border-b border-slate-100"><?php echo esc_html(__('Kadry i płace', 'meritoros')); ?></button>
+                            <button data-value="kadry"        data-label="<?php echo esc_attr(__('Same kadry', 'meritoros')); ?>"                         class="kp-kalk-option w-full text-left px-5 py-4 text-sm text-slate-700 hover:bg-emerald-50 transition-colors border-b border-slate-100"><?php echo esc_html(__('Same kadry', 'meritoros')); ?></button>
+                            <button data-value="place"        data-label="<?php echo esc_attr(__('Same płace', 'meritoros')); ?>"                         class="kp-kalk-option w-full text-left px-5 py-4 text-sm text-slate-700 hover:bg-emerald-50 transition-colors border-b border-slate-100"><?php echo esc_html(__('Same płace', 'meritoros')); ?></button>
+                            <button data-value="podwykonawcy" data-label="<?php echo esc_attr(__('Rozliczenie umów (podwykonawcy)', 'meritoros')); ?>"    class="kp-kalk-option w-full text-left px-5 py-4 text-sm text-slate-700 hover:bg-emerald-50 transition-colors"><?php echo esc_html(__('Rozliczenie umów (podwykonawcy)', 'meritoros')); ?></button>
                         </div>
                     </div>
 
@@ -62,12 +62,12 @@ $rate_sub = (float) mer_field('kp_kalk_rate_sub', 42);
 
                     <!-- Przycisk -->
                     <button id="kp-kalk-submit" class="w-full py-3.5 rounded-full bg-white text-slate-800 text-base font-semibold border border-slate-200 hover:bg-slate-50 hover:border-slate-300 transition-colors mb-5">
-                        <?php echo esc_html(mer_t('kalk_calc_btn', 'Oblicz kwotę obsługi')); ?>
+                        <?php echo esc_html(__('Oblicz kwotę obsługi', 'meritoros')); ?>
                     </button>
 
                     <!-- Wynik -->
                     <div>
-                        <p class="text-sm text-slate-400 mb-1"><?php echo esc_html(mer_t('kalk_result_label', 'Orientacyjna cena netto')); ?></p>
+                        <p class="text-sm text-slate-400 mb-1"><?php echo esc_html(__('Orientacyjna cena netto', 'meritoros')); ?></p>
                         <p class="text-4xl font-bold text-slate-900">
                             <span id="kp-kalk-price">0,00 zł</span>
                             <span id="kp-kalk-suffix" class="text-lg font-normal text-slate-400 ml-1">(netto)</span>

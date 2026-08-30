@@ -667,3 +667,36 @@ msgstr "Фото клиента"
 
 msgid "Zobacz szczegóły"
 msgstr "Посмотреть детали"
+
+msgid "Poprzedni"
+msgstr "Предыдущий"
+
+msgid "Następny"
+msgstr "Следующий"
+
+msgid "Oblicz kwotę obsługi"
+msgstr "Рассчитать стоимость"
+
+msgid "Orientacyjna cena netto"
+msgstr "Ориентировочная цена (нетто)"
+
+msgid "Wybierz z listy"
+msgstr "Выберите из списка"
+
+msgid "Liczba podwykonawców"
+msgstr "Количество подрядчиков"
+
+msgid "Ilość wypłat na miesiąc"
+msgstr "Выплат в месяц"
+
+msgid "Rozliczenie umów (podwykonawcy)"
+msgstr "Расчёт договоров (подрядчики)"
+
+msgid "Liczba dokumentów miesięcznie"
+msgstr "Документов в месяц"
+
+msgid "Księgowość uproszczona (KPiR, ewidencja ryczałtowa)"
+msgstr "Упрощённый учёт (КПиР, единый налог)"
+
+msgid "Pełna księgowość (KH)"
+msgstr "Полный бухучёт (КХ)"

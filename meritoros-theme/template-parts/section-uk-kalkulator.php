@@ -24,18 +24,18 @@ $disclaimer  = mer_field('uk_kalk_disclaimer', '* to jest wstępny szacunek, ka�
             <div>
                 <div class="bg-white rounded-2xl p-8 shadow-sm">
 
-                    <?php $uk_ph_d = esc_attr(mer_t('uk_ph_docs', 'Liczba dokumentów miesięcznie')); ?>
+                    <?php $uk_ph_d = esc_attr(__('Liczba dokumentów miesięcznie', 'meritoros')); ?>
                     <!-- Dropdown typ księgowości -->
                     <div class="relative mb-4" id="uk-kalk-wrapper">
                         <button id="uk-kalk-btn"
                             class="mer-btn mer-btn--white w-full flex items-center justify-between px-5 py-4 border border-slate-200 rounded-xl text-slate-500 text-sm hover:border-slate-300 transition-colors bg-white"
                             aria-haspopup="listbox" aria-expanded="false">
-                            <span id="uk-kalk-label"><?php echo esc_html(mer_t('kalk_select', 'Wybierz z listy')); ?></span>
+                            <span id="uk-kalk-label"><?php echo esc_html(__('Wybierz z listy', 'meritoros')); ?></span>
                             <i data-lucide="chevron-down" class="w-5 h-5 text-slate-400 stroke-[1.5] shrink-0 transition-transform" id="uk-kalk-chevron"></i>
                         </button>
                         <div id="uk-kalk-list" class="absolute top-full left-0 right-0 mt-2 bg-white border border-slate-200 rounded-xl shadow-lg z-20 overflow-hidden hidden">
-                            <button data-value="uproszczona" data-label="<?php echo esc_attr(mer_t('uk_type_up',    'Księgowość uproszczona (KPiR, ewidencja ryczałtowa)')); ?>" class="uk-kalk-option w-full text-left px-5 py-4 text-sm text-slate-700 hover:bg-emerald-50 transition-colors border-b border-slate-100"><?php echo esc_html(mer_t('uk_type_up',    'Księgowość uproszczona (KPiR, ewidencja ryczałtowa)')); ?></button>
-                            <button data-value="pelna"       data-label="<?php echo esc_attr(mer_t('uk_type_pelna', 'Pełna księgowość (KH)')); ?>"                             class="uk-kalk-option w-full text-left px-5 py-4 text-sm text-slate-700 hover:bg-emerald-50 transition-colors"><?php echo esc_html(mer_t('uk_type_pelna', 'Pełna księgowość (KH)')); ?></button>
+                            <button data-value="uproszczona" data-label="<?php echo esc_attr(__('Księgowość uproszczona (KPiR, ewidencja ryczałtowa)', 'meritoros')); ?>" class="uk-kalk-option w-full text-left px-5 py-4 text-sm text-slate-700 hover:bg-emerald-50 transition-colors border-b border-slate-100"><?php echo esc_html(__('Księgowość uproszczona (KPiR, ewidencja ryczałtowa)', 'meritoros')); ?></button>
+                            <button data-value="pelna"       data-label="<?php echo esc_attr(__('Pełna księgowość (KH)', 'meritoros')); ?>"                             class="uk-kalk-option w-full text-left px-5 py-4 text-sm text-slate-700 hover:bg-emerald-50 transition-colors"><?php echo esc_html(__('Pełna księgowość (KH)', 'meritoros')); ?></button>
                         </div>
                     </div>
 
@@ -47,12 +47,12 @@ $disclaimer  = mer_field('uk_kalk_disclaimer', '* to jest wstępny szacunek, ka�
 
                     <!-- Przycisk -->
                     <button id="uk-kalk-submit" class="w-full py-3.5 rounded-full bg-white text-slate-800 text-base font-semibold border border-slate-200 hover:bg-slate-50 hover:border-slate-300 transition-colors mb-5">
-                        <?php echo esc_html(mer_t('kalk_calc_btn', 'Oblicz kwotę obsługi')); ?>
+                        <?php echo esc_html(__('Oblicz kwotę obsługi', 'meritoros')); ?>
                     </button>
 
                     <!-- Wynik -->
                     <div>
-                        <p class="text-sm text-slate-400 mb-1"><?php echo esc_html(mer_t('kalk_result_label', 'Orientacyjna cena netto')); ?></p>
+                        <p class="text-sm text-slate-400 mb-1"><?php echo esc_html(__('Orientacyjna cena netto', 'meritoros')); ?></p>
                         <p class="text-4xl font-bold text-slate-900">
                             <span id="uk-kalk-price">0,00 zł</span>
                             <span class="text-lg font-normal text-slate-400 ml-1">(netto)</span>
