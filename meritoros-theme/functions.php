@@ -8,6 +8,21 @@ define('MER_PRIVACY_PDF', get_template_directory_uri() . '/docs/Polityka-prywatn
 define('MER_TERMS_PDF',   get_template_directory_uri() . '/docs/Regulamin_newsletter.pdf');
 
 /* ------------------------------------------------------------------
+   URL-based locale switch — /en/ → en_US, /uk/ → uk, /ru/ → ru_RU
+   Musi działać przed load_theme_textdomain (priority 1)
+------------------------------------------------------------------ */
+function mer_url_locale_switch(): void {
+    $uri = $_SERVER['REQUEST_URI'] ?? '/';
+    if (preg_match('#^/(en|uk|ru)(/|$)#', $uri, $m)) {
+        $map = ['en' => 'en_US', 'uk' => 'uk', 'ru' => 'ru_RU'];
+        if (isset($map[$m[1]])) {
+            switch_to_locale($map[$m[1]]);
+        }
+    }
+}
+add_action('after_setup_theme', 'mer_url_locale_switch', 1);
+
+/* ------------------------------------------------------------------
    Theme Setup
 ------------------------------------------------------------------ */
 function meritoros_setup(): void {
