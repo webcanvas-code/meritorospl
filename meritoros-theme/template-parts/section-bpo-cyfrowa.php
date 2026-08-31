@@ -1,8 +1,8 @@
 <?php
-$title    = mer_field('bpo_td_title', 'Transformacja Cyfrowa');
-$text     = mer_field('bpo_td_text',  'Systematycznie rozwijamy i wdrażamy rozwiązania z zakresu robotyki (RPA) oraz automatyzacji. Wdrażamy najnowsze technologie, w tym Robotic Process Automation oraz AI, aby umożliwić klientom pełną kontrolę nad finansami. Działamy w modelu Lean, który zapewnia sprawność operacyjną i błyskawiczne dostosowanie się do potrzeb zmieniającego się rynku.');
+$title    = mer_field('bpo_td_title', __('Transformacja Cyfrowa', 'meritoros'));
+$text     = mer_field('bpo_td_text',  __('Systematycznie rozwijamy i wdrażamy rozwiązania z zakresu robotyki (RPA) oraz automatyzacji. Wdrażamy najnowsze technologie, w tym Robotic Process Automation oraz AI, aby umożliwić klientom pełną kontrolę nad finansami. Działamy w modelu Lean, który zapewnia sprawność operacyjną i błyskawiczne dostosowanie się do potrzeb zmieniającego się rynku.', 'meritoros'));
 $bg_img   = get_field('bpo_td_bg');
-$items_r  = mer_field('bpo_td_items', "Robotyzacja RPA\n\nE-teczki\n\nOptymalizacja procesów\n\nElektroniczny obieg dokumentów\n\nAutomatyzacja raportowania");
+$items_r  = mer_field('bpo_td_items', __("Robotyzacja RPA\n\nE-teczki\n\nOptymalizacja procesów\n\nElektroniczny obieg dokumentów\n\nAutomatyzacja raportowania", 'meritoros'));
 $items    = array_filter(array_map('trim', preg_split('/(\r?\n){2,}/', $items_r)));
 
 $bg_url = is_array($bg_img) ? esc_url($bg_img['url']) : 'https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&q=80&w=2000';

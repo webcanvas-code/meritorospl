@@ -1,7 +1,7 @@
 <?php
-$title    = mer_field('bpo_cta_title', 'Porozmawiajmy o obsłudze księgowej dla Twojej firmy');
-$subtitle = mer_field('bpo_cta_subtitle', 'Skontaktuj się z nami i dowiedz się, jak możemy wesprzeć Twoją organizację.');
-$btn_text = mer_field('bpo_cta_btn_text', 'Umów się na rozmowę');
+$title    = mer_field('bpo_cta_title', __('Porozmawiajmy o obsłudze księgowej dla Twojej firmy', 'meritoros'));
+$subtitle = mer_field('bpo_cta_subtitle', __('Skontaktuj się z nami i dowiedz się, jak możemy wesprzeć Twoją organizację.', 'meritoros'));
+$btn_text = mer_field('bpo_cta_btn_text', __('Umów się na rozmowę', 'meritoros'));
 $btn_url  = mer_field('bpo_cta_btn_url',  home_url('/kontakt/'));
 ?>
 

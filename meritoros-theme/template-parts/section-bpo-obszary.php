@@ -1,10 +1,10 @@
 <?php
-$title = mer_field('bpo_areas_title', 'Obszar współpracy');
+$title = mer_field('bpo_areas_title', __('Obszar współpracy', 'meritoros'));
 
 $area_defaults = [
-    ['title' => 'Rozwiązania kadrowe',   'desc' => 'Kompleksowa obsługa kadrowo-płacowa – od umów i list płac po rozliczenia z ZUS i US, z pełną zastępowalnością zespołu.'],
-    ['title' => 'Rozwiązania księgowe',  'desc' => 'Pełna księgowość, raportowanie zarządcze i sprawozdawcze – terminowo i zgodnie ze standardami, bez zakłóceń operacyjnych.'],
-    ['title' => 'Transformacja cyfrowa', 'desc' => 'Wdrożenie RPA, e-teczek i elektronicznego obiegu dokumentów – automatyzujemy procesy, żeby organizacja działała sprawniej.'],
+    ['title' => __('Rozwiązania kadrowe', 'meritoros'),   'desc' => __('Kompleksowa obsługa kadrowo-płacowa – od umów i list płac po rozliczenia z ZUS i US, z pełną zastępowalnością zespołu.', 'meritoros')],
+    ['title' => __('Rozwiązania księgowe', 'meritoros'),  'desc' => __('Pełna księgowość, raportowanie zarządcze i sprawozdawcze – terminowo i zgodnie ze standardami, bez zakłóceń operacyjnych.', 'meritoros')],
+    ['title' => __('Transformacja cyfrowa', 'meritoros'), 'desc' => __('Wdrożenie RPA, e-teczek i elektronicznego obiegu dokumentów – automatyzujemy procesy, żeby organizacja działała sprawniej.', 'meritoros')],
 ];
 
 $scroll_targets = ['bpo-kadrowe', 'bpo-ksiegowe', 'bpo-cyfrowa'];

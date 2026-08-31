@@ -55,7 +55,7 @@ for ($i = 1; $i <= 8; $i++) {
         </div>
         <div class="mt-10 flex justify-center">
             <a href="#faq" class="mer-btn mer-btn--light inline-flex items-center gap-2 px-7 py-3 rounded-full bg-slate-100 text-slate-700 text-base font-medium hover:bg-slate-200 transition-colors">
-                Pytania od kandydatów
+                <?php esc_html_e('Pytania od kandydatów', 'meritoros'); ?>
             </a>
         </div>
     </div>

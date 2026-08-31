@@ -801,3 +801,261 @@ msgstr "Начать"
 
 msgid "Zamknij menu"
 msgstr "Закрыть меню"
+
+msgid "Bezpieczeństwo\n"
+"i compliance"
+msgstr "Безопасность\n"
+"и соответствие требованиям"
+
+msgid "Blog"
+msgstr "Блог"
+
+msgid "Błąd połączenia. Spróbuj ponownie."
+msgstr "Ошибка соединения. Попробуйте ещё раз."
+
+msgid "Certyfikat"
+msgstr "Сертификат"
+
+msgid "Dlaczego BPO z Meritoros?"
+msgstr "Почему BPO с Meritoros?"
+
+msgid "Dlaczego Meritoros to spokój\n"
+"w Twoim biznesie?"
+msgstr "Почему Meritoros — это спокойствие\n"
+"в вашем бизнесе?"
+
+msgid "Działamy zgodnie z normami ISO 9001 i ISO/IEC 27001. Zapewniamy poufność danych, ciągłość obsługi i pełną zgodność z obowiązującymi przepisami prawa."
+msgstr "Мы работаем в соответствии со стандартами ISO 9001 и ISO/IEC 27001. Обеспечиваем конфиденциальность данных, непрерывность обслуживания и полное соответствие действующему законодательству."
+
+msgid "Działamy zgodnie z obowiązującymi regulacjami i standardami bezpieczeństwa danych. Dbamy o poufność informacji oraz jasne zasady współpracy - bez \"skrótów\" i ryzyk."
+msgstr "Мы работаем в соответствии с действующими нормами и стандартами безопасности данных. Соблюдаем конфиденциальность информации и чёткие условия сотрудничества — без «сокращений» и рисков."
+
+msgid "Efektywność kosztowa"
+msgstr "Экономическая эффективность"
+
+msgid "Elastyczność i indywidualne podejście pozwalają nam szybko dopasować się do zmieniających się potrzeb klientów i wspomóc ich na ścieżce skalowania swojej organizacji."
+msgstr "Гибкость и индивидуальный подход позволяют нам быстро адаптироваться к изменяющимся потребностям клиентов и поддерживать их на пути масштабирования организации."
+
+msgid "Elastyczność i skalowanie\n"
+"operacji"
+msgstr "Гибкость и масштабирование\n"
+"операций"
+
+msgid "Jakość potwierdzona standardami"
+msgstr "Качество, подтверждённое стандартами"
+
+msgid "Kompleksowa obsługa kadrowo-płacowa – od umów i list płac po rozliczenia z ZUS i US, z pełną zastępowalnością zespołu."
+msgstr "Комплексное кадрово-бухгалтерское обслуживание — от договоров и ведомостей до расчётов с ZUS и налоговыми органами, с полной взаимозаменяемостью команды."
+
+msgid "Mamy wdrożone procedury kontroli jakości i weryfikacji danych. Dostarczamy spójne dane dla zarządu."
+msgstr "Мы внедрили процедуры контроля качества и проверки данных. Предоставляем согласованные данные для руководства."
+
+msgid "Nagrody i wyróżnienia"
+msgstr "Награды и отличия"
+
+msgid "Nasze Wartości"
+msgstr "Наши ценности"
+
+msgid "Obszar współpracy"
+msgstr "Сфера сотрудничества"
+
+msgid "Outsourcing biznesowy pozwala na znaczne obniżenie kosztów operacyjnych. Dzięki nowoczesnej technologii i dużej skali obsługiwanych przez nas operacji oszczędności sięgają 20% lub więcej w porównaniu do obsługi procesów za pomocą własnych pracowników."
+msgstr "Аутсорсинг бизнес-процессов позволяет значительно снизить операционные затраты. Благодаря современным технологиям и большому масштабу обрабатываемых нами операций экономия достигает 20% и более по сравнению с обработкой процессов собственными сотрудниками."
+
+msgid "Pełna księgowość, raportowanie zarządcze i sprawozdawcze – terminowo i zgodnie ze standardami, bez zakłóceń operacyjnych."
+msgstr "Полный бухгалтерский учёт, управленческая и финансовая отчётность — в срок и в соответствии со стандартами, без операционных сбоев."
+
+msgid "Podaj prawidłowy adres e-mail."
+msgstr "Введите действительный адрес электронной почты."
+
+msgid "Porozmawiajmy o obsłudze księgowej dla Twojej firmy"
+msgstr "Поговорим о бухгалтерском обслуживании вашей компании"
+
+msgid "Poznaj ofertę"
+msgstr "Узнать больше"
+
+msgid "Pracujemy zespołowo i procesowo, dzięki czemu obsługa nie zależy od jednej osoby. Zapewniamy zastępowalność i ciągłość pracy – bez przestojów."
+msgstr "Мы работаем командой по процессному подходу, поэтому обслуживание не зависит от одного человека. Обеспечиваем взаимозаменяемость и непрерывность работы — без простоев."
+
+msgid "Przekazując odpowiedzialność za pewne procesy wsparcia, Zarząd i kluczowi menedżerowie przedsiębiorstwa mogą skupić się na rozwoju rynkowym i strategicznym zarządzaniu swoim biznesem."
+msgstr "Передавая ответственность за определённые вспомогательные процессы, Совет директоров и ключевые менеджеры могут сосредоточиться на развитии рынка и стратегическом управлении бизнесом."
+
+msgid "Pytania od kandydatów"
+msgstr "Вопросы от кандидатов"
+
+msgid "Robotyzacja RPA\n"
+"\n"
+"E-teczki\n"
+"\n"
+"Optymalizacja procesów\n"
+"\n"
+"Elektroniczny obieg dokumentów\n"
+"\n"
+"Automatyzacja raportowania"
+msgstr "Роботизация RPA\n"
+"\n"
+"Электронные дела\n"
+"\n"
+"Оптимизация процессов\n"
+"\n"
+"Электронный документооборот\n"
+"\n"
+"Автоматизация отчётности"
+
+msgid "Rozwiązania BPO"
+msgstr "Решения BPO"
+
+msgid "Rozwiązania kadrowe"
+msgstr "Кадровые решения"
+
+msgid "Rozwiązania księgowe"
+msgstr "Бухгалтерские решения"
+
+msgid "Skala i ciągłość\n"
+"obsługi"
+msgstr "Масштаб и непрерывность\n"
+"обслуживания"
+
+msgid "Skontaktuj się z nami i dowiedz się, jak możemy wesprzeć Twoją organizację."
+msgstr "Свяжитесь с нами и узнайте, как мы можем поддержать вашу организацию."
+
+msgid "Systematycznie rozwijamy i wdrażamy rozwiązania z zakresu robotyki (RPA) oraz automatyzacji. Wdrażamy najnowsze technologie, w tym Robotic Process Automation oraz AI, aby umożliwić klientom pełną kontrolę nad finansami. Działamy w modelu Lean, który zapewnia sprawność operacyjną i błyskawiczne dostosowanie się do potrzeb zmieniającego się rynku."
+msgstr "Мы систематически разрабатываем и внедряем решения в области роботизации (RPA) и автоматизации. Внедряем новейшие технологии, в том числе Robotic Process Automation и ИИ, чтобы дать клиентам полный контроль над финансами. Работаем по модели Lean, которая обеспечивает операционную эффективность и быструю адаптацию к меняющемуся рынку."
+
+msgid "Technologia\n"
+"i automatyzacja"
+msgstr "Технологии\n"
+"и автоматизация"
+
+msgid "Transformacja Cyfrowa"
+msgstr "Цифровая трансформация"
+
+msgid "Transformacja cyfrowa"
+msgstr "Цифровая трансформация"
+
+msgid "Uwolnienie czasu\n"
+"i usprawnienie procesów"
+msgstr "Высвобождение времени\n"
+"и оптимизация процессов"
+
+msgid "Wdrożenie RPA, e-teczek i elektronicznego obiegu dokumentów – automatyzujemy procesy, żeby organizacja działała sprawniej."
+msgstr "Внедрение RPA, электронных дел и электронного документооборота — автоматизируем процессы, чтобы организация работала эффективнее."
+
+msgid "Wiedza i aktualności"
+msgstr "Знания и новости"
+
+msgid "Współpracuj z profesjonalistami"
+msgstr "Сотрудничай с профессионалами"
+
+msgid "Wszystkie wpisy"
+msgstr "Все записи"
+
+msgid "Wykorzystujemy narzędzia i automatyzację (RPA), które porządkują obieg dokumentów, ograniczają ryzyko błędów i usprawniają pracę zespołów."
+msgstr "Мы используем инструменты и автоматизацию (RPA), которые упорядочивают документооборот, снижают риск ошибок и повышают эффективность команд."
+
+msgid "Wyróżnienia są efektem tego, jak rozwijamy Meritoros: konsekwentnie i procesowo. Trzymamy standard, który ma działać w praktyce - codziennie."
+msgstr "Награды — результат того, как мы развиваем Meritoros: последовательно и с процессным подходом. Мы поддерживаем стандарт, который должен работать на практике — каждый день."
+
+msgid "Wystąpił błąd. Spróbuj ponownie."
+msgstr "Произошла ошибка. Попробуйте ещё раз."
+
+msgid "Zapewniamy kompleksową obsługę kadrowo-płacową firm o różnej skali działalności. Przejmujemy odpowiedzialność za poprawność, terminowość i ciągłość procesów, aby organizacja mogła działać stabilnie i bez zakłóceń."
+msgstr "Мы предоставляем комплексные кадровые и бухгалтерские услуги компаниям различного масштаба. Берём на себя ответственность за точность, своевременность и непрерывность процессов, чтобы организация могла стабильно работать без сбоев."
+
+msgid "Zaufało nam ponad 1200 klientów"
+msgstr "Нам доверяют более 1200 клиентов"
+
+msgid "dla większych organizacji"
+msgstr "для крупных организаций"
+
+msgid "bez stresu"
+msgstr "без стресса"
+
+msgid "Chcesz do nas dołączyć?\n"
+"Zostaw swoje CV"
+msgstr "Хотите присоединиться к нам?\n"
+"Оставьте своё резюме"
+
+msgid "Ciągły Rozwój jest wpisany\n"
+"w nasze DNA"
+msgstr "Непрерывное развитие заложено\n"
+"в нашей ДНК"
+
+msgid "Dołącz do grona naszych\n"
+"klientów i rozwijaj biznes"
+msgstr "Присоединяйтесь к нашим клиентам\n"
+"и развивайте бизнес"
+
+msgid "Elastyczność dopasowana\n"
+"do Twojego stylu pracy"
+msgstr "Гибкость, подстроенная\n"
+"под ваш стиль работы"
+
+msgid "Informacje"
+msgstr "Информация"
+
+msgid "Menu"
+msgstr "Меню"
+
+msgid "Menu główne"
+msgstr "Главное меню"
+
+msgid "Menu stopki"
+msgstr "Меню подвала"
+
+msgid "Miasta w których\n"
+"mamy oddziały"
+msgstr "Города, где\n"
+"у нас есть офисы"
+
+msgid "Nasi specjaliści są do dyspozycji w godzinach pracy biura.\n"
+"Odpowiemy na wszystkie Twoje pytania."
+msgstr "Наши специалисты доступны в рабочее время.\n"
+"Мы ответим на все ваши вопросы."
+
+msgid "Oddaj księgowość\n"
+"w ręce ekspertów"
+msgstr "Передайте бухгалтерию\n"
+"в руки экспертов"
+
+msgid "Oddziały\n"
+"Wirtualne"
+msgstr "Виртуальные\n"
+"офисы"
+
+msgid "Otwórz menu"
+msgstr "Открыть меню"
+
+msgid "Polityka prywatności"
+msgstr "Политика конфиденциальности"
+
+msgid "Praca w zgranym\n"
+"zespole specjalistów"
+msgstr "Работа в сплочённой\n"
+"команде специалистов"
+
+msgid "Profesjonalne biuro rachunkowe i BPO dla firm z ambicjami."
+msgstr "Профессиональное бухгалтерское бюро и BPO для компаний с амбициями."
+
+msgid "Projekt i realizacja:"
+msgstr "Дизайн и разработка:"
+
+msgid "Regulamin newslettera"
+msgstr "Условия рассылки"
+
+msgid "Skup biur rachunkowych"
+msgstr "Приобретение бухгалтерских фирм"
+
+msgid "Stabilne zatrudnienie\n"
+"i jasne zasady"
+msgstr "Стабильная занятость\n"
+"и чёткие правила"
+
+msgid "Usługi"
+msgstr "Услуги"
+
+msgid "Zacznij teraz"
+msgstr "Начать"
+
+msgid "Zamknij menu"
+msgstr "Закрыть меню"

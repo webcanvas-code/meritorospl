@@ -1,12 +1,12 @@
 <?php
-$title_normal = mer_field('bpo_hero_title_normal', 'Rozwiązania BPO');
-$title_green  = mer_field('bpo_hero_title_green',  'dla większych organizacji');
-$subtitle     = mer_field('bpo_hero_subtitle', 'Zapewniamy kompleksową obsługę kadrowo-płacową firm o różnej skali działalności. Przejmujemy odpowiedzialność za poprawność, terminowość i ciągłość procesów, aby organizacja mogła działać stabilnie i bez zakłóceń.');
-$btn1_text    = mer_field('bpo_hero_btn1_text', 'Poznaj ofertę');
+$title_normal = mer_field('bpo_hero_title_normal', __('Rozwiązania BPO', 'meritoros'));
+$title_green  = mer_field('bpo_hero_title_green',  __('dla większych organizacji', 'meritoros'));
+$subtitle     = mer_field('bpo_hero_subtitle', __('Zapewniamy kompleksową obsługę kadrowo-płacową firm o różnej skali działalności. Przejmujemy odpowiedzialność za poprawność, terminowość i ciągłość procesów, aby organizacja mogła działać stabilnie i bez zakłóceń.', 'meritoros'));
+$btn1_text    = mer_field('bpo_hero_btn1_text', __('Poznaj ofertę', 'meritoros'));
 $btn1_url     = mer_field('bpo_hero_btn1_url',  '#');
-$btn2_text    = mer_field('bpo_hero_btn2_text', 'Porozmawiajmy');
+$btn2_text    = mer_field('bpo_hero_btn2_text', __('Porozmawiajmy', 'meritoros'));
 $btn2_url     = mer_field('bpo_hero_btn2_url',  home_url('/kontakt/'));
-$logos_title  = mer_field('bpo_hero_logos_title', 'Zaufało nam ponad 1200 klientów');
+$logos_title  = mer_field('bpo_hero_logos_title', __('Zaufało nam ponad 1200 klientów', 'meritoros'));
 
 $_img_base = get_template_directory_uri() . '/images/';
 $_logo_defaults = [

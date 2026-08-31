@@ -33,7 +33,7 @@ $_kar_orig_id = apply_filters('wpml_object_id', $_kar_page_id, get_post_type(), 
 
 $cards = [];
 for ($i = 1; $i <= 4; $i++) {
-    $g = get_field("kar_dlaczego_{$i}") ?: ($_kar_orig_id !== $_kar_page_id ? get_field("kar_dlaczego_{$i}", $_kar_orig_id) : null);
+    $g = get_field("kar_dlaczego_{$i}");
     $d = $card_defaults[$i];
     $img = is_array($g) && !empty($g['image']) ? $g['image'] : null;
     $cards[] = [

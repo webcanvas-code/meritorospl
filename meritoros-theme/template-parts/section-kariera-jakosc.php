@@ -26,7 +26,7 @@ $card_defaults = [
 ];
 $cards = [];
 for ($i = 1; $i <= 3; $i++) {
-    $g = get_field("kar_jakosc_card{$i}") ?: ($_orig_id !== $_page_id ? get_field("kar_jakosc_card{$i}", $_orig_id) : null);
+    $g = get_field("kar_jakosc_card{$i}");
     $d = $card_defaults[$i - 1];
     $cards[] = [
         'icon' => is_array($g) && !empty($g['icon']) ? $g['icon'] : $d['icon'],

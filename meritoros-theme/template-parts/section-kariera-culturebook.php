@@ -81,6 +81,13 @@ $nonce = wp_create_nonce('mer_culturebook_nonce');
 
 <?php if ($has_pdf) : ?>
 <script>
+var merCultL10n = {
+    emailInvalid: <?php echo json_encode(__('Podaj prawidłowy adres e-mail.', 'meritoros')); ?>,
+    errorGeneric: <?php echo json_encode(__('Wystąpił błąd. Spróbuj ponownie.', 'meritoros')); ?>,
+    errorNetwork: <?php echo json_encode(__('Błąd połączenia. Spróbuj ponownie.', 'meritoros')); ?>,
+};
+</script>
+<script>
 (function () {
     var form    = document.getElementById('cult-form');
     var emailEl = document.getElementById('cult-email');
@@ -98,7 +105,7 @@ $nonce = wp_create_nonce('mer_culturebook_nonce');
 
         var email = emailEl.value.trim();
         if (!email || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
-            error.textContent = 'Podaj prawidłowy adres e-mail.';
+            error.textContent = merCultL10n.emailInvalid;
             error.classList.remove('hidden');
             return;
         }
@@ -121,7 +128,7 @@ $nonce = wp_create_nonce('mer_culturebook_nonce');
                 success.classList.remove('hidden');
                 success.classList.add('flex');
             } else {
-                error.textContent = res.data || 'Wystąpił błąd. Spróbuj ponownie.';
+                error.textContent = res.data || merCultL10n.errorGeneric;
                 error.classList.remove('hidden');
                 submit.disabled = false;
                 icon.classList.remove('hidden');
@@ -129,7 +136,7 @@ $nonce = wp_create_nonce('mer_culturebook_nonce');
             }
         })
         .catch(function () {
-            error.textContent = 'Błąd połączenia. Spróbuj ponownie.';
+            error.textContent = merCultL10n.errorNetwork;
             error.classList.remove('hidden');
             submit.disabled = false;
             icon.classList.remove('hidden');

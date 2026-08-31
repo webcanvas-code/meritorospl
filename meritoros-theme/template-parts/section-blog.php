@@ -1,9 +1,9 @@
 <?php
 // Czytaj pola zawsze ze strony głównej — ACFML zwróci wersję w aktualnym języku
 $_blog_id      = (int) get_option('page_on_front');
-$section_label = (get_field('blog_label',     $_blog_id) ?: 'Wiedza i aktualności');
-$section_title = (get_field('blog_title',     $_blog_id) ?: 'Blog');
-$link_text     = (get_field('blog_link_text', $_blog_id) ?: 'Wszystkie wpisy');
+$section_label = (get_field('blog_label',     $_blog_id) ?: __('Wiedza i aktualności', 'meritoros'));
+$section_title = (get_field('blog_title',     $_blog_id) ?: __('Blog', 'meritoros'));
+$link_text     = (get_field('blog_link_text', $_blog_id) ?: __('Wszystkie wpisy', 'meritoros'));
 $link_url      = (get_field('blog_link_url',  $_blog_id) ?: get_permalink(get_option('page_for_posts')) ?: '/blog');
 
 // Query 3 latest posts

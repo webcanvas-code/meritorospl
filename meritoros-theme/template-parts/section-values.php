@@ -1,11 +1,11 @@
 <?php
-$label    = mer_field('values_label', 'Nasze Wartości');
-$title    = mer_field('values_title', "Dlaczego Meritoros to spokój\nw Twoim biznesie?");
+$label    = mer_field('values_label', __('Nasze Wartości', 'meritoros'));
+$title    = mer_field('values_title', __("Dlaczego Meritoros to spokój\nw Twoim biznesie?", 'meritoros'));
 
 // Card 1
 $c1_icon  = mer_field('val_c1_icon', 'infinity');
-$c1_title = mer_field('val_c1_title', "Skala i ciągłość\nobsługi");
-$c1_desc  = mer_field('val_c1_desc', 'Pracujemy zespołowo i procesowo, dzięki czemu obsługa nie zależy od jednej osoby. Zapewniamy zastępowalność i ciągłość pracy – bez przestojów.');
+$c1_title = mer_field('val_c1_title', __("Skala i ciągłość\nobsługi", 'meritoros'));
+$c1_desc  = mer_field('val_c1_desc', __('Pracujemy zespołowo i procesowo, dzięki czemu obsługa nie zależy od jednej osoby. Zapewniamy zastępowalność i ciągłość pracy – bez przestojów.', 'meritoros'));
 
 // Card 2 — image
 $img_arr  = get_field('val_img');
@@ -13,21 +13,21 @@ $img_url  = is_array($img_arr) ? esc_url($img_arr['url']) : 'https://images.unsp
 $img_alt  = is_array($img_arr) ? esc_attr($img_arr['alt']) : 'Team';
 $img_w    = is_array($img_arr) ? intval($img_arr['width'])  : 1469;
 $img_h    = is_array($img_arr) ? intval($img_arr['height']) : 979;
-$img_hover= mer_field('val_img_hover_text', 'Współpracuj z profesjonalistami');
+$img_hover= mer_field('val_img_hover_text', __('Współpracuj z profesjonalistami', 'meritoros'));
 
 // Card 3
 $c3_icon  = mer_field('val_c3_icon', 'shield-check');
-$c3_title = mer_field('val_c3_title', "Bezpieczeństwo\ni compliance");
-$c3_desc  = mer_field('val_c3_desc', 'Działamy zgodnie z obowiązującymi regulacjami i standardami bezpieczeństwa danych. Dbamy o poufność informacji oraz jasne zasady współpracy - bez "skrótów" i ryzyk.');
+$c3_title = mer_field('val_c3_title', __("Bezpieczeństwo\ni compliance", 'meritoros'));
+$c3_desc  = mer_field('val_c3_desc', __('Działamy zgodnie z obowiązującymi regulacjami i standardami bezpieczeństwa danych. Dbamy o poufność informacji oraz jasne zasady współpracy - bez "skrótów" i ryzyk.', 'meritoros'));
 
 // Card 4
 $c4_icon  = mer_field('val_c4_icon', 'bot');
-$c4_title = mer_field('val_c4_title', "Technologia\ni automatyzacja");
-$c4_desc  = mer_field('val_c4_desc', 'Wykorzystujemy narzędzia i automatyzację (RPA), które porządkują obieg dokumentów, ograniczają ryzyko błędów i usprawniają pracę zespołów.');
+$c4_title = mer_field('val_c4_title', __("Technologia\ni automatyzacja", 'meritoros'));
+$c4_desc  = mer_field('val_c4_desc', __('Wykorzystujemy narzędzia i automatyzację (RPA), które porządkują obieg dokumentów, ograniczają ryzyko błędów i usprawniają pracę zespołów.', 'meritoros'));
 
 // Card 5 — awards (loga pobierane ze strony BPO)
-$c5_title  = mer_field('val_c5_title', 'Nagrody i wyróżnienia');
-$c5_desc   = mer_field('val_c5_desc', 'Wyróżnienia są efektem tego, jak rozwijamy Meritoros: konsekwentnie i procesowo. Trzymamy standard, który ma działać w praktyce - codziennie.');
+$c5_title  = mer_field('val_c5_title', __('Nagrody i wyróżnienia', 'meritoros'));
+$c5_desc   = mer_field('val_c5_desc', __('Wyróżnienia są efektem tego, jak rozwijamy Meritoros: konsekwentnie i procesowo. Trzymamy standard, który ma działać w praktyce - codziennie.', 'meritoros'));
 $_bpo_pages = get_posts(['post_type' => 'page', 'meta_key' => '_wp_page_template', 'meta_value' => 'page-bpo.php', 'posts_per_page' => 1, 'fields' => 'ids']);
 $_bpo_id    = !empty($_bpo_pages) ? $_bpo_pages[0] : 0;
 $_img       = get_template_directory_uri() . '/images/';
@@ -36,9 +36,9 @@ $val_logo2  = ($_bpo_id ? get_field('bpo_awards_logo2', $_bpo_id) : null) ?: ['u
 
 // Card 6 — quality
 $c6_icon       = mer_field('val_c6_icon', 'award');
-$c6_title      = mer_field('val_c6_title', 'Jakość potwierdzona standardami');
-$c6_desc       = mer_field('val_c6_desc', 'Mamy wdrożone procedury kontroli jakości i weryfikacji danych. Dostarczamy spójne dane dla zarządu.');
-$c6_cert_label = mer_field('val_c6_cert_label', 'Certyfikat');
+$c6_title      = mer_field('val_c6_title', __('Jakość potwierdzona standardami', 'meritoros'));
+$c6_desc       = mer_field('val_c6_desc', __('Mamy wdrożone procedury kontroli jakości i weryfikacji danych. Dostarczamy spójne dane dla zarządu.', 'meritoros'));
+$c6_cert_label = mer_field('val_c6_cert_label', __('Certyfikat', 'meritoros'));
 $c6_cert       = mer_field('val_c6_cert', 'ISO 9001:2015');
 ?>
 
