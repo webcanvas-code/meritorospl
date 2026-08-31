@@ -8,9 +8,11 @@ $link_url      = (get_field('blog_link_url',  $_blog_id) ?: get_permalink(get_op
 
 // Query 3 latest posts
 $posts = new WP_Query([
-    'posts_per_page' => 3,
-    'post_status'    => 'publish',
-    'no_found_rows'  => true,
+    'posts_per_page'   => 3,
+    'post_status'      => 'publish',
+    'no_found_rows'    => true,
+    'suppress_filters' => true,  // pokaż wpisy PL niezależnie od języka WPML
+    'lang'             => 'pl',
 ]);
 
 if (!$posts->have_posts()) return;
