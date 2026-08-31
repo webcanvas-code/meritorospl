@@ -8,19 +8,22 @@ define('MER_PRIVACY_PDF', get_template_directory_uri() . '/docs/Polityka-prywatn
 define('MER_TERMS_PDF',   get_template_directory_uri() . '/docs/Regulamin_newsletter.pdf');
 
 /* ------------------------------------------------------------------
-   URL-based locale switch — /en/ → en_US, /uk/ → uk, /ru/ → ru_RU
-   Musi działać przed load_theme_textdomain (priority 1)
+   URL-based textdomain — /en/ → en_US.mo, /uk/ → uk.mo, /ru/ → ru_RU.mo
+   Ładuje .mo bezpośrednio po meritoros_setup (priority 20), omija WPML locale filter
 ------------------------------------------------------------------ */
-function mer_url_locale_switch(): void {
+function mer_url_load_textdomain(): void {
     $uri = $_SERVER['REQUEST_URI'] ?? '/';
-    if (preg_match('#^/(en|uk|ru)(/|$)#', $uri, $m)) {
-        $map = ['en' => 'en_US', 'uk' => 'uk', 'ru' => 'ru_RU'];
-        if (isset($map[$m[1]])) {
-            switch_to_locale($map[$m[1]]);
-        }
+    if (!preg_match('#^/(en|uk|ru)(/|$)#', $uri, $m)) return;
+    $map = ['en' => 'en_US', 'uk' => 'uk', 'ru' => 'ru_RU'];
+    $locale = $map[$m[1]] ?? null;
+    if (!$locale) return;
+    $mo = get_template_directory() . '/languages/' . $locale . '.mo';
+    if (file_exists($mo)) {
+        unload_textdomain('meritoros');
+        load_textdomain('meritoros', $mo);
     }
 }
-add_action('after_setup_theme', 'mer_url_locale_switch', 1);
+add_action('after_setup_theme', 'mer_url_load_textdomain', 20);
 
 /* ------------------------------------------------------------------
    Theme Setup
