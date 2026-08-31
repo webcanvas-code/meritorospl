@@ -48,9 +48,9 @@ $btn2_url     = mer_field('uk_hero_btn2_url',  home_url('/kontakt/'));
         <div class="flex items-center gap-2 text-sm text-slate-400 mb-6">
             <span><?php esc_html_e('Strona główna', 'meritoros'); ?></span>
             <span>/</span>
-            <span>Biuro rachunkowe</span>
+            <span><?php esc_html_e('Biuro rachunkowe', 'meritoros'); ?></span>
             <span>/</span>
-            <span class="text-slate-600 font-medium">Usługi księgowe</span>
+            <span class="text-slate-600 font-medium"><?php esc_html_e('Usługi księgowe', 'meritoros'); ?></span>
         </div>
 
         <div class="max-w-4xl">

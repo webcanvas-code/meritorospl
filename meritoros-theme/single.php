@@ -7,7 +7,7 @@ the_post();
 
 $blog_page = get_page_by_path('wiedza-i-poradniki') ?: get_page_by_path('blog');
 $blog_url  = $blog_page ? get_permalink($blog_page) : home_url('/wiedza-i-poradniki/');
-$blog_label = $blog_page ? get_the_title($blog_page) : 'Wiedza i poradniki';
+$blog_label = $blog_page ? get_the_title($blog_page) : __('Wiedza i poradniki', 'meritoros');
 
 $categories = get_the_category();
 $first_cat  = ! empty($categories) ? $categories[0] : null;
@@ -74,7 +74,7 @@ $first_cat  = ! empty($categories) ? $categories[0] : null;
 
             <!-- Breadcrumbs -->
             <nav class="flex items-center gap-2 text-sm text-slate-400 mb-10 flex-wrap">
-                <a href="<?php echo esc_url(home_url('/')); ?>" class="hover:text-slate-600 transition-colors">Strona główna</a>
+                <a href="<?php echo esc_url(home_url('/')); ?>" class="hover:text-slate-600 transition-colors"><?php esc_html_e('Strona główna', 'meritoros'); ?></a>
                 <span>/</span>
                 <a href="<?php echo esc_url($blog_url); ?>" class="hover:text-slate-600 transition-colors"><?php echo esc_html($blog_label); ?></a>
                 <span>/</span>

@@ -30,7 +30,7 @@ if (!$btn_url || $btn_url === '#case-studies') $btn_url = '#hk-video-section';
         <div class="flex items-center gap-2 text-sm text-slate-400 mb-6">
             <span><?php esc_html_e('Strona główna', 'meritoros'); ?></span>
             <span>/</span>
-            <span class="text-slate-600 font-medium">Historie klientów</span>
+            <span class="text-slate-600 font-medium"><?php esc_html_e('Historie klientów', 'meritoros'); ?></span>
         </div>
 
         <div class="max-w-3xl">

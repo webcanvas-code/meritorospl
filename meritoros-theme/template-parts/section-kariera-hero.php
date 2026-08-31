@@ -16,7 +16,7 @@ $bg_url   = is_array($bg) ? esc_url($bg['url']) : 'https://images.unsplash.com/p
         <div class="flex items-center gap-2 text-sm text-white/60 mb-6">
             <span><?php esc_html_e('Strona główna', 'meritoros'); ?></span>
             <span>/</span>
-            <span class="text-white/90 font-medium">Kariera</span>
+            <span class="text-white/90 font-medium"><?php esc_html_e('Kariera', 'meritoros'); ?></span>
         </div>
         <div class="max-w-2xl">
             <h1 class="text-pretty text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-white leading-[1.1] mb-6">

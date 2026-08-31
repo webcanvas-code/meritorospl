@@ -34,7 +34,7 @@ $btn2_url     = mer_field('fr_hero_btn2_url',  home_url('/kontakt/'));
         <div class="flex items-center gap-2 text-sm text-slate-400 mb-6">
             <span><?php esc_html_e('Strona główna', 'meritoros'); ?></span>
             <span>/</span>
-            <span>Biuro rachunkowe</span>
+            <span><?php esc_html_e('Biuro rachunkowe', 'meritoros'); ?></span>
             <span>/</span>
             <span class="text-slate-600 font-medium"><?php echo mer_esc(get_the_title()); ?></span>
         </div>
