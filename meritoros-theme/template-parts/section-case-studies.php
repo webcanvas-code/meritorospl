@@ -15,9 +15,15 @@ $_cs_labels = [
 ];
 $_cs_t = $_cs_labels[$_cs_lang] ?? $_cs_labels['pl'];
 
-$label    = (get_field('cs_label',    $_cs_id) ?: $_cs_t['label']);
-$title    = (get_field('cs_title',    $_cs_id) ?: $_cs_t['title']);
-$subtitle = (get_field('cs_subtitle', $_cs_id) ?: $_cs_t['subtitle']);
+if ($_cs_lang === 'pl') {
+    $label    = (get_field('cs_label',    $_cs_id) ?: $_cs_t['label']);
+    $title    = (get_field('cs_title',    $_cs_id) ?: $_cs_t['title']);
+    $subtitle = (get_field('cs_subtitle', $_cs_id) ?: $_cs_t['subtitle']);
+} else {
+    $label    = $_cs_t['label'];
+    $title    = $_cs_t['title'];
+    $subtitle = $_cs_t['subtitle'];
+}
 
 $historie_klientow_url = home_url('/historie-klientow/');
 
