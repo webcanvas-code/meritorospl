@@ -700,3 +700,12 @@ msgstr "Упрощённый учёт (КПиР, единый налог)"
 
 msgid "Pełna księgowość (KH)"
 msgstr "Полный бухучёт (КХ)"
+
+msgid "Case Studies"
+msgstr "Кейсы"
+
+msgid "Historie naszych klientów"
+msgstr "Истории наших клиентов"
+
+msgid "Krótkie historie firm, którym pomagamy uporządkować finanse i procesy. Przesuń palcem lub użyj strzałek."
+msgstr "Короткие истории компаний, которым мы помогаем упорядочить финансы и процессы. Проведите пальцем или используйте стрелки."

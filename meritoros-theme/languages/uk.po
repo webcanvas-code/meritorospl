@@ -700,3 +700,12 @@ msgstr "Спрощена бухгалтерія (КПіР, єдиний пода
 
 msgid "Pełna księgowość (KH)"
 msgstr "Повна бухгалтерія (КГ)"
+
+msgid "Case Studies"
+msgstr "Кейси"
+
+msgid "Historie naszych klientów"
+msgstr "Історії наших клієнтів"
+
+msgid "Krótkie historie firm, którym pomagamy uporządkować finanse i procesy. Przesuń palcem lub użyj strzałek."
+msgstr "Короткі історії компаній, яким ми допомагаємо впорядкувати фінанси та процеси. Проведіть пальцем або скористайтеся стрілками."

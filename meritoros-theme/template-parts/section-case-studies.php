@@ -2,9 +2,9 @@
 // Czytaj pola zawsze ze strony głównej — ACFML zwróci wersję w aktualnym języku
 $_cs_id = (int) get_option('page_on_front');
 
-$label    = (get_field('cs_label',    $_cs_id) ?: 'Case Studies');
-$title    = (get_field('cs_title',    $_cs_id) ?: 'Historie naszych klientów');
-$subtitle = (get_field('cs_subtitle', $_cs_id) ?: 'Krótkie historie firm, którym pomagamy uporządkować finanse i procesy. Przesuń palcem lub użyj strzałek.');
+$label    = (get_field('cs_label',    $_cs_id) ?: __('Case Studies', 'meritoros'));
+$title    = (get_field('cs_title',    $_cs_id) ?: __('Historie naszych klientów', 'meritoros'));
+$subtitle = (get_field('cs_subtitle', $_cs_id) ?: __('Krótkie historie firm, którym pomagamy uporządkować finanse i procesy. Przesuń palcem lub użyj strzałek.', 'meritoros'));
 
 $historie_klientow_url = home_url('/historie-klientow/');
 

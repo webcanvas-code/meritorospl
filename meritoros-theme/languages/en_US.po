@@ -700,3 +700,12 @@ msgstr "Simplified accounting (Revenue & Expense Ledger, lump sum)"
 
 msgid "Pełna księgowość (KH)"
 msgstr "Full accounting (KH)"
+
+msgid "Case Studies"
+msgstr "Case Studies"
+
+msgid "Historie naszych klientów"
+msgstr "Our clients' stories"
+
+msgid "Krótkie historie firm, którym pomagamy uporządkować finanse i procesy. Przesuń palcem lub użyj strzałek."
+msgstr "Short stories of companies we help organize their finances and processes. Swipe or use the arrows."
