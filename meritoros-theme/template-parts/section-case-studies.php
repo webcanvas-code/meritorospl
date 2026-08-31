@@ -2,9 +2,22 @@
 // Czytaj pola zawsze ze strony głównej — ACFML zwróci wersję w aktualnym języku
 $_cs_id = (int) get_option('page_on_front');
 
-$label    = (get_field('cs_label',    $_cs_id) ?: __('Case Studies', 'meritoros'));
-$title    = (get_field('cs_title',    $_cs_id) ?: __('Historie naszych klientów', 'meritoros'));
-$subtitle = (get_field('cs_subtitle', $_cs_id) ?: __('Krótkie historie firm, którym pomagamy uporządkować finanse i procesy. Przesuń palcem lub użyj strzałek.', 'meritoros'));
+// Wykryj język z URL (URL-based i18n, bez WPML)
+$_uri = $_SERVER['REQUEST_URI'] ?? '/';
+preg_match('#^/(en|uk|ru)(/|$)#', $_uri, $_lm);
+$_cs_lang = $_lm[1] ?? 'pl';
+
+$_cs_labels = [
+    'pl' => ['label' => 'Case Studies', 'title' => 'Historie naszych klientów', 'subtitle' => 'Krótkie historie firm, którym pomagamy uporządkować finanse i procesy. Przesuń palcem lub użyj strzałek.'],
+    'en' => ['label' => 'Case Studies', 'title' => 'Our clients\' stories',      'subtitle' => 'Short stories of companies we help organize their finances and processes. Swipe or use the arrows.'],
+    'uk' => ['label' => 'Кейси',        'title' => 'Історії наших клієнтів',    'subtitle' => 'Короткі історії компаній, яким ми допомагаємо впорядкувати фінанси та процеси. Проведіть пальцем або скористайтеся стрілками.'],
+    'ru' => ['label' => 'Кейсы',        'title' => 'Истории наших клиентов',    'subtitle' => 'Короткие истории компаний, которым мы помогаем упорядочить финансы и процессы. Проведите пальцем или используйте стрелки.'],
+];
+$_cs_t = $_cs_labels[$_cs_lang] ?? $_cs_labels['pl'];
+
+$label    = (get_field('cs_label',    $_cs_id) ?: $_cs_t['label']);
+$title    = (get_field('cs_title',    $_cs_id) ?: $_cs_t['title']);
+$subtitle = (get_field('cs_subtitle', $_cs_id) ?: $_cs_t['subtitle']);
 
 $historie_klientow_url = home_url('/historie-klientow/');
 
