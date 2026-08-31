@@ -709,3 +709,95 @@ msgstr "Истории наших клиентов"
 
 msgid "Krótkie historie firm, którym pomagamy uporządkować finanse i procesy. Przesuń palcem lub użyj strzałek."
 msgstr "Короткие истории компаний, которым мы помогаем упорядочить финансы и процессы. Проведите пальцем или используйте стрелки."
+
+msgid "bez stresu"
+msgstr "без стресса"
+
+msgid "Chcesz do nas dołączyć?\n"
+"Zostaw swoje CV"
+msgstr "Хотите присоединиться к нам?\n"
+"Оставьте своё резюме"
+
+msgid "Ciągły Rozwój jest wpisany\n"
+"w nasze DNA"
+msgstr "Непрерывное развитие заложено\n"
+"в нашей ДНК"
+
+msgid "Dołącz do grona naszych\n"
+"klientów i rozwijaj biznes"
+msgstr "Присоединяйтесь к нашим клиентам\n"
+"и развивайте бизнес"
+
+msgid "Elastyczność dopasowana\n"
+"do Twojego stylu pracy"
+msgstr "Гибкость, подстроенная\n"
+"под ваш стиль работы"
+
+msgid "Informacje"
+msgstr "Информация"
+
+msgid "Menu"
+msgstr "Меню"
+
+msgid "Menu główne"
+msgstr "Главное меню"
+
+msgid "Menu stopki"
+msgstr "Меню подвала"
+
+msgid "Miasta w których\n"
+"mamy oddziały"
+msgstr "Города, где\n"
+"у нас есть офисы"
+
+msgid "Nasi specjaliści są do dyspozycji w godzinach pracy biura.\n"
+"Odpowiemy na wszystkie Twoje pytania."
+msgstr "Наши специалисты доступны в рабочее время.\n"
+"Мы ответим на все ваши вопросы."
+
+msgid "Oddaj księgowość\n"
+"w ręce ekspertów"
+msgstr "Передайте бухгалтерию\n"
+"в руки экспертов"
+
+msgid "Oddziały\n"
+"Wirtualne"
+msgstr "Виртуальные\n"
+"офисы"
+
+msgid "Otwórz menu"
+msgstr "Открыть меню"
+
+msgid "Polityka prywatności"
+msgstr "Политика конфиденциальности"
+
+msgid "Praca w zgranym\n"
+"zespole specjalistów"
+msgstr "Работа в сплочённой\n"
+"команде специалистов"
+
+msgid "Profesjonalne biuro rachunkowe i BPO dla firm z ambicjami."
+msgstr "Профессиональное бухгалтерское бюро и BPO для компаний с амбициями."
+
+msgid "Projekt i realizacja:"
+msgstr "Дизайн и разработка:"
+
+msgid "Regulamin newslettera"
+msgstr "Условия рассылки"
+
+msgid "Skup biur rachunkowych"
+msgstr "Приобретение бухгалтерских фирм"
+
+msgid "Stabilne zatrudnienie\n"
+"i jasne zasady"
+msgstr "Стабильная занятость\n"
+"и чёткие правила"
+
+msgid "Usługi"
+msgstr "Услуги"
+
+msgid "Zacznij teraz"
+msgstr "Начать"
+
+msgid "Zamknij menu"
+msgstr "Закрыть меню"

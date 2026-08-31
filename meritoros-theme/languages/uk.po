@@ -709,3 +709,95 @@ msgstr "Історії наших клієнтів"
 
 msgid "Krótkie historie firm, którym pomagamy uporządkować finanse i procesy. Przesuń palcem lub użyj strzałek."
 msgstr "Короткі історії компаній, яким ми допомагаємо впорядкувати фінанси та процеси. Проведіть пальцем або скористайтеся стрілками."
+
+msgid "bez stresu"
+msgstr "без стресу"
+
+msgid "Chcesz do nas dołączyć?\n"
+"Zostaw swoje CV"
+msgstr "Хочете приєднатися до нас?\n"
+"Залиште своє резюме"
+
+msgid "Ciągły Rozwój jest wpisany\n"
+"w nasze DNA"
+msgstr "Постійний розвиток закладений\n"
+"у нашій ДНК"
+
+msgid "Dołącz do grona naszych\n"
+"klientów i rozwijaj biznes"
+msgstr "Приєднуйтесь до наших клієнтів\n"
+"та розвивайте бізнес"
+
+msgid "Elastyczność dopasowana\n"
+"do Twojego stylu pracy"
+msgstr "Гнучкість, адаптована\n"
+"до вашого стилю роботи"
+
+msgid "Informacje"
+msgstr "Інформація"
+
+msgid "Menu"
+msgstr "Меню"
+
+msgid "Menu główne"
+msgstr "Головне меню"
+
+msgid "Menu stopki"
+msgstr "Меню підвалу"
+
+msgid "Miasta w których\n"
+"mamy oddziały"
+msgstr "Міста, де\n"
+"ми маємо офіси"
+
+msgid "Nasi specjaliści są do dyspozycji w godzinach pracy biura.\n"
+"Odpowiemy na wszystkie Twoje pytania."
+msgstr "Наші фахівці доступні в робочий час.\n"
+"Відповімо на всі ваші запитання."
+
+msgid "Oddaj księgowość\n"
+"w ręce ekspertów"
+msgstr "Передайте бухгалтерію\n"
+"в руки експертів"
+
+msgid "Oddziały\n"
+"Wirtualne"
+msgstr "Віртуальні\n"
+"відділення"
+
+msgid "Otwórz menu"
+msgstr "Відкрити меню"
+
+msgid "Polityka prywatności"
+msgstr "Політика конфіденційності"
+
+msgid "Praca w zgranym\n"
+"zespole specjalistów"
+msgstr "Робота у згуртованій\n"
+"команді фахівців"
+
+msgid "Profesjonalne biuro rachunkowe i BPO dla firm z ambicjami."
+msgstr "Професійне бухгалтерське бюро та BPO для компаній з амбіціями."
+
+msgid "Projekt i realizacja:"
+msgstr "Дизайн та розробка:"
+
+msgid "Regulamin newslettera"
+msgstr "Умови розсилки"
+
+msgid "Skup biur rachunkowych"
+msgstr "Придбання бухгалтерських бюро"
+
+msgid "Stabilne zatrudnienie\n"
+"i jasne zasady"
+msgstr "Стабільна зайнятість\n"
+"та чіткі правила"
+
+msgid "Usługi"
+msgstr "Послуги"
+
+msgid "Zacznij teraz"
+msgstr "Розпочати"
+
+msgid "Zamknij menu"
+msgstr "Закрити меню"

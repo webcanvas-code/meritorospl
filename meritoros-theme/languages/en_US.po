@@ -709,3 +709,95 @@ msgstr "Our clients' stories"
 
 msgid "Krótkie historie firm, którym pomagamy uporządkować finanse i procesy. Przesuń palcem lub użyj strzałek."
 msgstr "Short stories of companies we help organize their finances and processes. Swipe or use the arrows."
+
+msgid "bez stresu"
+msgstr "stress-free"
+
+msgid "Chcesz do nas dołączyć?\n"
+"Zostaw swoje CV"
+msgstr "Want to join us?\n"
+"Leave your CV"
+
+msgid "Ciągły Rozwój jest wpisany\n"
+"w nasze DNA"
+msgstr "Continuous Growth is embedded\n"
+"in our DNA"
+
+msgid "Dołącz do grona naszych\n"
+"klientów i rozwijaj biznes"
+msgstr "Join our clients\n"
+"and grow your business"
+
+msgid "Elastyczność dopasowana\n"
+"do Twojego stylu pracy"
+msgstr "Flexibility tailored\n"
+"to your work style"
+
+msgid "Informacje"
+msgstr "Information"
+
+msgid "Menu"
+msgstr "Menu"
+
+msgid "Menu główne"
+msgstr "Main menu"
+
+msgid "Menu stopki"
+msgstr "Footer menu"
+
+msgid "Miasta w których\n"
+"mamy oddziały"
+msgstr "Cities where\n"
+"we have offices"
+
+msgid "Nasi specjaliści są do dyspozycji w godzinach pracy biura.\n"
+"Odpowiemy na wszystkie Twoje pytania."
+msgstr "Our specialists are available during business hours.\n"
+"We will answer all your questions."
+
+msgid "Oddaj księgowość\n"
+"w ręce ekspertów"
+msgstr "Put your accounting\n"
+"in expert hands"
+
+msgid "Oddziały\n"
+"Wirtualne"
+msgstr "Virtual\n"
+"Offices"
+
+msgid "Otwórz menu"
+msgstr "Open menu"
+
+msgid "Polityka prywatności"
+msgstr "Privacy policy"
+
+msgid "Praca w zgranym\n"
+"zespole specjalistów"
+msgstr "Working in a cohesive\n"
+"team of specialists"
+
+msgid "Profesjonalne biuro rachunkowe i BPO dla firm z ambicjami."
+msgstr "Professional accounting firm and BPO for ambitious businesses."
+
+msgid "Projekt i realizacja:"
+msgstr "Design & development:"
+
+msgid "Regulamin newslettera"
+msgstr "Newsletter terms"
+
+msgid "Skup biur rachunkowych"
+msgstr "Acquisition of accounting firms"
+
+msgid "Stabilne zatrudnienie\n"
+"i jasne zasady"
+msgstr "Stable employment\n"
+"and clear rules"
+
+msgid "Usługi"
+msgstr "Services"
+
+msgid "Zacznij teraz"
+msgstr "Get started"
+
+msgid "Zamknij menu"
+msgstr "Close menu"
