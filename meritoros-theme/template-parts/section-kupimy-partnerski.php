@@ -1,18 +1,18 @@
 <?php
 defined('ABSPATH') || exit;
 
-$label   = mer_field('kupimy_part_label',   'W przypadku modelu partnerskiego');
-$heading = mer_field('kupimy_part_heading', 'Model partnerski kierujemy przede wszystkim do biur, które:');
+$label   = __( mer_field('kupimy_part_label',   'W przypadku modelu partnerskiego'), 'meritoros' );
+$heading = __( mer_field('kupimy_part_heading', 'Model partnerski kierujemy przede wszystkim do biur, które:'), 'meritoros' );
 $items   = array_values(array_filter(array_map('trim', preg_split('/(\r?\n){2,}/', mer_field('kupimy_part_items',
     "mają obrót roczny <strong>powyżej 3 mln zł</strong>,\n\npracują na systemach innych niż <strong>Optima</strong>, np. Enova, Symfonia,\n\nchcą dalej rozwijać firmę, ale zyskać dostęp do większego zaplecza,\n\nszukają wsparcia <strong>w obszarze technologii</strong>, procesów, HR, marketingu i rozwoju operacyjnego.")))));
 
 $photo     = mer_field('kupimy_part_photo');
 $photo_url = is_array($photo) ? $photo['url'] : 'https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=900&q=80';
-$photo_alt = is_array($photo) ? ($photo['alt'] ?: 'Zespół') : 'Zespół';
+$photo_alt = is_array($photo) ? ($photo['alt'] ?: __('Zespół', 'meritoros')) : __('Zespół', 'meritoros');
 
-$benefits_title = mer_field('kupimy_part_benefits_title', 'Co zyskujesz jako Partner Meritoros?');
-$benefits = array_values(array_filter(array_map('trim', preg_split('/(\r?\n){2,}/', mer_field('kupimy_part_benefits',
-    "dostęp do automatyzacji i robotyzacji procesów\n\nwsparcie w digitalizacji i porządkowaniu operacji\n\ndostęp do wiedzy ekspertów i partnerów merytorycznych\n\nwsparcie HR i rekrutacyjne\n\nwsparcie marketingowe i sprzedażowe,\n\nwewnętrzne standardy jakości i audytu\n\nmożliwość dalszego rozwoju w strukturach większej organizacji")))));
+$benefits_title = __( mer_field('kupimy_part_benefits_title', 'Co zyskujesz jako Partner Meritoros?'), 'meritoros' );
+$benefits = array_values(array_filter(array_map('trim', preg_split('/(\r?\n){2,}/', __( mer_field('kupimy_part_benefits',
+    "dostęp do automatyzacji i robotyzacji procesów\n\nwsparcie w digitalizacji i porządkowaniu operacji\n\ndostęp do wiedzy ekspertów i partnerów merytorycznych\n\nwsparcie HR i rekrutacyjne\n\nwsparcie marketingowe i sprzedażowe,\n\nwewnętrzne standardy jakości i audytu\n\nmożliwość dalszego rozwoju w strukturach większej organizacji"), 'meritoros' )))));
 ?>
 
 <section class="py-14 md:py-20 bg-emerald-50">

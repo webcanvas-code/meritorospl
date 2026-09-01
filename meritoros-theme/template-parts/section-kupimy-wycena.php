@@ -1,11 +1,11 @@
 <?php
 defined('ABSPATH') || exit;
 
-$heading  = mer_field('kupimy_wycena_heading',  'Od czego zależy wycena biura rachunkowego?');
-$desc     = mer_field('kupimy_wycena_desc',     'Wartość biura rachunkowego nie zależy wyłącznie od przychodów. Znaczenie mają także m.in. struktura klientów, rentowność, organizacja procesów, używane systemy, stabilność zespołu oraz stopień zależności firmy od właściciela. Dlatego każdą rozmowę zaczynamy od zrozumienia realnej sytuacji biznesu.');
-$list_label = mer_field('kupimy_wycena_list_label', 'Na wycenę wpływają m.in.:');
-$items    = array_values(array_filter(array_map('trim', preg_split('/(\r?\n){2,}/', mer_field('kupimy_wycena_items',
-    "poziom i powtarzalność przychodów,\n\nrentowność biura,\n\nstruktura klientów i ryzyko koncentracji,\n\norganizacja pracy, technologia i stopień poukładania procesów.")))));
+$heading  = __( mer_field('kupimy_wycena_heading',  'Od czego zależy wycena biura rachunkowego?'), 'meritoros' );
+$desc     = __( mer_field('kupimy_wycena_desc',     'Wartość biura rachunkowego nie zależy wyłącznie od przychodów. Znaczenie mają także m.in. struktura klientów, rentowność, organizacja procesów, używane systemy, stabilność zespołu oraz stopień zależności firmy od właściciela. Dlatego każdą rozmowę zaczynamy od zrozumienia realnej sytuacji biznesu.'), 'meritoros' );
+$list_label = __( mer_field('kupimy_wycena_list_label', 'Na wycenę wpływają m.in.:'), 'meritoros' );
+$items    = array_values(array_filter(array_map('trim', preg_split('/(\r?\n){2,}/', __( mer_field('kupimy_wycena_items',
+    "poziom i powtarzalność przychodów,\n\nrentowność biura,\n\nstruktura klientów i ryzyko koncentracji,\n\norganizacja pracy, technologia i stopień poukładania procesów."), 'meritoros' )))));
 ?>
 
 <section class="py-14 md:py-20 bg-white">

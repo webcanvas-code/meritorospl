@@ -1,10 +1,10 @@
 <?php
-$title    = mer_field('bpo_ks_title_suffix', 'Rozwiązania księgowe');
-$text     = mer_field('bpo_ks_text', 'Outsourcing księgowości pozwala na znaczne obniżenie kosztów operacyjnych. Możemy dostarczyć wysokiej jakości usługi księgowe, eliminując potrzebę zatrudniania wewnętrznych ekspertów. Dzięki nowoczesnej technologii i dużej skali obsługiwanych przez nas operacji oszczędności sięgają 20-30% lub więcej w porównaniu do prowadzenia księgowości wewnętrznie. Dzięki digitalizacji obiegu dokumentów oraz sprawnym procesom możemy dostarczać raporty w czasie rzeczywistym.');
-$btn_text = mer_field('bpo_ks_btn_text', 'Dlaczego BPO z nami');
+$title    = __( mer_field('bpo_ks_title_suffix', 'Rozwiązania księgowe'), 'meritoros' );
+$text     = __( mer_field('bpo_ks_text', 'Outsourcing księgowości pozwala na znaczne obniżenie kosztów operacyjnych. Możemy dostarczyć wysokiej jakości usługi księgowe, eliminując potrzebę zatrudniania wewnętrznych ekspertów. Dzięki nowoczesnej technologii i dużej skali obsługiwanych przez nas operacji oszczędności sięgają 20-30% lub więcej w porównaniu do prowadzenia księgowości wewnętrznie. Dzięki digitalizacji obiegu dokumentów oraz sprawnym procesom możemy dostarczać raporty w czasie rzeczywistym.'), 'meritoros' );
+$btn_text = __( mer_field('bpo_ks_btn_text', 'Dlaczego BPO z nami'), 'meritoros' );
 $btn_url  = mer_field('bpo_ks_btn_url',  home_url('/bpo/#bpo-dlaczego'));
 
-$items_raw = mer_field('bpo_ks_items', "Prowadzenie ksiąg rachunkowych\n\nObliczanie podatków i składanie deklaracji podatkowych\n\nBieżące rozliczanie wyciągów i kontrolowanie rozrachunków\n\nRaportowanie zarządcze i sprawozdawcze\n\nRaportowanie do instytucji publicznoprawnych, w tym NBP, GUS, INTRASTAT\n\nSporządzanie sprawozdań finansowych oraz deklaracji rocznych\n\nReprezentowanie podczas kontroli i czynności sprawdzających\n\nObsługa niestandardowych rozliczeń, w tym VAT OSS, CIT Estoński, SSE, VAT marża, itp.\n\nAsystowanie i wsparcie podczas audytu sprawozdania finansowego");
+$items_raw = __( mer_field('bpo_ks_items', "Prowadzenie ksiąg rachunkowych\n\nObliczanie podatków i składanie deklaracji podatkowych\n\nBieżące rozliczanie wyciągów i kontrolowanie rozrachunków\n\nRaportowanie zarządcze i sprawozdawcze\n\nRaportowanie do instytucji publicznoprawnych, w tym NBP, GUS, INTRASTAT\n\nSporządzanie sprawozdań finansowych oraz deklaracji rocznych\n\nReprezentowanie podczas kontroli i czynności sprawdzających\n\nObsługa niestandardowych rozliczeń, w tym VAT OSS, CIT Estoński, SSE, VAT marża, itp.\n\nAsystowanie i wsparcie podczas audytu sprawozdania finansowego"), 'meritoros' );
 $items = array_values(array_filter(array_map('trim', preg_split('/(\r?\n){2,}/', $items_raw))));
 ?>
 

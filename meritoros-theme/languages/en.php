@@ -54,7 +54,7 @@ return [
     'Grupy dopasowane do poziomu zaawansowania' => 'Groups matched to skill level',
     'Historia %d z %d' => 'Story %d of %d',
     'Historia klienta' => 'Customer story',
-    'Historie klientów' => 'Customer stories',
+    'Historie klientów' => 'Clients\' stories',
     'Hybrydowy model pracy, elastyczne godziny i nowoczesne narzędzia pozwalają skupić się na tym, co ważne — bez zbędnych przeszkód.' => 'A hybrid work model, flexible hours, and modern tools let you focus on what matters — without unnecessary obstacles.',
     'i sprawdź, jak możemy pomóc' => 'and see how we can help',
     'Ilość wypłat / mies.' => 'Payrolls / month',
@@ -85,7 +85,7 @@ return [
     'Krótka rozmowa telefoniczna z HR' => 'Brief call with HR',
     'Księgowość' => 'Accounting',
     'Księgowość uproszczona (KPiR, ryczałt)' => 'Simplified accounting (KPiR, flat rate)',
-    'Kupimy biuro rachunkowe' => 'We buy accounting firms',
+    'Kupimy biuro rachunkowe' => 'We\'ll buy an accounting firm',
     'Lekcje języka angielskiego w godzinach pracy' => 'English lessons during working hours',
     'Liczba dokumentów miesięcznie' => 'Documents per month',
     'Liczba pracowników' => 'Number of employees',
@@ -113,7 +113,7 @@ return [
     'Nie stoimy w miejscu. Rozwój i doskonalenie to część naszej codziennej pracy. Szukamy osób, które chcą mieć realny wpływ na usprawnianie procesów i lubią środowisko, w którym można się uczyć i rosnąć.' => 'We don\'t stand still. Growth and improvement are part of our daily work. We look for people who want to have a real impact on process improvement and enjoy an environment where you can learn and grow.',
     'Nr KRS:' => 'KRS No.:',
     'O nas' => 'About us',
-    'Obejrzyj materiał' => 'Watch material',
+    'Obejrzyj materiał' => 'Watch the video',
     'Oblicz kwotę obsługi' => 'Calculate service cost',
     'Obsługujemy klientów zdalnie w całej Polsce' => 'We serve clients remotely across Poland',
     'Odkryj' => 'Discover',
@@ -345,4 +345,237 @@ and streamlining processes',
     'Zapewniamy kompleksową obsługę kadrowo-płacową firm o różnej skali działalności. Przejmujemy odpowiedzialność za poprawność, terminowość i ciągłość procesów, aby organizacja mogła działać stabilnie i bez zakłóceń.' => 'We provide comprehensive HR and payroll services for companies of various sizes. We take responsibility for accuracy, timeliness and continuity of processes, so the organisation can operate stably and without disruptions.',
     'Zaufało nam ponad 1200 klientów' => 'Trusted by over 1,200 clients',
     'dla większych organizacji' => 'for larger organisations',
+    'Eksperci w księgowości.
+Technologia i pewność
+w działaniu.' => 'Accounting experts.
+Technology and certainty
+in action.',
+    'Zapewniamy księgowość kadry i outsourcing procesów w standardzie, który daje firmom spokój i bezpieczeństwo.' => 'We provide accounting, HR and process outsourcing to a standard that gives businesses peace of mind and security.',
+    'Zaufało nam ponad <span class="text-white">1200 klientów</span>' => 'Trusted by over <span class="text-white">1,200 clients</span>',
+    'Wideo ogólne' => 'General video',
+    'Wideo ogólne Meritoros' => 'General Meritoros video',
+    'Obejrzyj ogólne wideo' => 'Watch general video',
+    'Nasi klienci cenią nas za to, że dowozimy: jakość, terminowość i spójne dane. Jako partner w obszarze księgowości przejmujemy obszary, za które odpowiadamy, i pracujemy w standardzie, który daje spokój w codziennym prowadzeniu firmy.' => 'Our clients value us for delivering: quality, timeliness and consistent data. As an accounting partner, we take ownership of the areas we are responsible for and work to a standard that brings peace of mind in day-to-day business operations.',
+    'Dla biur rachunkowych' => 'For accounting firms',
+    'Kupimy Biuro
+Rachunkowe' => 'We\'ll Buy Your
+Accounting Firm',
+    'Od lat współpracujemy z biurami rachunkowymi, które stoją przed decyzją o zmianie, sprzedaży lub dalszym rozwoju.' => 'For years we have worked with accounting firms facing a decision about change, sale or further growth.',
+    'Wyceń wartość biura' => 'Value your firm',
+    'Obsługujemy systemy ERP i finansowe wiodących dostawców' => 'We support ERP and financial systems from leading vendors',
+    'Przejrzystych warunków' => 'Transparent terms',
+    'Przejętych biur' => 'Acquired firms',
+    'Do wstępnej wyceny' => 'To initial valuation',
+    'Pełna poufność' => 'Full confidentiality',
+    'Stabilne procesy. Rzetelne
+dane. Spokój zarządu.' => 'Stable processes. Reliable
+data. Management peace of mind.',
+    'Wspieramy większe firmy w obszarze księgowości, kadr i płac, back-office, przejmując odpowiedzialność za jakość, terminowość i ciągłość działania. Dostarczamy dane i raporty w harmonogramie dopasowanym do zarządu – tak, żeby decyzje były oparte na spójnych informacjach, a nie „gaszeniu pożarów".' => 'We support larger companies in accounting, HR and payroll, and back-office, taking responsibility for quality, timeliness and continuity of operations. We deliver data and reports on a schedule tailored to management — so decisions are based on consistent information, not firefighting.',
+    'raportowanie zarządcze i sprawozdawcze dopasowane do potrzeb organizacji
+
+cyfrowy obieg dokumentów i uporządkowane procesy
+
+pełna zastępowalność i ciągłość obsługi oraz gotowość do skalowania' => 'management and financial reporting tailored to the organisation\'s needs
+
+digital document workflow and streamlined processes
+
+full staff substitutability, service continuity and readiness to scale',
+    'Jakość potwierdzona
+standardami' => 'Quality confirmed
+by standards',
+    'Ponad 170
+expertów' => 'Over 170
+experts',
+    'Nagroda' => 'Award',
+    'Rozwiązania Kadrowe' => 'HR Solutions',
+    'Zapewniamy wsparcie w zakresie obsługi kadrowej i naliczania wynagrodzeń. Nasze kompleksowe rozwiązania w obszarze HR i payroll, dedykowane dla dużych przedsiębiorstw, zapewniają nie tylko zgodność z przepisami prawa, ale także optymalizację procesów kadrowych. Współpracujemy zarówno z firmami, które nie posiadają własnego działu HR, jak i z organizacjami potrzebującymi wsparcia przy wybranych procesach.' => 'We provide support in HR administration and payroll calculation. Our comprehensive HR and payroll solutions, dedicated to large enterprises, ensure not only compliance with legal regulations but also optimisation of HR processes. We work both with companies without their own HR department and with organisations needing support with selected processes.',
+    'Dlaczego BPO z nami' => 'Why BPO with us',
+    'Sprawdź rozwiązania kadrowe' => 'Explore HR solutions',
+    'Prowadzenie dokumentacji kadrowej
+
+Naliczanie wynagrodzeń i świadczeń
+
+Obsługa umów o pracę i umów cywilnoprawnych
+
+Rozliczenia z ZUS i instytucjami publicznymi
+
+Sporządzanie deklaracji podatkowych
+
+Kontrolowanie limitów urlopowych, terminów badań lekarskich, szkoleń BHP oraz wygasających umów
+
+Reprezentowanie podczas kontroli i czynności sprawdzających
+
+Zarządzanie programami PPK i PPE
+
+Platforma pracownicza z dostępem do wniosków urlopowych i dokumentów online' => 'Maintaining HR documentation
+
+Payroll and benefit calculation
+
+Handling employment contracts and civil law agreements
+
+Settlements with ZUS and public institutions
+
+Preparing tax declarations
+
+Monitoring leave limits, medical examination deadlines, H&S training and expiring contracts
+
+Representation during inspections and audit procedures
+
+Managing PPK and PPE schemes
+
+Employee platform with access to leave requests and documents online',
+    'Outsourcing księgowości pozwala na znaczne obniżenie kosztów operacyjnych. Możemy dostarczyć wysokiej jakości usługi księgowe, eliminując potrzebę zatrudniania wewnętrznych ekspertów. Dzięki nowoczesnej technologii i dużej skali obsługiwanych przez nas operacji oszczędności sięgają 20-30% lub więcej w porównaniu do prowadzenia księgowości wewnętrznie. Dzięki digitalizacji obiegu dokumentów oraz sprawnym procesom możemy dostarczać raporty w czasie rzeczywistym.' => 'Accounting outsourcing enables significant reduction of operational costs. We can deliver high-quality accounting services, eliminating the need to hire internal experts. Thanks to modern technology and the large scale of operations we handle, savings reach 20–30% or more compared to in-house accounting. Through digitisation of document workflow and efficient processes, we can deliver reports in real time.',
+    'Prowadzenie ksiąg rachunkowych
+
+Obliczanie podatków i składanie deklaracji podatkowych
+
+Bieżące rozliczanie wyciągów i kontrolowanie rozrachunków
+
+Raportowanie zarządcze i sprawozdawcze
+
+Raportowanie do instytucji publicznoprawnych, w tym NBP, GUS, INTRASTAT
+
+Sporządzanie sprawozdań finansowych oraz deklaracji rocznych
+
+Reprezentowanie podczas kontroli i czynności sprawdzających
+
+Obsługa niestandardowych rozliczeń, w tym VAT OSS, CIT Estoński, SSE, VAT marża, itp.
+
+Asystowanie i wsparcie podczas audytu sprawozdania finansowego' => 'Maintaining accounting books
+
+Calculating taxes and filing tax returns
+
+Ongoing reconciliation of bank statements and settlement control
+
+Management and financial reporting
+
+Reporting to public law institutions, including NBP, GUS, INTRASTAT
+
+Preparing financial statements and annual declarations
+
+Representation during inspections and audit procedures
+
+Handling non-standard settlements, including VAT OSS, Estonian CIT, SEZ, margin VAT, etc.
+
+Assisting and supporting during financial statement audits',
+    'Model współpracy' => 'Cooperation model',
+    'Możesz powierzyć nam całość procesów księgowych lub wybrane obszary wymagające uporządkowania.
+Dopasowujemy zakres wsparcia do realnej sytuacji Twojej firmy.' => 'You can entrust us with all accounting processes or selected areas that need organising.
+We tailor the scope of support to the actual situation of your business.',
+    'Kompleksowa obsługa' => 'Comprehensive service',
+    'Obsługujemy proces end-to-end: od bieżącej ewidencji po zamknięcie miesiąca i raporty. Pracujesz z zespołem, który zapewnia zastępowalność i stały standard.' => 'We manage the process end-to-end: from day-to-day bookkeeping to month-end closing and reports. You work with a team that ensures substitutability and consistent standards.',
+    'Outsourcing wybranych
+procesów' => 'Outsourcing of selected
+processes',
+    'Przejmujemy konkretne procesy i dowozimy je w ustalonym standardzie i harmonogramie. To rozwiązanie dla firm, które chcą wzmocnić wewnętrzny dział finansów bez rozbudowy etatów.' => 'We take on specific processes and deliver them to an agreed standard and schedule. This is a solution for companies that want to strengthen their internal finance department without expanding headcount.',
+    'Jak wygląda bieżąca współpraca' => 'How does ongoing cooperation work',
+    'Indywidualna organizacja pracy' => 'Individual work organisation',
+    'W zależności od potrzeb możemy pracować:' => 'Depending on needs, we can work:',
+    'na bieżąco – obsługując codzienne procesy księgowe lub kadrowe' => 'on an ongoing basis — handling day-to-day accounting or HR processes',
+    'w cyklach tygodniowych' => 'in weekly cycles',
+    'w innych ustalonych odstępach czasu' => 'at other agreed intervals',
+    'Elastyczne zamknięcie miesiąca' => 'Flexible month-end closing',
+    'Terminy zamknięcia miesiąca ustalamy indywidualnie z każdą firmą, uwzględniając jej wewnętrzne potrzeby raportowe oraz obowiązujące terminy podatkowe.' => 'Month-end closing deadlines are agreed individually with each company, taking into account its internal reporting needs and applicable tax deadlines.',
+    'część firm potrzebuje raportów finansowych do 20. dnia miesiąca' => 'some companies need financial reports by the 20th of the month',
+    'inne wymagają wyników już w 3. lub 4. dniu roboczym nowego miesiąca' => 'others require results as early as the 3rd or 4th working day of the new month',
+    'Zakres i częstotliwość raportowania ustalamy indywidualnie z każdym klientem.' => 'The scope and frequency of reporting is agreed individually with each client.',
+    'W standardzie klient otrzymuje:' => 'As standard, the client receives:',
+    'rachunek zysków i strat' => 'profit and loss statement',
+    'bilans' => 'balance sheet',
+    'zestawienie należności i zobowiązań' => 'receivables and payables summary',
+    'Umów się na konsultacje' => 'Book a consultation',
+    'Myślisz o sprzedaży swojego biura rachunkowego?' => 'Thinking about selling your accounting firm?',
+    'Oferujemy dwa modele współpracy: całkowitą sprzedaż biura rachunkowego albo partnerstwo kapitałowe z zachowaniem operacyjnej autonomii.' => 'We offer two models of cooperation: a full sale of the accounting firm, or a capital partnership with retention of operational autonomy.',
+    'Właściciele biur rachunkowych zgłaszają się do nas z różnymi potrzebami. Jedni chcą całkowicie wyjść z biznesu i sprzedać firmę, inni szukają partnera, który pomoże im dalej rozwijać biuro. W Meritoros rozmawiamy o obu scenariuszach.' => 'Owners of accounting firms come to us with different needs. Some want to exit the business completely and sell the firm; others are looking for a partner to help them continue developing their office. At Meritoros, we discuss both scenarios.',
+    'Porozmawiajmy o możliwym modelu współpracy' => 'Let\'s talk about a possible cooperation model',
+    'Całkowita sprzedaż biura' => 'Full sale of the firm',
+    'Jeśli planujesz wycofanie się z prowadzenia firmy, możemy rozmawiać o przejęciu całego przedsiębiorstwa — z uwzględnieniem klientów, zespołu i ciągłości działania.' => 'If you are planning to exit from running the business, we can discuss taking over the entire enterprise — including clients, the team and continuity of operations.',
+    'Sprzedaż części udziałów' => 'Sale of a stake',
+    'Jeśli chcesz dalej prowadzić biuro, ale jednocześnie zyskać wsparcie większej organizacji, możemy rozmawiać o modelu partnerskim z częściowym wejściem kapitałowym Meritoros.' => 'If you want to continue running the firm but also gain the support of a larger organisation, we can discuss a partnership model with Meritoros\'s partial capital entry.',
+    'Od czego zależy wycena biura rachunkowego?' => 'What determines the valuation of an accounting firm?',
+    'Wartość biura rachunkowego nie zależy wyłącznie od przychodów. Znaczenie mają także m.in. struktura klientów, rentowność, organizacja procesów, używane systemy, stabilność zespołu oraz stopień zależności firmy od właściciela. Dlatego każdą rozmowę zaczynamy od zrozumienia realnej sytuacji biznesu.' => 'The value of an accounting firm does not depend solely on revenue. Also important are, among other things, client structure, profitability, process organisation, systems used, team stability and the degree of owner dependency. That is why we always begin each conversation by understanding the real situation of the business.',
+    'Na wycenę wpływają m.in.:' => 'Factors affecting valuation include:',
+    'poziom i powtarzalność przychodów,
+
+rentowność biura,
+
+struktura klientów i ryzyko koncentracji,
+
+organizacja pracy, technologia i stopień poukładania procesów.' => 'level and repeatability of revenue,
+
+firm profitability,
+
+client structure and concentration risk,
+
+work organisation, technology and degree of process maturity.',
+    'W przypadku modelu partnerskiego' => 'In the case of the partnership model',
+    'Model partnerski kierujemy przede wszystkim do biur, które:' => 'The partnership model is primarily aimed at firms that:',
+    'Co zyskujesz jako Partner Meritoros?' => 'What do you gain as a Meritoros Partner?',
+    'dostęp do automatyzacji i robotyzacji procesów
+
+wsparcie w digitalizacji i porządkowaniu operacji
+
+dostęp do wiedzy ekspertów i partnerów merytorycznych
+
+wsparcie HR i rekrutacyjne
+
+wsparcie marketingowe i sprzedażowe,
+
+wewnętrzne standardy jakości i audytu
+
+możliwość dalszego rozwoju w strukturach większej organizacji' => 'access to process automation and robotics
+
+support in digitisation and streamlining operations
+
+access to expert knowledge and substantive partners
+
+HR and recruitment support
+
+marketing and sales support
+
+internal quality and audit standards
+
+the opportunity for further growth within the structures of a larger organisation',
+    'Kalkulator orientacyjnej wyceny biura rachunkowego' => 'Indicative valuation calculator for an accounting firm',
+    'Sprawdź wycenę' => 'Check valuation',
+    'Spełniasz wszystkie kryteria?' => 'Do you meet all the criteria?',
+    'Warto się odezwać — chętnie sprawdzimy, czy widzimy przestrzeń do współpracy.' => 'It is worth getting in touch — we will be happy to check whether we see scope for cooperation.',
+    'Obecnie najczęściej rozmawiamy z biurami, które spełniają poniższe kryteria:' => 'We currently most often talk with firms that meet the following criteria:',
+    'Przejmujemy całość lub wybrane obszary, które wymagają uporządkowania i stałego nadzoru.' => 'We take over all or selected areas that require organising and ongoing supervision.',
+    'obrót roczny: od ok. 1,2 mln zł
+
+oprogramowanie: Comarch Optima,
+
+preferowane lokalizacje: Warszawa, Kraków, Wrocław, Łódź, Górny Śląsk, Rzeszów,
+
+w przypadku większych podmiotów analizujemy także inne lokalizacje.' => 'annual revenue: from approx. PLN 1.2M
+
+software: Comarch Optima,
+
+preferred locations: Warsaw, Kraków, Wrocław, Łódź, Upper Silesia, Rzeszów,
+
+for larger entities we also analyse other locations.',
+    'Spełniasz powyższe kryteria?' => 'Do you meet the above criteria?',
+    'Spotkanie' => 'Meeting',
+    'Nie spełniasz wszystkich kryteriów?' => 'Don\'t meet all the criteria?',
+    'Jak wygląda sprzedaż biura rachunkowego w praktyce?' => 'What does selling an accounting firm look like in practice?',
+    'Jeśli chcesz lepiej zrozumieć kulisy takiego procesu, zobacz materiał, w którym omawiamy najważniejsze kwestie związane ze sprzedażą firmy usługowej i przejęciem biura rachunkowego.' => 'If you would like to better understand the background of such a process, watch the material in which we discuss the most important issues related to selling a service firm and acquiring an accounting firm.',
+    'Pierwsza rozmowa jest niezobowiązująca. Ustalimy, jaki model ma sens i czy jest przestrzeń do współpracy.' => 'The first conversation is non-binding. We will establish which model makes sense and whether there is scope for cooperation.',
+    'Wczytaj więcej' => 'Load more',
+    'Posłuchaj, co mówią nasi klienci' => 'Hear what our clients say',
+    'Jak z MINIMALNYM ryzykiem zacząć własny biznes? Sebastian Rafalik wspomina Meritoros.' => 'How to start your own business with MINIMAL risk? Sebastian Rafalik recalls Meritoros.',
+    'Sebastian Rafalik (POL–FRA) w wywiadzie dla „Zaprojektuj Swoje Życie" mówi o tym, jak uporządkowanie księgowości i kadr z Meritoros pomogło mu odblokować skalowanie biznesu i zdjąć z siebie „wąskie gardło".' => 'Sebastian Rafalik (POL–FRA) in an interview for "Design Your Life" talks about how organising accounting and HR with Meritoros helped him unlock business scaling and remove the "bottleneck".',
+    'Posłuchaj wywiadu' => 'Listen to the interview',
+    'Darmowy materiał' => 'Free resource',
+    'Pobierz nasz darmowy Ebook' => 'Download our free Ebook',
+    'Pobierz materiał' => 'Download resource',
+    'Ebook został wysłany na podany adres e-mail!' => 'The ebook has been sent to the provided email address!',
+    'Fundacja rodzinna' => 'Family foundation',
+    'księgowość pod kontrolą' => 'accounting under control',
+    'Fundacja rodzinna wymaga szczególnej staranności w obszarze księgowości i podatków. Zapewniamy rozwiązania, które chronią interes fundatorów i wspierają długoterminową strukturę majątkową.' => 'A family foundation requires particular diligence in accounting and tax matters. We provide solutions that protect the interests of founders and support long-term asset structures.',
+    'Dlaczego Meritoros' => 'Why Meritoros',
+    'Mamy wdrożone procedury kontroli jakości i weryfikacji danych. Dostarczamy informacje finansowe kompletne, spójne i użyteczne dla zarządu.' => 'We have implemented quality control and data verification procedures. We deliver financial information that is complete, consistent and useful for management.',
+    'Ponad 170 ekspertów' => 'Over 170 experts',
+    'Jakość potwierdzona standardami. Mamy wdrożone procedury kontroli jakości i weryfikacji danych. Dostarczamy informacje finansowe kompletne, spójne i użyteczne dla zarządu.' => 'Quality confirmed by standards. We have implemented quality control and data verification procedures. We deliver financial information that is complete, consistent and useful for management.',
+    'Powrót do' => 'Back to',
 ];

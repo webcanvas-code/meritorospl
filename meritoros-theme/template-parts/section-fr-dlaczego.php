@@ -1,16 +1,16 @@
 <?php
-$title = mer_field('fr_dlaczego_title', 'Dlaczego Meritoros');
+$title = __( mer_field('fr_dlaczego_title', 'Dlaczego Meritoros'), 'meritoros' );
 
-$d1_title = mer_field('fr_d1_title', "Bezpieczeństwo\ni compliance");
-$d1_text  = mer_field('fr_d1_text',  'Działamy zgodnie z obowiązującymi regulacjami i standardami bezpieczeństwa danych. Dbamy o poufność informacji oraz jasne zasady współpracy – bez „skrótów" i ryzyk.');
+$d1_title = __( mer_field('fr_d1_title', "Bezpieczeństwo\ni compliance"), 'meritoros' );
+$d1_text  = __( mer_field('fr_d1_text',  'Działamy zgodnie z obowiązującymi regulacjami i standardami bezpieczeństwa danych. Dbamy o poufność informacji oraz jasne zasady współpracy – bez „skrótów" i ryzyk.'), 'meritoros' );
 $d1_logo  = get_field('fr_d1_logo');
 
-$d2_title = mer_field('fr_d2_title', "Jakość potwierdzona\nstandardami");
-$d2_text  = mer_field('fr_d2_text',  'Mamy wdrożone procedury kontroli jakości i weryfikacji danych. Dostarczamy informacje finansowe kompletne, spójne i użyteczne dla zarządu.');
+$d2_title = __( mer_field('fr_d2_title', "Jakość potwierdzona\nstandardami"), 'meritoros' );
+$d2_text  = __( mer_field('fr_d2_text',  'Mamy wdrożone procedury kontroli jakości i weryfikacji danych. Dostarczamy informacje finansowe kompletne, spójne i użyteczne dla zarządu.'), 'meritoros' );
 $d2_logo  = get_field('fr_d2_logo');
 
-$d3_title = mer_field('fr_d3_title', 'Ponad 170 ekspertów');
-$d3_text  = mer_field('fr_d3_text',  'Jakość potwierdzona standardami. Mamy wdrożone procedury kontroli jakości i weryfikacji danych. Dostarczamy informacje finansowe kompletne, spójne i użyteczne dla zarządu.');
+$d3_title = __( mer_field('fr_d3_title', 'Ponad 170 ekspertów'), 'meritoros' );
+$d3_text  = __( mer_field('fr_d3_text',  'Jakość potwierdzona standardami. Mamy wdrożone procedury kontroli jakości i weryfikacji danych. Dostarczamy informacje finansowe kompletne, spójne i użyteczne dla zarządu.'), 'meritoros' );
 ?>
 
 <section class="py-10 md:py-20 bg-white">

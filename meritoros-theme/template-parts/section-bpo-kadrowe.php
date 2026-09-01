@@ -1,12 +1,12 @@
 <?php
-$title   = mer_field('bpo_kad_title_suffix', 'Rozwiązania Kadrowe');
-$text    = mer_field('bpo_kad_text', 'Zapewniamy wsparcie w zakresie obsługi kadrowej i naliczania wynagrodzeń. Nasze kompleksowe rozwiązania w obszarze HR i payroll, dedykowane dla dużych przedsiębiorstw, zapewniają nie tylko zgodność z przepisami prawa, ale także optymalizację procesów kadrowych. Współpracujemy zarówno z firmami, które nie posiadają własnego działu HR, jak i z organizacjami potrzebującymi wsparcia przy wybranych procesach.');
-$btn1_t  = mer_field('bpo_kad_btn1_text', 'Dlaczego BPO z nami');
+$title   = __( mer_field('bpo_kad_title_suffix', 'Rozwiązania Kadrowe'), 'meritoros' );
+$text    = __( mer_field('bpo_kad_text', 'Zapewniamy wsparcie w zakresie obsługi kadrowej i naliczania wynagrodzeń. Nasze kompleksowe rozwiązania w obszarze HR i payroll, dedykowane dla dużych przedsiębiorstw, zapewniają nie tylko zgodność z przepisami prawa, ale także optymalizację procesów kadrowych. Współpracujemy zarówno z firmami, które nie posiadają własnego działu HR, jak i z organizacjami potrzebującymi wsparcia przy wybranych procesach.'), 'meritoros' );
+$btn1_t  = __( mer_field('bpo_kad_btn1_text', 'Dlaczego BPO z nami'), 'meritoros' );
 $btn1_u  = mer_field('bpo_kad_btn1_url',  home_url('/bpo/#bpo-dlaczego'));
-$btn2_t  = mer_field('bpo_kad_btn2_text', 'Sprawdź rozwiązania kadrowe');
+$btn2_t  = __( mer_field('bpo_kad_btn2_text', 'Sprawdź rozwiązania kadrowe'), 'meritoros' );
 $btn2_u  = mer_field('bpo_kad_btn2_url',  home_url('/kadry-i-place/'));
 
-$items_raw = mer_field('bpo_kad_items', "Prowadzenie dokumentacji kadrowej\n\nNaliczanie wynagrodzeń i świadczeń\n\nObsługa umów o pracę i umów cywilnoprawnych\n\nRozliczenia z ZUS i instytucjami publicznymi\n\nSporządzanie deklaracji podatkowych\n\nKontrolowanie limitów urlopowych, terminów badań lekarskich, szkoleń BHP oraz wygasających umów\n\nReprezentowanie podczas kontroli i czynności sprawdzających\n\nZarządzanie programami PPK i PPE\n\nPlatforma pracownicza z dostępem do wniosków urlopowych i dokumentów online");
+$items_raw = __( mer_field('bpo_kad_items', "Prowadzenie dokumentacji kadrowej\n\nNaliczanie wynagrodzeń i świadczeń\n\nObsługa umów o pracę i umów cywilnoprawnych\n\nRozliczenia z ZUS i instytucjami publicznymi\n\nSporządzanie deklaracji podatkowych\n\nKontrolowanie limitów urlopowych, terminów badań lekarskich, szkoleń BHP oraz wygasających umów\n\nReprezentowanie podczas kontroli i czynności sprawdzających\n\nZarządzanie programami PPK i PPE\n\nPlatforma pracownicza z dostępem do wniosków urlopowych i dokumentów online"), 'meritoros' );
 $items = array_values(array_filter(array_map('trim', preg_split('/(\r?\n){2,}/', $items_raw))));
 ?>
 

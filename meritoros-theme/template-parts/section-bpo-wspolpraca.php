@@ -1,31 +1,29 @@
 <?php
-$_page_id = get_the_ID();
-$_orig_id = apply_filters('wpml_object_id', $_page_id, get_post_type(), true, apply_filters('wpml_default_language', null));
-
-$title   = mer_field('bpo_wsp_title', 'Jak wygląda bieżąca współpraca');
-$btn_txt = mer_field('bpo_wsp_btn_text', 'Poznaj więcej historii');
+$title   = __( mer_field('bpo_wsp_title', 'Jak wygląda bieżąca współpraca'), 'meritoros' );
+$btn_txt = __( mer_field('bpo_wsp_btn_text', 'Poznaj więcej historii'), 'meritoros' );
 $btn_url = mer_field('bpo_wsp_btn_url',  '#');
 
 $step_defaults = [
-    ['title' => 'Indywidualna organizacja pracy',
-     'lead'  => 'W zależności od potrzeb możemy pracować:',
+    ['title' => __('Indywidualna organizacja pracy', 'meritoros'),
+     'lead'  => __('W zależności od potrzeb możemy pracować:', 'meritoros'),
      'items' => "na bieżąco – obsługując codzienne procesy księgowe lub kadrowe\nw cyklach tygodniowych\nw innych ustalonych odstępach czasu"],
-    ['title' => 'Elastyczne zamknięcie miesiąca',
-     'lead'  => 'Terminy zamknięcia miesiąca ustalamy indywidualnie z każdą firmą, uwzględniając jej wewnętrzne potrzeby raportowe oraz obowiązujące terminy podatkowe.',
+    ['title' => __('Elastyczne zamknięcie miesiąca', 'meritoros'),
+     'lead'  => __('Terminy zamknięcia miesiąca ustalamy indywidualnie z każdą firmą, uwzględniając jej wewnętrzne potrzeby raportowe oraz obowiązujące terminy podatkowe.', 'meritoros'),
      'items' => "część firm potrzebuje raportów finansowych do 20. dnia miesiąca\ninne wymagają wyników już w 3. lub 4. dniu roboczym nowego miesiąca"],
-    ['title' => 'Zakres i częstotliwość raportowania ustalamy indywidualnie z każdym klientem.',
-     'lead'  => 'W standardzie klient otrzymuje:',
+    ['title' => __('Zakres i częstotliwość raportowania ustalamy indywidualnie z każdym klientem.', 'meritoros'),
+     'lead'  => __('W standardzie klient otrzymuje:', 'meritoros'),
      'items' => "rachunek zysków i strat\nbilans\nzestawienie należności i zobowiązań"],
 ];
 
 $steps = [];
 for ($i = 1; $i <= 3; $i++) {
-    $s = get_field("bpo_wsp_step_{$i}") ?: ($_orig_id !== $_page_id ? get_field("bpo_wsp_step_{$i}", $_orig_id) : null);
+    $s = get_field("bpo_wsp_step_{$i}");
     $d = $step_defaults[$i - 1];
+    $raw_items = is_array($s) && !empty($s['items']) ? $s['items'] : $d['items'];
     $steps[] = [
-        'title' => is_array($s) && !empty($s['title']) ? $s['title'] : $d['title'],
-        'lead'  => is_array($s) && !empty($s['lead'])  ? $s['lead']  : $d['lead'],
-        'items' => array_filter(array_map('trim', explode("\n", is_array($s) && !empty($s['items']) ? $s['items'] : $d['items']))),
+        'title' => is_array($s) && !empty($s['title']) ? __($s['title'], 'meritoros') : $d['title'],
+        'lead'  => is_array($s) && !empty($s['lead'])  ? __($s['lead'],  'meritoros') : $d['lead'],
+        'items' => array_values(array_filter(array_map(function($item) { return __($item, 'meritoros'); }, array_map('trim', explode("\n", $raw_items))))),
     ];
 }
 ?>

@@ -1,21 +1,21 @@
 <?php
 defined('ABSPATH') || exit;
 
-$btn_text = mer_field('kupimy_modele_btn_text', 'Porozmawiajmy o możliwym modelu współpracy');
+$btn_text = __( mer_field('kupimy_modele_btn_text', 'Porozmawiajmy o możliwym modelu współpracy'), 'meritoros' );
 $btn_url  = mer_field('kupimy_modele_btn_url',  get_permalink(get_page_by_path('kontakt')));
 
 $cards = [
     [
         'number' => '01',
-        'title'  => mer_field('kupimy_model1_title', 'Całkowita sprzedaż biura'),
-        'desc'   => mer_field('kupimy_model1_desc',  'Jeśli planujesz wycofanie się z prowadzenia firmy, możemy rozmawiać o przejęciu całego przedsiębiorstwa — z uwzględnieniem klientów, zespołu i ciągłości działania.'),
+        'title'  => __( mer_field('kupimy_model1_title', 'Całkowita sprzedaż biura'), 'meritoros' ),
+        'desc'   => __( mer_field('kupimy_model1_desc',  'Jeśli planujesz wycofanie się z prowadzenia firmy, możemy rozmawiać o przejęciu całego przedsiębiorstwa — z uwzględnieniem klientów, zespołu i ciągłości działania.'), 'meritoros' ),
         'image'  => mer_field('kupimy_model1_image'),
         'img_default' => 'https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=900&q=80',
     ],
     [
         'number' => '02',
-        'title'  => mer_field('kupimy_model2_title', 'Sprzedaż części udziałów'),
-        'desc'   => mer_field('kupimy_model2_desc',  'Jeśli chcesz dalej prowadzić biuro, ale jednocześnie zyskać wsparcie większej organizacji, możemy rozmawiać o modelu partnerskim z częściowym wejściem kapitałowym Meritoros.'),
+        'title'  => __( mer_field('kupimy_model2_title', 'Sprzedaż części udziałów'), 'meritoros' ),
+        'desc'   => __( mer_field('kupimy_model2_desc',  'Jeśli chcesz dalej prowadzić biuro, ale jednocześnie zyskać wsparcie większej organizacji, możemy rozmawiać o modelu partnerskim z częściowym wejściem kapitałowym Meritoros.'), 'meritoros' ),
         'image'  => mer_field('kupimy_model2_image'),
         'img_default' => 'https://images.unsplash.com/photo-1542744173-8e7e53415bb0?w=900&q=80',
     ],

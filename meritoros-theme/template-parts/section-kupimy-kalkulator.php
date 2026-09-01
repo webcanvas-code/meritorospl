@@ -1,8 +1,8 @@
 <?php
 defined('ABSPATH') || exit;
 
-$heading  = mer_field('kupimy_kalk_heading',  'Kalkulator orientacyjnej wyceny biura rachunkowego');
-$btn_text = mer_field('kupimy_kalk_btn_text', 'Sprawdź wycenę');
+$heading  = __( mer_field('kupimy_kalk_heading',  'Kalkulator orientacyjnej wyceny biura rachunkowego'), 'meritoros' );
+$btn_text = __( mer_field('kupimy_kalk_btn_text', 'Sprawdź wycenę'), 'meritoros' );
 $btn_url  = mer_field('kupimy_kalk_btn_url',  '#');
 $photo    = mer_field('kupimy_kalk_photo');
 $photo_url = is_array($photo) ? $photo['url'] : 'https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=1600&q=80';

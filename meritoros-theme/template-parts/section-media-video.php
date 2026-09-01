@@ -30,9 +30,9 @@ $v1_thumb_url = (is_array($v1_thumb) && !empty($v1_thumb['url']))
     : ($v1_yt ? 'https://img.youtube.com/vi/' . $v1_yt . '/maxresdefault.jpg' : '');
 
 $videos = [[
-    'title'     => mer_field('media_vid_title',    'Jak z MINIMALNYM ryzykiem zacząć własny biznes? Sebastian Rafalik wspomina Meritoros.'),
-    'text'      => mer_field('media_vid_text',     'Sebastian Rafalik (POL–FRA) w wywiadzie dla „Zaprojektuj Swoje Życie" mówi o tym, jak uporządkowanie księgowości i kadr z Meritoros pomogło mu odblokować skalowanie biznesu i zdjąć z siebie „wąskie gardło".'),
-    'btn_text'  => mer_field('media_vid_btn_text', 'Posłuchaj wywiadu'),
+    'title'     => __( mer_field('media_vid_title',    'Jak z MINIMALNYM ryzykiem zacząć własny biznes? Sebastian Rafalik wspomina Meritoros.'), 'meritoros' ),
+    'text'      => __( mer_field('media_vid_text',     'Sebastian Rafalik (POL–FRA) w wywiadzie dla „Zaprojektuj Swoje Życie" mówi o tym, jak uporządkowanie księgowości i kadr z Meritoros pomogło mu odblokować skalowanie biznesu i zdjąć z siebie „wąskie gardło".'), 'meritoros' ),
+    'btn_text'  => __( mer_field('media_vid_btn_text', 'Posłuchaj wywiadu'), 'meritoros' ),
     'btn_url'   => mer_field('media_vid_btn_url',  '#'),
     'thumb_url' => $v1_thumb_url,
     'play_src'  => $v1_play,
@@ -54,7 +54,7 @@ for ($i = 2; $i <= 5; $i++) {
     $videos[] = [
         'title'     => !empty($g['title'])    ? $g['title']    : '',
         'text'      => !empty($g['text'])     ? $g['text']     : '',
-        'btn_text'  => !empty($g['btn_text']) ? $g['btn_text'] : 'Obejrzyj materiał',
+        'btn_text'  => !empty($g['btn_text']) ? __($g['btn_text'], 'meritoros') : __('Obejrzyj materiał', 'meritoros'),
         'btn_url'   => '#',
         'thumb_url' => $g_thumb_url,
         'play_src'  => $g_play,
@@ -178,7 +178,7 @@ if ($v1['thumb_url'] && $v1['text']) {
     <div class="absolute inset-0 bg-slate-900/80 backdrop-blur-sm" id="mvid-backdrop"></div>
     <div class="relative w-full max-w-4xl z-10">
         <button id="mvid-close" class="absolute -top-10 right-0 text-white/80 hover:text-white transition-colors flex items-center gap-1.5 text-sm">
-            <i data-lucide="x" class="w-5 h-5"></i> Zamknij
+            <i data-lucide="x" class="w-5 h-5"></i> <?php esc_html_e('Zamknij', 'meritoros'); ?>
         </button>
         <div id="mvid-embed-wrap" class="relative w-full hidden" style="padding-bottom:56.25%">
             <iframe id="mvid-iframe" class="absolute inset-0 w-full h-full rounded-2xl" src="" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>

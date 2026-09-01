@@ -1,11 +1,11 @@
 <?php
-$title_normal = mer_field('fr_hero_title_normal', 'Fundacja rodzinna');
-$title_green  = mer_field('fr_hero_title_green',  'bez stresu');
-$title_line2  = mer_field('fr_hero_title_line2',  'księgowość pod kontrolą');
-$subtitle     = mer_field('fr_hero_subtitle', 'Fundacja rodzinna wymaga szczególnej staranności w obszarze księgowości i podatków. Zapewniamy rozwiązania, które chronią interes fundatorów i wspierają długoterminową strukturę majątkową.');
-$btn1_text    = mer_field('fr_hero_btn1_text', 'Poznaj ofertę');
+$title_normal = __( mer_field('fr_hero_title_normal', 'Fundacja rodzinna'), 'meritoros' );
+$title_green  = __( mer_field('fr_hero_title_green',  'bez stresu'), 'meritoros' );
+$title_line2  = __( mer_field('fr_hero_title_line2',  'księgowość pod kontrolą'), 'meritoros' );
+$subtitle     = __( mer_field('fr_hero_subtitle', 'Fundacja rodzinna wymaga szczególnej staranności w obszarze księgowości i podatków. Zapewniamy rozwiązania, które chronią interes fundatorów i wspierają długoterminową strukturę majątkową.'), 'meritoros' );
+$btn1_text    = __( mer_field('fr_hero_btn1_text', 'Poznaj ofertę'), 'meritoros' );
 $btn1_url     = mer_field('fr_hero_btn1_url',  '#');
-$btn2_text    = mer_field('fr_hero_btn2_text', 'Porozmawiajmy');
+$btn2_text    = __( mer_field('fr_hero_btn2_text', 'Porozmawiajmy'), 'meritoros' );
 $btn2_url     = mer_field('fr_hero_btn2_url',  home_url('/kontakt/'));
 ?>
 

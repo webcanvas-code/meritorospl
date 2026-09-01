@@ -85,7 +85,7 @@ return [
     'Krótka rozmowa telefoniczna z HR' => 'Краткий звонок с HR',
     'Księgowość' => 'Бухгалтерия',
     'Księgowość uproszczona (KPiR, ryczałt)' => 'Упрощённый учёт (KPiR, паушальная ставка)',
-    'Kupimy biuro rachunkowe' => 'Купим бухгалтерские фирмы',
+    'Kupimy biuro rachunkowe' => 'Купим бухгалтерское бюро',
     'Lekcje języka angielskiego w godzinach pracy' => 'Уроки английского в рабочее время',
     'Liczba dokumentów miesięcznie' => 'Документов в месяц',
     'Liczba pracowników' => 'Количество сотрудников',
@@ -113,7 +113,7 @@ return [
     'Nie stoimy w miejscu. Rozwój i doskonalenie to część naszej codziennej pracy. Szukamy osób, które chcą mieć realny wpływ na usprawnianie procesów i lubią środowisko, w którym można się uczyć i rosnąć.' => 'Мы не стоим на месте. Развитие и совершенствование — часть нашей ежедневной работы. Мы ищем людей, которые хотят реально влиять на улучшение процессов и любят среду, где можно учиться и расти.',
     'Nr KRS:' => 'Рег. №:',
     'O nas' => 'О нас',
-    'Obejrzyj materiał' => 'Посмотреть материал',
+    'Obejrzyj materiał' => 'Смотреть материал',
     'Oblicz kwotę obsługi' => 'Рассчитать стоимость',
     'Obsługujemy klientów zdalnie w całej Polsce' => 'Обслуживаем клиентов дистанционно по всей Польше',
     'Odkryj' => 'Узнать',
@@ -135,7 +135,7 @@ return [
     'Porozmawiajmy' => 'Поговорим',
     'Powrót do Media i newsroom' => 'Вернуться в Медиа и пресс-центр',
     'Poznaj nasz Culturebook' => 'Познакомьтесь с нашим Culturebook',
-    'Poznaj więcej historii' => 'Узнать больше историй',
+    'Poznaj więcej historii' => 'Узнайте больше историй',
     'Pracujemy w modelu hybrydowym – część tygodnia w biurze, część zdalnie. Dokładny podział zależy od stanowiska i jest ustalany indywidualnie.' => 'Мы работаем в гибридной модели — часть недели в офисе, часть дистанционно. Точное соотношение зависит от должности и согласовывается индивидуально.',
     'Praktyczne wskazówki i komentarze ekspertów' => 'Практические советы и комментарии экспертов',
     'Praktyki i staże' => 'Практики и стажировки',
@@ -184,7 +184,7 @@ return [
     'Twórz z nami jakość' => 'Создавайте качество вместе с нами',
     'Uchwały' => 'Решения собрания',
     'Umów rozmowę' => 'Запланировать звонок',
-    'Umów się na rozmowę' => 'Записаться на разговор',
+    'Umów się na rozmowę' => 'Запишитесь на разговор',
     'Umowa o pracę' => 'Трудовой договор',
     'Usługi księgowe' => 'Бухгалтерские услуги',
     'W Meritoros wspieramy firmy w księgowości, kadrach i płacach oraz procesach back-office od 2004 roku. Pracujemy tak, żeby być dumni z jakości informacji, które dostarczamy.' => 'В Meritoros мы поддерживаем компании в бухгалтерии, кадрах и зарплатах, а также back-office процессах с 2004 года. Мы работаем так, чтобы гордиться качеством информации, которую предоставляем.',
@@ -345,4 +345,236 @@ i usprawnienie procesów' => 'Высвобождение времени
     'Zapewniamy kompleksową obsługę kadrowo-płacową firm o różnej skali działalności. Przejmujemy odpowiedzialność za poprawność, terminowość i ciągłość procesów, aby organizacja mogła działać stabilnie i bez zakłóceń.' => 'Мы предоставляем комплексные кадровые и бухгалтерские услуги компаниям различного масштаба. Берём на себя ответственность за точность, своевременность и непрерывность процессов, чтобы организация могла стабильно работать без сбоев.',
     'Zaufało nam ponad 1200 klientów' => 'Нам доверяют более 1200 клиентов',
     'dla większych organizacji' => 'для крупных организаций',
+    'Eksperci w księgowości.
+Technologia i pewność
+w działaniu.' => 'Эксперты в бухгалтерии.
+Технологии и уверенность
+в действии.',
+    'Zapewniamy księgowość kadry i outsourcing procesów w standardzie, który daje firmom spokój i bezpieczeństwo.' => 'Мы предоставляем бухгалтерские, кадровые услуги и аутсорсинг процессов на уровне, который обеспечивает компаниям спокойствие и безопасность.',
+    'Zaufało nam ponad <span class="text-white">1200 klientów</span>' => 'Нам доверяют более <span class="text-white">1200 клиентов</span>',
+    'Wideo ogólne' => 'Общее видео',
+    'Wideo ogólne Meritoros' => 'Общее видео Meritoros',
+    'Obejrzyj ogólne wideo' => 'Посмотреть общее видео',
+    'Nasi klienci cenią nas za to, że dowozimy: jakość, terminowość i spójne dane. Jako partner w obszarze księgowości przejmujemy obszary, za które odpowiadamy, i pracujemy w standardzie, który daje spokój w codziennym prowadzeniu firmy.' => 'Наши клиенты ценят нас за то, что мы доставляем: качество, своевременность и согласованные данные. Как партнёр в области бухгалтерии мы берём ответственность за подотчётные нам участки и работаем на стандарте, который обеспечивает спокойствие в повседневном ведении бизнеса.',
+    'Dla biur rachunkowych' => 'Для бухгалтерских бюро',
+    'Kupimy Biuro
+Rachunkowe' => 'Купим бухгалтерское
+бюро',
+    'Od lat współpracujemy z biurami rachunkowymi, które stoją przed decyzją o zmianie, sprzedaży lub dalszym rozwoju.' => 'На протяжении многих лет мы сотрудничаем с бухгалтерскими бюро, которые стоят перед решением об изменении, продаже или дальнейшем развитии.',
+    'Wyceń wartość biura' => 'Оцените стоимость бюро',
+    'Obsługujemy systemy ERP i finansowe wiodących dostawców' => 'Мы обслуживаем ERP и финансовые системы ведущих поставщиков',
+    'Przejrzystych warunków' => 'Прозрачных условий',
+    'Przejętych biur' => 'Приобретённых бюро',
+    'Do wstępnej wyceny' => 'До предварительной оценки',
+    'Pełna poufność' => 'Полная конфиденциальность',
+    'Stabilne procesy. Rzetelne
+dane. Spokój zarządu.' => 'Стабильные процессы. Достоверные
+данные. Спокойствие руководства.',
+    'Wspieramy większe firmy w obszarze księgowości, kadr i płac, back-office, przejmując odpowiedzialność za jakość, terminowość i ciągłość działania. Dostarczamy dane i raporty w harmonogramie dopasowanym do zarządu – tak, żeby decyzje były oparte na spójnych informacjach, a nie „gaszeniu pożarów".' => 'Мы поддерживаем крупные компании в области бухгалтерии, кадров и расчёта зарплаты, беря ответственность за качество, своевременность и непрерывность работы. Мы предоставляем данные и отчёты по графику, согласованному с руководством, — чтобы решения основывались на согласованной информации, а не на «тушении пожаров».',
+    'raportowanie zarządcze i sprawozdawcze dopasowane do potrzeb organizacji
+
+cyfrowy obieg dokumentów i uporządkowane procesy
+
+pełna zastępowalność i ciągłość obsługi oraz gotowość do skalowania' => 'управленческая и финансовая отчётность, адаптированная к потребностям организации
+
+цифровой документооборот и упорядоченные процессы
+
+полная взаимозаменяемость и непрерывность обслуживания, а также готовность к масштабированию',
+    'Jakość potwierdzona
+standardami' => 'Качество, подтверждённое
+стандартами',
+    'Ponad 170
+expertów' => 'Более 170
+экспертов',
+    'Nagroda' => 'Награда',
+    'Rozwiązania Kadrowe' => 'Кадровые решения',
+    'Zapewniamy wsparcie w zakresie obsługi kadrowej i naliczania wynagrodzeń. Nasze kompleksowe rozwiązania w obszarze HR i payroll, dedykowane dla dużych przedsiębiorstw, zapewniają nie tylko zgodność z przepisami prawa, ale także optymalizację procesów kadrowych. Współpracujemy zarówno z firmami, które nie posiadają własnego działu HR, jak i z organizacjami potrzebującymi wsparcia przy wybranych procesach.' => 'Мы оказываем поддержку в области кадрового учёта и расчёта заработной платы. Наши комплексные решения в сфере HR и payroll, предназначенные для крупных предприятий, обеспечивают не только соответствие законодательству, но и оптимизацию кадровых процессов. Мы сотрудничаем как с компаниями без собственного отдела HR, так и с организациями, нуждающимися в поддержке отдельных процессов.',
+    'Dlaczego BPO z nami' => 'Почему BPO с нами',
+    'Sprawdź rozwiązania kadrowe' => 'Изучите кадровые решения',
+    'Prowadzenie dokumentacji kadrowej
+
+Naliczanie wynagrodzeń i świadczeń
+
+Obsługa umów o pracę i umów cywilnoprawnych
+
+Rozliczenia z ZUS i instytucjami publicznymi
+
+Sporządzanie deklaracji podatkowych
+
+Kontrolowanie limitów urlopowych, terminów badań lekarskich, szkoleń BHP oraz wygasających umów
+
+Reprezentowanie podczas kontroli i czynności sprawdzających
+
+Zarządzanie programami PPK i PPE
+
+Platforma pracownicza z dostępem do wniosków urlopowych i dokumentów online' => 'Ведение кадровой документации
+
+Начисление заработной платы и льгот
+
+Обработка трудовых и гражданско-правовых договоров
+
+Расчёты с ZUS и государственными учреждениями
+
+Подготовка налоговых деклараций
+
+Контроль лимитов отпусков, сроков медосмотров, охраны труда и истекающих договоров
+
+Представительство при проверках и ревизионных действиях
+
+Управление программами PPK и PPE
+
+Платформа для сотрудников с доступом к заявлениям на отпуск и документам онлайн',
+    'Outsourcing księgowości pozwala na znaczne obniżenie kosztów operacyjnych. Możemy dostarczyć wysokiej jakości usługi księgowe, eliminując potrzebę zatrudniania wewnętrznych ekspertów. Dzięki nowoczesnej technologii i dużej skali obsługiwanych przez nas operacji oszczędności sięgają 20-30% lub więcej w porównaniu do prowadzenia księgowości wewnętrznie. Dzięki digitalizacji obiegu dokumentów oraz sprawnym procesom możemy dostarczać raporty w czasie rzeczywistym.' => 'Аутсорсинг бухгалтерии позволяет значительно снизить операционные затраты. Мы можем предоставлять высококачественные бухгалтерские услуги, исключая необходимость найма внутренних специалистов. Благодаря современным технологиям и большому масштабу обрабатываемых нами операций экономия достигает 20–30% и более по сравнению с ведением бухгалтерии собственными силами. Благодаря оцифровке документооборота и эффективным процессам мы можем предоставлять отчёты в режиме реального времени.',
+    'Prowadzenie ksiąg rachunkowych
+
+Obliczanie podatków i składanie deklaracji podatkowych
+
+Bieżące rozliczanie wyciągów i kontrolowanie rozrachunków
+
+Raportowanie zarządcze i sprawozdawcze
+
+Raportowanie do instytucji publicznoprawnych, w tym NBP, GUS, INTRASTAT
+
+Sporządzanie sprawozdań finansowych oraz deklaracji rocznych
+
+Reprezentowanie podczas kontroli i czynności sprawdzających
+
+Obsługa niestandardowych rozliczeń, w tym VAT OSS, CIT Estoński, SSE, VAT marża, itp.
+
+Asystowanie i wsparcie podczas audytu sprawozdania finansowego' => 'Ведение бухгалтерских книг
+
+Исчисление налогов и подача налоговых деклараций
+
+Текущее согласование выписок и контроль расчётов
+
+Управленческая и финансовая отчётность
+
+Отчётность перед публично-правовыми учреждениями, включая NBP, GUS, INTRASTAT
+
+Составление финансовой отчётности и годовых деклараций
+
+Представительство при проверках и ревизионных действиях
+
+Обработка нестандартных расчётов, включая VAT OSS, Estonian CIT, SEZ, маржинальный VAT и т.д.
+
+Ассистирование и поддержка при аудите финансовой отчётности',
+    'Model współpracy' => 'Модель сотрудничества',
+    'Możesz powierzyć nam całość procesów księgowych lub wybrane obszary wymagające uporządkowania.
+Dopasowujemy zakres wsparcia do realnej sytuacji Twojej firmy.' => 'Вы можете доверить нам все бухгалтерские процессы или отдельные участки, требующие упорядочивания.
+Мы адаптируем объём поддержки к реальной ситуации в вашей компании.',
+    'Kompleksowa obsługa' => 'Комплексное обслуживание',
+    'Obsługujemy proces end-to-end: od bieżącej ewidencji po zamknięcie miesiąca i raporty. Pracujesz z zespołem, który zapewnia zastępowalność i stały standard.' => 'Мы ведём процесс от начала до конца: от текущего учёта до закрытия месяца и отчётов. Вы работаете с командой, которая обеспечивает взаимозаменяемость и постоянный стандарт.',
+    'Outsourcing wybranych
+procesów' => 'Аутсорсинг отдельных
+процессов',
+    'Przejmujemy konkretne procesy i dowozimy je w ustalonym standardzie i harmonogramie. To rozwiązanie dla firm, które chcą wzmocnić wewnętrzny dział finansów bez rozbudowy etatów.' => 'Мы берём на себя конкретные процессы и выполняем их в согласованном стандарте и графике. Это решение для компаний, которые хотят укрепить внутренний финансовый отдел без расширения штата.',
+    'Jak wygląda bieżąca współpraca' => 'Как выглядит текущее сотрудничество',
+    'Indywidualna organizacja pracy' => 'Индивидуальная организация работы',
+    'W zależności od potrzeb możemy pracować:' => 'В зависимости от потребностей мы можем работать:',
+    'na bieżąco – obsługując codzienne procesy księgowe lub kadrowe' => 'на постоянной основе — обслуживая ежедневные бухгалтерские или кадровые процессы',
+    'w cyklach tygodniowych' => 'в недельных циклах',
+    'w innych ustalonych odstępach czasu' => 'в других согласованных интервалах',
+    'Elastyczne zamknięcie miesiąca' => 'Гибкое закрытие месяца',
+    'Terminy zamknięcia miesiąca ustalamy indywidualnie z każdą firmą, uwzględniając jej wewnętrzne potrzeby raportowe oraz obowiązujące terminy podatkowe.' => 'Сроки закрытия месяца устанавливаются индивидуально с каждой компанией с учётом её внутренних потребностей в отчётности и действующих налоговых сроков.',
+    'część firm potrzebuje raportów finansowych do 20. dnia miesiąca' => 'некоторым компаниям нужны финансовые отчёты до 20-го числа месяца',
+    'inne wymagają wyników już w 3. lub 4. dniu roboczym nowego miesiąca' => 'другие требуют результатов уже на 3-й или 4-й рабочий день нового месяца',
+    'Zakres i częstotliwość raportowania ustalamy indywidualnie z każdym klientem.' => 'Объём и частота отчётности устанавливаются индивидуально с каждым клиентом.',
+    'W standardzie klient otrzymuje:' => 'В стандартном пакете клиент получает:',
+    'rachunek zysków i strat' => 'отчёт о прибылях и убытках',
+    'bilans' => 'баланс',
+    'zestawienie należności i zobowiązań' => 'ведомость дебиторской и кредиторской задолженности',
+    'Umów się na konsultacje' => 'Запишитесь на консультацию',
+    'Myślisz o sprzedaży swojego biura rachunkowego?' => 'Думаете о продаже вашего бухгалтерского бюро?',
+    'Oferujemy dwa modele współpracy: całkowitą sprzedaż biura rachunkowego albo partnerstwo kapitałowe z zachowaniem operacyjnej autonomii.' => 'Мы предлагаем две модели сотрудничества: полную продажу бухгалтерского бюро или капитальное партнёрство с сохранением операционной автономии.',
+    'Właściciele biur rachunkowych zgłaszają się do nas z różnymi potrzebami. Jedni chcą całkowicie wyjść z biznesu i sprzedać firmę, inni szukają partnera, który pomoże im dalej rozwijać biuro. W Meritoros rozmawiamy o obu scenariuszach.' => 'Владельцы бухгалтерских бюро обращаются к нам с разными потребностями. Одни хотят полностью выйти из бизнеса и продать фирму, другие ищут партнёра, который поможет им продолжать развивать бюро. В Meritoros мы обсуждаем оба сценария.',
+    'Porozmawiajmy o możliwym modelu współpracy' => 'Поговорим о возможной модели сотрудничества',
+    'Całkowita sprzedaż biura' => 'Полная продажа бюро',
+    'Jeśli planujesz wycofanie się z prowadzenia firmy, możemy rozmawiać o przejęciu całego przedsiębiorstwa — z uwzględnieniem klientów, zespołu i ciągłości działania.' => 'Если вы планируете выйти из ведения бизнеса, мы можем обсудить приобретение всего предприятия — с учётом клиентов, команды и непрерывности деятельности.',
+    'Sprzedaż części udziałów' => 'Продажа доли',
+    'Jeśli chcesz dalej prowadzić biuro, ale jednocześnie zyskać wsparcie większej organizacji, możemy rozmawiać o modelu partnerskim z częściowym wejściem kapitałowym Meritoros.' => 'Если вы хотите продолжать вести бюро, но при этом получить поддержку более крупной организации, мы можем обсудить партнёрскую модель с частичным капитальным вхождением Meritoros.',
+    'Od czego zależy wycena biura rachunkowego?' => 'От чего зависит оценка бухгалтерского бюро?',
+    'Wartość biura rachunkowego nie zależy wyłącznie od przychodów. Znaczenie mają także m.in. struktura klientów, rentowność, organizacja procesów, używane systemy, stabilność zespołu oraz stopień zależności firmy od właściciela. Dlatego każdą rozmowę zaczynamy od zrozumienia realnej sytuacji biznesu.' => 'Стоимость бухгалтерского бюро зависит не только от доходов. Важную роль играют также структура клиентов, рентабельность, организация процессов, используемые системы, стабильность команды и степень зависимости фирмы от владельца. Поэтому каждый разговор мы начинаем с понимания реального положения дел в бизнесе.',
+    'Na wycenę wpływają m.in.:' => 'На оценку влияют, в частности:',
+    'poziom i powtarzalność przychodów,
+
+rentowność biura,
+
+struktura klientów i ryzyko koncentracji,
+
+organizacja pracy, technologia i stopień poukładania procesów.' => 'уровень и повторяемость доходов,
+
+рентабельность бюро,
+
+структура клиентов и риск концентрации,
+
+организация работы, технологии и степень зрелости процессов.',
+    'W przypadku modelu partnerskiego' => 'В случае партнёрской модели',
+    'Model partnerski kierujemy przede wszystkim do biur, które:' => 'Партнёрская модель ориентирована прежде всего на бюро, которые:',
+    'Co zyskujesz jako Partner Meritoros?' => 'Что вы получаете как Партнёр Meritoros?',
+    'dostęp do automatyzacji i robotyzacji procesów
+
+wsparcie w digitalizacji i porządkowaniu operacji
+
+dostęp do wiedzy ekspertów i partnerów merytorycznych
+
+wsparcie HR i rekrutacyjne
+
+wsparcie marketingowe i sprzedażowe,
+
+wewnętrzne standardy jakości i audytu
+
+możliwość dalszego rozwoju w strukturach większej organizacji' => 'доступ к автоматизации и роботизации процессов
+
+поддержка в оцифровке и упорядочивании операций
+
+доступ к знаниям экспертов и предметных партнёров
+
+HR и рекрутинговая поддержка
+
+маркетинговая и сбытовая поддержка
+
+внутренние стандарты качества и аудита
+
+возможность дальнейшего развития в структурах более крупной организации',
+    'Kalkulator orientacyjnej wyceny biura rachunkowego' => 'Ориентировочный калькулятор оценки бухгалтерского бюро',
+    'Sprawdź wycenę' => 'Проверить оценку',
+    'Spełniasz wszystkie kryteria?' => 'Соответствуете ли вы всем критериям?',
+    'Warto się odezwać — chętnie sprawdzimy, czy widzimy przestrzeń do współpracy.' => 'Стоит обратиться — мы с удовольствием проверим, видим ли мы пространство для сотрудничества.',
+    'Obecnie najczęściej rozmawiamy z biurami, które spełniają poniższe kryteria:' => 'В настоящее время мы чаще всего разговариваем с бюро, которые соответствуют следующим критериям:',
+    'Przejmujemy całość lub wybrane obszary, które wymagają uporządkowania i stałego nadzoru.' => 'Мы берём на себя все или выбранные участки, которые требуют упорядочивания и постоянного контроля.',
+    'obrót roczny: od ok. 1,2 mln zł
+
+oprogramowanie: Comarch Optima,
+
+preferowane lokalizacje: Warszawa, Kraków, Wrocław, Łódź, Górny Śląsk, Rzeszów,
+
+w przypadku większych podmiotów analizujemy także inne lokalizacje.' => 'годовой оборот: от прибл. 1,2 млн злотых
+
+программное обеспечение: Comarch Optima,
+
+предпочтительные локации: Варшава, Краков, Вроцлав, Лодзь, Верхняя Силезия, Жешув,
+
+для более крупных субъектов мы также анализируем другие локации.',
+    'Spełniasz powyższe kryteria?' => 'Соответствуете ли вы указанным критериям?',
+    'Nie spełniasz wszystkich kryteriów?' => 'Не соответствуете всем критериям?',
+    'Jak wygląda sprzedaż biura rachunkowego w praktyce?' => 'Как выглядит продажа бухгалтерского бюро на практике?',
+    'Jeśli chcesz lepiej zrozumieć kulisy takiego procesu, zobacz materiał, w którym omawiamy najważniejsze kwestie związane ze sprzedażą firmy usługowej i przejęciem biura rachunkowego.' => 'Если вы хотите лучше понять закулисье такого процесса, посмотрите материал, в котором мы обсуждаем наиболее важные вопросы, связанные с продажей сервисной компании и приобретением бухгалтерского бюро.',
+    'Pierwsza rozmowa jest niezobowiązująca. Ustalimy, jaki model ma sens i czy jest przestrzeń do współpracy.' => 'Первый разговор ни к чему не обязывает. Мы установим, какая модель имеет смысл и есть ли пространство для сотрудничества.',
+    'Wczytaj więcej' => 'Загрузить ещё',
+    'Posłuchaj, co mówią nasi klienci' => 'Послушайте, что говорят наши клиенты',
+    'Jak z MINIMALNYM ryzykiem zacząć własny biznes? Sebastian Rafalik wspomina Meritoros.' => 'Как начать собственный бизнес с МИНИМАЛЬНЫМ риском? Себастьян Рафалик вспоминает Meritoros.',
+    'Sebastian Rafalik (POL–FRA) w wywiadzie dla „Zaprojektuj Swoje Życie" mówi o tym, jak uporządkowanie księgowości i kadr z Meritoros pomogło mu odblokować skalowanie biznesu i zdjąć z siebie „wąskie gardło".' => 'Себастьян Рафалик (POL–FRA) в интервью для «Zaprojektuj Swoje Życie» рассказывает о том, как упорядочение бухгалтерии и кадров с Meritoros помогло ему разблокировать масштабирование бизнеса и снять с себя «узкое место».',
+    'Posłuchaj wywiadu' => 'Послушать интервью',
+    'Darmowy materiał' => 'Бесплатный материал',
+    'Pobierz nasz darmowy Ebook' => 'Скачайте наш бесплатный Ebook',
+    'Pobierz materiał' => 'Скачать материал',
+    'Ebook został wysłany na podany adres e-mail!' => 'Ebook отправлен на указанный адрес электронной почты!',
+    'Fundacja rodzinna' => 'Семейный фонд',
+    'księgowość pod kontrolą' => 'бухгалтерия под контролем',
+    'Fundacja rodzinna wymaga szczególnej staranności w obszarze księgowości i podatków. Zapewniamy rozwiązania, które chronią interes fundatorów i wspierają długoterminową strukturę majątkową.' => 'Семейный фонд требует особой тщательности в области бухгалтерии и налогов. Мы предоставляем решения, которые защищают интересы учредителей и поддерживают долгосрочную имущественную структуру.',
+    'Dlaczego Meritoros' => 'Почему Meritoros',
+    'Mamy wdrożone procedury kontroli jakości i weryfikacji danych. Dostarczamy informacje finansowe kompletne, spójne i użyteczne dla zarządu.' => 'У нас внедрены процедуры контроля качества и проверки данных. Мы предоставляем финансовую информацию, которая является полной, согласованной и полезной для руководства.',
+    'Ponad 170 ekspertów' => 'Более 170 экспертов',
+    'Jakość potwierdzona standardami. Mamy wdrożone procedury kontroli jakości i weryfikacji danych. Dostarczamy informacje finansowe kompletne, spójne i użyteczne dla zarządu.' => 'Качество, подтверждённое стандартами. У нас внедрены процедуры контроля качества и проверки данных. Мы предоставляем финансовую информацию, которая является полной, согласованной и полезной для руководства.',
+    'Powrót do' => 'Вернуться к',
 ];

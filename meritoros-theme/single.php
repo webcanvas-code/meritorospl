@@ -155,7 +155,7 @@ $first_cat  = ! empty($categories) ? $categories[0] : null;
                 <a href="<?php echo esc_url($blog_url); ?>"
                    class="inline-flex items-center gap-2 text-sm font-medium text-slate-500 hover:text-slate-900 transition-colors">
                     <i data-lucide="arrow-left" class="w-4 h-4 stroke-[1.5]"></i>
-                    Powrót do <?php echo esc_html($blog_label); ?>
+                    <?php esc_html_e('Powrót do', 'meritoros'); ?> <?php echo esc_html($blog_label); ?>
                 </a>
             </div>
 

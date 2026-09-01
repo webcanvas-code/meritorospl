@@ -1,15 +1,15 @@
 <?php
 defined('ABSPATH') || exit;
 
-$heading  = mer_field('kupimy_hero_heading',  'Myślisz o sprzedaży swojego biura rachunkowego?');
-$subtitle = mer_field('kupimy_hero_subtitle', 'Oferujemy dwa modele współpracy: całkowitą sprzedaż biura rachunkowego albo partnerstwo kapitałowe z zachowaniem operacyjnej autonomii.');
-$btn_text = mer_field('kupimy_hero_btn_text', 'Kontakt');
+$heading  = __( mer_field('kupimy_hero_heading',  'Myślisz o sprzedaży swojego biura rachunkowego?'), 'meritoros' );
+$subtitle = __( mer_field('kupimy_hero_subtitle', 'Oferujemy dwa modele współpracy: całkowitą sprzedaż biura rachunkowego albo partnerstwo kapitałowe z zachowaniem operacyjnej autonomii.'), 'meritoros' );
+$btn_text = __( mer_field('kupimy_hero_btn_text', 'Kontakt'), 'meritoros' );
 $btn_url  = mer_field('kupimy_hero_btn_url',  get_permalink(get_page_by_path('kontakt')));
-$intro    = mer_field('kupimy_hero_intro',    'Właściciele biur rachunkowych zgłaszają się do nas z różnymi potrzebami. Jedni chcą całkowicie wyjść z biznesu i sprzedać firmę, inni szukają partnera, który pomoże im dalej rozwijać biuro. W Meritoros rozmawiamy o obu scenariuszach.');
+$intro    = __( mer_field('kupimy_hero_intro',    'Właściciele biur rachunkowych zgłaszają się do nas z różnymi potrzebami. Jedni chcą całkowicie wyjść z biznesu i sprzedać firmę, inni szukają partnera, który pomoże im dalej rozwijać biuro. W Meritoros rozmawiamy o obu scenariuszach.'), 'meritoros' );
 
 $image   = get_field('kupimy_hero_image');
 $img_url = is_array($image) ? esc_url($image['url']) : 'https://images.unsplash.com/photo-1521791136064-7986c2920216?auto=format&fit=crop&q=80&w=1600';
-$img_alt = is_array($image) ? esc_attr($image['alt'] ?: 'Kupimy biuro rachunkowe') : 'Kupimy biuro rachunkowe';
+$img_alt = is_array($image) ? esc_attr($image['alt'] ?: __('Kupimy biuro rachunkowe', 'meritoros')) : __('Kupimy biuro rachunkowe', 'meritoros');
 ?>
 
 <!-- ── Hero ──────────────────────────────────────────────────────── -->

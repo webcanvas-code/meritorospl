@@ -1,20 +1,20 @@
 <?php
-$info_title   = mer_field('bpo_info_title',   "Stabilne procesy. Rzetelne\ndane. Spokój zarządu.");
-$info_text    = mer_field('bpo_info_text',    'Wspieramy większe firmy w obszarze księgowości, kadr i płac, back-office, przejmując odpowiedzialność za jakość, terminowość i ciągłość działania. Dostarczamy dane i raporty w harmonogramie dopasowanym do zarządu – tak, żeby decyzje były oparte na spójnych informacjach, a nie „gaszeniu pożarów".');
-$info_items_r = mer_field('bpo_info_items',   "raportowanie zarządcze i sprawozdawcze dopasowane do potrzeb organizacji\n\ncyfrowy obieg dokumentów i uporządkowane procesy\n\npełna zastępowalność i ciągłość obsługi oraz gotowość do skalowania");
+$info_title   = __( mer_field('bpo_info_title',   "Stabilne procesy. Rzetelne\ndane. Spokój zarządu."), 'meritoros' );
+$info_text    = __( mer_field('bpo_info_text',    'Wspieramy większe firmy w obszarze księgowości, kadr i płac, back-office, przejmując odpowiedzialność za jakość, terminowość i ciągłość działania. Dostarczamy dane i raporty w harmonogramie dopasowanym do zarządu – tak, żeby decyzje były oparte na spójnych informacjach, a nie „gaszeniu pożarów".'), 'meritoros' );
+$info_items_r = __( mer_field('bpo_info_items',   "raportowanie zarządcze i sprawozdawcze dopasowane do potrzeb organizacji\n\ncyfrowy obieg dokumentów i uporządkowane procesy\n\npełna zastępowalność i ciągłość obsługi oraz gotowość do skalowania"), 'meritoros' );
 $info_items   = array_filter(array_map('trim', preg_split('/(\r?\n){2,}/', $info_items_r)));
 
-$awards_title = mer_field('bpo_awards_title', 'Nagrody i wyróżnienia');
-$awards_text  = mer_field('bpo_awards_text',  'Wyróżnienia są efektem tego, jak rozwijamy Meritoros: konsekwentnie i procesowo. Trzymamy standard, który ma działać w praktyce - codziennie.');
+$awards_title = __( mer_field('bpo_awards_title', 'Nagrody i wyróżnienia'), 'meritoros' );
+$awards_text  = __( mer_field('bpo_awards_text',  'Wyróżnienia są efektem tego, jak rozwijamy Meritoros: konsekwentnie i procesowo. Trzymamy standard, który ma działać w praktyce - codziennie.'), 'meritoros' );
 $_img         = get_template_directory_uri() . '/images/';
 $awards_logo1 = get_field('bpo_awards_logo1') ?: ['url' => $_img . 'forbes.png',      'alt' => 'Forbes'];
 $awards_logo2 = get_field('bpo_awards_logo2') ?: ['url' => $_img . 'logo_gazele.png', 'alt' => 'Gazele Biznesu'];
 
 $stat1_image = get_field('bpo_stat1_image') ?: ['url' => $_img . 'ISO27001.png', 'alt' => 'ISO 27001'];
-$stat1_text  = mer_field('bpo_stat1_text', "Bezpieczeństwo\ni compliance");
+$stat1_text  = __( mer_field('bpo_stat1_text', "Bezpieczeństwo\ni compliance"), 'meritoros' );
 $stat2_image = get_field('bpo_stat2_image') ?: ['url' => $_img . 'ISO9001.png',  'alt' => 'ISO 9001'];
-$stat2_text  = mer_field('bpo_stat2_text', "Jakość potwierdzona\nstandardami");
-$stat3_text  = mer_field('bpo_stat3_text', "Ponad 170\nexpertów");
+$stat2_text  = __( mer_field('bpo_stat2_text', "Jakość potwierdzona\nstandardami"), 'meritoros' );
+$stat3_text  = __( mer_field('bpo_stat3_text', "Ponad 170\nexpertów"), 'meritoros' );
 ?>
 
 <section class="py-16 md:py-24 bg-white">
@@ -43,10 +43,10 @@ $stat3_text  = mer_field('bpo_stat3_text', "Ponad 170\nexpertów");
                     <p class="text-lg text-slate-500 leading-relaxed mb-6"><?php echo mer_esc($awards_text); ?></p>
                     <div class="flex items-center gap-6 flex-wrap">
                         <?php if (is_array($awards_logo1)) : ?>
-                            <img src="<?php echo esc_url($awards_logo1['url']); ?>" alt="<?php echo esc_attr($awards_logo1['alt'] ?: 'Nagroda'); ?>" class="object-contain" style="width:120px;height:100px;" loading="lazy">
+                            <img src="<?php echo esc_url($awards_logo1['url']); ?>" alt="<?php echo esc_attr($awards_logo1['alt'] ?: __('Nagroda', 'meritoros')); ?>" class="object-contain" style="width:120px;height:100px;" loading="lazy">
                         <?php endif; ?>
                         <?php if (is_array($awards_logo2)) : ?>
-                            <img src="<?php echo esc_url($awards_logo2['url']); ?>" alt="<?php echo esc_attr($awards_logo2['alt'] ?: 'Nagroda'); ?>" class="h-16 w-auto object-contain" loading="lazy">
+                            <img src="<?php echo esc_url($awards_logo2['url']); ?>" alt="<?php echo esc_attr($awards_logo2['alt'] ?: __('Nagroda', 'meritoros')); ?>" class="h-16 w-auto object-contain" loading="lazy">
                         <?php endif; ?>
                     </div>
                 </div>

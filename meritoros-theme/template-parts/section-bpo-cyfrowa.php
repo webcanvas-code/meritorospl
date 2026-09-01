@@ -30,7 +30,7 @@ $bg_url = is_array($bg_img) ? esc_url($bg_img['url']) : 'https://images.unsplash
 
         <div class="flex items-center justify-center">
             <?php
-            $btn_text = mer_field('bpo_td_btn_text', 'Umów się na konsultacje');
+            $btn_text = __( mer_field('bpo_td_btn_text', 'Umów się na konsultacje'), 'meritoros' );
             $btn_url  = mer_field('bpo_td_btn_url',  home_url('/kontakt/'));
             ?>
             <a href="<?php echo esc_url($btn_url); ?>"

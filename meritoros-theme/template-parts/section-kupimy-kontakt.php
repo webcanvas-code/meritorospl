@@ -1,8 +1,8 @@
 <?php
 defined('ABSPATH') || exit;
 
-$heading  = mer_field('kupimy_form_heading',  'Porozmawiajmy');
-$subtitle = mer_field('kupimy_form_subtitle', 'Pierwsza rozmowa jest niezobowiązująca. Ustalimy, jaki model ma sens i czy jest przestrzeń do współpracy.');
+$heading  = __( mer_field('kupimy_form_heading',  'Porozmawiajmy'), 'meritoros' );
+$subtitle = __( mer_field('kupimy_form_subtitle', 'Pierwsza rozmowa jest niezobowiązująca. Ustalimy, jaki model ma sens i czy jest przestrzeń do współpracy.'), 'meritoros' );
 $cf7_id   = intval(mer_field('kupimy_cf7_id', 0));
 $photo    = mer_field('kupimy_form_photo');
 $photo_url = is_array($photo) ? $photo['url'] : 'https://images.unsplash.com/photo-1557804506-669a67965ba0?w=900&q=80';

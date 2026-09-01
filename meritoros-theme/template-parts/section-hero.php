@@ -2,13 +2,13 @@
 $bg_img    = get_field('hero_bg_image');
 $bg_url    = is_array($bg_img) ? esc_url($bg_img['url']) : 'https://images.unsplash.com/photo-1600880292203-757bb62b4baf?auto=format&fit=crop&w=2070&q=80';
 $bg_alt    = is_array($bg_img) ? esc_attr($bg_img['alt']) : 'Team meeting';
-$headline  = mer_field('hero_headline', "Eksperci w księgowości.\nTechnologia i pewność\nw działaniu.");
-$sub       = mer_field('hero_subheadline', 'Zapewniamy księgowość kadry i outsourcing procesów w standardzie, który daje firmom spokój i bezpieczeństwo.');
-$btn1_text = mer_field('hero_btn1_text', 'Poznaj ofertę');
+$headline  = __( mer_field('hero_headline', "Eksperci w księgowości.\nTechnologia i pewność\nw działaniu."), 'meritoros' );
+$sub       = __( mer_field('hero_subheadline', 'Zapewniamy księgowość kadry i outsourcing procesów w standardzie, który daje firmom spokój i bezpieczeństwo.'), 'meritoros' );
+$btn1_text = __( mer_field('hero_btn1_text', 'Poznaj ofertę'), 'meritoros' );
 $btn1_url  = mer_field('hero_btn1_url', '#uslugi');
-$btn2_text = mer_field('hero_btn2_text', 'Porozmawiajmy');
+$btn2_text = __( mer_field('hero_btn2_text', 'Porozmawiajmy'), 'meritoros' );
 $btn2_url  = mer_field('hero_btn2_url', '#kontakt');
-$trust_text= mer_field('hero_trust_text', 'Zaufało nam ponad <span class="text-white">1200 klientów</span>');
+$trust_text= __( mer_field('hero_trust_text', 'Zaufało nam ponad <span class="text-white">1200 klientów</span>'), 'meritoros' );
 $clients   = mer_field('hero_clients', []);
 
 if (empty($clients)) {

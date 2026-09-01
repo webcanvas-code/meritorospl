@@ -1,21 +1,21 @@
 <?php
 defined('ABSPATH') || exit;
 
-$banner_title   = mer_field('kupimy_part_banner_title',   'Spełniasz wszystkie kryteria?');
-$banner_desc    = mer_field('kupimy_part_banner_desc',    'Warto się odezwać — chętnie sprawdzimy, czy widzimy przestrzeń do współpracy.');
-$banner_btn     = mer_field('kupimy_part_banner_btn',     'Umów się na rozmowę');
+$banner_title   = __( mer_field('kupimy_part_banner_title',   'Spełniasz wszystkie kryteria?'), 'meritoros' );
+$banner_desc    = __( mer_field('kupimy_part_banner_desc',    'Warto się odezwać — chętnie sprawdzimy, czy widzimy przestrzeń do współpracy.'), 'meritoros' );
+$banner_btn     = __( mer_field('kupimy_part_banner_btn',     'Umów się na rozmowę'), 'meritoros' );
 $banner_btn_url = mer_field('kupimy_part_banner_btn_url', get_permalink(get_page_by_path('kontakt')));
 
-$label    = mer_field('kupimy_kryt_label',    'Całkowita sprzedaż biura');
-$heading  = mer_field('kupimy_kryt_heading',  'Obecnie najczęściej rozmawiamy z biurami, które spełniają poniższe kryteria:');
-$subtitle = mer_field('kupimy_kryt_subtitle', 'Przejmujemy całość lub wybrane obszary, które wymagają uporządkowania i stałego nadzoru.');
-$items    = array_values(array_filter(array_map('trim', preg_split('/(\r?\n){2,}/', mer_field('kupimy_kryt_items', "obrót roczny: od ok. 1,2 mln zł\n\noprogramowanie: Comarch Optima,\n\npreferowane lokalizacje: Warszawa, Kraków, Wrocław, Łódź, Górny Śląsk, Rzeszów,\n\nw przypadku większych podmiotów analizujemy także inne lokalizacje.")))));
-$cta_pre  = mer_field('kupimy_kryt_cta_pre',  'Spełniasz powyższe kryteria?');
-$btn_text = mer_field('kupimy_kryt_btn_text', 'Umów się na rozmowę');
+$label    = __( mer_field('kupimy_kryt_label',    'Całkowita sprzedaż biura'), 'meritoros' );
+$heading  = __( mer_field('kupimy_kryt_heading',  'Obecnie najczęściej rozmawiamy z biurami, które spełniają poniższe kryteria:'), 'meritoros' );
+$subtitle = __( mer_field('kupimy_kryt_subtitle', 'Przejmujemy całość lub wybrane obszary, które wymagają uporządkowania i stałego nadzoru.'), 'meritoros' );
+$items    = array_values(array_filter(array_map('trim', preg_split('/(\r?\n){2,}/', __( mer_field('kupimy_kryt_items', "obrót roczny: od ok. 1,2 mln zł\n\noprogramowanie: Comarch Optima,\n\npreferowane lokalizacje: Warszawa, Kraków, Wrocław, Łódź, Górny Śląsk, Rzeszów,\n\nw przypadku większych podmiotów analizujemy także inne lokalizacje."), 'meritoros' )))));
+$cta_pre  = __( mer_field('kupimy_kryt_cta_pre',  'Spełniasz powyższe kryteria?'), 'meritoros' );
+$btn_text = __( mer_field('kupimy_kryt_btn_text', 'Umów się na rozmowę'), 'meritoros' );
 $btn_url  = mer_field('kupimy_kryt_btn_url',  get_permalink(get_page_by_path('kontakt')));
 $photo    = mer_field('kupimy_kryt_photo');
 $photo_url = is_array($photo) ? $photo['url'] : 'https://images.unsplash.com/photo-1515187029135-18ee286d815b?w=900&q=80';
-$photo_alt = is_array($photo) ? ($photo['alt'] ?: $heading) : 'Spotkanie';
+$photo_alt = is_array($photo) ? ($photo['alt'] ?: $heading) : __('Spotkanie', 'meritoros');
 ?>
 
 <section class="py-14 md:py-20 bg-white relative">
@@ -88,8 +88,8 @@ $photo_alt = is_array($photo) ? ($photo['alt'] ?: $heading) : 'Spotkanie';
 
         <!-- Tekst pod bannerem -->
         <div class="mt-6">
-            <h2 class="text-2xl sm:text-3xl font-bold text-slate-900 leading-snug mb-3">Nie spełniasz wszystkich kryteriów?</h2>
-            <p class="text-base sm:text-lg text-slate-600 leading-relaxed">Warto się odezwać — chętnie sprawdzimy, czy widzimy przestrzeń do współpracy.</p>
+            <h2 class="text-2xl sm:text-3xl font-bold text-slate-900 leading-snug mb-3"><?php esc_html_e('Nie spełniasz wszystkich kryteriów?', 'meritoros'); ?></h2>
+            <p class="text-base sm:text-lg text-slate-600 leading-relaxed"><?php esc_html_e('Warto się odezwać — chętnie sprawdzimy, czy widzimy przestrzeń do współpracy.', 'meritoros'); ?></p>
         </div>
 
     </div>

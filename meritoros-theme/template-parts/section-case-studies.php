@@ -89,14 +89,14 @@ if ($general_url) {
     }
 
     $items[] = [
-        'client_name'  => 'Wideo ogólne',
+        'client_name'  => __('Wideo ogólne', 'meritoros'),
         'logo_html'    => '',
         'industries'   => [],
         'scope_title'  => '',
-        'scope_desc'   => mer_field('cs_vid_general_text', 'Nasi klienci cenią nas za to, że dowozimy: jakość, terminowość i spójne dane. Jako partner w obszarze księgowości przejmujemy obszary, za które odpowiadamy, i pracujemy w standardzie, który daje spokój w codziennym prowadzeniu firmy.'),
+        'scope_desc'   => __( mer_field('cs_vid_general_text', 'Nasi klienci cenią nas za to, że dowozimy: jakość, terminowość i spójne dane. Jako partner w obszarze księgowości przejmujemy obszary, za które odpowiadamy, i pracujemy w standardzie, który daje spokój w codziennym prowadzeniu firmy.'), 'meritoros' ),
         'img_url'      => mer_field('cs_vid_general_img', $thumb_url ?: 'https://images.unsplash.com/photo-1553877522-43269d4ea984?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80'),
-        'img_alt'      => 'Wideo ogólne Meritoros',
-        'video_label'  => 'Obejrzyj ogólne wideo',
+        'img_alt'      => __('Wideo ogólne Meritoros', 'meritoros'),
+        'video_label'  => __('Obejrzyj ogólne wideo', 'meritoros'),
         'video_dur'    => $yt_id ? mer_youtube_duration($yt_id) : '',
         'play_src'     => $play_src,
         'play_type'    => 'embed',
@@ -333,7 +333,7 @@ $total = count($items);
     <div class="absolute inset-0 bg-slate-900/80 backdrop-blur-sm" id="cs-vid-backdrop"></div>
     <div class="relative w-full max-w-4xl z-10">
         <button id="cs-vid-close" class="absolute -top-10 right-0 text-white/80 hover:text-white transition-colors flex items-center gap-1.5 text-sm">
-            <i data-lucide="x" class="w-5 h-5"></i> Zamknij
+            <i data-lucide="x" class="w-5 h-5"></i> <?php esc_html_e('Zamknij', 'meritoros'); ?>
         </button>
         <div id="cs-vid-embed-wrap" class="relative w-full hidden" style="padding-bottom:56.25%">
             <iframe id="cs-vid-iframe" class="absolute inset-0 w-full h-full rounded-2xl" src="" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>

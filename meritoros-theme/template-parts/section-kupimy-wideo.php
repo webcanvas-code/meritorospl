@@ -1,8 +1,8 @@
 <?php
 defined('ABSPATH') || exit;
 
-$heading  = mer_field('kupimy_wideo_heading',  'Jak wygląda sprzedaż biura rachunkowego w praktyce?');
-$desc     = mer_field('kupimy_wideo_desc',     'Jeśli chcesz lepiej zrozumieć kulisy takiego procesu, zobacz materiał, w którym omawiamy najważniejsze kwestie związane ze sprzedażą firmy usługowej i przejęciem biura rachunkowego.');
+$heading  = __( mer_field('kupimy_wideo_heading',  'Jak wygląda sprzedaż biura rachunkowego w praktyce?'), 'meritoros' );
+$desc     = __( mer_field('kupimy_wideo_desc',     'Jeśli chcesz lepiej zrozumieć kulisy takiego procesu, zobacz materiał, w którym omawiamy najważniejsze kwestie związane ze sprzedażą firmy usługowej i przejęciem biura rachunkowego.'), 'meritoros' );
 $video_url = mer_field('kupimy_wideo_url', '');
 $thumbnail = mer_field('kupimy_wideo_thumbnail');
 

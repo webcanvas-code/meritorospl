@@ -1,19 +1,19 @@
 <?php
-$label     = mer_field('buyout_label', 'Dla biur rachunkowych');
-$title     = mer_field('buyout_title', "Kupimy Biuro\nRachunkowe");
-$desc      = mer_field('buyout_desc', 'Od lat współpracujemy z biurami rachunkowymi, które stoją przed decyzją o zmianie, sprzedaży lub dalszym rozwoju.');
-$cta_text  = mer_field('buyout_cta_text', 'Wyceń wartość biura');
+$label     = __( mer_field('buyout_label', 'Dla biur rachunkowych'), 'meritoros' );
+$title     = __( mer_field('buyout_title', "Kupimy Biuro\nRachunkowe"), 'meritoros' );
+$desc      = __( mer_field('buyout_desc', 'Od lat współpracujemy z biurami rachunkowymi, które stoją przed decyzją o zmianie, sprzedaży lub dalszym rozwoju.'), 'meritoros' );
+$cta_text  = __( mer_field('buyout_cta_text', 'Wyceń wartość biura'), 'meritoros' );
 $cta_url   = mer_field('buyout_cta_url', get_permalink(get_page_by_path('kupimy-biuro-rachunkowe')));
 $bg_arr    = get_field('buyout_bg_image');
 $bg_url    = is_array($bg_arr) ? esc_url($bg_arr['url']) : 'https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=1470&q=80';
 $bg_alt    = is_array($bg_arr) ? esc_attr($bg_arr['alt']) : 'Team';
-$tech_label= mer_field('tech_label', 'Obsługujemy systemy ERP i finansowe wiodących dostawców');
+$tech_label= __( mer_field('tech_label', 'Obsługujemy systemy ERP i finansowe wiodących dostawców'), 'meritoros' );
 
 $stat_defaults = [
-    1 => ['icon' => 'trending-up',  'value' => '100%',  'label' => 'Przejrzystych warunków', 'accent' => false],
-    2 => ['icon' => 'handshake',    'value' => '20+',    'label' => 'Przejętych biur',        'accent' => false],
-    3 => ['icon' => 'clock',        'value' => '14 dni', 'label' => 'Do wstępnej wyceny',     'accent' => false],
-    4 => ['icon' => 'shield-check', 'value' => 'NDA',    'label' => 'Pełna poufność',         'accent' => true],
+    1 => ['icon' => 'trending-up',  'value' => '100%',  'label' => __('Przejrzystych warunków', 'meritoros'), 'accent' => false],
+    2 => ['icon' => 'handshake',    'value' => '20+',    'label' => __('Przejętych biur',        'meritoros'), 'accent' => false],
+    3 => ['icon' => 'clock',        'value' => '14 dni', 'label' => __('Do wstępnej wyceny',     'meritoros'), 'accent' => false],
+    4 => ['icon' => 'shield-check', 'value' => 'NDA',    'label' => __('Pełna poufność',         'meritoros'), 'accent' => true],
 ];
 $stats = [];
 for ($i = 1; $i <= 4; $i++) {

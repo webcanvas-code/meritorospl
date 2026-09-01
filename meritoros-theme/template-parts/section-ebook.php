@@ -7,11 +7,13 @@
  */
 $pid = $args['pid'] ?? get_the_ID();
 
-$label    = get_field('ebook_label',    $pid) ?: 'Darmowy materiał';
-$title    = get_field('ebook_title',    $pid) ?: 'Pobierz nasz darmowy Ebook';
-$subtitle = get_field('ebook_subtitle', $pid) ?: '';
-$desc     = get_field('ebook_desc',     $pid) ?: '';
-$btn      = get_field('ebook_btn_text', $pid) ?: 'Pobierz materiał';
+$label    = __( get_field('ebook_label',    $pid) ?: 'Darmowy materiał', 'meritoros' );
+$title    = __( get_field('ebook_title',    $pid) ?: 'Pobierz nasz darmowy Ebook', 'meritoros' );
+$subtitle_raw = get_field('ebook_subtitle', $pid) ?: '';
+$subtitle = $subtitle_raw ? __($subtitle_raw, 'meritoros') : '';
+$desc_raw = get_field('ebook_desc', $pid) ?: '';
+$desc     = $desc_raw ? __($desc_raw, 'meritoros') : '';
+$btn      = __( get_field('ebook_btn_text', $pid) ?: 'Pobierz materiał', 'meritoros' );
 
 $mockup     = get_field('ebook_mockup', $pid);
 $mockup_url = is_array($mockup) ? ($mockup['url'] ?? '') : '';
@@ -67,7 +69,7 @@ $nonce = wp_create_nonce('mer_ebook_nonce');
 
                     <p id="ebook-success" class="hidden items-center gap-2 text-[#00d084] font-semibold text-sm">
                         <i data-lucide="check-circle" class="w-5 h-5 stroke-[2]"></i>
-                        Ebook został wysłany na podany adres e-mail!
+                        <?php esc_html_e('Ebook został wysłany na podany adres e-mail!', 'meritoros'); ?>
                     </p>
                     <p id="ebook-error" class="hidden text-red-500 text-sm"></p>
                 </form>
@@ -93,6 +95,13 @@ $nonce = wp_create_nonce('mer_ebook_nonce');
 
 <?php if ($has_pdf) : ?>
 <script>
+var merEbookL10n = {
+    emailInvalid: <?php echo json_encode(__('Podaj prawidłowy adres e-mail.', 'meritoros')); ?>,
+    errorGeneric: <?php echo json_encode(__('Wystąpił błąd. Spróbuj ponownie.', 'meritoros')); ?>,
+    errorNetwork: <?php echo json_encode(__('Błąd połączenia. Spróbuj ponownie.', 'meritoros')); ?>,
+};
+</script>
+<script>
 (function () {
     var form    = document.getElementById('ebook-form');
     var emailEl = document.getElementById('ebook-email');
@@ -110,7 +119,7 @@ $nonce = wp_create_nonce('mer_ebook_nonce');
 
         var email = emailEl.value.trim();
         if (!email || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
-            error.textContent = 'Podaj prawidłowy adres e-mail.';
+            error.textContent = merEbookL10n.emailInvalid;
             error.classList.remove('hidden');
             return;
         }
@@ -133,7 +142,7 @@ $nonce = wp_create_nonce('mer_ebook_nonce');
                 success.classList.remove('hidden');
                 success.classList.add('flex');
             } else {
-                error.textContent = res.data || 'Wystąpił błąd. Spróbuj ponownie.';
+                error.textContent = res.data || merEbookL10n.errorGeneric;
                 error.classList.remove('hidden');
                 submit.disabled = false;
                 icon.classList.remove('hidden');
@@ -141,7 +150,7 @@ $nonce = wp_create_nonce('mer_ebook_nonce');
             }
         })
         .catch(function () {
-            error.textContent = 'Błąd połączenia. Spróbuj ponownie.';
+            error.textContent = merEbookL10n.errorNetwork;
             error.classList.remove('hidden');
             submit.disabled = false;
             icon.classList.remove('hidden');

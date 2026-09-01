@@ -147,6 +147,222 @@ TRANSLATIONS = {
             'Get started',
         'Zamknij menu':
             'Close menu',
+        # --- Nowe stringi: hero, case-studies, buyout ---
+        'Eksperci w księgowości.\nTechnologia i pewność\nw działaniu.':
+            'Accounting experts.\nTechnology and certainty\nin action.',
+        'Zapewniamy księgowość kadry i outsourcing procesów w standardzie, który daje firmom spokój i bezpieczeństwo.':
+            'We provide accounting, HR and process outsourcing to a standard that gives businesses peace of mind and security.',
+        'Zaufało nam ponad <span class="text-white">1200 klientów</span>':
+            'Trusted by over <span class="text-white">1,200 clients</span>',
+        'Wideo ogólne':
+            'General video',
+        'Wideo ogólne Meritoros':
+            'General Meritoros video',
+        'Obejrzyj ogólne wideo':
+            'Watch general video',
+        'Nasi klienci cenią nas za to, że dowozimy: jakość, terminowość i spójne dane. Jako partner w obszarze księgowości przejmujemy obszary, za które odpowiadamy, i pracujemy w standardzie, który daje spokój w codziennym prowadzeniu firmy.':
+            'Our clients value us for delivering: quality, timeliness and consistent data. As an accounting partner, we take ownership of the areas we are responsible for and work to a standard that brings peace of mind in day-to-day business operations.',
+        'Dla biur rachunkowych':
+            'For accounting firms',
+        "Kupimy Biuro\nRachunkowe":
+            "We'll Buy Your\nAccounting Firm",
+        'Od lat współpracujemy z biurami rachunkowymi, które stoją przed decyzją o zmianie, sprzedaży lub dalszym rozwoju.':
+            'For years we have worked with accounting firms facing a decision about change, sale or further growth.',
+        'Wyceń wartość biura':
+            'Value your firm',
+        'Obsługujemy systemy ERP i finansowe wiodących dostawców':
+            'We support ERP and financial systems from leading vendors',
+        'Przejrzystych warunków':
+            'Transparent terms',
+        'Przejętych biur':
+            'Acquired firms',
+        'Do wstępnej wyceny':
+            'To initial valuation',
+        'Pełna poufność':
+            'Full confidentiality',
+        # --- Nowe stringi: bpo-info ---
+        "Stabilne procesy. Rzetelne\ndane. Spokój zarządu.":
+            "Stable processes. Reliable\ndata. Management peace of mind.",
+        'Wspieramy większe firmy w obszarze księgowości, kadr i płac, back-office, przejmując odpowiedzialność za jakość, terminowość i ciągłość działania. Dostarczamy dane i raporty w harmonogramie dopasowanym do zarządu – tak, żeby decyzje były oparte na spójnych informacjach, a nie „gaszeniu pożarów".':
+            'We support larger companies in accounting, HR and payroll, and back-office, taking responsibility for quality, timeliness and continuity of operations. We deliver data and reports on a schedule tailored to management — so decisions are based on consistent information, not firefighting.',
+        "raportowanie zarządcze i sprawozdawcze dopasowane do potrzeb organizacji\n\ncyfrowy obieg dokumentów i uporządkowane procesy\n\npełna zastępowalność i ciągłość obsługi oraz gotowość do skalowania":
+            "management and financial reporting tailored to the organisation's needs\n\ndigital document workflow and streamlined processes\n\nfull staff substitutability, service continuity and readiness to scale",
+        "Jakość potwierdzona\nstandardami":
+            "Quality confirmed\nby standards",
+        "Ponad 170\nexpertów":
+            "Over 170\nexperts",
+        'Nagroda':
+            'Award',
+        # --- Nowe stringi: bpo-kadrowe ---
+        'Rozwiązania Kadrowe':
+            'HR Solutions',
+        'Zapewniamy wsparcie w zakresie obsługi kadrowej i naliczania wynagrodzeń. Nasze kompleksowe rozwiązania w obszarze HR i payroll, dedykowane dla dużych przedsiębiorstw, zapewniają nie tylko zgodność z przepisami prawa, ale także optymalizację procesów kadrowych. Współpracujemy zarówno z firmami, które nie posiadają własnego działu HR, jak i z organizacjami potrzebującymi wsparcia przy wybranych procesach.':
+            'We provide support in HR administration and payroll calculation. Our comprehensive HR and payroll solutions, dedicated to large enterprises, ensure not only compliance with legal regulations but also optimisation of HR processes. We work both with companies without their own HR department and with organisations needing support with selected processes.',
+        'Dlaczego BPO z nami':
+            'Why BPO with us',
+        'Sprawdź rozwiązania kadrowe':
+            'Explore HR solutions',
+        "Prowadzenie dokumentacji kadrowej\n\nNaliczanie wynagrodzeń i świadczeń\n\nObsługa umów o pracę i umów cywilnoprawnych\n\nRozliczenia z ZUS i instytucjami publicznymi\n\nSporządzanie deklaracji podatkowych\n\nKontrolowanie limitów urlopowych, terminów badań lekarskich, szkoleń BHP oraz wygasających umów\n\nReprezentowanie podczas kontroli i czynności sprawdzających\n\nZarządzanie programami PPK i PPE\n\nPlatforma pracownicza z dostępem do wniosków urlopowych i dokumentów online":
+            "Maintaining HR documentation\n\nPayroll and benefit calculation\n\nHandling employment contracts and civil law agreements\n\nSettlements with ZUS and public institutions\n\nPreparing tax declarations\n\nMonitoring leave limits, medical examination deadlines, H&S training and expiring contracts\n\nRepresentation during inspections and audit procedures\n\nManaging PPK and PPE schemes\n\nEmployee platform with access to leave requests and documents online",
+        # --- Nowe stringi: bpo-ksiegowe ---
+        'Outsourcing księgowości pozwala na znaczne obniżenie kosztów operacyjnych. Możemy dostarczyć wysokiej jakości usługi księgowe, eliminując potrzebę zatrudniania wewnętrznych ekspertów. Dzięki nowoczesnej technologii i dużej skali obsługiwanych przez nas operacji oszczędności sięgają 20-30% lub więcej w porównaniu do prowadzenia księgowości wewnętrznie. Dzięki digitalizacji obiegu dokumentów oraz sprawnym procesom możemy dostarczać raporty w czasie rzeczywistym.':
+            'Accounting outsourcing enables significant reduction of operational costs. We can deliver high-quality accounting services, eliminating the need to hire internal experts. Thanks to modern technology and the large scale of operations we handle, savings reach 20–30% or more compared to in-house accounting. Through digitisation of document workflow and efficient processes, we can deliver reports in real time.',
+        "Prowadzenie ksiąg rachunkowych\n\nObliczanie podatków i składanie deklaracji podatkowych\n\nBieżące rozliczanie wyciągów i kontrolowanie rozrachunków\n\nRaportowanie zarządcze i sprawozdawcze\n\nRaportowanie do instytucji publicznoprawnych, w tym NBP, GUS, INTRASTAT\n\nSporządzanie sprawozdań finansowych oraz deklaracji rocznych\n\nReprezentowanie podczas kontroli i czynności sprawdzających\n\nObsługa niestandardowych rozliczeń, w tym VAT OSS, CIT Estoński, SSE, VAT marża, itp.\n\nAsystowanie i wsparcie podczas audytu sprawozdania finansowego":
+            "Maintaining accounting books\n\nCalculating taxes and filing tax returns\n\nOngoing reconciliation of bank statements and settlement control\n\nManagement and financial reporting\n\nReporting to public law institutions, including NBP, GUS, INTRASTAT\n\nPreparing financial statements and annual declarations\n\nRepresentation during inspections and audit procedures\n\nHandling non-standard settlements, including VAT OSS, Estonian CIT, SEZ, margin VAT, etc.\n\nAssisting and supporting during financial statement audits",
+        # --- Nowe stringi: bpo-model ---
+        'Model współpracy':
+            'Cooperation model',
+        "Możesz powierzyć nam całość procesów księgowych lub wybrane obszary wymagające uporządkowania.\nDopasowujemy zakres wsparcia do realnej sytuacji Twojej firmy.":
+            "You can entrust us with all accounting processes or selected areas that need organising.\nWe tailor the scope of support to the actual situation of your business.",
+        'Kompleksowa obsługa':
+            'Comprehensive service',
+        'Obsługujemy proces end-to-end: od bieżącej ewidencji po zamknięcie miesiąca i raporty. Pracujesz z zespołem, który zapewnia zastępowalność i stały standard.':
+            'We manage the process end-to-end: from day-to-day bookkeeping to month-end closing and reports. You work with a team that ensures substitutability and consistent standards.',
+        "Outsourcing wybranych\nprocesów":
+            "Outsourcing of selected\nprocesses",
+        'Przejmujemy konkretne procesy i dowozimy je w ustalonym standardzie i harmonogramie. To rozwiązanie dla firm, które chcą wzmocnić wewnętrzny dział finansów bez rozbudowy etatów.':
+            'We take on specific processes and deliver them to an agreed standard and schedule. This is a solution for companies that want to strengthen their internal finance department without expanding headcount.',
+        # --- Nowe stringi: bpo-wspolpraca ---
+        'Jak wygląda bieżąca współpraca':
+            'How does ongoing cooperation work',
+        'Poznaj więcej historii':
+            'See more stories',
+        'Indywidualna organizacja pracy':
+            'Individual work organisation',
+        'W zależności od potrzeb możemy pracować:':
+            'Depending on needs, we can work:',
+        'na bieżąco – obsługując codzienne procesy księgowe lub kadrowe':
+            'on an ongoing basis — handling day-to-day accounting or HR processes',
+        'w cyklach tygodniowych':
+            'in weekly cycles',
+        'w innych ustalonych odstępach czasu':
+            'at other agreed intervals',
+        'Elastyczne zamknięcie miesiąca':
+            'Flexible month-end closing',
+        'Terminy zamknięcia miesiąca ustalamy indywidualnie z każdą firmą, uwzględniając jej wewnętrzne potrzeby raportowe oraz obowiązujące terminy podatkowe.':
+            'Month-end closing deadlines are agreed individually with each company, taking into account its internal reporting needs and applicable tax deadlines.',
+        'część firm potrzebuje raportów finansowych do 20. dnia miesiąca':
+            'some companies need financial reports by the 20th of the month',
+        'inne wymagają wyników już w 3. lub 4. dniu roboczym nowego miesiąca':
+            'others require results as early as the 3rd or 4th working day of the new month',
+        'Zakres i częstotliwość raportowania ustalamy indywidualnie z każdym klientem.':
+            'The scope and frequency of reporting is agreed individually with each client.',
+        'W standardzie klient otrzymuje:':
+            'As standard, the client receives:',
+        'rachunek zysków i strat':
+            'profit and loss statement',
+        'bilans':
+            'balance sheet',
+        'zestawienie należności i zobowiązań':
+            'receivables and payables summary',
+        # --- Nowe stringi: bpo-cyfrowa ---
+        'Umów się na konsultacje':
+            'Book a consultation',
+        # --- Nowe stringi: kupimy ---
+        'Myślisz o sprzedaży swojego biura rachunkowego?':
+            'Thinking about selling your accounting firm?',
+        'Oferujemy dwa modele współpracy: całkowitą sprzedaż biura rachunkowego albo partnerstwo kapitałowe z zachowaniem operacyjnej autonomii.':
+            'We offer two models of cooperation: a full sale of the accounting firm, or a capital partnership with retention of operational autonomy.',
+        'Właściciele biur rachunkowych zgłaszają się do nas z różnymi potrzebami. Jedni chcą całkowicie wyjść z biznesu i sprzedać firmę, inni szukają partnera, który pomoże im dalej rozwijać biuro. W Meritoros rozmawiamy o obu scenariuszach.':
+            'Owners of accounting firms come to us with different needs. Some want to exit the business completely and sell the firm; others are looking for a partner to help them continue developing their office. At Meritoros, we discuss both scenarios.',
+        'Kupimy biuro rachunkowe':
+            "We'll buy an accounting firm",
+        'Porozmawiajmy o możliwym modelu współpracy':
+            "Let's talk about a possible cooperation model",
+        'Całkowita sprzedaż biura':
+            'Full sale of the firm',
+        'Jeśli planujesz wycofanie się z prowadzenia firmy, możemy rozmawiać o przejęciu całego przedsiębiorstwa — z uwzględnieniem klientów, zespołu i ciągłości działania.':
+            'If you are planning to exit from running the business, we can discuss taking over the entire enterprise — including clients, the team and continuity of operations.',
+        'Sprzedaż części udziałów':
+            'Sale of a stake',
+        'Jeśli chcesz dalej prowadzić biuro, ale jednocześnie zyskać wsparcie większej organizacji, możemy rozmawiać o modelu partnerskim z częściowym wejściem kapitałowym Meritoros.':
+            "If you want to continue running the firm but also gain the support of a larger organisation, we can discuss a partnership model with Meritoros's partial capital entry.",
+        'Od czego zależy wycena biura rachunkowego?':
+            'What determines the valuation of an accounting firm?',
+        'Wartość biura rachunkowego nie zależy wyłącznie od przychodów. Znaczenie mają także m.in. struktura klientów, rentowność, organizacja procesów, używane systemy, stabilność zespołu oraz stopień zależności firmy od właściciela. Dlatego każdą rozmowę zaczynamy od zrozumienia realnej sytuacji biznesu.':
+            'The value of an accounting firm does not depend solely on revenue. Also important are, among other things, client structure, profitability, process organisation, systems used, team stability and the degree of owner dependency. That is why we always begin each conversation by understanding the real situation of the business.',
+        'Na wycenę wpływają m.in.:':
+            'Factors affecting valuation include:',
+        "poziom i powtarzalność przychodów,\n\nrentowność biura,\n\nstruktura klientów i ryzyko koncentracji,\n\norganizacja pracy, technologia i stopień poukładania procesów.":
+            "level and repeatability of revenue,\n\nfirm profitability,\n\nclient structure and concentration risk,\n\nwork organisation, technology and degree of process maturity.",
+        'W przypadku modelu partnerskiego':
+            'In the case of the partnership model',
+        'Model partnerski kierujemy przede wszystkim do biur, które:':
+            'The partnership model is primarily aimed at firms that:',
+        'Co zyskujesz jako Partner Meritoros?':
+            'What do you gain as a Meritoros Partner?',
+        "dostęp do automatyzacji i robotyzacji procesów\n\nwsparcie w digitalizacji i porządkowaniu operacji\n\ndostęp do wiedzy ekspertów i partnerów merytorycznych\n\nwsparcie HR i rekrutacyjne\n\nwsparcie marketingowe i sprzedażowe,\n\nwewnętrzne standardy jakości i audytu\n\nmożliwość dalszego rozwoju w strukturach większej organizacji":
+            "access to process automation and robotics\n\nsupport in digitisation and streamlining operations\n\naccess to expert knowledge and substantive partners\n\nHR and recruitment support\n\nmarketing and sales support\n\ninternal quality and audit standards\n\nthe opportunity for further growth within the structures of a larger organisation",
+        'Kalkulator orientacyjnej wyceny biura rachunkowego':
+            'Indicative valuation calculator for an accounting firm',
+        'Sprawdź wycenę':
+            'Check valuation',
+        'Spełniasz wszystkie kryteria?':
+            'Do you meet all the criteria?',
+        'Warto się odezwać — chętnie sprawdzimy, czy widzimy przestrzeń do współpracy.':
+            "It is worth getting in touch — we will be happy to check whether we see scope for cooperation.",
+        'Umów się na rozmowę':
+            'Book a call',
+        'Obecnie najczęściej rozmawiamy z biurami, które spełniają poniższe kryteria:':
+            'We currently most often talk with firms that meet the following criteria:',
+        'Przejmujemy całość lub wybrane obszary, które wymagają uporządkowania i stałego nadzoru.':
+            'We take over all or selected areas that require organising and ongoing supervision.',
+        "obrót roczny: od ok. 1,2 mln zł\n\noprogramowanie: Comarch Optima,\n\npreferowane lokalizacje: Warszawa, Kraków, Wrocław, Łódź, Górny Śląsk, Rzeszów,\n\nw przypadku większych podmiotów analizujemy także inne lokalizacje.":
+            "annual revenue: from approx. PLN 1.2M\n\nsoftware: Comarch Optima,\n\npreferred locations: Warsaw, Kraków, Wrocław, Łódź, Upper Silesia, Rzeszów,\n\nfor larger entities we also analyse other locations.",
+        'Spełniasz powyższe kryteria?':
+            'Do you meet the above criteria?',
+        'Spotkanie':
+            'Meeting',
+        'Nie spełniasz wszystkich kryteriów?':
+            "Don't meet all the criteria?",
+        'Jak wygląda sprzedaż biura rachunkowego w praktyce?':
+            'What does selling an accounting firm look like in practice?',
+        'Jeśli chcesz lepiej zrozumieć kulisy takiego procesu, zobacz materiał, w którym omawiamy najważniejsze kwestie związane ze sprzedażą firmy usługowej i przejęciem biura rachunkowego.':
+            'If you would like to better understand the background of such a process, watch the material in which we discuss the most important issues related to selling a service firm and acquiring an accounting firm.',
+        'Pierwsza rozmowa jest niezobowiązująca. Ustalimy, jaki model ma sens i czy jest przestrzeń do współpracy.':
+            'The first conversation is non-binding. We will establish which model makes sense and whether there is scope for cooperation.',
+        # --- Nowe stringi: hk-video, media-video, ebook ---
+        'Wczytaj więcej':
+            'Load more',
+        'Historie klientów':
+            "Clients' stories",
+        'Posłuchaj, co mówią nasi klienci':
+            'Hear what our clients say',
+        'Czytaj historię':
+            'Read story',
+        'Jak z MINIMALNYM ryzykiem zacząć własny biznes? Sebastian Rafalik wspomina Meritoros.':
+            'How to start your own business with MINIMAL risk? Sebastian Rafalik recalls Meritoros.',
+        'Sebastian Rafalik (POL–FRA) w wywiadzie dla „Zaprojektuj Swoje Życie" mówi o tym, jak uporządkowanie księgowości i kadr z Meritoros pomogło mu odblokować skalowanie biznesu i zdjąć z siebie „wąskie gardło".':
+            'Sebastian Rafalik (POL–FRA) in an interview for "Design Your Life" talks about how organising accounting and HR with Meritoros helped him unlock business scaling and remove the "bottleneck".',
+        'Posłuchaj wywiadu':
+            'Listen to the interview',
+        'Obejrzyj materiał':
+            'Watch the video',
+        'Darmowy materiał':
+            'Free resource',
+        'Pobierz nasz darmowy Ebook':
+            'Download our free Ebook',
+        'Pobierz materiał':
+            'Download resource',
+        'Ebook został wysłany na podany adres e-mail!':
+            'The ebook has been sent to the provided email address!',
+        # --- Nowe stringi: fr-hero, fr-dlaczego, single ---
+        'Fundacja rodzinna':
+            'Family foundation',
+        'księgowość pod kontrolą':
+            'accounting under control',
+        'Fundacja rodzinna wymaga szczególnej staranności w obszarze księgowości i podatków. Zapewniamy rozwiązania, które chronią interes fundatorów i wspierają długoterminową strukturę majątkową.':
+            'A family foundation requires particular diligence in accounting and tax matters. We provide solutions that protect the interests of founders and support long-term asset structures.',
+        'Dlaczego Meritoros':
+            'Why Meritoros',
+        'Mamy wdrożone procedury kontroli jakości i weryfikacji danych. Dostarczamy informacje finansowe kompletne, spójne i użyteczne dla zarządu.':
+            'We have implemented quality control and data verification procedures. We deliver financial information that is complete, consistent and useful for management.',
+        'Ponad 170 ekspertów':
+            'Over 170 experts',
+        'Jakość potwierdzona standardami. Mamy wdrożone procedury kontroli jakości i weryfikacji danych. Dostarczamy informacje finansowe kompletne, spójne i użyteczne dla zarządu.':
+            'Quality confirmed by standards. We have implemented quality control and data verification procedures. We deliver financial information that is complete, consistent and useful for management.',
+        'Powrót do':
+            'Back to',
     },
     'uk': {
         'Bezpieczeństwo\ni compliance':
@@ -289,6 +505,220 @@ TRANSLATIONS = {
             'Розпочати',
         'Zamknij menu':
             'Закрити меню',
+        # --- Нові рядки: hero, case-studies, buyout ---
+        'Eksperci w księgowości.\nTechnologia i pewność\nw działaniu.':
+            'Експерти з бухгалтерії.\nТехнології та впевненість\nу дії.',
+        'Zapewniamy księgowość kadry i outsourcing procesów w standardzie, który daje firmom spokój i bezpieczeństwo.':
+            'Ми надаємо бухгалтерські, кадрові та аутсорсингові послуги на рівні, що забезпечує компаніям спокій і безпеку.',
+        'Zaufało nam ponad <span class="text-white">1200 klientów</span>':
+            'Нам довіряють понад <span class="text-white">1200 клієнтів</span>',
+        'Wideo ogólne':
+            'Загальне відео',
+        'Wideo ogólne Meritoros':
+            'Загальне відео Meritoros',
+        'Obejrzyj ogólne wideo':
+            'Переглянути загальне відео',
+        'Nasi klienci cenią nas za to, że dowozimy: jakość, terminowość i spójne dane. Jako partner w obszarze księgowości przejmujemy obszary, za które odpowiadamy, i pracujemy w standardzie, który daje spokój w codziennym prowadzeniu firmy.':
+            'Наші клієнти цінують нас за те, що ми доставляємо: якість, вчасність і узгоджені дані. Як партнер у сфері бухгалтерії ми беремо відповідальність за підпорядковані нам ділянки й працюємо на стандарті, що забезпечує спокій у щоденному веденні бізнесу.',
+        'Dla biur rachunkowych':
+            'Для бухгалтерських бюро',
+        "Kupimy Biuro\nRachunkowe":
+            "Купимо бухгалтерське\nбюро",
+        'Od lat współpracujemy z biurami rachunkowymi, które stoją przed decyzją o zmianie, sprzedaży lub dalszym rozwoju.':
+            'Роками ми співпрацюємо з бухгалтерськими бюро, які стоять перед рішенням про зміну, продаж або подальший розвиток.',
+        'Wyceń wartość biura':
+            'Оцініть вартість бюро',
+        'Obsługujemy systemy ERP i finansowe wiodących dostawców':
+            'Ми обслуговуємо ERP та фінансові системи провідних постачальників',
+        'Przejrzystych warunków':
+            'Прозорих умов',
+        'Przejętych biur':
+            'Придбаних бюро',
+        'Do wstępnej wyceny':
+            'До попередньої оцінки',
+        'Pełna poufność':
+            'Повна конфіденційність',
+        # --- Нові рядки: bpo-info ---
+        "Stabilne procesy. Rzetelne\ndane. Spokój zarządu.":
+            "Стабільні процеси. Достовірні\nдані. Спокій керівництва.",
+        'Wspieramy większe firmy w obszarze księgowości, kadr i płac, back-office, przejmując odpowiedzialność za jakość, terminowość i ciągłość działania. Dostarczamy dane i raporty w harmonogramie dopasowanym do zarządu – tak, żeby decyzje były oparte na spójnych informacjach, a nie „gaszeniu pożarów".':
+            'Ми підтримуємо великі компанії у сфері бухгалтерії, кадрів і нарахування заробітної плати, беручи відповідальність за якість, вчасність та безперервність роботи. Надаємо дані та звіти за графіком, погодженим з керівництвом, — щоб рішення ґрунтувалися на узгодженій інформації, а не на «гасінні пожеж».',
+        "raportowanie zarządcze i sprawozdawcze dopasowane do potrzeb organizacji\n\ncyfrowy obieg dokumentów i uporządkowane procesy\n\npełna zastępowalność i ciągłość obsługi oraz gotowość do skalowania":
+            "управлінська та фінансова звітність, адаптована до потреб організації\n\nцифровий документообіг і впорядковані процеси\n\nповна взаємозамінність і безперервність обслуговування та готовність до масштабування",
+        "Jakość potwierdzona\nstandardami":
+            "Якість, підтверджена\nстандартами",
+        "Ponad 170\nexpertów":
+            "Понад 170\nексперти",
+        'Nagroda':
+            'Нагорода',
+        # --- Нові рядки: bpo-kadrowe ---
+        'Rozwiązania Kadrowe':
+            'Кадрові рішення',
+        'Zapewniamy wsparcie w zakresie obsługi kadrowej i naliczania wynagrodzeń. Nasze kompleksowe rozwiązania w obszarze HR i payroll, dedykowane dla dużych przedsiębiorstw, zapewniają nie tylko zgodność z przepisami prawa, ale także optymalizację procesów kadrowych. Współpracujemy zarówno z firmami, które nie posiadają własnego działu HR, jak i z organizacjami potrzebującymi wsparcia przy wybranych procesach.':
+            'Ми надаємо підтримку в галузі кадрового обліку та нарахування заробітної плати. Наші комплексні рішення в сфері HR та payroll, призначені для великих підприємств, забезпечують не лише відповідність законодавству, але й оптимізацію кадрових процесів. Ми співпрацюємо як з компаніями без власного відділу HR, так і з організаціями, що потребують підтримки в окремих процесах.',
+        'Dlaczego BPO z nami':
+            'Чому BPO з нами',
+        'Sprawdź rozwiązania kadrowe':
+            'Ознайомтесь з кадровими рішеннями',
+        "Prowadzenie dokumentacji kadrowej\n\nNaliczanie wynagrodzeń i świadczeń\n\nObsługa umów o pracę i umów cywilnoprawnych\n\nRozliczenia z ZUS i instytucjami publicznymi\n\nSporządzanie deklaracji podatkowych\n\nKontrolowanie limitów urlopowych, terminów badań lekarskich, szkoleń BHP oraz wygasających umów\n\nReprezentowanie podczas kontroli i czynności sprawdzających\n\nZarządzanie programami PPK i PPE\n\nPlatforma pracownicza z dostępem do wniosków urlopowych i dokumentów online":
+            "Ведення кадрової документації\n\nНарахування заробітної плати та пільг\n\nОбробка трудових та цивільно-правових договорів\n\nРозрахунки з ZUS та державними установами\n\nПідготовка податкових декларацій\n\nКонтроль лімітів відпусток, термінів медоглядів, охорони праці та закінчення договорів\n\nПредставництво під час перевірок та ревізійних дій\n\nУправління програмами PPK та PPE\n\nПлатформа для співробітників з доступом до заяв на відпустку та документів онлайн",
+        # --- Нові рядки: bpo-ksiegowe ---
+        'Outsourcing księgowości pozwala na znaczne obniżenie kosztów operacyjnych. Możemy dostarczyć wysokiej jakości usługi księgowe, eliminując potrzebę zatrudniania wewnętrznych ekspertów. Dzięki nowoczesnej technologii i dużej skali obsługiwanych przez nas operacji oszczędności sięgają 20-30% lub więcej w porównaniu do prowadzenia księgowości wewnętrznie. Dzięki digitalizacji obiegu dokumentów oraz sprawnym procesom możemy dostarczać raporty w czasie rzeczywistym.':
+            'Аутсорсинг бухгалтерії дозволяє значно знизити операційні витрати. Ми можемо надавати високоякісні бухгалтерські послуги, виключаючи потребу у найманні внутрішніх фахівців. Завдяки сучасним технологіям і великому масштабу операцій, що ми ведемо, економія сягає 20–30% і більше порівняно з веденням бухгалтерії власними силами. Завдяки оцифруванню документообігу та ефективним процесам ми можемо надавати звіти в режимі реального часу.',
+        "Prowadzenie ksiąg rachunkowych\n\nObliczanie podatków i składanie deklaracji podatkowych\n\nBieżące rozliczanie wyciągów i kontrolowanie rozrachunków\n\nRaportowanie zarządcze i sprawozdawcze\n\nRaportowanie do instytucji publicznoprawnych, w tym NBP, GUS, INTRASTAT\n\nSporządzanie sprawozdań finansowych oraz deklaracji rocznych\n\nReprezentowanie podczas kontroli i czynności sprawdzających\n\nObsługa niestandardowych rozliczeń, w tym VAT OSS, CIT Estoński, SSE, VAT marża, itp.\n\nAsystowanie i wsparcie podczas audytu sprawozdania finansowego":
+            "Ведення бухгалтерських книг\n\nОбчислення податків та подання податкових декларацій\n\nПоточне узгодження виписок та контроль розрахунків\n\nУправлінська та фінансова звітність\n\nЗвітність перед публічно-правовими установами, зокрема NBP, GUS, INTRASTAT\n\nСкладання фінансових звітів та річних декларацій\n\nПредставництво під час перевірок та ревізійних дій\n\nОбробка нестандартних розрахунків, зокрема VAT OSS, Estonian CIT, SEZ, маржинальний VAT тощо\n\nДопомога та підтримка під час аудиту фінансових звітів",
+        # --- Нові рядки: bpo-model ---
+        'Model współpracy':
+            'Модель співпраці',
+        "Możesz powierzyć nam całość procesów księgowych lub wybrane obszary wymagające uporządkowania.\nDopasowujemy zakres wsparcia do realnej sytuacji Twojej firmy.":
+            "Ви можете довірити нам усі бухгалтерські процеси або окремі ділянки, що потребують впорядкування.\nМи адаптуємо обсяг підтримки до реальної ситуації у вашій компанії.",
+        'Kompleksowa obsługa':
+            'Комплексне обслуговування',
+        'Obsługujemy proces end-to-end: od bieżącej ewidencji po zamknięcie miesiąca i raporty. Pracujesz z zespołem, który zapewnia zastępowalność i stały standard.':
+            'Ми ведемо процес від початку до кінця: від поточного обліку до закриття місяця та звітів. Ви працюєте з командою, яка забезпечує взаємозамінність та постійний стандарт.',
+        "Outsourcing wybranych\nprocesów":
+            "Аутсорсинг окремих\nпроцесів",
+        'Przejmujemy konkretne procesy i dowozimy je w ustalonym standardzie i harmonogramie. To rozwiązanie dla firm, które chcą wzmocnić wewnętrzny dział finansów bez rozbudowy etatów.':
+            'Ми беремо на себе конкретні процеси і виконуємо їх на погодженому стандарті та графіку. Це рішення для компаній, які хочуть зміцнити внутрішній фінансовий відділ без розширення штату.',
+        # --- Нові рядки: bpo-wspolpraca ---
+        'Jak wygląda bieżąca współpraca':
+            'Як виглядає поточна співпраця',
+        'Poznaj więcej historii':
+            'Дізнайтесь більше історій',
+        'Indywidualna organizacja pracy':
+            'Індивідуальна організація роботи',
+        'W zależności od potrzeb możemy pracować:':
+            'Залежно від потреб ми можемо працювати:',
+        'na bieżąco – obsługując codzienne procesy księgowe lub kadrowe':
+            'на постійній основі — обслуговуючи щоденні бухгалтерські або кадрові процеси',
+        'w cyklach tygodniowych':
+            'у тижневих циклах',
+        'w innych ustalonych odstępach czasu':
+            'в інших погоджених проміжках часу',
+        'Elastyczne zamknięcie miesiąca':
+            'Гнучке закриття місяця',
+        'Terminy zamknięcia miesiąca ustalamy indywidualnie z każdą firmą, uwzględniając jej wewnętrzne potrzeby raportowe oraz obowiązujące terminy podatkowe.':
+            'Терміни закриття місяця встановлюються індивідуально з кожною компанією з урахуванням її внутрішніх потреб у звітності та чинних податкових термінів.',
+        'część firm potrzebuje raportów finansowych do 20. dnia miesiąca':
+            'деяким компаніям потрібні фінансові звіти до 20-го числа місяця',
+        'inne wymagają wyników już w 3. lub 4. dniu roboczym nowego miesiąca':
+            'інші вимагають результатів вже на 3-й або 4-й робочий день нового місяця',
+        'Zakres i częstotliwość raportowania ustalamy indywidualnie z każdym klientem.':
+            'Обсяг і частота звітності встановлюються індивідуально з кожним клієнтом.',
+        'W standardzie klient otrzymuje:':
+            'У стандартному пакеті клієнт отримує:',
+        'rachunek zysków i strat':
+            'звіт про прибутки та збитки',
+        'bilans':
+            'баланс',
+        'zestawienie należności i zobowiązań':
+            'відомість дебіторської та кредиторської заборгованості',
+        # --- Нові рядки: bpo-cyfrowa ---
+        'Umów się na konsultacje':
+            'Запишіться на консультацію',
+        # --- Нові рядки: kupimy ---
+        'Myślisz o sprzedaży swojego biura rachunkowego?':
+            'Думаєте про продаж вашого бухгалтерського бюро?',
+        'Oferujemy dwa modele współpracy: całkowitą sprzedaż biura rachunkowego albo partnerstwo kapitałowe z zachowaniem operacyjnej autonomii.':
+            'Ми пропонуємо дві моделі співпраці: повний продаж бухгалтерського бюро або капітальне партнерство зі збереженням операційної автономії.',
+        'Właściciele biur rachunkowych zgłaszają się do nas z różnymi potrzebami. Jedni chcą całkowicie wyjść z biznesu i sprzedać firmę, inni szukają partnera, który pomoże im dalej rozwijać biuro. W Meritoros rozmawiamy o obu scenariuszach.':
+            'Власники бухгалтерських бюро звертаються до нас з різними потребами. Одні хочуть повністю вийти з бізнесу і продати фірму, інші шукають партнера, який допоможе їм далі розвивати бюро. У Meritoros ми обговорюємо обидва сценарії.',
+        'Kupimy biuro rachunkowe':
+            'Купимо бухгалтерське бюро',
+        'Porozmawiajmy o możliwym modelu współpracy':
+            'Поговоримо про можливу модель співпраці',
+        'Całkowita sprzedaż biura':
+            'Повний продаж бюро',
+        'Jeśli planujesz wycofanie się z prowadzenia firmy, możemy rozmawiać o przejęciu całego przedsiębiorstwa — z uwzględnieniem klientów, zespołu i ciągłości działania.':
+            'Якщо ви плануєте вийти з ведення бізнесу, ми можемо обговорити придбання всього підприємства — з урахуванням клієнтів, команди та безперервності діяльності.',
+        'Sprzedaż części udziałów':
+            'Продаж частки',
+        'Jeśli chcesz dalej prowadzić biuro, ale jednocześnie zyskać wsparcie większej organizacji, możemy rozmawiać o modelu partnerskim z częściowym wejściem kapitałowym Meritoros.':
+            'Якщо ви хочете продовжувати вести бюро, але водночас отримати підтримку більшої організації, ми можемо обговорити партнерську модель з частковим капітальним входженням Meritoros.',
+        'Od czego zależy wycena biura rachunkowego?':
+            'Від чого залежить оцінка бухгалтерського бюро?',
+        'Wartość biura rachunkowego nie zależy wyłącznie od przychodów. Znaczenie mają także m.in. struktura klientów, rentowność, organizacja procesów, używane systemy, stabilność zespołu oraz stopień zależności firmy od właściciela. Dlatego każdą rozmowę zaczynamy od zrozumienia realnej sytuacji biznesu.':
+            'Вартість бухгалтерського бюро залежить не лише від доходів. Важливу роль відіграють також структура клієнтів, рентабельність, організація процесів, використовувані системи, стабільність команди та ступінь залежності фірми від власника. Тому кожну розмову ми починаємо з розуміння реального стану бізнесу.',
+        'Na wycenę wpływają m.in.:':
+            'На оцінку впливають, зокрема:',
+        "poziom i powtarzalność przychodów,\n\nrentowność biura,\n\nstruktura klientów i ryzyko koncentracji,\n\norganizacja pracy, technologia i stopień poukładania procesów.":
+            "рівень і повторюваність доходів,\n\nрентабельність бюро,\n\nструктура клієнтів і ризик концентрації,\n\nорганізація роботи, технологія та ступінь зрілості процесів.",
+        'W przypadku modelu partnerskiego':
+            'У випадку партнерської моделі',
+        'Model partnerski kierujemy przede wszystkim do biur, które:':
+            'Партнерська модель орієнтована перш за все на бюро, які:',
+        'Co zyskujesz jako Partner Meritoros?':
+            'Що ви отримуєте як Партнер Meritoros?',
+        "dostęp do automatyzacji i robotyzacji procesów\n\nwsparcie w digitalizacji i porządkowaniu operacji\n\ndostęp do wiedzy ekspertów i partnerów merytorycznych\n\nwsparcie HR i rekrutacyjne\n\nwsparcie marketingowe i sprzedażowe,\n\nwewnętrzne standardy jakości i audytu\n\nmożliwość dalszego rozwoju w strukturach większej organizacji":
+            "доступ до автоматизації та роботизації процесів\n\nпідтримка в оцифровуванні та впорядкуванні операцій\n\nдоступ до знань експертів і предметних партнерів\n\nпідтримка HR та рекрутинг\n\nмаркетингова та збутова підтримка\n\nвнутрішні стандарти якості та аудиту\n\nможливість подальшого розвитку в структурах більшої організації",
+        'Kalkulator orientacyjnej wyceny biura rachunkowego':
+            'Орієнтовний калькулятор оцінки бухгалтерського бюро',
+        'Sprawdź wycenę':
+            'Перевірити оцінку',
+        'Spełniasz wszystkie kryteria?':
+            'Чи відповідаєте ви всім критеріям?',
+        'Warto się odezwać — chętnie sprawdzimy, czy widzimy przestrzeń do współpracy.':
+            "Варто зв'язатися — ми з радістю перевіримо, чи бачимо ми простір для співпраці.",
+        'Umów się na rozmowę':
+            'Запишіться на розмову',
+        'Obecnie najczęściej rozmawiamy z biurami, które spełniają poniższe kryteria:':
+            'Зараз ми найчастіше спілкуємось з бюро, що відповідають таким критеріям:',
+        'Przejmujemy całość lub wybrane obszary, które wymagają uporządkowania i stałego nadzoru.':
+            'Ми беремо на себе всі або вибрані ділянки, які потребують впорядкування та постійного контролю.',
+        "obrót roczny: od ok. 1,2 mln zł\n\noprogramowanie: Comarch Optima,\n\npreferowane lokalizacje: Warszawa, Kraków, Wrocław, Łódź, Górny Śląsk, Rzeszów,\n\nw przypadku większych podmiotów analizujemy także inne lokalizacje.":
+            "річний оборот: від прибл. 1,2 млн злотих\n\nпрограмне забезпечення: Comarch Optima,\n\nпріоритетні локації: Варшава, Краків, Вроцлав, Лодзь, Верхня Сілезія, Жешув,\n\nдля більших суб'єктів ми також аналізуємо інші локації.",
+        'Spełniasz powyższe kryteria?':
+            'Чи відповідаєте ви вказаним критеріям?',
+        'Nie spełniasz wszystkich kryteriów?':
+            'Не відповідаєте всім критеріям?',
+        'Jak wygląda sprzedaż biura rachunkowego w praktyce?':
+            'Як виглядає продаж бухгалтерського бюро на практиці?',
+        'Jeśli chcesz lepiej zrozumieć kulisy takiego procesu, zobacz materiał, w którym omawiamy najważniejsze kwestie związane ze sprzedażą firmy usługowej i przejęciem biura rachunkowego.':
+            'Якщо ви хочете краще зрозуміти закулісся такого процесу, перегляньте матеріал, у якому ми обговорюємо найважливіші питання, пов\u2019язані з продажем сервісної компанії та придбанням бухгалтерського бюро.',
+        'Pierwsza rozmowa jest niezobowiązująca. Ustalimy, jaki model ma sens i czy jest przestrzeń do współpracy.':
+            'Перша розмова є необов\u2019язковою. Ми визначимо, яка модель має сенс і чи є простір для співпраці.',
+        # --- Нові рядки: hk-video, media-video, ebook ---
+        'Wczytaj więcej':
+            'Завантажити більше',
+        'Historie klientów':
+            'Історії клієнтів',
+        'Posłuchaj, co mówią nasi klienci':
+            'Послухайте, що кажуть наші клієнти',
+        'Czytaj historię':
+            'Читати історію',
+        'Jak z MINIMALNYM ryzykiem zacząć własny biznes? Sebastian Rafalik wspomina Meritoros.':
+            'Як розпочати власний бізнес з МІНІМАЛЬНИМ ризиком? Себастьян Рафалік згадує Meritoros.',
+        'Sebastian Rafalik (POL–FRA) w wywiadzie dla „Zaprojektuj Swoje Życie" mówi o tym, jak uporządkowanie księgowości i kadr z Meritoros pomogło mu odblokować skalowanie biznesu i zdjąć z siebie „wąskie gardło".':
+            'Себастьян Рафалік (POL–FRA) в інтерв\'ю для «Zaprojektuj Swoje Życie» розповідає про те, як впорядкування бухгалтерії та кадрів з Meritoros допомогло йому розблокувати масштабування бізнесу і позбутися «вузького місця».',
+        'Posłuchaj wywiadu':
+            'Послухати інтерв\u2019ю',
+        'Obejrzyj materiał':
+            'Переглянути матеріал',
+        'Darmowy materiał':
+            'Безкоштовний матеріал',
+        'Pobierz nasz darmowy Ebook':
+            'Завантажте наш безкоштовний Ebook',
+        'Pobierz materiał':
+            'Завантажити матеріал',
+        'Ebook został wysłany na podany adres e-mail!':
+            'Ebook надіслано на вказану адресу електронної пошти!',
+        # --- Нові рядки: fr-hero, fr-dlaczego, single ---
+        'Fundacja rodzinna':
+            'Сімейний фонд',
+        'księgowość pod kontrolą':
+            'бухгалтерія під контролем',
+        'Fundacja rodzinna wymaga szczególnej staranności w obszarze księgowości i podatków. Zapewniamy rozwiązania, które chronią interes fundatorów i wspierają długoterminową strukturę majątkową.':
+            'Сімейний фонд вимагає особливої ретельності у сфері бухгалтерії та податків. Ми надаємо рішення, які захищають інтереси засновників і підтримують довгострокову майнову структуру.',
+        'Dlaczego Meritoros':
+            'Чому Meritoros',
+        'Mamy wdrożone procedury kontroli jakości i weryfikacji danych. Dostarczamy informacje finansowe kompletne, spójne i użyteczne dla zarządu.':
+            'Ми впровадили процедури контролю якості та перевірки даних. Надаємо фінансову інформацію, яка є повною, узгодженою та корисною для керівництва.',
+        'Ponad 170 ekspertów':
+            'Понад 170 експертів',
+        'Jakość potwierdzona standardami. Mamy wdrożone procedury kontroli jakości i weryfikacji danych. Dostarczamy informacje finansowe kompletne, spójne i użyteczne dla zarządu.':
+            'Якість, підтверджена стандартами. Ми впровадили процедури контролю якості та перевірки даних. Надаємо фінансову інформацію, яка є повною, узгодженою та корисною для керівництва.',
+        'Powrót do':
+            'Повернутися до',
     },
     'ru_RU': {
         'Bezpieczeństwo\ni compliance':
@@ -431,6 +861,220 @@ TRANSLATIONS = {
             'Начать',
         'Zamknij menu':
             'Закрыть меню',
+        # --- Новые строки: hero, case-studies, buyout ---
+        'Eksperci w księgowości.\nTechnologia i pewność\nw działaniu.':
+            'Эксперты в бухгалтерии.\nТехнологии и уверенность\nв действии.',
+        'Zapewniamy księgowość kadry i outsourcing procesów w standardzie, który daje firmom spokój i bezpieczeństwo.':
+            'Мы предоставляем бухгалтерские, кадровые услуги и аутсорсинг процессов на уровне, который обеспечивает компаниям спокойствие и безопасность.',
+        'Zaufało nam ponad <span class="text-white">1200 klientów</span>':
+            'Нам доверяют более <span class="text-white">1200 клиентов</span>',
+        'Wideo ogólne':
+            'Общее видео',
+        'Wideo ogólne Meritoros':
+            'Общее видео Meritoros',
+        'Obejrzyj ogólne wideo':
+            'Посмотреть общее видео',
+        'Nasi klienci cenią nas za to, że dowozimy: jakość, terminowość i spójne dane. Jako partner w obszarze księgowości przejmujemy obszary, za które odpowiadamy, i pracujemy w standardzie, który daje spokój w codziennym prowadzeniu firmy.':
+            'Наши клиенты ценят нас за то, что мы доставляем: качество, своевременность и согласованные данные. Как партнёр в области бухгалтерии мы берём ответственность за подотчётные нам участки и работаем на стандарте, который обеспечивает спокойствие в повседневном ведении бизнеса.',
+        'Dla biur rachunkowych':
+            'Для бухгалтерских бюро',
+        "Kupimy Biuro\nRachunkowe":
+            "Купим бухгалтерское\nбюро",
+        'Od lat współpracujemy z biurami rachunkowymi, które stoją przed decyzją o zmianie, sprzedaży lub dalszym rozwoju.':
+            'На протяжении многих лет мы сотрудничаем с бухгалтерскими бюро, которые стоят перед решением об изменении, продаже или дальнейшем развитии.',
+        'Wyceń wartość biura':
+            'Оцените стоимость бюро',
+        'Obsługujemy systemy ERP i finansowe wiodących dostawców':
+            'Мы обслуживаем ERP и финансовые системы ведущих поставщиков',
+        'Przejrzystych warunków':
+            'Прозрачных условий',
+        'Przejętych biur':
+            'Приобретённых бюро',
+        'Do wstępnej wyceny':
+            'До предварительной оценки',
+        'Pełna poufność':
+            'Полная конфиденциальность',
+        # --- Новые строки: bpo-info ---
+        "Stabilne procesy. Rzetelne\ndane. Spokój zarządu.":
+            "Стабильные процессы. Достоверные\nданные. Спокойствие руководства.",
+        'Wspieramy większe firmy w obszarze księgowości, kadr i płac, back-office, przejmując odpowiedzialność za jakość, terminowość i ciągłość działania. Dostarczamy dane i raporty w harmonogramie dopasowanym do zarządu – tak, żeby decyzje były oparte na spójnych informacjach, a nie „gaszeniu pożarów".':
+            'Мы поддерживаем крупные компании в области бухгалтерии, кадров и расчёта зарплаты, беря ответственность за качество, своевременность и непрерывность работы. Мы предоставляем данные и отчёты по графику, согласованному с руководством, — чтобы решения основывались на согласованной информации, а не на «тушении пожаров».',
+        "raportowanie zarządcze i sprawozdawcze dopasowane do potrzeb organizacji\n\ncyfrowy obieg dokumentów i uporządkowane procesy\n\npełna zastępowalność i ciągłość obsługi oraz gotowość do skalowania":
+            "управленческая и финансовая отчётность, адаптированная к потребностям организации\n\nцифровой документооборот и упорядоченные процессы\n\nполная взаимозаменяемость и непрерывность обслуживания, а также готовность к масштабированию",
+        "Jakość potwierdzona\nstandardami":
+            "Качество, подтверждённое\nстандартами",
+        "Ponad 170\nexpertów":
+            "Более 170\nэкспертов",
+        'Nagroda':
+            'Награда',
+        # --- Новые строки: bpo-kadrowe ---
+        'Rozwiązania Kadrowe':
+            'Кадровые решения',
+        'Zapewniamy wsparcie w zakresie obsługi kadrowej i naliczania wynagrodzeń. Nasze kompleksowe rozwiązania w obszarze HR i payroll, dedykowane dla dużych przedsiębiorstw, zapewniają nie tylko zgodność z przepisami prawa, ale także optymalizację procesów kadrowych. Współpracujemy zarówno z firmami, które nie posiadają własnego działu HR, jak i z organizacjami potrzebującymi wsparcia przy wybranych procesach.':
+            'Мы оказываем поддержку в области кадрового учёта и расчёта заработной платы. Наши комплексные решения в сфере HR и payroll, предназначенные для крупных предприятий, обеспечивают не только соответствие законодательству, но и оптимизацию кадровых процессов. Мы сотрудничаем как с компаниями без собственного отдела HR, так и с организациями, нуждающимися в поддержке отдельных процессов.',
+        'Dlaczego BPO z nami':
+            'Почему BPO с нами',
+        'Sprawdź rozwiązania kadrowe':
+            'Изучите кадровые решения',
+        "Prowadzenie dokumentacji kadrowej\n\nNaliczanie wynagrodzeń i świadczeń\n\nObsługa umów o pracę i umów cywilnoprawnych\n\nRozliczenia z ZUS i instytucjami publicznymi\n\nSporządzanie deklaracji podatkowych\n\nKontrolowanie limitów urlopowych, terminów badań lekarskich, szkoleń BHP oraz wygasających umów\n\nReprezentowanie podczas kontroli i czynności sprawdzających\n\nZarządzanie programami PPK i PPE\n\nPlatforma pracownicza z dostępem do wniosków urlopowych i dokumentów online":
+            "Ведение кадровой документации\n\nНачисление заработной платы и льгот\n\nОбработка трудовых и гражданско-правовых договоров\n\nРасчёты с ZUS и государственными учреждениями\n\nПодготовка налоговых деклараций\n\nКонтроль лимитов отпусков, сроков медосмотров, охраны труда и истекающих договоров\n\nПредставительство при проверках и ревизионных действиях\n\nУправление программами PPK и PPE\n\nПлатформа для сотрудников с доступом к заявлениям на отпуск и документам онлайн",
+        # --- Новые строки: bpo-ksiegowe ---
+        'Outsourcing księgowości pozwala na znaczne obniżenie kosztów operacyjnych. Możemy dostarczyć wysokiej jakości usługi księgowe, eliminując potrzebę zatrudniania wewnętrznych ekspertów. Dzięki nowoczesnej technologii i dużej skali obsługiwanych przez nas operacji oszczędności sięgają 20-30% lub więcej w porównaniu do prowadzenia księgowości wewnętrznie. Dzięki digitalizacji obiegu dokumentów oraz sprawnym procesom możemy dostarczać raporty w czasie rzeczywistym.':
+            'Аутсорсинг бухгалтерии позволяет значительно снизить операционные затраты. Мы можем предоставлять высококачественные бухгалтерские услуги, исключая необходимость найма внутренних специалистов. Благодаря современным технологиям и большому масштабу обрабатываемых нами операций экономия достигает 20–30% и более по сравнению с ведением бухгалтерии собственными силами. Благодаря оцифровке документооборота и эффективным процессам мы можем предоставлять отчёты в режиме реального времени.',
+        "Prowadzenie ksiąg rachunkowych\n\nObliczanie podatków i składanie deklaracji podatkowych\n\nBieżące rozliczanie wyciągów i kontrolowanie rozrachunków\n\nRaportowanie zarządcze i sprawozdawcze\n\nRaportowanie do instytucji publicznoprawnych, w tym NBP, GUS, INTRASTAT\n\nSporządzanie sprawozdań finansowych oraz deklaracji rocznych\n\nReprezentowanie podczas kontroli i czynności sprawdzających\n\nObsługa niestandardowych rozliczeń, w tym VAT OSS, CIT Estoński, SSE, VAT marża, itp.\n\nAsystowanie i wsparcie podczas audytu sprawozdania finansowego":
+            "Ведение бухгалтерских книг\n\nИсчисление налогов и подача налоговых деклараций\n\nТекущее согласование выписок и контроль расчётов\n\nУправленческая и финансовая отчётность\n\nОтчётность перед публично-правовыми учреждениями, включая NBP, GUS, INTRASTAT\n\nСоставление финансовой отчётности и годовых деклараций\n\nПредставительство при проверках и ревизионных действиях\n\nОбработка нестандартных расчётов, включая VAT OSS, Estonian CIT, SEZ, маржинальный VAT и т.д.\n\nАссистирование и поддержка при аудите финансовой отчётности",
+        # --- Новые строки: bpo-model ---
+        'Model współpracy':
+            'Модель сотрудничества',
+        "Możesz powierzyć nam całość procesów księgowych lub wybrane obszary wymagające uporządkowania.\nDopasowujemy zakres wsparcia do realnej sytuacji Twojej firmy.":
+            "Вы можете доверить нам все бухгалтерские процессы или отдельные участки, требующие упорядочивания.\nМы адаптируем объём поддержки к реальной ситуации в вашей компании.",
+        'Kompleksowa obsługa':
+            'Комплексное обслуживание',
+        'Obsługujemy proces end-to-end: od bieżącej ewidencji po zamknięcie miesiąca i raporty. Pracujesz z zespołem, który zapewnia zastępowalność i stały standard.':
+            'Мы ведём процесс от начала до конца: от текущего учёта до закрытия месяца и отчётов. Вы работаете с командой, которая обеспечивает взаимозаменяемость и постоянный стандарт.',
+        "Outsourcing wybranych\nprocesów":
+            "Аутсорсинг отдельных\nпроцессов",
+        'Przejmujemy konkretne procesy i dowozimy je w ustalonym standardzie i harmonogramie. To rozwiązanie dla firm, które chcą wzmocnić wewnętrzny dział finansów bez rozbudowy etatów.':
+            'Мы берём на себя конкретные процессы и выполняем их в согласованном стандарте и графике. Это решение для компаний, которые хотят укрепить внутренний финансовый отдел без расширения штата.',
+        # --- Новые строки: bpo-wspolpraca ---
+        'Jak wygląda bieżąca współpraca':
+            'Как выглядит текущее сотрудничество',
+        'Poznaj więcej historii':
+            'Узнайте больше историй',
+        'Indywidualna organizacja pracy':
+            'Индивидуальная организация работы',
+        'W zależności od potrzeb możemy pracować:':
+            'В зависимости от потребностей мы можем работать:',
+        'na bieżąco – obsługując codzienne procesy księgowe lub kadrowe':
+            'на постоянной основе — обслуживая ежедневные бухгалтерские или кадровые процессы',
+        'w cyklach tygodniowych':
+            'в недельных циклах',
+        'w innych ustalonych odstępach czasu':
+            'в других согласованных интервалах',
+        'Elastyczne zamknięcie miesiąca':
+            'Гибкое закрытие месяца',
+        'Terminy zamknięcia miesiąca ustalamy indywidualnie z każdą firmą, uwzględniając jej wewnętrzne potrzeby raportowe oraz obowiązujące terminy podatkowe.':
+            'Сроки закрытия месяца устанавливаются индивидуально с каждой компанией с учётом её внутренних потребностей в отчётности и действующих налоговых сроков.',
+        'część firm potrzebuje raportów finansowych do 20. dnia miesiąca':
+            'некоторым компаниям нужны финансовые отчёты до 20-го числа месяца',
+        'inne wymagają wyników już w 3. lub 4. dniu roboczym nowego miesiąca':
+            'другие требуют результатов уже на 3-й или 4-й рабочий день нового месяца',
+        'Zakres i częstotliwość raportowania ustalamy indywidualnie z każdym klientem.':
+            'Объём и частота отчётности устанавливаются индивидуально с каждым клиентом.',
+        'W standardzie klient otrzymuje:':
+            'В стандартном пакете клиент получает:',
+        'rachunek zysków i strat':
+            'отчёт о прибылях и убытках',
+        'bilans':
+            'баланс',
+        'zestawienie należności i zobowiązań':
+            'ведомость дебиторской и кредиторской задолженности',
+        # --- Новые строки: bpo-cyfrowa ---
+        'Umów się na konsultacje':
+            'Запишитесь на консультацию',
+        # --- Новые строки: kupimy ---
+        'Myślisz o sprzedaży swojego biura rachunkowego?':
+            'Думаете о продаже вашего бухгалтерского бюро?',
+        'Oferujemy dwa modele współpracy: całkowitą sprzedaż biura rachunkowego albo partnerstwo kapitałowe z zachowaniem operacyjnej autonomii.':
+            'Мы предлагаем две модели сотрудничества: полную продажу бухгалтерского бюро или капитальное партнёрство с сохранением операционной автономии.',
+        'Właściciele biur rachunkowych zgłaszają się do nas z różnymi potrzebami. Jedni chcą całkowicie wyjść z biznesu i sprzedać firmę, inni szukają partnera, który pomoże im dalej rozwijać biuro. W Meritoros rozmawiamy o obu scenariuszach.':
+            'Владельцы бухгалтерских бюро обращаются к нам с разными потребностями. Одни хотят полностью выйти из бизнеса и продать фирму, другие ищут партнёра, который поможет им продолжать развивать бюро. В Meritoros мы обсуждаем оба сценария.',
+        'Kupimy biuro rachunkowe':
+            'Купим бухгалтерское бюро',
+        'Porozmawiajmy o możliwym modelu współpracy':
+            'Поговорим о возможной модели сотрудничества',
+        'Całkowita sprzedaż biura':
+            'Полная продажа бюро',
+        'Jeśli planujesz wycofanie się z prowadzenia firmy, możemy rozmawiać o przejęciu całego przedsiębiorstwa — z uwzględnieniem klientów, zespołu i ciągłości działania.':
+            'Если вы планируете выйти из ведения бизнеса, мы можем обсудить приобретение всего предприятия — с учётом клиентов, команды и непрерывности деятельности.',
+        'Sprzedaż części udziałów':
+            'Продажа доли',
+        'Jeśli chcesz dalej prowadzić biuro, ale jednocześnie zyskać wsparcie większej organizacji, możemy rozmawiać o modelu partnerskim z częściowym wejściem kapitałowym Meritoros.':
+            'Если вы хотите продолжать вести бюро, но при этом получить поддержку более крупной организации, мы можем обсудить партнёрскую модель с частичным капитальным вхождением Meritoros.',
+        'Od czego zależy wycena biura rachunkowego?':
+            'От чего зависит оценка бухгалтерского бюро?',
+        'Wartość biura rachunkowego nie zależy wyłącznie od przychodów. Znaczenie mają także m.in. struktura klientów, rentowność, organizacja procesów, używane systemy, stabilność zespołu oraz stopień zależności firmy od właściciela. Dlatego każdą rozmowę zaczynamy od zrozumienia realnej sytuacji biznesu.':
+            'Стоимость бухгалтерского бюро зависит не только от доходов. Важную роль играют также структура клиентов, рентабельность, организация процессов, используемые системы, стабильность команды и степень зависимости фирмы от владельца. Поэтому каждый разговор мы начинаем с понимания реального положения дел в бизнесе.',
+        'Na wycenę wpływają m.in.:':
+            'На оценку влияют, в частности:',
+        "poziom i powtarzalność przychodów,\n\nrentowność biura,\n\nstruktura klientów i ryzyko koncentracji,\n\norganizacja pracy, technologia i stopień poukładania procesów.":
+            "уровень и повторяемость доходов,\n\nрентабельность бюро,\n\nструктура клиентов и риск концентрации,\n\nорганизация работы, технологии и степень зрелости процессов.",
+        'W przypadku modelu partnerskiego':
+            'В случае партнёрской модели',
+        'Model partnerski kierujemy przede wszystkim do biur, które:':
+            'Партнёрская модель ориентирована прежде всего на бюро, которые:',
+        'Co zyskujesz jako Partner Meritoros?':
+            'Что вы получаете как Партнёр Meritoros?',
+        "dostęp do automatyzacji i robotyzacji procesów\n\nwsparcie w digitalizacji i porządkowaniu operacji\n\ndostęp do wiedzy ekspertów i partnerów merytorycznych\n\nwsparcie HR i rekrutacyjne\n\nwsparcie marketingowe i sprzedażowe,\n\nwewnętrzne standardy jakości i audytu\n\nmożliwość dalszego rozwoju w strukturach większej organizacji":
+            "доступ к автоматизации и роботизации процессов\n\nподдержка в оцифровке и упорядочивании операций\n\nдоступ к знаниям экспертов и предметных партнёров\n\nHR и рекрутинговая поддержка\n\nмаркетинговая и сбытовая поддержка\n\nвнутренние стандарты качества и аудита\n\nвозможность дальнейшего развития в структурах более крупной организации",
+        'Kalkulator orientacyjnej wyceny biura rachunkowego':
+            'Ориентировочный калькулятор оценки бухгалтерского бюро',
+        'Sprawdź wycenę':
+            'Проверить оценку',
+        'Spełniasz wszystkie kryteria?':
+            'Соответствуете ли вы всем критериям?',
+        'Warto się odezwać — chętnie sprawdzimy, czy widzimy przestrzeń do współpracy.':
+            'Стоит обратиться — мы с удовольствием проверим, видим ли мы пространство для сотрудничества.',
+        'Umów się na rozmowę':
+            'Запишитесь на разговор',
+        'Obecnie najczęściej rozmawiamy z biurami, które spełniają poniższe kryteria:':
+            'В настоящее время мы чаще всего разговариваем с бюро, которые соответствуют следующим критериям:',
+        'Przejmujemy całość lub wybrane obszary, które wymagają uporządkowania i stałego nadzoru.':
+            'Мы берём на себя все или выбранные участки, которые требуют упорядочивания и постоянного контроля.',
+        "obrót roczny: od ok. 1,2 mln zł\n\noprogramowanie: Comarch Optima,\n\npreferowane lokalizacje: Warszawa, Kraków, Wrocław, Łódź, Górny Śląsk, Rzeszów,\n\nw przypadku większych podmiotów analizujemy także inne lokalizacje.":
+            "годовой оборот: от прибл. 1,2 млн злотых\n\nпрограммное обеспечение: Comarch Optima,\n\nпредпочтительные локации: Варшава, Краков, Вроцлав, Лодзь, Верхняя Силезия, Жешув,\n\nдля более крупных субъектов мы также анализируем другие локации.",
+        'Spełniasz powyższe kryteria?':
+            'Соответствуете ли вы указанным критериям?',
+        'Nie spełniasz wszystkich kryteriów?':
+            'Не соответствуете всем критериям?',
+        'Jak wygląda sprzedaż biura rachunkowego w praktyce?':
+            'Как выглядит продажа бухгалтерского бюро на практике?',
+        'Jeśli chcesz lepiej zrozumieć kulisy takiego procesu, zobacz materiał, w którym omawiamy najważniejsze kwestie związane ze sprzedażą firmy usługowej i przejęciem biura rachunkowego.':
+            'Если вы хотите лучше понять закулисье такого процесса, посмотрите материал, в котором мы обсуждаем наиболее важные вопросы, связанные с продажей сервисной компании и приобретением бухгалтерского бюро.',
+        'Pierwsza rozmowa jest niezobowiązująca. Ustalimy, jaki model ma sens i czy jest przestrzeń do współpracy.':
+            'Первый разговор ни к чему не обязывает. Мы установим, какая модель имеет смысл и есть ли пространство для сотрудничества.',
+        # --- Новые строки: hk-video, media-video, ebook ---
+        'Wczytaj więcej':
+            'Загрузить ещё',
+        'Historie klientów':
+            'Истории клиентов',
+        'Posłuchaj, co mówią nasi klienci':
+            'Послушайте, что говорят наши клиенты',
+        'Czytaj historię':
+            'Читать историю',
+        'Jak z MINIMALNYM ryzykiem zacząć własny biznes? Sebastian Rafalik wspomina Meritoros.':
+            'Как начать собственный бизнес с МИНИМАЛЬНЫМ риском? Себастьян Рафалик вспоминает Meritoros.',
+        'Sebastian Rafalik (POL–FRA) w wywiadzie dla „Zaprojektuj Swoje Życie" mówi o tym, jak uporządkowanie księgowości i kadr z Meritoros pomogło mu odblokować skalowanie biznesu i zdjąć z siebie „wąskie gardło".':
+            'Себастьян Рафалик (POL–FRA) в интервью для «Zaprojektuj Swoje Życie» рассказывает о том, как упорядочение бухгалтерии и кадров с Meritoros помогло ему разблокировать масштабирование бизнеса и снять с себя «узкое место».',
+        'Posłuchaj wywiadu':
+            'Послушать интервью',
+        'Obejrzyj materiał':
+            'Смотреть материал',
+        'Darmowy materiał':
+            'Бесплатный материал',
+        'Pobierz nasz darmowy Ebook':
+            'Скачайте наш бесплатный Ebook',
+        'Pobierz materiał':
+            'Скачать материал',
+        'Ebook został wysłany na podany adres e-mail!':
+            'Ebook отправлен на указанный адрес электронной почты!',
+        # --- Новые строки: fr-hero, fr-dlaczego, single ---
+        'Fundacja rodzinna':
+            'Семейный фонд',
+        'księgowość pod kontrolą':
+            'бухгалтерия под контролем',
+        'Fundacja rodzinna wymaga szczególnej staranności w obszarze księgowości i podatków. Zapewniamy rozwiązania, które chronią interes fundatorów i wspierają długoterminową strukturę majątkową.':
+            'Семейный фонд требует особой тщательности в области бухгалтерии и налогов. Мы предоставляем решения, которые защищают интересы учредителей и поддерживают долгосрочную имущественную структуру.',
+        'Dlaczego Meritoros':
+            'Почему Meritoros',
+        'Mamy wdrożone procedury kontroli jakości i weryfikacji danych. Dostarczamy informacje finansowe kompletne, spójne i użyteczne dla zarządu.':
+            'У нас внедрены процедуры контроля качества и проверки данных. Мы предоставляем финансовую информацию, которая является полной, согласованной и полезной для руководства.',
+        'Ponad 170 ekspertów':
+            'Более 170 экспертов',
+        'Jakość potwierdzona standardami. Mamy wdrożone procedury kontroli jakości i weryfikacji danych. Dostarczamy informacje finansowe kompletne, spójne i użyteczne dla zarządu.':
+            'Качество, подтверждённое стандартами. У нас внедрены процедуры контроля качества и проверки данных. Мы предоставляем финансовую информацию, которая является полной, согласованной и полезной для руководства.',
+        'Powrót do':
+            'Вернуться к',
     },
 }
 

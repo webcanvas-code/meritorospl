@@ -1,7 +1,7 @@
 <?php
-$btn_text     = mer_field('hk_vid_load_more', 'Wczytaj więcej');
-$section_label = mer_field('hk_vid_label', 'Historie klientów');
-$section_title = mer_field('hk_vid_title', 'Posłuchaj, co mówią nasi klienci');
+$btn_text     = __( mer_field('hk_vid_load_more', 'Wczytaj więcej'), 'meritoros' );
+$section_label = __( mer_field('hk_vid_label', 'Historie klientów'), 'meritoros' );
+$section_title = __( mer_field('hk_vid_title', 'Posłuchaj, co mówią nasi klienci'), 'meritoros' );
 $per_page = 6;
 
 $cs_posts = get_posts([
@@ -137,7 +137,7 @@ if ($total === 0) return;
 
                 <a href="<?php echo esc_url($vid['story_url']); ?>"
                    class="mer-btn mer-btn--primary mt-auto inline-flex items-center justify-center gap-2 px-5 py-2.5 rounded-full bg-[#00d084] hover:bg-[#00b872] text-white text-sm font-semibold transition-colors duration-200 group/link">
-                    Czytaj historię
+                    <?php esc_html_e('Czytaj historię', 'meritoros'); ?>
                     <i data-lucide="arrow-right" class="w-4 h-4 transition-transform duration-200 group-hover/link:translate-x-1"></i>
                 </a>
 
@@ -181,7 +181,7 @@ foreach ($videos as $vid) {
     <div class="absolute inset-0 bg-slate-900/80 backdrop-blur-sm" id="hk-vid-backdrop"></div>
     <div class="relative w-full max-w-4xl z-10">
         <button id="hk-vid-close" class="absolute -top-10 right-0 text-white/80 hover:text-white transition-colors flex items-center gap-1.5 text-sm">
-            <i data-lucide="x" class="w-5 h-5"></i> Zamknij
+            <i data-lucide="x" class="w-5 h-5"></i> <?php esc_html_e('Zamknij', 'meritoros'); ?>
         </button>
         <div id="hk-vid-embed-wrap" class="relative w-full hidden" style="padding-bottom:56.25%">
             <iframe id="hk-vid-iframe" class="absolute inset-0 w-full h-full rounded-2xl" src="" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
