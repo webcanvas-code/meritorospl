@@ -30,7 +30,7 @@ for ($i = 1; $i <= 3; $i++) {
     $d = $card_defaults[$i - 1];
     $cards[] = [
         'icon' => is_array($g) && !empty($g['icon']) ? $g['icon'] : $d['icon'],
-        'text' => is_array($g) && !empty($g['text']) ? $g['text'] : $d['text'],
+        'text' => is_array($g) && !empty($g['text']) ? __($g['text'], 'meritoros') : $d['text'],
     ];
 }
 ?>

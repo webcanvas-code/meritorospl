@@ -6,9 +6,12 @@ $_kar_orig_id = apply_filters('wpml_object_id', $_kar_page_id, get_post_type(), 
 
 $items = [];
 for ($i = 1; $i <= 8; $i++) {
-    $item = get_field("kar_faq_{$i}") ?: ($_kar_orig_id !== $_kar_page_id ? get_field("kar_faq_{$i}", $_kar_orig_id) : null);
+    $item = get_field("kar_faq_{$i}");
     if (!empty($item['question'])) {
-        $items[] = $item;
+        $items[] = [
+            'question' => __($item['question'], 'meritoros'),
+            'answer'   => __($item['answer'] ?? '', 'meritoros'),
+        ];
     }
 }
 
