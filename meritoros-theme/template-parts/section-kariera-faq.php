@@ -1,5 +1,5 @@
 <?php
-$title = mer_field('kar_faq_title', __('Najczęściej zadawane pytania', 'meritoros'));
+$title = __( mer_field('kar_faq_title', 'Najczęściej zadawane pytania'), 'meritoros' );
 
 $_kar_page_id = get_the_ID();
 $_kar_orig_id = apply_filters('wpml_object_id', $_kar_page_id, get_post_type(), true, apply_filters('wpml_default_language', null));
