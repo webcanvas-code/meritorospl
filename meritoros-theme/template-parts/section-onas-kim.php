@@ -1,15 +1,15 @@
 <?php
-$kim_title = mer_field('onas_kim_title', 'Kim jesteśmy');
-$kim_text  = mer_field('onas_kim_text', 'Od ponad 20 lat wspieramy firmy w prowadzeniu księgowości, kadr i procesów finansowych. Pracujemy w modelu zespołowym i procesowym, z jasno określoną odpowiedzialnością, standaryzacją działań i nadzorem nad jakością. Łączymy doświadczenie z nowoczesnymi technologiami oraz automatyzacją, aby zapewnić naszym klientom rzetelne dane, bezpieczeństwo operacyjne i stabilność, której potrzebują, by rozwijać swój biznes.');
+$kim_title = __( mer_field('onas_kim_title', 'Kim jesteśmy'), 'meritoros' );
+$kim_text  = __( mer_field('onas_kim_text', 'Od ponad 20 lat wspieramy firmy w prowadzeniu księgowości, kadr i procesów finansowych. Pracujemy w modelu zespołowym i procesowym, z jasno określoną odpowiedzialnością, standaryzacją działań i nadzorem nad jakością. Łączymy doświadczenie z nowoczesnymi technologiami oraz automatyzacją, aby zapewnić naszym klientom rzetelne dane, bezpieczeństwo operacyjne i stabilność, której potrzebują, by rozwijać swój biznes.'), 'meritoros' );
 
 // 6 stats — each is a group with 'icon' and 'text'
 $stat_defaults = [
-    ['icon' => 'monitor',    'text' => "Wewnętrzny\ndział IT i RPA"],
-    ['icon' => 'globe',      'text' => "Certyfikacja ISO\n9001 i ISO/IEC\n27001"],
-    ['icon' => 'database',   'text' => "Ubezpieczenie\ndo 3 mln PLN"],
-    ['icon' => 'user-check', 'text' => "Ponad 170\nexpertów na\npokładzie"],
-    ['icon' => 'users',      'text' => "Ponad 1200\nklientów"],
-    ['icon' => 'map-pin',    'text' => "7 oddziałów\nw Polsce oraz\noddziały wirtualne"],
+    ['icon' => 'monitor',    'text' => __("Wewnętrzny\ndział IT i RPA",                    'meritoros')],
+    ['icon' => 'globe',      'text' => __("Certyfikacja ISO\n9001 i ISO/IEC\n27001",        'meritoros')],
+    ['icon' => 'database',   'text' => __("Ubezpieczenie\ndo 3 mln PLN",                   'meritoros')],
+    ['icon' => 'user-check', 'text' => __("Ponad 170\nexpertów na\npokładzie",              'meritoros')],
+    ['icon' => 'users',      'text' => __("Ponad 1200\nklientów",                           'meritoros')],
+    ['icon' => 'map-pin',    'text' => __("7 oddziałów\nw Polsce oraz\noddziały wirtualne", 'meritoros')],
 ];
 
 $stats = [];
@@ -18,7 +18,7 @@ for ($i = 1; $i <= 6; $i++) {
     if (!empty($s['icon']) || !empty($s['text'])) {
         $stats[] = [
             'icon' => !empty($s['icon']) ? $s['icon'] : $stat_defaults[$i - 1]['icon'],
-            'text' => !empty($s['text']) ? $s['text'] : $stat_defaults[$i - 1]['text'],
+            'text' => !empty($s['text']) ? __($s['text'], 'meritoros') : $stat_defaults[$i - 1]['text'],
         ];
     } else {
         $stats[] = $stat_defaults[$i - 1];

@@ -1,42 +1,42 @@
 <?php
-$w_label = mer_field('onas_w_label', 'Nasze Wartości');
-$w_title = mer_field('onas_w_title', "Dlaczego Meritoros to spokój\nw Twoim biznesie?");
+$w_label = __( mer_field('onas_w_label', 'Nasze Wartości'), 'meritoros' );
+$w_title = __( mer_field('onas_w_title', "Dlaczego Meritoros to spokój\nw Twoim biznesie?"), 'meritoros' );
 
 // Card 1 — white
 $w1_icon  = mer_field('onas_w1_icon',  'infinity');
-$w1_title = mer_field('onas_w1_title', "Skala i ciągłość\nobsługi");
-$w1_text  = mer_field('onas_w1_text',  'Pracujemy zespołowo i procesowo, dzięki czemu obsługa nie zależy od jednej osoby. Zapewniamy zastępowalność i ciągłość pracy – bez przestojów.');
+$w1_title = __( mer_field('onas_w1_title', "Skala i ciągłość\nobsługi"), 'meritoros' );
+$w1_text  = __( mer_field('onas_w1_text',  'Pracujemy zespołowo i procesowo, dzięki czemu obsługa nie zależy od jednej osoby. Zapewniamy zastępowalność i ciągłość pracy – bez przestojów.'), 'meritoros' );
 
 // Card 2 — image
 $w2_image = get_field('onas_w2_image');
-$w2_hover = mer_field('onas_w2_hover', 'Współpracuj z profesjonalistami');
+$w2_hover = __( mer_field('onas_w2_hover', 'Współpracuj z profesjonalistami'), 'meritoros' );
 $w2_url   = mer_field('onas_w2_url',   home_url('/kontakt/'));
 
 // Card 3 — dark
 $w3_icon  = mer_field('onas_w3_icon',  'shield-check');
-$w3_title = mer_field('onas_w3_title', "Bezpieczeństwo\ni compliance");
-$w3_text  = mer_field('onas_w3_text',  'Działamy zgodnie z obowiązującymi regulacjami i standardami bezpieczeństwa danych. Dbamy o poufność informacji oraz jasne zasady współpracy - bez "skrótów" i ryzyk.');
+$w3_title = __( mer_field('onas_w3_title', "Bezpieczeństwo\ni compliance"), 'meritoros' );
+$w3_text  = __( mer_field('onas_w3_text',  'Działamy zgodnie z obowiązującymi regulacjami i standardami bezpieczeństwa danych. Dbamy o poufność informacji oraz jasne zasady współpracy - bez "skrótów" i ryzyk.'), 'meritoros' );
 $w3_badge = get_field('onas_w3_badge');
 
 // Card 4 — green (accent)
 $w4_icon  = mer_field('onas_w4_icon',  'bot');
-$w4_title = mer_field('onas_w4_title', "Technologia\ni automatyzacja");
-$w4_text  = mer_field('onas_w4_text',  'Wykorzystujemy narzędzia i automatyzację (RPA), które porządkują obieg dokumentów, ograniczają ryzyko błędów i usprawniają pracę zespołów.');
+$w4_title = __( mer_field('onas_w4_title', "Technologia\ni automatyzacja"), 'meritoros' );
+$w4_text  = __( mer_field('onas_w4_text',  'Wykorzystujemy narzędzia i automatyzację (RPA), które porządkują obieg dokumentów, ograniczają ryzyko błędów i usprawniają pracę zespołów.'), 'meritoros' );
 
 // Card 5 — awards (loga pobierane tak samo jak na homepage — ze strony BPO)
-$w5_title  = mer_field('onas_w5_title', 'Nagrody i wyróżnienia');
-$w5_text   = mer_field('onas_w5_text',  'Wyróżnienia są efektem tego, jak rozwijamy Meritoros: konsekwentnie i procesowo. Trzymamy standard, który ma działać w praktyce - codziennie.');
+$w5_title  = __( mer_field('onas_w5_title', 'Nagrody i wyróżnienia'), 'meritoros' );
+$w5_text   = __( mer_field('onas_w5_text',  'Wyróżnienia są efektem tego, jak rozwijamy Meritoros: konsekwentnie i procesowo. Trzymamy standard, który ma działać w praktyce - codziennie.'), 'meritoros' );
 $_bpo_pages = get_posts(['post_type' => 'page', 'meta_key' => '_wp_page_template', 'meta_value' => 'page-bpo.php', 'posts_per_page' => 1, 'fields' => 'ids']);
 $_bpo_id    = !empty($_bpo_pages) ? $_bpo_pages[0] : 0;
 
 // Card 6 — quality
 $w6_icon  = mer_field('onas_w6_icon',  'award');
-$w6_title = mer_field('onas_w6_title', "Jakość potwierdzona\nstandardami");
-$w6_text  = mer_field('onas_w6_text',  'Mamy wdrożone procedury kontroli jakości i weryfikacji danych. Dostarczamy spójne dane dla zarządu.');
+$w6_title = __( mer_field('onas_w6_title', "Jakość potwierdzona\nstandardami"), 'meritoros' );
+$w6_text  = __( mer_field('onas_w6_text',  'Mamy wdrożone procedury kontroli jakości i weryfikacji danych. Dostarczamy spójne dane dla zarządu.'), 'meritoros' );
 $w6_badge = get_field('onas_w6_badge');
 
 $w2_img_url = is_array($w2_image) ? esc_url($w2_image['url']) : '';
-$w2_img_alt = is_array($w2_image) ? esc_attr($w2_image['alt'] ?: 'Zespół Meritoros') : 'Zespół Meritoros';
+$w2_img_alt = is_array($w2_image) ? esc_attr($w2_image['alt'] ?: __('Zespół Meritoros', 'meritoros')) : __('Zespół Meritoros', 'meritoros');
 
 $_img         = get_template_directory_uri() . '/images/';
 $_w5_l1       = ($_bpo_id ? get_field('bpo_awards_logo1', $_bpo_id) : null) ?: ['url' => $_img . 'forbes.png',      'alt' => 'Forbes'];

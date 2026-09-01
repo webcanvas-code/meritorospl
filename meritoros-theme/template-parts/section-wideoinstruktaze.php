@@ -6,9 +6,9 @@
  */
 $pid = $args['pid'] ?? get_the_ID();
 
-$label = get_field('wi_label', $pid) ?: 'Wideo';
-$title = get_field('wi_title', $pid) ?: 'Wideoinstruktaże';
-$desc  = get_field('wi_desc',  $pid) ?: 'Praktyczne instruktaże wideo z zakresu księgowości, podatków i kadr.';
+$label = __( get_field('wi_label', $pid) ?: 'Wideo',                'meritoros' );
+$title = __( get_field('wi_title', $pid) ?: 'Wideoinstruktaże',    'meritoros' );
+$desc  = __( get_field('wi_desc',  $pid) ?: 'Praktyczne instruktaże wideo z zakresu księgowości, podatków i kadr.', 'meritoros' );
 
 $cards    = [];
 $per_page = 3;

@@ -1,11 +1,11 @@
 <?php
-$title = mer_field('ri_info_title', "O nas");
+$title = __( mer_field('ri_info_title', "O nas"), 'meritoros' );
 
 $subs = [
-    ['title' => mer_field('ri_sub1_title', 'Profil działalności'),       'text' => mer_field('ri_sub1_text', ''), 'list' => false],
-    ['title' => mer_field('ri_sub2_title', 'Skala działalności'),        'text' => mer_field('ri_sub2_text', ''), 'list' => false],
-    ['title' => mer_field('ri_sub3_title', 'Zasięg i grupa kapitałowa'), 'text' => mer_field('ri_sub3_text', ''), 'list' => false, 'companies' => array_values(array_filter(array_map('trim', preg_split('/\r?\n/', get_field('ri_sub3_companies') ?: "Taxaide Sp. z o.o. z siedzibą we Wrocławiu, KRS: 0000811046\nBluematica Sp. z o.o. z siedzibą w Rzeszowie, KRS: 0000994219"))))],
-    ['title' => mer_field('ri_sub4_title', 'Strategia rozwoju'),         'text' => mer_field('ri_sub4_text', ''), 'list' => false],
+    ['title' => __( mer_field('ri_sub1_title', 'Profil działalności'),       'meritoros' ), 'text' => mer_field('ri_sub1_text', ''), 'list' => false],
+    ['title' => __( mer_field('ri_sub2_title', 'Skala działalności'),        'meritoros' ), 'text' => mer_field('ri_sub2_text', ''), 'list' => false],
+    ['title' => __( mer_field('ri_sub3_title', 'Zasięg i grupa kapitałowa'), 'meritoros' ), 'text' => mer_field('ri_sub3_text', ''), 'list' => false, 'companies' => array_values(array_filter(array_map('trim', preg_split('/\r?\n/', get_field('ri_sub3_companies') ?: "Taxaide Sp. z o.o. z siedzibą we Wrocławiu, KRS: 0000811046\nBluematica Sp. z o.o. z siedzibą w Rzeszowie, KRS: 0000994219"))))],
+    ['title' => __( mer_field('ri_sub4_title', 'Strategia rozwoju'),         'meritoros' ), 'text' => mer_field('ri_sub4_text', ''), 'list' => false],
 ];
 
 $photo     = get_field('ri_info_photo');
@@ -13,14 +13,14 @@ $photo_url = is_array($photo) ? esc_url($photo['url']) : 'https://images.unsplas
 $photo_alt = is_array($photo) ? esc_attr($photo['alt'] ?: 'Meritoros SA') : 'Meritoros SA';
 
 $stats_raw = [
-    get_field('ri_stat_1') ?: ['value' => '2004',  'label' => 'Początek działalności', 'sublabel' => ''],
-    get_field('ri_stat_2') ?: ['value' => '1200+', 'label' => 'Klientów',              'sublabel' => ''],
-    get_field('ri_stat_3') ?: ['value' => '180+',  'label' => 'Specjalistów',          'sublabel' => ''],
-    get_field('ri_stat_4') ?: ['value' => '7',     'label' => 'lokalizacji',           'sublabel' => '(ale ciągle rośniemy)'],
+    get_field('ri_stat_1') ?: ['value' => '2004',  'label' => __('Początek działalności', 'meritoros'), 'sublabel' => ''],
+    get_field('ri_stat_2') ?: ['value' => '1200+', 'label' => __('Klientów',              'meritoros'), 'sublabel' => ''],
+    get_field('ri_stat_3') ?: ['value' => '180+',  'label' => __('Specjalistów',          'meritoros'), 'sublabel' => ''],
+    get_field('ri_stat_4') ?: ['value' => '7',     'label' => __('lokalizacji',           'meritoros'), 'sublabel' => __('(ale ciągle rośniemy)', 'meritoros')],
 ];
 
-$award_title = mer_field('ri_award_title', 'Nagrody i wyróżnienia');
-$award_text  = mer_field('ri_award_text',  'Wyróżnienia są efektem tego, jak rozwijamy Meritoros: konsekwentnie i procesowo. Trzymamy standard, który ma działać w praktyce – codziennie.');
+$award_title = __( mer_field('ri_award_title', 'Nagrody i wyróżnienia'), 'meritoros' );
+$award_text  = __( mer_field('ri_award_text',  'Wyróżnienia są efektem tego, jak rozwijamy Meritoros: konsekwentnie i procesowo. Trzymamy standard, który ma działać w praktyce – codziennie.'), 'meritoros' );
 ?>
 
 <section id="ri-info" class="py-10 md:py-14 bg-white relative overflow-hidden">

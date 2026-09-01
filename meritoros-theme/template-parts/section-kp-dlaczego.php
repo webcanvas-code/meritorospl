@@ -1,24 +1,23 @@
 <?php
 $_page_id = get_the_ID();
-$_orig_id = apply_filters('wpml_object_id', $_page_id, get_post_type(), true, apply_filters('wpml_default_language', null));
 
-$title = mer_field('kp_dlaczego_title', "Dlaczego firmy wybierają nasze\nrozwiązania kadrowe");
+$title = __( mer_field('kp_dlaczego_title', "Dlaczego firmy wybierają nasze\nrozwiązania kadrowe"), 'meritoros' );
 
 $card_defaults = [
-    ['icon' => 'award',        'title' => "Jakość potwierdzona\nstandardami",      'text' => 'Realizujemy usługi w oparciu o certyfikat ISO 9001'],
-    ['icon' => 'file-text',    'title' => "Nowoczesne i elastyczne\npodejście",     'text' => 'Przygotowujemy raporty finansowe dopasowane do potrzeb zarządu i wspierające podejmowanie decyzji biznesowych.'],
-    ['icon' => 'shield-check', 'title' => 'Bezpieczeństwo danych',                  'text' => 'Stosujemy rozwiązania zgodne z normą ISO/IEC 27001, zapewniające poufność, integralność i bezpieczeństwo danych pracowniczych.'],
-    ['icon' => 'refresh-cw',   'title' => 'Business continuity',                    'text' => 'Usługi realizuje cały zespół specjalistów, dlatego urlopy i rotacja pracowników nie wpływają na terminowość i ciągłość obsługi Twojej firmy.'],
+    ['icon' => 'award',        'title' => __("Jakość potwierdzona\nstandardami",    'meritoros'), 'text' => __('Realizujemy usługi w oparciu o certyfikat ISO 9001',                                                                                                                           'meritoros')],
+    ['icon' => 'file-text',    'title' => __("Nowoczesne i elastyczne\npodejście",  'meritoros'), 'text' => __('Przygotowujemy raporty finansowe dopasowane do potrzeb zarządu i wspierające podejmowanie decyzji biznesowych.',                                                               'meritoros')],
+    ['icon' => 'shield-check', 'title' => __('Bezpieczeństwo danych',               'meritoros'), 'text' => __('Stosujemy rozwiązania zgodne z normą ISO/IEC 27001, zapewniające poufność, integralność i bezpieczeństwo danych pracowniczych.',                                              'meritoros')],
+    ['icon' => 'refresh-cw',   'title' => __('Business continuity',                 'meritoros'), 'text' => __('Usługi realizuje cały zespół specjalistów, dlatego urlopy i rotacja pracowników nie wpływają na terminowość i ciągłość obsługi Twojej firmy.',                               'meritoros')],
 ];
 
 $cards = [];
 for ($i = 1; $i <= 4; $i++) {
-    $g = get_field("kp_dlaczego_{$i}") ?: ($_orig_id !== $_page_id ? get_field("kp_dlaczego_{$i}", $_orig_id) : null);
+    $g = get_field("kp_dlaczego_{$i}");
     $d = $card_defaults[$i - 1];
     $cards[] = [
         'icon'  => is_array($g) && !empty($g['icon'])  ? $g['icon']  : $d['icon'],
-        'title' => is_array($g) && !empty($g['title']) ? $g['title'] : $d['title'],
-        'text'  => is_array($g) && !empty($g['text'])  ? $g['text']  : $d['text'],
+        'title' => is_array($g) && !empty($g['title']) ? __($g['title'], 'meritoros') : $d['title'],
+        'text'  => is_array($g) && !empty($g['text'])  ? __($g['text'],  'meritoros') : $d['text'],
     ];
 }
 ?>

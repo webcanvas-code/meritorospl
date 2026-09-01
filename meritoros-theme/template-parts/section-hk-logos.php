@@ -1,8 +1,8 @@
 <?php
 $page_id   = get_queried_object_id();
-$text_pre  = get_field('hk_logos_text_pre',  $page_id) ?: 'Zaufało nam ponad';
+$text_pre  = __( get_field('hk_logos_text_pre',  $page_id) ?: 'Zaufało nam ponad', 'meritoros' );
 $number    = get_field('hk_logos_number',    $page_id) ?: '1200';
-$text_post = get_field('hk_logos_text_post', $page_id) ?: 'klientów';
+$text_post = __( get_field('hk_logos_text_post', $page_id) ?: 'klientów', 'meritoros' );
 
 $_img = get_template_directory_uri() . '/images/';
 $_defaults = [
@@ -43,7 +43,7 @@ for ($i = 1; $i <= 4; $i++) {
                 if (!is_array($logo)) continue;
             ?>
                 <img src="<?php echo esc_url($logo['url']); ?>"
-                     alt="<?php echo esc_attr($logo['alt'] ?: 'Logo klienta'); ?>"
+                     alt="<?php echo esc_attr($logo['alt'] ?: __('Logo klienta', 'meritoros')); ?>"
                      loading="lazy">
             <?php endforeach; ?>
         </div>

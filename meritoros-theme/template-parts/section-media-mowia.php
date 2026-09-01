@@ -1,6 +1,6 @@
 <?php
 $_page_id = get_queried_object_id();
-$title    = get_field('media_mowia_title', $_page_id) ?: 'Mówią o nas';
+$title    = __( get_field('media_mowia_title', $_page_id) ?: 'Mówią o nas', 'meritoros' );
 
 $posts = get_posts([
     'post_type'      => 'media-article',
@@ -31,7 +31,7 @@ if (empty($posts)) return;
                 $photo_url = is_array($photo) ? ($photo['url'] ?? '') : '';
                 $photo_alt = is_array($photo) ? ($photo['alt'] ?? get_the_title($p)) : get_the_title($p);
                 $text      = get_field('ma_text',     $p->ID) ?: '';
-                $btn_text  = get_field('ma_btn_text', $p->ID) ?: 'Przeczytaj artykuł';
+                $btn_text  = __( get_field('ma_btn_text', $p->ID) ?: 'Przeczytaj artykuł', 'meritoros' );
                 $btn_url   = get_field('ma_btn_url',  $p->ID) ?: get_permalink($p->ID);
             ?>
             <div class="flex flex-col">

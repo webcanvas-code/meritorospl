@@ -91,7 +91,7 @@ return [
     'Liczba pracowników' => 'Кількість працівників',
     'Lista nadzorcza' => 'Наглядова рада',
     'lub napisz wiadomość' => 'або напишіть повідомлення',
-    'Mapa Polski z oddziałami' => 'Карта Польщі з офісами',
+    'Mapa Polski z oddziałami' => 'Карта Польщі з відділеннями',
     'Marketing manager' => 'Маркетинг-менеджер',
     'Masz pytania? Chętnie odpowiemy' => 'Маєте запитання? Із задоволенням відповімо',
     'Media i newsroom' => 'Медіа та прес-центр',
@@ -323,7 +323,7 @@ Automatyzacja raportowania' => 'Роботизація RPA
     'Rozwiązania kadrowe' => 'Кадрові рішення',
     'Rozwiązania księgowe' => 'Бухгалтерські рішення',
     'Skala i ciągłość
-obsługi' => 'Масштаб та безперервність
+obsługi' => 'Масштаб і безперервність
 обслуговування',
     'Skontaktuj się z nami i dowiedz się, jak możemy wesprzeć Twoją organizację.' => 'Зв\'яжіться з нами і дізнайтеся, як ми можемо підтримати вашу організацію.',
     'Systematycznie rozwijamy i wdrażamy rozwiązania z zakresu robotyki (RPA) oraz automatyzacji. Wdrażamy najnowsze technologie, w tym Robotic Process Automation oraz AI, aby umożliwić klientom pełną kontrolę nad finansami. Działamy w modelu Lean, który zapewnia sprawność operacyjną i błyskawiczne dostosowanie się do potrzeb zmieniającego się rynku.' => 'Ми систематично розробляємо та впроваджуємо рішення у сфері роботизації (RPA) та автоматизації. Впроваджуємо найновіші технології, зокрема Robotic Process Automation та ШІ, щоб надати клієнтам повний контроль над фінансами. Працюємо за моделлю Lean, яка забезпечує операційну ефективність і швидку адаптацію до мінливого ринку.',
@@ -381,7 +381,7 @@ pełna zastępowalność i ciągłość obsługi oraz gotowość do skalowania' 
 
 повна взаємозамінність і безперервність обслуговування та готовність до масштабування',
     'Jakość potwierdzona
-standardami' => 'Якість, підтверджена
+standardami' => 'Якість підтверджена
 стандартами',
     'Ponad 170
 expertów' => 'Понад 170
@@ -601,4 +601,123 @@ w przypadku większych podmiotów analizujemy także inne lokalizacje.' => 'рі
     'pracują na systemach innych niż <strong>Optima</strong>, np. Enova, Symfonia,' => 'працюють на системах, відмінних від <strong>Optima</strong>, наприклад Enova, Symfonia,',
     'chcą dalej rozwijać firmę, ale zyskać dostęp do większego zaplecza,' => 'хочуть і далі розвивати компанію, але отримати доступ до більших ресурсів,',
     'szukają wsparcia <strong>w obszarze technologii</strong>, procesów, HR, marketingu i rozwoju operacyjnego.' => 'шукають підтримки <strong>у сфері технологій</strong>, процесів, HR, маркетингу та операційного розвитку.',
+    'Zaufało nam ponad' => 'Нам довіряють понад',
+    'klientów' => 'клієнтів',
+    'Logo klienta' => 'Логотип клієнта',
+    'Mówią o nas' => 'Говорять про нас',
+    'Porozmawiajmy o rozwiązaniach
+dla Twojego biznesu' => 'Поговорімо про рішення
+для вашого бізнесу',
+    'Wideo' => 'Відео',
+    'Wideoinstruktaże' => 'Відеоінструкції',
+    'Praktyczne instruktaże wideo z zakresu księgowości, podatków i kadr.' => 'Практичні відеоінструкції з бухгалтерії, податків та кадрів.',
+    'przewodnicząca rady nadzorczej' => 'голова наглядової ради',
+    'członek rady nadzorczej' => 'член наглядової ради',
+    'Profil działalności' => 'Профіль діяльності',
+    'Skala działalności' => 'Масштаб діяльності',
+    'Zasięg i grupa kapitałowa' => 'Охоплення та група капіталу',
+    'Strategia rozwoju' => 'Стратегія розвитку',
+    'Początek działalności' => 'Заснована',
+    'Klientów' => 'Клієнтів',
+    'Specjalistów' => 'Фахівців',
+    'lokalizacji' => 'локацій',
+    '(ale ciągle rośniemy)' => '(і ми продовжуємо зростати)',
+    'Wyróżnienia są efektem tego, jak rozwijamy Meritoros: konsekwentnie i procesowo. Trzymamy standard, który ma działać w praktyce – codziennie.' => 'Відзнаки є результатом того, як ми розвиваємо Meritoros: послідовно та процесно. Ми дотримуємося стандарту, який має працювати на практиці — щодня.',
+    'Jak pracujemy?' => 'Як ми працюємо?',
+    'Dedykowany zespół' => 'Виділена команда',
+    'Każdy klient współpracuje z przypisanym zespołem specjalistów oraz Liderem odpowiedzialnym za jakość i terminowość.' => 'Кожен клієнт співпрацює з виділеною командою фахівців та Лідером, відповідальним за якість і своєчасність.',
+    'Podejście procesowe' => 'Процесний підхід',
+    'Wszystkie działania opieramy na udokumentowanych procesach z określonymi SLA, checklistami i punktami kontroli jakości — tak by każda operacja była przewidywalna i powtarzalna.' => 'Усі дії ґрунтуються на задокументованих процесах із визначеними SLA, чек-листами та точками контролю якості — щоб кожна операція була передбачуваною і відтворюваною.',
+    'Pełna zastępowalność' => 'Повна взаємозамінність',
+    'Procesy są tak zorganizowane, by urlopy i rotacja kadry nie wpływały na ciągłość obsługi. Klient zawsze ma kogoś do dyspozycji i nie odczuwa zmian personalnych.' => 'Процеси організовані так, щоб відпустки та ротація персоналу не впливали на безперервність обслуговування. Клієнт завжди має когось у розпорядженні і не відчуває кадрових змін.',
+    'Elastyczność współpracy' => 'Гнучкість співпраці',
+    'Dopasowujemy zakres, terminy raportowania i sposób komunikacji do realnych potrzeb firmy — niezależnie od jej wielkości czy etapu rozwoju.' => 'Ми підлаштовуємо обсяг, строки звітування та спосіб комунікації до реальних потреб компанії — незалежно від її розміру чи етапу розвитку.',
+    'Zespół Meritoros przy pracy' => 'Команда Meritoros за роботою',
+    'Kim jesteśmy' => 'Хто ми',
+    'Od ponad 20 lat wspieramy firmy w prowadzeniu księgowości, kadr i procesów finansowych. Pracujemy w modelu zespołowym i procesowym, z jasno określoną odpowiedzialnością, standaryzacją działań i nadzorem nad jakością. Łączymy doświadczenie z nowoczesnymi technologiami oraz automatyzacją, aby zapewnić naszym klientom rzetelne dane, bezpieczeństwo operacyjne i stabilność, której potrzebują, by rozwijać swój biznes.' => 'Понад 20 років ми підтримуємо компанії у веденні бухгалтерії, кадрів та фінансових процесів. Ми працюємо в командній та процесній моделі, з чітко визначеною відповідальністю, стандартизацією дій та контролем якості. Ми поєднуємо досвід із сучасними технологіями та автоматизацією, щоб забезпечити нашим клієнтам надійні дані, операційну безпеку та стабільність, необхідну для розвитку їхнього бізнесу.',
+    'Wewnętrzny
+dział IT i RPA' => 'Внутрішній
+відділ IT та RPA',
+    'Certyfikacja ISO
+9001 i ISO/IEC
+27001' => 'Сертифікація
+ISO 9001
+та ISO/IEC 27001',
+    'Ubezpieczenie
+do 3 mln PLN' => 'Страхування
+до 3 млн злотих',
+    'Ponad 170
+expertów na
+pokładzie' => 'Понад 170
+фахівців
+на борту',
+    'Ponad 1200
+klientów' => 'Понад 1200
+клієнтів',
+    '7 oddziałów
+w Polsce oraz
+oddziały wirtualne' => '7 відділень
+в Польщі та
+віртуальні офіси',
+    'Gdzie działamy' => 'Де ми працюємо',
+    'Posiadamy 7 oddziałów stacjonarnych w miastach Polski oraz oddziały wirtualne, dzięki czemu obsługujemy firmy niezależnie od ich lokalizacji:' => 'Ми маємо 7 стаціонарних відділень у містах Польщі та віртуальні відділення, завдяки чому обслуговуємо компанії незалежно від їхнього місцезнаходження:',
+    'Kraków (siedziba główna oraz 3 oddziały)
+Warszawa
+Katowice
+Rzeszów
+Wrocław
+Łódź
+Bytom
+2 oddziały wirtualne działające w pełni online' => 'Краків (головний офіс та 3 відділення)
+Варшава
+Катовіце
+Жешув
+Вроцлав
+Лодзь
+Битом
+2 повністю онлайн-відділення',
+    'Zespół Meritoros' => 'Команда Meritoros',
+    'Opinie klientów' => 'Відгуки клієнтів',
+    'Sprawdź, co mówią o nas inni' => 'Перегляньте, що кажуть про нас інші',
+    'Mam księgowość w bezpiecznych rękach i wiem, że nie muszę się o to już martwić.' => 'Моя бухгалтерія в надійних руках, і я знаю, що мені більше не потрібно про це турбуватися.',
+    'HP Cepolgol S.A.' => 'HP Cepolgol S.A.',
+    'Meritoros dostarczył nam stabilność i pewność, w trudnych momentach zawsze mamy właściwe odpowiedzi.' => 'Meritoros забезпечив нам стабільність і впевненість — у важкі моменти у нас завжди є правильні відповіді.',
+    'CEO & Co-Founder, Printbox' => 'CEO & Co-Founder, Printbox',
+    'Profesjonalizm na każdym kroku. Polecamy Meritoros każdej firmie, która ceni sobie bezpieczeństwo i jakość obsługi.' => 'Професіоналізм на кожному кроці. Рекомендуємо Meritoros кожній компанії, яка цінує безпеку та якість обслуговування.',
+    'Dyrektor Finansowy, SITECH' => 'Фінансовий директор, SITECH',
+    'Obsługiwanych klientów' => 'Клієнтів на обслуговуванні',
+    'Lat na rynku' => 'Років на ринку',
+    'Klientów poleca nas dalej' => 'Клієнтів рекомендують нас',
+    'Ekspertów w zespole' => 'Експертів у команді',
+    'Co zyskujesz, gdy księgowość
+fundacji jest poukładana' => 'Що ви отримуєте, коли бухгалтерія
+фонду впорядкована',
+    'Bezpieczne zarządzanie
+majątkiem' => 'Безпечне управління
+майном',
+    'Porządek w danych i dokumentach, jasna sprawozdawczość i kontrola nad obowiązkami.' => 'Порядок у даних і документах, чітка звітність та контроль над зобов’язаннями.',
+    'Sukcesja na trwałych
+regułach' => 'Спадкування на стійких
+засадах',
+    'Przejrzyste zasady i przewidywalność – tak, aby rozwiązanie działało długoterminowo.' => 'Прозорі правила та передбачуваність — щоб рішення працювало в довгостроковій перспективі.',
+    'Spokój w kwestiach
+formalnych' => 'Спокій у формальних
+питаннях',
+    'Dopilnujemy terminów i obowiązków sprawozdawczych, żeby nic „nie wyskakiwało" w ostatniej chwili.' => 'Ми подбаємо про терміни та звітні зобов’язання, щоб ніщо «не виринало» в останній момент.',
+    'Mniej ryzyk,
+mniej poprawek' => 'Менше ризиків,
+менше виправлень',
+    'Praca procesowa, weryfikacja danych i standardy, które ograniczają błędy.' => 'Процесна робота, перевірка даних і стандарти, що обмежують помилки.',
+    'Dlaczego firmy wybierają nasze
+rozwiązania kadrowe' => 'Чому компанії обирають наші
+кадрові рішення',
+    'Realizujemy usługi w oparciu o certyfikat ISO 9001' => 'Надаємо послуги на основі сертифіката ISO 9001',
+    'Nowoczesne i elastyczne
+podejście' => 'Сучасний і гнучкий
+підхід',
+    'Przygotowujemy raporty finansowe dopasowane do potrzeb zarządu i wspierające podejmowanie decyzji biznesowych.' => 'Ми готуємо фінансові звіти, адаптовані до потреб керівництва та що підтримують прийняття бізнес-рішень.',
+    'Bezpieczeństwo danych' => 'Безпека даних',
+    'Stosujemy rozwiązania zgodne z normą ISO/IEC 27001, zapewniające poufność, integralność i bezpieczeństwo danych pracowniczych.' => 'Ми застосовуємо рішення відповідно до стандарту ISO/IEC 27001, що забезпечують конфіденційність, цілісність та безпеку даних працівників.',
+    'Business continuity' => 'Business continuity',
+    'Usługi realizuje cały zespół specjalistów, dlatego urlopy i rotacja pracowników nie wpływają na terminowość i ciągłość obsługi Twojej firmy.' => 'Послуги надає вся команда фахівців, тому відпустки та ротація працівників не впливають на своєчасність та безперервність обслуговування вашої компанії.',
 ];

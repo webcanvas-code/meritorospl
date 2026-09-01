@@ -1,17 +1,17 @@
 <?php
-$mapa_title = mer_field('onas_mapa_title', 'Gdzie działamy');
-$mapa_text  = mer_field('onas_mapa_text',  'Posiadamy 7 oddziałów stacjonarnych w miastach Polski oraz oddziały wirtualne, dzięki czemu obsługujemy firmy niezależnie od ich lokalizacji:');
+$mapa_title = __( mer_field('onas_mapa_title', 'Gdzie działamy'), 'meritoros' );
+$mapa_text  = __( mer_field('onas_mapa_text',  'Posiadamy 7 oddziałów stacjonarnych w miastach Polski oraz oddziały wirtualne, dzięki czemu obsługujemy firmy niezależnie od ich lokalizacji:'), 'meritoros' );
 $mapa_image = get_field('onas_mapa_image');
-$mapa_raw   = mer_field('onas_mapa_cities', "Kraków (siedziba główna oraz 3 oddziały)\nWarszawa\nKatowice\nRzeszów\nWrocław\nŁódź\nBytom\n2 oddziały wirtualne działające w pełni online");
+$mapa_raw   = __( mer_field('onas_mapa_cities', "Kraków (siedziba główna oraz 3 oddziały)\nWarszawa\nKatowice\nRzeszów\nWrocław\nŁódź\nBytom\n2 oddziały wirtualne działające w pełni online"), 'meritoros' );
 $mapa_items = array_filter(array_map('trim', explode("\n", $mapa_raw)));
 
 // Map image source
 if (is_array($mapa_image) && !empty($mapa_image['url'])) {
     $map_src = esc_url($mapa_image['url']);
-    $map_alt = esc_attr($mapa_image['title'] ?: 'Mapa Polski z oddziałami');
+    $map_alt = esc_attr($mapa_image['title'] ?: __('Mapa Polski z oddziałami', 'meritoros'));
 } else {
     $map_src = esc_url(get_template_directory_uri() . '/images/mapaPL.svg');
-    $map_alt = 'Mapa Polski z oddziałami';
+    $map_alt = __('Mapa Polski z oddziałami', 'meritoros');
 }
 ?>
 

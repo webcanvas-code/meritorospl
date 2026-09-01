@@ -1,8 +1,8 @@
 <?php
 $page_id  = get_queried_object_id();
-$title    = get_field('hk_cta_title',    $page_id) ?: "Porozmawiajmy o rozwiązaniach\ndla Twojego biznesu";
-$text     = get_field('hk_cta_text',     $page_id) ?: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.';
-$btn_text = get_field('hk_cta_btn_text', $page_id) ?: 'Wyślij zapytanie';
+$title    = __( get_field('hk_cta_title',    $page_id) ?: "Porozmawiajmy o rozwiązaniach\ndla Twojego biznesu", 'meritoros' );
+$text     = __( get_field('hk_cta_text',     $page_id) ?: 'Pierwsza rozmowa jest niezobowiązująca.', 'meritoros' );
+$btn_text = __( get_field('hk_cta_btn_text', $page_id) ?: 'Wyślij zapytanie', 'meritoros' );
 $btn_url  = get_field('hk_cta_btn_url',  $page_id) ?: home_url('/kontakt/');
 $bg       = get_field('hk_cta_bg',       $page_id);
 $bg_url   = is_array($bg) && !empty($bg['url']) ? esc_url($bg['url']) : 'https://images.unsplash.com/photo-1515187029135-18ee286d815b?w=1600&q=80';

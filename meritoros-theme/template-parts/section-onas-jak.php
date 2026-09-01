@@ -1,25 +1,24 @@
 <?php
 $_page_id = get_the_ID();
-$_orig_id = apply_filters('wpml_object_id', $_page_id, get_post_type(), true, apply_filters('wpml_default_language', null));
 
-$jak_title = mer_field('onas_jak_title', 'Jak pracujemy?');
+$jak_title = __( mer_field('onas_jak_title', 'Jak pracujemy?'), 'meritoros' );
 $jak_photo = get_field('onas_jak_photo');
 
 $jak_defaults = [
-    ['icon' => 'users-round', 'title' => 'Dedykowany zespół',       'text' => 'Każdy klient współpracuje z przypisanym zespołem specjalistów oraz Liderem odpowiedzialnym za jakość i terminowość.'],
-    ['icon' => 'workflow',    'title' => 'Podejście procesowe',      'text' => 'Wszystkie działania opieramy na udokumentowanych procesach z określonymi SLA, checklistami i punktami kontroli jakości — tak by każda operacja była przewidywalna i powtarzalna.'],
-    ['icon' => 'repeat-2',   'title' => 'Pełna zastępowalność',      'text' => 'Procesy są tak zorganizowane, by urlopy i rotacja kadry nie wpływały na ciągłość obsługi. Klient zawsze ma kogoś do dyspozycji i nie odczuwa zmian personalnych.'],
-    ['icon' => 'handshake',  'title' => 'Elastyczność współpracy',   'text' => 'Dopasowujemy zakres, terminy raportowania i sposób komunikacji do realnych potrzeb firmy — niezależnie od jej wielkości czy etapu rozwoju.'],
+    ['icon' => 'users-round', 'title' => __('Dedykowany zespół',      'meritoros'), 'text' => __('Każdy klient współpracuje z przypisanym zespołem specjalistów oraz Liderem odpowiedzialnym za jakość i terminowość.', 'meritoros')],
+    ['icon' => 'workflow',    'title' => __('Podejście procesowe',     'meritoros'), 'text' => __('Wszystkie działania opieramy na udokumentowanych procesach z określonymi SLA, checklistami i punktami kontroli jakości — tak by każda operacja była przewidywalna i powtarzalna.', 'meritoros')],
+    ['icon' => 'repeat-2',   'title' => __('Pełna zastępowalność',    'meritoros'), 'text' => __('Procesy są tak zorganizowane, by urlopy i rotacja kadry nie wpływały na ciągłość obsługi. Klient zawsze ma kogoś do dyspozycji i nie odczuwa zmian personalnych.', 'meritoros')],
+    ['icon' => 'handshake',  'title' => __('Elastyczność współpracy', 'meritoros'), 'text' => __('Dopasowujemy zakres, terminy raportowania i sposób komunikacji do realnych potrzeb firmy — niezależnie od jej wielkości czy etapu rozwoju.', 'meritoros')],
 ];
 
 $jak_items = [];
 for ($i = 1; $i <= 4; $i++) {
-    $item = get_field("onas_jak_{$i}") ?: ($_orig_id !== $_page_id ? get_field("onas_jak_{$i}", $_orig_id) : null);
+    $item = get_field("onas_jak_{$i}");
     if (!empty($item['title'])) {
         $jak_items[] = [
             'icon'  => !empty($item['icon'])  ? $item['icon']  : $jak_defaults[$i - 1]['icon'],
-            'title' => $item['title'],
-            'text'  => !empty($item['text'])  ? $item['text']  : '',
+            'title' => __($item['title'], 'meritoros'),
+            'text'  => !empty($item['text'])  ? __($item['text'], 'meritoros')  : '',
         ];
     } else {
         $jak_items[] = $jak_defaults[$i - 1];
@@ -27,7 +26,7 @@ for ($i = 1; $i <= 4; $i++) {
 }
 
 $photo_url = is_array($jak_photo) ? esc_url($jak_photo['url']) : '';
-$photo_alt = is_array($jak_photo) ? esc_attr($jak_photo['alt'] ?: 'Zespół Meritoros przy pracy') : 'Zespół Meritoros przy pracy';
+$photo_alt = is_array($jak_photo) ? esc_attr($jak_photo['alt'] ?: __('Zespół Meritoros przy pracy', 'meritoros')) : __('Zespół Meritoros przy pracy', 'meritoros');
 ?>
 
 <section class="py-14 bg-emerald-50">

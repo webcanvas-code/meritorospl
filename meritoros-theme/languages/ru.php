@@ -91,7 +91,7 @@ return [
     'Liczba pracowników' => 'Количество сотрудников',
     'Lista nadzorcza' => 'Наблюдательный совет',
     'lub napisz wiadomość' => 'или напишите сообщение',
-    'Mapa Polski z oddziałami' => 'Карта Польши с офисами',
+    'Mapa Polski z oddziałami' => 'Карта Польши с отделениями',
     'Marketing manager' => 'Маркетинг-менеджер',
     'Masz pytania? Chętnie odpowiemy' => 'Есть вопросы? С удовольствием ответим',
     'Media i newsroom' => 'Медиа и пресс-центр',
@@ -381,7 +381,7 @@ pełna zastępowalność i ciągłość obsługi oraz gotowość do skalowania' 
 
 полная взаимозаменяемость и непрерывность обслуживания, а также готовность к масштабированию',
     'Jakość potwierdzona
-standardami' => 'Качество, подтверждённое
+standardami' => 'Качество подтверждено
 стандартами',
     'Ponad 170
 expertów' => 'Более 170
@@ -601,4 +601,123 @@ w przypadku większych podmiotów analizujemy także inne lokalizacje.' => 'го
     'pracują na systemach innych niż <strong>Optima</strong>, np. Enova, Symfonia,' => 'работают на системах, отличных от <strong>Optima</strong>, например Enova, Symfonia,',
     'chcą dalej rozwijać firmę, ale zyskać dostęp do większego zaplecza,' => 'хотят продолжать развивать компанию, но получить доступ к большим ресурсам,',
     'szukają wsparcia <strong>w obszarze technologii</strong>, procesów, HR, marketingu i rozwoju operacyjnego.' => 'ищут поддержки <strong>в области технологий</strong>, процессов, HR, маркетинга и операционного развития.',
+    'Zaufało nam ponad' => 'Нам доверяют более',
+    'klientów' => 'клиентов',
+    'Logo klienta' => 'Логотип клиента',
+    'Mówią o nas' => 'Говорят о нас',
+    'Porozmawiajmy o rozwiązaniach
+dla Twojego biznesu' => 'Поговорим о решениях
+для вашего бизнеса',
+    'Wideo' => 'Видео',
+    'Wideoinstruktaże' => 'Видеоинструкции',
+    'Praktyczne instruktaże wideo z zakresu księgowości, podatków i kadr.' => 'Практические видеоинструкции по бухгалтерии, налогам и кадрам.',
+    'przewodnicząca rady nadzorczej' => 'председатель наблюдательного совета',
+    'członek rady nadzorczej' => 'член наблюдательного совета',
+    'Profil działalności' => 'Профиль деятельности',
+    'Skala działalności' => 'Масштаб деятельности',
+    'Zasięg i grupa kapitałowa' => 'Охват и группа капитала',
+    'Strategia rozwoju' => 'Стратегия развития',
+    'Początek działalności' => 'Основана',
+    'Klientów' => 'Клиентов',
+    'Specjalistów' => 'Специалистов',
+    'lokalizacji' => 'локаций',
+    '(ale ciągle rośniemy)' => '(и мы продолжаем расти)',
+    'Wyróżnienia są efektem tego, jak rozwijamy Meritoros: konsekwentnie i procesowo. Trzymamy standard, który ma działać w praktyce – codziennie.' => 'Отличия являются результатом того, как мы развиваем Meritoros: последовательно и процессно. Мы придерживаемся стандарта, который должен работать на практике — каждый день.',
+    'Jak pracujemy?' => 'Как мы работаем?',
+    'Dedykowany zespół' => 'Выделенная команда',
+    'Każdy klient współpracuje z przypisanym zespołem specjalistów oraz Liderem odpowiedzialnym za jakość i terminowość.' => 'Каждый клиент сотрудничает с выделенной командой специалистов и Лидером, ответственным за качество и своевременность.',
+    'Podejście procesowe' => 'Процессный подход',
+    'Wszystkie działania opieramy na udokumentowanych procesach z określonymi SLA, checklistami i punktami kontroli jakości — tak by każda operacja była przewidywalna i powtarzalna.' => 'Все действия основаны на задокументированных процессах с определёнными SLA, чек-листами и точками контроля качества — чтобы каждая операция была предсказуемой и воспроизводимой.',
+    'Pełna zastępowalność' => 'Полная взаимозаменяемость',
+    'Procesy są tak zorganizowane, by urlopy i rotacja kadry nie wpływały na ciągłość obsługi. Klient zawsze ma kogoś do dyspozycji i nie odczuwa zmian personalnych.' => 'Процессы организованы так, чтобы отпуска и ротация кадров не влияли на непрерывность обслуживания. Клиент всегда имеет кого-то в распоряжении и не ощущает кадровых изменений.',
+    'Elastyczność współpracy' => 'Гибкость сотрудничества',
+    'Dopasowujemy zakres, terminy raportowania i sposób komunikacji do realnych potrzeb firmy — niezależnie od jej wielkości czy etapu rozwoju.' => 'Мы подстраиваем объём, сроки отчётности и способ коммуникации к реальным потребностям компании — независимо от её размера или этапа развития.',
+    'Zespół Meritoros przy pracy' => 'Команда Meritoros за работой',
+    'Kim jesteśmy' => 'Кто мы',
+    'Od ponad 20 lat wspieramy firmy w prowadzeniu księgowości, kadr i procesów finansowych. Pracujemy w modelu zespołowym i procesowym, z jasno określoną odpowiedzialnością, standaryzacją działań i nadzorem nad jakością. Łączymy doświadczenie z nowoczesnymi technologiami oraz automatyzacją, aby zapewnić naszym klientom rzetelne dane, bezpieczeństwo operacyjne i stabilność, której potrzebują, by rozwijać swój biznes.' => 'Более 20 лет мы поддерживаем компании в ведении бухгалтерии, кадров и финансовых процессов. Мы работаем в командной и процессной модели, с чётко определённой ответственностью, стандартизацией действий и контролем качества. Мы сочетаем опыт с современными технологиями и автоматизацией, чтобы обеспечить нашим клиентам достоверные данные, операционную безопасность и стабильность, необходимые для развития их бизнеса.',
+    'Wewnętrzny
+dział IT i RPA' => 'Внутренний
+отдел IT и RPA',
+    'Certyfikacja ISO
+9001 i ISO/IEC
+27001' => 'Сертификация
+ISO 9001
+и ISO/IEC 27001',
+    'Ubezpieczenie
+do 3 mln PLN' => 'Страхование
+до 3 млн злотых',
+    'Ponad 170
+expertów na
+pokładzie' => 'Более 170
+экспертов
+на борту',
+    'Ponad 1200
+klientów' => 'Более 1200
+клиентов',
+    '7 oddziałów
+w Polsce oraz
+oddziały wirtualne' => '7 отделений
+в Польше и
+виртуальные офисы',
+    'Gdzie działamy' => 'Где мы работаем',
+    'Posiadamy 7 oddziałów stacjonarnych w miastach Polski oraz oddziały wirtualne, dzięki czemu obsługujemy firmy niezależnie od ich lokalizacji:' => 'У нас есть 7 стационарных отделений в городах Польши и виртуальные отделения, благодаря чему мы обслуживаем компании независимо от их местонахождения:',
+    'Kraków (siedziba główna oraz 3 oddziały)
+Warszawa
+Katowice
+Rzeszów
+Wrocław
+Łódź
+Bytom
+2 oddziały wirtualne działające w pełni online' => 'Краков (головной офис и 3 отделения)
+Варшава
+Катовице
+Ржешув
+Вроцлав
+Лодзь
+Бытом
+2 полностью онлайн-отделения',
+    'Zespół Meritoros' => 'Команда Meritoros',
+    'Opinie klientów' => 'Отзывы клиентов',
+    'Sprawdź, co mówią o nas inni' => 'Посмотрите, что говорят о нас другие',
+    'Mam księgowość w bezpiecznych rękach i wiem, że nie muszę się o to już martwić.' => 'Моя бухгалтерия в надёжных руках, и я знаю, что мне больше не нужно об этом беспокоиться.',
+    'HP Cepolgol S.A.' => 'HP Cepolgol S.A.',
+    'Meritoros dostarczył nam stabilność i pewność, w trudnych momentach zawsze mamy właściwe odpowiedzi.' => 'Meritoros обеспечил нам стабильность и уверенность — в трудные моменты у нас всегда есть правильные ответы.',
+    'CEO & Co-Founder, Printbox' => 'CEO & Co-Founder, Printbox',
+    'Profesjonalizm na każdym kroku. Polecamy Meritoros każdej firmie, która ceni sobie bezpieczeństwo i jakość obsługi.' => 'Профессионализм на каждом шагу. Рекомендуем Meritoros каждой компании, которая ценит безопасность и качество обслуживания.',
+    'Dyrektor Finansowy, SITECH' => 'Финансовый директор, SITECH',
+    'Obsługiwanych klientów' => 'Обслуживаемых клиентов',
+    'Lat na rynku' => 'Лет на рынке',
+    'Klientów poleca nas dalej' => 'Клиентов рекомендуют нас',
+    'Ekspertów w zespole' => 'Экспертов в команде',
+    'Co zyskujesz, gdy księgowość
+fundacji jest poukładana' => 'Что вы получаете, когда бухгалтерия
+фонда упорядочена',
+    'Bezpieczne zarządzanie
+majątkiem' => 'Безопасное управление
+имуществом',
+    'Porządek w danych i dokumentach, jasna sprawozdawczość i kontrola nad obowiązkami.' => 'Порядок в данных и документах, чёткая отчётность и контроль над обязательствами.',
+    'Sukcesja na trwałych
+regułach' => 'Наследование на прочных
+правилах',
+    'Przejrzyste zasady i przewidywalność – tak, aby rozwiązanie działało długoterminowo.' => 'Прозрачные правила и предсказуемость — чтобы решение работало в долгосрочной перспективе.',
+    'Spokój w kwestiach
+formalnych' => 'Спокойствие в формальных
+вопросах',
+    'Dopilnujemy terminów i obowiązków sprawozdawczych, żeby nic „nie wyskakiwało" w ostatniej chwili.' => 'Мы позаботимся о сроках и отчётных обязательствах, чтобы ничто не «выскакивало» в последний момент.',
+    'Mniej ryzyk,
+mniej poprawek' => 'Меньше рисков,
+меньше исправлений',
+    'Praca procesowa, weryfikacja danych i standardy, które ograniczają błędy.' => 'Процессная работа, проверка данных и стандарты, ограничивающие ошибки.',
+    'Dlaczego firmy wybierają nasze
+rozwiązania kadrowe' => 'Почему компании выбирают наши
+кадровые решения',
+    'Realizujemy usługi w oparciu o certyfikat ISO 9001' => 'Оказываем услуги на основе сертификата ISO 9001',
+    'Nowoczesne i elastyczne
+podejście' => 'Современный и гибкий
+подход',
+    'Przygotowujemy raporty finansowe dopasowane do potrzeb zarządu i wspierające podejmowanie decyzji biznesowych.' => 'Мы готовим финансовые отчёты, адаптированные к потребностям руководства и поддерживающие принятие бизнес-решений.',
+    'Bezpieczeństwo danych' => 'Безопасность данных',
+    'Stosujemy rozwiązania zgodne z normą ISO/IEC 27001, zapewniające poufność, integralność i bezpieczeństwo danych pracowniczych.' => 'Мы применяем решения в соответствии со стандартом ISO/IEC 27001, обеспечивающие конфиденциальность, целостность и безопасность данных сотрудников.',
+    'Business continuity' => 'Business continuity',
+    'Usługi realizuje cały zespół specjalistów, dlatego urlopy i rotacja pracowników nie wpływają na terminowość i ciągłość obsługi Twojej firmy.' => 'Услуги оказывает вся команда специалистов, поэтому отпуска и ротация сотрудников не влияют на своевременность и непрерывность обслуживания вашей компании.',
 ];
