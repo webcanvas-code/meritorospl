@@ -692,6 +692,11 @@ TRANSLATIONS = {
         "Dołącz do\nnaszego zespołu": "Join\nour team",
         "Budujemy uporządkowane procesy i dobrą atmosferę.\nJeśli cenisz jasne zasady, rozwój i pracę zespołową – sprawdź,\nczy mamy ofertę dla Ciebie.": "We build orderly processes and a good atmosphere.\nIf you value clear rules, development and teamwork — check\nwhether we have an offer for you.",
         'Aktualne oferty pracy': 'Current job offers',
+        # --- fr-oferta / uk-oferta full item strings ---
+        "Prowadzenie ksiąg rachunkowych\n\nRozliczanie i składanie deklaracji podatkowych\n\nPrzygotowywanie sprawozdań finansowych\n\nAsystowanie podczas badania sprawozdania finansowego oraz kontroli urzędów\n\nRaportowanie na cele zarządcze\n\nSporządzanie polityki rachunkowości":
+            "Maintaining accounting books\n\nFiling and submitting tax declarations\n\nPreparing financial statements\n\nAssisting during financial statement audits and authority inspections\n\nManagement reporting\n\nDrafting accounting policies",
+        "Prowadzenie ksiąg rachunkowych\n\nObliczanie podatków i składanie deklaracji podatkowych\n\nBieżące rozliczanie wyciągów i kontrolowanie rozrachunków\n\nRaportowanie zarządcze i sprawozdawcze\n\nRaportowanie do instytucji publicznych\n\nSporządzanie sprawozdań finansowych oraz deklaracji rocznych\n\nReprezentowanie podczas kontroli i czynności sprawdzających\n\nObsługa niestandardowych rozliczeń\n\nAsystowanie i wsparcie podczas audytu":
+            "Maintaining accounting books\n\nCalculating taxes and submitting tax declarations\n\nReconciling account statements and monitoring settlements\n\nManagement and financial reporting\n\nReporting to public institutions\n\nPreparing financial statements and annual declarations\n\nRepresentation during inspections and audit procedures\n\nHandling non-standard settlements\n\nAssisting and supporting during audits",
     },
     'uk': {
         'Bezpieczeństwo\ni compliance':
@@ -1378,6 +1383,11 @@ TRANSLATIONS = {
         "Dołącz do\nnaszego zespołu": "Приєднуйся до\nнашої команди",
         "Budujemy uporządkowane procesy i dobrą atmosferę.\nJeśli cenisz jasne zasady, rozwój i pracę zespołową – sprawdź,\nczy mamy ofertę dla Ciebie.": "Ми будуємо впорядковані процеси та гарну атмосферу.\nЯкщо ти цінуєш чіткі правила, розвиток і командну роботу — перевір,\nчи маємо ми пропозицію для тебе.",
         'Aktualne oferty pracy': 'Актуальні вакансії',
+        # --- fr-oferta / uk-oferta full item strings ---
+        "Prowadzenie ksiąg rachunkowych\n\nRozliczanie i składanie deklaracji podatkowych\n\nPrzygotowywanie sprawozdań finansowych\n\nAsystowanie podczas badania sprawozdania finansowego oraz kontroli urzędów\n\nRaportowanie na cele zarządcze\n\nSporządzanie polityki rachunkowości":
+            "Ведення бухгалтерських книг\n\nРозрахунок і подання податкових декларацій\n\nПідготовка фінансових звітів\n\nАсистування під час аудиту фінансових звітів та перевірок органів\n\nЗвітність для управлінських цілей\n\nСкладання облікової політики",
+        "Prowadzenie ksiąg rachunkowych\n\nObliczanie podatków i składanie deklaracji podatkowych\n\nBieżące rozliczanie wyciągów i kontrolowanie rozrachunków\n\nRaportowanie zarządcze i sprawozdawcze\n\nRaportowanie do instytucji publicznych\n\nSporządzanie sprawozdań finansowych oraz deklaracji rocznych\n\nReprezentowanie podczas kontroli i czynności sprawdzających\n\nObsługa niestandardowych rozliczeń\n\nAsystowanie i wsparcie podczas audytu":
+            "Ведення бухгалтерських книг\n\nОбчислення податків та подання податкових декларацій\n\nПоточне узгодження виписок та контроль розрахунків\n\nУправлінська та фінансова звітність\n\nЗвітність перед державними установами\n\nСкладання фінансових звітів та річних декларацій\n\nПредставництво під час перевірок та ревізійних дій\n\nОбробка нестандартних розрахунків\n\nДопомога та підтримка під час аудиту",
     },
     'ru_RU': {
         'Bezpieczeństwo\ni compliance':
@@ -2064,6 +2074,11 @@ TRANSLATIONS = {
         "Dołącz do\nnaszego zespołu": "Присоединяйся к\nнашей команде",
         "Budujemy uporządkowane procesy i dobrą atmosferę.\nJeśli cenisz jasne zasady, rozwój i pracę zespołową – sprawdź,\nczy mamy ofertę dla Ciebie.": "Мы строим упорядоченные процессы и хорошую атмосферу.\nЕсли ты ценишь чёткие правила, развитие и командную работу — проверь,\nесть ли у нас предложение для тебя.",
         'Aktualne oferty pracy': 'Актуальные вакансии',
+        # --- fr-oferta / uk-oferta full item strings ---
+        "Prowadzenie ksiąg rachunkowych\n\nRozliczanie i składanie deklaracji podatkowych\n\nPrzygotowywanie sprawozdań finansowych\n\nAsystowanie podczas badania sprawozdania finansowego oraz kontroli urzędów\n\nRaportowanie na cele zarządcze\n\nSporządzanie polityki rachunkowości":
+            "Ведение бухгалтерских книг\n\nРасчёт и подача налоговых деклараций\n\nПодготовка финансовых отчётов\n\nАссистирование при аудите финансовых отчётов и проверках органов\n\nУправленческая отчётность\n\nСоставление учётной политики",
+        "Prowadzenie ksiąg rachunkowych\n\nObliczanie podatków i składanie deklaracji podatkowych\n\nBieżące rozliczanie wyciągów i kontrolowanie rozrachunków\n\nRaportowanie zarządcze i sprawozdawcze\n\nRaportowanie do instytucji publicznych\n\nSporządzanie sprawozdań finansowych oraz deklaracji rocznych\n\nReprezentowanie podczas kontroli i czynności sprawdzających\n\nObsługa niestandardowych rozliczeń\n\nAsystowanie i wsparcie podczas audytu":
+            "Ведение бухгалтерских книг\n\nВычисление налогов и подача налоговых деклараций\n\nТекущее согласование выписок и контроль расчётов\n\nУправленческая и финансовая отчётность\n\nОтчётность перед государственными учреждениями\n\nСоставление финансовых отчётов и годовых деклараций\n\nПредставительство при проверках и ревизионных действиях\n\nОбработка нестандартных расчётов\n\nАссистирование и поддержка при аудите",
     },
 }
 

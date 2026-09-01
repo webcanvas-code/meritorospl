@@ -775,13 +775,13 @@ Raportowanie na cele zarządcze
 
 Sporządzanie polityki rachunkowości' => 'Maintaining accounting books
 
-Calculating and filing tax returns
+Filing and submitting tax declarations
 
 Preparing financial statements
 
-Assisting during financial statement audits and regulatory inspections
+Assisting during financial statement audits and authority inspections
 
-Reporting for management purposes
+Management reporting
 
 Drafting accounting policies',
     'Maciej Paraszczak dla Pulsu Biznesu' => 'Maciej Paraszczak for Puls Biznesu',
@@ -880,9 +880,9 @@ Obsługa niestandardowych rozliczeń
 
 Asystowanie i wsparcie podczas audytu' => 'Maintaining accounting books
 
-Calculating taxes and filing tax returns
+Calculating taxes and submitting tax declarations
 
-Ongoing reconciliation of bank statements and settlement control
+Reconciling account statements and monitoring settlements
 
 Management and financial reporting
 
