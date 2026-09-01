@@ -8,22 +8,26 @@ define('MER_PRIVACY_PDF', get_template_directory_uri() . '/docs/Polityka-prywatn
 define('MER_TERMS_PDF',   get_template_directory_uri() . '/docs/Regulamin_newsletter.pdf');
 
 /* ------------------------------------------------------------------
-   URL-based textdomain — /en/ → en_US.mo, /uk/ → uk.mo, /ru/ → ru_RU.mo
-   Ładuje .mo bezpośrednio po meritoros_setup (priority 20), omija WPML locale filter
+   URL-based translations via gettext filter
+   Omija system locale/textdomain WordPress i WPML — działa zawsze
 ------------------------------------------------------------------ */
-function mer_url_load_textdomain(): void {
-    $uri = $_SERVER['REQUEST_URI'] ?? '/';
-    if (!preg_match('#^/(en|uk|ru)(/|$)#', $uri, $m)) return;
-    $map = ['en' => 'en_US', 'uk' => 'uk', 'ru' => 'ru_RU'];
-    $locale = $map[$m[1]] ?? null;
-    if (!$locale) return;
-    $mo = get_template_directory() . '/languages/' . $locale . '.mo';
-    if (file_exists($mo)) {
-        unload_textdomain('meritoros');
-        load_textdomain('meritoros', $mo);
+function mer_gettext_filter(string $translation, string $text, string $domain): string {
+    if ($domain !== 'meritoros') return $translation;
+    static $map = null;
+    if ($map === null) {
+        $uri = $_SERVER['REQUEST_URI'] ?? '/';
+        preg_match('#^/(en|uk|ru)(/|$)#', $uri, $m);
+        $lang = $m[1] ?? 'pl';
+        if ($lang !== 'pl') {
+            $file = get_template_directory() . '/languages/' . $lang . '.php';
+            $map = file_exists($file) ? (include $file) : [];
+        } else {
+            $map = [];
+        }
     }
+    return $map[$text] ?? $translation;
 }
-add_action('after_setup_theme', 'mer_url_load_textdomain', 20);
+add_filter('gettext', 'mer_gettext_filter', 5, 3);
 
 /* ------------------------------------------------------------------
    Theme Setup
