@@ -363,6 +363,47 @@ TRANSLATIONS = {
             'Quality confirmed by standards. We have implemented quality control and data verification procedures. We deliver financial information that is complete, consistent and useful for management.',
         'Powrót do':
             'Back to',
+        # --- Case studies: industries, scope_title, scope_desc, video_label ---
+        'Geologia inżynierska':
+            'Engineering geology',
+        'Ochrona środowiska':
+            'Environmental protection',
+        'Usługi rachunkowe, obszar kadr i płac, wsparcie w audytach':
+            'Accounting services, HR & payroll, audit support',
+        'Po kilku zmianach głównej księgowej spółka potrzebowała szybkiego uporządkowania księgowości i bezpiecznego zamknięcia roku obrotowego. Wdrożyliśmy usprawnienia procesowe.':
+            'After several changes of the chief accountant, the company needed quick reorganization of accounting and safe closing of the financial year. We implemented process improvements.',
+        'Nasz wpływ na operacje HPC':
+            'Our impact on HPC operations',
+        'Technologia druku':
+            'Print technology',
+        'E-commerce B2B':
+            'E-commerce B2B',
+        'Pełna obsługa BPO, rozliczenia międzynarodowe VAT OSS':
+            'Full BPO service, international VAT OSS settlements',
+        'Przy dynamicznym wzroście sprzedaży cross-border firma potrzebowała partnera gotowego na złożone rozliczenia VAT OSS w wielu krajach UE. Przejęliśmy całość obsługi finansowej.':
+            'With dynamic growth of cross-border sales, the company needed a partner ready for complex VAT OSS settlements in multiple EU countries. We took over all financial operations.',
+        'Jak Printbox skaluje finanse globalnie':
+            'How Printbox scales finances globally',
+        'Budownictwo':
+            'Construction',
+        'Inżynieria':
+            'Engineering',
+        'Kadry, płace, Intrastat, rozliczenia delegacji zagranicznych':
+            'HR, payroll, Intrastat, foreign business travel settlements',
+        'Firma realizowała kontrakty w kilku krajach jednocześnie. Meritoros przejął obsługę kadrową i rozliczenia Intrastat, odciążając zarząd od złożoności administracyjnej.':
+            'The company was executing contracts in several countries simultaneously. Meritoros took over HR operations and Intrastat settlements, relieving management of administrative complexity.',
+        'Obsługa kadrowa na skalę międzynarodową':
+            'HR support at international scale',
+        'Produkcja przemysłowa':
+            'Industrial manufacturing',
+        'Eksport':
+            'Export',
+        'Pełna księgowość, fundacja rodzinna, compliance':
+            'Full accounting, family foundation, compliance',
+        'Właściciel grupy produkcyjnej chciał oddzielić majątek prywatny od firmowego poprzez fundację rodzinną. Meritoros poprowadził cały proces prawno-księgowy od podstaw.':
+            'The owner of a production group wanted to separate private assets from company assets through a family foundation. Meritoros led the entire legal and accounting process from scratch.',
+        'Fundacja rodzinna krok po kroku':
+            'Family foundation step by step',
     },
     'uk': {
         'Bezpieczeństwo\ni compliance':
@@ -719,6 +760,47 @@ TRANSLATIONS = {
             'Якість, підтверджена стандартами. Ми впровадили процедури контролю якості та перевірки даних. Надаємо фінансову інформацію, яка є повною, узгодженою та корисною для керівництва.',
         'Powrót do':
             'Повернутися до',
+        # --- Case studies: industries, scope_title, scope_desc, video_label ---
+        'Geologia inżynierska':
+            'Інженерна геологія',
+        'Ochrona środowiska':
+            'Охорона навколишнього середовища',
+        'Usługi rachunkowe, obszar kadr i płac, wsparcie w audytach':
+            'Бухгалтерські послуги, сфера кадрів і зарплат, підтримка аудитів',
+        'Po kilku zmianach głównej księgowej spółka potrzebowała szybkiego uporządkowania księgowości i bezpiecznego zamknięcia roku obrotowego. Wdrożyliśmy usprawnienia procesowe.':
+            'Після кількох змін головного бухгалтера компанія потребувала швидкого впорядкування бухгалтерії та безпечного закриття фінансового року. Ми впровадили процесові вдосконалення.',
+        'Nasz wpływ na operacje HPC':
+            'Наш вплив на операції HPC',
+        'Technologia druku':
+            'Технологія друку',
+        'E-commerce B2B':
+            'E-commerce B2B',
+        'Pełna obsługa BPO, rozliczenia międzynarodowe VAT OSS':
+            'Повне обслуговування BPO, міжнародні розрахунки VAT OSS',
+        'Przy dynamicznym wzroście sprzedaży cross-border firma potrzebowała partnera gotowego na złożone rozliczenia VAT OSS w wielu krajach UE. Przejęliśmy całość obsługi finansowej.':
+            'При динамічному зростанні крос-бордерних продажів компанія потребувала партнера, готового до складних розрахунків VAT OSS у багатьох країнах ЄС. Ми перебрали на себе все фінансове обслуговування.',
+        'Jak Printbox skaluje finanse globalnie':
+            'Як Printbox масштабує фінанси глобально',
+        'Budownictwo':
+            'Будівництво',
+        'Inżynieria':
+            'Інженерія',
+        'Kadry, płace, Intrastat, rozliczenia delegacji zagranicznych':
+            'Кадри, зарплати, Intrastat, розрахунки закордонних відряджень',
+        'Firma realizowała kontrakty w kilku krajach jednocześnie. Meritoros przejął obsługę kadrową i rozliczenia Intrastat, odciążając zarząd od złożoności administracyjnej.':
+            'Компанія виконувала контракти одночасно в кількох країнах. Meritoros перебрав кадрове обслуговування та розрахунки Intrastat, звільнивши керівництво від адміністративної складності.',
+        'Obsługa kadrowa na skalę międzynarodową':
+            'Кадрове обслуговування в міжнародному масштабі',
+        'Produkcja przemysłowa':
+            'Промислове виробництво',
+        'Eksport':
+            'Експорт',
+        'Pełna księgowość, fundacja rodzinna, compliance':
+            'Повна бухгалтерія, сімейний фонд, комплаєнс',
+        'Właściciel grupy produkcyjnej chciał oddzielić majątek prywatny od firmowego poprzez fundację rodzinną. Meritoros poprowadził cały proces prawno-księgowy od podstaw.':
+            'Власник виробничої групи хотів відокремити приватне майно від корпоративного через сімейний фонд. Meritoros провів весь юридично-бухгалтерський процес з нуля.',
+        'Fundacja rodzinna krok po kroku':
+            'Сімейний фонд крок за кроком',
     },
     'ru_RU': {
         'Bezpieczeństwo\ni compliance':
@@ -1075,6 +1157,47 @@ TRANSLATIONS = {
             'Качество, подтверждённое стандартами. У нас внедрены процедуры контроля качества и проверки данных. Мы предоставляем финансовую информацию, которая является полной, согласованной и полезной для руководства.',
         'Powrót do':
             'Вернуться к',
+        # --- Case studies: industries, scope_title, scope_desc, video_label ---
+        'Geologia inżynierska':
+            'Инженерная геология',
+        'Ochrona środowiska':
+            'Охрана окружающей среды',
+        'Usługi rachunkowe, obszar kadr i płac, wsparcie w audytach':
+            'Бухгалтерские услуги, сфера кадров и зарплат, поддержка аудитов',
+        'Po kilku zmianach głównej księgowej spółka potrzebowała szybkiego uporządkowania księgowości i bezpiecznego zamknięcia roku obrotowego. Wdrożyliśmy usprawnienia procesowe.':
+            'После нескольких смен главного бухгалтера компания нуждалась в быстром упорядочивании бухгалтерии и безопасном закрытии финансового года. Мы внедрили процессные улучшения.',
+        'Nasz wpływ na operacje HPC':
+            'Наше влияние на операции HPC',
+        'Technologia druku':
+            'Технология печати',
+        'E-commerce B2B':
+            'E-commerce B2B',
+        'Pełna obsługa BPO, rozliczenia międzynarodowe VAT OSS':
+            'Полное обслуживание BPO, международные расчёты VAT OSS',
+        'Przy dynamicznym wzroście sprzedaży cross-border firma potrzebowała partnera gotowego na złożone rozliczenia VAT OSS w wielu krajach UE. Przejęliśmy całość obsługi finansowej.':
+            'При динамичном росте трансграничных продаж компания нуждалась в партнёре, готовом к сложным расчётам VAT OSS в нескольких странах ЕС. Мы взяли на себя всё финансовое обслуживание.',
+        'Jak Printbox skaluje finanse globalnie':
+            'Как Printbox масштабирует финансы глобально',
+        'Budownictwo':
+            'Строительство',
+        'Inżynieria':
+            'Инженерия',
+        'Kadry, płace, Intrastat, rozliczenia delegacji zagranicznych':
+            'Кадры, зарплаты, Intrastat, расчёты зарубежных командировок',
+        'Firma realizowała kontrakty w kilku krajach jednocześnie. Meritoros przejął obsługę kadrową i rozliczenia Intrastat, odciążając zarząd od złożoności administracyjnej.':
+            'Компания выполняла контракты одновременно в нескольких странах. Meritoros взял на себя кадровое обслуживание и расчёты Intrastat, освободив руководство от административной сложности.',
+        'Obsługa kadrowa na skalę międzynarodową':
+            'Кадровое обслуживание в международном масштабе',
+        'Produkcja przemysłowa':
+            'Промышленное производство',
+        'Eksport':
+            'Экспорт',
+        'Pełna księgowość, fundacja rodzinna, compliance':
+            'Полная бухгалтерия, семейный фонд, комплаенс',
+        'Właściciel grupy produkcyjnej chciał oddzielić majątek prywatny od firmowego poprzez fundację rodzinną. Meritoros poprowadził cały proces prawno-księgowy od podstaw.':
+            'Владелец производственной группы хотел отделить частное имущество от корпоративного через семейный фонд. Meritoros провёл весь юридически-бухгалтерский процесс с нуля.',
+        'Fundacja rodzinna krok po kroku':
+            'Семейный фонд шаг за шагом',
     },
 }
 

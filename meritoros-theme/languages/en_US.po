@@ -1762,3 +1762,766 @@ msgstr "Quality confirmed by standards. We have implemented quality control and 
 
 msgid "Powrót do"
 msgstr "Back to"
+
+msgid "Bezpieczeństwo\n"
+"i compliance"
+msgstr "Security\n"
+"and compliance"
+
+msgid "Blog"
+msgstr "Blog"
+
+msgid "Błąd połączenia. Spróbuj ponownie."
+msgstr "Connection error. Please try again."
+
+msgid "Certyfikat"
+msgstr "Certificate"
+
+msgid "Dlaczego BPO z Meritoros?"
+msgstr "Why BPO with Meritoros?"
+
+msgid "Dlaczego Meritoros to spokój\n"
+"w Twoim biznesie?"
+msgstr "Why Meritoros means peace of mind\n"
+"for your business?"
+
+msgid "Działamy zgodnie z normami ISO 9001 i ISO/IEC 27001. Zapewniamy poufność danych, ciągłość obsługi i pełną zgodność z obowiązującymi przepisami prawa."
+msgstr "We operate in accordance with ISO 9001 and ISO/IEC 27001 standards. We ensure data confidentiality, service continuity and full compliance with applicable regulations."
+
+msgid "Działamy zgodnie z obowiązującymi regulacjami i standardami bezpieczeństwa danych. Dbamy o poufność informacji oraz jasne zasady współpracy - bez \"skrótów\" i ryzyk."
+msgstr "We operate in accordance with applicable data security regulations and standards. We care about information confidentiality and clear cooperation terms — without \"shortcuts\" or risks."
+
+msgid "Efektywność kosztowa"
+msgstr "Cost efficiency"
+
+msgid "Elastyczność i indywidualne podejście pozwalają nam szybko dopasować się do zmieniających się potrzeb klientów i wspomóc ich na ścieżce skalowania swojej organizacji."
+msgstr "Flexibility and individual approach allow us to quickly adapt to changing client needs and support them on their path to scaling their organisation."
+
+msgid "Elastyczność i skalowanie\n"
+"operacji"
+msgstr "Flexibility and scaling\n"
+"operations"
+
+msgid "Jakość potwierdzona standardami"
+msgstr "Quality confirmed by standards"
+
+msgid "Kompleksowa obsługa kadrowo-płacowa – od umów i list płac po rozliczenia z ZUS i US, z pełną zastępowalnością zespołu."
+msgstr "Comprehensive HR and payroll services — from contracts and payrolls to ZUS and tax authority settlements, with full team substitutability."
+
+msgid "Mamy wdrożone procedury kontroli jakości i weryfikacji danych. Dostarczamy spójne dane dla zarządu."
+msgstr "We have implemented quality control and data verification procedures. We deliver consistent data for management."
+
+msgid "Nagrody i wyróżnienia"
+msgstr "Awards and distinctions"
+
+msgid "Nasze Wartości"
+msgstr "Our Values"
+
+msgid "Obszar współpracy"
+msgstr "Scope of cooperation"
+
+msgid "Outsourcing biznesowy pozwala na znaczne obniżenie kosztów operacyjnych. Dzięki nowoczesnej technologii i dużej skali obsługiwanych przez nas operacji oszczędności sięgają 20% lub więcej w porównaniu do obsługi procesów za pomocą własnych pracowników."
+msgstr "Business process outsourcing enables significant reduction of operational costs. Thanks to modern technology and the large scale of operations we handle, savings reach 20% or more compared to handling processes with own employees."
+
+msgid "Pełna księgowość, raportowanie zarządcze i sprawozdawcze – terminowo i zgodnie ze standardami, bez zakłóceń operacyjnych."
+msgstr "Full accounting, management and financial reporting — on time and in line with standards, without operational disruptions."
+
+msgid "Podaj prawidłowy adres e-mail."
+msgstr "Please enter a valid email address."
+
+msgid "Porozmawiajmy o obsłudze księgowej dla Twojej firmy"
+msgstr "Let's talk about accounting services for your company"
+
+msgid "Poznaj ofertę"
+msgstr "See our offer"
+
+msgid "Pracujemy zespołowo i procesowo, dzięki czemu obsługa nie zależy od jednej osoby. Zapewniamy zastępowalność i ciągłość pracy – bez przestojów."
+msgstr "We work as a team using defined processes, so service doesn't depend on a single person. We ensure substitutability and continuity — without downtime."
+
+msgid "Przekazując odpowiedzialność za pewne procesy wsparcia, Zarząd i kluczowi menedżerowie przedsiębiorstwa mogą skupić się na rozwoju rynkowym i strategicznym zarządzaniu swoim biznesem."
+msgstr "By delegating responsibility for certain support processes, the Management Board and key managers can focus on market development and strategic management of their business."
+
+msgid "Pytania od kandydatów"
+msgstr "Questions from candidates"
+
+msgid "Robotyzacja RPA\n"
+"\n"
+"E-teczki\n"
+"\n"
+"Optymalizacja procesów\n"
+"\n"
+"Elektroniczny obieg dokumentów\n"
+"\n"
+"Automatyzacja raportowania"
+msgstr "RPA Robotics\n"
+"\n"
+"E-files\n"
+"\n"
+"Process optimization\n"
+"\n"
+"Electronic document workflow\n"
+"\n"
+"Reporting automation"
+
+msgid "Rozwiązania BPO"
+msgstr "BPO Solutions"
+
+msgid "Rozwiązania kadrowe"
+msgstr "HR solutions"
+
+msgid "Rozwiązania księgowe"
+msgstr "Accounting solutions"
+
+msgid "Skala i ciągłość\n"
+"obsługi"
+msgstr "Scale and continuity\n"
+"of service"
+
+msgid "Skontaktuj się z nami i dowiedz się, jak możemy wesprzeć Twoją organizację."
+msgstr "Contact us and find out how we can support your organisation."
+
+msgid "Systematycznie rozwijamy i wdrażamy rozwiązania z zakresu robotyki (RPA) oraz automatyzacji. Wdrażamy najnowsze technologie, w tym Robotic Process Automation oraz AI, aby umożliwić klientom pełną kontrolę nad finansami. Działamy w modelu Lean, który zapewnia sprawność operacyjną i błyskawiczne dostosowanie się do potrzeb zmieniającego się rynku."
+msgstr "We systematically develop and implement solutions in the field of robotics (RPA) and automation. We deploy the latest technologies, including Robotic Process Automation and AI, to give clients full control over their finances. We operate in a Lean model that ensures operational efficiency and rapid adaptation to a changing market."
+
+msgid "Technologia\n"
+"i automatyzacja"
+msgstr "Technology\n"
+"and automation"
+
+msgid "Transformacja Cyfrowa"
+msgstr "Digital Transformation"
+
+msgid "Transformacja cyfrowa"
+msgstr "Digital transformation"
+
+msgid "Uwolnienie czasu\n"
+"i usprawnienie procesów"
+msgstr "Freeing up time\n"
+"and streamlining processes"
+
+msgid "Wdrożenie RPA, e-teczek i elektronicznego obiegu dokumentów – automatyzujemy procesy, żeby organizacja działała sprawniej."
+msgstr "Implementation of RPA, e-files and electronic document workflow — we automate processes so your organisation runs more efficiently."
+
+msgid "Wiedza i aktualności"
+msgstr "Knowledge and news"
+
+msgid "Współpracuj z profesjonalistami"
+msgstr "Work with professionals"
+
+msgid "Wszystkie wpisy"
+msgstr "All posts"
+
+msgid "Wykorzystujemy narzędzia i automatyzację (RPA), które porządkują obieg dokumentów, ograniczają ryzyko błędów i usprawniają pracę zespołów."
+msgstr "We use tools and automation (RPA) that streamline document flow, reduce the risk of errors and improve team efficiency."
+
+msgid "Wyróżnienia są efektem tego, jak rozwijamy Meritoros: konsekwentnie i procesowo. Trzymamy standard, który ma działać w praktyce - codziennie."
+msgstr "The awards are the result of how we develop Meritoros: consistently and with a process-driven approach. We maintain a standard that works in practice — every day."
+
+msgid "Wystąpił błąd. Spróbuj ponownie."
+msgstr "An error occurred. Please try again."
+
+msgid "Zapewniamy kompleksową obsługę kadrowo-płacową firm o różnej skali działalności. Przejmujemy odpowiedzialność za poprawność, terminowość i ciągłość procesów, aby organizacja mogła działać stabilnie i bez zakłóceń."
+msgstr "We provide comprehensive HR and payroll services for companies of various sizes. We take responsibility for accuracy, timeliness and continuity of processes, so the organisation can operate stably and without disruptions."
+
+msgid "Zaufało nam ponad 1200 klientów"
+msgstr "Trusted by over 1,200 clients"
+
+msgid "dla większych organizacji"
+msgstr "for larger organisations"
+
+msgid "bez stresu"
+msgstr "stress-free"
+
+msgid "Chcesz do nas dołączyć?\n"
+"Zostaw swoje CV"
+msgstr "Want to join us?\n"
+"Leave your CV"
+
+msgid "Ciągły Rozwój jest wpisany\n"
+"w nasze DNA"
+msgstr "Continuous Growth is embedded\n"
+"in our DNA"
+
+msgid "Dołącz do grona naszych\n"
+"klientów i rozwijaj biznes"
+msgstr "Join our clients\n"
+"and grow your business"
+
+msgid "Elastyczność dopasowana\n"
+"do Twojego stylu pracy"
+msgstr "Flexibility tailored\n"
+"to your work style"
+
+msgid "Informacje"
+msgstr "Information"
+
+msgid "Menu"
+msgstr "Menu"
+
+msgid "Menu główne"
+msgstr "Main menu"
+
+msgid "Menu stopki"
+msgstr "Footer menu"
+
+msgid "Miasta w których\n"
+"mamy oddziały"
+msgstr "Cities where\n"
+"we have offices"
+
+msgid "Nasi specjaliści są do dyspozycji w godzinach pracy biura.\n"
+"Odpowiemy na wszystkie Twoje pytania."
+msgstr "Our specialists are available during business hours.\n"
+"We will answer all your questions."
+
+msgid "Oddaj księgowość\n"
+"w ręce ekspertów"
+msgstr "Put your accounting\n"
+"in expert hands"
+
+msgid "Oddziały\n"
+"Wirtualne"
+msgstr "Virtual\n"
+"Offices"
+
+msgid "Otwórz menu"
+msgstr "Open menu"
+
+msgid "Polityka prywatności"
+msgstr "Privacy policy"
+
+msgid "Praca w zgranym\n"
+"zespole specjalistów"
+msgstr "Working in a cohesive\n"
+"team of specialists"
+
+msgid "Profesjonalne biuro rachunkowe i BPO dla firm z ambicjami."
+msgstr "Professional accounting firm and BPO for ambitious businesses."
+
+msgid "Projekt i realizacja:"
+msgstr "Design & development:"
+
+msgid "Regulamin newslettera"
+msgstr "Newsletter terms"
+
+msgid "Skup biur rachunkowych"
+msgstr "Acquisition of accounting firms"
+
+msgid "Stabilne zatrudnienie\n"
+"i jasne zasady"
+msgstr "Stable employment\n"
+"and clear rules"
+
+msgid "Usługi"
+msgstr "Services"
+
+msgid "Zacznij teraz"
+msgstr "Get started"
+
+msgid "Zamknij menu"
+msgstr "Close menu"
+
+msgid "Eksperci w księgowości.\n"
+"Technologia i pewność\n"
+"w działaniu."
+msgstr "Accounting experts.\n"
+"Technology and certainty\n"
+"in action."
+
+msgid "Zapewniamy księgowość kadry i outsourcing procesów w standardzie, który daje firmom spokój i bezpieczeństwo."
+msgstr "We provide accounting, HR and process outsourcing to a standard that gives businesses peace of mind and security."
+
+msgid "Zaufało nam ponad <span class=\"text-white\">1200 klientów</span>"
+msgstr "Trusted by over <span class=\"text-white\">1,200 clients</span>"
+
+msgid "Wideo ogólne"
+msgstr "General video"
+
+msgid "Wideo ogólne Meritoros"
+msgstr "General Meritoros video"
+
+msgid "Obejrzyj ogólne wideo"
+msgstr "Watch general video"
+
+msgid "Nasi klienci cenią nas za to, że dowozimy: jakość, terminowość i spójne dane. Jako partner w obszarze księgowości przejmujemy obszary, za które odpowiadamy, i pracujemy w standardzie, który daje spokój w codziennym prowadzeniu firmy."
+msgstr "Our clients value us for delivering: quality, timeliness and consistent data. As an accounting partner, we take ownership of the areas we are responsible for and work to a standard that brings peace of mind in day-to-day business operations."
+
+msgid "Dla biur rachunkowych"
+msgstr "For accounting firms"
+
+msgid "Kupimy Biuro\n"
+"Rachunkowe"
+msgstr "We'll Buy Your\n"
+"Accounting Firm"
+
+msgid "Od lat współpracujemy z biurami rachunkowymi, które stoją przed decyzją o zmianie, sprzedaży lub dalszym rozwoju."
+msgstr "For years we have worked with accounting firms facing a decision about change, sale or further growth."
+
+msgid "Wyceń wartość biura"
+msgstr "Value your firm"
+
+msgid "Obsługujemy systemy ERP i finansowe wiodących dostawców"
+msgstr "We support ERP and financial systems from leading vendors"
+
+msgid "Przejrzystych warunków"
+msgstr "Transparent terms"
+
+msgid "Przejętych biur"
+msgstr "Acquired firms"
+
+msgid "Do wstępnej wyceny"
+msgstr "To initial valuation"
+
+msgid "Pełna poufność"
+msgstr "Full confidentiality"
+
+msgid "Stabilne procesy. Rzetelne\n"
+"dane. Spokój zarządu."
+msgstr "Stable processes. Reliable\n"
+"data. Management peace of mind."
+
+msgid "Wspieramy większe firmy w obszarze księgowości, kadr i płac, back-office, przejmując odpowiedzialność za jakość, terminowość i ciągłość działania. Dostarczamy dane i raporty w harmonogramie dopasowanym do zarządu – tak, żeby decyzje były oparte na spójnych informacjach, a nie „gaszeniu pożarów\"."
+msgstr "We support larger companies in accounting, HR and payroll, and back-office, taking responsibility for quality, timeliness and continuity of operations. We deliver data and reports on a schedule tailored to management — so decisions are based on consistent information, not firefighting."
+
+msgid "raportowanie zarządcze i sprawozdawcze dopasowane do potrzeb organizacji\n"
+"\n"
+"cyfrowy obieg dokumentów i uporządkowane procesy\n"
+"\n"
+"pełna zastępowalność i ciągłość obsługi oraz gotowość do skalowania"
+msgstr "management and financial reporting tailored to the organisation's needs\n"
+"\n"
+"digital document workflow and streamlined processes\n"
+"\n"
+"full staff substitutability, service continuity and readiness to scale"
+
+msgid "Jakość potwierdzona\n"
+"standardami"
+msgstr "Quality confirmed\n"
+"by standards"
+
+msgid "Ponad 170\n"
+"expertów"
+msgstr "Over 170\n"
+"experts"
+
+msgid "Nagroda"
+msgstr "Award"
+
+msgid "Rozwiązania Kadrowe"
+msgstr "HR Solutions"
+
+msgid "Zapewniamy wsparcie w zakresie obsługi kadrowej i naliczania wynagrodzeń. Nasze kompleksowe rozwiązania w obszarze HR i payroll, dedykowane dla dużych przedsiębiorstw, zapewniają nie tylko zgodność z przepisami prawa, ale także optymalizację procesów kadrowych. Współpracujemy zarówno z firmami, które nie posiadają własnego działu HR, jak i z organizacjami potrzebującymi wsparcia przy wybranych procesach."
+msgstr "We provide support in HR administration and payroll calculation. Our comprehensive HR and payroll solutions, dedicated to large enterprises, ensure not only compliance with legal regulations but also optimisation of HR processes. We work both with companies without their own HR department and with organisations needing support with selected processes."
+
+msgid "Dlaczego BPO z nami"
+msgstr "Why BPO with us"
+
+msgid "Sprawdź rozwiązania kadrowe"
+msgstr "Explore HR solutions"
+
+msgid "Prowadzenie dokumentacji kadrowej\n"
+"\n"
+"Naliczanie wynagrodzeń i świadczeń\n"
+"\n"
+"Obsługa umów o pracę i umów cywilnoprawnych\n"
+"\n"
+"Rozliczenia z ZUS i instytucjami publicznymi\n"
+"\n"
+"Sporządzanie deklaracji podatkowych\n"
+"\n"
+"Kontrolowanie limitów urlopowych, terminów badań lekarskich, szkoleń BHP oraz wygasających umów\n"
+"\n"
+"Reprezentowanie podczas kontroli i czynności sprawdzających\n"
+"\n"
+"Zarządzanie programami PPK i PPE\n"
+"\n"
+"Platforma pracownicza z dostępem do wniosków urlopowych i dokumentów online"
+msgstr "Maintaining HR documentation\n"
+"\n"
+"Payroll and benefit calculation\n"
+"\n"
+"Handling employment contracts and civil law agreements\n"
+"\n"
+"Settlements with ZUS and public institutions\n"
+"\n"
+"Preparing tax declarations\n"
+"\n"
+"Monitoring leave limits, medical examination deadlines, H&S training and expiring contracts\n"
+"\n"
+"Representation during inspections and audit procedures\n"
+"\n"
+"Managing PPK and PPE schemes\n"
+"\n"
+"Employee platform with access to leave requests and documents online"
+
+msgid "Outsourcing księgowości pozwala na znaczne obniżenie kosztów operacyjnych. Możemy dostarczyć wysokiej jakości usługi księgowe, eliminując potrzebę zatrudniania wewnętrznych ekspertów. Dzięki nowoczesnej technologii i dużej skali obsługiwanych przez nas operacji oszczędności sięgają 20-30% lub więcej w porównaniu do prowadzenia księgowości wewnętrznie. Dzięki digitalizacji obiegu dokumentów oraz sprawnym procesom możemy dostarczać raporty w czasie rzeczywistym."
+msgstr "Accounting outsourcing enables significant reduction of operational costs. We can deliver high-quality accounting services, eliminating the need to hire internal experts. Thanks to modern technology and the large scale of operations we handle, savings reach 20–30% or more compared to in-house accounting. Through digitisation of document workflow and efficient processes, we can deliver reports in real time."
+
+msgid "Prowadzenie ksiąg rachunkowych\n"
+"\n"
+"Obliczanie podatków i składanie deklaracji podatkowych\n"
+"\n"
+"Bieżące rozliczanie wyciągów i kontrolowanie rozrachunków\n"
+"\n"
+"Raportowanie zarządcze i sprawozdawcze\n"
+"\n"
+"Raportowanie do instytucji publicznoprawnych, w tym NBP, GUS, INTRASTAT\n"
+"\n"
+"Sporządzanie sprawozdań finansowych oraz deklaracji rocznych\n"
+"\n"
+"Reprezentowanie podczas kontroli i czynności sprawdzających\n"
+"\n"
+"Obsługa niestandardowych rozliczeń, w tym VAT OSS, CIT Estoński, SSE, VAT marża, itp.\n"
+"\n"
+"Asystowanie i wsparcie podczas audytu sprawozdania finansowego"
+msgstr "Maintaining accounting books\n"
+"\n"
+"Calculating taxes and filing tax returns\n"
+"\n"
+"Ongoing reconciliation of bank statements and settlement control\n"
+"\n"
+"Management and financial reporting\n"
+"\n"
+"Reporting to public law institutions, including NBP, GUS, INTRASTAT\n"
+"\n"
+"Preparing financial statements and annual declarations\n"
+"\n"
+"Representation during inspections and audit procedures\n"
+"\n"
+"Handling non-standard settlements, including VAT OSS, Estonian CIT, SEZ, margin VAT, etc.\n"
+"\n"
+"Assisting and supporting during financial statement audits"
+
+msgid "Model współpracy"
+msgstr "Cooperation model"
+
+msgid "Możesz powierzyć nam całość procesów księgowych lub wybrane obszary wymagające uporządkowania.\n"
+"Dopasowujemy zakres wsparcia do realnej sytuacji Twojej firmy."
+msgstr "You can entrust us with all accounting processes or selected areas that need organising.\n"
+"We tailor the scope of support to the actual situation of your business."
+
+msgid "Kompleksowa obsługa"
+msgstr "Comprehensive service"
+
+msgid "Obsługujemy proces end-to-end: od bieżącej ewidencji po zamknięcie miesiąca i raporty. Pracujesz z zespołem, który zapewnia zastępowalność i stały standard."
+msgstr "We manage the process end-to-end: from day-to-day bookkeeping to month-end closing and reports. You work with a team that ensures substitutability and consistent standards."
+
+msgid "Outsourcing wybranych\n"
+"procesów"
+msgstr "Outsourcing of selected\n"
+"processes"
+
+msgid "Przejmujemy konkretne procesy i dowozimy je w ustalonym standardzie i harmonogramie. To rozwiązanie dla firm, które chcą wzmocnić wewnętrzny dział finansów bez rozbudowy etatów."
+msgstr "We take on specific processes and deliver them to an agreed standard and schedule. This is a solution for companies that want to strengthen their internal finance department without expanding headcount."
+
+msgid "Jak wygląda bieżąca współpraca"
+msgstr "How does ongoing cooperation work"
+
+msgid "Poznaj więcej historii"
+msgstr "See more stories"
+
+msgid "Indywidualna organizacja pracy"
+msgstr "Individual work organisation"
+
+msgid "W zależności od potrzeb możemy pracować:"
+msgstr "Depending on needs, we can work:"
+
+msgid "na bieżąco – obsługując codzienne procesy księgowe lub kadrowe"
+msgstr "on an ongoing basis — handling day-to-day accounting or HR processes"
+
+msgid "w cyklach tygodniowych"
+msgstr "in weekly cycles"
+
+msgid "w innych ustalonych odstępach czasu"
+msgstr "at other agreed intervals"
+
+msgid "Elastyczne zamknięcie miesiąca"
+msgstr "Flexible month-end closing"
+
+msgid "Terminy zamknięcia miesiąca ustalamy indywidualnie z każdą firmą, uwzględniając jej wewnętrzne potrzeby raportowe oraz obowiązujące terminy podatkowe."
+msgstr "Month-end closing deadlines are agreed individually with each company, taking into account its internal reporting needs and applicable tax deadlines."
+
+msgid "część firm potrzebuje raportów finansowych do 20. dnia miesiąca"
+msgstr "some companies need financial reports by the 20th of the month"
+
+msgid "inne wymagają wyników już w 3. lub 4. dniu roboczym nowego miesiąca"
+msgstr "others require results as early as the 3rd or 4th working day of the new month"
+
+msgid "Zakres i częstotliwość raportowania ustalamy indywidualnie z każdym klientem."
+msgstr "The scope and frequency of reporting is agreed individually with each client."
+
+msgid "W standardzie klient otrzymuje:"
+msgstr "As standard, the client receives:"
+
+msgid "rachunek zysków i strat"
+msgstr "profit and loss statement"
+
+msgid "bilans"
+msgstr "balance sheet"
+
+msgid "zestawienie należności i zobowiązań"
+msgstr "receivables and payables summary"
+
+msgid "Umów się na konsultacje"
+msgstr "Book a consultation"
+
+msgid "Myślisz o sprzedaży swojego biura rachunkowego?"
+msgstr "Thinking about selling your accounting firm?"
+
+msgid "Oferujemy dwa modele współpracy: całkowitą sprzedaż biura rachunkowego albo partnerstwo kapitałowe z zachowaniem operacyjnej autonomii."
+msgstr "We offer two models of cooperation: a full sale of the accounting firm, or a capital partnership with retention of operational autonomy."
+
+msgid "Właściciele biur rachunkowych zgłaszają się do nas z różnymi potrzebami. Jedni chcą całkowicie wyjść z biznesu i sprzedać firmę, inni szukają partnera, który pomoże im dalej rozwijać biuro. W Meritoros rozmawiamy o obu scenariuszach."
+msgstr "Owners of accounting firms come to us with different needs. Some want to exit the business completely and sell the firm; others are looking for a partner to help them continue developing their office. At Meritoros, we discuss both scenarios."
+
+msgid "Kupimy biuro rachunkowe"
+msgstr "We'll buy an accounting firm"
+
+msgid "Porozmawiajmy o możliwym modelu współpracy"
+msgstr "Let's talk about a possible cooperation model"
+
+msgid "Całkowita sprzedaż biura"
+msgstr "Full sale of the firm"
+
+msgid "Jeśli planujesz wycofanie się z prowadzenia firmy, możemy rozmawiać o przejęciu całego przedsiębiorstwa — z uwzględnieniem klientów, zespołu i ciągłości działania."
+msgstr "If you are planning to exit from running the business, we can discuss taking over the entire enterprise — including clients, the team and continuity of operations."
+
+msgid "Sprzedaż części udziałów"
+msgstr "Sale of a stake"
+
+msgid "Jeśli chcesz dalej prowadzić biuro, ale jednocześnie zyskać wsparcie większej organizacji, możemy rozmawiać o modelu partnerskim z częściowym wejściem kapitałowym Meritoros."
+msgstr "If you want to continue running the firm but also gain the support of a larger organisation, we can discuss a partnership model with Meritoros's partial capital entry."
+
+msgid "Od czego zależy wycena biura rachunkowego?"
+msgstr "What determines the valuation of an accounting firm?"
+
+msgid "Wartość biura rachunkowego nie zależy wyłącznie od przychodów. Znaczenie mają także m.in. struktura klientów, rentowność, organizacja procesów, używane systemy, stabilność zespołu oraz stopień zależności firmy od właściciela. Dlatego każdą rozmowę zaczynamy od zrozumienia realnej sytuacji biznesu."
+msgstr "The value of an accounting firm does not depend solely on revenue. Also important are, among other things, client structure, profitability, process organisation, systems used, team stability and the degree of owner dependency. That is why we always begin each conversation by understanding the real situation of the business."
+
+msgid "Na wycenę wpływają m.in.:"
+msgstr "Factors affecting valuation include:"
+
+msgid "poziom i powtarzalność przychodów,\n"
+"\n"
+"rentowność biura,\n"
+"\n"
+"struktura klientów i ryzyko koncentracji,\n"
+"\n"
+"organizacja pracy, technologia i stopień poukładania procesów."
+msgstr "level and repeatability of revenue,\n"
+"\n"
+"firm profitability,\n"
+"\n"
+"client structure and concentration risk,\n"
+"\n"
+"work organisation, technology and degree of process maturity."
+
+msgid "W przypadku modelu partnerskiego"
+msgstr "In the case of the partnership model"
+
+msgid "Model partnerski kierujemy przede wszystkim do biur, które:"
+msgstr "The partnership model is primarily aimed at firms that:"
+
+msgid "Co zyskujesz jako Partner Meritoros?"
+msgstr "What do you gain as a Meritoros Partner?"
+
+msgid "dostęp do automatyzacji i robotyzacji procesów\n"
+"\n"
+"wsparcie w digitalizacji i porządkowaniu operacji\n"
+"\n"
+"dostęp do wiedzy ekspertów i partnerów merytorycznych\n"
+"\n"
+"wsparcie HR i rekrutacyjne\n"
+"\n"
+"wsparcie marketingowe i sprzedażowe,\n"
+"\n"
+"wewnętrzne standardy jakości i audytu\n"
+"\n"
+"możliwość dalszego rozwoju w strukturach większej organizacji"
+msgstr "access to process automation and robotics\n"
+"\n"
+"support in digitisation and streamlining operations\n"
+"\n"
+"access to expert knowledge and substantive partners\n"
+"\n"
+"HR and recruitment support\n"
+"\n"
+"marketing and sales support\n"
+"\n"
+"internal quality and audit standards\n"
+"\n"
+"the opportunity for further growth within the structures of a larger organisation"
+
+msgid "Kalkulator orientacyjnej wyceny biura rachunkowego"
+msgstr "Indicative valuation calculator for an accounting firm"
+
+msgid "Sprawdź wycenę"
+msgstr "Check valuation"
+
+msgid "Spełniasz wszystkie kryteria?"
+msgstr "Do you meet all the criteria?"
+
+msgid "Warto się odezwać — chętnie sprawdzimy, czy widzimy przestrzeń do współpracy."
+msgstr "It is worth getting in touch — we will be happy to check whether we see scope for cooperation."
+
+msgid "Umów się na rozmowę"
+msgstr "Book a call"
+
+msgid "Obecnie najczęściej rozmawiamy z biurami, które spełniają poniższe kryteria:"
+msgstr "We currently most often talk with firms that meet the following criteria:"
+
+msgid "Przejmujemy całość lub wybrane obszary, które wymagają uporządkowania i stałego nadzoru."
+msgstr "We take over all or selected areas that require organising and ongoing supervision."
+
+msgid "obrót roczny: od ok. 1,2 mln zł\n"
+"\n"
+"oprogramowanie: Comarch Optima,\n"
+"\n"
+"preferowane lokalizacje: Warszawa, Kraków, Wrocław, Łódź, Górny Śląsk, Rzeszów,\n"
+"\n"
+"w przypadku większych podmiotów analizujemy także inne lokalizacje."
+msgstr "annual revenue: from approx. PLN 1.2M\n"
+"\n"
+"software: Comarch Optima,\n"
+"\n"
+"preferred locations: Warsaw, Kraków, Wrocław, Łódź, Upper Silesia, Rzeszów,\n"
+"\n"
+"for larger entities we also analyse other locations."
+
+msgid "Spełniasz powyższe kryteria?"
+msgstr "Do you meet the above criteria?"
+
+msgid "Spotkanie"
+msgstr "Meeting"
+
+msgid "Nie spełniasz wszystkich kryteriów?"
+msgstr "Don't meet all the criteria?"
+
+msgid "Jak wygląda sprzedaż biura rachunkowego w praktyce?"
+msgstr "What does selling an accounting firm look like in practice?"
+
+msgid "Jeśli chcesz lepiej zrozumieć kulisy takiego procesu, zobacz materiał, w którym omawiamy najważniejsze kwestie związane ze sprzedażą firmy usługowej i przejęciem biura rachunkowego."
+msgstr "If you would like to better understand the background of such a process, watch the material in which we discuss the most important issues related to selling a service firm and acquiring an accounting firm."
+
+msgid "Pierwsza rozmowa jest niezobowiązująca. Ustalimy, jaki model ma sens i czy jest przestrzeń do współpracy."
+msgstr "The first conversation is non-binding. We will establish which model makes sense and whether there is scope for cooperation."
+
+msgid "Wczytaj więcej"
+msgstr "Load more"
+
+msgid "Historie klientów"
+msgstr "Clients' stories"
+
+msgid "Posłuchaj, co mówią nasi klienci"
+msgstr "Hear what our clients say"
+
+msgid "Czytaj historię"
+msgstr "Read story"
+
+msgid "Jak z MINIMALNYM ryzykiem zacząć własny biznes? Sebastian Rafalik wspomina Meritoros."
+msgstr "How to start your own business with MINIMAL risk? Sebastian Rafalik recalls Meritoros."
+
+msgid "Sebastian Rafalik (POL–FRA) w wywiadzie dla „Zaprojektuj Swoje Życie\" mówi o tym, jak uporządkowanie księgowości i kadr z Meritoros pomogło mu odblokować skalowanie biznesu i zdjąć z siebie „wąskie gardło\"."
+msgstr "Sebastian Rafalik (POL–FRA) in an interview for \"Design Your Life\" talks about how organising accounting and HR with Meritoros helped him unlock business scaling and remove the \"bottleneck\"."
+
+msgid "Posłuchaj wywiadu"
+msgstr "Listen to the interview"
+
+msgid "Obejrzyj materiał"
+msgstr "Watch the video"
+
+msgid "Darmowy materiał"
+msgstr "Free resource"
+
+msgid "Pobierz nasz darmowy Ebook"
+msgstr "Download our free Ebook"
+
+msgid "Pobierz materiał"
+msgstr "Download resource"
+
+msgid "Ebook został wysłany na podany adres e-mail!"
+msgstr "The ebook has been sent to the provided email address!"
+
+msgid "Fundacja rodzinna"
+msgstr "Family foundation"
+
+msgid "księgowość pod kontrolą"
+msgstr "accounting under control"
+
+msgid "Fundacja rodzinna wymaga szczególnej staranności w obszarze księgowości i podatków. Zapewniamy rozwiązania, które chronią interes fundatorów i wspierają długoterminową strukturę majątkową."
+msgstr "A family foundation requires particular diligence in accounting and tax matters. We provide solutions that protect the interests of founders and support long-term asset structures."
+
+msgid "Dlaczego Meritoros"
+msgstr "Why Meritoros"
+
+msgid "Mamy wdrożone procedury kontroli jakości i weryfikacji danych. Dostarczamy informacje finansowe kompletne, spójne i użyteczne dla zarządu."
+msgstr "We have implemented quality control and data verification procedures. We deliver financial information that is complete, consistent and useful for management."
+
+msgid "Ponad 170 ekspertów"
+msgstr "Over 170 experts"
+
+msgid "Jakość potwierdzona standardami. Mamy wdrożone procedury kontroli jakości i weryfikacji danych. Dostarczamy informacje finansowe kompletne, spójne i użyteczne dla zarządu."
+msgstr "Quality confirmed by standards. We have implemented quality control and data verification procedures. We deliver financial information that is complete, consistent and useful for management."
+
+msgid "Powrót do"
+msgstr "Back to"
+
+msgid "Geologia inżynierska"
+msgstr "Engineering geology"
+
+msgid "Ochrona środowiska"
+msgstr "Environmental protection"
+
+msgid "Usługi rachunkowe, obszar kadr i płac, wsparcie w audytach"
+msgstr "Accounting services, HR & payroll, audit support"
+
+msgid "Po kilku zmianach głównej księgowej spółka potrzebowała szybkiego uporządkowania księgowości i bezpiecznego zamknięcia roku obrotowego. Wdrożyliśmy usprawnienia procesowe."
+msgstr "After several changes of the chief accountant, the company needed quick reorganization of accounting and safe closing of the financial year. We implemented process improvements."
+
+msgid "Nasz wpływ na operacje HPC"
+msgstr "Our impact on HPC operations"
+
+msgid "Technologia druku"
+msgstr "Print technology"
+
+msgid "E-commerce B2B"
+msgstr "E-commerce B2B"
+
+msgid "Pełna obsługa BPO, rozliczenia międzynarodowe VAT OSS"
+msgstr "Full BPO service, international VAT OSS settlements"
+
+msgid "Przy dynamicznym wzroście sprzedaży cross-border firma potrzebowała partnera gotowego na złożone rozliczenia VAT OSS w wielu krajach UE. Przejęliśmy całość obsługi finansowej."
+msgstr "With dynamic growth of cross-border sales, the company needed a partner ready for complex VAT OSS settlements in multiple EU countries. We took over all financial operations."
+
+msgid "Jak Printbox skaluje finanse globalnie"
+msgstr "How Printbox scales finances globally"
+
+msgid "Budownictwo"
+msgstr "Construction"
+
+msgid "Inżynieria"
+msgstr "Engineering"
+
+msgid "Kadry, płace, Intrastat, rozliczenia delegacji zagranicznych"
+msgstr "HR, payroll, Intrastat, foreign business travel settlements"
+
+msgid "Firma realizowała kontrakty w kilku krajach jednocześnie. Meritoros przejął obsługę kadrową i rozliczenia Intrastat, odciążając zarząd od złożoności administracyjnej."
+msgstr "The company was executing contracts in several countries simultaneously. Meritoros took over HR operations and Intrastat settlements, relieving management of administrative complexity."
+
+msgid "Obsługa kadrowa na skalę międzynarodową"
+msgstr "HR support at international scale"
+
+msgid "Produkcja przemysłowa"
+msgstr "Industrial manufacturing"
+
+msgid "Eksport"
+msgstr "Export"
+
+msgid "Pełna księgowość, fundacja rodzinna, compliance"
+msgstr "Full accounting, family foundation, compliance"
+
+msgid "Właściciel grupy produkcyjnej chciał oddzielić majątek prywatny od firmowego poprzez fundację rodzinną. Meritoros poprowadził cały proces prawno-księgowy od podstaw."
+msgstr "The owner of a production group wanted to separate private assets from company assets through a family foundation. Meritoros led the entire legal and accounting process from scratch."
+
+msgid "Fundacja rodzinna krok po kroku"
+msgstr "Family foundation step by step"

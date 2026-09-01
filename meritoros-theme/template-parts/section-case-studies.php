@@ -138,7 +138,7 @@ for ($i = 1; $i <= 4; $i++) {
 
     $industries_raw = (get_field("cs_{$i}_industries", $_cs_id) ?: $def['industries']);
     $industries = is_string($industries_raw) && $industries_raw !== ''
-        ? array_values(array_filter(array_map('trim', explode(',', $industries_raw))))
+        ? array_values(array_filter(array_map(function($s) { return __($s, 'meritoros'); }, array_map('trim', explode(',', $industries_raw)))))
         : [];
 
     $img_arr = $img_raw;
@@ -150,11 +150,11 @@ for ($i = 1; $i <= 4; $i++) {
         'client_name'  => $client_name,
         'logo_html'    => (get_field("cs_{$i}_logo_html",   $_cs_id) ?: ''),
         'industries'   => $industries,
-        'scope_title'  => (get_field("cs_{$i}_scope_title", $_cs_id) ?: $def['scope_title']),
-        'scope_desc'   => (get_field("cs_{$i}_scope_desc",  $_cs_id) ?: $def['scope_desc']),
+        'scope_title'  => __( get_field("cs_{$i}_scope_title", $_cs_id) ?: $def['scope_title'], 'meritoros' ),
+        'scope_desc'   => __( get_field("cs_{$i}_scope_desc",  $_cs_id) ?: $def['scope_desc'],  'meritoros' ),
         'img_url'      => is_array($img_arr) ? esc_url($img_arr['url'] ?? '') : esc_url($img_arr),
         'img_alt'      => is_array($img_arr) ? esc_attr($img_arr['alt'] ?? $client_name) : esc_attr($client_name),
-        'video_label'  => (get_field("cs_{$i}_video_label", $_cs_id) ?: $def['video_label']),
+        'video_label'  => __( get_field("cs_{$i}_video_label", $_cs_id) ?: $def['video_label'], 'meritoros' ),
         'video_dur'    => (get_field("cs_{$i}_video_dur",   $_cs_id) ?: ($yt_thumb ? mer_youtube_duration($yt_id) : $def['video_dur'])),
         'play_src'     => $play_src,
         'play_type'    => $play_type,
