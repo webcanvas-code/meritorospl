@@ -1,6 +1,6 @@
 <?php
-$title    = mer_field('ri_hero_title',    'Relacje inwestorskie');
-$text     = mer_field('ri_hero_text',     'Poniżej udostępniamy kluczowe informacje i dokumenty dotyczące Meritoros SA, w tym sprawozdania finansowe i raporty okresowe.');
+$title    = __( mer_field('ri_hero_title',    'Relacje inwestorskie'), 'meritoros' );
+$text     = __( mer_field('ri_hero_text',     'Poniżej udostępniamy kluczowe informacje i dokumenty dotyczące Meritoros SA, w tym sprawozdania finansowe i raporty okresowe.'), 'meritoros' );
 $image    = get_field('ri_hero_image');
 
 $img_url = is_array($image) ? esc_url($image['url']) : 'https://images.unsplash.com/photo-1521791136064-7986c2920216?auto=format&fit=crop&q=80&w=1600';

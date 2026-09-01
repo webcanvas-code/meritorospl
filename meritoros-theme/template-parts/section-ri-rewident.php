@@ -1,5 +1,5 @@
 <?php
-$title = mer_field('ri_rew_title', 'Opinie biegłego rewidenta');
+$title = __( mer_field('ri_rew_title', 'Opinie biegłego rewidenta'), 'meritoros' );
 
 // Pozycje – 10 osobnych grup ACF (ri_rew_item_1 … ri_rew_item_10)
 $items = [];

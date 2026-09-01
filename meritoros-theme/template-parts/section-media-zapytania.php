@@ -1,6 +1,6 @@
 <?php
-$title    = mer_field('media_zap_title', 'Zapytania medialne');
-$text     = mer_field('media_zap_text',  'W sprawach publikacji, komentarzy eksperckich i współpracy medialnej prosimy o kontakt. Odpowiemy możliwie szybko i wrócimy z informacją, w jakiej formie możemy pomóc.');
+$title    = __( mer_field('media_zap_title', 'Zapytania medialne'), 'meritoros' );
+$text     = __( mer_field('media_zap_text',  'W sprawach publikacji, komentarzy eksperckich i współpracy medialnej prosimy o kontakt. Odpowiemy możliwie szybko i wrócimy z informacją, w jakiej formie możemy pomóc.'), 'meritoros' );
 $email    = mer_field('media_zap_email', 'aleksandra.pawelec@meritoros.pl');
 $photo     = get_field('media_zap_photo');
 $photo_url = is_array($photo) ? ($photo['url'] ?? '') : '';

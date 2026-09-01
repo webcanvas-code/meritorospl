@@ -154,7 +154,7 @@ return [
     'Rekrutacja' => 'Recruitment',
     'Relacje inwestorskie' => 'Investor relations',
     'Rewident' => 'Auditor',
-    'Rośniemy' => 'We\'re growing',
+    'Rośniemy' => 'We are growing',
     'Rozliczenie umów (podwykonawcy)' => 'Contract settlements (subcontractors)',
     'Rozmowa kwalifikacyjna' => 'Job interview',
     'Rozwiązanie' => 'Solution',
@@ -215,7 +215,7 @@ return [
     'Zamknij' => 'Close',
     'Zapisz się bezpłatnie' => 'Sign up for free',
     'Zapytaj o ofertę' => 'Ask about our offer',
-    'Zarząd' => 'Board of directors',
+    'Zarząd' => 'Management board',
     'Zdjęcie klienta' => 'Customer photo',
     'Zobacz szczegóły' => 'View details',
     'Poprzedni' => 'Previous',
@@ -721,4 +721,217 @@ approach',
     'Stosujemy rozwiązania zgodne z normą ISO/IEC 27001, zapewniające poufność, integralność i bezpieczeństwo danych pracowniczych.' => 'We apply solutions compliant with ISO/IEC 27001 standard, ensuring confidentiality, integrity and security of employee data.',
     'Business continuity' => 'Business continuity',
     'Usługi realizuje cały zespół specjalistów, dlatego urlopy i rotacja pracowników nie wpływają na terminowość i ciągłość obsługi Twojej firmy.' => 'Services are delivered by a whole team of specialists, so holidays and staff rotation do not affect the timeliness and continuity of service for your company.',
+    'Kadry i płace, które dają' => 'HR and payroll that bring',
+    'spokój' => 'peace of mind',
+    'organizacji' => 'to your organisation',
+    'Twoje kadry' => 'Your HR',
+    'i płace' => 'and payroll',
+    'pod kontrolą' => 'under control',
+    'Oferujemy pełną obsługę kadrowo-płacową przedsiębiorstw – od prowadzenia dokumentacji pracowniczej po naliczanie wynagrodzeń i rozliczenia z instytucjami publicznymi. Klienci mogą powierzyć nam całość procesów kadrowych i płacowych lub wybrane obszary wymagające wsparcia.' => 'We offer comprehensive HR and payroll services for enterprises — from maintaining employee documentation to payroll calculation and settlements with public institutions. Clients can entrust us with all HR and payroll processes or selected areas requiring support.',
+    'Zakres współpracy dopasowujemy do wielkości i struktury organizacji.' => 'We tailor the scope of cooperation to the size and structure of the organisation.',
+    'Oszacuj wstępną wycenę' => 'Get an initial estimate',
+    'Porozmawiajmy o obsłudze kadrowej dla Twojej firmy' => 'Let\'s talk about HR services for your company',
+    'Skontaktuj się z nami i dowiedz się, jak możemy wesprzeć Twój dział HR i płac.' => 'Contact us and find out how we can support your HR and payroll department.',
+    'Kalkulator – oszacuj wstępnie koszt obsługi' => 'Calculator — get an initial cost estimate',
+    'Oszacuj wstępny koszt obsługi kadrowo-płacowej w kilka chwil. Wprowadź podstawowe informacje o swojej działalności, a my przygotujemy orientacyjną wycenę dopasowaną do Twoich potrzeb i skali zatrudnienia.' => 'Estimate the initial cost of HR and payroll services in a few moments. Enter basic information about your business and we will prepare an indicative quote tailored to your needs and employment scale.',
+    '* to jest wstępny szacunek, każda oferta jest jednak indywidualnie rozpatrywana i odpowiednio wyceniana.' => '* this is a preliminary estimate; each offer is individually reviewed and priced accordingly.',
+    'na bieżąco – obsługując codzienne procesy kadrowe i płacowe' => 'on an ongoing basis — handling day-to-day HR and payroll processes',
+    'Terminowe naliczanie wynagrodzeń' => 'Timely payroll processing',
+    'Terminy przetwarzania listy płac ustalamy indywidualnie z każdą firmą, uwzględniając jej wewnętrzny harmonogram wypłat oraz terminy rozliczeń z ZUS i US.' => 'Payroll processing deadlines are agreed individually with each company, taking into account its internal payment schedule and ZUS and tax authority settlement deadlines.',
+    'listy płac gotowe z odpowiednim wyprzedzeniem przed dniem wypłaty' => 'payrolls ready with adequate notice before the payment date',
+    'terminowe przelewy składek ZUS i zaliczek PIT' => 'timely transfers of ZUS contributions and PIT advance payments',
+    'Zakres raportowania ustalamy
+indywidualnie z każdym klientem.' => 'The scope of reporting is agreed
+individually with each client.',
+    'zestawienie listy płac' => 'payroll summary',
+    'paski wynagrodzeń dla pracowników' => 'payslips for employees',
+    'potwierdzenia rozliczeń ZUS i US' => 'ZUS and tax authority settlement confirmations',
+    'W zależności od potrzeb przygotowujemy również dodatkowe raporty kadrowe, płacowe i zarządcze.' => 'Depending on needs, we also prepare additional HR, payroll and management reports.',
+    'Oferta rozwiązań kadrowych' => 'HR solutions offer',
+    'Wyceń usługę' => 'Get a quote',
+    'Sprawdź również rozwiązania księgowe' => 'Also check our accounting solutions',
+    'Obsługa wielu systemów
+ksiągowych' => 'Support for multiple
+accounting systems',
+    'Konkretne przypadki. Konkretny efekt. Zobacz, jak pomagamy firmom działać stabilnie i bezpiecznie.' => 'Concrete cases. Concrete results. See how we help companies operate stably and securely.',
+    'Poznaj historie' => 'Explore the stories',
+    'Współpraca, która' => 'Cooperation that',
+    'daje spokój operacyjny' => 'brings operational peace of mind',
+    'W Meritoros pracujemy tak, aby odciążyć zespół klienta i zapewnić ciągłość obsługi. Działamy elastycznie, dopasowując model współpracy do realiów organizacji, ale trzymamy stały standard jakości, terminowości i bezpieczeństwa danych.' => 'At Meritoros we work in a way that relieves the client\'s team and ensures continuity of service. We operate flexibly, adapting the cooperation model to the realities of the organisation, while maintaining a consistent standard of quality, timeliness and data security.',
+    'Dzięki temu klienci mogą skupić się na biznesie, a nie na „gaszeniu tematów" w księgowości czy kadrach' => 'As a result, clients can focus on business rather than "putting out fires" in accounting or HR',
+    'Obsługa księgowa fundacji rodzinnej dla właścicieli myślących długoterminowo' => 'Accounting services for a family foundation for owners thinking long-term',
+    'Prowadzimy księgowość fundacji rodzinnych dla przedsiębiorców, którzy chcą uporządkować kwestie majątku i sukcesji w sposób bezpieczny, transparentny i zgodny z przepisami. Bierzemy na siebie bieżącą obsługę, sprawozdawczość i kontrolę terminów, tak aby fundacja działała stabilnie.' => 'We run the accounting of family foundations for entrepreneurs who want to organise matters of property and succession in a safe, transparent and compliant manner. We take on the ongoing service, reporting and deadline monitoring so that the foundation operates stably.',
+    'Poznaj naszą ofertę' => 'See our offer',
+    'Zapewniamy kompleksową obsługę księgową i podatkową, która porządkuje finanse fundacji i daje poczucie bezpieczeństwa jej fundatorom.' => 'We provide comprehensive accounting and tax services that bring order to the foundation\'s finances and give its founders a sense of security.',
+    'Prowadzenie ksiąg rachunkowych
+
+Rozliczanie i składanie deklaracji podatkowych
+
+Przygotowywanie sprawozdań finansowych
+
+Asystowanie podczas badania sprawozdania finansowego oraz kontroli urzędów
+
+Raportowanie na cele zarządcze
+
+Sporządzanie polityki rachunkowości' => 'Maintaining accounting books
+
+Calculating and filing tax returns
+
+Preparing financial statements
+
+Assisting during financial statement audits and regulatory inspections
+
+Reporting for management purposes
+
+Drafting accounting policies',
+    'Maciej Paraszczak dla Pulsu Biznesu' => 'Maciej Paraszczak for Puls Biznesu',
+    'Dla wielu naszych klientów jesteśmy nie tylko biurem rachunkowym, ale partnerem operacyjnym, który realnie usprawnia ich procesy biznesowe – podkreśla z Maciej Paraszczak, prezes zarządu spółki Meritoros.' => 'For many of our clients we are not just an accounting firm, but an operational partner that genuinely improves their business processes — says Maciej Paraszczak, CEO of Meritoros.',
+    'Wywiad z Maciejem Paraszczakiem dla Pulsu Biznesu o tym, jak wygląda nowoczesna księgowość w praktyce i dlaczego standard oraz procesy mają dziś kluczowe znaczenie.' => 'An interview with Maciej Paraszczak for Puls Biznesu on what modern accounting looks like in practice and why standards and processes are of key importance today.',
+    'Czytaj więcej' => 'Read more',
+    'Media i informacje firmowe' => 'Media and company news',
+    'Najważniejsze wydarzenia z życia firmy: rozwój, nowe inicjatywy, wyróżnienia i ogłoszenia.' => 'The most important events in the life of the company: development, new initiatives, awards and announcements.',
+    'Przeczytaj również' => 'Read also',
+    'Zapytania medialne' => 'Media enquiries',
+    'W sprawach publikacji, komentarzy eksperckich i współpracy medialnej prosimy o kontakt. Odpowiemy możliwie szybko i wrócimy z informacją, w jakiej formie możemy pomóc.' => 'For matters relating to publications, expert commentary and media cooperation, please get in touch. We will respond as quickly as possible and get back to you with information on how we can help.',
+    'Poznaj nasze biuro rachunkowe i wartości, które stoją za naszą codzienną pasją.' => 'Get to know our accounting firm and the values that underlie our daily passion.',
+    'Pracujemy tak, by być dumni z jakości informacji dostarczanych naszym klientom.' => 'We work in a way that makes us proud of the quality of information we deliver to our clients.',
+    'Porozmawiamy' => 'Let\'s talk',
+    'Zespół' => 'Team',
+    'prezes zarządu, CEO' => 'president of the management board, CEO',
+    'Założyciel i główny udziałowiec Meritoros SA, certyfikowany księgowy (Certyfikat Min. Finansów nr 1840/2003). Absolwent kierunku Zarządzanie ze specjalnością Finanse i Rachunkowość.' => 'Founder and main shareholder of Meritoros SA, certified accountant (Ministry of Finance Certificate No. 1840/2003). Graduate of Management with specialisation in Finance and Accounting.',
+    'członek zarządu, COO' => 'member of the management board, COO',
+    'Udziałowiec Meritoros SA, certyfikowana księgowa (Certyfikat Min. Finansów nr 54055/2011). Absolwentka kierunku Zarządzania na AGH, swoje wykształcenie uzupełniła o studia podyplomowe.' => 'Shareholder of Meritoros SA, certified accountant (Ministry of Finance Certificate No. 54055/2011). Graduate of Management at AGH, supplemented her education with postgraduate studies.',
+    'Udziałowiec Meritoros SA, certyfikowany księgowy (Certyfikat Min. Finansów nr 62092/2013). Absolwent kierunku Finansów i Rachunkowości na UEK ze specjalnością finanse przedsiębiorstw.' => 'Shareholder of Meritoros SA, certified accountant (Ministry of Finance Certificate No. 62092/2013). Graduate of Finance and Accounting at UEK with specialisation in corporate finance.',
+    'Księgowa (Certyfikat Min. Finansów 55068/2012) z wieloletnim doświadczeniem. Swoją karierę budowała w Biurach Rachunkowych oraz jako główna księgowa w jednej z międzynarodowych firm.' => 'Accountant (Ministry of Finance Certificate 55068/2012) with many years of experience. She built her career in accounting firms and as chief accountant at an international company.',
+    'Informacje o strukturze akcjonariatu' => 'Information on shareholder structure',
+    'Kapitał zakładowy spółki wynosi 120 000 PLN i dzieli się na 1 200 000 akcji serii A o wartości nominalnej 0,10 PLN.' => 'The share capital of the company is PLN 120,000 and is divided into 1,200,000 series A shares with a nominal value of PLN 0.10.',
+    'Akcjonariusz' => 'Shareholder',
+    'Łączna liczba posiadanych akcji' => 'Total number of shares held',
+    'Udział w łącznej liczbie głosów' => 'Share in the total number of votes',
+    'Poniżej udostępniamy kluczowe informacje i dokumenty dotyczące Meritoros SA, w tym sprawozdania finansowe i raporty okresowe.' => 'Below we share key information and documents relating to Meritoros SA, including financial statements and periodic reports.',
+    'Ogłoszenia w Monitorze Sądowym i Gospodarczym' => 'Announcements in the Court and Commercial Gazette',
+    'Ogłoszenia o zwołaniu Walnego Zgromadzenia Akcjonariuszy' => 'Notices of convening the General Meeting of Shareholders',
+    'Rada nadzorcza' => 'Supervisory board',
+    'doradca podatkowy (certyfikat nr 00443)
+był członek zarządu Małopolskiej Izby Doradców Podatkowych' => 'tax adviser (certificate No. 00443)
+former member of the board of the Małopolska Chamber of Tax Advisers',
+    'przedsiębiorca
+prezes zarządu Emka Sp. z o.o.' => 'entrepreneur
+president of the management board of Emka Sp. z o.o.',
+    'przedsiębiorca
+członek zarządu Chata Sp. z o.o.' => 'entrepreneur
+member of the management board of Chata Sp. z o.o.',
+    'przedsiębiorca
+wiceprezes zarządu Office Samurai Sp. z o.o.' => 'entrepreneur
+vice-president of the management board of Office Samurai Sp. z o.o.',
+    'przedsiębiorca
+prezes zarządu Printbox Sp. z o.o.' => 'entrepreneur
+president of the management board of Printbox Sp. z o.o.',
+    'Raporty kwartalne spółki' => 'Quarterly reports of the company',
+    'Raporty EBI/ESPI' => 'EBI/ESPI reports',
+    'Animator Rynku' => 'Market Maker',
+    'Autoryzowany Doradca' => 'Authorised Adviser',
+    'Pytania i odpowiedzi' => 'Questions and answers',
+    'Opinie biegłego rewidenta' => 'Auditor\'s opinions',
+    'Rozwój Meritoros SA znajduje odzwierciedlenie w systematycznym wzroście skali działalności i przychodów na przestrzeni ostatnich lat.' => 'The development of Meritoros SA is reflected in the systematic growth of the scale of operations and revenues over recent years.',
+    'Sprawozdania finansowe spółki' => 'Financial statements of the company',
+    'Sprawozdania z działalności zarządu spółki' => 'Management board activity reports',
+    'Uchwały podejmowane przez Zgromadzenie Akcjonariuszy' => 'Resolutions adopted by the General Meeting of Shareholders',
+    'Skontaktuj się z nami i dowiedz się, jak możemy wesprzeć Twoją firmę.' => 'Contact us and find out how we can support your company.',
+    'Dlaczego firmy wybierają nasze
+rozwiązania księgowe' => 'Why companies choose our
+accounting solutions',
+    'Pracujemy zgodnie z normą ISO 9001 — systematyczne procesy, kontrola jakości i ciągłe doskonalenie usług.' => 'We work in accordance with ISO 9001 — systematic processes, quality control and continuous improvement of services.',
+    'Nowoczesne i elastyczne podejście' => 'Modern and flexible approach',
+    'Dopasowujemy narzędzia i zakres współpracy do realnych potrzeb Twojej firmy – bez zbędnej biurokracji.' => 'We tailor the tools and scope of cooperation to the real needs of your company — without unnecessary bureaucracy.',
+    'Zespołowy model pracy gwarantuje ciągłość obsługi — urlopy i rotacja pracowników nie wpływają na jakość Twojej księgowości.' => 'A team-based work model guarantees continuity of service — holidays and staff rotation do not affect the quality of your accounting.',
+    'Dane klientów chronimy zgodnie z normą ISO 27001 — wdrożone procedury, szyfrowanie i regularne audyty bezpieczeństwa.' => 'We protect client data in accordance with ISO 27001 — implemented procedures, encryption and regular security audits.',
+    'Rozwiązania księgowe dla firm, które' => 'Accounting solutions for companies that',
+    'chcą mieć porządek' => 'want to have order',
+    'i spokój w biznesie' => 'and peace of mind in business',
+    'Zapewniamy kompleksową obsługę księgową firm o różnej skali działalności. Przejmujemy odpowiedzialność za poprawność, terminowość i ciągłość procesów księgowych, aby nasi klienci mogli skupić się na prowadzeniu i rozwoju biznesu.' => 'We provide comprehensive accounting services for companies of various sizes. We take responsibility for accuracy, timeliness and continuity of accounting processes, so our clients can focus on running and growing their business.',
+    'Twoja księgowość' => 'Your accounting',
+    'w' => 'in',
+    'dobrych rękach' => 'good hands',
+    'Oferujemy kompleksową obsługę księgową działalności i spółek zarówno w zakresie prowadzenia pełnych ksiąg rachunkowych, jak i uproszczonych form ewidencji. Klienci mogą powierzyć nam całość procesów księgowych lub wybrane obszary wymagające wsparcia.' => 'We offer comprehensive accounting services for sole traders and companies, both in the area of maintaining full accounting books and simplified forms of records. Clients can entrust us with all accounting processes or selected areas requiring support.',
+    'Zakres współpracy dopasowujemy do skali działalności i stopnia złożoności operacji finansowych.' => 'We tailor the scope of cooperation to the scale of operations and the complexity of financial transactions.',
+    'Sprawdź jak wygląda współpraca' => 'See how cooperation works',
+    'Oferta rozwiązań księgowych' => 'Accounting solutions offer',
+    'Obsługujemy firmy na różnych formach rozliczeń zarówno w pełnej księgowości (spółki),
+jak i w uproszczonych formach ewidencji (np. KPiR)' => 'We serve companies on various accounting forms, both in full accounting (companies),
+as well as simplified record forms (e.g. revenue and expense ledger)',
+    'Poniżej pokazujemy przykładowy zakres działań. Jeśli potrzebujesz innej usługi chętnie porozmawiamy.' => 'Below we show an example scope of activities. If you need a different service, we will be happy to talk.',
+    'Sprawdź również rozwiązania kadrowe' => 'Also check our HR solutions',
+    'Prowadzenie ksiąg rachunkowych
+
+Obliczanie podatków i składanie deklaracji podatkowych
+
+Bieżące rozliczanie wyciągów i kontrolowanie rozrachunków
+
+Raportowanie zarządcze i sprawozdawcze
+
+Raportowanie do instytucji publicznych
+
+Sporządzanie sprawozdań finansowych oraz deklaracji rocznych
+
+Reprezentowanie podczas kontroli i czynności sprawdzających
+
+Obsługa niestandardowych rozliczeń
+
+Asystowanie i wsparcie podczas audytu' => 'Maintaining accounting books
+
+Calculating taxes and filing tax returns
+
+Ongoing reconciliation of bank statements and settlement control
+
+Management and financial reporting
+
+Reporting to public institutions
+
+Preparing financial statements and annual declarations
+
+Representation during inspections and audit procedures
+
+Handling non-standard settlements
+
+Assisting and supporting during audits',
+    'Zakres i częstotliwość raportowania
+ustalamy indywidualnie z każdym klientem.' => 'The scope and frequency of reporting
+is agreed individually with each client.',
+    'W zależności od potrzeb przygotowujemy również dodatkowe raporty księgowe, finansowe lub kadrowo-płacowe.' => 'Depending on needs, we also prepare additional accounting, financial or HR and payroll reports.',
+    'Oszacuj wstępny koszt usług księgowych w kilka chwil. Wprowadź podstawowe informacje o swojej działalności, a my przygotujemy orientacyjną wycenę dopasowaną do Twoich potrzeb i skali biznesu.' => 'Estimate the initial cost of accounting services in a few moments. Enter basic information about your business and we will prepare an indicative quote tailored to your needs and business scale.',
+    'Obsługa wielu systemów
+księgowych' => 'Support for multiple
+accounting systems',
+    'Nasze Kompetencje' => 'Our Competencies',
+    'Obszary, w których przejmujemy odpowiedzialność' => 'Areas in which we take responsibility',
+    'Nasze doświadczenie obejmuje rozliczanie firm o różnorodnych profilach działalności, takich jak CIT Estoński, Fundacje Rodzinne, Spółki ASI, e-commerce, VAT OSS, Intrastat oraz rozliczenia delegacji pracowniczych.' => 'Our experience covers settlements for companies with diverse business profiles, such as Estonian CIT, Family Foundations, ASI companies, e-commerce, VAT OSS, Intrastat and employee travel settlements.',
+    'Usługi Rachunkowe' => 'Accounting Services',
+    'Kompleksowa obsługa księgowa firm o różnej skali działalności.' => 'Comprehensive accounting services for companies of various sizes.',
+    'Outsourcing wybranych lub pełnych procesów finansowych i administracyjnych dla większych firm.' => 'Outsourcing of selected or full financial and administrative processes for larger companies.',
+    'Usługi Kadrowe' => 'HR Services',
+    'Obsługa kadrowo-płacowa dopasowana do potrzeb organizacji.' => 'HR and payroll services tailored to the needs of the organisation.',
+    'Obsługa rachunkowa fundacji z uwzględnieniem specyfiki regulacyjnej.' => 'Accounting services for foundations taking into account regulatory specificities.',
+    'Wsparcie we wdrażaniu narzędzi, automatyzacji i usprawnianiu procesów biznesowych.' => 'Support in implementing tools, automation and streamlining business processes.',
+    'Prowadzenie ksiąg rachunkowych i ewidencji podatkowych (PKPB)' => 'Maintaining accounting books and tax records (PKPB)',
+    'Sporządzanie deklaracji i sprawozdań finansowych (CIT, VAT, PIT)' => 'Preparing financial declarations and statements (CIT, VAT, PIT)',
+    'Przygotowywanie rocznych sprawozdań finansowych i analiz dla klientów' => 'Preparing annual financial statements and analyses for clients',
+    'Bezpośredni kontakt z klientami (telefon, e-mail) w sprawach rozliczeń' => 'Direct contact with clients (phone, e-mail) on settlement matters',
+    'Współpraca z urzędami skarbowymi, instytucjami finansowymi i podmiotami zewnętrznymi, w tym reprezentacja klientów' => 'Cooperation with tax offices, financial institutions and external entities, including client representation',
+    'Minimum 2 lata doświadczenia w samodzielnym prowadzeniu ksiąg rachunkowych w biurze rachunkowym; certyfikat MF mile widziany' => 'Minimum 2 years of experience in independently maintaining accounting books in an accounting firm; Ministry of Finance certificate welcome',
+    'Biegła znajomość języka ukraińskiego i rosyjskiego do komunikacji z klientami' => 'Fluent knowledge of Ukrainian and Russian for client communication',
+    'Doświadczenie w samodzielnym sporządzaniu sprawozdań finansowych' => 'Experience in independently preparing financial statements',
+    'Praktyczna znajomość przepisów rachunkowych, prawa podatkowego i przepisów VAT' => 'Practical knowledge of accounting regulations, tax law and VAT regulations',
+    'Biegłość w MS Office (szczególnie Excel) i oprogramowaniu księgowym Comarch Optima' => 'Proficiency in MS Office (particularly Excel) and Comarch Optima accounting software',
+    'Skrupulatność i wysokie zdolności organizacyjne' => 'Meticulousness and high organisational skills',
+    'Zdolności analitycznego myślenia' => 'Analytical thinking skills',
+    'Dołącz do
+naszego zespołu' => 'Join
+our team',
+    'Budujemy uporządkowane procesy i dobrą atmosferę.
+Jeśli cenisz jasne zasady, rozwój i pracę zespołową – sprawdź,
+czy mamy ofertę dla Ciebie.' => 'We build orderly processes and a good atmosphere.
+If you value clear rules, development and teamwork — check
+whether we have an offer for you.',
+    'Aktualne oferty pracy' => 'Current job offers',
 ];

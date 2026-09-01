@@ -1,12 +1,12 @@
 <?php
-$title = mer_field('ri_rada_title', 'Rada nadzorcza');
+$title = __( mer_field('ri_rada_title', 'Rada nadzorcza'), 'meritoros' );
 
 $card_defaults = [
-    ['name' => 'Lidia Olszowska',   'role' => 'przewodnicząca rady nadzorczej', 'desc' => "doradca podatkowy (certyfikat nr 00443)\nbył członek zarządu Małopolskiej Izby Doradców Podatkowych"],
-    ['name' => 'Maria Gargas',      'role' => 'członek rady nadzorczej',         'desc' => "przedsiębiorca\nprezes zarządu Emka Sp. z o.o."],
-    ['name' => 'Jacek Pieniądz',    'role' => 'członek rady nadzorczej',         'desc' => "przedsiębiorca\nczłonek zarządu Chata Sp. z o.o."],
-    ['name' => 'Dominik Jaskulski', 'role' => 'członek rady nadzorczej',         'desc' => "przedsiębiorca\nwiceprezes zarządu Office Samurai Sp. z o.o."],
-    ['name' => 'Michał Czaicki',    'role' => 'członek rady nadzorczej',         'desc' => "przedsiębiorca\nprezes zarządu Printbox Sp. z o.o."],
+    ['name' => 'Lidia Olszowska',   'role' => __('przewodnicząca rady nadzorczej', 'meritoros'), 'desc' => __("doradca podatkowy (certyfikat nr 00443)\nbył członek zarządu Małopolskiej Izby Doradców Podatkowych", 'meritoros')],
+    ['name' => 'Maria Gargas',      'role' => __('członek rady nadzorczej', 'meritoros'),         'desc' => __("przedsiębiorca\nprezes zarządu Emka Sp. z o.o.", 'meritoros')],
+    ['name' => 'Jacek Pieniądz',    'role' => __('członek rady nadzorczej', 'meritoros'),         'desc' => __("przedsiębiorca\nczłonek zarządu Chata Sp. z o.o.", 'meritoros')],
+    ['name' => 'Dominik Jaskulski', 'role' => __('członek rady nadzorczej', 'meritoros'),         'desc' => __("przedsiębiorca\nwiceprezes zarządu Office Samurai Sp. z o.o.", 'meritoros')],
+    ['name' => 'Michał Czaicki',    'role' => __('członek rady nadzorczej', 'meritoros'),         'desc' => __("przedsiębiorca\nprezes zarządu Printbox Sp. z o.o.", 'meritoros')],
 ];
 
 $cards = [];

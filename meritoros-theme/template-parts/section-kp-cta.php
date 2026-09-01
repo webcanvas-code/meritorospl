@@ -1,7 +1,7 @@
 <?php
-$title    = mer_field('kp_cta_title',    'Porozmawiajmy o obsłudze kadrowej dla Twojej firmy');
-$text     = mer_field('kp_cta_text',     'Skontaktuj się z nami i dowiedz się, jak możemy wesprzeć Twój dział HR i płac.');
-$btn_text = mer_field('kp_cta_btn_text', 'Umów się na rozmowę');
+$title    = __( mer_field('kp_cta_title',    'Porozmawiajmy o obsłudze kadrowej dla Twojej firmy'), 'meritoros' );
+$text     = __( mer_field('kp_cta_text',     'Skontaktuj się z nami i dowiedz się, jak możemy wesprzeć Twój dział HR i płac.'), 'meritoros' );
+$btn_text = __( mer_field('kp_cta_btn_text', 'Umów się na rozmowę'), 'meritoros' );
 $btn_url  = mer_field('kp_cta_btn_url',  home_url('/kontakt/'));
 ?>
 

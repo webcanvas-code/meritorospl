@@ -1,11 +1,11 @@
 <?php
-$title_before = mer_field('uk_hero_title_before', 'Rozwiązania księgowe dla firm, które');
-$title_green  = mer_field('uk_hero_title_green',  'chcą mieć porządek');
-$title_after  = mer_field('uk_hero_title_after',  'i spokój w biznesie');
-$subtitle     = mer_field('uk_hero_subtitle', 'Zapewniamy kompleksową obsługę księgową firm o różnej skali działalności. Przejmujemy odpowiedzialność za poprawność, terminowość i ciągłość procesów księgowych, aby nasi klienci mogli skupić się na prowadzeniu i rozwoju biznesu.');
-$btn1_text    = mer_field('uk_hero_btn1_text', 'Poznaj ofertę');
+$title_before = __( mer_field('uk_hero_title_before', 'Rozwiązania księgowe dla firm, które'), 'meritoros' );
+$title_green  = __( mer_field('uk_hero_title_green',  'chcą mieć porządek'), 'meritoros' );
+$title_after  = __( mer_field('uk_hero_title_after',  'i spokój w biznesie'), 'meritoros' );
+$subtitle     = __( mer_field('uk_hero_subtitle', 'Zapewniamy kompleksową obsługę księgową firm o różnej skali działalności. Przejmujemy odpowiedzialność za poprawność, terminowość i ciągłość procesów księgowych, aby nasi klienci mogli skupić się na prowadzeniu i rozwoju biznesu.'), 'meritoros' );
+$btn1_text    = __( mer_field('uk_hero_btn1_text', 'Poznaj ofertę'), 'meritoros' );
 $btn1_url     = mer_field('uk_hero_btn1_url',  '#oferta');
-$btn2_text    = mer_field('uk_hero_btn2_text', 'Porozmawiajmy');
+$btn2_text    = __( mer_field('uk_hero_btn2_text', 'Porozmawiajmy'), 'meritoros' );
 $btn2_url     = mer_field('uk_hero_btn2_url',  home_url('/kontakt/'));
 ?>
 

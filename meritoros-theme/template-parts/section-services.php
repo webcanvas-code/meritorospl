@@ -1,9 +1,9 @@
 <?php
-$label     = mer_field('services_label', 'Nasze Kompetencje');
-$title     = mer_field('services_title', 'Obszary, w których przejmujemy odpowiedzialność');
-$desc      = mer_field('services_desc', 'Nasze doświadczenie obejmuje rozliczanie firm o różnorodnych profilach działalności, takich jak CIT Estoński, Fundacje Rodzinne, Spółki ASI, e-commerce, VAT OSS, Intrastat oraz rozliczenia delegacji pracowniczych.');
-$cta_title = mer_field('services_cta_title', 'Zapytaj o ofertę');
-$cta_sub   = mer_field('services_cta_sub', 'Skontaktuj się z nami');
+$label     = __( mer_field('services_label', 'Nasze Kompetencje'), 'meritoros' );
+$title     = __( mer_field('services_title', 'Obszary, w których przejmujemy odpowiedzialność'), 'meritoros' );
+$desc      = __( mer_field('services_desc', 'Nasze doświadczenie obejmuje rozliczanie firm o różnorodnych profilach działalności, takich jak CIT Estoński, Fundacje Rodzinne, Spółki ASI, e-commerce, VAT OSS, Intrastat oraz rozliczenia delegacji pracowniczych.'), 'meritoros' );
+$cta_title = __( mer_field('services_cta_title', 'Zapytaj o ofertę'), 'meritoros' );
+$cta_sub   = __( mer_field('services_cta_sub', 'Skontaktuj się z nami'), 'meritoros' );
 $cta_url   = mer_field('services_cta_url', '#kontakt');
 
 $service_defaults = [
@@ -19,8 +19,8 @@ for ($i = 1; $i <= 5; $i++) {
     $def     = $service_defaults[$i];
     $items[] = [
         'icon'        => mer_field("service_{$i}_icon", $def['icon']),
-        'title'       => mer_field("service_{$i}_title", $def['title']),
-        'description' => mer_field("service_{$i}_desc", $def['description']),
+        'title'       => __( mer_field("service_{$i}_title", $def['title']), 'meritoros' ),
+        'description' => __( mer_field("service_{$i}_desc", $def['description']), 'meritoros' ),
         'url'         => mer_field("service_{$i}_url", $def['url']),
     ];
 }

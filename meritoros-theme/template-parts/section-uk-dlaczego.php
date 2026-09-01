@@ -2,7 +2,7 @@
 $_page_id = get_the_ID();
 $_orig_id = apply_filters('wpml_object_id', $_page_id, get_post_type(), true, apply_filters('wpml_default_language', null));
 
-$title = mer_field('uk_dlaczego_title', "Dlaczego firmy wybierają nasze\nrozwiązania księgowe");
+$title = __( mer_field('uk_dlaczego_title', "Dlaczego firmy wybierają nasze\nrozwiązania księgowe"), 'meritoros' );
 
 $card_defaults = [
     ['icon' => 'badge-check',  'title' => "Jakość potwierdzona\nstandardami",        'text' => 'Pracujemy zgodnie z normą ISO 9001 — systematyczne procesy, kontrola jakości i ciągłe doskonalenie usług.', 'highlighted' => false],

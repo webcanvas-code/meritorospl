@@ -1,6 +1,6 @@
 <?php
-$title = mer_field('media_hero_title', 'Media i informacje firmowe');
-$text  = mer_field('media_hero_text',  'Najważniejsze wydarzenia z życia firmy: rozwój, nowe inicjatywy, wyróżnienia i ogłoszenia.');
+$title = __( mer_field('media_hero_title', 'Media i informacje firmowe'), 'meritoros' );
+$text  = __( mer_field('media_hero_text',  'Najważniejsze wydarzenia z życia firmy: rozwój, nowe inicjatywy, wyróżnienia i ogłoszenia.'), 'meritoros' );
 ?>
 
 <section class="pt-36 pb-16 bg-white relative overflow-hidden">

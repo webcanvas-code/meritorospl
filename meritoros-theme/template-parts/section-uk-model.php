@@ -2,18 +2,18 @@
 $_page_id = get_the_ID();
 $_orig_id = apply_filters('wpml_object_id', $_page_id, get_post_type(), true, apply_filters('wpml_default_language', null));
 
-$title    = mer_field('uk_model_title',    'Model współpracy');
-$subtitle = mer_field('uk_model_subtitle', "Możesz powierzyć nam całość procesów księgowych lub wybrane obszary wymagające uporządkowania.\nDopasowujemy zakres wsparcia do realnej sytuacji Twojej firmy.");
+$title    = __( mer_field('uk_model_title',    'Model współpracy'), 'meritoros' );
+$subtitle = __( mer_field('uk_model_subtitle', "Możesz powierzyć nam całość procesów księgowych lub wybrane obszary wymagające uporządkowania.\nDopasowujemy zakres wsparcia do realnej sytuacji Twojej firmy."), 'meritoros' );
 
 $m1 = get_field('uk_model1') ?: ($_orig_id !== $_page_id ? get_field('uk_model1', $_orig_id) : null);
 $m1_icon  = is_array($m1) && !empty($m1['icon'])  ? $m1['icon']  : 'network';
-$m1_title = is_array($m1) && !empty($m1['title']) ? $m1['title'] : 'Kompleksowa obsługa';
-$m1_text  = is_array($m1) && !empty($m1['text'])  ? $m1['text']  : 'Obsługujemy proces end-to-end: od bieżącej ewidencji po zamknięcie miesiąca i raporty. Pracujesz z zespołem, który zapewnia zastępowalność i stały standard.';
+$m1_title = __( is_array($m1) && !empty($m1['title']) ? $m1['title'] : 'Kompleksowa obsługa', 'meritoros' );
+$m1_text  = __( is_array($m1) && !empty($m1['text'])  ? $m1['text']  : 'Obsługujemy proces end-to-end: od bieżącej ewidencji po zamknięcie miesiąca i raporty. Pracujesz z zespołem, który zapewnia zastępowalność i stały standard.', 'meritoros' );
 
 $m2 = get_field('uk_model2') ?: ($_orig_id !== $_page_id ? get_field('uk_model2', $_orig_id) : null);
 $m2_image = is_array($m2) && !empty($m2['image']) ? $m2['image'] : null;
-$m2_title = is_array($m2) && !empty($m2['title']) ? $m2['title'] : "Outsourcing wybranych\nprocesów";
-$m2_text  = is_array($m2) && !empty($m2['text'])  ? $m2['text']  : 'Przejmujemy konkretne procesy i dowozimy je w ustalonym standardzie i harmonogramie. To rozwiązanie dla firm, które chcą wzmocnić wewnętrzny dział finansów bez rozbudowy etatów.';
+$m2_title = __( is_array($m2) && !empty($m2['title']) ? $m2['title'] : "Outsourcing wybranych\nprocesów", 'meritoros' );
+$m2_text  = __( is_array($m2) && !empty($m2['text'])  ? $m2['text']  : 'Przejmujemy konkretne procesy i dowozimy je w ustalonym standardzie i harmonogramie. To rozwiązanie dla firm, które chcą wzmocnić wewnętrzny dział finansów bez rozbudowy etatów.', 'meritoros' );
 
 $m2_img_url = is_array($m2_image) ? esc_url($m2_image['url']) : 'https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&q=80&w=800';
 $m2_img_alt = is_array($m2_image) ? esc_attr($m2_image['alt'] ?: 'Outsourcing') : 'Outsourcing';

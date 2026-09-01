@@ -1,5 +1,5 @@
 <?php
-$title = mer_field('ri_msg_title', 'Ogłoszenia w Monitorze Sądowym i Gospodarczym');
+$title = __( mer_field('ri_msg_title', 'Ogłoszenia w Monitorze Sądowym i Gospodarczym'), 'meritoros' );
 
 // Pozycje – 10 osobnych grup ACF (ri_msg_item_1 … ri_msg_item_10)
 $items = [];

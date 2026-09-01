@@ -504,6 +504,194 @@ TRANSLATIONS = {
         'Stosujemy rozwiązania zgodne z normą ISO/IEC 27001, zapewniające poufność, integralność i bezpieczeństwo danych pracowniczych.': 'We apply solutions compliant with ISO/IEC 27001 standard, ensuring confidentiality, integrity and security of employee data.',
         'Business continuity': 'Business continuity',
         'Usługi realizuje cały zespół specjalistów, dlatego urlopy i rotacja pracowników nie wpływają na terminowość i ciągłość obsługi Twojej firmy.': 'Services are delivered by a whole team of specialists, so holidays and staff rotation do not affect the timeliness and continuity of service for your company.',
+        # --- section-kp-hero ---
+        'Kadry i płace, które dają': 'HR and payroll that bring',
+        'spokój': 'peace of mind',
+        'organizacji': 'to your organisation',
+        'Zapewniamy kompleksową obsługę kadrowo-płacową firm o różnej skali działalności. Przejmujemy odpowiedzialność za poprawność, terminowość i ciągłość procesów, aby organizacja mogła działać stabilnie i bez zakłóceń.': 'We provide comprehensive HR and payroll services for companies of various sizes. We take responsibility for accuracy, timeliness and continuity of processes, so the organisation can operate stably and without disruptions.',
+        'Porozmawiajmy': "Let's talk",
+        # --- section-kp-obsluga ---
+        'Twoje kadry': 'Your HR',
+        'i płace': 'and payroll',
+        'pod kontrolą': 'under control',
+        'Oferujemy pełną obsługę kadrowo-płacową przedsiębiorstw – od prowadzenia dokumentacji pracowniczej po naliczanie wynagrodzeń i rozliczenia z instytucjami publicznymi. Klienci mogą powierzyć nam całość procesów kadrowych i płacowych lub wybrane obszary wymagające wsparcia.': 'We offer comprehensive HR and payroll services for enterprises — from maintaining employee documentation to payroll calculation and settlements with public institutions. Clients can entrust us with all HR and payroll processes or selected areas requiring support.',
+        'Zakres współpracy dopasowujemy do wielkości i struktury organizacji.': 'We tailor the scope of cooperation to the size and structure of the organisation.',
+        'Oszacuj wstępną wycenę': 'Get an initial estimate',
+        # --- section-kp-cta ---
+        'Porozmawiajmy o obsłudze kadrowej dla Twojej firmy': "Let's talk about HR services for your company",
+        'Skontaktuj się z nami i dowiedz się, jak możemy wesprzeć Twój dział HR i płac.': 'Contact us and find out how we can support your HR and payroll department.',
+        # --- section-kp-kalkulator ---
+        'Kalkulator – oszacuj wstępnie koszt obsługi': 'Calculator — get an initial cost estimate',
+        'Oszacuj wstępny koszt obsługi kadrowo-płacowej w kilka chwil. Wprowadź podstawowe informacje o swojej działalności, a my przygotujemy orientacyjną wycenę dopasowaną do Twoich potrzeb i skali zatrudnienia.': 'Estimate the initial cost of HR and payroll services in a few moments. Enter basic information about your business and we will prepare an indicative quote tailored to your needs and employment scale.',
+        '* to jest wstępny szacunek, każda oferta jest jednak indywidualnie rozpatrywana i odpowiednio wyceniana.': '* this is a preliminary estimate; each offer is individually reviewed and priced accordingly.',
+        # --- section-kp-wspolpraca ---
+        'na bieżąco – obsługując codzienne procesy kadrowe i płacowe': 'on an ongoing basis — handling day-to-day HR and payroll processes',
+        'Terminowe naliczanie wynagrodzeń': 'Timely payroll processing',
+        'Terminy przetwarzania listy płac ustalamy indywidualnie z każdą firmą, uwzględniając jej wewnętrzny harmonogram wypłat oraz terminy rozliczeń z ZUS i US.': 'Payroll processing deadlines are agreed individually with each company, taking into account its internal payment schedule and ZUS and tax authority settlement deadlines.',
+        'listy płac gotowe z odpowiednim wyprzedzeniem przed dniem wypłaty': 'payrolls ready with adequate notice before the payment date',
+        'terminowe przelewy składek ZUS i zaliczek PIT': 'timely transfers of ZUS contributions and PIT advance payments',
+        'Zakres raportowania ustalamy\nindywidualnie z każdym klientem.': 'The scope of reporting is agreed\nindividually with each client.',
+        'zestawienie listy płac': 'payroll summary',
+        'paski wynagrodzeń dla pracowników': 'payslips for employees',
+        'potwierdzenia rozliczeń ZUS i US': 'ZUS and tax authority settlement confirmations',
+        'W zależności od potrzeb przygotowujemy również dodatkowe raporty kadrowe, płacowe i zarządcze.': 'Depending on needs, we also prepare additional HR, payroll and management reports.',
+        # --- section-kp-oferta ---
+        'Oferta rozwiązań kadrowych': 'HR solutions offer',
+        'Wyceń usługę': 'Get a quote',
+        'Sprawdź również rozwiązania księgowe': 'Also check our accounting solutions',
+        'Prowadzenie dokumentacji kadrowej\n\nNaliczanie wynagrodzeń i świadczeń\n\nObsługa umów o pracę i umów cywilnoprawnych\n\nRozliczenia z ZUS i instytucjami publicznymi\n\nSporządzanie deklaracji podatkowych\n\nKontrolowanie limitów urlopowych, terminów badań lekarskich, szkoleń BHP oraz wygasających umów\n\nReprezentowanie podczas kontroli i czynności sprawdzających\n\nZarządzanie programami PPK i PPE\n\nPlatforma pracownicza z dostępem do wniosków urlopowych i dokumentów online': 'Maintaining HR documentation\n\nPayroll and benefit calculation\n\nHandling employment contracts and civil law agreements\n\nSettlements with ZUS and public institutions\n\nPreparing tax declarations\n\nMonitoring leave limits, medical examination deadlines, H&S training and expiring contracts\n\nRepresentation during inspections and audit procedures\n\nManaging PPK and PPE schemes\n\nEmployee platform with access to leave requests and documents online',
+        # --- section-kp-systemy ---
+        "Obsługa wielu systemów\nksiągowych": "Support for multiple\naccounting systems",
+        # --- section-hk-hero ---
+        'Historie klientów': "Clients' stories",
+        'Konkretne przypadki. Konkretny efekt. Zobacz, jak pomagamy firmom działać stabilnie i bezpiecznie.': 'Concrete cases. Concrete results. See how we help companies operate stably and securely.',
+        'Poznaj historie': 'Explore the stories',
+        # --- section-hk-wspolpraca ---
+        'Współpraca, która': 'Cooperation that',
+        'daje spokój operacyjny': 'brings operational peace of mind',
+        'W Meritoros pracujemy tak, aby odciążyć zespół klienta i zapewnić ciągłość obsługi. Działamy elastycznie, dopasowując model współpracy do realiów organizacji, ale trzymamy stały standard jakości, terminowości i bezpieczeństwa danych.': 'At Meritoros we work in a way that relieves the client\'s team and ensures continuity of service. We operate flexibly, adapting the cooperation model to the realities of the organisation, while maintaining a consistent standard of quality, timeliness and data security.',
+        'Dzięki temu klienci mogą skupić się na biznesie, a nie na „gaszeniu tematów" w księgowości czy kadrach': 'As a result, clients can focus on business rather than "putting out fires" in accounting or HR',
+        # --- section-fr-model ---
+        "Możesz powierzyć nam całość procesów księgowych lub wybrane obszary wymagające uporządkowania.\nDopasowujemy zakres wsparcia do realnej sytuacji Twojej firmy.": "You can entrust us with all accounting processes or selected areas that need organising.\nWe tailor the scope of support to the actual situation of your business.",
+        'Obsługujemy proces end-to-end: od bieżącej ewidencji po zamknięcie miesiąca i raporty. Pracujesz z zespołem, który zapewnia zastępowalność i stały standard.': 'We manage the process end-to-end: from day-to-day bookkeeping to month-end closing and reports. You work with a team that ensures substitutability and consistent standards.',
+        # --- section-fr-obsluga ---
+        'Obsługa księgowa fundacji rodzinnej dla właścicieli myślących długoterminowo': 'Accounting services for a family foundation for owners thinking long-term',
+        'Prowadzimy księgowość fundacji rodzinnych dla przedsiębiorców, którzy chcą uporządkować kwestie majątku i sukcesji w sposób bezpieczny, transparentny i zgodny z przepisami. Bierzemy na siebie bieżącą obsługę, sprawozdawczość i kontrolę terminów, tak aby fundacja działała stabilnie.': 'We run the accounting of family foundations for entrepreneurs who want to organise matters of property and succession in a safe, transparent and compliant manner. We take on the ongoing service, reporting and deadline monitoring so that the foundation operates stably.',
+        # --- section-fr-oferta ---
+        'Poznaj naszą ofertę': 'See our offer',
+        'Zapewniamy kompleksową obsługę księgową i podatkową, która porządkuje finanse fundacji i daje poczucie bezpieczeństwa jej fundatorom.': 'We provide comprehensive accounting and tax services that bring order to the foundation\'s finances and give its founders a sense of security.',
+        'Prowadzenie ksiąg rachunkowych\n\nRozliczanie i składanie deklaracji podatkowych\n\nPrzygotowywanie sprawozdań finansowych\n\nAsystowanie podczas badania sprawozdania finansowego oraz kontroli urzędów\n\nRaportowanie na cele zarządcze\n\nSporządzanie polityki rachunkowości': 'Maintaining accounting books\n\nCalculating and filing tax returns\n\nPreparing financial statements\n\nAssisting during financial statement audits and regulatory inspections\n\nReporting for management purposes\n\nDrafting accounting policies',
+        # --- section-media-artykul ---
+        'Maciej Paraszczak dla Pulsu Biznesu': 'Maciej Paraszczak for Puls Biznesu',
+        'Dla wielu naszych klientów jesteśmy nie tylko biurem rachunkowym, ale partnerem operacyjnym, który realnie usprawnia ich procesy biznesowe – podkreśla z Maciej Paraszczak, prezes zarządu spółki Meritoros.': 'For many of our clients we are not just an accounting firm, but an operational partner that genuinely improves their business processes — says Maciej Paraszczak, CEO of Meritoros.',
+        'Wywiad z Maciejem Paraszczakiem dla Pulsu Biznesu o tym, jak wygląda nowoczesna księgowość w praktyce i dlaczego standard oraz procesy mają dziś kluczowe znaczenie.': 'An interview with Maciej Paraszczak for Puls Biznesu on what modern accounting looks like in practice and why standards and processes are of key importance today.',
+        'Czytaj więcej': 'Read more',
+        # --- section-media-hero ---
+        'Media i informacje firmowe': 'Media and company news',
+        'Najważniejsze wydarzenia z życia firmy: rozwój, nowe inicjatywy, wyróżnienia i ogłoszenia.': 'The most important events in the life of the company: development, new initiatives, awards and announcements.',
+        # --- section-media-przeczytaj ---
+        'Przeczytaj również': 'Read also',
+        # --- section-media-zapytania ---
+        'Zapytania medialne': 'Media enquiries',
+        'W sprawach publikacji, komentarzy eksperckich i współpracy medialnej prosimy o kontakt. Odpowiemy możliwie szybko i wrócimy z informacją, w jakiej formie możemy pomóc.': 'For matters relating to publications, expert commentary and media cooperation, please get in touch. We will respond as quickly as possible and get back to you with information on how we can help.',
+        # --- section-onas-hero ---
+        'Poznaj nasze biuro rachunkowe i wartości, które stoją za naszą codzienną pasją.': 'Get to know our accounting firm and the values that underlie our daily passion.',
+        'Pracujemy tak, by być dumni z jakości informacji dostarczanych naszym klientom.': 'We work in a way that makes us proud of the quality of information we deliver to our clients.',
+        'Porozmawiamy': "Let's talk",
+        # --- section-onas-zespol ---
+        'Zespół': 'Team',
+        'prezes zarządu, CEO': 'president of the management board, CEO',
+        'Założyciel i główny udziałowiec Meritoros SA, certyfikowany księgowy (Certyfikat Min. Finansów nr 1840/2003). Absolwent kierunku Zarządzanie ze specjalnością Finanse i Rachunkowość.': 'Founder and main shareholder of Meritoros SA, certified accountant (Ministry of Finance Certificate No. 1840/2003). Graduate of Management with specialisation in Finance and Accounting.',
+        'członek zarządu, COO': 'member of the management board, COO',
+        'Udziałowiec Meritoros SA, certyfikowana księgowa (Certyfikat Min. Finansów nr 54055/2011). Absolwentka kierunku Zarządzania na AGH, swoje wykształcenie uzupełniła o studia podyplomowe.': 'Shareholder of Meritoros SA, certified accountant (Ministry of Finance Certificate No. 54055/2011). Graduate of Management at AGH, supplemented her education with postgraduate studies.',
+        'Udziałowiec Meritoros SA, certyfikowany księgowy (Certyfikat Min. Finansów nr 62092/2013). Absolwent kierunku Finansów i Rachunkowości na UEK ze specjalnością finanse przedsiębiorstw.': 'Shareholder of Meritoros SA, certified accountant (Ministry of Finance Certificate No. 62092/2013). Graduate of Finance and Accounting at UEK with specialisation in corporate finance.',
+        'Księgowa (Certyfikat Min. Finansów 55068/2012) z wieloletnim doświadczeniem. Swoją karierę budowała w Biurach Rachunkowych oraz jako główna księgowa w jednej z międzynarodowych firm.': 'Accountant (Ministry of Finance Certificate 55068/2012) with many years of experience. She built her career in accounting firms and as chief accountant at an international company.',
+        # --- section-ri-akcjonariat ---
+        'Informacje o strukturze akcjonariatu': 'Information on shareholder structure',
+        'Kapitał zakładowy spółki wynosi 120 000 PLN i dzieli się na 1 200 000 akcji serii A o wartości nominalnej 0,10 PLN.': 'The share capital of the company is PLN 120,000 and is divided into 1,200,000 series A shares with a nominal value of PLN 0.10.',
+        'Akcjonariusz': 'Shareholder',
+        'Łączna liczba posiadanych akcji': 'Total number of shares held',
+        'Udział w łącznej liczbie głosów': 'Share in the total number of votes',
+        # --- section-ri-hero ---
+        'Relacje inwestorskie': 'Investor relations',
+        'Poniżej udostępniamy kluczowe informacje i dokumenty dotyczące Meritoros SA, w tym sprawozdania finansowe i raporty okresowe.': 'Below we share key information and documents relating to Meritoros SA, including financial statements and periodic reports.',
+        # --- section-ri-msg ---
+        'Ogłoszenia w Monitorze Sądowym i Gospodarczym': 'Announcements in the Court and Commercial Gazette',
+        # --- section-ri-ogloszenia ---
+        'Ogłoszenia o zwołaniu Walnego Zgromadzenia Akcjonariuszy': 'Notices of convening the General Meeting of Shareholders',
+        # --- section-ri-rada ---
+        'Rada nadzorcza': 'Supervisory board',
+        'doradca podatkowy (certyfikat nr 00443)\nbył członek zarządu Małopolskiej Izby Doradców Podatkowych': 'tax adviser (certificate No. 00443)\nformer member of the board of the Małopolska Chamber of Tax Advisers',
+        'przedsiębiorca\nprezes zarządu Emka Sp. z o.o.': 'entrepreneur\npresident of the management board of Emka Sp. z o.o.',
+        'przedsiębiorca\nczłonek zarządu Chata Sp. z o.o.': 'entrepreneur\nmember of the management board of Chata Sp. z o.o.',
+        'przedsiębiorca\nwiceprezes zarządu Office Samurai Sp. z o.o.': 'entrepreneur\nvice-president of the management board of Office Samurai Sp. z o.o.',
+        'przedsiębiorca\nprezes zarządu Printbox Sp. z o.o.': 'entrepreneur\npresident of the management board of Printbox Sp. z o.o.',
+        # --- section-ri-raporty ---
+        'Raporty kwartalne spółki': 'Quarterly reports of the company',
+        'Raporty EBI/ESPI': 'EBI/ESPI reports',
+        'Animator Rynku': 'Market Maker',
+        'Autoryzowany Doradca': 'Authorised Adviser',
+        'Pytania i odpowiedzi': 'Questions and answers',
+        # --- section-ri-rewident ---
+        'Opinie biegłego rewidenta': 'Auditor\'s opinions',
+        # --- section-ri-rosniemy ---
+        'Rośniemy': 'We are growing',
+        'Rozwój Meritoros SA znajduje odzwierciedlenie w systematycznym wzroście skali działalności i przychodów na przestrzeni ostatnich lat.': 'The development of Meritoros SA is reflected in the systematic growth of the scale of operations and revenues over recent years.',
+        # --- section-ri-sprawozdania ---
+        'Sprawozdania finansowe spółki': 'Financial statements of the company',
+        # --- section-ri-sprawozdania-zarzadu ---
+        'Sprawozdania z działalności zarządu spółki': 'Management board activity reports',
+        # --- section-ri-uchwaly ---
+        'Uchwały podejmowane przez Zgromadzenie Akcjonariuszy': 'Resolutions adopted by the General Meeting of Shareholders',
+        # --- section-ri-zarzad ---
+        'Zarząd': 'Management board',
+        # --- section-uk-cta ---
+        'Skontaktuj się z nami i dowiedz się, jak możemy wesprzeć Twoją firmę.': 'Contact us and find out how we can support your company.',
+        # --- section-uk-dlaczego ---
+        "Dlaczego firmy wybierają nasze\nrozwiązania księgowe": "Why companies choose our\naccounting solutions",
+        "Jakość potwierdzona\nstandardami": "Quality confirmed\nby standards",
+        'Pracujemy zgodnie z normą ISO 9001 — systematyczne procesy, kontrola jakości i ciągłe doskonalenie usług.': 'We work in accordance with ISO 9001 — systematic processes, quality control and continuous improvement of services.',
+        "Nowoczesne i elastyczne podejście": "Modern and flexible approach",
+        'Dopasowujemy narzędzia i zakres współpracy do realnych potrzeb Twojej firmy – bez zbędnej biurokracji.': 'We tailor the tools and scope of cooperation to the real needs of your company — without unnecessary bureaucracy.',
+        'Zespołowy model pracy gwarantuje ciągłość obsługi — urlopy i rotacja pracowników nie wpływają na jakość Twojej księgowości.': 'A team-based work model guarantees continuity of service — holidays and staff rotation do not affect the quality of your accounting.',
+        'Dane klientów chronimy zgodnie z normą ISO 27001 — wdrożone procedury, szyfrowanie i regularne audyty bezpieczeństwa.': 'We protect client data in accordance with ISO 27001 — implemented procedures, encryption and regular security audits.',
+        # --- section-uk-hero ---
+        'Rozwiązania księgowe dla firm, które': 'Accounting solutions for companies that',
+        'chcą mieć porządek': 'want to have order',
+        'i spokój w biznesie': 'and peace of mind in business',
+        'Zapewniamy kompleksową obsługę księgową firm o różnej skali działalności. Przejmujemy odpowiedzialność za poprawność, terminowość i ciągłość procesów księgowych, aby nasi klienci mogli skupić się na prowadzeniu i rozwoju biznesu.': 'We provide comprehensive accounting services for companies of various sizes. We take responsibility for accuracy, timeliness and continuity of accounting processes, so our clients can focus on running and growing their business.',
+        # --- section-uk-ksiegowosc ---
+        'Twoja księgowość': 'Your accounting',
+        'w': 'in',
+        'dobrych rękach': 'good hands',
+        'Oferujemy kompleksową obsługę księgową działalności i spółek zarówno w zakresie prowadzenia pełnych ksiąg rachunkowych, jak i uproszczonych form ewidencji. Klienci mogą powierzyć nam całość procesów księgowych lub wybrane obszary wymagające wsparcia.': 'We offer comprehensive accounting services for sole traders and companies, both in the area of maintaining full accounting books and simplified forms of records. Clients can entrust us with all accounting processes or selected areas requiring support.',
+        'Zakres współpracy dopasowujemy do skali działalności i stopnia złożoności operacji finansowych.': 'We tailor the scope of cooperation to the scale of operations and the complexity of financial transactions.',
+        'Sprawdź jak wygląda współpraca': 'See how cooperation works',
+        # --- section-uk-oferta ---
+        'Oferta rozwiązań księgowych': 'Accounting solutions offer',
+        "Obsługujemy firmy na różnych formach rozliczeń zarówno w pełnej księgowości (spółki),\njak i w uproszczonych formach ewidencji (np. KPiR)": "We serve companies on various accounting forms, both in full accounting (companies),\nas well as simplified record forms (e.g. revenue and expense ledger)",
+        'Poniżej pokazujemy przykładowy zakres działań. Jeśli potrzebujesz innej usługi chętnie porozmawiamy.': 'Below we show an example scope of activities. If you need a different service, we will be happy to talk.',
+        'Sprawdź również rozwiązania kadrowe': 'Also check our HR solutions',
+        'Prowadzenie ksiąg rachunkowych\n\nObliczanie podatków i składanie deklaracji podatkowych\n\nBieżące rozliczanie wyciągów i kontrolowanie rozrachunków\n\nRaportowanie zarządcze i sprawozdawcze\n\nRaportowanie do instytucji publicznych\n\nSporządzanie sprawozdań finansowych oraz deklaracji rocznych\n\nReprezentowanie podczas kontroli i czynności sprawdzających\n\nObsługa niestandardowych rozliczeń\n\nAsystowanie i wsparcie podczas audytu': 'Maintaining accounting books\n\nCalculating taxes and filing tax returns\n\nOngoing reconciliation of bank statements and settlement control\n\nManagement and financial reporting\n\nReporting to public institutions\n\nPreparing financial statements and annual declarations\n\nRepresentation during inspections and audit procedures\n\nHandling non-standard settlements\n\nAssisting and supporting during audits',
+        # --- section-uk-wspolpraca ---
+        'na bieżąco – obsługując codzienne procesy księgowe lub kadrowe': 'on an ongoing basis — handling day-to-day accounting or HR processes',
+        'Zakres i częstotliwość raportowania\nustalamy indywidualnie z każdym klientem.': 'The scope and frequency of reporting\nis agreed individually with each client.',
+        'W zależności od potrzeb przygotowujemy również dodatkowe raporty księgowe, finansowe lub kadrowo-płacowe.': 'Depending on needs, we also prepare additional accounting, financial or HR and payroll reports.',
+        # --- section-uk-kalkulator ---
+        'Oszacuj wstępny koszt usług księgowych w kilka chwil. Wprowadź podstawowe informacje o swojej działalności, a my przygotujemy orientacyjną wycenę dopasowaną do Twoich potrzeb i skali biznesu.': 'Estimate the initial cost of accounting services in a few moments. Enter basic information about your business and we will prepare an indicative quote tailored to your needs and business scale.',
+        # --- section-bpo-systemy ---
+        "Obsługa wielu systemów\nksięgowych": "Support for multiple\naccounting systems",
+        # --- section-services ---
+        'Nasze Kompetencje': 'Our Competencies',
+        'Obszary, w których przejmujemy odpowiedzialność': 'Areas in which we take responsibility',
+        'Nasze doświadczenie obejmuje rozliczanie firm o różnorodnych profilach działalności, takich jak CIT Estoński, Fundacje Rodzinne, Spółki ASI, e-commerce, VAT OSS, Intrastat oraz rozliczenia delegacji pracowniczych.': 'Our experience covers settlements for companies with diverse business profiles, such as Estonian CIT, Family Foundations, ASI companies, e-commerce, VAT OSS, Intrastat and employee travel settlements.',
+        'Zapytaj o ofertę': 'Ask about our offer',
+        'Usługi Rachunkowe': 'Accounting Services',
+        'Kompleksowa obsługa księgowa firm o różnej skali działalności.': 'Comprehensive accounting services for companies of various sizes.',
+        'BPO': 'BPO',
+        'Outsourcing wybranych lub pełnych procesów finansowych i administracyjnych dla większych firm.': 'Outsourcing of selected or full financial and administrative processes for larger companies.',
+        'Usługi Kadrowe': 'HR Services',
+        'Obsługa kadrowo-płacowa dopasowana do potrzeb organizacji.': 'HR and payroll services tailored to the needs of the organisation.',
+        'Fundacje rodzinne': 'Family foundations',
+        'Obsługa rachunkowa fundacji z uwzględnieniem specyfiki regulacyjnej.': 'Accounting services for foundations taking into account regulatory specificities.',
+        'Wsparcie we wdrażaniu narzędzi, automatyzacji i usprawnianiu procesów biznesowych.': 'Support in implementing tools, automation and streamlining business processes.',
+        # --- section-oferta-kuk-info ---
+        'Prowadzenie ksiąg rachunkowych i ewidencji podatkowych (PKPB)': 'Maintaining accounting books and tax records (PKPB)',
+        'Sporządzanie deklaracji i sprawozdań finansowych (CIT, VAT, PIT)': 'Preparing financial declarations and statements (CIT, VAT, PIT)',
+        'Przygotowywanie rocznych sprawozdań finansowych i analiz dla klientów': 'Preparing annual financial statements and analyses for clients',
+        'Bezpośredni kontakt z klientami (telefon, e-mail) w sprawach rozliczeń': 'Direct contact with clients (phone, e-mail) on settlement matters',
+        'Współpraca z urzędami skarbowymi, instytucjami finansowymi i podmiotami zewnętrznymi, w tym reprezentacja klientów': 'Cooperation with tax offices, financial institutions and external entities, including client representation',
+        'Minimum 2 lata doświadczenia w samodzielnym prowadzeniu ksiąg rachunkowych w biurze rachunkowym; certyfikat MF mile widziany': 'Minimum 2 years of experience in independently maintaining accounting books in an accounting firm; Ministry of Finance certificate welcome',
+        'Biegła znajomość języka ukraińskiego i rosyjskiego do komunikacji z klientami': 'Fluent knowledge of Ukrainian and Russian for client communication',
+        'Doświadczenie w samodzielnym sporządzaniu sprawozdań finansowych': 'Experience in independently preparing financial statements',
+        'Praktyczna znajomość przepisów rachunkowych, prawa podatkowego i przepisów VAT': 'Practical knowledge of accounting regulations, tax law and VAT regulations',
+        'Biegłość w MS Office (szczególnie Excel) i oprogramowaniu księgowym Comarch Optima': 'Proficiency in MS Office (particularly Excel) and Comarch Optima accounting software',
+        'Skrupulatność i wysokie zdolności organizacyjne': 'Meticulousness and high organisational skills',
+        'Zdolności analitycznego myślenia': 'Analytical thinking skills',
+        # --- section-kariera-hero ---
+        "Dołącz do\nnaszego zespołu": "Join\nour team",
+        "Budujemy uporządkowane procesy i dobrą atmosferę.\nJeśli cenisz jasne zasady, rozwój i pracę zespołową – sprawdź,\nczy mamy ofertę dla Ciebie.": "We build orderly processes and a good atmosphere.\nIf you value clear rules, development and teamwork — check\nwhether we have an offer for you.",
+        'Aktualne oferty pracy': 'Current job offers',
     },
     'uk': {
         'Bezpieczeństwo\ni compliance':
@@ -1001,6 +1189,195 @@ TRANSLATIONS = {
         'Stosujemy rozwiązania zgodne z normą ISO/IEC 27001, zapewniające poufność, integralność i bezpieczeństwo danych pracowniczych.': 'Ми застосовуємо рішення відповідно до стандарту ISO/IEC 27001, що забезпечують конфіденційність, цілісність та безпеку даних працівників.',
         'Business continuity': 'Business continuity',
         'Usługi realizuje cały zespół specjalistów, dlatego urlopy i rotacja pracowników nie wpływają na terminowość i ciągłość obsługi Twojej firmy.': 'Послуги надає вся команда фахівців, тому відпустки та ротація працівників не впливають на своєчасність та безперервність обслуговування вашої компанії.',
+        # --- section-kp-hero ---
+        'Kadry i płace, które dają': 'Кадри та зарплата, що дають',
+        'spokój': 'спокій',
+        'organizacji': 'організації',
+        'Zapewniamy kompleksową obsługę kadrowo-płacową firm o różnej skali działalności. Przejmujemy odpowiedzialność za poprawność, terminowość i ciągłość procesów, aby organizacja mogła działać stabilnie i bez zakłóceń.': 'Ми надаємо комплексні кадрові та бухгалтерські послуги компаніям різного масштабу. Беремо на себе відповідальність за точність, своєчасність та безперервність процесів, щоб організація могла стабільно працювати без збоїв.',
+        'Porozmawiajmy': 'Поговоримо',
+        # --- section-kp-obsluga ---
+        'Twoje kadry': 'Ваші кадри',
+        'i płace': 'та зарплата',
+        'pod kontrolą': 'під контролем',
+        'Oferujemy pełną obsługę kadrowo-płacową przedsiębiorstw – od prowadzenia dokumentacji pracowniczej po naliczanie wynagrodzeń i rozliczenia z instytucjami publicznymi. Klienci mogą powierzyć nam całość procesów kadrowych i płacowych lub wybrane obszary wymagające wsparcia.': 'Ми пропонуємо повне кадрове та бухгалтерське обслуговування підприємств — від ведення кадрової документації до нарахування заробітної плати та розрахунків з державними установами. Клієнти можуть довірити нам усі кадрові та бухгалтерські процеси або окремі ділянки, що потребують підтримки.',
+        'Zakres współpracy dopasowujemy do wielkości i struktury organizacji.': 'Обсяг співпраці ми адаптуємо до розміру та структури організації.',
+        'Oszacuj wstępną wycenę': 'Отримати попередню оцінку',
+        # --- section-kp-cta ---
+        'Porozmawiajmy o obsłudze kadrowej dla Twojej firmy': 'Поговоримо про кадрове обслуговування вашої компанії',
+        'Skontaktuj się z nami i dowiedz się, jak możemy wesprzeć Twój dział HR i płac.': "Зв'яжіться з нами і дізнайтеся, як ми можемо підтримати ваш відділ кадрів та розрахунків.",
+        # --- section-kp-kalkulator ---
+        'Kalkulator – oszacuj wstępnie koszt obsługi': 'Калькулятор — попередня оцінка вартості обслуговування',
+        'Oszacuj wstępny koszt obsługi kadrowo-płacowej w kilka chwil. Wprowadź podstawowe informacje o swojej działalności, a my przygotujemy orientacyjną wycenę dopasowaną do Twoich potrzeb i skali zatrudnienia.': 'Оцініть попередню вартість кадрово-бухгалтерського обслуговування за кілька хвилин. Введіть основну інформацію про вашу діяльність, і ми підготуємо орієнтовний кошторис, адаптований до ваших потреб та масштабу зайнятості.',
+        '* to jest wstępny szacunek, każda oferta jest jednak indywidualnie rozpatrywana i odpowiednio wyceniana.': '* це попередній кошторис; кожна пропозиція розглядається індивідуально і відповідно оцінюється.',
+        # --- section-kp-wspolpraca ---
+        'na bieżąco – obsługując codzienne procesy kadrowe i płacowe': 'на постійній основі — обслуговуючи щоденні кадрові та бухгалтерські процеси',
+        'Terminowe naliczanie wynagrodzeń': 'Своєчасне нарахування заробітної плати',
+        'Terminy przetwarzania listy płac ustalamy indywidualnie z każdą firmą, uwzględniając jej wewnętrzny harmonogram wypłat oraz terminy rozliczeń z ZUS i US.': 'Терміни обробки відомостей встановлюємо індивідуально з кожною компанією, враховуючи її внутрішній графік виплат та терміни розрахунків з ZUS і органами ДПС.',
+        'listy płac gotowe z odpowiednim wyprzedzeniem przed dniem wypłaty': 'відомості готові з достатнім випередженням до дня виплати',
+        'terminowe przelewy składek ZUS i zaliczek PIT': 'своєчасні перекази внесків ZUS та авансів PIT',
+        'Zakres raportowania ustalamy\nindywidualnie z każdym klientem.': 'Обсяг звітності встановлюємо\nіндивідуально з кожним клієнтом.',
+        'zestawienie listy płac': 'відомість зарплатної відомості',
+        'paski wynagrodzeń dla pracowników': 'розрахункові листки для працівників',
+        'potwierdzenia rozliczeń ZUS i US': 'підтвердження розрахунків ZUS та органів ДПС',
+        'W zależności od potrzeb przygotowujemy również dodatkowe raporty kadrowe, płacowe i zarządcze.': 'Залежно від потреб ми також готуємо додаткові кадрові, бухгалтерські та управлінські звіти.',
+        # --- section-kp-oferta ---
+        'Oferta rozwiązań kadrowych': 'Пропозиція кадрових рішень',
+        'Wyceń usługę': 'Отримати кошторис',
+        'Sprawdź również rozwiązania księgowe': 'Перегляньте також бухгалтерські рішення',
+        'Prowadzenie dokumentacji kadrowej\n\nNaliczanie wynagrodzeń i świadczeń\n\nObsługa umów o pracę i umów cywilnoprawnych\n\nRozliczenia z ZUS i instytucjami publicznymi\n\nSporządzanie deklaracji podatkowych\n\nKontrolowanie limitów urlopowych, terminów badań lekarskich, szkoleń BHP oraz wygasających umów\n\nReprezentowanie podczas kontroli i czynności sprawdzających\n\nZarządzanie programami PPK i PPE\n\nPlatforma pracownicza z dostępem do wniosków urlopowych i dokumentów online': 'Ведення кадрової документації\n\nНарахування заробітної плати та пільг\n\nОбробка трудових та цивільно-правових договорів\n\nРозрахунки з ZUS та державними установами\n\nПідготовка податкових декларацій\n\nКонтроль лімітів відпусток, термінів медоглядів, охорони праці та закінчення договорів\n\nПредставництво під час перевірок та ревізійних дій\n\nУправління програмами PPK та PPE\n\nПлатформа для співробітників з доступом до заяв на відпустку та документів онлайн',
+        # --- section-kp-systemy ---
+        "Obsługa wielu systemów\nksiągowych": "Підтримка багатьох\nbухгалтерських систем",
+        # --- section-hk-hero ---
+        'Historie klientów': 'Історії клієнтів',
+        'Konkretne przypadki. Konkretny efekt. Zobacz, jak pomagamy firmom działać stabilnie i bezpiecznie.': 'Конкретні випадки. Конкретний результат. Подивіться, як ми допомагаємо компаніям працювати стабільно та безпечно.',
+        'Poznaj historie': 'Ознайомтеся з історіями',
+        # --- section-hk-wspolpraca ---
+        'Współpraca, która': 'Співпраця, яка',
+        'daje spokój operacyjny': 'дає операційний спокій',
+        'W Meritoros pracujemy tak, aby odciążyć zespół klienta i zapewnić ciągłość obsługi. Działamy elastycznie, dopasowując model współpracy do realiów organizacji, ale trzymamy stały standard jakości, terminowości i bezpieczeństwa danych.': 'У Meritoros ми працюємо так, щоб розвантажити команду клієнта та забезпечити безперервність обслуговування. Ми діємо гнучко, адаптуючи модель співпраці до реалій організації, але підтримуємо постійний стандарт якості, своєчасності та безпеки даних.',
+        'Dzięki temu klienci mogą skupić się na biznesie, a nie na „gaszeniu tematów" w księgowości czy kadrach': 'Завдяки цьому клієнти можуть зосередитися на бізнесі, а не на «гасінні пожеж» у бухгалтерії чи кадрах',
+        # --- section-fr-model ---
+        "Możesz powierzyć nam całość procesów księgowych lub wybrane obszary wymagające uporządkowania.\nDopasowujemy zakres wsparcia do realnej sytuacji Twojej firmy.": "Ви можете довірити нам усі бухгалтерські процеси або окремі ділянки, що потребують впорядкування.\nМи адаптуємо обсяг підтримки до реальної ситуації у вашій компанії.",
+        'Obsługujemy proces end-to-end: od bieżącej ewidencji po zamknięcie miesiąca i raporty. Pracujesz z zespołem, który zapewnia zastępowalność i stały standard.': 'Ми ведемо процес від початку до кінця: від поточного обліку до закриття місяця та звітів. Ви працюєте з командою, яка забезпечує взаємозамінність та постійний стандарт.',
+        # --- section-fr-obsluga ---
+        'Obsługa księgowa fundacji rodzinnej dla właścicieli myślących długoterminowo': 'Бухгалтерське обслуговування сімейного фонду для власників, які мислять довгостроково',
+        'Prowadzimy księgowość fundacji rodzinnych dla przedsiębiorców, którzy chcą uporządkować kwestie majątku i sukcesji w sposób bezpieczny, transparentny i zgodny z przepisami. Bierzemy na siebie bieżącą obsługę, sprawozdawczość i kontrolę terminów, tak aby fundacja działała stabilnie.': 'Ми ведемо бухгалтерський облік сімейних фондів для підприємців, які хочуть впорядкувати питання майна та спадкування безпечно, прозоро та відповідно до законодавства. Ми беремо на себе поточне обслуговування, звітність та контроль термінів, щоб фонд працював стабільно.',
+        # --- section-fr-oferta ---
+        'Poznaj naszą ofertę': 'Ознайомтеся з нашою пропозицією',
+        'Zapewniamy kompleksową obsługę księgową i podatkową, która porządkuje finanse fundacji i daje poczucie bezpieczeństwa jej fundatorom.': 'Ми надаємо комплексне бухгалтерське та податкове обслуговування, яке впорядковує фінанси фонду та дає відчуття безпеки його засновникам.',
+        'Prowadzenie ksiąg rachunkowych\n\nRozliczanie i składanie deklaracji podatkowych\n\nPrzygotowywanie sprawozdań finansowych\n\nAsystowanie podczas badania sprawozdania finansowego oraz kontroli urzędów\n\nRaportowanie na cele zarządcze\n\nSporządzanie polityki rachunkowości': 'Ведення бухгалтерських книг\n\nОбчислення та подання податкових декларацій\n\nПідготовка фінансових звітів\n\nДопомога під час аудиту фінансових звітів та перевірок органів\n\nЗвітність для управлінських цілей\n\nСкладання облікової політики',
+        # --- section-media-artykul ---
+        'Maciej Paraszczak dla Pulsu Biznesu': 'Мачей Парасщак для Puls Biznesu',
+        'Dla wielu naszych klientów jesteśmy nie tylko biurem rachunkowym, ale partnerem operacyjnym, który realnie usprawnia ich procesy biznesowe – podkreśla z Maciej Paraszczak, prezes zarządu spółki Meritoros.': 'Для багатьох наших клієнтів ми є не просто бухгалтерським бюро, а операційним партнером, який реально покращує їхні бізнес-процеси — підкреслює Мачей Парасщак, президент правління Meritoros.',
+        'Wywiad z Maciejem Paraszczakiem dla Pulsu Biznesu o tym, jak wygląda nowoczesna księgowość w praktyce i dlaczego standard oraz procesy mają dziś kluczowe znaczenie.': 'Інтерв\u2019ю з Мачеєм Парасщаком для Puls Biznesu про те, як виглядає сучасна бухгалтерія на практиці і чому стандарти та процеси мають сьогодні ключове значення.',
+        'Czytaj więcej': 'Читати більше',
+        # --- section-media-hero ---
+        'Media i informacje firmowe': 'Медіа та корпоративні новини',
+        'Najważniejsze wydarzenia z życia firmy: rozwój, nowe inicjatywy, wyróżnienia i ogłoszenia.': 'Найважливіші події з життя компанії: розвиток, нові ініціативи, відзнаки та оголошення.',
+        # --- section-media-przeczytaj ---
+        'Przeczytaj również': 'Читайте також',
+        # --- section-media-zapytania ---
+        'Zapytania medialne': 'Медіа-запити',
+        'W sprawach publikacji, komentarzy eksperckich i współpracy medialnej prosimy o kontakt. Odpowiemy możliwie szybko i wrócimy z informacją, w jakiej formie możemy pomóc.': 'У питаннях публікацій, експертних коментарів та медіаспівпраці просимо звертатися. Відповімо якнайшвидше та повернемося з інформацією, у якій формі можемо допомогти.',
+        # --- section-onas-hero ---
+        'Poznaj nasze biuro rachunkowe i wartości, które stoją za naszą codzienną pasją.': 'Ознайомтеся з нашим бухгалтерським бюро та цінностями, які лежать в основі нашої щоденної пристрасті.',
+        'Pracujemy tak, by być dumni z jakości informacji dostarczanych naszym klientom.': 'Ми працюємо так, щоб пишатися якістю інформації, яку надаємо нашим клієнтам.',
+        'Porozmawiamy': 'Поговоримо',
+        # --- section-onas-zespol ---
+        'Zespół': 'Команда',
+        'prezes zarządu, CEO': 'президент правління, CEO',
+        'Założyciel i główny udziałowiec Meritoros SA, certyfikowany księgowy (Certyfikat Min. Finansów nr 1840/2003). Absolwent kierunku Zarządzanie ze specjalnością Finanse i Rachunkowość.': 'Засновник та головний акціонер Meritoros SA, сертифікований бухгалтер (Сертифікат Міністерства фінансів № 1840/2003). Випускник спеціальності Управління зі спеціалізацією «Фінанси та бухгалтерський облік».',
+        'członek zarządu, COO': 'член правління, COO',
+        'Udziałowiec Meritoros SA, certyfikowana księgowa (Certyfikat Min. Finansów nr 54055/2011). Absolwentka kierunku Zarządzania na AGH, swoje wykształcenie uzupełniła o studia podyplomowe.': 'Акціонер Meritoros SA, сертифікована бухгалтер (Сертифікат Міністерства фінансів № 54055/2011). Випускниця спеціальності Управління в AGH, доповнила освіту аспірантськими студіями.',
+        'Udziałowiec Meritoros SA, certyfikowany księgowy (Certyfikat Min. Finansów nr 62092/2013). Absolwent kierunku Finansów i Rachunkowości na UEK ze specjalnością finanse przedsiębiorstw.': 'Акціонер Meritoros SA, сертифікований бухгалтер (Сертифікат Міністерства фінансів № 62092/2013). Випускник спеціальності Фінанси та бухгалтерський облік в UEK зі спеціалізацією «Корпоративні фінанси».',
+        'Księgowa (Certyfikat Min. Finansów 55068/2012) z wieloletnim doświadczeniem. Swoją karierę budowała w Biurach Rachunkowych oraz jako główna księgowa w jednej z międzynarodowych firm.': 'Бухгалтер (Сертифікат Міністерства фінансів 55068/2012) з багаторічним досвідом. Свою кар\u2019єру будувала в бухгалтерських бюро та як головний бухгалтер в одній з міжнародних компаній.',
+        # --- section-ri-akcjonariat ---
+        'Informacje o strukturze akcjonariatu': 'Інформація про структуру акціонерного капіталу',
+        'Kapitał zakładowy spółki wynosi 120 000 PLN i dzieli się na 1 200 000 akcji serii A o wartości nominalnej 0,10 PLN.': 'Статутний капітал товариства становить 120 000 злотих і поділяється на 1 200 000 акцій серії A номінальною вартістю 0,10 злотих.',
+        'Akcjonariusz': 'Акціонер',
+        'Łączna liczba posiadanych akcji': 'Загальна кількість акцій',
+        'Udział w łącznej liczbie głosów': 'Частка в загальній кількості голосів',
+        # --- section-ri-hero ---
+        'Relacje inwestorskie': 'Відносини з інвесторами',
+        'Poniżej udostępniamy kluczowe informacje i dokumenty dotyczące Meritoros SA, w tym sprawozdania finansowe i raporty okresowe.': 'Нижче ми розміщуємо ключову інформацію та документи щодо Meritoros SA, включаючи фінансові звіти та періодичні звіти.',
+        # --- section-ri-msg ---
+        'Ogłoszenia w Monitorze Sądowym i Gospodarczym': 'Оголошення в Судово-господарському моніторі',
+        # --- section-ri-ogloszenia ---
+        'Ogłoszenia o zwołaniu Walnego Zgromadzenia Akcjonariuszy': 'Повідомлення про скликання Загальних зборів акціонерів',
+        # --- section-ri-rada ---
+        'Rada nadzorcza': 'Наглядова рада',
+        'doradca podatkowy (certyfikat nr 00443)\nbył członek zarządu Małopolskiej Izby Doradców Podatkowych': 'податковий радник (сертифікат № 00443)\nколишній член правління Малопольської палати податкових радників',
+        'przedsiębiorca\nprezes zarządu Emka Sp. z o.o.': 'підприємець\nпрезидент правління Emka Sp. z o.o.',
+        'przedsiębiorca\nczłonek zarządu Chata Sp. z o.o.': 'підприємець\nчлен правління Chata Sp. z o.o.',
+        'przedsiębiorca\nwiceprezes zarządu Office Samurai Sp. z o.o.': 'підприємець\nвіце-президент правління Office Samurai Sp. z o.o.',
+        'przedsiębiorca\nprezes zarządu Printbox Sp. z o.o.': 'підприємець\nпрезидент правління Printbox Sp. z o.o.',
+        # --- section-ri-raporty ---
+        'Raporty kwartalne spółki': 'Квартальні звіти товариства',
+        'Raporty EBI/ESPI': 'Звіти EBI/ESPI',
+        'Animator Rynku': 'Маркет-мейкер',
+        'Autoryzowany Doradca': 'Авторизований радник',
+        'Pytania i odpowiedzi': 'Запитання та відповіді',
+        # --- section-ri-rewident ---
+        'Opinie biegłego rewidenta': 'Висновки аудитора',
+        # --- section-ri-rosniemy ---
+        'Rośniemy': 'Ми зростаємо',
+        'Rozwój Meritoros SA znajduje odzwierciedlenie w systematycznym wzroście skali działalności i przychodów na przestrzeni ostatnich lat.': 'Розвиток Meritoros SA відображається в систематичному зростанні масштабів діяльності та доходів протягом останніх років.',
+        # --- section-ri-sprawozdania ---
+        'Sprawozdania finansowe spółki': 'Фінансові звіти товариства',
+        # --- section-ri-sprawozdania-zarzadu ---
+        'Sprawozdania z działalności zarządu spółki': 'Звіти про діяльність правління товариства',
+        # --- section-ri-uchwaly ---
+        'Uchwały podejmowane przez Zgromadzenie Akcjonariuszy': 'Рішення, прийняті Загальними зборами акціонерів',
+        # --- section-ri-zarzad ---
+        'Zarząd': 'Правління',
+        # --- section-uk-cta ---
+        'Skontaktuj się z nami i dowiedz się, jak możemy wesprzeć Twoją firmę.': "Зв'яжіться з нами і дізнайтеся, як ми можемо підтримати вашу компанію.",
+        # --- section-uk-dlaczego ---
+        "Dlaczego firmy wybierają nasze\nrozwiązania księgowe": "Чому компанії обирають наші\nбухгалтерські рішення",
+        "Jakość potwierdzona\nstandardami": "Якість, підтверджена\nстандартами",
+        'Pracujemy zgodnie z normą ISO 9001 — systematyczne procesy, kontrola jakości i ciągłe doskonalenie usług.': 'Ми працюємо відповідно до стандарту ISO 9001 — систематичні процеси, контроль якості та постійне вдосконалення послуг.',
+        "Nowoczesne i elastyczne podejście": "Сучасний і гнучкий підхід",
+        'Dopasowujemy narzędzia i zakres współpracy do realnych potrzeb Twojej firmy – bez zbędnej biurokracji.': 'Ми підбираємо інструменти та обсяг співпраці до реальних потреб вашої компанії — без зайвої бюрократії.',
+        'Zespołowy model pracy gwarantuje ciągłość obsługi — urlopy i rotacja pracowników nie wpływają na jakość Twojej księgowości.': 'Командна модель роботи гарантує безперервність обслуговування — відпустки та ротація працівників не впливають на якість вашої бухгалтерії.',
+        'Dane klientów chronimy zgodnie z normą ISO 27001 — wdrożone procedury, szyfrowanie i regularne audyty bezpieczeństwa.': 'Дані клієнтів ми захищаємо відповідно до стандарту ISO 27001 — впроваджені процедури, шифрування та регулярні аудити безпеки.',
+        # --- section-uk-hero ---
+        'Rozwiązania księgowe dla firm, które': 'Бухгалтерські рішення для компаній, які',
+        'chcą mieć porządek': 'хочуть мати порядок',
+        'i spokój w biznesie': 'та спокій у бізнесі',
+        'Zapewniamy kompleksową obsługę księgową firm o różnej skali działalności. Przejmujemy odpowiedzialność za poprawność, terminowość i ciągłość procesów księgowych, aby nasi klienci mogli skupić się na prowadzeniu i rozwoju biznesu.': 'Ми надаємо комплексне бухгалтерське обслуговування компаніям різного масштабу. Беремо відповідальність за точність, своєчасність та безперервність бухгалтерських процесів, щоб наші клієнти могли зосередитися на веденні та розвитку бізнесу.',
+        # --- section-uk-ksiegowosc ---
+        'Twoja księgowość': 'Ваша бухгалтерія',
+        'w': 'у',
+        'dobrych rękach': 'надійних руках',
+        'Oferujemy kompleksową obsługę księgową działalności i spółek zarówno w zakresie prowadzenia pełnych ksiąg rachunkowych, jak i uproszczonych form ewidencji. Klienci mogą powierzyć nam całość procesów księgowych lub wybrane obszary wymagające wsparcia.': 'Ми пропонуємо комплексне бухгалтерське обслуговування підприємців і компаній як у сфері ведення повних бухгалтерських книг, так і спрощених форм обліку. Клієнти можуть довірити нам усі бухгалтерські процеси або окремі ділянки, що потребують підтримки.',
+        'Zakres współpracy dopasowujemy do skali działalności i stopnia złożoności operacji finansowych.': 'Обсяг співпраці ми адаптуємо до масштабу діяльності та ступеня складності фінансових операцій.',
+        'Sprawdź jak wygląda współpraca': 'Подивіться, як виглядає співпраця',
+        # --- section-uk-oferta ---
+        'Oferta rozwiązań księgowych': 'Пропозиція бухгалтерських рішень',
+        "Obsługujemy firmy na różnych formach rozliczeń zarówno w pełnej księgowości (spółki),\njak i w uproszczonych formach ewidencji (np. KPiR)": "Ми обслуговуємо компанії на різних формах обліку як у повній бухгалтерії (товариства),\nтак і в спрощених формах обліку (напр. книга доходів і витрат)",
+        'Poniżej pokazujemy przykładowy zakres działań. Jeśli potrzebujesz innej usługi chętnie porozmawiamy.': 'Нижче ми показуємо приблизний обсяг дій. Якщо вам потрібна інша послуга, ми з радістю поговоримо.',
+        'Sprawdź również rozwiązania kadrowe': 'Перегляньте також кадрові рішення',
+        'Prowadzenie ksiąg rachunkowych\n\nObliczanie podatków i składanie deklaracji podatkowych\n\nBieżące rozliczanie wyciągów i kontrolowanie rozrachunków\n\nRaportowanie zarządcze i sprawozdawcze\n\nRaportowanie do instytucji publicznych\n\nSporządzanie sprawozdań finansowych oraz deklaracji rocznych\n\nReprezentowanie podczas kontroli i czynności sprawdzających\n\nObsługa niestandardowych rozliczeń\n\nAsystowanie i wsparcie podczas audytu': 'Ведення бухгалтерських книг\n\nОбчислення податків та подання податкових декларацій\n\nПоточне узгодження виписок та контроль розрахунків\n\nУправлінська та фінансова звітність\n\nЗвітність перед державними установами\n\nСкладання фінансових звітів та річних декларацій\n\nПредставництво під час перевірок та ревізійних дій\n\nОбробка нестандартних розрахунків\n\nДопомога та підтримка під час аудитів',
+        # --- section-uk-wspolpraca ---
+        'na bieżąco – obsługując codzienne procesy księgowe lub kadrowe': 'на постійній основі — обслуговуючи щоденні бухгалтерські або кадрові процеси',
+        'Zakres i częstotliwość raportowania\nustalamy indywidualnie z każdym klientem.': 'Обсяг і частота звітності\nвстановлюються індивідуально з кожним клієнтом.',
+        'W zależności od potrzeb przygotowujemy również dodatkowe raporty księgowe, finansowe lub kadrowo-płacowe.': 'Залежно від потреб ми також готуємо додаткові бухгалтерські, фінансові або кадрово-бухгалтерські звіти.',
+        # --- section-uk-kalkulator ---
+        'Oszacuj wstępny koszt usług księgowych w kilka chwil. Wprowadź podstawowe informacje o swojej działalności, a my przygotujemy orientacyjną wycenę dopasowaną do Twoich potrzeb i skali biznesu.': 'Оцініть попередню вартість бухгалтерських послуг за кілька хвилин. Введіть основну інформацію про вашу діяльність, і ми підготуємо орієнтовний кошторис, адаптований до ваших потреб та масштабу бізнесу.',
+        # --- section-bpo-systemy ---
+        "Obsługa wielu systemów\nksięgowych": "Підтримка багатьох\nбухгалтерських систем",
+        # --- section-services ---
+        'Nasze Kompetencje': 'Наші компетенції',
+        'Obszary, w których przejmujemy odpowiedzialność': 'Сфери, в яких ми беремо відповідальність',
+        'Nasze doświadczenie obejmuje rozliczanie firm o różnorodnych profilach działalności, takich jak CIT Estoński, Fundacje Rodzinne, Spółki ASI, e-commerce, VAT OSS, Intrastat oraz rozliczenia delegacji pracowniczych.': 'Наш досвід охоплює розрахунки компаній з різноманітними профілями діяльності, такими як естонський CIT, сімейні фонди, компанії ASI, e-commerce, VAT OSS, Intrastat та розрахунки відряджень працівників.',
+        'Zapytaj o ofertę': 'Запитати про пропозицію',
+        'Skontaktuj się z nami': 'Зв\u2019яжіться з нами',
+        'Usługi Rachunkowe': 'Бухгалтерські послуги',
+        'Kompleksowa obsługa księgowa firm o różnej skali działalności.': 'Комплексне бухгалтерське обслуговування компаній різного масштабу.',
+        'BPO': 'BPO',
+        'Outsourcing wybranych lub pełnych procesów finansowych i administracyjnych dla większych firm.': 'Аутсорсинг окремих або повних фінансових та адміністративних процесів для великих компаній.',
+        'Usługi Kadrowe': 'Кадрові послуги',
+        'Obsługa kadrowo-płacowa dopasowana do potrzeb organizacji.': 'Кадрово-бухгалтерське обслуговування, адаптоване до потреб організації.',
+        'Fundacje rodzinne': 'Сімейні фонди',
+        'Obsługa rachunkowa fundacji z uwzględnieniem specyfiki regulacyjnej.': 'Бухгалтерське обслуговування фондів з урахуванням регуляторної специфіки.',
+        'Wsparcie we wdrażaniu narzędzi, automatyzacji i usprawnianiu procesów biznesowych.': 'Підтримка у впровадженні інструментів, автоматизації та оптимізації бізнес-процесів.',
+        # --- section-oferta-kuk-info ---
+        'Prowadzenie ksiąg rachunkowych i ewidencji podatkowych (PKPB)': 'Ведення бухгалтерських книг та податкового обліку (PKPB)',
+        'Sporządzanie deklaracji i sprawozdań finansowych (CIT, VAT, PIT)': 'Складання фінансових декларацій та звітів (CIT, VAT, PIT)',
+        'Przygotowywanie rocznych sprawozdań finansowych i analiz dla klientów': 'Підготовка річних фінансових звітів та аналізів для клієнтів',
+        'Bezpośredni kontakt z klientami (telefon, e-mail) w sprawach rozliczeń': 'Безпосередній контакт з клієнтами (телефон, e-mail) у питаннях розрахунків',
+        'Współpraca z urzędami skarbowymi, instytucjami finansowymi i podmiotami zewnętrznymi, w tym reprezentacja klientów': 'Співпраця з податковими органами, фінансовими установами та зовнішніми суб\u2019єктами, включаючи представництво клієнтів',
+        'Minimum 2 lata doświadczenia w samodzielnym prowadzeniu ksiąg rachunkowych w biurze rachunkowym; certyfikat MF mile widziany': 'Мінімум 2 роки досвіду самостійного ведення бухгалтерських книг у бухгалтерському бюро; сертифікат МФ вітається',
+        'Biegła znajomość języka ukraińskiego i rosyjskiego do komunikacji z klientami': 'Вільне володіння українською та російською мовами для спілкування з клієнтами',
+        'Doświadczenie w samodzielnym sporządzaniu sprawozdań finansowych': 'Досвід самостійного складання фінансових звітів',
+        'Praktyczna znajomość przepisów rachunkowych, prawa podatkowego i przepisów VAT': 'Практичне знання бухгалтерського законодавства, податкового права та норм VAT',
+        'Biegłość w MS Office (szczególnie Excel) i oprogramowaniu księgowym Comarch Optima': 'Впевнене володіння MS Office (особливо Excel) та бухгалтерською програмою Comarch Optima',
+        'Skrupulatność i wysokie zdolności organizacyjne': 'Скрупульозність та високі організаційні здібності',
+        'Zdolności analitycznego myślenia': 'Здатність до аналітичного мислення',
+        # --- section-kariera-hero ---
+        "Dołącz do\nnaszego zespołu": "Приєднуйся до\nнашої команди",
+        "Budujemy uporządkowane procesy i dobrą atmosferę.\nJeśli cenisz jasne zasady, rozwój i pracę zespołową – sprawdź,\nczy mamy ofertę dla Ciebie.": "Ми будуємо впорядковані процеси та гарну атмосферу.\nЯкщо ти цінуєш чіткі правила, розвиток і командну роботу — перевір,\nчи маємо ми пропозицію для тебе.",
+        'Aktualne oferty pracy': 'Актуальні вакансії',
     },
     'ru_RU': {
         'Bezpieczeństwo\ni compliance':
@@ -1498,6 +1875,195 @@ TRANSLATIONS = {
         'Stosujemy rozwiązania zgodne z normą ISO/IEC 27001, zapewniające poufność, integralność i bezpieczeństwo danych pracowniczych.': 'Мы применяем решения в соответствии со стандартом ISO/IEC 27001, обеспечивающие конфиденциальность, целостность и безопасность данных сотрудников.',
         'Business continuity': 'Business continuity',
         'Usługi realizuje cały zespół specjalistów, dlatego urlopy i rotacja pracowników nie wpływają na terminowość i ciągłość obsługi Twojej firmy.': 'Услуги оказывает вся команда специалистов, поэтому отпуска и ротация сотрудников не влияют на своевременность и непрерывность обслуживания вашей компании.',
+        # --- section-kp-hero ---
+        'Kadry i płace, które dają': 'Кадры и зарплата, которые дают',
+        'spokój': 'спокойствие',
+        'organizacji': 'организации',
+        'Zapewniamy kompleksową obsługę kadrowo-płacową firm o różnej skali działalności. Przejmujemy odpowiedzialność za poprawność, terminowość i ciągłość procesów, aby organizacja mogła działać stabilnie i bez zakłóceń.': 'Мы предоставляем комплексные кадровые и бухгалтерские услуги компаниям различного масштаба. Берём на себя ответственность за точность, своевременность и непрерывность процессов, чтобы организация могла стабильно работать без сбоев.',
+        'Porozmawiajmy': 'Поговорим',
+        # --- section-kp-obsluga ---
+        'Twoje kadry': 'Ваши кадры',
+        'i płace': 'и зарплата',
+        'pod kontrolą': 'под контролем',
+        'Oferujemy pełną obsługę kadrowo-płacową przedsiębiorstw – od prowadzenia dokumentacji pracowniczej po naliczanie wynagrodzeń i rozliczenia z instytucjami publicznymi. Klienci mogą powierzyć nam całość procesów kadrowych i płacowych lub wybrane obszary wymagające wsparcia.': 'Мы предлагаем полное кадровое и бухгалтерское обслуживание предприятий — от ведения кадровой документации до расчёта заработной платы и расчётов с государственными учреждениями. Клиенты могут доверить нам все кадровые и бухгалтерские процессы или отдельные участки, требующие поддержки.',
+        'Zakres współpracy dopasowujemy do wielkości i struktury organizacji.': 'Объём сотрудничества мы адаптируем к размеру и структуре организации.',
+        'Oszacuj wstępną wycenę': 'Получить предварительную оценку',
+        # --- section-kp-cta ---
+        'Porozmawiajmy o obsłudze kadrowej dla Twojej firmy': 'Поговорим о кадровом обслуживании вашей компании',
+        'Skontaktuj się z nami i dowiedz się, jak możemy wesprzeć Twój dział HR i płac.': 'Свяжитесь с нами и узнайте, как мы можем поддержать ваш отдел кадров и расчётов.',
+        # --- section-kp-kalkulator ---
+        'Kalkulator – oszacuj wstępnie koszt obsługi': 'Калькулятор — предварительная оценка стоимости обслуживания',
+        'Oszacuj wstępny koszt obsługi kadrowo-płacowej w kilka chwil. Wprowadź podstawowe informacje o swojej działalności, a my przygotujemy orientacyjną wycenę dopasowaną do Twoich potrzeb i skali zatrudnienia.': 'Оцените предварительную стоимость кадрово-бухгалтерского обслуживания за несколько минут. Введите основную информацию о вашей деятельности, и мы подготовим ориентировочную смету, адаптированную к вашим потребностям и масштабу занятости.',
+        '* to jest wstępny szacunek, każda oferta jest jednak indywidualnie rozpatrywana i odpowiednio wyceniana.': '* это предварительная смета; каждое предложение рассматривается индивидуально и оценивается соответственно.',
+        # --- section-kp-wspolpraca ---
+        'na bieżąco – obsługując codzienne procesy kadrowe i płacowe': 'на постоянной основе — обслуживая ежедневные кадровые и бухгалтерские процессы',
+        'Terminowe naliczanie wynagrodzeń': 'Своевременное начисление заработной платы',
+        'Terminy przetwarzania listy płac ustalamy indywidualnie z każdą firmą, uwzględniając jej wewnętrzny harmonogram wypłat oraz terminy rozliczeń z ZUS i US.': 'Сроки обработки ведомостей устанавливаем индивидуально с каждой компанией, учитывая её внутренний график выплат и сроки расчётов с ZUS и налоговыми органами.',
+        'listy płac gotowe z odpowiednim wyprzedzeniem przed dniem wypłaty': 'ведомости готовы с достаточным опережением до дня выплаты',
+        'terminowe przelewy składek ZUS i zaliczek PIT': 'своевременные переводы взносов ZUS и авансов PIT',
+        'Zakres raportowania ustalamy\nindywidualnie z każdym klientem.': 'Объём отчётности устанавливаем\nиндивидуально с каждым клиентом.',
+        'zestawienie listy płac': 'сводная ведомость',
+        'paski wynagrodzeń dla pracowników': 'расчётные листки для сотрудников',
+        'potwierdzenia rozliczeń ZUS i US': 'подтверждения расчётов ZUS и налоговых органов',
+        'W zależności od potrzeb przygotowujemy również dodatkowe raporty kadrowe, płacowe i zarządcze.': 'В зависимости от потребностей мы также готовим дополнительные кадровые, бухгалтерские и управленческие отчёты.',
+        # --- section-kp-oferta ---
+        'Oferta rozwiązań kadrowych': 'Предложение кадровых решений',
+        'Wyceń usługę': 'Получить смету',
+        'Sprawdź również rozwiązania księgowe': 'Ознакомьтесь также с бухгалтерскими решениями',
+        'Prowadzenie dokumentacji kadrowej\n\nNaliczanie wynagrodzeń i świadczeń\n\nObsługa umów o pracę i umów cywilnoprawnych\n\nRozliczenia z ZUS i instytucjami publicznymi\n\nSporządzanie deklaracji podatkowych\n\nKontrolowanie limitów urlopowych, terminów badań lekarskich, szkoleń BHP oraz wygasających umów\n\nReprezentowanie podczas kontroli i czynności sprawdzających\n\nZarządzanie programami PPK i PPE\n\nPlatforma pracownicza z dostępem do wniosków urlopowych i dokumentów online': 'Ведение кадровой документации\n\nНачисление заработной платы и льгот\n\nОбработка трудовых и гражданско-правовых договоров\n\nРасчёты с ZUS и государственными учреждениями\n\nПодготовка налоговых деклараций\n\nКонтроль лимитов отпусков, сроков медосмотров, охраны труда и истекающих договоров\n\nПредставительство при проверках и ревизионных действиях\n\nУправление программами PPK и PPE\n\nПлатформа для сотрудников с доступом к заявлениям на отпуск и документам онлайн',
+        # --- section-kp-systemy ---
+        "Obsługa wielu systemów\nksiągowych": "Поддержка множества\nбухгалтерских систем",
+        # --- section-hk-hero ---
+        'Historie klientów': 'Истории клиентов',
+        'Konkretne przypadki. Konkretny efekt. Zobacz, jak pomagamy firmom działać stabilnie i bezpiecznie.': 'Конкретные случаи. Конкретный результат. Посмотрите, как мы помогаем компаниям работать стабильно и безопасно.',
+        'Poznaj historie': 'Ознакомьтесь с историями',
+        # --- section-hk-wspolpraca ---
+        'Współpraca, która': 'Сотрудничество, которое',
+        'daje spokój operacyjny': 'даёт операционное спокойствие',
+        'W Meritoros pracujemy tak, aby odciążyć zespół klienta i zapewnić ciągłość obsługi. Działamy elastycznie, dopasowując model współpracy do realiów organizacji, ale trzymamy stały standard jakości, terminowości i bezpieczeństwa danych.': 'В Meritoros мы работаем так, чтобы разгрузить команду клиента и обеспечить непрерывность обслуживания. Действуем гибко, адаптируя модель сотрудничества к реалиям организации, но поддерживаем постоянный стандарт качества, своевременности и безопасности данных.',
+        'Dzięki temu klienci mogą skupić się na biznesie, a nie na „gaszeniu tematów" w księgowości czy kadrach': 'Благодаря этому клиенты могут сосредоточиться на бизнесе, а не на «тушении пожаров» в бухгалтерии или кадрах',
+        # --- section-fr-model ---
+        "Możesz powierzyć nam całość procesów księgowych lub wybrane obszary wymagające uporządkowania.\nDopasowujemy zakres wsparcia do realnej sytuacji Twojej firmy.": "Вы можете доверить нам все бухгалтерские процессы или отдельные участки, требующие упорядочивания.\nМы адаптируем объём поддержки к реальной ситуации в вашей компании.",
+        'Obsługujemy proces end-to-end: od bieżącej ewidencji po zamknięcie miesiąca i raporty. Pracujesz z zespołem, który zapewnia zastępowalność i stały standard.': 'Мы ведём процесс от начала до конца: от текущего учёта до закрытия месяца и отчётов. Вы работаете с командой, которая обеспечивает взаимозаменяемость и постоянный стандарт.',
+        # --- section-fr-obsluga ---
+        'Obsługa księgowa fundacji rodzinnej dla właścicieli myślących długoterminowo': 'Бухгалтерское обслуживание семейного фонда для владельцев, мыслящих долгосрочно',
+        'Prowadzimy księgowość fundacji rodzinnych dla przedsiębiorców, którzy chcą uporządkować kwestie majątku i sukcesji w sposób bezpieczny, transparentny i zgodny z przepisami. Bierzemy na siebie bieżącą obsługę, sprawozdawczość i kontrolę terminów, tak aby fundacja działała stabilnie.': 'Мы ведём бухгалтерский учёт семейных фондов для предпринимателей, которые хотят упорядочить вопросы имущества и наследования безопасно, прозрачно и в соответствии с законодательством. Мы берём на себя текущее обслуживание, отчётность и контроль сроков, чтобы фонд работал стабильно.',
+        # --- section-fr-oferta ---
+        'Poznaj naszą ofertę': 'Ознакомьтесь с нашим предложением',
+        'Zapewniamy kompleksową obsługę księgową i podatkową, która porządkuje finanse fundacji i daje poczucie bezpieczeństwa jej fundatorom.': 'Мы предоставляем комплексное бухгалтерское и налоговое обслуживание, которое упорядочивает финансы фонда и даёт его учредителям ощущение безопасности.',
+        'Prowadzenie ksiąg rachunkowych\n\nRozliczanie i składanie deklaracji podatkowych\n\nPrzygotowywanie sprawozdań finansowych\n\nAsystowanie podczas badania sprawozdania finansowego oraz kontroli urzędów\n\nRaportowanie na cele zarządcze\n\nSporządzanie polityki rachunkowości': 'Ведение бухгалтерских книг\n\nИсчисление и подача налоговых деклараций\n\nПодготовка финансовой отчётности\n\nАссистирование при аудите финансовой отчётности и проверках органов\n\nОтчётность для управленческих целей\n\nСоставление учётной политики',
+        # --- section-media-artykul ---
+        'Maciej Paraszczak dla Pulsu Biznesu': 'Мацей Парасщак для Puls Biznesu',
+        'Dla wielu naszych klientów jesteśmy nie tylko biurem rachunkowym, ale partnerem operacyjnym, który realnie usprawnia ich procesy biznesowe – podkreśla z Maciej Paraszczak, prezes zarządu spółki Meritoros.': 'Для многих наших клиентов мы являемся не просто бухгалтерским бюро, а операционным партнёром, который реально улучшает их бизнес-процессы — подчёркивает Мацей Парасщак, президент правления Meritoros.',
+        'Wywiad z Maciejem Paraszczakiem dla Pulsu Biznesu o tym, jak wygląda nowoczesna księgowość w praktyce i dlaczego standard oraz procesy mają dziś kluczowe znaczenie.': 'Интервью с Мацеем Парасщаком для Puls Biznesu о том, как выглядит современная бухгалтерия на практике и почему стандарты и процессы имеют сегодня ключевое значение.',
+        'Czytaj więcej': 'Читать больше',
+        # --- section-media-hero ---
+        'Media i informacje firmowe': 'Медиа и корпоративные новости',
+        'Najważniejsze wydarzenia z życia firmy: rozwój, nowe inicjatywy, wyróżnienia i ogłoszenia.': 'Важнейшие события из жизни компании: развитие, новые инициативы, отличия и объявления.',
+        # --- section-media-przeczytaj ---
+        'Przeczytaj również': 'Читайте также',
+        # --- section-media-zapytania ---
+        'Zapytania medialne': 'Медиа-запросы',
+        'W sprawach publikacji, komentarzy eksperckich i współpracy medialnej prosimy o kontakt. Odpowiemy możliwie szybko i wrócimy z informacją, w jakiej formie możemy pomóc.': 'По вопросам публикаций, экспертных комментариев и медиасотрудничества просим обращаться. Ответим как можно быстрее и вернёмся с информацией, в какой форме можем помочь.',
+        # --- section-onas-hero ---
+        'Poznaj nasze biuro rachunkowe i wartości, które stoją za naszą codzienną pasją.': 'Познакомьтесь с нашим бухгалтерским бюро и ценностями, которые лежат в основе нашей ежедневной страсти.',
+        'Pracujemy tak, by być dumni z jakości informacji dostarczanych naszym klientom.': 'Мы работаем так, чтобы гордиться качеством информации, предоставляемой нашим клиентам.',
+        'Porozmawiamy': 'Поговорим',
+        # --- section-onas-zespol ---
+        'Zespół': 'Команда',
+        'prezes zarządu, CEO': 'президент правления, CEO',
+        'Założyciel i główny udziałowiec Meritoros SA, certyfikowany księgowy (Certyfikat Min. Finansów nr 1840/2003). Absolwent kierunku Zarządzanie ze specjalnością Finanse i Rachunkowość.': 'Основатель и главный акционер Meritoros SA, сертифицированный бухгалтер (Сертификат Министерства финансов № 1840/2003). Выпускник специальности Управление со специализацией «Финансы и бухгалтерский учёт».',
+        'członek zarządu, COO': 'член правления, COO',
+        'Udziałowiec Meritoros SA, certyfikowana księgowa (Certyfikat Min. Finansów nr 54055/2011). Absolwentka kierunku Zarządzania na AGH, swoje wykształcenie uzupełniła o studia podyplomowe.': 'Акционер Meritoros SA, сертифицированный бухгалтер (Сертификат Министерства финансов № 54055/2011). Выпускница специальности Управление в AGH, дополнила образование аспирантскими студиями.',
+        'Udziałowiec Meritoros SA, certyfikowany księgowy (Certyfikat Min. Finansów nr 62092/2013). Absolwent kierunku Finansów i Rachunkowości na UEK ze specjalnością finanse przedsiębiorstw.': 'Акционер Meritoros SA, сертифицированный бухгалтер (Сертификат Министерства финансов № 62092/2013). Выпускник специальности Финансы и бухгалтерский учёт в UEK со специализацией «Корпоративные финансы».',
+        'Księgowa (Certyfikat Min. Finansów 55068/2012) z wieloletnim doświadczeniem. Swoją karierę budowała w Biurach Rachunkowych oraz jako główna księgowa w jednej z międzynarodowych firm.': 'Бухгалтер (Сертификат Министерства финансов 55068/2012) с многолетним опытом. Строила карьеру в бухгалтерских бюро и в качестве главного бухгалтера в одной из международных компаний.',
+        # --- section-ri-akcjonariat ---
+        'Informacje o strukturze akcjonariatu': 'Информация о структуре акционерного капитала',
+        'Kapitał zakładowy spółki wynosi 120 000 PLN i dzieli się na 1 200 000 akcji serii A o wartości nominalnej 0,10 PLN.': 'Уставный капитал общества составляет 120 000 злотых и делится на 1 200 000 акций серии A номинальной стоимостью 0,10 злотых.',
+        'Akcjonariusz': 'Акционер',
+        'Łączna liczba posiadanych akcji': 'Общее количество акций',
+        'Udział w łącznej liczbie głosów': 'Доля в общем количестве голосов',
+        # --- section-ri-hero ---
+        'Relacje inwestorskie': 'Отношения с инвесторами',
+        'Poniżej udostępniamy kluczowe informacje i dokumenty dotyczące Meritoros SA, w tym sprawozdania finansowe i raporty okresowe.': 'Ниже мы размещаем ключевую информацию и документы, касающиеся Meritoros SA, включая финансовую отчётность и периодические отчёты.',
+        # --- section-ri-msg ---
+        'Ogłoszenia w Monitorze Sądowym i Gospodarczym': 'Объявления в Судебно-хозяйственном мониторе',
+        # --- section-ri-ogloszenia ---
+        'Ogłoszenia o zwołaniu Walnego Zgromadzenia Akcjonariuszy': 'Уведомления о созыве Общего собрания акционеров',
+        # --- section-ri-rada ---
+        'Rada nadzorcza': 'Наблюдательный совет',
+        'doradca podatkowy (certyfikat nr 00443)\nbył członek zarządu Małopolskiej Izby Doradców Podatkowych': 'налоговый советник (сертификат № 00443)\nбывший член правления Малопольской палаты налоговых советников',
+        'przedsiębiorca\nprezes zarządu Emka Sp. z o.o.': 'предприниматель\nпрезидент правления Emka Sp. z o.o.',
+        'przedsiębiorca\nczłonek zarządu Chata Sp. z o.o.': 'предприниматель\nчлен правления Chata Sp. z o.o.',
+        'przedsiębiorca\nwiceprezes zarządu Office Samurai Sp. z o.o.': 'предприниматель\nвице-президент правления Office Samurai Sp. z o.o.',
+        'przedsiębiorca\nprezes zarządu Printbox Sp. z o.o.': 'предприниматель\nпрезидент правления Printbox Sp. z o.o.',
+        # --- section-ri-raporty ---
+        'Raporty kwartalne spółki': 'Квартальные отчёты общества',
+        'Raporty EBI/ESPI': 'Отчёты EBI/ESPI',
+        'Animator Rynku': 'Маркет-мейкер',
+        'Autoryzowany Doradca': 'Авторизованный советник',
+        'Pytania i odpowiedzi': 'Вопросы и ответы',
+        # --- section-ri-rewident ---
+        'Opinie biegłego rewidenta': 'Заключения аудитора',
+        # --- section-ri-rosniemy ---
+        'Rośniemy': 'Мы растём',
+        'Rozwój Meritoros SA znajduje odzwierciedlenie w systematycznym wzroście skali działalności i przychodów na przestrzeni ostatnich lat.': 'Развитие Meritoros SA отражается в систематическом росте масштабов деятельности и доходов на протяжении последних лет.',
+        # --- section-ri-sprawozdania ---
+        'Sprawozdania finansowe spółki': 'Финансовая отчётность общества',
+        # --- section-ri-sprawozdania-zarzadu ---
+        'Sprawozdania z działalności zarządu spółki': 'Отчёты о деятельности правления общества',
+        # --- section-ri-uchwaly ---
+        'Uchwały podejmowane przez Zgromadzenie Akcjonariuszy': 'Решения, принятые Общим собранием акционеров',
+        # --- section-ri-zarzad ---
+        'Zarząd': 'Правление',
+        # --- section-uk-cta ---
+        'Skontaktuj się z nami i dowiedz się, jak możemy wesprzeć Twoją firmę.': 'Свяжитесь с нами и узнайте, как мы можем поддержать вашу компанию.',
+        # --- section-uk-dlaczego ---
+        "Dlaczego firmy wybierają nasze\nrozwiązania księgowe": "Почему компании выбирают наши\nбухгалтерские решения",
+        "Jakość potwierdzona\nstandardami": "Качество, подтверждённое\nстандартами",
+        'Pracujemy zgodnie z normą ISO 9001 — systematyczne procesy, kontrola jakości i ciągłe doskonalenie usług.': 'Мы работаем в соответствии со стандартом ISO 9001 — систематические процессы, контроль качества и постоянное совершенствование услуг.',
+        "Nowoczesne i elastyczne podejście": "Современный и гибкий подход",
+        'Dopasowujemy narzędzia i zakres współpracy do realnych potrzeb Twojej firmy – bez zbędnej biurokracji.': 'Мы подбираем инструменты и объём сотрудничества под реальные потребности вашей компании — без лишней бюрократии.',
+        'Zespołowy model pracy gwarantuje ciągłość obsługi — urlopy i rotacja pracowników nie wpływają na jakość Twojej księgowości.': 'Командная модель работы гарантирует непрерывность обслуживания — отпуска и ротация сотрудников не влияют на качество вашей бухгалтерии.',
+        'Dane klientów chronimy zgodnie z normą ISO 27001 — wdrożone procedury, szyfrowanie i regularne audyty bezpieczeństwa.': 'Данные клиентов мы защищаем в соответствии со стандартом ISO 27001 — внедрённые процедуры, шифрование и регулярные аудиты безопасности.',
+        # --- section-uk-hero ---
+        'Rozwiązania księgowe dla firm, które': 'Бухгалтерские решения для компаний, которые',
+        'chcą mieć porządek': 'хотят иметь порядок',
+        'i spokój w biznesie': 'и спокойствие в бизнесе',
+        'Zapewniamy kompleksową obsługę księgową firm o różnej skali działalności. Przejmujemy odpowiedzialność za poprawność, terminowość i ciągłość procesów księgowych, aby nasi klienci mogli skupić się na prowadzeniu i rozwoju biznesu.': 'Мы предоставляем комплексное бухгалтерское обслуживание компаниям различного масштаба. Берём ответственность за точность, своевременность и непрерывность бухгалтерских процессов, чтобы наши клиенты могли сосредоточиться на ведении и развитии бизнеса.',
+        # --- section-uk-ksiegowosc ---
+        'Twoja księgowość': 'Ваша бухгалтерия',
+        'w': 'в',
+        'dobrych rękach': 'надёжных руках',
+        'Oferujemy kompleksową obsługę księgową działalności i spółek zarówno w zakresie prowadzenia pełnych ksiąg rachunkowych, jak i uproszczonych form ewidencji. Klienci mogą powierzyć nam całość procesów księgowych lub wybrane obszary wymagające wsparcia.': 'Мы предлагаем комплексное бухгалтерское обслуживание предпринимателей и компаний как в сфере ведения полных бухгалтерских книг, так и упрощённых форм учёта. Клиенты могут доверить нам все бухгалтерские процессы или отдельные участки, требующие поддержки.',
+        'Zakres współpracy dopasowujemy do skali działalności i stopnia złożoności operacji finansowych.': 'Объём сотрудничества мы адаптируем к масштабу деятельности и степени сложности финансовых операций.',
+        'Sprawdź jak wygląda współpraca': 'Посмотрите, как выглядит сотрудничество',
+        # --- section-uk-oferta ---
+        'Oferta rozwiązań księgowych': 'Предложение бухгалтерских решений',
+        "Obsługujemy firmy na różnych formach rozliczeń zarówno w pełnej księgowości (spółki),\njak i w uproszczonych formach ewidencji (np. KPiR)": "Мы обслуживаем компании на различных формах учёта как в полной бухгалтерии (общества),\nтак и в упрощённых формах учёта (напр. книга доходов и расходов)",
+        'Poniżej pokazujemy przykładowy zakres działań. Jeśli potrzebujesz innej usługi chętnie porozmawiamy.': 'Ниже мы показываем примерный объём действий. Если вам нужна другая услуга, мы с удовольствием поговорим.',
+        'Sprawdź również rozwiązania kadrowe': 'Ознакомьтесь также с кадровыми решениями',
+        'Prowadzenie ksiąg rachunkowych\n\nObliczanie podatków i składanie deklaracji podatkowych\n\nBieżące rozliczanie wyciągów i kontrolowanie rozrachunków\n\nRaportowanie zarządcze i sprawozdawcze\n\nRaportowanie do instytucji publicznych\n\nSporządzanie sprawozdań finansowych oraz deklaracji rocznych\n\nReprezentowanie podczas kontroli i czynności sprawdzających\n\nObsługa niestandardowych rozliczeń\n\nAsystowanie i wsparcie podczas audytu': 'Ведение бухгалтерских книг\n\nИсчисление налогов и подача налоговых деклараций\n\nТекущее согласование выписок и контроль расчётов\n\nУправленческая и финансовая отчётность\n\nОтчётность перед государственными учреждениями\n\nСоставление финансовой отчётности и годовых деклараций\n\nПредставительство при проверках и ревизионных действиях\n\nОбработка нестандартных расчётов\n\nАссистирование и поддержка при аудитах',
+        # --- section-uk-wspolpraca ---
+        'na bieżąco – obsługując codzienne procesy księgowe lub kadrowe': 'на постоянной основе — обслуживая ежедневные бухгалтерские или кадровые процессы',
+        'Zakres i częstotliwość raportowania\nustalamy indywidualnie z każdym klientem.': 'Объём и частота отчётности\nустанавливаются индивидуально с каждым клиентом.',
+        'W zależności od potrzeb przygotowujemy również dodatkowe raporty księgowe, finansowe lub kadrowo-płacowe.': 'В зависимости от потребностей мы также готовим дополнительные бухгалтерские, финансовые или кадрово-бухгалтерские отчёты.',
+        # --- section-uk-kalkulator ---
+        'Oszacuj wstępny koszt usług księgowych w kilka chwil. Wprowadź podstawowe informacje o swojej działalności, a my przygotujemy orientacyjną wycenę dopasowaną do Twoich potrzeb i skali biznesu.': 'Оцените предварительную стоимость бухгалтерских услуг за несколько минут. Введите основную информацию о вашей деятельности, и мы подготовим ориентировочную смету, адаптированную к вашим потребностям и масштабу бизнеса.',
+        # --- section-bpo-systemy ---
+        "Obsługa wielu systemów\nksięgowych": "Поддержка множества\nбухгалтерских систем",
+        # --- section-services ---
+        'Nasze Kompetencje': 'Наши компетенции',
+        'Obszary, w których przejmujemy odpowiedzialność': 'Сферы, в которых мы берём ответственность',
+        'Nasze doświadczenie obejmuje rozliczanie firm o różnorodnych profilach działalności, takich jak CIT Estoński, Fundacje Rodzinne, Spółki ASI, e-commerce, VAT OSS, Intrastat oraz rozliczenia delegacji pracowniczych.': 'Наш опыт охватывает расчёты компаний с разнообразными профилями деятельности, такими как эстонский CIT, семейные фонды, компании ASI, e-commerce, VAT OSS, Intrastat и расчёты командировок сотрудников.',
+        'Zapytaj o ofertę': 'Запросить предложение',
+        'Skontaktuj się z nami': 'Свяжитесь с нами',
+        'Usługi Rachunkowe': 'Бухгалтерские услуги',
+        'Kompleksowa obsługa księgowa firm o różnej skali działalności.': 'Комплексное бухгалтерское обслуживание компаний различного масштаба.',
+        'BPO': 'BPO',
+        'Outsourcing wybranych lub pełnych procesów finansowych i administracyjnych dla większych firm.': 'Аутсорсинг отдельных или полных финансовых и административных процессов для крупных компаний.',
+        'Usługi Kadrowe': 'Кадровые услуги',
+        'Obsługa kadrowo-płacowa dopasowana do potrzeb organizacji.': 'Кадрово-бухгалтерское обслуживание, адаптированное к потребностям организации.',
+        'Fundacje rodzinne': 'Семейные фонды',
+        'Obsługa rachunkowa fundacji z uwzględnieniem specyfiki regulacyjnej.': 'Бухгалтерское обслуживание фондов с учётом регуляторной специфики.',
+        'Wsparcie we wdrażaniu narzędzi, automatyzacji i usprawnianiu procesów biznesowych.': 'Поддержка во внедрении инструментов, автоматизации и оптимизации бизнес-процессов.',
+        # --- section-oferta-kuk-info ---
+        'Prowadzenie ksiąg rachunkowych i ewidencji podatkowych (PKPB)': 'Ведение бухгалтерских книг и налогового учёта (PKPB)',
+        'Sporządzanie deklaracji i sprawozdań finansowych (CIT, VAT, PIT)': 'Составление финансовых деклараций и отчётности (CIT, VAT, PIT)',
+        'Przygotowywanie rocznych sprawozdań finansowych i analiz dla klientów': 'Подготовка годовой финансовой отчётности и аналитики для клиентов',
+        'Bezpośredni kontakt z klientami (telefon, e-mail) w sprawach rozliczeń': 'Прямой контакт с клиентами (телефон, e-mail) по вопросам расчётов',
+        'Współpraca z urzędami skarbowymi, instytucjami finansowymi i podmiotami zewnętrznymi, w tym reprezentacja klientów': 'Сотрудничество с налоговыми органами, финансовыми учреждениями и внешними субъектами, включая представительство клиентов',
+        'Minimum 2 lata doświadczenia w samodzielnym prowadzeniu ksiąg rachunkowych w biurze rachunkowym; certyfikat MF mile widziany': 'Минимум 2 года опыта самостоятельного ведения бухгалтерских книг в бухгалтерском бюро; сертификат МФ приветствуется',
+        'Biegła znajomość języka ukraińskiego i rosyjskiego do komunikacji z klientami': 'Свободное владение украинским и русским языками для общения с клиентами',
+        'Doświadczenie w samodzielnym sporządzaniu sprawozdań finansowych': 'Опыт самостоятельного составления финансовой отчётности',
+        'Praktyczna znajomość przepisów rachunkowych, prawa podatkowego i przepisów VAT': 'Практическое знание бухгалтерского законодательства, налогового права и норм VAT',
+        'Biegłość w MS Office (szczególnie Excel) i oprogramowaniu księgowym Comarch Optima': 'Уверенное владение MS Office (особенно Excel) и бухгалтерской программой Comarch Optima',
+        'Skrupulatność i wysokie zdolności organizacyjne': 'Скрупулёзность и высокие организационные способности',
+        'Zdolności analitycznego myślenia': 'Способности к аналитическому мышлению',
+        # --- section-kariera-hero ---
+        "Dołącz do\nnaszego zespołu": "Присоединяйся к\nнашей команде",
+        "Budujemy uporządkowane procesy i dobrą atmosferę.\nJeśli cenisz jasne zasady, rozwój i pracę zespołową – sprawdź,\nczy mamy ofertę dla Ciebie.": "Мы строим упорядоченные процессы и хорошую атмосферу.\nЕсли ты ценишь чёткие правила, развитие и командную работу — проверь,\nесть ли у нас предложение для тебя.",
+        'Aktualne oferty pracy': 'Актуальные вакансии',
     },
 }
 

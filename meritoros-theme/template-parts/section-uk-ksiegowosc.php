@@ -1,10 +1,10 @@
 <?php
-$title1       = mer_field('uk_ks_title1',       'Twoja księgowość');
-$title2       = mer_field('uk_ks_title2',       'w');
-$title_green  = mer_field('uk_ks_title_green',  'dobrych rękach');
-$text1        = mer_field('uk_ks_text1',        'Oferujemy kompleksową obsługę księgową działalności i spółek zarówno w zakresie prowadzenia pełnych ksiąg rachunkowych, jak i uproszczonych form ewidencji. Klienci mogą powierzyć nam całość procesów księgowych lub wybrane obszary wymagające wsparcia.');
-$text2        = mer_field('uk_ks_text2',        'Zakres współpracy dopasowujemy do skali działalności i stopnia złożoności operacji finansowych.');
-$btn_text     = mer_field('uk_ks_btn_text',     'Sprawdź jak wygląda współpraca');
+$title1       = __( mer_field('uk_ks_title1',       'Twoja księgowość'), 'meritoros' );
+$title2       = __( mer_field('uk_ks_title2',       'w'), 'meritoros' );
+$title_green  = __( mer_field('uk_ks_title_green',  'dobrych rękach'), 'meritoros' );
+$text1        = __( mer_field('uk_ks_text1',        'Oferujemy kompleksową obsługę księgową działalności i spółek zarówno w zakresie prowadzenia pełnych ksiąg rachunkowych, jak i uproszczonych form ewidencji. Klienci mogą powierzyć nam całość procesów księgowych lub wybrane obszary wymagające wsparcia.'), 'meritoros' );
+$text2        = __( mer_field('uk_ks_text2',        'Zakres współpracy dopasowujemy do skali działalności i stopnia złożoności operacji finansowych.'), 'meritoros' );
+$btn_text     = __( mer_field('uk_ks_btn_text',     'Sprawdź jak wygląda współpraca'), 'meritoros' );
 $btn_url      = mer_field('uk_ks_btn_url',      home_url('/kontakt/'));
 $image        = get_field('uk_ks_image');
 

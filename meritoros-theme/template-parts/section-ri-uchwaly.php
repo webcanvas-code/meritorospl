@@ -1,5 +1,5 @@
 <?php
-$title = mer_field('ri_uch_title', 'Uchwały podejmowane przez Zgromadzenie Akcjonariuszy');
+$title = __( mer_field('ri_uch_title', 'Uchwały podejmowane przez Zgromadzenie Akcjonariuszy'), 'meritoros' );
 
 // Pozycje – 10 osobnych grup ACF (ri_uch_item_1 … ri_uch_item_10)
 $items = [];

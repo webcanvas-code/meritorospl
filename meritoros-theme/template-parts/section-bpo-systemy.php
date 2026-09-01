@@ -1,6 +1,6 @@
 <?php
-$title = mer_field('bpo_sys_title', "Obsługa wielu systemów\nksięgowych");
-$text  = mer_field('bpo_sys_text',  'Nasz zespół obsługuje wiele systemów księgowych, m.in. Comarch Optima, SAP czy Enova. Współpracę dostosowujemy do istniejących narzędzi i procesów oraz wymagań klienta. Istnieje także możliwość pracy na preferowanych przez klienta programach księgowych.');
+$title = __( mer_field('bpo_sys_title', "Obsługa wielu systemów\nksięgowych"), 'meritoros' );
+$text  = __( mer_field('bpo_sys_text',  'Nasz zespół obsługuje wiele systemów księgowych, m.in. Comarch Optima, SAP czy Enova. Współpracę dostosowujemy do istniejących narzędzi i procesów oraz wymagań klienta. Istnieje także możliwość pracy na preferowanych przez klienta programach księgowych.'), 'meritoros' );
 
 $logo_defaults = [
     ['url' => get_template_directory_uri() . '/images/erp optima.png', 'alt' => 'Comarch ERP Optima'],

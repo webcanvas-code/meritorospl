@@ -1,10 +1,10 @@
 <?php
-$title1       = mer_field('kp_obs_title1',      'Twoje kadry');
-$title2       = mer_field('kp_obs_title2',      'i płace');
-$title_green  = mer_field('kp_obs_title_green', 'pod kontrolą');
-$text1        = mer_field('kp_obs_text1',       'Oferujemy pełną obsługę kadrowo-płacową przedsiębiorstw – od prowadzenia dokumentacji pracowniczej po naliczanie wynagrodzeń i rozliczenia z instytucjami publicznymi. Klienci mogą powierzyć nam całość procesów kadrowych i płacowych lub wybrane obszary wymagające wsparcia.');
-$text2        = mer_field('kp_obs_text2',       'Zakres współpracy dopasowujemy do wielkości i struktury organizacji.');
-$btn_text     = mer_field('kp_obs_btn_text',    'Oszacuj wstępną wycenę');
+$title1       = __( mer_field('kp_obs_title1',      'Twoje kadry'), 'meritoros' );
+$title2       = __( mer_field('kp_obs_title2',      'i płace'), 'meritoros' );
+$title_green  = __( mer_field('kp_obs_title_green', 'pod kontrolą'), 'meritoros' );
+$text1        = __( mer_field('kp_obs_text1',       'Oferujemy pełną obsługę kadrowo-płacową przedsiębiorstw – od prowadzenia dokumentacji pracowniczej po naliczanie wynagrodzeń i rozliczenia z instytucjami publicznymi. Klienci mogą powierzyć nam całość procesów kadrowych i płacowych lub wybrane obszary wymagające wsparcia.'), 'meritoros' );
+$text2        = __( mer_field('kp_obs_text2',       'Zakres współpracy dopasowujemy do wielkości i struktury organizacji.'), 'meritoros' );
+$btn_text     = __( mer_field('kp_obs_btn_text',    'Oszacuj wstępną wycenę'), 'meritoros' );
 $btn_url      = mer_field('kp_obs_btn_url',     '#kalkulator');
 $image        = get_field('kp_obs_image');
 

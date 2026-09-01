@@ -2,30 +2,30 @@
 $_page_id = get_the_ID();
 $_orig_id = apply_filters('wpml_object_id', $_page_id, get_post_type(), true, apply_filters('wpml_default_language', null));
 
-$title = mer_field('kp_wsp_title', 'Jak wygląda bieżąca współpraca');
+$title = __( mer_field('kp_wsp_title', 'Jak wygląda bieżąca współpraca'), 'meritoros' );
 
 $s1 = get_field('kp_wsp_step1') ?: ($_orig_id !== $_page_id ? get_field('kp_wsp_step1', $_orig_id) : null);
-$s1_title     = is_array($s1) && !empty($s1['title']) ? $s1['title'] : 'Indywidualna organizacja pracy';
-$s1_lead      = is_array($s1) && !empty($s1['lead'])  ? $s1['lead']  : 'W zależności od potrzeb możemy pracować:';
+$s1_title     = __( is_array($s1) && !empty($s1['title']) ? $s1['title'] : 'Indywidualna organizacja pracy', 'meritoros' );
+$s1_lead      = __( is_array($s1) && !empty($s1['lead'])  ? $s1['lead']  : 'W zależności od potrzeb możemy pracować:', 'meritoros' );
 $s1_items_raw = is_array($s1) && !empty($s1['items']) ? $s1['items'] : "na bieżąco – obsługując codzienne procesy kadrowe i płacowe\nw cyklach tygodniowych\nw innych ustalonych odstępach czasu";
 
 $s2 = get_field('kp_wsp_step2') ?: ($_orig_id !== $_page_id ? get_field('kp_wsp_step2', $_orig_id) : null);
-$s2_title     = is_array($s2) && !empty($s2['title']) ? $s2['title'] : 'Terminowe naliczanie wynagrodzeń';
-$s2_lead      = is_array($s2) && !empty($s2['lead'])  ? $s2['lead']  : 'Terminy przetwarzania listy płac ustalamy indywidualnie z każdą firmą, uwzględniając jej wewnętrzny harmonogram wypłat oraz terminy rozliczeń z ZUS i US.';
+$s2_title     = __( is_array($s2) && !empty($s2['title']) ? $s2['title'] : 'Terminowe naliczanie wynagrodzeń', 'meritoros' );
+$s2_lead      = __( is_array($s2) && !empty($s2['lead'])  ? $s2['lead']  : 'Terminy przetwarzania listy płac ustalamy indywidualnie z każdą firmą, uwzględniając jej wewnętrzny harmonogram wypłat oraz terminy rozliczeń z ZUS i US.', 'meritoros' );
 $s2_items_raw = is_array($s2) && !empty($s2['items']) ? $s2['items'] : "listy płac gotowe z odpowiednim wyprzedzeniem przed dniem wypłaty\nterminowe przelewy składek ZUS i zaliczek PIT";
 
 $s3 = get_field('kp_wsp_step3') ?: ($_orig_id !== $_page_id ? get_field('kp_wsp_step3', $_orig_id) : null);
-$s3_title     = is_array($s3) && !empty($s3['title']) ? $s3['title'] : "Zakres raportowania ustalamy\nindywidualnie z każdym klientem.";
-$s3_lead      = is_array($s3) && !empty($s3['lead'])  ? $s3['lead']  : 'W standardzie klient otrzymuje:';
+$s3_title     = __( is_array($s3) && !empty($s3['title']) ? $s3['title'] : "Zakres raportowania ustalamy\nindywidualnie z każdym klientem.", 'meritoros' );
+$s3_lead      = __( is_array($s3) && !empty($s3['lead'])  ? $s3['lead']  : 'W standardzie klient otrzymuje:', 'meritoros' );
 $s3_items_raw = is_array($s3) && !empty($s3['items']) ? $s3['items'] : "zestawienie listy płac\npaski wynagrodzeń dla pracowników\npotwierdzenia rozliczeń ZUS i US";
-$s3_note      = is_array($s3) && !empty($s3['note'])  ? $s3['note']  : 'W zależności od potrzeb przygotowujemy również dodatkowe raporty kadrowe, płacowe i zarządcze.';
+$s3_note      = __( is_array($s3) && !empty($s3['note'])  ? $s3['note']  : 'W zależności od potrzeb przygotowujemy również dodatkowe raporty kadrowe, płacowe i zarządcze.', 'meritoros' );
 
-$btn_text = mer_field('kp_wsp_btn_text', 'Poznaj więcej historii');
+$btn_text = __( mer_field('kp_wsp_btn_text', 'Poznaj więcej historii'), 'meritoros' );
 $btn_url  = mer_field('kp_wsp_btn_url',  home_url('/blog/'));
 
-$s1_items = array_values(array_filter(array_map('trim', explode("\n", $s1_items_raw))));
-$s2_items = array_values(array_filter(array_map('trim', explode("\n", $s2_items_raw))));
-$s3_items = array_values(array_filter(array_map('trim', explode("\n", $s3_items_raw))));
+$s1_items = array_values(array_filter(array_map(function($s) { return __($s, 'meritoros'); }, array_map('trim', explode("\n", $s1_items_raw)))));
+$s2_items = array_values(array_filter(array_map(function($s) { return __($s, 'meritoros'); }, array_map('trim', explode("\n", $s2_items_raw)))));
+$s3_items = array_values(array_filter(array_map(function($s) { return __($s, 'meritoros'); }, array_map('trim', explode("\n", $s3_items_raw)))));
 ?>
 
 <section class="py-16 md:py-24 bg-emerald-50 relative">

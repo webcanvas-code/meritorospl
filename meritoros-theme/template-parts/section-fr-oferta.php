@@ -1,11 +1,11 @@
 <?php
-$title    = mer_field('fr_oferta_title',    'Poznaj naszą ofertę');
-$subtitle = mer_field('fr_oferta_subtitle', 'Zapewniamy kompleksową obsługę księgową i podatkową, która porządkuje finanse fundacji i daje poczucie bezpieczeństwa jej fundatorom.');
-$btn_text = mer_field('fr_oferta_btn_text', 'Wyceń usługę');
+$title    = __( mer_field('fr_oferta_title',    'Poznaj naszą ofertę'), 'meritoros' );
+$subtitle = __( mer_field('fr_oferta_subtitle', 'Zapewniamy kompleksową obsługę księgową i podatkową, która porządkuje finanse fundacji i daje poczucie bezpieczeństwa jej fundatorom.'), 'meritoros' );
+$btn_text = __( mer_field('fr_oferta_btn_text', 'Wyceń usługę'), 'meritoros' );
 $btn_url  = mer_field('fr_oferta_btn_url',  home_url('/kontakt/'));
 
 $items_raw = mer_field('fr_oferta_items', "Prowadzenie ksiąg rachunkowych\n\nRozliczanie i składanie deklaracji podatkowych\n\nPrzygotowywanie sprawozdań finansowych\n\nAsystowanie podczas badania sprawozdania finansowego oraz kontroli urzędów\n\nRaportowanie na cele zarządcze\n\nSporządzanie polityki rachunkowości");
-$items = array_values(array_filter(array_map('trim', preg_split('/(\r?\n){2,}/', $items_raw))));
+$items = array_values(array_filter(array_map(function($s) { return __($s, 'meritoros'); }, array_map('trim', preg_split('/(\r?\n){2,}/', $items_raw)))));
 ?>
 
 <section class="py-8 md:py-14 bg-white relative">

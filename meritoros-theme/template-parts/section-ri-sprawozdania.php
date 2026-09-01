@@ -1,5 +1,5 @@
 <?php
-$title = mer_field('ri_spr_title', 'Sprawozdania finansowe spółki');
+$title = __( mer_field('ri_spr_title', 'Sprawozdania finansowe spółki'), 'meritoros' );
 
 // Pozycje – 10 osobnych grup ACF (ri_spr_item_1 … ri_spr_item_10)
 $items = [];

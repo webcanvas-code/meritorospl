@@ -2,13 +2,13 @@
 $_page_id = get_the_ID();
 $_orig_id = apply_filters('wpml_object_id', $_page_id, get_post_type(), true, apply_filters('wpml_default_language', null));
 
-$team_title = mer_field('onas_team_title', 'Zespół');
+$team_title = __( mer_field('onas_team_title', 'Zespół'), 'meritoros' );
 
 $member_defaults = [
-    ['name' => 'Maciej Paraszczak',         'role' => 'prezes zarządu, CEO', 'bio' => 'Założyciel i główny udziałowiec Meritoros SA, certyfikowany księgowy (Certyfikat Min. Finansów nr 1840/2003). Absolwent kierunku Zarządzanie ze specjalnością Finanse i Rachunkowość.', 'url' => '#', 'photo' => null],
-    ['name' => 'Agnieszka Tomczyk-Pieniądz', 'role' => 'członek zarządu, COO', 'bio' => 'Udziałowiec Meritoros SA, certyfikowana księgowa (Certyfikat Min. Finansów nr 54055/2011). Absolwentka kierunku Zarządzania na AGH, swoje wykształcenie uzupełniła o studia podyplomowe.', 'url' => '#', 'photo' => null],
-    ['name' => 'Krzysztof Gargas',           'role' => 'członek zarządu, COO', 'bio' => 'Udziałowiec Meritoros SA, certyfikowany księgowy (Certyfikat Min. Finansów nr 62092/2013). Absolwent kierunku Finansów i Rachunkowości na UEK ze specjalnością finanse przedsiębiorstw.', 'url' => '#', 'photo' => null],
-    ['name' => 'Joanna Małek',               'role' => 'członek zarządu, COO', 'bio' => 'Księgowa (Certyfikat Min. Finansów 55068/2012) z wieloletnim doświadczeniem. Swoją karierę budowała w Biurach Rachunkowych oraz jako główna księgowa w jednej z międzynarodowych firm.', 'url' => '#', 'photo' => null],
+    ['name' => 'Maciej Paraszczak',         'role' => __('prezes zarządu, CEO', 'meritoros'), 'bio' => __('Założyciel i główny udziałowiec Meritoros SA, certyfikowany księgowy (Certyfikat Min. Finansów nr 1840/2003). Absolwent kierunku Zarządzanie ze specjalnością Finanse i Rachunkowość.', 'meritoros'), 'url' => '#', 'photo' => null],
+    ['name' => 'Agnieszka Tomczyk-Pieniądz', 'role' => __('członek zarządu, COO', 'meritoros'), 'bio' => __('Udziałowiec Meritoros SA, certyfikowana księgowa (Certyfikat Min. Finansów nr 54055/2011). Absolwentka kierunku Zarządzania na AGH, swoje wykształcenie uzupełniła o studia podyplomowe.', 'meritoros'), 'url' => '#', 'photo' => null],
+    ['name' => 'Krzysztof Gargas',           'role' => __('członek zarządu, COO', 'meritoros'), 'bio' => __('Udziałowiec Meritoros SA, certyfikowany księgowy (Certyfikat Min. Finansów nr 62092/2013). Absolwent kierunku Finansów i Rachunkowości na UEK ze specjalnością finanse przedsiębiorstw.', 'meritoros'), 'url' => '#', 'photo' => null],
+    ['name' => 'Joanna Małek',               'role' => __('członek zarządu, COO', 'meritoros'), 'bio' => __('Księgowa (Certyfikat Min. Finansów 55068/2012) z wieloletnim doświadczeniem. Swoją karierę budowała w Biurach Rachunkowych oraz jako główna księgowa w jednej z międzynarodowych firm.', 'meritoros'), 'url' => '#', 'photo' => null],
 ];
 
 $members = [];
@@ -18,8 +18,8 @@ for ($i = 1; $i <= 4; $i++) {
     $members[] = [
         'photo' => is_array($m) && !empty($m['photo']) ? $m['photo'] : null,
         'name'  => is_array($m) && !empty($m['name'])  ? $m['name']  : $def['name'],
-        'role'  => is_array($m) && !empty($m['role'])  ? $m['role']  : $def['role'],
-        'bio'   => is_array($m) && !empty($m['bio'])   ? $m['bio']   : $def['bio'],
+        'role'  => __( is_array($m) && !empty($m['role'])  ? $m['role']  : $def['role'], 'meritoros' ),
+        'bio'   => __( is_array($m) && !empty($m['bio'])   ? $m['bio']   : $def['bio'], 'meritoros' ),
         'url'   => is_array($m) && !empty($m['url'])   ? $m['url']   : $def['url'],
     ];
 }

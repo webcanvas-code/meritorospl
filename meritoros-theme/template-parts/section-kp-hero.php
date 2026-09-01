@@ -1,11 +1,11 @@
 <?php
-$title_line1  = mer_field('kp_hero_title_line1', 'Kadry i płace, które dają');
-$title_green  = mer_field('kp_hero_title_green', 'spokój');
-$title_line2  = mer_field('kp_hero_title_line2', 'organizacji');
-$subtitle     = mer_field('kp_hero_subtitle',    'Zapewniamy kompleksową obsługę kadrowo-płacową firm o różnej skali działalności. Przejmujemy odpowiedzialność za poprawność, terminowość i ciągłość procesów, aby organizacja mogła działać stabilnie i bez zakłóceń.');
-$btn1_text    = mer_field('kp_hero_btn1_text',   'Poznaj ofertę');
+$title_line1  = __( mer_field('kp_hero_title_line1', 'Kadry i płace, które dają'), 'meritoros' );
+$title_green  = __( mer_field('kp_hero_title_green', 'spokój'), 'meritoros' );
+$title_line2  = __( mer_field('kp_hero_title_line2', 'organizacji'), 'meritoros' );
+$subtitle     = __( mer_field('kp_hero_subtitle',    'Zapewniamy kompleksową obsługę kadrowo-płacową firm o różnej skali działalności. Przejmujemy odpowiedzialność za poprawność, terminowość i ciągłość procesów, aby organizacja mogła działać stabilnie i bez zakłóceń.'), 'meritoros' );
+$btn1_text    = __( mer_field('kp_hero_btn1_text',   'Poznaj ofertę'), 'meritoros' );
 $btn1_url     = mer_field('kp_hero_btn1_url',    '#oferta');
-$btn2_text    = mer_field('kp_hero_btn2_text',   'Porozmawiajmy');
+$btn2_text    = __( mer_field('kp_hero_btn2_text',   'Porozmawiajmy'), 'meritoros' );
 $btn2_url     = mer_field('kp_hero_btn2_url',    home_url('/kontakt/'));
 ?>
 

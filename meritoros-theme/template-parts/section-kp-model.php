@@ -2,21 +2,21 @@
 $_page_id = get_the_ID();
 $_orig_id = apply_filters('wpml_object_id', $_page_id, get_post_type(), true, apply_filters('wpml_default_language', null));
 
-$title    = mer_field('kp_model_title',    'Model współpracy');
-$subtitle = mer_field('kp_model_subtitle', "Możesz powierzyć nam całość procesów kadrowych lub wybrane obszary wymagające uporządkowania.\nDopasowujemy zakres wsparcia do realnej sytuacji Twojej firmy.");
+$title    = __( mer_field('kp_model_title',    'Model współpracy'), 'meritoros' );
+$subtitle = __( mer_field('kp_model_subtitle', "Możesz powierzyć nam całość procesów kadrowych lub wybrane obszary wymagające uporządkowania.\nDopasowujemy zakres wsparcia do realnej sytuacji Twojej firmy."), 'meritoros' );
 
 $m1 = get_field('kp_model1') ?: ($_orig_id !== $_page_id ? get_field('kp_model1', $_orig_id) : null);
 $m1_icon     = is_array($m1) && !empty($m1['icon'])     ? $m1['icon']     : 'users-round';
-$m1_title    = is_array($m1) && !empty($m1['title'])    ? $m1['title']    : 'Kompleksowa obsługa';
-$m1_text     = is_array($m1) && !empty($m1['text'])     ? $m1['text']     : 'Przejmujemy pełną obsługę kadr i płac: dokumentację pracowniczą, naliczanie wynagrodzeń oraz rozliczenia i zgłoszenia do instytucji (m.in. ZUS). Pracujesz z dedykowanym zespołem i masz pewność terminowości oraz zgodności z przepisami.';
-$m1_btn_text = is_array($m1) && !empty($m1['btn_text']) ? $m1['btn_text'] : 'Zobacz';
+$m1_title    = __( is_array($m1) && !empty($m1['title'])    ? $m1['title']    : 'Kompleksowa obsługa', 'meritoros' );
+$m1_text     = __( is_array($m1) && !empty($m1['text'])     ? $m1['text']     : 'Przejmujemy pełną obsługę kadr i płac: dokumentację pracowniczą, naliczanie wynagrodzeń oraz rozliczenia i zgłoszenia do instytucji (m.in. ZUS). Pracujesz z dedykowanym zespołem i masz pewność terminowości oraz zgodności z przepisami.', 'meritoros' );
+$m1_btn_text = __( is_array($m1) && !empty($m1['btn_text']) ? $m1['btn_text'] : 'Zobacz', 'meritoros' );
 $m1_btn_url  = is_array($m1) && !empty($m1['btn_url'])  ? $m1['btn_url']  : home_url('/kontakt/');
 
 $m2 = get_field('kp_model2') ?: ($_orig_id !== $_page_id ? get_field('kp_model2', $_orig_id) : null);
 $m2_image    = is_array($m2) && !empty($m2['image'])    ? $m2['image']    : null;
-$m2_title    = is_array($m2) && !empty($m2['title'])    ? $m2['title']    : "Outsourcing wybranych\nprocesów";
-$m2_text     = is_array($m2) && !empty($m2['text'])     ? $m2['text']     : 'Wspieramy wybrane obszary, które wymagają uporządkowania lub odciążenia zespołu np. same płace, obsługę dokumentacji, rozliczenia z ZUS czy raportowanie. Ustalamy standard i harmonogram działania, a zakres współpracy możesz elastycznie rozszerzać.';
-$m2_btn_text = is_array($m2) && !empty($m2['btn_text']) ? $m2['btn_text'] : 'Zobacz';
+$m2_title    = __( is_array($m2) && !empty($m2['title'])    ? $m2['title']    : "Outsourcing wybranych\nprocesów", 'meritoros' );
+$m2_text     = __( is_array($m2) && !empty($m2['text'])     ? $m2['text']     : 'Wspieramy wybrane obszary, które wymagają uporządkowania lub odciążenia zespołu np. same płace, obsługę dokumentacji, rozliczenia z ZUS czy raportowanie. Ustalamy standard i harmonogram działania, a zakres współpracy możesz elastycznie rozszerzać.', 'meritoros' );
+$m2_btn_text = __( is_array($m2) && !empty($m2['btn_text']) ? $m2['btn_text'] : 'Zobacz', 'meritoros' );
 $m2_btn_url  = is_array($m2) && !empty($m2['btn_url'])  ? $m2['btn_url']  : home_url('/kontakt/');
 
 $m2_img_url = is_array($m2_image) ? esc_url($m2_image['url']) : 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&q=80&w=900';

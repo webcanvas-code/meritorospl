@@ -42,7 +42,7 @@ $subsections = [
 ?>
 
 <?php foreach ($subsections as $sub) :
-    $title = mer_field($sub['title_field'], $sub['title_default']);
+    $title = __( mer_field($sub['title_field'], $sub['title_default']), 'meritoros' );
     $items = [];
     for ($i = 1; $i <= 10; $i++) {
         $item = get_field("{$sub['item_prefix']}_{$i}");

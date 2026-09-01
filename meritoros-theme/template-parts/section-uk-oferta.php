@@ -1,14 +1,14 @@
 <?php
-$title        = mer_field('uk_oferta_title',    'Oferta rozwiązań księgowych');
-$subtitle     = mer_field('uk_oferta_subtitle', "Obsługujemy firmy na różnych formach rozliczeń zarówno w pełnej księgowości (spółki),\njak i w uproszczonych formach ewidencji (np. KPiR)");
-$sub_note     = mer_field('uk_oferta_sub_note', 'Poniżej pokazujemy przykładowy zakres działań. Jeśli potrzebujesz innej usługi chętnie porozmawiamy.');
-$btn1_text    = mer_field('uk_oferta_btn1_text',   'Sprawdź również rozwiązania kadrowe');
+$title        = __( mer_field('uk_oferta_title',    'Oferta rozwiązań księgowych'), 'meritoros' );
+$subtitle     = __( mer_field('uk_oferta_subtitle', "Obsługujemy firmy na różnych formach rozliczeń zarówno w pełnej księgowości (spółki),\njak i w uproszczonych formach ewidencji (np. KPiR)"), 'meritoros' );
+$sub_note     = __( mer_field('uk_oferta_sub_note', 'Poniżej pokazujemy przykładowy zakres działań. Jeśli potrzebujesz innej usługi chętnie porozmawiamy.'), 'meritoros' );
+$btn1_text    = __( mer_field('uk_oferta_btn1_text',   'Sprawdź również rozwiązania kadrowe'), 'meritoros' );
 $btn1_url     = mer_field('uk_oferta_btn1_url',    home_url('/kadry-i-place/'));
-$btn2_text    = mer_field('uk_oferta_btn2_text',   'Oszacuj wstępną wycenę');
+$btn2_text    = __( mer_field('uk_oferta_btn2_text',   'Oszacuj wstępną wycenę'), 'meritoros' );
 $btn2_url     = mer_field('uk_oferta_btn2_url',    home_url('/kontakt/'));
 
 $items_raw = mer_field('uk_oferta_items', "Prowadzenie ksiąg rachunkowych\n\nObliczanie podatków i składanie deklaracji podatkowych\n\nBieżące rozliczanie wyciągów i kontrolowanie rozrachunków\n\nRaportowanie zarządcze i sprawozdawcze\n\nRaportowanie do instytucji publicznych\n\nSporządzanie sprawozdań finansowych oraz deklaracji rocznych\n\nReprezentowanie podczas kontroli i czynności sprawdzających\n\nObsługa niestandardowych rozliczeń\n\nAsystowanie i wsparcie podczas audytu");
-$items = array_values(array_filter(array_map('trim', preg_split('/(\r?\n){2,}/', $items_raw))));
+$items = array_values(array_filter(array_map(function($s) { return __($s, 'meritoros'); }, array_map('trim', preg_split('/(\r?\n){2,}/', $items_raw)))));
 ?>
 
 <section class="py-8 md:py-14 bg-white relative">

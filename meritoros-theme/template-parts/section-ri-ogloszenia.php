@@ -1,5 +1,5 @@
 <?php
-$title = mer_field('ri_ogl_title', 'Ogłoszenia o zwołaniu Walnego Zgromadzenia Akcjonariuszy');
+$title = __( mer_field('ri_ogl_title', 'Ogłoszenia o zwołaniu Walnego Zgromadzenia Akcjonariuszy'), 'meritoros' );
 
 // Pozycje – 10 osobnych grup ACF (ri_ogl_item_1 … ri_ogl_item_10)
 $items = [];

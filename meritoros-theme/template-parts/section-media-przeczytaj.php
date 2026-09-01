@@ -1,5 +1,5 @@
 <?php
-$title = mer_field('media_prz_title', 'Przeczytaj również');
+$title = __( mer_field('media_prz_title', 'Przeczytaj również'), 'meritoros' );
 
 $posts = get_posts([
     'post_type'      => 'media-article',
@@ -45,7 +45,7 @@ if (empty($posts)) return;
                 $photo_alt = is_array($photo) ? ($photo['alt'] ?? get_the_title($p)) : get_the_title($p);
                 $source    = get_field('ma_source',   $p->ID) ?: '';
                 $text      = get_field('ma_text',     $p->ID) ?: '';
-                $btn_text  = get_field('ma_btn_text', $p->ID) ?: 'Przeczytaj artykuł';
+                $btn_text  = __( get_field('ma_btn_text', $p->ID) ?: 'Przeczytaj artykuł', 'meritoros' );
                 $btn_url   = get_field('ma_btn_url',  $p->ID) ?: get_permalink($p->ID);
             ?>
                 <article class="flex-shrink-0 w-[300px] sm:w-[360px] lg:w-[400px] snap-start flex flex-col">

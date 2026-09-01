@@ -1,8 +1,8 @@
 <?php
-$title_pre   = mer_field('hk_wsp_title_pre',   'Współpraca, która');
-$title_green = mer_field('hk_wsp_title_green',  'daje spokój operacyjny');
-$text        = mer_field('hk_wsp_text',         'W Meritoros pracujemy tak, aby odciążyć zespół klienta i zapewnić ciągłość obsługi. Działamy elastycznie, dopasowując model współpracy do realiów organizacji, ale trzymamy stały standard jakości, terminowości i bezpieczeństwa danych.');
-$bold_text   = mer_field('hk_wsp_bold_text',    'Dzięki temu klienci mogą skupić się na biznesie, a nie na „gaszeniu tematów" w księgowości czy kadrach');
+$title_pre   = __( mer_field('hk_wsp_title_pre',   'Współpraca, która'), 'meritoros' );
+$title_green = __( mer_field('hk_wsp_title_green',  'daje spokój operacyjny'), 'meritoros' );
+$text        = __( mer_field('hk_wsp_text',         'W Meritoros pracujemy tak, aby odciążyć zespół klienta i zapewnić ciągłość obsługi. Działamy elastycznie, dopasowując model współpracy do realiów organizacji, ale trzymamy stały standard jakości, terminowości i bezpieczeństwa danych.'), 'meritoros' );
+$bold_text   = __( mer_field('hk_wsp_bold_text',    'Dzięki temu klienci mogą skupić się na biznesie, a nie na „gaszeniu tematów" w księgowości czy kadrach'), 'meritoros' );
 
 $video_file  = get_field('hk_wsp_video_file');
 $video_url   = mer_field('hk_wsp_video_url',    '');
@@ -97,7 +97,7 @@ if (is_array($video_file) && !empty($video_file['url'])) {
     <div class="absolute inset-0 bg-slate-900/80 backdrop-blur-sm" id="hk-wsp-backdrop"></div>
     <div class="relative w-full max-w-4xl z-10">
         <button id="hk-wsp-close" class="absolute -top-10 right-0 text-white/80 hover:text-white transition-colors flex items-center gap-1.5 text-sm">
-            <i data-lucide="x" class="w-5 h-5"></i> Zamknij
+            <i data-lucide="x" class="w-5 h-5"></i> <?php esc_html_e('Zamknij', 'meritoros'); ?>
         </button>
         <div id="hk-wsp-embed-wrap" class="relative w-full hidden" style="padding-bottom:56.25%">
             <iframe id="hk-wsp-iframe" class="absolute inset-0 w-full h-full rounded-2xl" src="" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>

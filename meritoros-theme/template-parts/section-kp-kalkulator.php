@@ -1,7 +1,7 @@
 <?php
-$title       = mer_field('kp_kalk_title',       'Kalkulator – oszacuj wstępnie koszt obsługi');
-$description = mer_field('kp_kalk_desc',        'Oszacuj wstępny koszt obsługi kadrowo-płacowej w kilka chwil. Wprowadź podstawowe informacje o swojej działalności, a my przygotujemy orientacyjną wycenę dopasowaną do Twoich potrzeb i skali zatrudnienia.');
-$disclaimer  = mer_field('kp_kalk_disclaimer',  '* to jest wstępny szacunek, każda oferta jest jednak indywidualnie rozpatrywana i odpowiednio wyceniana.');
+$title       = __( mer_field('kp_kalk_title',       'Kalkulator – oszacuj wstępnie koszt obsługi'), 'meritoros' );
+$description = __( mer_field('kp_kalk_desc',        'Oszacuj wstępny koszt obsługi kadrowo-płacowej w kilka chwil. Wprowadź podstawowe informacje o swojej działalności, a my przygotujemy orientacyjną wycenę dopasowaną do Twoich potrzeb i skali zatrudnienia.'), 'meritoros' );
+$disclaimer  = __( mer_field('kp_kalk_disclaimer',  '* to jest wstępny szacunek, każda oferta jest jednak indywidualnie rozpatrywana i odpowiednio wyceniana.'), 'meritoros' );
 
 $rate_kp  = (float) mer_field('kp_kalk_rate_kp',  75);
 $rate_k   = (float) mer_field('kp_kalk_rate_k',   52);

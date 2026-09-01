@@ -1,10 +1,10 @@
 <?php
 $hero_bg    = get_field('onas_hero_bg');
-$hero_title = mer_field('onas_hero_title', 'Poznaj nasze biuro rachunkowe i wartości, które stoją za naszą codzienną pasją.');
-$hero_sub   = mer_field('onas_hero_sub', 'Pracujemy tak, by być dumni z jakości informacji dostarczanych naszym klientom.');
-$btn1_text  = mer_field('onas_hero_btn1_text', 'Poznaj ofertę');
+$hero_title = __( mer_field('onas_hero_title', 'Poznaj nasze biuro rachunkowe i wartości, które stoją za naszą codzienną pasją.'), 'meritoros' );
+$hero_sub   = __( mer_field('onas_hero_sub', 'Pracujemy tak, by być dumni z jakości informacji dostarczanych naszym klientom.'), 'meritoros' );
+$btn1_text  = __( mer_field('onas_hero_btn1_text', 'Poznaj ofertę'), 'meritoros' );
 $btn1_url   = mer_field('onas_hero_btn1_url', '#');
-$btn2_text  = mer_field('onas_hero_btn2_text', 'Porozmawiamy');
+$btn2_text  = __( mer_field('onas_hero_btn2_text', 'Porozmawiamy'), 'meritoros' );
 $btn2_url   = mer_field('onas_hero_btn2_url', home_url('/kontakt/'));
 
 $bg_url = is_array($hero_bg) ? esc_url($hero_bg['url']) : '';

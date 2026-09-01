@@ -4,23 +4,23 @@ $team_info = mer_field('op_team_info', '');
 
 // Obowiązki – do 12 pól ACF; jeśli puste, fallback dla oferty Księgowej z j. ukraińskim
 $duty_fallbacks = [
-    1 => 'Prowadzenie ksiąg rachunkowych i ewidencji podatkowych (PKPB)',
-    2 => 'Sporządzanie deklaracji i sprawozdań finansowych (CIT, VAT, PIT)',
-    3 => 'Przygotowywanie rocznych sprawozdań finansowych i analiz dla klientów',
-    4 => 'Bezpośredni kontakt z klientami (telefon, e-mail) w sprawach rozliczeń',
-    5 => 'Współpraca z urzędami skarbowymi, instytucjami finansowymi i podmiotami zewnętrznymi, w tym reprezentacja klientów',
+    1 => __('Prowadzenie ksiąg rachunkowych i ewidencji podatkowych (PKPB)', 'meritoros'),
+    2 => __('Sporządzanie deklaracji i sprawozdań finansowych (CIT, VAT, PIT)', 'meritoros'),
+    3 => __('Przygotowywanie rocznych sprawozdań finansowych i analiz dla klientów', 'meritoros'),
+    4 => __('Bezpośredni kontakt z klientami (telefon, e-mail) w sprawach rozliczeń', 'meritoros'),
+    5 => __('Współpraca z urzędami skarbowymi, instytucjami finansowymi i podmiotami zewnętrznymi, w tym reprezentacja klientów', 'meritoros'),
     6 => '', 7 => '', 8 => '', 9 => '', 10 => '', 11 => '', 12 => '',
 ];
 
 // Wymagania – do 12 pól ACF; fallback dla oferty Księgowej z j. ukraińskim
 $req_fallbacks = [
-    1 => 'Minimum 2 lata doświadczenia w samodzielnym prowadzeniu ksiąg rachunkowych w biurze rachunkowym; certyfikat MF mile widziany',
-    2 => 'Biegła znajomość języka ukraińskiego i rosyjskiego do komunikacji z klientami',
-    3 => 'Doświadczenie w samodzielnym sporządzaniu sprawozdań finansowych',
-    4 => 'Praktyczna znajomość przepisów rachunkowych, prawa podatkowego i przepisów VAT',
-    5 => 'Biegłość w MS Office (szczególnie Excel) i oprogramowaniu księgowym Comarch Optima',
-    6 => 'Skrupulatność i wysokie zdolności organizacyjne',
-    7 => 'Zdolności analitycznego myślenia',
+    1 => __('Minimum 2 lata doświadczenia w samodzielnym prowadzeniu ksiąg rachunkowych w biurze rachunkowym; certyfikat MF mile widziany', 'meritoros'),
+    2 => __('Biegła znajomość języka ukraińskiego i rosyjskiego do komunikacji z klientami', 'meritoros'),
+    3 => __('Doświadczenie w samodzielnym sporządzaniu sprawozdań finansowych', 'meritoros'),
+    4 => __('Praktyczna znajomość przepisów rachunkowych, prawa podatkowego i przepisów VAT', 'meritoros'),
+    5 => __('Biegłość w MS Office (szczególnie Excel) i oprogramowaniu księgowym Comarch Optima', 'meritoros'),
+    6 => __('Skrupulatność i wysokie zdolności organizacyjne', 'meritoros'),
+    7 => __('Zdolności analitycznego myślenia', 'meritoros'),
     8 => '', 9 => '', 10 => '', 11 => '', 12 => '',
 ];
 
@@ -29,10 +29,10 @@ $wymagania = [];
 $technologie = [];
 $mile_widziane = [];
 for ($i = 1; $i <= 12; $i++) {
-    $d = mer_field("op_duty_{$i}", $duty_fallbacks[$i]);
+    $d = __( mer_field("op_duty_{$i}", $duty_fallbacks[$i]), 'meritoros' );
     if ($d !== '') $obowiazki[] = $d;
 
-    $r = mer_field("op_req_{$i}", $req_fallbacks[$i]);
+    $r = __( mer_field("op_req_{$i}", $req_fallbacks[$i]), 'meritoros' );
     if ($r !== '') $wymagania[] = $r;
 }
 for ($i = 1; $i <= 6; $i++) {

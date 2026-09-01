@@ -1,7 +1,7 @@
 <?php
-$title       = mer_field('uk_kalk_title', 'Kalkulator – oszacuj wstępnie koszt obsługi');
-$description = mer_field('uk_kalk_desc',  'Oszacuj wstępny koszt usług księgowych w kilka chwil. Wprowadź podstawowe informacje o swojej działalności, a my przygotujemy orientacyjną wycenę dopasowaną do Twoich potrzeb i skali biznesu.');
-$disclaimer  = mer_field('uk_kalk_disclaimer', '* to jest wstępny szacunek, każda oferta jest jednak indywidualnie rozpatrywana i odpowiednio wyceniana.');
+$title       = __( mer_field('uk_kalk_title', 'Kalkulator – oszacuj wstępnie koszt obsługi'), 'meritoros' );
+$description = __( mer_field('uk_kalk_desc',  'Oszacuj wstępny koszt usług księgowych w kilka chwil. Wprowadź podstawowe informacje o swojej działalności, a my przygotujemy orientacyjną wycenę dopasowaną do Twoich potrzeb i skali biznesu.'), 'meritoros' );
+$disclaimer  = __( mer_field('uk_kalk_disclaimer', '* to jest wstępny szacunek, każda oferta jest jednak indywidualnie rozpatrywana i odpowiednio wyceniana.'), 'meritoros' );
 ?>
 
 <section id="kalkulator" class="py-10 md:py-20 bg-[#00d084] relative overflow-hidden">

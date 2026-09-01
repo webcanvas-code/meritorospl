@@ -1,10 +1,10 @@
 <?php
-$title    = mer_field('ri_akcjonariat_title',    'Informacje o strukturze akcjonariatu');
-$subtitle = mer_field('ri_akcjonariat_subtitle', 'Kapitał zakładowy spółki wynosi 120 000 PLN i dzieli się na 1 200 000 akcji serii A o wartości nominalnej 0,10 PLN.');
+$title    = __( mer_field('ri_akcjonariat_title',    'Informacje o strukturze akcjonariatu'), 'meritoros' );
+$subtitle = __( mer_field('ri_akcjonariat_subtitle', 'Kapitał zakładowy spółki wynosi 120 000 PLN i dzieli się na 1 200 000 akcji serii A o wartości nominalnej 0,10 PLN.'), 'meritoros' );
 
-$col1 = mer_field('ri_akcjonariat_col1', 'Akcjonariusz');
-$col2 = mer_field('ri_akcjonariat_col2', 'Łączna liczba posiadanych akcji');
-$col3 = mer_field('ri_akcjonariat_col3', 'Udział w łącznej liczbie głosów');
+$col1 = __( mer_field('ri_akcjonariat_col1', 'Akcjonariusz'), 'meritoros' );
+$col2 = __( mer_field('ri_akcjonariat_col2', 'Łączna liczba posiadanych akcji'), 'meritoros' );
+$col3 = __( mer_field('ri_akcjonariat_col3', 'Udział w łącznej liczbie głosów'), 'meritoros' );
 
 // Wiersze – 10 osobnych grup ACF (ri_akcjonariat_row_1 … ri_akcjonariat_row_10)
 $rows = [];

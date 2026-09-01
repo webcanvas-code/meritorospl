@@ -1,7 +1,7 @@
 <?php
-$title    = mer_field('kar_hero_title',    "Dołącz do\nnaszego zespołu");
-$text     = mer_field('kar_hero_text',     "Budujemy uporządkowane procesy i dobrą atmosferę.\nJeśli cenisz jasne zasady, rozwój i pracę zespołową – sprawdź,\nczy mamy ofertę dla Ciebie.");
-$btn_text = mer_field('kar_hero_btn_text', 'Aktualne oferty pracy');
+$title    = __( mer_field('kar_hero_title',    "Dołącz do\nnaszego zespołu"), 'meritoros' );
+$text     = __( mer_field('kar_hero_text',     "Budujemy uporządkowane procesy i dobrą atmosferę.\nJeśli cenisz jasne zasady, rozwój i pracę zespołową – sprawdź,\nczy mamy ofertę dla Ciebie."), 'meritoros' );
+$btn_text = __( mer_field('kar_hero_btn_text', 'Aktualne oferty pracy'), 'meritoros' );
 $btn_url  = mer_field('kar_hero_btn_url',  '#oferty');
 $bg       = get_field('kar_hero_bg');
 $bg_url   = is_array($bg) ? esc_url($bg['url']) : 'https://images.unsplash.com/photo-1529156069898-49953e39b3ac?w=1600&q=80';

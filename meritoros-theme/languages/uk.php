@@ -215,7 +215,7 @@ return [
     'Zamknij' => 'Закрити',
     'Zapisz się bezpłatnie' => 'Зареєструватись безкоштовно',
     'Zapytaj o ofertę' => 'Запитати про пропозицію',
-    'Zarząd' => 'Рада директорів',
+    'Zarząd' => 'Правління',
     'Zdjęcie klienta' => 'Фото клієнта',
     'Zobacz szczegóły' => 'Переглянути деталі',
     'Poprzedni' => 'Попередній',
@@ -381,7 +381,7 @@ pełna zastępowalność i ciągłość obsługi oraz gotowość do skalowania' 
 
 повна взаємозамінність і безперервність обслуговування та готовність до масштабування',
     'Jakość potwierdzona
-standardami' => 'Якість підтверджена
+standardami' => 'Якість, підтверджена
 стандартами',
     'Ponad 170
 expertów' => 'Понад 170
@@ -720,4 +720,218 @@ podejście' => 'Сучасний і гнучкий
     'Stosujemy rozwiązania zgodne z normą ISO/IEC 27001, zapewniające poufność, integralność i bezpieczeństwo danych pracowniczych.' => 'Ми застосовуємо рішення відповідно до стандарту ISO/IEC 27001, що забезпечують конфіденційність, цілісність та безпеку даних працівників.',
     'Business continuity' => 'Business continuity',
     'Usługi realizuje cały zespół specjalistów, dlatego urlopy i rotacja pracowników nie wpływają na terminowość i ciągłość obsługi Twojej firmy.' => 'Послуги надає вся команда фахівців, тому відпустки та ротація працівників не впливають на своєчасність та безперервність обслуговування вашої компанії.',
+    'Kadry i płace, które dają' => 'Кадри та зарплата, що дають',
+    'spokój' => 'спокій',
+    'organizacji' => 'організації',
+    'Twoje kadry' => 'Ваші кадри',
+    'i płace' => 'та зарплата',
+    'pod kontrolą' => 'під контролем',
+    'Oferujemy pełną obsługę kadrowo-płacową przedsiębiorstw – od prowadzenia dokumentacji pracowniczej po naliczanie wynagrodzeń i rozliczenia z instytucjami publicznymi. Klienci mogą powierzyć nam całość procesów kadrowych i płacowych lub wybrane obszary wymagające wsparcia.' => 'Ми пропонуємо повне кадрове та бухгалтерське обслуговування підприємств — від ведення кадрової документації до нарахування заробітної плати та розрахунків з державними установами. Клієнти можуть довірити нам усі кадрові та бухгалтерські процеси або окремі ділянки, що потребують підтримки.',
+    'Zakres współpracy dopasowujemy do wielkości i struktury organizacji.' => 'Обсяг співпраці ми адаптуємо до розміру та структури організації.',
+    'Oszacuj wstępną wycenę' => 'Отримати попередню оцінку',
+    'Porozmawiajmy o obsłudze kadrowej dla Twojej firmy' => 'Поговоримо про кадрове обслуговування вашої компанії',
+    'Skontaktuj się z nami i dowiedz się, jak możemy wesprzeć Twój dział HR i płac.' => 'Зв\'яжіться з нами і дізнайтеся, як ми можемо підтримати ваш відділ кадрів та розрахунків.',
+    'Kalkulator – oszacuj wstępnie koszt obsługi' => 'Калькулятор — попередня оцінка вартості обслуговування',
+    'Oszacuj wstępny koszt obsługi kadrowo-płacowej w kilka chwil. Wprowadź podstawowe informacje o swojej działalności, a my przygotujemy orientacyjną wycenę dopasowaną do Twoich potrzeb i skali zatrudnienia.' => 'Оцініть попередню вартість кадрово-бухгалтерського обслуговування за кілька хвилин. Введіть основну інформацію про вашу діяльність, і ми підготуємо орієнтовний кошторис, адаптований до ваших потреб та масштабу зайнятості.',
+    '* to jest wstępny szacunek, każda oferta jest jednak indywidualnie rozpatrywana i odpowiednio wyceniana.' => '* це попередній кошторис; кожна пропозиція розглядається індивідуально і відповідно оцінюється.',
+    'na bieżąco – obsługując codzienne procesy kadrowe i płacowe' => 'на постійній основі — обслуговуючи щоденні кадрові та бухгалтерські процеси',
+    'Terminowe naliczanie wynagrodzeń' => 'Своєчасне нарахування заробітної плати',
+    'Terminy przetwarzania listy płac ustalamy indywidualnie z każdą firmą, uwzględniając jej wewnętrzny harmonogram wypłat oraz terminy rozliczeń z ZUS i US.' => 'Терміни обробки відомостей встановлюємо індивідуально з кожною компанією, враховуючи її внутрішній графік виплат та терміни розрахунків з ZUS і органами ДПС.',
+    'listy płac gotowe z odpowiednim wyprzedzeniem przed dniem wypłaty' => 'відомості готові з достатнім випередженням до дня виплати',
+    'terminowe przelewy składek ZUS i zaliczek PIT' => 'своєчасні перекази внесків ZUS та авансів PIT',
+    'Zakres raportowania ustalamy
+indywidualnie z każdym klientem.' => 'Обсяг звітності встановлюємо
+індивідуально з кожним клієнтом.',
+    'zestawienie listy płac' => 'відомість зарплатної відомості',
+    'paski wynagrodzeń dla pracowników' => 'розрахункові листки для працівників',
+    'potwierdzenia rozliczeń ZUS i US' => 'підтвердження розрахунків ZUS та органів ДПС',
+    'W zależności od potrzeb przygotowujemy również dodatkowe raporty kadrowe, płacowe i zarządcze.' => 'Залежно від потреб ми також готуємо додаткові кадрові, бухгалтерські та управлінські звіти.',
+    'Oferta rozwiązań kadrowych' => 'Пропозиція кадрових рішень',
+    'Wyceń usługę' => 'Отримати кошторис',
+    'Sprawdź również rozwiązania księgowe' => 'Перегляньте також бухгалтерські рішення',
+    'Obsługa wielu systemów
+ksiągowych' => 'Підтримка багатьох
+bухгалтерських систем',
+    'Konkretne przypadki. Konkretny efekt. Zobacz, jak pomagamy firmom działać stabilnie i bezpiecznie.' => 'Конкретні випадки. Конкретний результат. Подивіться, як ми допомагаємо компаніям працювати стабільно та безпечно.',
+    'Poznaj historie' => 'Ознайомтеся з історіями',
+    'Współpraca, która' => 'Співпраця, яка',
+    'daje spokój operacyjny' => 'дає операційний спокій',
+    'W Meritoros pracujemy tak, aby odciążyć zespół klienta i zapewnić ciągłość obsługi. Działamy elastycznie, dopasowując model współpracy do realiów organizacji, ale trzymamy stały standard jakości, terminowości i bezpieczeństwa danych.' => 'У Meritoros ми працюємо так, щоб розвантажити команду клієнта та забезпечити безперервність обслуговування. Ми діємо гнучко, адаптуючи модель співпраці до реалій організації, але підтримуємо постійний стандарт якості, своєчасності та безпеки даних.',
+    'Dzięki temu klienci mogą skupić się na biznesie, a nie na „gaszeniu tematów" w księgowości czy kadrach' => 'Завдяки цьому клієнти можуть зосередитися на бізнесі, а не на «гасінні пожеж» у бухгалтерії чи кадрах',
+    'Obsługa księgowa fundacji rodzinnej dla właścicieli myślących długoterminowo' => 'Бухгалтерське обслуговування сімейного фонду для власників, які мислять довгостроково',
+    'Prowadzimy księgowość fundacji rodzinnych dla przedsiębiorców, którzy chcą uporządkować kwestie majątku i sukcesji w sposób bezpieczny, transparentny i zgodny z przepisami. Bierzemy na siebie bieżącą obsługę, sprawozdawczość i kontrolę terminów, tak aby fundacja działała stabilnie.' => 'Ми ведемо бухгалтерський облік сімейних фондів для підприємців, які хочуть впорядкувати питання майна та спадкування безпечно, прозоро та відповідно до законодавства. Ми беремо на себе поточне обслуговування, звітність та контроль термінів, щоб фонд працював стабільно.',
+    'Poznaj naszą ofertę' => 'Ознайомтеся з нашою пропозицією',
+    'Zapewniamy kompleksową obsługę księgową i podatkową, która porządkuje finanse fundacji i daje poczucie bezpieczeństwa jej fundatorom.' => 'Ми надаємо комплексне бухгалтерське та податкове обслуговування, яке впорядковує фінанси фонду та дає відчуття безпеки його засновникам.',
+    'Prowadzenie ksiąg rachunkowych
+
+Rozliczanie i składanie deklaracji podatkowych
+
+Przygotowywanie sprawozdań finansowych
+
+Asystowanie podczas badania sprawozdania finansowego oraz kontroli urzędów
+
+Raportowanie na cele zarządcze
+
+Sporządzanie polityki rachunkowości' => 'Ведення бухгалтерських книг
+
+Обчислення та подання податкових декларацій
+
+Підготовка фінансових звітів
+
+Допомога під час аудиту фінансових звітів та перевірок органів
+
+Звітність для управлінських цілей
+
+Складання облікової політики',
+    'Maciej Paraszczak dla Pulsu Biznesu' => 'Мачей Парасщак для Puls Biznesu',
+    'Dla wielu naszych klientów jesteśmy nie tylko biurem rachunkowym, ale partnerem operacyjnym, który realnie usprawnia ich procesy biznesowe – podkreśla z Maciej Paraszczak, prezes zarządu spółki Meritoros.' => 'Для багатьох наших клієнтів ми є не просто бухгалтерським бюро, а операційним партнером, який реально покращує їхні бізнес-процеси — підкреслює Мачей Парасщак, президент правління Meritoros.',
+    'Wywiad z Maciejem Paraszczakiem dla Pulsu Biznesu o tym, jak wygląda nowoczesna księgowość w praktyce i dlaczego standard oraz procesy mają dziś kluczowe znaczenie.' => 'Інтерв’ю з Мачеєм Парасщаком для Puls Biznesu про те, як виглядає сучасна бухгалтерія на практиці і чому стандарти та процеси мають сьогодні ключове значення.',
+    'Czytaj więcej' => 'Читати більше',
+    'Media i informacje firmowe' => 'Медіа та корпоративні новини',
+    'Najważniejsze wydarzenia z życia firmy: rozwój, nowe inicjatywy, wyróżnienia i ogłoszenia.' => 'Найважливіші події з життя компанії: розвиток, нові ініціативи, відзнаки та оголошення.',
+    'Przeczytaj również' => 'Читайте також',
+    'Zapytania medialne' => 'Медіа-запити',
+    'W sprawach publikacji, komentarzy eksperckich i współpracy medialnej prosimy o kontakt. Odpowiemy możliwie szybko i wrócimy z informacją, w jakiej formie możemy pomóc.' => 'У питаннях публікацій, експертних коментарів та медіаспівпраці просимо звертатися. Відповімо якнайшвидше та повернемося з інформацією, у якій формі можемо допомогти.',
+    'Poznaj nasze biuro rachunkowe i wartości, które stoją za naszą codzienną pasją.' => 'Ознайомтеся з нашим бухгалтерським бюро та цінностями, які лежать в основі нашої щоденної пристрасті.',
+    'Pracujemy tak, by być dumni z jakości informacji dostarczanych naszym klientom.' => 'Ми працюємо так, щоб пишатися якістю інформації, яку надаємо нашим клієнтам.',
+    'Porozmawiamy' => 'Поговоримо',
+    'Zespół' => 'Команда',
+    'prezes zarządu, CEO' => 'президент правління, CEO',
+    'Założyciel i główny udziałowiec Meritoros SA, certyfikowany księgowy (Certyfikat Min. Finansów nr 1840/2003). Absolwent kierunku Zarządzanie ze specjalnością Finanse i Rachunkowość.' => 'Засновник та головний акціонер Meritoros SA, сертифікований бухгалтер (Сертифікат Міністерства фінансів № 1840/2003). Випускник спеціальності Управління зі спеціалізацією «Фінанси та бухгалтерський облік».',
+    'członek zarządu, COO' => 'член правління, COO',
+    'Udziałowiec Meritoros SA, certyfikowana księgowa (Certyfikat Min. Finansów nr 54055/2011). Absolwentka kierunku Zarządzania na AGH, swoje wykształcenie uzupełniła o studia podyplomowe.' => 'Акціонер Meritoros SA, сертифікована бухгалтер (Сертифікат Міністерства фінансів № 54055/2011). Випускниця спеціальності Управління в AGH, доповнила освіту аспірантськими студіями.',
+    'Udziałowiec Meritoros SA, certyfikowany księgowy (Certyfikat Min. Finansów nr 62092/2013). Absolwent kierunku Finansów i Rachunkowości na UEK ze specjalnością finanse przedsiębiorstw.' => 'Акціонер Meritoros SA, сертифікований бухгалтер (Сертифікат Міністерства фінансів № 62092/2013). Випускник спеціальності Фінанси та бухгалтерський облік в UEK зі спеціалізацією «Корпоративні фінанси».',
+    'Księgowa (Certyfikat Min. Finansów 55068/2012) z wieloletnim doświadczeniem. Swoją karierę budowała w Biurach Rachunkowych oraz jako główna księgowa w jednej z międzynarodowych firm.' => 'Бухгалтер (Сертифікат Міністерства фінансів 55068/2012) з багаторічним досвідом. Свою кар’єру будувала в бухгалтерських бюро та як головний бухгалтер в одній з міжнародних компаній.',
+    'Informacje o strukturze akcjonariatu' => 'Інформація про структуру акціонерного капіталу',
+    'Kapitał zakładowy spółki wynosi 120 000 PLN i dzieli się na 1 200 000 akcji serii A o wartości nominalnej 0,10 PLN.' => 'Статутний капітал товариства становить 120 000 злотих і поділяється на 1 200 000 акцій серії A номінальною вартістю 0,10 злотих.',
+    'Akcjonariusz' => 'Акціонер',
+    'Łączna liczba posiadanych akcji' => 'Загальна кількість акцій',
+    'Udział w łącznej liczbie głosów' => 'Частка в загальній кількості голосів',
+    'Poniżej udostępniamy kluczowe informacje i dokumenty dotyczące Meritoros SA, w tym sprawozdania finansowe i raporty okresowe.' => 'Нижче ми розміщуємо ключову інформацію та документи щодо Meritoros SA, включаючи фінансові звіти та періодичні звіти.',
+    'Ogłoszenia w Monitorze Sądowym i Gospodarczym' => 'Оголошення в Судово-господарському моніторі',
+    'Ogłoszenia o zwołaniu Walnego Zgromadzenia Akcjonariuszy' => 'Повідомлення про скликання Загальних зборів акціонерів',
+    'Rada nadzorcza' => 'Наглядова рада',
+    'doradca podatkowy (certyfikat nr 00443)
+był członek zarządu Małopolskiej Izby Doradców Podatkowych' => 'податковий радник (сертифікат № 00443)
+колишній член правління Малопольської палати податкових радників',
+    'przedsiębiorca
+prezes zarządu Emka Sp. z o.o.' => 'підприємець
+президент правління Emka Sp. z o.o.',
+    'przedsiębiorca
+członek zarządu Chata Sp. z o.o.' => 'підприємець
+член правління Chata Sp. z o.o.',
+    'przedsiębiorca
+wiceprezes zarządu Office Samurai Sp. z o.o.' => 'підприємець
+віце-президент правління Office Samurai Sp. z o.o.',
+    'przedsiębiorca
+prezes zarządu Printbox Sp. z o.o.' => 'підприємець
+президент правління Printbox Sp. z o.o.',
+    'Raporty kwartalne spółki' => 'Квартальні звіти товариства',
+    'Raporty EBI/ESPI' => 'Звіти EBI/ESPI',
+    'Animator Rynku' => 'Маркет-мейкер',
+    'Autoryzowany Doradca' => 'Авторизований радник',
+    'Pytania i odpowiedzi' => 'Запитання та відповіді',
+    'Opinie biegłego rewidenta' => 'Висновки аудитора',
+    'Rozwój Meritoros SA znajduje odzwierciedlenie w systematycznym wzroście skali działalności i przychodów na przestrzeni ostatnich lat.' => 'Розвиток Meritoros SA відображається в систематичному зростанні масштабів діяльності та доходів протягом останніх років.',
+    'Sprawozdania finansowe spółki' => 'Фінансові звіти товариства',
+    'Sprawozdania z działalności zarządu spółki' => 'Звіти про діяльність правління товариства',
+    'Uchwały podejmowane przez Zgromadzenie Akcjonariuszy' => 'Рішення, прийняті Загальними зборами акціонерів',
+    'Skontaktuj się z nami i dowiedz się, jak możemy wesprzeć Twoją firmę.' => 'Зв\'яжіться з нами і дізнайтеся, як ми можемо підтримати вашу компанію.',
+    'Dlaczego firmy wybierają nasze
+rozwiązania księgowe' => 'Чому компанії обирають наші
+бухгалтерські рішення',
+    'Pracujemy zgodnie z normą ISO 9001 — systematyczne procesy, kontrola jakości i ciągłe doskonalenie usług.' => 'Ми працюємо відповідно до стандарту ISO 9001 — систематичні процеси, контроль якості та постійне вдосконалення послуг.',
+    'Nowoczesne i elastyczne podejście' => 'Сучасний і гнучкий підхід',
+    'Dopasowujemy narzędzia i zakres współpracy do realnych potrzeb Twojej firmy – bez zbędnej biurokracji.' => 'Ми підбираємо інструменти та обсяг співпраці до реальних потреб вашої компанії — без зайвої бюрократії.',
+    'Zespołowy model pracy gwarantuje ciągłość obsługi — urlopy i rotacja pracowników nie wpływają na jakość Twojej księgowości.' => 'Командна модель роботи гарантує безперервність обслуговування — відпустки та ротація працівників не впливають на якість вашої бухгалтерії.',
+    'Dane klientów chronimy zgodnie z normą ISO 27001 — wdrożone procedury, szyfrowanie i regularne audyty bezpieczeństwa.' => 'Дані клієнтів ми захищаємо відповідно до стандарту ISO 27001 — впроваджені процедури, шифрування та регулярні аудити безпеки.',
+    'Rozwiązania księgowe dla firm, które' => 'Бухгалтерські рішення для компаній, які',
+    'chcą mieć porządek' => 'хочуть мати порядок',
+    'i spokój w biznesie' => 'та спокій у бізнесі',
+    'Zapewniamy kompleksową obsługę księgową firm o różnej skali działalności. Przejmujemy odpowiedzialność za poprawność, terminowość i ciągłość procesów księgowych, aby nasi klienci mogli skupić się na prowadzeniu i rozwoju biznesu.' => 'Ми надаємо комплексне бухгалтерське обслуговування компаніям різного масштабу. Беремо відповідальність за точність, своєчасність та безперервність бухгалтерських процесів, щоб наші клієнти могли зосередитися на веденні та розвитку бізнесу.',
+    'Twoja księgowość' => 'Ваша бухгалтерія',
+    'w' => 'у',
+    'dobrych rękach' => 'надійних руках',
+    'Oferujemy kompleksową obsługę księgową działalności i spółek zarówno w zakresie prowadzenia pełnych ksiąg rachunkowych, jak i uproszczonych form ewidencji. Klienci mogą powierzyć nam całość procesów księgowych lub wybrane obszary wymagające wsparcia.' => 'Ми пропонуємо комплексне бухгалтерське обслуговування підприємців і компаній як у сфері ведення повних бухгалтерських книг, так і спрощених форм обліку. Клієнти можуть довірити нам усі бухгалтерські процеси або окремі ділянки, що потребують підтримки.',
+    'Zakres współpracy dopasowujemy do skali działalności i stopnia złożoności operacji finansowych.' => 'Обсяг співпраці ми адаптуємо до масштабу діяльності та ступеня складності фінансових операцій.',
+    'Sprawdź jak wygląda współpraca' => 'Подивіться, як виглядає співпраця',
+    'Oferta rozwiązań księgowych' => 'Пропозиція бухгалтерських рішень',
+    'Obsługujemy firmy na różnych formach rozliczeń zarówno w pełnej księgowości (spółki),
+jak i w uproszczonych formach ewidencji (np. KPiR)' => 'Ми обслуговуємо компанії на різних формах обліку як у повній бухгалтерії (товариства),
+так і в спрощених формах обліку (напр. книга доходів і витрат)',
+    'Poniżej pokazujemy przykładowy zakres działań. Jeśli potrzebujesz innej usługi chętnie porozmawiamy.' => 'Нижче ми показуємо приблизний обсяг дій. Якщо вам потрібна інша послуга, ми з радістю поговоримо.',
+    'Sprawdź również rozwiązania kadrowe' => 'Перегляньте також кадрові рішення',
+    'Prowadzenie ksiąg rachunkowych
+
+Obliczanie podatków i składanie deklaracji podatkowych
+
+Bieżące rozliczanie wyciągów i kontrolowanie rozrachunków
+
+Raportowanie zarządcze i sprawozdawcze
+
+Raportowanie do instytucji publicznych
+
+Sporządzanie sprawozdań finansowych oraz deklaracji rocznych
+
+Reprezentowanie podczas kontroli i czynności sprawdzających
+
+Obsługa niestandardowych rozliczeń
+
+Asystowanie i wsparcie podczas audytu' => 'Ведення бухгалтерських книг
+
+Обчислення податків та подання податкових декларацій
+
+Поточне узгодження виписок та контроль розрахунків
+
+Управлінська та фінансова звітність
+
+Звітність перед державними установами
+
+Складання фінансових звітів та річних декларацій
+
+Представництво під час перевірок та ревізійних дій
+
+Обробка нестандартних розрахунків
+
+Допомога та підтримка під час аудитів',
+    'Zakres i częstotliwość raportowania
+ustalamy indywidualnie z każdym klientem.' => 'Обсяг і частота звітності
+встановлюються індивідуально з кожним клієнтом.',
+    'W zależności od potrzeb przygotowujemy również dodatkowe raporty księgowe, finansowe lub kadrowo-płacowe.' => 'Залежно від потреб ми також готуємо додаткові бухгалтерські, фінансові або кадрово-бухгалтерські звіти.',
+    'Oszacuj wstępny koszt usług księgowych w kilka chwil. Wprowadź podstawowe informacje o swojej działalności, a my przygotujemy orientacyjną wycenę dopasowaną do Twoich potrzeb i skali biznesu.' => 'Оцініть попередню вартість бухгалтерських послуг за кілька хвилин. Введіть основну інформацію про вашу діяльність, і ми підготуємо орієнтовний кошторис, адаптований до ваших потреб та масштабу бізнесу.',
+    'Obsługa wielu systemów
+księgowych' => 'Підтримка багатьох
+бухгалтерських систем',
+    'Nasze Kompetencje' => 'Наші компетенції',
+    'Obszary, w których przejmujemy odpowiedzialność' => 'Сфери, в яких ми беремо відповідальність',
+    'Nasze doświadczenie obejmuje rozliczanie firm o różnorodnych profilach działalności, takich jak CIT Estoński, Fundacje Rodzinne, Spółki ASI, e-commerce, VAT OSS, Intrastat oraz rozliczenia delegacji pracowniczych.' => 'Наш досвід охоплює розрахунки компаній з різноманітними профілями діяльності, такими як естонський CIT, сімейні фонди, компанії ASI, e-commerce, VAT OSS, Intrastat та розрахунки відряджень працівників.',
+    'Skontaktuj się z nami' => 'Зв’яжіться з нами',
+    'Usługi Rachunkowe' => 'Бухгалтерські послуги',
+    'Kompleksowa obsługa księgowa firm o różnej skali działalności.' => 'Комплексне бухгалтерське обслуговування компаній різного масштабу.',
+    'Outsourcing wybranych lub pełnych procesów finansowych i administracyjnych dla większych firm.' => 'Аутсорсинг окремих або повних фінансових та адміністративних процесів для великих компаній.',
+    'Usługi Kadrowe' => 'Кадрові послуги',
+    'Obsługa kadrowo-płacowa dopasowana do potrzeb organizacji.' => 'Кадрово-бухгалтерське обслуговування, адаптоване до потреб організації.',
+    'Obsługa rachunkowa fundacji z uwzględnieniem specyfiki regulacyjnej.' => 'Бухгалтерське обслуговування фондів з урахуванням регуляторної специфіки.',
+    'Wsparcie we wdrażaniu narzędzi, automatyzacji i usprawnianiu procesów biznesowych.' => 'Підтримка у впровадженні інструментів, автоматизації та оптимізації бізнес-процесів.',
+    'Prowadzenie ksiąg rachunkowych i ewidencji podatkowych (PKPB)' => 'Ведення бухгалтерських книг та податкового обліку (PKPB)',
+    'Sporządzanie deklaracji i sprawozdań finansowych (CIT, VAT, PIT)' => 'Складання фінансових декларацій та звітів (CIT, VAT, PIT)',
+    'Przygotowywanie rocznych sprawozdań finansowych i analiz dla klientów' => 'Підготовка річних фінансових звітів та аналізів для клієнтів',
+    'Bezpośredni kontakt z klientami (telefon, e-mail) w sprawach rozliczeń' => 'Безпосередній контакт з клієнтами (телефон, e-mail) у питаннях розрахунків',
+    'Współpraca z urzędami skarbowymi, instytucjami finansowymi i podmiotami zewnętrznymi, w tym reprezentacja klientów' => 'Співпраця з податковими органами, фінансовими установами та зовнішніми суб’єктами, включаючи представництво клієнтів',
+    'Minimum 2 lata doświadczenia w samodzielnym prowadzeniu ksiąg rachunkowych w biurze rachunkowym; certyfikat MF mile widziany' => 'Мінімум 2 роки досвіду самостійного ведення бухгалтерських книг у бухгалтерському бюро; сертифікат МФ вітається',
+    'Biegła znajomość języka ukraińskiego i rosyjskiego do komunikacji z klientami' => 'Вільне володіння українською та російською мовами для спілкування з клієнтами',
+    'Doświadczenie w samodzielnym sporządzaniu sprawozdań finansowych' => 'Досвід самостійного складання фінансових звітів',
+    'Praktyczna znajomość przepisów rachunkowych, prawa podatkowego i przepisów VAT' => 'Практичне знання бухгалтерського законодавства, податкового права та норм VAT',
+    'Biegłość w MS Office (szczególnie Excel) i oprogramowaniu księgowym Comarch Optima' => 'Впевнене володіння MS Office (особливо Excel) та бухгалтерською програмою Comarch Optima',
+    'Skrupulatność i wysokie zdolności organizacyjne' => 'Скрупульозність та високі організаційні здібності',
+    'Zdolności analitycznego myślenia' => 'Здатність до аналітичного мислення',
+    'Dołącz do
+naszego zespołu' => 'Приєднуйся до
+нашої команди',
+    'Budujemy uporządkowane procesy i dobrą atmosferę.
+Jeśli cenisz jasne zasady, rozwój i pracę zespołową – sprawdź,
+czy mamy ofertę dla Ciebie.' => 'Ми будуємо впорядковані процеси та гарну атмосферу.
+Якщо ти цінуєш чіткі правила, розвиток і командну роботу — перевір,
+чи маємо ми пропозицію для тебе.',
+    'Aktualne oferty pracy' => 'Актуальні вакансії',
 ];

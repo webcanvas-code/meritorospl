@@ -5387,3 +5387,1554 @@ msgstr "Business continuity"
 
 msgid "Usługi realizuje cały zespół specjalistów, dlatego urlopy i rotacja pracowników nie wpływają na terminowość i ciągłość obsługi Twojej firmy."
 msgstr "Услуги оказывает вся команда специалистов, поэтому отпуска и ротация сотрудников не влияют на своевременность и непрерывность обслуживания вашей компании."
+
+msgid "Bezpieczeństwo\n"
+"i compliance"
+msgstr "Безопасность\n"
+"и соответствие требованиям"
+
+msgid "Blog"
+msgstr "Блог"
+
+msgid "Błąd połączenia. Spróbuj ponownie."
+msgstr "Ошибка соединения. Попробуйте ещё раз."
+
+msgid "Certyfikat"
+msgstr "Сертификат"
+
+msgid "Dlaczego BPO z Meritoros?"
+msgstr "Почему BPO с Meritoros?"
+
+msgid "Dlaczego Meritoros to spokój\n"
+"w Twoim biznesie?"
+msgstr "Почему Meritoros — это спокойствие\n"
+"в вашем бизнесе?"
+
+msgid "Działamy zgodnie z normami ISO 9001 i ISO/IEC 27001. Zapewniamy poufność danych, ciągłość obsługi i pełną zgodność z obowiązującymi przepisami prawa."
+msgstr "Мы работаем в соответствии со стандартами ISO 9001 и ISO/IEC 27001. Обеспечиваем конфиденциальность данных, непрерывность обслуживания и полное соответствие действующему законодательству."
+
+msgid "Działamy zgodnie z obowiązującymi regulacjami i standardami bezpieczeństwa danych. Dbamy o poufność informacji oraz jasne zasady współpracy - bez \"skrótów\" i ryzyk."
+msgstr "Мы работаем в соответствии с действующими нормами и стандартами безопасности данных. Соблюдаем конфиденциальность информации и чёткие условия сотрудничества — без «сокращений» и рисков."
+
+msgid "Efektywność kosztowa"
+msgstr "Экономическая эффективность"
+
+msgid "Elastyczność i indywidualne podejście pozwalają nam szybko dopasować się do zmieniających się potrzeb klientów i wspomóc ich na ścieżce skalowania swojej organizacji."
+msgstr "Гибкость и индивидуальный подход позволяют нам быстро адаптироваться к изменяющимся потребностям клиентов и поддерживать их на пути масштабирования организации."
+
+msgid "Elastyczność i skalowanie\n"
+"operacji"
+msgstr "Гибкость и масштабирование\n"
+"операций"
+
+msgid "Jakość potwierdzona standardami"
+msgstr "Качество, подтверждённое стандартами"
+
+msgid "Kompleksowa obsługa kadrowo-płacowa – od umów i list płac po rozliczenia z ZUS i US, z pełną zastępowalnością zespołu."
+msgstr "Комплексное кадрово-бухгалтерское обслуживание — от договоров и ведомостей до расчётов с ZUS и налоговыми органами, с полной взаимозаменяемостью команды."
+
+msgid "Mamy wdrożone procedury kontroli jakości i weryfikacji danych. Dostarczamy spójne dane dla zarządu."
+msgstr "Мы внедрили процедуры контроля качества и проверки данных. Предоставляем согласованные данные для руководства."
+
+msgid "Nagrody i wyróżnienia"
+msgstr "Награды и отличия"
+
+msgid "Nasze Wartości"
+msgstr "Наши ценности"
+
+msgid "Obszar współpracy"
+msgstr "Сфера сотрудничества"
+
+msgid "Outsourcing biznesowy pozwala na znaczne obniżenie kosztów operacyjnych. Dzięki nowoczesnej technologii i dużej skali obsługiwanych przez nas operacji oszczędności sięgają 20% lub więcej w porównaniu do obsługi procesów za pomocą własnych pracowników."
+msgstr "Аутсорсинг бизнес-процессов позволяет значительно снизить операционные затраты. Благодаря современным технологиям и большому масштабу обрабатываемых нами операций экономия достигает 20% и более по сравнению с обработкой процессов собственными сотрудниками."
+
+msgid "Pełna księgowość, raportowanie zarządcze i sprawozdawcze – terminowo i zgodnie ze standardami, bez zakłóceń operacyjnych."
+msgstr "Полный бухгалтерский учёт, управленческая и финансовая отчётность — в срок и в соответствии со стандартами, без операционных сбоев."
+
+msgid "Podaj prawidłowy adres e-mail."
+msgstr "Введите действительный адрес электронной почты."
+
+msgid "Porozmawiajmy o obsłudze księgowej dla Twojej firmy"
+msgstr "Поговорим о бухгалтерском обслуживании вашей компании"
+
+msgid "Poznaj ofertę"
+msgstr "Узнать больше"
+
+msgid "Pracujemy zespołowo i procesowo, dzięki czemu obsługa nie zależy od jednej osoby. Zapewniamy zastępowalność i ciągłość pracy – bez przestojów."
+msgstr "Мы работаем командой по процессному подходу, поэтому обслуживание не зависит от одного человека. Обеспечиваем взаимозаменяемость и непрерывность работы — без простоев."
+
+msgid "Przekazując odpowiedzialność za pewne procesy wsparcia, Zarząd i kluczowi menedżerowie przedsiębiorstwa mogą skupić się na rozwoju rynkowym i strategicznym zarządzaniu swoim biznesem."
+msgstr "Передавая ответственность за определённые вспомогательные процессы, Совет директоров и ключевые менеджеры могут сосредоточиться на развитии рынка и стратегическом управлении бизнесом."
+
+msgid "Pytania od kandydatów"
+msgstr "Вопросы от кандидатов"
+
+msgid "Robotyzacja RPA\n"
+"\n"
+"E-teczki\n"
+"\n"
+"Optymalizacja procesów\n"
+"\n"
+"Elektroniczny obieg dokumentów\n"
+"\n"
+"Automatyzacja raportowania"
+msgstr "Роботизация RPA\n"
+"\n"
+"Электронные дела\n"
+"\n"
+"Оптимизация процессов\n"
+"\n"
+"Электронный документооборот\n"
+"\n"
+"Автоматизация отчётности"
+
+msgid "Rozwiązania BPO"
+msgstr "Решения BPO"
+
+msgid "Rozwiązania kadrowe"
+msgstr "Кадровые решения"
+
+msgid "Rozwiązania księgowe"
+msgstr "Бухгалтерские решения"
+
+msgid "Skala i ciągłość\n"
+"obsługi"
+msgstr "Масштаб и непрерывность\n"
+"обслуживания"
+
+msgid "Skontaktuj się z nami i dowiedz się, jak możemy wesprzeć Twoją organizację."
+msgstr "Свяжитесь с нами и узнайте, как мы можем поддержать вашу организацию."
+
+msgid "Systematycznie rozwijamy i wdrażamy rozwiązania z zakresu robotyki (RPA) oraz automatyzacji. Wdrażamy najnowsze technologie, w tym Robotic Process Automation oraz AI, aby umożliwić klientom pełną kontrolę nad finansami. Działamy w modelu Lean, który zapewnia sprawność operacyjną i błyskawiczne dostosowanie się do potrzeb zmieniającego się rynku."
+msgstr "Мы систематически разрабатываем и внедряем решения в области роботизации (RPA) и автоматизации. Внедряем новейшие технологии, в том числе Robotic Process Automation и ИИ, чтобы дать клиентам полный контроль над финансами. Работаем по модели Lean, которая обеспечивает операционную эффективность и быструю адаптацию к меняющемуся рынку."
+
+msgid "Technologia\n"
+"i automatyzacja"
+msgstr "Технологии\n"
+"и автоматизация"
+
+msgid "Transformacja Cyfrowa"
+msgstr "Цифровая трансформация"
+
+msgid "Transformacja cyfrowa"
+msgstr "Цифровая трансформация"
+
+msgid "Uwolnienie czasu\n"
+"i usprawnienie procesów"
+msgstr "Высвобождение времени\n"
+"и оптимизация процессов"
+
+msgid "Wdrożenie RPA, e-teczek i elektronicznego obiegu dokumentów – automatyzujemy procesy, żeby organizacja działała sprawniej."
+msgstr "Внедрение RPA, электронных дел и электронного документооборота — автоматизируем процессы, чтобы организация работала эффективнее."
+
+msgid "Wiedza i aktualności"
+msgstr "Знания и новости"
+
+msgid "Współpracuj z profesjonalistami"
+msgstr "Сотрудничай с профессионалами"
+
+msgid "Wszystkie wpisy"
+msgstr "Все записи"
+
+msgid "Wykorzystujemy narzędzia i automatyzację (RPA), które porządkują obieg dokumentów, ograniczają ryzyko błędów i usprawniają pracę zespołów."
+msgstr "Мы используем инструменты и автоматизацию (RPA), которые упорядочивают документооборот, снижают риск ошибок и повышают эффективность команд."
+
+msgid "Wyróżnienia są efektem tego, jak rozwijamy Meritoros: konsekwentnie i procesowo. Trzymamy standard, który ma działać w praktyce - codziennie."
+msgstr "Награды — результат того, как мы развиваем Meritoros: последовательно и с процессным подходом. Мы поддерживаем стандарт, который должен работать на практике — каждый день."
+
+msgid "Wystąpił błąd. Spróbuj ponownie."
+msgstr "Произошла ошибка. Попробуйте ещё раз."
+
+msgid "Zapewniamy kompleksową obsługę kadrowo-płacową firm o różnej skali działalności. Przejmujemy odpowiedzialność za poprawność, terminowość i ciągłość procesów, aby organizacja mogła działać stabilnie i bez zakłóceń."
+msgstr "Мы предоставляем комплексные кадровые и бухгалтерские услуги компаниям различного масштаба. Берём на себя ответственность за точность, своевременность и непрерывность процессов, чтобы организация могла стабильно работать без сбоев."
+
+msgid "Zaufało nam ponad 1200 klientów"
+msgstr "Нам доверяют более 1200 клиентов"
+
+msgid "dla większych organizacji"
+msgstr "для крупных организаций"
+
+msgid "bez stresu"
+msgstr "без стресса"
+
+msgid "Chcesz do nas dołączyć?\n"
+"Zostaw swoje CV"
+msgstr "Хотите присоединиться к нам?\n"
+"Оставьте своё резюме"
+
+msgid "Ciągły Rozwój jest wpisany\n"
+"w nasze DNA"
+msgstr "Непрерывное развитие заложено\n"
+"в нашей ДНК"
+
+msgid "Dołącz do grona naszych\n"
+"klientów i rozwijaj biznes"
+msgstr "Присоединяйтесь к нашим клиентам\n"
+"и развивайте бизнес"
+
+msgid "Elastyczność dopasowana\n"
+"do Twojego stylu pracy"
+msgstr "Гибкость, подстроенная\n"
+"под ваш стиль работы"
+
+msgid "Informacje"
+msgstr "Информация"
+
+msgid "Menu"
+msgstr "Меню"
+
+msgid "Menu główne"
+msgstr "Главное меню"
+
+msgid "Menu stopki"
+msgstr "Меню подвала"
+
+msgid "Miasta w których\n"
+"mamy oddziały"
+msgstr "Города, где\n"
+"у нас есть офисы"
+
+msgid "Nasi specjaliści są do dyspozycji w godzinach pracy biura.\n"
+"Odpowiemy na wszystkie Twoje pytania."
+msgstr "Наши специалисты доступны в рабочее время.\n"
+"Мы ответим на все ваши вопросы."
+
+msgid "Oddaj księgowość\n"
+"w ręce ekspertów"
+msgstr "Передайте бухгалтерию\n"
+"в руки экспертов"
+
+msgid "Oddziały\n"
+"Wirtualne"
+msgstr "Виртуальные\n"
+"офисы"
+
+msgid "Otwórz menu"
+msgstr "Открыть меню"
+
+msgid "Polityka prywatności"
+msgstr "Политика конфиденциальности"
+
+msgid "Praca w zgranym\n"
+"zespole specjalistów"
+msgstr "Работа в сплочённой\n"
+"команде специалистов"
+
+msgid "Profesjonalne biuro rachunkowe i BPO dla firm z ambicjami."
+msgstr "Профессиональное бухгалтерское бюро и BPO для компаний с амбициями."
+
+msgid "Projekt i realizacja:"
+msgstr "Дизайн и разработка:"
+
+msgid "Regulamin newslettera"
+msgstr "Условия рассылки"
+
+msgid "Skup biur rachunkowych"
+msgstr "Приобретение бухгалтерских фирм"
+
+msgid "Stabilne zatrudnienie\n"
+"i jasne zasady"
+msgstr "Стабильная занятость\n"
+"и чёткие правила"
+
+msgid "Usługi"
+msgstr "Услуги"
+
+msgid "Zacznij teraz"
+msgstr "Начать"
+
+msgid "Zamknij menu"
+msgstr "Закрыть меню"
+
+msgid "Eksperci w księgowości.\n"
+"Technologia i pewność\n"
+"w działaniu."
+msgstr "Эксперты в бухгалтерии.\n"
+"Технологии и уверенность\n"
+"в действии."
+
+msgid "Zapewniamy księgowość kadry i outsourcing procesów w standardzie, który daje firmom spokój i bezpieczeństwo."
+msgstr "Мы предоставляем бухгалтерские, кадровые услуги и аутсорсинг процессов на уровне, который обеспечивает компаниям спокойствие и безопасность."
+
+msgid "Zaufało nam ponad <span class=\"text-white\">1200 klientów</span>"
+msgstr "Нам доверяют более <span class=\"text-white\">1200 клиентов</span>"
+
+msgid "Wideo ogólne"
+msgstr "Общее видео"
+
+msgid "Wideo ogólne Meritoros"
+msgstr "Общее видео Meritoros"
+
+msgid "Obejrzyj ogólne wideo"
+msgstr "Посмотреть общее видео"
+
+msgid "Nasi klienci cenią nas za to, że dowozimy: jakość, terminowość i spójne dane. Jako partner w obszarze księgowości przejmujemy obszary, za które odpowiadamy, i pracujemy w standardzie, który daje spokój w codziennym prowadzeniu firmy."
+msgstr "Наши клиенты ценят нас за то, что мы доставляем: качество, своевременность и согласованные данные. Как партнёр в области бухгалтерии мы берём ответственность за подотчётные нам участки и работаем на стандарте, который обеспечивает спокойствие в повседневном ведении бизнеса."
+
+msgid "Dla biur rachunkowych"
+msgstr "Для бухгалтерских бюро"
+
+msgid "Kupimy Biuro\n"
+"Rachunkowe"
+msgstr "Купим бухгалтерское\n"
+"бюро"
+
+msgid "Od lat współpracujemy z biurami rachunkowymi, które stoją przed decyzją o zmianie, sprzedaży lub dalszym rozwoju."
+msgstr "На протяжении многих лет мы сотрудничаем с бухгалтерскими бюро, которые стоят перед решением об изменении, продаже или дальнейшем развитии."
+
+msgid "Wyceń wartość biura"
+msgstr "Оцените стоимость бюро"
+
+msgid "Obsługujemy systemy ERP i finansowe wiodących dostawców"
+msgstr "Мы обслуживаем ERP и финансовые системы ведущих поставщиков"
+
+msgid "Przejrzystych warunków"
+msgstr "Прозрачных условий"
+
+msgid "Przejętych biur"
+msgstr "Приобретённых бюро"
+
+msgid "Do wstępnej wyceny"
+msgstr "До предварительной оценки"
+
+msgid "Pełna poufność"
+msgstr "Полная конфиденциальность"
+
+msgid "Stabilne procesy. Rzetelne\n"
+"dane. Spokój zarządu."
+msgstr "Стабильные процессы. Достоверные\n"
+"данные. Спокойствие руководства."
+
+msgid "Wspieramy większe firmy w obszarze księgowości, kadr i płac, back-office, przejmując odpowiedzialność za jakość, terminowość i ciągłość działania. Dostarczamy dane i raporty w harmonogramie dopasowanym do zarządu – tak, żeby decyzje były oparte na spójnych informacjach, a nie „gaszeniu pożarów\"."
+msgstr "Мы поддерживаем крупные компании в области бухгалтерии, кадров и расчёта зарплаты, беря ответственность за качество, своевременность и непрерывность работы. Мы предоставляем данные и отчёты по графику, согласованному с руководством, — чтобы решения основывались на согласованной информации, а не на «тушении пожаров»."
+
+msgid "raportowanie zarządcze i sprawozdawcze dopasowane do potrzeb organizacji\n"
+"\n"
+"cyfrowy obieg dokumentów i uporządkowane procesy\n"
+"\n"
+"pełna zastępowalność i ciągłość obsługi oraz gotowość do skalowania"
+msgstr "управленческая и финансовая отчётность, адаптированная к потребностям организации\n"
+"\n"
+"цифровой документооборот и упорядоченные процессы\n"
+"\n"
+"полная взаимозаменяемость и непрерывность обслуживания, а также готовность к масштабированию"
+
+msgid "Jakość potwierdzona\n"
+"standardami"
+msgstr "Качество, подтверждённое\n"
+"стандартами"
+
+msgid "Ponad 170\n"
+"expertów"
+msgstr "Более 170\n"
+"экспертов"
+
+msgid "Nagroda"
+msgstr "Награда"
+
+msgid "Rozwiązania Kadrowe"
+msgstr "Кадровые решения"
+
+msgid "Zapewniamy wsparcie w zakresie obsługi kadrowej i naliczania wynagrodzeń. Nasze kompleksowe rozwiązania w obszarze HR i payroll, dedykowane dla dużych przedsiębiorstw, zapewniają nie tylko zgodność z przepisami prawa, ale także optymalizację procesów kadrowych. Współpracujemy zarówno z firmami, które nie posiadają własnego działu HR, jak i z organizacjami potrzebującymi wsparcia przy wybranych procesach."
+msgstr "Мы оказываем поддержку в области кадрового учёта и расчёта заработной платы. Наши комплексные решения в сфере HR и payroll, предназначенные для крупных предприятий, обеспечивают не только соответствие законодательству, но и оптимизацию кадровых процессов. Мы сотрудничаем как с компаниями без собственного отдела HR, так и с организациями, нуждающимися в поддержке отдельных процессов."
+
+msgid "Dlaczego BPO z nami"
+msgstr "Почему BPO с нами"
+
+msgid "Sprawdź rozwiązania kadrowe"
+msgstr "Изучите кадровые решения"
+
+msgid "Prowadzenie dokumentacji kadrowej\n"
+"\n"
+"Naliczanie wynagrodzeń i świadczeń\n"
+"\n"
+"Obsługa umów o pracę i umów cywilnoprawnych\n"
+"\n"
+"Rozliczenia z ZUS i instytucjami publicznymi\n"
+"\n"
+"Sporządzanie deklaracji podatkowych\n"
+"\n"
+"Kontrolowanie limitów urlopowych, terminów badań lekarskich, szkoleń BHP oraz wygasających umów\n"
+"\n"
+"Reprezentowanie podczas kontroli i czynności sprawdzających\n"
+"\n"
+"Zarządzanie programami PPK i PPE\n"
+"\n"
+"Platforma pracownicza z dostępem do wniosków urlopowych i dokumentów online"
+msgstr "Ведение кадровой документации\n"
+"\n"
+"Начисление заработной платы и льгот\n"
+"\n"
+"Обработка трудовых и гражданско-правовых договоров\n"
+"\n"
+"Расчёты с ZUS и государственными учреждениями\n"
+"\n"
+"Подготовка налоговых деклараций\n"
+"\n"
+"Контроль лимитов отпусков, сроков медосмотров, охраны труда и истекающих договоров\n"
+"\n"
+"Представительство при проверках и ревизионных действиях\n"
+"\n"
+"Управление программами PPK и PPE\n"
+"\n"
+"Платформа для сотрудников с доступом к заявлениям на отпуск и документам онлайн"
+
+msgid "Outsourcing księgowości pozwala na znaczne obniżenie kosztów operacyjnych. Możemy dostarczyć wysokiej jakości usługi księgowe, eliminując potrzebę zatrudniania wewnętrznych ekspertów. Dzięki nowoczesnej technologii i dużej skali obsługiwanych przez nas operacji oszczędności sięgają 20-30% lub więcej w porównaniu do prowadzenia księgowości wewnętrznie. Dzięki digitalizacji obiegu dokumentów oraz sprawnym procesom możemy dostarczać raporty w czasie rzeczywistym."
+msgstr "Аутсорсинг бухгалтерии позволяет значительно снизить операционные затраты. Мы можем предоставлять высококачественные бухгалтерские услуги, исключая необходимость найма внутренних специалистов. Благодаря современным технологиям и большому масштабу обрабатываемых нами операций экономия достигает 20–30% и более по сравнению с ведением бухгалтерии собственными силами. Благодаря оцифровке документооборота и эффективным процессам мы можем предоставлять отчёты в режиме реального времени."
+
+msgid "Prowadzenie ksiąg rachunkowych\n"
+"\n"
+"Obliczanie podatków i składanie deklaracji podatkowych\n"
+"\n"
+"Bieżące rozliczanie wyciągów i kontrolowanie rozrachunków\n"
+"\n"
+"Raportowanie zarządcze i sprawozdawcze\n"
+"\n"
+"Raportowanie do instytucji publicznoprawnych, w tym NBP, GUS, INTRASTAT\n"
+"\n"
+"Sporządzanie sprawozdań finansowych oraz deklaracji rocznych\n"
+"\n"
+"Reprezentowanie podczas kontroli i czynności sprawdzających\n"
+"\n"
+"Obsługa niestandardowych rozliczeń, w tym VAT OSS, CIT Estoński, SSE, VAT marża, itp.\n"
+"\n"
+"Asystowanie i wsparcie podczas audytu sprawozdania finansowego"
+msgstr "Ведение бухгалтерских книг\n"
+"\n"
+"Исчисление налогов и подача налоговых деклараций\n"
+"\n"
+"Текущее согласование выписок и контроль расчётов\n"
+"\n"
+"Управленческая и финансовая отчётность\n"
+"\n"
+"Отчётность перед публично-правовыми учреждениями, включая NBP, GUS, INTRASTAT\n"
+"\n"
+"Составление финансовой отчётности и годовых деклараций\n"
+"\n"
+"Представительство при проверках и ревизионных действиях\n"
+"\n"
+"Обработка нестандартных расчётов, включая VAT OSS, Estonian CIT, SEZ, маржинальный VAT и т.д.\n"
+"\n"
+"Ассистирование и поддержка при аудите финансовой отчётности"
+
+msgid "Model współpracy"
+msgstr "Модель сотрудничества"
+
+msgid "Możesz powierzyć nam całość procesów księgowych lub wybrane obszary wymagające uporządkowania.\n"
+"Dopasowujemy zakres wsparcia do realnej sytuacji Twojej firmy."
+msgstr "Вы можете доверить нам все бухгалтерские процессы или отдельные участки, требующие упорядочивания.\n"
+"Мы адаптируем объём поддержки к реальной ситуации в вашей компании."
+
+msgid "Kompleksowa obsługa"
+msgstr "Комплексное обслуживание"
+
+msgid "Obsługujemy proces end-to-end: od bieżącej ewidencji po zamknięcie miesiąca i raporty. Pracujesz z zespołem, który zapewnia zastępowalność i stały standard."
+msgstr "Мы ведём процесс от начала до конца: от текущего учёта до закрытия месяца и отчётов. Вы работаете с командой, которая обеспечивает взаимозаменяемость и постоянный стандарт."
+
+msgid "Outsourcing wybranych\n"
+"procesów"
+msgstr "Аутсорсинг отдельных\n"
+"процессов"
+
+msgid "Przejmujemy konkretne procesy i dowozimy je w ustalonym standardzie i harmonogramie. To rozwiązanie dla firm, które chcą wzmocnić wewnętrzny dział finansów bez rozbudowy etatów."
+msgstr "Мы берём на себя конкретные процессы и выполняем их в согласованном стандарте и графике. Это решение для компаний, которые хотят укрепить внутренний финансовый отдел без расширения штата."
+
+msgid "Jak wygląda bieżąca współpraca"
+msgstr "Как выглядит текущее сотрудничество"
+
+msgid "Poznaj więcej historii"
+msgstr "Узнайте больше историй"
+
+msgid "Indywidualna organizacja pracy"
+msgstr "Индивидуальная организация работы"
+
+msgid "W zależności od potrzeb możemy pracować:"
+msgstr "В зависимости от потребностей мы можем работать:"
+
+msgid "na bieżąco – obsługując codzienne procesy księgowe lub kadrowe"
+msgstr "на постоянной основе — обслуживая ежедневные бухгалтерские или кадровые процессы"
+
+msgid "w cyklach tygodniowych"
+msgstr "в недельных циклах"
+
+msgid "w innych ustalonych odstępach czasu"
+msgstr "в других согласованных интервалах"
+
+msgid "Elastyczne zamknięcie miesiąca"
+msgstr "Гибкое закрытие месяца"
+
+msgid "Terminy zamknięcia miesiąca ustalamy indywidualnie z każdą firmą, uwzględniając jej wewnętrzne potrzeby raportowe oraz obowiązujące terminy podatkowe."
+msgstr "Сроки закрытия месяца устанавливаются индивидуально с каждой компанией с учётом её внутренних потребностей в отчётности и действующих налоговых сроков."
+
+msgid "część firm potrzebuje raportów finansowych do 20. dnia miesiąca"
+msgstr "некоторым компаниям нужны финансовые отчёты до 20-го числа месяца"
+
+msgid "inne wymagają wyników już w 3. lub 4. dniu roboczym nowego miesiąca"
+msgstr "другие требуют результатов уже на 3-й или 4-й рабочий день нового месяца"
+
+msgid "Zakres i częstotliwość raportowania ustalamy indywidualnie z każdym klientem."
+msgstr "Объём и частота отчётности устанавливаются индивидуально с каждым клиентом."
+
+msgid "W standardzie klient otrzymuje:"
+msgstr "В стандартном пакете клиент получает:"
+
+msgid "rachunek zysków i strat"
+msgstr "отчёт о прибылях и убытках"
+
+msgid "bilans"
+msgstr "баланс"
+
+msgid "zestawienie należności i zobowiązań"
+msgstr "ведомость дебиторской и кредиторской задолженности"
+
+msgid "Umów się na konsultacje"
+msgstr "Запишитесь на консультацию"
+
+msgid "Myślisz o sprzedaży swojego biura rachunkowego?"
+msgstr "Думаете о продаже вашего бухгалтерского бюро?"
+
+msgid "Oferujemy dwa modele współpracy: całkowitą sprzedaż biura rachunkowego albo partnerstwo kapitałowe z zachowaniem operacyjnej autonomii."
+msgstr "Мы предлагаем две модели сотрудничества: полную продажу бухгалтерского бюро или капитальное партнёрство с сохранением операционной автономии."
+
+msgid "Właściciele biur rachunkowych zgłaszają się do nas z różnymi potrzebami. Jedni chcą całkowicie wyjść z biznesu i sprzedać firmę, inni szukają partnera, który pomoże im dalej rozwijać biuro. W Meritoros rozmawiamy o obu scenariuszach."
+msgstr "Владельцы бухгалтерских бюро обращаются к нам с разными потребностями. Одни хотят полностью выйти из бизнеса и продать фирму, другие ищут партнёра, который поможет им продолжать развивать бюро. В Meritoros мы обсуждаем оба сценария."
+
+msgid "Kupimy biuro rachunkowe"
+msgstr "Купим бухгалтерское бюро"
+
+msgid "Porozmawiajmy o możliwym modelu współpracy"
+msgstr "Поговорим о возможной модели сотрудничества"
+
+msgid "Całkowita sprzedaż biura"
+msgstr "Полная продажа бюро"
+
+msgid "Jeśli planujesz wycofanie się z prowadzenia firmy, możemy rozmawiać o przejęciu całego przedsiębiorstwa — z uwzględnieniem klientów, zespołu i ciągłości działania."
+msgstr "Если вы планируете выйти из ведения бизнеса, мы можем обсудить приобретение всего предприятия — с учётом клиентов, команды и непрерывности деятельности."
+
+msgid "Sprzedaż części udziałów"
+msgstr "Продажа доли"
+
+msgid "Jeśli chcesz dalej prowadzić biuro, ale jednocześnie zyskać wsparcie większej organizacji, możemy rozmawiać o modelu partnerskim z częściowym wejściem kapitałowym Meritoros."
+msgstr "Если вы хотите продолжать вести бюро, но при этом получить поддержку более крупной организации, мы можем обсудить партнёрскую модель с частичным капитальным вхождением Meritoros."
+
+msgid "Od czego zależy wycena biura rachunkowego?"
+msgstr "От чего зависит оценка бухгалтерского бюро?"
+
+msgid "Wartość biura rachunkowego nie zależy wyłącznie od przychodów. Znaczenie mają także m.in. struktura klientów, rentowność, organizacja procesów, używane systemy, stabilność zespołu oraz stopień zależności firmy od właściciela. Dlatego każdą rozmowę zaczynamy od zrozumienia realnej sytuacji biznesu."
+msgstr "Стоимость бухгалтерского бюро зависит не только от доходов. Важную роль играют также структура клиентов, рентабельность, организация процессов, используемые системы, стабильность команды и степень зависимости фирмы от владельца. Поэтому каждый разговор мы начинаем с понимания реального положения дел в бизнесе."
+
+msgid "Na wycenę wpływają m.in.:"
+msgstr "На оценку влияют, в частности:"
+
+msgid "poziom i powtarzalność przychodów,\n"
+"\n"
+"rentowność biura,\n"
+"\n"
+"struktura klientów i ryzyko koncentracji,\n"
+"\n"
+"organizacja pracy, technologia i stopień poukładania procesów."
+msgstr "уровень и повторяемость доходов,\n"
+"\n"
+"рентабельность бюро,\n"
+"\n"
+"структура клиентов и риск концентрации,\n"
+"\n"
+"организация работы, технологии и степень зрелости процессов."
+
+msgid "W przypadku modelu partnerskiego"
+msgstr "В случае партнёрской модели"
+
+msgid "Model partnerski kierujemy przede wszystkim do biur, które:"
+msgstr "Партнёрская модель ориентирована прежде всего на бюро, которые:"
+
+msgid "mają obrót roczny <strong>powyżej 3 mln zł</strong>,"
+msgstr "имеют годовой оборот <strong>свыше 3 млн злотых</strong>,"
+
+msgid "pracują na systemach innych niż <strong>Optima</strong>, np. Enova, Symfonia,"
+msgstr "работают на системах, отличных от <strong>Optima</strong>, например Enova, Symfonia,"
+
+msgid "chcą dalej rozwijać firmę, ale zyskać dostęp do większego zaplecza,"
+msgstr "хотят продолжать развивать компанию, но получить доступ к большим ресурсам,"
+
+msgid "szukają wsparcia <strong>w obszarze technologii</strong>, procesów, HR, marketingu i rozwoju operacyjnego."
+msgstr "ищут поддержки <strong>в области технологий</strong>, процессов, HR, маркетинга и операционного развития."
+
+msgid "Co zyskujesz jako Partner Meritoros?"
+msgstr "Что вы получаете как Партнёр Meritoros?"
+
+msgid "dostęp do automatyzacji i robotyzacji procesów\n"
+"\n"
+"wsparcie w digitalizacji i porządkowaniu operacji\n"
+"\n"
+"dostęp do wiedzy ekspertów i partnerów merytorycznych\n"
+"\n"
+"wsparcie HR i rekrutacyjne\n"
+"\n"
+"wsparcie marketingowe i sprzedażowe,\n"
+"\n"
+"wewnętrzne standardy jakości i audytu\n"
+"\n"
+"możliwość dalszego rozwoju w strukturach większej organizacji"
+msgstr "доступ к автоматизации и роботизации процессов\n"
+"\n"
+"поддержка в оцифровке и упорядочивании операций\n"
+"\n"
+"доступ к знаниям экспертов и предметных партнёров\n"
+"\n"
+"HR и рекрутинговая поддержка\n"
+"\n"
+"маркетинговая и сбытовая поддержка\n"
+"\n"
+"внутренние стандарты качества и аудита\n"
+"\n"
+"возможность дальнейшего развития в структурах более крупной организации"
+
+msgid "Kalkulator orientacyjnej wyceny biura rachunkowego"
+msgstr "Ориентировочный калькулятор оценки бухгалтерского бюро"
+
+msgid "Sprawdź wycenę"
+msgstr "Проверить оценку"
+
+msgid "Spełniasz wszystkie kryteria?"
+msgstr "Соответствуете ли вы всем критериям?"
+
+msgid "Warto się odezwać — chętnie sprawdzimy, czy widzimy przestrzeń do współpracy."
+msgstr "Стоит обратиться — мы с удовольствием проверим, видим ли мы пространство для сотрудничества."
+
+msgid "Umów się na rozmowę"
+msgstr "Запишитесь на разговор"
+
+msgid "Obecnie najczęściej rozmawiamy z biurami, które spełniają poniższe kryteria:"
+msgstr "В настоящее время мы чаще всего разговариваем с бюро, которые соответствуют следующим критериям:"
+
+msgid "Przejmujemy całość lub wybrane obszary, które wymagają uporządkowania i stałego nadzoru."
+msgstr "Мы берём на себя все или выбранные участки, которые требуют упорядочивания и постоянного контроля."
+
+msgid "obrót roczny: od ok. 1,2 mln zł\n"
+"\n"
+"oprogramowanie: Comarch Optima,\n"
+"\n"
+"preferowane lokalizacje: Warszawa, Kraków, Wrocław, Łódź, Górny Śląsk, Rzeszów,\n"
+"\n"
+"w przypadku większych podmiotów analizujemy także inne lokalizacje."
+msgstr "годовой оборот: от прибл. 1,2 млн злотых\n"
+"\n"
+"программное обеспечение: Comarch Optima,\n"
+"\n"
+"предпочтительные локации: Варшава, Краков, Вроцлав, Лодзь, Верхняя Силезия, Жешув,\n"
+"\n"
+"для более крупных субъектов мы также анализируем другие локации."
+
+msgid "Spełniasz powyższe kryteria?"
+msgstr "Соответствуете ли вы указанным критериям?"
+
+msgid "Nie spełniasz wszystkich kryteriów?"
+msgstr "Не соответствуете всем критериям?"
+
+msgid "Jak wygląda sprzedaż biura rachunkowego w praktyce?"
+msgstr "Как выглядит продажа бухгалтерского бюро на практике?"
+
+msgid "Jeśli chcesz lepiej zrozumieć kulisy takiego procesu, zobacz materiał, w którym omawiamy najważniejsze kwestie związane ze sprzedażą firmy usługowej i przejęciem biura rachunkowego."
+msgstr "Если вы хотите лучше понять закулисье такого процесса, посмотрите материал, в котором мы обсуждаем наиболее важные вопросы, связанные с продажей сервисной компании и приобретением бухгалтерского бюро."
+
+msgid "Pierwsza rozmowa jest niezobowiązująca. Ustalimy, jaki model ma sens i czy jest przestrzeń do współpracy."
+msgstr "Первый разговор ни к чему не обязывает. Мы установим, какая модель имеет смысл и есть ли пространство для сотрудничества."
+
+msgid "Wczytaj więcej"
+msgstr "Загрузить ещё"
+
+msgid "Historie klientów"
+msgstr "Истории клиентов"
+
+msgid "Posłuchaj, co mówią nasi klienci"
+msgstr "Послушайте, что говорят наши клиенты"
+
+msgid "Czytaj historię"
+msgstr "Читать историю"
+
+msgid "Jak z MINIMALNYM ryzykiem zacząć własny biznes? Sebastian Rafalik wspomina Meritoros."
+msgstr "Как начать собственный бизнес с МИНИМАЛЬНЫМ риском? Себастьян Рафалик вспоминает Meritoros."
+
+msgid "Sebastian Rafalik (POL–FRA) w wywiadzie dla „Zaprojektuj Swoje Życie\" mówi o tym, jak uporządkowanie księgowości i kadr z Meritoros pomogło mu odblokować skalowanie biznesu i zdjąć z siebie „wąskie gardło\"."
+msgstr "Себастьян Рафалик (POL–FRA) в интервью для «Zaprojektuj Swoje Życie» рассказывает о том, как упорядочение бухгалтерии и кадров с Meritoros помогло ему разблокировать масштабирование бизнеса и снять с себя «узкое место»."
+
+msgid "Posłuchaj wywiadu"
+msgstr "Послушать интервью"
+
+msgid "Obejrzyj materiał"
+msgstr "Смотреть материал"
+
+msgid "Darmowy materiał"
+msgstr "Бесплатный материал"
+
+msgid "Pobierz nasz darmowy Ebook"
+msgstr "Скачайте наш бесплатный Ebook"
+
+msgid "Pobierz materiał"
+msgstr "Скачать материал"
+
+msgid "Ebook został wysłany na podany adres e-mail!"
+msgstr "Ebook отправлен на указанный адрес электронной почты!"
+
+msgid "Fundacja rodzinna"
+msgstr "Семейный фонд"
+
+msgid "księgowość pod kontrolą"
+msgstr "бухгалтерия под контролем"
+
+msgid "Fundacja rodzinna wymaga szczególnej staranności w obszarze księgowości i podatków. Zapewniamy rozwiązania, które chronią interes fundatorów i wspierają długoterminową strukturę majątkową."
+msgstr "Семейный фонд требует особой тщательности в области бухгалтерии и налогов. Мы предоставляем решения, которые защищают интересы учредителей и поддерживают долгосрочную имущественную структуру."
+
+msgid "Dlaczego Meritoros"
+msgstr "Почему Meritoros"
+
+msgid "Mamy wdrożone procedury kontroli jakości i weryfikacji danych. Dostarczamy informacje finansowe kompletne, spójne i użyteczne dla zarządu."
+msgstr "У нас внедрены процедуры контроля качества и проверки данных. Мы предоставляем финансовую информацию, которая является полной, согласованной и полезной для руководства."
+
+msgid "Ponad 170 ekspertów"
+msgstr "Более 170 экспертов"
+
+msgid "Jakość potwierdzona standardami. Mamy wdrożone procedury kontroli jakości i weryfikacji danych. Dostarczamy informacje finansowe kompletne, spójne i użyteczne dla zarządu."
+msgstr "Качество, подтверждённое стандартами. У нас внедрены процедуры контроля качества и проверки данных. Мы предоставляем финансовую информацию, которая является полной, согласованной и полезной для руководства."
+
+msgid "Powrót do"
+msgstr "Вернуться к"
+
+msgid "Geologia inżynierska"
+msgstr "Инженерная геология"
+
+msgid "Ochrona środowiska"
+msgstr "Охрана окружающей среды"
+
+msgid "Usługi rachunkowe, obszar kadr i płac, wsparcie w audytach"
+msgstr "Бухгалтерские услуги, сфера кадров и зарплат, поддержка аудитов"
+
+msgid "Po kilku zmianach głównej księgowej spółka potrzebowała szybkiego uporządkowania księgowości i bezpiecznego zamknięcia roku obrotowego. Wdrożyliśmy usprawnienia procesowe."
+msgstr "После нескольких смен главного бухгалтера компания нуждалась в быстром упорядочивании бухгалтерии и безопасном закрытии финансового года. Мы внедрили процессные улучшения."
+
+msgid "Nasz wpływ na operacje HPC"
+msgstr "Наше влияние на операции HPC"
+
+msgid "Technologia druku"
+msgstr "Технология печати"
+
+msgid "E-commerce B2B"
+msgstr "E-commerce B2B"
+
+msgid "Pełna obsługa BPO, rozliczenia międzynarodowe VAT OSS"
+msgstr "Полное обслуживание BPO, международные расчёты VAT OSS"
+
+msgid "Przy dynamicznym wzroście sprzedaży cross-border firma potrzebowała partnera gotowego na złożone rozliczenia VAT OSS w wielu krajach UE. Przejęliśmy całość obsługi finansowej."
+msgstr "При динамичном росте трансграничных продаж компания нуждалась в партнёре, готовом к сложным расчётам VAT OSS в нескольких странах ЕС. Мы взяли на себя всё финансовое обслуживание."
+
+msgid "Jak Printbox skaluje finanse globalnie"
+msgstr "Как Printbox масштабирует финансы глобально"
+
+msgid "Budownictwo"
+msgstr "Строительство"
+
+msgid "Inżynieria"
+msgstr "Инженерия"
+
+msgid "Kadry, płace, Intrastat, rozliczenia delegacji zagranicznych"
+msgstr "Кадры, зарплаты, Intrastat, расчёты зарубежных командировок"
+
+msgid "Firma realizowała kontrakty w kilku krajach jednocześnie. Meritoros przejął obsługę kadrową i rozliczenia Intrastat, odciążając zarząd od złożoności administracyjnej."
+msgstr "Компания выполняла контракты одновременно в нескольких странах. Meritoros взял на себя кадровое обслуживание и расчёты Intrastat, освободив руководство от административной сложности."
+
+msgid "Obsługa kadrowa na skalę międzynarodową"
+msgstr "Кадровое обслуживание в международном масштабе"
+
+msgid "Produkcja przemysłowa"
+msgstr "Промышленное производство"
+
+msgid "Eksport"
+msgstr "Экспорт"
+
+msgid "Pełna księgowość, fundacja rodzinna, compliance"
+msgstr "Полная бухгалтерия, семейный фонд, комплаенс"
+
+msgid "Właściciel grupy produkcyjnej chciał oddzielić majątek prywatny od firmowego poprzez fundację rodzinną. Meritoros poprowadził cały proces prawno-księgowy od podstaw."
+msgstr "Владелец производственной группы хотел отделить частное имущество от корпоративного через семейный фонд. Meritoros провёл весь юридически-бухгалтерский процесс с нуля."
+
+msgid "Fundacja rodzinna krok po kroku"
+msgstr "Семейный фонд шаг за шагом"
+
+msgid "Zaufało nam ponad"
+msgstr "Нам доверяют более"
+
+msgid "klientów"
+msgstr "клиентов"
+
+msgid "Logo klienta"
+msgstr "Логотип клиента"
+
+msgid "Mówią o nas"
+msgstr "Говорят о нас"
+
+msgid "Przeczytaj artykuł"
+msgstr "Читать статью"
+
+msgid "Porozmawiajmy o rozwiązaniach\n"
+"dla Twojego biznesu"
+msgstr "Поговорим о решениях\n"
+"для вашего бизнеса"
+
+msgid "Wyślij zapytanie"
+msgstr "Отправить запрос"
+
+msgid "Wideo"
+msgstr "Видео"
+
+msgid "Wideoinstruktaże"
+msgstr "Видеоинструкции"
+
+msgid "Praktyczne instruktaże wideo z zakresu księgowości, podatków i kadr."
+msgstr "Практические видеоинструкции по бухгалтерии, налогам и кадрам."
+
+msgid "Lista nadzorcza"
+msgstr "Наблюдательный совет"
+
+msgid "przewodnicząca rady nadzorczej"
+msgstr "председатель наблюдательного совета"
+
+msgid "członek rady nadzorczej"
+msgstr "член наблюдательного совета"
+
+msgid "O nas"
+msgstr "О нас"
+
+msgid "Profil działalności"
+msgstr "Профиль деятельности"
+
+msgid "Skala działalności"
+msgstr "Масштаб деятельности"
+
+msgid "Zasięg i grupa kapitałowa"
+msgstr "Охват и группа капитала"
+
+msgid "Strategia rozwoju"
+msgstr "Стратегия развития"
+
+msgid "Początek działalności"
+msgstr "Основана"
+
+msgid "Klientów"
+msgstr "Клиентов"
+
+msgid "Specjalistów"
+msgstr "Специалистов"
+
+msgid "lokalizacji"
+msgstr "локаций"
+
+msgid "(ale ciągle rośniemy)"
+msgstr "(и мы продолжаем расти)"
+
+msgid "Wyróżnienia są efektem tego, jak rozwijamy Meritoros: konsekwentnie i procesowo. Trzymamy standard, który ma działać w praktyce – codziennie."
+msgstr "Отличия являются результатом того, как мы развиваем Meritoros: последовательно и процессно. Мы придерживаемся стандарта, который должен работать на практике — каждый день."
+
+msgid "Jak pracujemy?"
+msgstr "Как мы работаем?"
+
+msgid "Dedykowany zespół"
+msgstr "Выделенная команда"
+
+msgid "Każdy klient współpracuje z przypisanym zespołem specjalistów oraz Liderem odpowiedzialnym za jakość i terminowość."
+msgstr "Каждый клиент сотрудничает с выделенной командой специалистов и Лидером, ответственным за качество и своевременность."
+
+msgid "Podejście procesowe"
+msgstr "Процессный подход"
+
+msgid "Wszystkie działania opieramy na udokumentowanych procesach z określonymi SLA, checklistami i punktami kontroli jakości — tak by każda operacja była przewidywalna i powtarzalna."
+msgstr "Все действия основаны на задокументированных процессах с определёнными SLA, чек-листами и точками контроля качества — чтобы каждая операция была предсказуемой и воспроизводимой."
+
+msgid "Pełna zastępowalność"
+msgstr "Полная взаимозаменяемость"
+
+msgid "Procesy są tak zorganizowane, by urlopy i rotacja kadry nie wpływały na ciągłość obsługi. Klient zawsze ma kogoś do dyspozycji i nie odczuwa zmian personalnych."
+msgstr "Процессы организованы так, чтобы отпуска и ротация кадров не влияли на непрерывность обслуживания. Клиент всегда имеет кого-то в распоряжении и не ощущает кадровых изменений."
+
+msgid "Elastyczność współpracy"
+msgstr "Гибкость сотрудничества"
+
+msgid "Dopasowujemy zakres, terminy raportowania i sposób komunikacji do realnych potrzeb firmy — niezależnie od jej wielkości czy etapu rozwoju."
+msgstr "Мы подстраиваем объём, сроки отчётности и способ коммуникации к реальным потребностям компании — независимо от её размера или этапа развития."
+
+msgid "Zespół Meritoros przy pracy"
+msgstr "Команда Meritoros за работой"
+
+msgid "Kim jesteśmy"
+msgstr "Кто мы"
+
+msgid "Od ponad 20 lat wspieramy firmy w prowadzeniu księgowości, kadr i procesów finansowych. Pracujemy w modelu zespołowym i procesowym, z jasno określoną odpowiedzialnością, standaryzacją działań i nadzorem nad jakością. Łączymy doświadczenie z nowoczesnymi technologiami oraz automatyzacją, aby zapewnić naszym klientom rzetelne dane, bezpieczeństwo operacyjne i stabilność, której potrzebują, by rozwijać swój biznes."
+msgstr "Более 20 лет мы поддерживаем компании в ведении бухгалтерии, кадров и финансовых процессов. Мы работаем в командной и процессной модели, с чётко определённой ответственностью, стандартизацией действий и контролем качества. Мы сочетаем опыт с современными технологиями и автоматизацией, чтобы обеспечить нашим клиентам достоверные данные, операционную безопасность и стабильность, необходимые для развития их бизнеса."
+
+msgid "Wewnętrzny\n"
+"dział IT i RPA"
+msgstr "Внутренний\n"
+"отдел IT и RPA"
+
+msgid "Certyfikacja ISO\n"
+"9001 i ISO/IEC\n"
+"27001"
+msgstr "Сертификация\n"
+"ISO 9001\n"
+"и ISO/IEC 27001"
+
+msgid "Ubezpieczenie\n"
+"do 3 mln PLN"
+msgstr "Страхование\n"
+"до 3 млн злотых"
+
+msgid "Ponad 170\n"
+"expertów na\n"
+"pokładzie"
+msgstr "Более 170\n"
+"экспертов\n"
+"на борту"
+
+msgid "Ponad 1200\n"
+"klientów"
+msgstr "Более 1200\n"
+"клиентов"
+
+msgid "7 oddziałów\n"
+"w Polsce oraz\n"
+"oddziały wirtualne"
+msgstr "7 отделений\n"
+"в Польше и\n"
+"виртуальные офисы"
+
+msgid "Gdzie działamy"
+msgstr "Где мы работаем"
+
+msgid "Posiadamy 7 oddziałów stacjonarnych w miastach Polski oraz oddziały wirtualne, dzięki czemu obsługujemy firmy niezależnie od ich lokalizacji:"
+msgstr "У нас есть 7 стационарных отделений в городах Польши и виртуальные отделения, благодаря чему мы обслуживаем компании независимо от их местонахождения:"
+
+msgid "Kraków (siedziba główna oraz 3 oddziały)\n"
+"Warszawa\n"
+"Katowice\n"
+"Rzeszów\n"
+"Wrocław\n"
+"Łódź\n"
+"Bytom\n"
+"2 oddziały wirtualne działające w pełni online"
+msgstr "Краков (головной офис и 3 отделения)\n"
+"Варшава\n"
+"Катовице\n"
+"Ржешув\n"
+"Вроцлав\n"
+"Лодзь\n"
+"Бытом\n"
+"2 полностью онлайн-отделения"
+
+msgid "Mapa Polski z oddziałami"
+msgstr "Карта Польши с отделениями"
+
+msgid "Zespół Meritoros"
+msgstr "Команда Meritoros"
+
+msgid "Opinie klientów"
+msgstr "Отзывы клиентов"
+
+msgid "Sprawdź, co mówią o nas inni"
+msgstr "Посмотрите, что говорят о нас другие"
+
+msgid "Mam księgowość w bezpiecznych rękach i wiem, że nie muszę się o to już martwić."
+msgstr "Моя бухгалтерия в надёжных руках, и я знаю, что мне больше не нужно об этом беспокоиться."
+
+msgid "HP Cepolgol S.A."
+msgstr "HP Cepolgol S.A."
+
+msgid "Meritoros dostarczył nam stabilność i pewność, w trudnych momentach zawsze mamy właściwe odpowiedzi."
+msgstr "Meritoros обеспечил нам стабильность и уверенность — в трудные моменты у нас всегда есть правильные ответы."
+
+msgid "CEO & Co-Founder, Printbox"
+msgstr "CEO & Co-Founder, Printbox"
+
+msgid "Profesjonalizm na każdym kroku. Polecamy Meritoros każdej firmie, która ceni sobie bezpieczeństwo i jakość obsługi."
+msgstr "Профессионализм на каждом шагу. Рекомендуем Meritoros каждой компании, которая ценит безопасность и качество обслуживания."
+
+msgid "Dyrektor Finansowy, SITECH"
+msgstr "Финансовый директор, SITECH"
+
+msgid "Obsługiwanych klientów"
+msgstr "Обслуживаемых клиентов"
+
+msgid "Lat na rynku"
+msgstr "Лет на рынке"
+
+msgid "Klientów poleca nas dalej"
+msgstr "Клиентов рекомендуют нас"
+
+msgid "Ekspertów w zespole"
+msgstr "Экспертов в команде"
+
+msgid "Co zyskujesz, gdy księgowość\n"
+"fundacji jest poukładana"
+msgstr "Что вы получаете, когда бухгалтерия\n"
+"фонда упорядочена"
+
+msgid "Bezpieczne zarządzanie\n"
+"majątkiem"
+msgstr "Безопасное управление\n"
+"имуществом"
+
+msgid "Porządek w danych i dokumentach, jasna sprawozdawczość i kontrola nad obowiązkami."
+msgstr "Порядок в данных и документах, чёткая отчётность и контроль над обязательствами."
+
+msgid "Sukcesja na trwałych\n"
+"regułach"
+msgstr "Наследование на прочных\n"
+"правилах"
+
+msgid "Przejrzyste zasady i przewidywalność – tak, aby rozwiązanie działało długoterminowo."
+msgstr "Прозрачные правила и предсказуемость — чтобы решение работало в долгосрочной перспективе."
+
+msgid "Spokój w kwestiach\n"
+"formalnych"
+msgstr "Спокойствие в формальных\n"
+"вопросах"
+
+msgid "Dopilnujemy terminów i obowiązków sprawozdawczych, żeby nic „nie wyskakiwało\" w ostatniej chwili."
+msgstr "Мы позаботимся о сроках и отчётных обязательствах, чтобы ничто не «выскакивало» в последний момент."
+
+msgid "Mniej ryzyk,\n"
+"mniej poprawek"
+msgstr "Меньше рисков,\n"
+"меньше исправлений"
+
+msgid "Praca procesowa, weryfikacja danych i standardy, które ograniczają błędy."
+msgstr "Процессная работа, проверка данных и стандарты, ограничивающие ошибки."
+
+msgid "Dlaczego firmy wybierają nasze\n"
+"rozwiązania kadrowe"
+msgstr "Почему компании выбирают наши\n"
+"кадровые решения"
+
+msgid "Realizujemy usługi w oparciu o certyfikat ISO 9001"
+msgstr "Оказываем услуги на основе сертификата ISO 9001"
+
+msgid "Nowoczesne i elastyczne\n"
+"podejście"
+msgstr "Современный и гибкий\n"
+"подход"
+
+msgid "Przygotowujemy raporty finansowe dopasowane do potrzeb zarządu i wspierające podejmowanie decyzji biznesowych."
+msgstr "Мы готовим финансовые отчёты, адаптированные к потребностям руководства и поддерживающие принятие бизнес-решений."
+
+msgid "Bezpieczeństwo danych"
+msgstr "Безопасность данных"
+
+msgid "Stosujemy rozwiązania zgodne z normą ISO/IEC 27001, zapewniające poufność, integralność i bezpieczeństwo danych pracowniczych."
+msgstr "Мы применяем решения в соответствии со стандартом ISO/IEC 27001, обеспечивающие конфиденциальность, целостность и безопасность данных сотрудников."
+
+msgid "Business continuity"
+msgstr "Business continuity"
+
+msgid "Usługi realizuje cały zespół specjalistów, dlatego urlopy i rotacja pracowników nie wpływają na terminowość i ciągłość obsługi Twojej firmy."
+msgstr "Услуги оказывает вся команда специалистов, поэтому отпуска и ротация сотрудников не влияют на своевременность и непрерывность обслуживания вашей компании."
+
+msgid "Kadry i płace, które dają"
+msgstr "Кадры и зарплата, которые дают"
+
+msgid "spokój"
+msgstr "спокойствие"
+
+msgid "organizacji"
+msgstr "организации"
+
+msgid "Porozmawiajmy"
+msgstr "Поговорим"
+
+msgid "Twoje kadry"
+msgstr "Ваши кадры"
+
+msgid "i płace"
+msgstr "и зарплата"
+
+msgid "pod kontrolą"
+msgstr "под контролем"
+
+msgid "Oferujemy pełną obsługę kadrowo-płacową przedsiębiorstw – od prowadzenia dokumentacji pracowniczej po naliczanie wynagrodzeń i rozliczenia z instytucjami publicznymi. Klienci mogą powierzyć nam całość procesów kadrowych i płacowych lub wybrane obszary wymagające wsparcia."
+msgstr "Мы предлагаем полное кадровое и бухгалтерское обслуживание предприятий — от ведения кадровой документации до расчёта заработной платы и расчётов с государственными учреждениями. Клиенты могут доверить нам все кадровые и бухгалтерские процессы или отдельные участки, требующие поддержки."
+
+msgid "Zakres współpracy dopasowujemy do wielkości i struktury organizacji."
+msgstr "Объём сотрудничества мы адаптируем к размеру и структуре организации."
+
+msgid "Oszacuj wstępną wycenę"
+msgstr "Получить предварительную оценку"
+
+msgid "Porozmawiajmy o obsłudze kadrowej dla Twojej firmy"
+msgstr "Поговорим о кадровом обслуживании вашей компании"
+
+msgid "Skontaktuj się z nami i dowiedz się, jak możemy wesprzeć Twój dział HR i płac."
+msgstr "Свяжитесь с нами и узнайте, как мы можем поддержать ваш отдел кадров и расчётов."
+
+msgid "Kalkulator – oszacuj wstępnie koszt obsługi"
+msgstr "Калькулятор — предварительная оценка стоимости обслуживания"
+
+msgid "Oszacuj wstępny koszt obsługi kadrowo-płacowej w kilka chwil. Wprowadź podstawowe informacje o swojej działalności, a my przygotujemy orientacyjną wycenę dopasowaną do Twoich potrzeb i skali zatrudnienia."
+msgstr "Оцените предварительную стоимость кадрово-бухгалтерского обслуживания за несколько минут. Введите основную информацию о вашей деятельности, и мы подготовим ориентировочную смету, адаптированную к вашим потребностям и масштабу занятости."
+
+msgid "* to jest wstępny szacunek, każda oferta jest jednak indywidualnie rozpatrywana i odpowiednio wyceniana."
+msgstr "* это предварительная смета; каждое предложение рассматривается индивидуально и оценивается соответственно."
+
+msgid "na bieżąco – obsługując codzienne procesy kadrowe i płacowe"
+msgstr "на постоянной основе — обслуживая ежедневные кадровые и бухгалтерские процессы"
+
+msgid "Terminowe naliczanie wynagrodzeń"
+msgstr "Своевременное начисление заработной платы"
+
+msgid "Terminy przetwarzania listy płac ustalamy indywidualnie z każdą firmą, uwzględniając jej wewnętrzny harmonogram wypłat oraz terminy rozliczeń z ZUS i US."
+msgstr "Сроки обработки ведомостей устанавливаем индивидуально с каждой компанией, учитывая её внутренний график выплат и сроки расчётов с ZUS и налоговыми органами."
+
+msgid "listy płac gotowe z odpowiednim wyprzedzeniem przed dniem wypłaty"
+msgstr "ведомости готовы с достаточным опережением до дня выплаты"
+
+msgid "terminowe przelewy składek ZUS i zaliczek PIT"
+msgstr "своевременные переводы взносов ZUS и авансов PIT"
+
+msgid "Zakres raportowania ustalamy\n"
+"indywidualnie z każdym klientem."
+msgstr "Объём отчётности устанавливаем\n"
+"индивидуально с каждым клиентом."
+
+msgid "zestawienie listy płac"
+msgstr "сводная ведомость"
+
+msgid "paski wynagrodzeń dla pracowników"
+msgstr "расчётные листки для сотрудников"
+
+msgid "potwierdzenia rozliczeń ZUS i US"
+msgstr "подтверждения расчётов ZUS и налоговых органов"
+
+msgid "W zależności od potrzeb przygotowujemy również dodatkowe raporty kadrowe, płacowe i zarządcze."
+msgstr "В зависимости от потребностей мы также готовим дополнительные кадровые, бухгалтерские и управленческие отчёты."
+
+msgid "Oferta rozwiązań kadrowych"
+msgstr "Предложение кадровых решений"
+
+msgid "Wyceń usługę"
+msgstr "Получить смету"
+
+msgid "Sprawdź również rozwiązania księgowe"
+msgstr "Ознакомьтесь также с бухгалтерскими решениями"
+
+msgid "Obsługa wielu systemów\n"
+"ksiągowych"
+msgstr "Поддержка множества\n"
+"бухгалтерских систем"
+
+msgid "Konkretne przypadki. Konkretny efekt. Zobacz, jak pomagamy firmom działać stabilnie i bezpiecznie."
+msgstr "Конкретные случаи. Конкретный результат. Посмотрите, как мы помогаем компаниям работать стабильно и безопасно."
+
+msgid "Poznaj historie"
+msgstr "Ознакомьтесь с историями"
+
+msgid "Współpraca, która"
+msgstr "Сотрудничество, которое"
+
+msgid "daje spokój operacyjny"
+msgstr "даёт операционное спокойствие"
+
+msgid "W Meritoros pracujemy tak, aby odciążyć zespół klienta i zapewnić ciągłość obsługi. Działamy elastycznie, dopasowując model współpracy do realiów organizacji, ale trzymamy stały standard jakości, terminowości i bezpieczeństwa danych."
+msgstr "В Meritoros мы работаем так, чтобы разгрузить команду клиента и обеспечить непрерывность обслуживания. Действуем гибко, адаптируя модель сотрудничества к реалиям организации, но поддерживаем постоянный стандарт качества, своевременности и безопасности данных."
+
+msgid "Dzięki temu klienci mogą skupić się na biznesie, a nie na „gaszeniu tematów\" w księgowości czy kadrach"
+msgstr "Благодаря этому клиенты могут сосредоточиться на бизнесе, а не на «тушении пожаров» в бухгалтерии или кадрах"
+
+msgid "Obsługa księgowa fundacji rodzinnej dla właścicieli myślących długoterminowo"
+msgstr "Бухгалтерское обслуживание семейного фонда для владельцев, мыслящих долгосрочно"
+
+msgid "Prowadzimy księgowość fundacji rodzinnych dla przedsiębiorców, którzy chcą uporządkować kwestie majątku i sukcesji w sposób bezpieczny, transparentny i zgodny z przepisami. Bierzemy na siebie bieżącą obsługę, sprawozdawczość i kontrolę terminów, tak aby fundacja działała stabilnie."
+msgstr "Мы ведём бухгалтерский учёт семейных фондов для предпринимателей, которые хотят упорядочить вопросы имущества и наследования безопасно, прозрачно и в соответствии с законодательством. Мы берём на себя текущее обслуживание, отчётность и контроль сроков, чтобы фонд работал стабильно."
+
+msgid "Poznaj naszą ofertę"
+msgstr "Ознакомьтесь с нашим предложением"
+
+msgid "Zapewniamy kompleksową obsługę księgową i podatkową, która porządkuje finanse fundacji i daje poczucie bezpieczeństwa jej fundatorom."
+msgstr "Мы предоставляем комплексное бухгалтерское и налоговое обслуживание, которое упорядочивает финансы фонда и даёт его учредителям ощущение безопасности."
+
+msgid "Prowadzenie ksiąg rachunkowych\n"
+"\n"
+"Rozliczanie i składanie deklaracji podatkowych\n"
+"\n"
+"Przygotowywanie sprawozdań finansowych\n"
+"\n"
+"Asystowanie podczas badania sprawozdania finansowego oraz kontroli urzędów\n"
+"\n"
+"Raportowanie na cele zarządcze\n"
+"\n"
+"Sporządzanie polityki rachunkowości"
+msgstr "Ведение бухгалтерских книг\n"
+"\n"
+"Исчисление и подача налоговых деклараций\n"
+"\n"
+"Подготовка финансовой отчётности\n"
+"\n"
+"Ассистирование при аудите финансовой отчётности и проверках органов\n"
+"\n"
+"Отчётность для управленческих целей\n"
+"\n"
+"Составление учётной политики"
+
+msgid "Maciej Paraszczak dla Pulsu Biznesu"
+msgstr "Мацей Парасщак для Puls Biznesu"
+
+msgid "Dla wielu naszych klientów jesteśmy nie tylko biurem rachunkowym, ale partnerem operacyjnym, który realnie usprawnia ich procesy biznesowe – podkreśla z Maciej Paraszczak, prezes zarządu spółki Meritoros."
+msgstr "Для многих наших клиентов мы являемся не просто бухгалтерским бюро, а операционным партнёром, который реально улучшает их бизнес-процессы — подчёркивает Мацей Парасщак, президент правления Meritoros."
+
+msgid "Wywiad z Maciejem Paraszczakiem dla Pulsu Biznesu o tym, jak wygląda nowoczesna księgowość w praktyce i dlaczego standard oraz procesy mają dziś kluczowe znaczenie."
+msgstr "Интервью с Мацеем Парасщаком для Puls Biznesu о том, как выглядит современная бухгалтерия на практике и почему стандарты и процессы имеют сегодня ключевое значение."
+
+msgid "Czytaj więcej"
+msgstr "Читать больше"
+
+msgid "Media i informacje firmowe"
+msgstr "Медиа и корпоративные новости"
+
+msgid "Najważniejsze wydarzenia z życia firmy: rozwój, nowe inicjatywy, wyróżnienia i ogłoszenia."
+msgstr "Важнейшие события из жизни компании: развитие, новые инициативы, отличия и объявления."
+
+msgid "Przeczytaj również"
+msgstr "Читайте также"
+
+msgid "Zapytania medialne"
+msgstr "Медиа-запросы"
+
+msgid "W sprawach publikacji, komentarzy eksperckich i współpracy medialnej prosimy o kontakt. Odpowiemy możliwie szybko i wrócimy z informacją, w jakiej formie możemy pomóc."
+msgstr "По вопросам публикаций, экспертных комментариев и медиасотрудничества просим обращаться. Ответим как можно быстрее и вернёмся с информацией, в какой форме можем помочь."
+
+msgid "Poznaj nasze biuro rachunkowe i wartości, które stoją za naszą codzienną pasją."
+msgstr "Познакомьтесь с нашим бухгалтерским бюро и ценностями, которые лежат в основе нашей ежедневной страсти."
+
+msgid "Pracujemy tak, by być dumni z jakości informacji dostarczanych naszym klientom."
+msgstr "Мы работаем так, чтобы гордиться качеством информации, предоставляемой нашим клиентам."
+
+msgid "Porozmawiamy"
+msgstr "Поговорим"
+
+msgid "Zespół"
+msgstr "Команда"
+
+msgid "prezes zarządu, CEO"
+msgstr "президент правления, CEO"
+
+msgid "Założyciel i główny udziałowiec Meritoros SA, certyfikowany księgowy (Certyfikat Min. Finansów nr 1840/2003). Absolwent kierunku Zarządzanie ze specjalnością Finanse i Rachunkowość."
+msgstr "Основатель и главный акционер Meritoros SA, сертифицированный бухгалтер (Сертификат Министерства финансов № 1840/2003). Выпускник специальности Управление со специализацией «Финансы и бухгалтерский учёт»."
+
+msgid "członek zarządu, COO"
+msgstr "член правления, COO"
+
+msgid "Udziałowiec Meritoros SA, certyfikowana księgowa (Certyfikat Min. Finansów nr 54055/2011). Absolwentka kierunku Zarządzania na AGH, swoje wykształcenie uzupełniła o studia podyplomowe."
+msgstr "Акционер Meritoros SA, сертифицированный бухгалтер (Сертификат Министерства финансов № 54055/2011). Выпускница специальности Управление в AGH, дополнила образование аспирантскими студиями."
+
+msgid "Udziałowiec Meritoros SA, certyfikowany księgowy (Certyfikat Min. Finansów nr 62092/2013). Absolwent kierunku Finansów i Rachunkowości na UEK ze specjalnością finanse przedsiębiorstw."
+msgstr "Акционер Meritoros SA, сертифицированный бухгалтер (Сертификат Министерства финансов № 62092/2013). Выпускник специальности Финансы и бухгалтерский учёт в UEK со специализацией «Корпоративные финансы»."
+
+msgid "Księgowa (Certyfikat Min. Finansów 55068/2012) z wieloletnim doświadczeniem. Swoją karierę budowała w Biurach Rachunkowych oraz jako główna księgowa w jednej z międzynarodowych firm."
+msgstr "Бухгалтер (Сертификат Министерства финансов 55068/2012) с многолетним опытом. Строила карьеру в бухгалтерских бюро и в качестве главного бухгалтера в одной из международных компаний."
+
+msgid "Informacje o strukturze akcjonariatu"
+msgstr "Информация о структуре акционерного капитала"
+
+msgid "Kapitał zakładowy spółki wynosi 120 000 PLN i dzieli się na 1 200 000 akcji serii A o wartości nominalnej 0,10 PLN."
+msgstr "Уставный капитал общества составляет 120 000 злотых и делится на 1 200 000 акций серии A номинальной стоимостью 0,10 злотых."
+
+msgid "Akcjonariusz"
+msgstr "Акционер"
+
+msgid "Łączna liczba posiadanych akcji"
+msgstr "Общее количество акций"
+
+msgid "Udział w łącznej liczbie głosów"
+msgstr "Доля в общем количестве голосов"
+
+msgid "Relacje inwestorskie"
+msgstr "Отношения с инвесторами"
+
+msgid "Poniżej udostępniamy kluczowe informacje i dokumenty dotyczące Meritoros SA, w tym sprawozdania finansowe i raporty okresowe."
+msgstr "Ниже мы размещаем ключевую информацию и документы, касающиеся Meritoros SA, включая финансовую отчётность и периодические отчёты."
+
+msgid "Ogłoszenia w Monitorze Sądowym i Gospodarczym"
+msgstr "Объявления в Судебно-хозяйственном мониторе"
+
+msgid "Ogłoszenia o zwołaniu Walnego Zgromadzenia Akcjonariuszy"
+msgstr "Уведомления о созыве Общего собрания акционеров"
+
+msgid "Rada nadzorcza"
+msgstr "Наблюдательный совет"
+
+msgid "doradca podatkowy (certyfikat nr 00443)\n"
+"był członek zarządu Małopolskiej Izby Doradców Podatkowych"
+msgstr "налоговый советник (сертификат № 00443)\n"
+"бывший член правления Малопольской палаты налоговых советников"
+
+msgid "przedsiębiorca\n"
+"prezes zarządu Emka Sp. z o.o."
+msgstr "предприниматель\n"
+"президент правления Emka Sp. z o.o."
+
+msgid "przedsiębiorca\n"
+"członek zarządu Chata Sp. z o.o."
+msgstr "предприниматель\n"
+"член правления Chata Sp. z o.o."
+
+msgid "przedsiębiorca\n"
+"wiceprezes zarządu Office Samurai Sp. z o.o."
+msgstr "предприниматель\n"
+"вице-президент правления Office Samurai Sp. z o.o."
+
+msgid "przedsiębiorca\n"
+"prezes zarządu Printbox Sp. z o.o."
+msgstr "предприниматель\n"
+"президент правления Printbox Sp. z o.o."
+
+msgid "Raporty kwartalne spółki"
+msgstr "Квартальные отчёты общества"
+
+msgid "Raporty EBI/ESPI"
+msgstr "Отчёты EBI/ESPI"
+
+msgid "Animator Rynku"
+msgstr "Маркет-мейкер"
+
+msgid "Autoryzowany Doradca"
+msgstr "Авторизованный советник"
+
+msgid "Pytania i odpowiedzi"
+msgstr "Вопросы и ответы"
+
+msgid "Opinie biegłego rewidenta"
+msgstr "Заключения аудитора"
+
+msgid "Rośniemy"
+msgstr "Мы растём"
+
+msgid "Rozwój Meritoros SA znajduje odzwierciedlenie w systematycznym wzroście skali działalności i przychodów na przestrzeni ostatnich lat."
+msgstr "Развитие Meritoros SA отражается в систематическом росте масштабов деятельности и доходов на протяжении последних лет."
+
+msgid "Sprawozdania finansowe spółki"
+msgstr "Финансовая отчётность общества"
+
+msgid "Sprawozdania z działalności zarządu spółki"
+msgstr "Отчёты о деятельности правления общества"
+
+msgid "Uchwały podejmowane przez Zgromadzenie Akcjonariuszy"
+msgstr "Решения, принятые Общим собранием акционеров"
+
+msgid "Zarząd"
+msgstr "Правление"
+
+msgid "Skontaktuj się z nami i dowiedz się, jak możemy wesprzeć Twoją firmę."
+msgstr "Свяжитесь с нами и узнайте, как мы можем поддержать вашу компанию."
+
+msgid "Dlaczego firmy wybierają nasze\n"
+"rozwiązania księgowe"
+msgstr "Почему компании выбирают наши\n"
+"бухгалтерские решения"
+
+msgid "Pracujemy zgodnie z normą ISO 9001 — systematyczne procesy, kontrola jakości i ciągłe doskonalenie usług."
+msgstr "Мы работаем в соответствии со стандартом ISO 9001 — систематические процессы, контроль качества и постоянное совершенствование услуг."
+
+msgid "Nowoczesne i elastyczne podejście"
+msgstr "Современный и гибкий подход"
+
+msgid "Dopasowujemy narzędzia i zakres współpracy do realnych potrzeb Twojej firmy – bez zbędnej biurokracji."
+msgstr "Мы подбираем инструменты и объём сотрудничества под реальные потребности вашей компании — без лишней бюрократии."
+
+msgid "Zespołowy model pracy gwarantuje ciągłość obsługi — urlopy i rotacja pracowników nie wpływają na jakość Twojej księgowości."
+msgstr "Командная модель работы гарантирует непрерывность обслуживания — отпуска и ротация сотрудников не влияют на качество вашей бухгалтерии."
+
+msgid "Dane klientów chronimy zgodnie z normą ISO 27001 — wdrożone procedury, szyfrowanie i regularne audyty bezpieczeństwa."
+msgstr "Данные клиентов мы защищаем в соответствии со стандартом ISO 27001 — внедрённые процедуры, шифрование и регулярные аудиты безопасности."
+
+msgid "Rozwiązania księgowe dla firm, które"
+msgstr "Бухгалтерские решения для компаний, которые"
+
+msgid "chcą mieć porządek"
+msgstr "хотят иметь порядок"
+
+msgid "i spokój w biznesie"
+msgstr "и спокойствие в бизнесе"
+
+msgid "Zapewniamy kompleksową obsługę księgową firm o różnej skali działalności. Przejmujemy odpowiedzialność za poprawność, terminowość i ciągłość procesów księgowych, aby nasi klienci mogli skupić się na prowadzeniu i rozwoju biznesu."
+msgstr "Мы предоставляем комплексное бухгалтерское обслуживание компаниям различного масштаба. Берём ответственность за точность, своевременность и непрерывность бухгалтерских процессов, чтобы наши клиенты могли сосредоточиться на ведении и развитии бизнеса."
+
+msgid "Twoja księgowość"
+msgstr "Ваша бухгалтерия"
+
+msgid "w"
+msgstr "в"
+
+msgid "dobrych rękach"
+msgstr "надёжных руках"
+
+msgid "Oferujemy kompleksową obsługę księgową działalności i spółek zarówno w zakresie prowadzenia pełnych ksiąg rachunkowych, jak i uproszczonych form ewidencji. Klienci mogą powierzyć nam całość procesów księgowych lub wybrane obszary wymagające wsparcia."
+msgstr "Мы предлагаем комплексное бухгалтерское обслуживание предпринимателей и компаний как в сфере ведения полных бухгалтерских книг, так и упрощённых форм учёта. Клиенты могут доверить нам все бухгалтерские процессы или отдельные участки, требующие поддержки."
+
+msgid "Zakres współpracy dopasowujemy do skali działalności i stopnia złożoności operacji finansowych."
+msgstr "Объём сотрудничества мы адаптируем к масштабу деятельности и степени сложности финансовых операций."
+
+msgid "Sprawdź jak wygląda współpraca"
+msgstr "Посмотрите, как выглядит сотрудничество"
+
+msgid "Oferta rozwiązań księgowych"
+msgstr "Предложение бухгалтерских решений"
+
+msgid "Obsługujemy firmy na różnych formach rozliczeń zarówno w pełnej księgowości (spółki),\n"
+"jak i w uproszczonych formach ewidencji (np. KPiR)"
+msgstr "Мы обслуживаем компании на различных формах учёта как в полной бухгалтерии (общества),\n"
+"так и в упрощённых формах учёта (напр. книга доходов и расходов)"
+
+msgid "Poniżej pokazujemy przykładowy zakres działań. Jeśli potrzebujesz innej usługi chętnie porozmawiamy."
+msgstr "Ниже мы показываем примерный объём действий. Если вам нужна другая услуга, мы с удовольствием поговорим."
+
+msgid "Sprawdź również rozwiązania kadrowe"
+msgstr "Ознакомьтесь также с кадровыми решениями"
+
+msgid "Prowadzenie ksiąg rachunkowych\n"
+"\n"
+"Obliczanie podatków i składanie deklaracji podatkowych\n"
+"\n"
+"Bieżące rozliczanie wyciągów i kontrolowanie rozrachunków\n"
+"\n"
+"Raportowanie zarządcze i sprawozdawcze\n"
+"\n"
+"Raportowanie do instytucji publicznych\n"
+"\n"
+"Sporządzanie sprawozdań finansowych oraz deklaracji rocznych\n"
+"\n"
+"Reprezentowanie podczas kontroli i czynności sprawdzających\n"
+"\n"
+"Obsługa niestandardowych rozliczeń\n"
+"\n"
+"Asystowanie i wsparcie podczas audytu"
+msgstr "Ведение бухгалтерских книг\n"
+"\n"
+"Исчисление налогов и подача налоговых деклараций\n"
+"\n"
+"Текущее согласование выписок и контроль расчётов\n"
+"\n"
+"Управленческая и финансовая отчётность\n"
+"\n"
+"Отчётность перед государственными учреждениями\n"
+"\n"
+"Составление финансовой отчётности и годовых деклараций\n"
+"\n"
+"Представительство при проверках и ревизионных действиях\n"
+"\n"
+"Обработка нестандартных расчётов\n"
+"\n"
+"Ассистирование и поддержка при аудитах"
+
+msgid "Zakres i częstotliwość raportowania\n"
+"ustalamy indywidualnie z każdym klientem."
+msgstr "Объём и частота отчётности\n"
+"устанавливаются индивидуально с каждым клиентом."
+
+msgid "W zależności od potrzeb przygotowujemy również dodatkowe raporty księgowe, finansowe lub kadrowo-płacowe."
+msgstr "В зависимости от потребностей мы также готовим дополнительные бухгалтерские, финансовые или кадрово-бухгалтерские отчёты."
+
+msgid "Oszacuj wstępny koszt usług księgowych w kilka chwil. Wprowadź podstawowe informacje o swojej działalności, a my przygotujemy orientacyjną wycenę dopasowaną do Twoich potrzeb i skali biznesu."
+msgstr "Оцените предварительную стоимость бухгалтерских услуг за несколько минут. Введите основную информацию о вашей деятельности, и мы подготовим ориентировочную смету, адаптированную к вашим потребностям и масштабу бизнеса."
+
+msgid "Obsługa wielu systemów\n"
+"księgowych"
+msgstr "Поддержка множества\n"
+"бухгалтерских систем"
+
+msgid "Nasze Kompetencje"
+msgstr "Наши компетенции"
+
+msgid "Obszary, w których przejmujemy odpowiedzialność"
+msgstr "Сферы, в которых мы берём ответственность"
+
+msgid "Nasze doświadczenie obejmuje rozliczanie firm o różnorodnych profilach działalności, takich jak CIT Estoński, Fundacje Rodzinne, Spółki ASI, e-commerce, VAT OSS, Intrastat oraz rozliczenia delegacji pracowniczych."
+msgstr "Наш опыт охватывает расчёты компаний с разнообразными профилями деятельности, такими как эстонский CIT, семейные фонды, компании ASI, e-commerce, VAT OSS, Intrastat и расчёты командировок сотрудников."
+
+msgid "Zapytaj o ofertę"
+msgstr "Запросить предложение"
+
+msgid "Skontaktuj się z nami"
+msgstr "Свяжитесь с нами"
+
+msgid "Usługi Rachunkowe"
+msgstr "Бухгалтерские услуги"
+
+msgid "Kompleksowa obsługa księgowa firm o różnej skali działalności."
+msgstr "Комплексное бухгалтерское обслуживание компаний различного масштаба."
+
+msgid "BPO"
+msgstr "BPO"
+
+msgid "Outsourcing wybranych lub pełnych procesów finansowych i administracyjnych dla większych firm."
+msgstr "Аутсорсинг отдельных или полных финансовых и административных процессов для крупных компаний."
+
+msgid "Usługi Kadrowe"
+msgstr "Кадровые услуги"
+
+msgid "Obsługa kadrowo-płacowa dopasowana do potrzeb organizacji."
+msgstr "Кадрово-бухгалтерское обслуживание, адаптированное к потребностям организации."
+
+msgid "Fundacje rodzinne"
+msgstr "Семейные фонды"
+
+msgid "Obsługa rachunkowa fundacji z uwzględnieniem specyfiki regulacyjnej."
+msgstr "Бухгалтерское обслуживание фондов с учётом регуляторной специфики."
+
+msgid "Wsparcie we wdrażaniu narzędzi, automatyzacji i usprawnianiu procesów biznesowych."
+msgstr "Поддержка во внедрении инструментов, автоматизации и оптимизации бизнес-процессов."
+
+msgid "Prowadzenie ksiąg rachunkowych i ewidencji podatkowych (PKPB)"
+msgstr "Ведение бухгалтерских книг и налогового учёта (PKPB)"
+
+msgid "Sporządzanie deklaracji i sprawozdań finansowych (CIT, VAT, PIT)"
+msgstr "Составление финансовых деклараций и отчётности (CIT, VAT, PIT)"
+
+msgid "Przygotowywanie rocznych sprawozdań finansowych i analiz dla klientów"
+msgstr "Подготовка годовой финансовой отчётности и аналитики для клиентов"
+
+msgid "Bezpośredni kontakt z klientami (telefon, e-mail) w sprawach rozliczeń"
+msgstr "Прямой контакт с клиентами (телефон, e-mail) по вопросам расчётов"
+
+msgid "Współpraca z urzędami skarbowymi, instytucjami finansowymi i podmiotami zewnętrznymi, w tym reprezentacja klientów"
+msgstr "Сотрудничество с налоговыми органами, финансовыми учреждениями и внешними субъектами, включая представительство клиентов"
+
+msgid "Minimum 2 lata doświadczenia w samodzielnym prowadzeniu ksiąg rachunkowych w biurze rachunkowym; certyfikat MF mile widziany"
+msgstr "Минимум 2 года опыта самостоятельного ведения бухгалтерских книг в бухгалтерском бюро; сертификат МФ приветствуется"
+
+msgid "Biegła znajomość języka ukraińskiego i rosyjskiego do komunikacji z klientami"
+msgstr "Свободное владение украинским и русским языками для общения с клиентами"
+
+msgid "Doświadczenie w samodzielnym sporządzaniu sprawozdań finansowych"
+msgstr "Опыт самостоятельного составления финансовой отчётности"
+
+msgid "Praktyczna znajomość przepisów rachunkowych, prawa podatkowego i przepisów VAT"
+msgstr "Практическое знание бухгалтерского законодательства, налогового права и норм VAT"
+
+msgid "Biegłość w MS Office (szczególnie Excel) i oprogramowaniu księgowym Comarch Optima"
+msgstr "Уверенное владение MS Office (особенно Excel) и бухгалтерской программой Comarch Optima"
+
+msgid "Skrupulatność i wysokie zdolności organizacyjne"
+msgstr "Скрупулёзность и высокие организационные способности"
+
+msgid "Zdolności analitycznego myślenia"
+msgstr "Способности к аналитическому мышлению"
+
+msgid "Dołącz do\n"
+"naszego zespołu"
+msgstr "Присоединяйся к\n"
+"нашей команде"
+
+msgid "Budujemy uporządkowane procesy i dobrą atmosferę.\n"
+"Jeśli cenisz jasne zasady, rozwój i pracę zespołową – sprawdź,\n"
+"czy mamy ofertę dla Ciebie."
+msgstr "Мы строим упорядоченные процессы и хорошую атмосферу.\n"
+"Если ты ценишь чёткие правила, развитие и командную работу — проверь,\n"
+"есть ли у нас предложение для тебя."
+
+msgid "Aktualne oferty pracy"
+msgstr "Актуальные вакансии"

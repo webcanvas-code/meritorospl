@@ -1,5 +1,5 @@
 <?php
-$title = mer_field('ri_dane_title', 'Wybrane dane finansowe');
+$title = __( mer_field('ri_dane_title', 'Wybrane dane finansowe'), 'meritoros' );
 
 // Próbuj nowego formatu (metaboksa tabelaryczna → JSON)
 $_ri_json = get_post_meta(get_the_ID(), '_ri_dane_table', true);

@@ -1,8 +1,8 @@
 <?php
-$title      = mer_field('media_art_title',     'Maciej Paraszczak dla Pulsu Biznesu');
-$quote      = mer_field('media_art_quote',     'Dla wielu naszych klientów jesteśmy nie tylko biurem rachunkowym, ale partnerem operacyjnym, który realnie usprawnia ich procesy biznesowe – podkreśla z Maciej Paraszczak, prezes zarządu spółki Meritoros.');
-$bold_text  = mer_field('media_art_bold_text', 'Wywiad z Maciejem Paraszczakiem dla Pulsu Biznesu o tym, jak wygląda nowoczesna księgowość w praktyce i dlaczego standard oraz procesy mają dziś kluczowe znaczenie.');
-$btn_text   = mer_field('media_art_btn_text',  'Czytaj więcej');
+$title      = __( mer_field('media_art_title',     'Maciej Paraszczak dla Pulsu Biznesu'), 'meritoros' );
+$quote      = __( mer_field('media_art_quote',     'Dla wielu naszych klientów jesteśmy nie tylko biurem rachunkowym, ale partnerem operacyjnym, który realnie usprawnia ich procesy biznesowe – podkreśla z Maciej Paraszczak, prezes zarządu spółki Meritoros.'), 'meritoros' );
+$bold_text  = __( mer_field('media_art_bold_text', 'Wywiad z Maciejem Paraszczakiem dla Pulsu Biznesu o tym, jak wygląda nowoczesna księgowość w praktyce i dlaczego standard oraz procesy mają dziś kluczowe znaczenie.'), 'meritoros' );
+$btn_text   = __( mer_field('media_art_btn_text',  'Czytaj więcej'), 'meritoros' );
 $btn_url    = mer_field('media_art_btn_url',   '#');
 $photo      = mer_field('media_art_photo',     []);
 $photo_url  = is_array($photo) ? ($photo['url'] ?? '') : '';
