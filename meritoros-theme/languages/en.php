@@ -598,4 +598,8 @@ for larger entities we also analyse other locations.',
     'Pełna księgowość, fundacja rodzinna, compliance' => 'Full accounting, family foundation, compliance',
     'Właściciel grupy produkcyjnej chciał oddzielić majątek prywatny od firmowego poprzez fundację rodzinną. Meritoros poprowadził cały proces prawno-księgowy od podstaw.' => 'The owner of a production group wanted to separate private assets from company assets through a family foundation. Meritoros led the entire legal and accounting process from scratch.',
     'Fundacja rodzinna krok po kroku' => 'Family foundation step by step',
+    'mają obrót roczny <strong>powyżej 3 mln zł</strong>,' => 'have annual turnover <strong>above PLN 3 million</strong>,',
+    'pracują na systemach innych niż <strong>Optima</strong>, np. Enova, Symfonia,' => 'work on systems other than <strong>Optima</strong>, e.g. Enova, Symfonia,',
+    'chcą dalej rozwijać firmę, ale zyskać dostęp do większego zaplecza,' => 'want to continue growing the firm but gain access to greater resources,',
+    'szukają wsparcia <strong>w obszarze technologii</strong>, procesów, HR, marketingu i rozwoju operacyjnego.' => 'are looking for support <strong>in the area of technology</strong>, processes, HR, marketing and operational development.',
 ];

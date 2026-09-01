@@ -597,4 +597,8 @@ w przypadku większych podmiotów analizujemy także inne lokalizacje.' => 'рі
     'Pełna księgowość, fundacja rodzinna, compliance' => 'Повна бухгалтерія, сімейний фонд, комплаєнс',
     'Właściciel grupy produkcyjnej chciał oddzielić majątek prywatny od firmowego poprzez fundację rodzinną. Meritoros poprowadził cały proces prawno-księgowy od podstaw.' => 'Власник виробничої групи хотів відокремити приватне майно від корпоративного через сімейний фонд. Meritoros провів весь юридично-бухгалтерський процес з нуля.',
     'Fundacja rodzinna krok po kroku' => 'Сімейний фонд крок за кроком',
+    'mają obrót roczny <strong>powyżej 3 mln zł</strong>,' => 'мають річний оборот <strong>понад 3 млн злотих</strong>,',
+    'pracują na systemach innych niż <strong>Optima</strong>, np. Enova, Symfonia,' => 'працюють на системах, відмінних від <strong>Optima</strong>, наприклад Enova, Symfonia,',
+    'chcą dalej rozwijać firmę, ale zyskać dostęp do większego zaplecza,' => 'хочуть і далі розвивати компанію, але отримати доступ до більших ресурсів,',
+    'szukają wsparcia <strong>w obszarze technologii</strong>, procesów, HR, marketingu i rozwoju operacyjnego.' => 'шукають підтримки <strong>у сфері технологій</strong>, процесів, HR, маркетингу та операційного розвитку.',
 ];

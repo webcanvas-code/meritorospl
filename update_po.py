@@ -289,6 +289,14 @@ TRANSLATIONS = {
             'In the case of the partnership model',
         'Model partnerski kierujemy przede wszystkim do biur, które:':
             'The partnership model is primarily aimed at firms that:',
+        'mają obrót roczny <strong>powyżej 3 mln zł</strong>,':
+            'have annual turnover <strong>above PLN 3 million</strong>,',
+        'pracują na systemach innych niż <strong>Optima</strong>, np. Enova, Symfonia,':
+            'work on systems other than <strong>Optima</strong>, e.g. Enova, Symfonia,',
+        'chcą dalej rozwijać firmę, ale zyskać dostęp do większego zaplecza,':
+            'want to continue growing the firm but gain access to greater resources,',
+        'szukają wsparcia <strong>w obszarze technologii</strong>, procesów, HR, marketingu i rozwoju operacyjnego.':
+            'are looking for support <strong>in the area of technology</strong>, processes, HR, marketing and operational development.',
         'Co zyskujesz jako Partner Meritoros?':
             'What do you gain as a Meritoros Partner?',
         "dostęp do automatyzacji i robotyzacji procesów\n\nwsparcie w digitalizacji i porządkowaniu operacji\n\ndostęp do wiedzy ekspertów i partnerów merytorycznych\n\nwsparcie HR i rekrutacyjne\n\nwsparcie marketingowe i sprzedażowe,\n\nwewnętrzne standardy jakości i audytu\n\nmożliwość dalszego rozwoju w strukturach większej organizacji":
@@ -688,6 +696,14 @@ TRANSLATIONS = {
             'У випадку партнерської моделі',
         'Model partnerski kierujemy przede wszystkim do biur, które:':
             'Партнерська модель орієнтована перш за все на бюро, які:',
+        'mają obrót roczny <strong>powyżej 3 mln zł</strong>,':
+            'мають річний оборот <strong>понад 3 млн злотих</strong>,',
+        'pracują na systemach innych niż <strong>Optima</strong>, np. Enova, Symfonia,':
+            'працюють на системах, відмінних від <strong>Optima</strong>, наприклад Enova, Symfonia,',
+        'chcą dalej rozwijać firmę, ale zyskać dostęp do większego zaplecza,':
+            'хочуть і далі розвивати компанію, але отримати доступ до більших ресурсів,',
+        'szukają wsparcia <strong>w obszarze technologii</strong>, procesów, HR, marketingu i rozwoju operacyjnego.':
+            'шукають підтримки <strong>у сфері технологій</strong>, процесів, HR, маркетингу та операційного розвитку.',
         'Co zyskujesz jako Partner Meritoros?':
             'Що ви отримуєте як Партнер Meritoros?',
         "dostęp do automatyzacji i robotyzacji procesów\n\nwsparcie w digitalizacji i porządkowaniu operacji\n\ndostęp do wiedzy ekspertów i partnerów merytorycznych\n\nwsparcie HR i rekrutacyjne\n\nwsparcie marketingowe i sprzedażowe,\n\nwewnętrzne standardy jakości i audytu\n\nmożliwość dalszego rozwoju w strukturach większej organizacji":
@@ -1085,6 +1101,14 @@ TRANSLATIONS = {
             'В случае партнёрской модели',
         'Model partnerski kierujemy przede wszystkim do biur, które:':
             'Партнёрская модель ориентирована прежде всего на бюро, которые:',
+        'mają obrót roczny <strong>powyżej 3 mln zł</strong>,':
+            'имеют годовой оборот <strong>свыше 3 млн злотых</strong>,',
+        'pracują na systemach innych niż <strong>Optima</strong>, np. Enova, Symfonia,':
+            'работают на системах, отличных от <strong>Optima</strong>, например Enova, Symfonia,',
+        'chcą dalej rozwijać firmę, ale zyskać dostęp do większego zaplecza,':
+            'хотят продолжать развивать компанию, но получить доступ к большим ресурсам,',
+        'szukają wsparcia <strong>w obszarze technologii</strong>, procesów, HR, marketingu i rozwoju operacyjnego.':
+            'ищут поддержки <strong>в области технологий</strong>, процессов, HR, маркетинга и операционного развития.',
         'Co zyskujesz jako Partner Meritoros?':
             'Что вы получаете как Партнёр Meritoros?',
         "dostęp do automatyzacji i robotyzacji procesów\n\nwsparcie w digitalizacji i porządkowaniu operacji\n\ndostęp do wiedzy ekspertów i partnerów merytorycznych\n\nwsparcie HR i rekrutacyjne\n\nwsparcie marketingowe i sprzedażowe,\n\nwewnętrzne standardy jakości i audytu\n\nmożliwość dalszego rozwoju w strukturach większej organizacji":

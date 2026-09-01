@@ -3,8 +3,8 @@ defined('ABSPATH') || exit;
 
 $label   = __( mer_field('kupimy_part_label',   'W przypadku modelu partnerskiego'), 'meritoros' );
 $heading = __( mer_field('kupimy_part_heading', 'Model partnerski kierujemy przede wszystkim do biur, które:'), 'meritoros' );
-$items   = array_values(array_filter(array_map('trim', preg_split('/(\r?\n){2,}/', mer_field('kupimy_part_items',
-    "mają obrót roczny <strong>powyżej 3 mln zł</strong>,\n\npracują na systemach innych niż <strong>Optima</strong>, np. Enova, Symfonia,\n\nchcą dalej rozwijać firmę, ale zyskać dostęp do większego zaplecza,\n\nszukają wsparcia <strong>w obszarze technologii</strong>, procesów, HR, marketingu i rozwoju operacyjnego.")))));
+$items   = array_values(array_filter(array_map(function($s) { return __($s, 'meritoros'); }, array_map('trim', preg_split('/(\r?\n){2,}/', mer_field('kupimy_part_items',
+    "mają obrót roczny <strong>powyżej 3 mln zł</strong>,\n\npracują na systemach innych niż <strong>Optima</strong>, np. Enova, Symfonia,\n\nchcą dalej rozwijać firmę, ale zyskać dostęp do większego zaplecza,\n\nszukają wsparcia <strong>w obszarze technologii</strong>, procesów, HR, marketingu i rozwoju operacyjnego."))))));
 
 $photo     = mer_field('kupimy_part_photo');
 $photo_url = is_array($photo) ? $photo['url'] : 'https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=900&q=80';
