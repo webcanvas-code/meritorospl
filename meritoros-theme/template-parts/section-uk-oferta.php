@@ -7,8 +7,8 @@ $btn1_url     = mer_field('uk_oferta_btn1_url',    home_url('/kadry-i-place/'));
 $btn2_text    = __( mer_field('uk_oferta_btn2_text',   'Oszacuj wstępną wycenę'), 'meritoros' );
 $btn2_url     = mer_field('uk_oferta_btn2_url',    home_url('/kontakt/'));
 
-$items_raw = __( mer_field('uk_oferta_items', "Prowadzenie ksiąg rachunkowych\n\nObliczanie podatków i składanie deklaracji podatkowych\n\nBieżące rozliczanie wyciągów i kontrolowanie rozrachunków\n\nRaportowanie zarządcze i sprawozdawcze\n\nRaportowanie do instytucji publicznych\n\nSporządzanie sprawozdań finansowych oraz deklaracji rocznych\n\nReprezentowanie podczas kontroli i czynności sprawdzających\n\nObsługa niestandardowych rozliczeń\n\nAsystowanie i wsparcie podczas audytu"), 'meritoros' );
-$items = array_values(array_filter(array_map('trim', preg_split('/(\r?\n){2,}/', $items_raw))));
+$items_raw = mer_field('uk_oferta_items', "Prowadzenie ksiąg rachunkowych\n\nObliczanie podatków i składanie deklaracji podatkowych\n\nBieżące rozliczanie wyciągów i kontrolowanie rozrachunków\n\nRaportowanie zarządcze i sprawozdawcze\n\nRaportowanie do instytucji publicznych\n\nSporządzanie sprawozdań finansowych oraz deklaracji rocznych\n\nReprezentowanie podczas kontroli i czynności sprawdzających\n\nObsługa niestandardowych rozliczeń\n\nAsystowanie i wsparcie podczas audytu");
+$items = array_values(array_filter(array_map(function($s) { return __($s, 'meritoros'); }, array_map('trim', preg_split('/(\r?\n){2,}/', $items_raw)))));
 ?>
 
 <section class="py-8 md:py-14 bg-white relative">

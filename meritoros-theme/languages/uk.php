@@ -391,39 +391,15 @@ expertów' => 'Понад 170
     'Zapewniamy wsparcie w zakresie obsługi kadrowej i naliczania wynagrodzeń. Nasze kompleksowe rozwiązania w obszarze HR i payroll, dedykowane dla dużych przedsiębiorstw, zapewniają nie tylko zgodność z przepisami prawa, ale także optymalizację procesów kadrowych. Współpracujemy zarówno z firmami, które nie posiadają własnego działu HR, jak i z organizacjami potrzebującymi wsparcia przy wybranych procesach.' => 'Ми надаємо підтримку в галузі кадрового обліку та нарахування заробітної плати. Наші комплексні рішення в сфері HR та payroll, призначені для великих підприємств, забезпечують не лише відповідність законодавству, але й оптимізацію кадрових процесів. Ми співпрацюємо як з компаніями без власного відділу HR, так і з організаціями, що потребують підтримки в окремих процесах.',
     'Dlaczego BPO z nami' => 'Чому BPO з нами',
     'Sprawdź rozwiązania kadrowe' => 'Ознайомтесь з кадровими рішеннями',
-    'Prowadzenie dokumentacji kadrowej
-
-Naliczanie wynagrodzeń i świadczeń
-
-Obsługa umów o pracę i umów cywilnoprawnych
-
-Rozliczenia z ZUS i instytucjami publicznymi
-
-Sporządzanie deklaracji podatkowych
-
-Kontrolowanie limitów urlopowych, terminów badań lekarskich, szkoleń BHP oraz wygasających umów
-
-Reprezentowanie podczas kontroli i czynności sprawdzających
-
-Zarządzanie programami PPK i PPE
-
-Platforma pracownicza z dostępem do wniosków urlopowych i dokumentów online' => 'Ведення кадрової документації
-
-Нарахування заробітної плати та пільг
-
-Обробка трудових та цивільно-правових договорів
-
-Розрахунки з ZUS та державними установами
-
-Підготовка податкових декларацій
-
-Контроль лімітів відпусток, термінів медоглядів, охорони праці та закінчення договорів
-
-Представництво під час перевірок та ревізійних дій
-
-Управління програмами PPK та PPE
-
-Платформа для співробітників з доступом до заяв на відпустку та документів онлайн',
+    'Prowadzenie dokumentacji kadrowej' => 'Ведення кадрової документації',
+    'Naliczanie wynagrodzeń i świadczeń' => 'Нарахування заробітної плати та пільг',
+    'Obsługa umów o pracę i umów cywilnoprawnych' => 'Обробка трудових та цивільно-правових договорів',
+    'Rozliczenia z ZUS i instytucjami publicznymi' => 'Розрахунки з ZUS та державними установами',
+    'Sporządzanie deklaracji podatkowych' => 'Підготовка податкових декларацій',
+    'Kontrolowanie limitów urlopowych, terminów badań lekarskich, szkoleń BHP oraz wygasających umów' => 'Контроль лімітів відпусток, термінів медоглядів, охорони праці та закінчення договорів',
+    'Reprezentowanie podczas kontroli i czynności sprawdzających' => 'Представництво під час перевірок та ревізійних дій',
+    'Zarządzanie programami PPK i PPE' => 'Управління програмами PPK та PPE',
+    'Platforma pracownicza z dostępem do wniosków urlopowych i dokumentów online' => 'Платформа для співробітників з доступом до заяв на відпустку та документів онлайн',
     'Outsourcing księgowości pozwala na znaczne obniżenie kosztów operacyjnych. Możemy dostarczyć wysokiej jakości usługi księgowe, eliminując potrzebę zatrudniania wewnętrznych ekspertów. Dzięki nowoczesnej technologii i dużej skali obsługiwanych przez nas operacji oszczędności sięgają 20-30% lub więcej w porównaniu do prowadzenia księgowości wewnętrznie. Dzięki digitalizacji obiegu dokumentów oraz sprawnym procesom możemy dostarczać raporty w czasie rzeczywistym.' => 'Аутсорсинг бухгалтерії дозволяє значно знизити операційні витрати. Ми можемо надавати високоякісні бухгалтерські послуги, виключаючи потребу у найманні внутрішніх фахівців. Завдяки сучасним технологіям і великому масштабу операцій, що ми ведемо, економія сягає 20–30% і більше порівняно з веденням бухгалтерії власними силами. Завдяки оцифруванню документообігу та ефективним процесам ми можемо надавати звіти в режимі реального часу.',
     'Prowadzenie ksiąg rachunkowych
 
@@ -762,27 +738,12 @@ bухгалтерських систем',
     'Prowadzimy księgowość fundacji rodzinnych dla przedsiębiorców, którzy chcą uporządkować kwestie majątku i sukcesji w sposób bezpieczny, transparentny i zgodny z przepisami. Bierzemy na siebie bieżącą obsługę, sprawozdawczość i kontrolę terminów, tak aby fundacja działała stabilnie.' => 'Ми ведемо бухгалтерський облік сімейних фондів для підприємців, які хочуть впорядкувати питання майна та спадкування безпечно, прозоро та відповідно до законодавства. Ми беремо на себе поточне обслуговування, звітність та контроль термінів, щоб фонд працював стабільно.',
     'Poznaj naszą ofertę' => 'Ознайомтеся з нашою пропозицією',
     'Zapewniamy kompleksową obsługę księgową i podatkową, która porządkuje finanse fundacji i daje poczucie bezpieczeństwa jej fundatorom.' => 'Ми надаємо комплексне бухгалтерське та податкове обслуговування, яке впорядковує фінанси фонду та дає відчуття безпеки його засновникам.',
-    'Prowadzenie ksiąg rachunkowych
-
-Rozliczanie i składanie deklaracji podatkowych
-
-Przygotowywanie sprawozdań finansowych
-
-Asystowanie podczas badania sprawozdania finansowego oraz kontroli urzędów
-
-Raportowanie na cele zarządcze
-
-Sporządzanie polityki rachunkowości' => 'Ведення бухгалтерських книг
-
-Розрахунок і подання податкових декларацій
-
-Підготовка фінансових звітів
-
-Асистування під час аудиту фінансових звітів та перевірок органів
-
-Звітність для управлінських цілей
-
-Складання облікової політики',
+    'Prowadzenie ksiąg rachunkowych' => 'Ведення бухгалтерських книг',
+    'Rozliczanie i składanie deklaracji podatkowych' => 'Розрахунок і подання податкових декларацій',
+    'Przygotowywanie sprawozdań finansowych' => 'Підготовка фінансових звітів',
+    'Asystowanie podczas badania sprawozdania finansowego oraz kontroli urzędów' => 'Асистування під час аудиту фінансових звітів та перевірок органів',
+    'Raportowanie na cele zarządcze' => 'Звітність для управлінських цілей',
+    'Sporządzanie polityki rachunkowości' => 'Складання облікової політики',
     'Maciej Paraszczak dla Pulsu Biznesu' => 'Мачей Парасщак для Puls Biznesu',
     'Dla wielu naszych klientów jesteśmy nie tylko biurem rachunkowym, ale partnerem operacyjnym, który realnie usprawnia ich procesy biznesowe – podkreśla z Maciej Paraszczak, prezes zarządu spółki Meritoros.' => 'Для багатьох наших клієнтів ми є не просто бухгалтерським бюро, а операційним партнером, який реально покращує їхні бізнес-процеси — підкреслює Мачей Парасщак, президент правління Meritoros.',
     'Wywiad z Maciejem Paraszczakiem dla Pulsu Biznesu o tym, jak wygląda nowoczesna księgowość w praktyce i dlaczego standard oraz procesy mają dziś kluczowe znaczenie.' => 'Інтерв’ю з Мачеєм Парасщаком для Puls Biznesu про те, як виглядає сучасна бухгалтерія на практиці і чому стандарти та процеси мають сьогодні ключове значення.',
@@ -861,39 +822,13 @@ jak i w uproszczonych formach ewidencji (np. KPiR)' => 'Ми обслугову�
 так і в спрощених формах обліку (напр. книга доходів і витрат)',
     'Poniżej pokazujemy przykładowy zakres działań. Jeśli potrzebujesz innej usługi chętnie porozmawiamy.' => 'Нижче ми показуємо приблизний обсяг дій. Якщо вам потрібна інша послуга, ми з радістю поговоримо.',
     'Sprawdź również rozwiązania kadrowe' => 'Перегляньте також кадрові рішення',
-    'Prowadzenie ksiąg rachunkowych
-
-Obliczanie podatków i składanie deklaracji podatkowych
-
-Bieżące rozliczanie wyciągów i kontrolowanie rozrachunków
-
-Raportowanie zarządcze i sprawozdawcze
-
-Raportowanie do instytucji publicznych
-
-Sporządzanie sprawozdań finansowych oraz deklaracji rocznych
-
-Reprezentowanie podczas kontroli i czynności sprawdzających
-
-Obsługa niestandardowych rozliczeń
-
-Asystowanie i wsparcie podczas audytu' => 'Ведення бухгалтерських книг
-
-Обчислення податків та подання податкових декларацій
-
-Поточне узгодження виписок та контроль розрахунків
-
-Управлінська та фінансова звітність
-
-Звітність перед державними установами
-
-Складання фінансових звітів та річних декларацій
-
-Представництво під час перевірок та ревізійних дій
-
-Обробка нестандартних розрахунків
-
-Допомога та підтримка під час аудиту',
+    'Obliczanie podatków i składanie deklaracji podatkowych' => 'Обчислення податків та подання податкових декларацій',
+    'Bieżące rozliczanie wyciągów i kontrolowanie rozrachunków' => 'Поточне узгодження виписок та контроль розрахунків',
+    'Raportowanie zarządcze i sprawozdawcze' => 'Управлінська та фінансова звітність',
+    'Raportowanie do instytucji publicznych' => 'Звітність перед державними установами',
+    'Sporządzanie sprawozdań finansowych oraz deklaracji rocznych' => 'Складання фінансових звітів та річних декларацій',
+    'Obsługa niestandardowych rozliczeń' => 'Обробка нестандартних розрахунків',
+    'Asystowanie i wsparcie podczas audytu' => 'Допомога та підтримка під час аудиту',
     'Zakres i częstotliwość raportowania
 ustalamy indywidualnie z każdym klientem.' => 'Обсяг і частота звітності
 встановлюються індивідуально з кожним клієнтом.',

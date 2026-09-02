@@ -391,39 +391,15 @@ experts',
     'Zapewniamy wsparcie w zakresie obsługi kadrowej i naliczania wynagrodzeń. Nasze kompleksowe rozwiązania w obszarze HR i payroll, dedykowane dla dużych przedsiębiorstw, zapewniają nie tylko zgodność z przepisami prawa, ale także optymalizację procesów kadrowych. Współpracujemy zarówno z firmami, które nie posiadają własnego działu HR, jak i z organizacjami potrzebującymi wsparcia przy wybranych procesach.' => 'We provide support in HR administration and payroll calculation. Our comprehensive HR and payroll solutions, dedicated to large enterprises, ensure not only compliance with legal regulations but also optimisation of HR processes. We work both with companies without their own HR department and with organisations needing support with selected processes.',
     'Dlaczego BPO z nami' => 'Why BPO with us',
     'Sprawdź rozwiązania kadrowe' => 'Explore HR solutions',
-    'Prowadzenie dokumentacji kadrowej
-
-Naliczanie wynagrodzeń i świadczeń
-
-Obsługa umów o pracę i umów cywilnoprawnych
-
-Rozliczenia z ZUS i instytucjami publicznymi
-
-Sporządzanie deklaracji podatkowych
-
-Kontrolowanie limitów urlopowych, terminów badań lekarskich, szkoleń BHP oraz wygasających umów
-
-Reprezentowanie podczas kontroli i czynności sprawdzających
-
-Zarządzanie programami PPK i PPE
-
-Platforma pracownicza z dostępem do wniosków urlopowych i dokumentów online' => 'Maintaining HR documentation
-
-Payroll and benefit calculation
-
-Handling employment contracts and civil law agreements
-
-Settlements with ZUS and public institutions
-
-Preparing tax declarations
-
-Monitoring leave limits, medical examination deadlines, H&S training and expiring contracts
-
-Representation during inspections and audit procedures
-
-Managing PPK and PPE schemes
-
-Employee platform with access to leave requests and documents online',
+    'Prowadzenie dokumentacji kadrowej' => 'Maintaining HR documentation',
+    'Naliczanie wynagrodzeń i świadczeń' => 'Payroll and benefit calculation',
+    'Obsługa umów o pracę i umów cywilnoprawnych' => 'Handling employment contracts and civil law agreements',
+    'Rozliczenia z ZUS i instytucjami publicznymi' => 'Settlements with ZUS and public institutions',
+    'Sporządzanie deklaracji podatkowych' => 'Preparing tax declarations',
+    'Kontrolowanie limitów urlopowych, terminów badań lekarskich, szkoleń BHP oraz wygasających umów' => 'Monitoring leave limits, medical examination deadlines, H&S training and expiring contracts',
+    'Reprezentowanie podczas kontroli i czynności sprawdzających' => 'Representation during inspections and audit procedures',
+    'Zarządzanie programami PPK i PPE' => 'Managing PPK and PPE schemes',
+    'Platforma pracownicza z dostępem do wniosków urlopowych i dokumentów online' => 'Employee platform with access to leave requests and documents online',
     'Outsourcing księgowości pozwala na znaczne obniżenie kosztów operacyjnych. Możemy dostarczyć wysokiej jakości usługi księgowe, eliminując potrzebę zatrudniania wewnętrznych ekspertów. Dzięki nowoczesnej technologii i dużej skali obsługiwanych przez nas operacji oszczędności sięgają 20-30% lub więcej w porównaniu do prowadzenia księgowości wewnętrznie. Dzięki digitalizacji obiegu dokumentów oraz sprawnym procesom możemy dostarczać raporty w czasie rzeczywistym.' => 'Accounting outsourcing enables significant reduction of operational costs. We can deliver high-quality accounting services, eliminating the need to hire internal experts. Thanks to modern technology and the large scale of operations we handle, savings reach 20–30% or more compared to in-house accounting. Through digitisation of document workflow and efficient processes, we can deliver reports in real time.',
     'Prowadzenie ksiąg rachunkowych
 
@@ -763,27 +739,12 @@ accounting systems',
     'Prowadzimy księgowość fundacji rodzinnych dla przedsiębiorców, którzy chcą uporządkować kwestie majątku i sukcesji w sposób bezpieczny, transparentny i zgodny z przepisami. Bierzemy na siebie bieżącą obsługę, sprawozdawczość i kontrolę terminów, tak aby fundacja działała stabilnie.' => 'We run the accounting of family foundations for entrepreneurs who want to organise matters of property and succession in a safe, transparent and compliant manner. We take on the ongoing service, reporting and deadline monitoring so that the foundation operates stably.',
     'Poznaj naszą ofertę' => 'See our offer',
     'Zapewniamy kompleksową obsługę księgową i podatkową, która porządkuje finanse fundacji i daje poczucie bezpieczeństwa jej fundatorom.' => 'We provide comprehensive accounting and tax services that bring order to the foundation\'s finances and give its founders a sense of security.',
-    'Prowadzenie ksiąg rachunkowych
-
-Rozliczanie i składanie deklaracji podatkowych
-
-Przygotowywanie sprawozdań finansowych
-
-Asystowanie podczas badania sprawozdania finansowego oraz kontroli urzędów
-
-Raportowanie na cele zarządcze
-
-Sporządzanie polityki rachunkowości' => 'Maintaining accounting books
-
-Filing and submitting tax declarations
-
-Preparing financial statements
-
-Assisting during financial statement audits and authority inspections
-
-Management reporting
-
-Drafting accounting policies',
+    'Prowadzenie ksiąg rachunkowych' => 'Maintaining accounting books',
+    'Rozliczanie i składanie deklaracji podatkowych' => 'Filing and submitting tax declarations',
+    'Przygotowywanie sprawozdań finansowych' => 'Preparing financial statements',
+    'Asystowanie podczas badania sprawozdania finansowego oraz kontroli urzędów' => 'Assisting during financial statement audits and authority inspections',
+    'Raportowanie na cele zarządcze' => 'Management reporting',
+    'Sporządzanie polityki rachunkowości' => 'Drafting accounting policies',
     'Maciej Paraszczak dla Pulsu Biznesu' => 'Maciej Paraszczak for Puls Biznesu',
     'Dla wielu naszych klientów jesteśmy nie tylko biurem rachunkowym, ale partnerem operacyjnym, który realnie usprawnia ich procesy biznesowe – podkreśla z Maciej Paraszczak, prezes zarządu spółki Meritoros.' => 'For many of our clients we are not just an accounting firm, but an operational partner that genuinely improves their business processes — says Maciej Paraszczak, CEO of Meritoros.',
     'Wywiad z Maciejem Paraszczakiem dla Pulsu Biznesu o tym, jak wygląda nowoczesna księgowość w praktyce i dlaczego standard oraz procesy mają dziś kluczowe znaczenie.' => 'An interview with Maciej Paraszczak for Puls Biznesu on what modern accounting looks like in practice and why standards and processes are of key importance today.',
@@ -862,39 +823,13 @@ jak i w uproszczonych formach ewidencji (np. KPiR)' => 'We serve companies on va
 as well as simplified record forms (e.g. revenue and expense ledger)',
     'Poniżej pokazujemy przykładowy zakres działań. Jeśli potrzebujesz innej usługi chętnie porozmawiamy.' => 'Below we show an example scope of activities. If you need a different service, we will be happy to talk.',
     'Sprawdź również rozwiązania kadrowe' => 'Also check our HR solutions',
-    'Prowadzenie ksiąg rachunkowych
-
-Obliczanie podatków i składanie deklaracji podatkowych
-
-Bieżące rozliczanie wyciągów i kontrolowanie rozrachunków
-
-Raportowanie zarządcze i sprawozdawcze
-
-Raportowanie do instytucji publicznych
-
-Sporządzanie sprawozdań finansowych oraz deklaracji rocznych
-
-Reprezentowanie podczas kontroli i czynności sprawdzających
-
-Obsługa niestandardowych rozliczeń
-
-Asystowanie i wsparcie podczas audytu' => 'Maintaining accounting books
-
-Calculating taxes and submitting tax declarations
-
-Reconciling account statements and monitoring settlements
-
-Management and financial reporting
-
-Reporting to public institutions
-
-Preparing financial statements and annual declarations
-
-Representation during inspections and audit procedures
-
-Handling non-standard settlements
-
-Assisting and supporting during audits',
+    'Obliczanie podatków i składanie deklaracji podatkowych' => 'Calculating taxes and filing tax returns',
+    'Bieżące rozliczanie wyciągów i kontrolowanie rozrachunków' => 'Ongoing reconciliation of bank statements and settlement control',
+    'Raportowanie zarządcze i sprawozdawcze' => 'Management and financial reporting',
+    'Raportowanie do instytucji publicznych' => 'Reporting to public institutions',
+    'Sporządzanie sprawozdań finansowych oraz deklaracji rocznych' => 'Preparing financial statements and annual declarations',
+    'Obsługa niestandardowych rozliczeń' => 'Handling non-standard settlements',
+    'Asystowanie i wsparcie podczas audytu' => 'Assisting and supporting during audits',
     'Zakres i częstotliwość raportowania
 ustalamy indywidualnie z każdym klientem.' => 'The scope and frequency of reporting
 is agreed individually with each client.',
