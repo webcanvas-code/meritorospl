@@ -447,6 +447,7 @@ Dopasowujemy zakres wsparcia do realnej sytuacji Twojej firmy.' => 'Вы мож�
     'Outsourcing wybranych
 procesów' => 'Аутсорсинг отдельных
 процессов',
+    'Outsourcing wybranych procesów' => 'Аутсорсинг отдельных процессов',
     'Wspieramy wybrane obszary, które wymagają uporządkowania lub odciążenia zespołu np. same płace, obsługę dokumentacji, rozliczenia z ZUS czy raportowanie. Ustalamy standard i harmonogram działania, a zakres współpracy możesz elastycznie rozszerzać.' => 'Мы поддерживаем отдельные участки, требующие упорядочивания или разгрузки команды — например, только заработная плата, управление документацией, расчёты с ZUS или отчётность. Мы устанавливаем стандарт и график работы, а объём сотрудничества можно гибко расширять.',
     'Przejmujemy konkretne procesy i dowozimy je w ustalonym standardzie i harmonogramie. To rozwiązanie dla firm, które chcą wzmocnić wewnętrzny dział finansów bez rozbudowy etatów.' => 'Мы берём на себя конкретные процессы и выполняем их в согласованном стандарте и графике. Это решение для компаний, которые хотят укрепить внутренний финансовый отдел без расширения штата.',
     'Zobacz' => 'Смотреть',
@@ -724,6 +725,7 @@ podejście' => 'Современный и гибкий
     'Zakres raportowania ustalamy
 indywidualnie z każdym klientem.' => 'Объём отчётности устанавливаем
 индивидуально с каждым клиентом.',
+    'Zakres raportowania ustalamy indywidualnie z każdym klientem.' => 'Объём отчётности устанавливаем индивидуально с каждым клиентом.',
     'zestawienie listy płac' => 'сводная ведомость',
     'paski wynagrodzeń dla pracowników' => 'расчётные листки для сотрудников',
     'potwierdzenia rozliczeń ZUS i US' => 'подтверждения расчётов ZUS и налоговых органов',

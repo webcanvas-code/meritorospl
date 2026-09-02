@@ -447,6 +447,7 @@ We tailor the scope of support to the actual situation of your business.',
     'Outsourcing wybranych
 procesów' => 'Outsourcing of selected
 processes',
+    'Outsourcing wybranych procesów' => 'Outsourcing of selected processes',
     'Wspieramy wybrane obszary, które wymagają uporządkowania lub odciążenia zespołu np. same płace, obsługę dokumentacji, rozliczenia z ZUS czy raportowanie. Ustalamy standard i harmonogram działania, a zakres współpracy możesz elastycznie rozszerzać.' => 'We support selected areas that need organising or take the burden off your team — e.g. payroll alone, documentation management, ZUS settlements or reporting. We set the standard and schedule, and the scope of cooperation can be flexibly expanded.',
     'Przejmujemy konkretne procesy i dowozimy je w ustalonym standardzie i harmonogramie. To rozwiązanie dla firm, które chcą wzmocnić wewnętrzny dział finansów bez rozbudowy etatów.' => 'We take on specific processes and deliver them to an agreed standard and schedule. This is a solution for companies that want to strengthen their internal finance department without expanding headcount.',
     'Zobacz' => 'See',
@@ -725,6 +726,7 @@ approach',
     'Zakres raportowania ustalamy
 indywidualnie z każdym klientem.' => 'The scope of reporting is agreed
 individually with each client.',
+    'Zakres raportowania ustalamy indywidualnie z każdym klientem.' => 'The scope of reporting is agreed individually with each client.',
     'zestawienie listy płac' => 'payroll summary',
     'paski wynagrodzeń dla pracowników' => 'payslips for employees',
     'potwierdzenia rozliczeń ZUS i US' => 'ZUS and tax authority settlement confirmations',
