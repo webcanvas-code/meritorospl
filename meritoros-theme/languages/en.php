@@ -435,15 +435,21 @@ Handling non-standard settlements, including VAT OSS, Estonian CIT, SEZ, margin 
 
 Assisting and supporting during financial statement audits',
     'Model współpracy' => 'Cooperation model',
+    'Możesz powierzyć nam całość procesów kadrowych lub wybrane obszary wymagające uporządkowania.
+Dopasowujemy zakres wsparcia do realnej sytuacji Twojej firmy.' => 'You can entrust us with all HR processes or selected areas that need organising.
+We tailor the scope of support to the actual situation of your company.',
     'Możesz powierzyć nam całość procesów księgowych lub wybrane obszary wymagające uporządkowania.
 Dopasowujemy zakres wsparcia do realnej sytuacji Twojej firmy.' => 'You can entrust us with all accounting processes or selected areas that need organising.
 We tailor the scope of support to the actual situation of your business.',
     'Kompleksowa obsługa' => 'Comprehensive service',
+    'Przejmujemy pełną obsługę kadr i płac: dokumentację pracowniczą, naliczanie wynagrodzeń oraz rozliczenia i zgłoszenia do instytucji (m.in. ZUS). Pracujesz z dedykowanym zespołem i masz pewność terminowości oraz zgodności z przepisami.' => 'We take full responsibility for HR and payroll: employee documentation, payroll calculation, and settlements and submissions to public institutions (including ZUS). You work with a dedicated team with confidence in timeliness and regulatory compliance.',
     'Obsługujemy proces end-to-end: od bieżącej ewidencji po zamknięcie miesiąca i raporty. Pracujesz z zespołem, który zapewnia zastępowalność i stały standard.' => 'We manage the process end-to-end: from day-to-day bookkeeping to month-end closing and reports. You work with a team that ensures substitutability and consistent standards.',
     'Outsourcing wybranych
 procesów' => 'Outsourcing of selected
 processes',
+    'Wspieramy wybrane obszary, które wymagają uporządkowania lub odciążenia zespołu np. same płace, obsługę dokumentacji, rozliczenia z ZUS czy raportowanie. Ustalamy standard i harmonogram działania, a zakres współpracy możesz elastycznie rozszerzać.' => 'We support selected areas that need organising or take the burden off your team — e.g. payroll alone, documentation management, ZUS settlements or reporting. We set the standard and schedule, and the scope of cooperation can be flexibly expanded.',
     'Przejmujemy konkretne procesy i dowozimy je w ustalonym standardzie i harmonogramie. To rozwiązanie dla firm, które chcą wzmocnić wewnętrzny dział finansów bez rozbudowy etatów.' => 'We take on specific processes and deliver them to an agreed standard and schedule. This is a solution for companies that want to strengthen their internal finance department without expanding headcount.',
+    'Zobacz' => 'See',
     'Jak wygląda bieżąca współpraca' => 'How does ongoing cooperation work',
     'Indywidualna organizacja pracy' => 'Individual work organisation',
     'W zależności od potrzeb możemy pracować:' => 'Depending on needs, we can work:',

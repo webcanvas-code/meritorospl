@@ -435,15 +435,21 @@ Asystowanie i wsparcie podczas audytu sprawozdania finansowego' => 'Веденн
 
 Допомога та підтримка під час аудиту фінансових звітів',
     'Model współpracy' => 'Модель співпраці',
+    'Możesz powierzyć nam całość procesów kadrowych lub wybrane obszary wymagające uporządkowania.
+Dopasowujemy zakres wsparcia do realnej sytuacji Twojej firmy.' => 'Ви можете довірити нам усі кадрові процеси або окремі ділянки, що потребують впорядкування.
+Ми адаптуємо обсяг підтримки до реальної ситуації у вашій компанії.',
     'Możesz powierzyć nam całość procesów księgowych lub wybrane obszary wymagające uporządkowania.
 Dopasowujemy zakres wsparcia do realnej sytuacji Twojej firmy.' => 'Ви можете довірити нам усі бухгалтерські процеси або окремі ділянки, що потребують впорядкування.
 Ми адаптуємо обсяг підтримки до реальної ситуації у вашій компанії.',
     'Kompleksowa obsługa' => 'Комплексне обслуговування',
+    'Przejmujemy pełną obsługę kadr i płac: dokumentację pracowniczą, naliczanie wynagrodzeń oraz rozliczenia i zgłoszenia do instytucji (m.in. ZUS). Pracujesz z dedykowanym zespołem i masz pewność terminowości oraz zgodności z przepisami.' => 'Ми беремо на себе повне кадрове та payroll обслуговування: кадрову документацію, нарахування заробітної плати та розрахунки і подання до державних установ (зокрема ZUS). Ви працюєте з виділеною командою та маєте впевненість у своєчасності й відповідності вимогам.',
     'Obsługujemy proces end-to-end: od bieżącej ewidencji po zamknięcie miesiąca i raporty. Pracujesz z zespołem, który zapewnia zastępowalność i stały standard.' => 'Ми ведемо процес від початку до кінця: від поточного обліку до закриття місяця та звітів. Ви працюєте з командою, яка забезпечує взаємозамінність та постійний стандарт.',
     'Outsourcing wybranych
 procesów' => 'Аутсорсинг окремих
 процесів',
+    'Wspieramy wybrane obszary, które wymagają uporządkowania lub odciążenia zespołu np. same płace, obsługę dokumentacji, rozliczenia z ZUS czy raportowanie. Ustalamy standard i harmonogram działania, a zakres współpracy możesz elastycznie rozszerzać.' => 'Ми підтримуємо окремі ділянки, що потребують впорядкування або розвантаження команди — наприклад, лише заробітна плата, управління документацією, розрахунки з ZUS чи звітність. Ми встановлюємо стандарт і графік роботи, а обсяг співпраці можна гнучко розширювати.',
     'Przejmujemy konkretne procesy i dowozimy je w ustalonym standardzie i harmonogramie. To rozwiązanie dla firm, które chcą wzmocnić wewnętrzny dział finansów bez rozbudowy etatów.' => 'Ми беремо на себе конкретні процеси і виконуємо їх на погодженому стандарті та графіку. Це рішення для компаній, які хочуть зміцнити внутрішній фінансовий відділ без розширення штату.',
+    'Zobacz' => 'Дивитися',
     'Jak wygląda bieżąca współpraca' => 'Як виглядає поточна співпраця',
     'Indywidualna organizacja pracy' => 'Індивідуальна організація роботи',
     'W zależności od potrzeb możemy pracować:' => 'Залежно від потреб ми можемо працювати:',
