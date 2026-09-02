@@ -15,7 +15,7 @@ $s2_lead      = __( is_array($s2) && !empty($s2['lead'])  ? $s2['lead']  : 'Term
 $s2_items_raw = is_array($s2) && !empty($s2['items']) ? $s2['items'] : "listy płac gotowe z odpowiednim wyprzedzeniem przed dniem wypłaty\nterminowe przelewy składek ZUS i zaliczek PIT";
 
 $s3 = get_field('kp_wsp_step3') ?: ($_orig_id !== $_page_id ? get_field('kp_wsp_step3', $_orig_id) : null);
-$s3_title     = __( is_array($s3) && !empty($s3['title']) ? $s3['title'] : "Zakres raportowania ustalamy\nindywidualnie z każdym klientem.", 'meritoros' );
+$s3_title     = __( str_replace("\r\n", "\n", is_array($s3) && !empty($s3['title']) ? $s3['title'] : "Zakres raportowania ustalamy\nindywidualnie z każdym klientem."), 'meritoros' );
 $s3_lead      = __( is_array($s3) && !empty($s3['lead'])  ? $s3['lead']  : 'W standardzie klient otrzymuje:', 'meritoros' );
 $s3_items_raw = is_array($s3) && !empty($s3['items']) ? $s3['items'] : "zestawienie listy płac\npaski wynagrodzeń dla pracowników\npotwierdzenia rozliczeń ZUS i US";
 $s3_note      = __( is_array($s3) && !empty($s3['note'])  ? $s3['note']  : 'W zależności od potrzeb przygotowujemy również dodatkowe raporty kadrowe, płacowe i zarządcze.', 'meritoros' );
