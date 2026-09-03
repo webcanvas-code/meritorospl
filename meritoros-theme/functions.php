@@ -8,37 +8,58 @@ define('MER_PRIVACY_PDF', get_template_directory_uri() . '/docs/Polityka-prywatn
 define('MER_TERMS_PDF',   get_template_directory_uri() . '/docs/Regulamin_newsletter.pdf');
 
 /* ------------------------------------------------------------------
-   URL-based translations via gettext filter
-   Omija system locale/textdomain WordPress i WPML — działa zawsze
+   URL-based translations — core helper
+   Wykrywa język i zwraca mapę tłumaczeń (niezależnie od gettext/WPML)
 ------------------------------------------------------------------ */
-function mer_gettext_filter(string $translation, string $text, string $domain): string {
-    if ($domain !== 'meritoros') return $translation;
-    static $map = null;
-    if ($map === null) {
-        $map = []; // ustaw wcześnie — zapobiega rekurencji
+function mer_lang(): string {
+    static $lang = null;
+    if ($lang === null) {
         $uri = $_SERVER['REQUEST_URI'] ?? '/';
         preg_match('#^/(en|uk|ru)(/|$)#', $uri, $m);
         $lang = $m[1] ?? '';
-        // Fallback 1: ?lang= query param (WPML tryb query)
         if (!$lang) {
             $ql = $_GET['lang'] ?? '';
             if (in_array($ql, ['en', 'uk', 'ru'], true)) $lang = $ql;
         }
-        // Fallback 2: stała WPML ICL_LANGUAGE_CODE
         if (!$lang && defined('ICL_LANGUAGE_CODE') && in_array(ICL_LANGUAGE_CODE, ['en', 'uk', 'ru'], true)) {
             $lang = ICL_LANGUAGE_CODE;
         }
-        if ($lang && $lang !== 'pl') {
+        if (!$lang) $lang = 'pl';
+    }
+    return $lang;
+}
+
+function mer_lang_map(): array {
+    static $map = null;
+    if ($map === null) {
+        $lang = mer_lang();
+        if ($lang !== 'pl') {
             $file = get_template_directory() . '/languages/' . $lang . '.php';
-            if (file_exists($file)) {
-                $loaded = include $file;
-                if (is_array($loaded)) $map = $loaded;
-            }
+            $loaded = file_exists($file) ? (include $file) : [];
+            $map = is_array($loaded) ? $loaded : [];
+        } else {
+            $map = [];
         }
     }
+    return $map;
+}
+
+/* mer_tr() — tłumaczenie bezpośrednie, omija filtr gettext/WPML */
+function mer_tr(string $text): string {
+    $map = mer_lang_map();
+    return $map[$text] ?? $text;
+}
+
+/* Filtr gettext — dla pozostałych sekcji które używają __() */
+function mer_gettext_filter(string $translation, string $text, string $domain): string {
+    if ($domain !== 'meritoros') return $translation;
+    $map = mer_lang_map();
     return $map[$text] ?? $translation;
 }
-add_filter('gettext', 'mer_gettext_filter', 5, 3);
+add_filter('gettext', 'mer_gettext_filter', 999, 3);
+
+/* Pre-inicjalizacja mapy po init WPML (WPML ustawia ICL_LANGUAGE_CODE na priority 1) */
+add_action('init', 'mer_lang_map', 5);
 
 /* ------------------------------------------------------------------
    Theme Setup

@@ -677,6 +677,7 @@ Bytom
     'Co zyskujesz, gdy księgowość
 fundacji jest poukładana' => 'What you gain when the foundation\'s
 accounting is in order',
+    'Co zyskujesz, gdy księgowość fundacji jest poukładana' => 'What you gain when the foundation\'s accounting is in order',
     'Bezpieczne zarządzanie
 majątkiem' => 'Safe asset
 management',

@@ -676,6 +676,7 @@ Bytom
     'Co zyskujesz, gdy księgowość
 fundacji jest poukładana' => 'Что вы получаете, когда бухгалтерия
 фонда упорядочена',
+    'Co zyskujesz, gdy księgowość fundacji jest poukładana' => 'Что вы получаете, когда бухгалтерия фонда упорядочена',
     'Bezpieczne zarządzanie
 majątkiem' => 'Безопасное управление
 имуществом',
