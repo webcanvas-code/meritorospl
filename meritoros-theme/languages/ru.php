@@ -274,6 +274,7 @@ i jasne zasady' => 'Стабильная занятость
     'Bezpieczeństwo
 i compliance' => 'Безопасность
 и соответствие требованиям',
+    'Bezpieczeństwo i compliance' => 'Безопасность и соответствие требованиям',
     'Blog' => 'Блог',
     'Błąd połączenia. Spróbuj ponownie.' => 'Ошибка соединения. Попробуйте ещё раз.',
     'Certyfikat' => 'Сертификат',

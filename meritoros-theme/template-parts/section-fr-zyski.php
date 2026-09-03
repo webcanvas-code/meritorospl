@@ -1,13 +1,13 @@
 <?php
 $_page_id = get_the_ID();
 
-$title = __( mer_field('fr_zysk_title', "Co zyskujesz, gdy księgowość\nfundacji jest poukładana"), 'meritoros' );
+$title = __( str_replace("\r\n", "\n", mer_field('fr_zysk_title', "Co zyskujesz, gdy księgowość\nfundacji jest poukładana")), 'meritoros' );
 
 $card_defaults = [
-    ['icon' => 'shield-check',   'title' => __("Bezpieczne zarządzanie\nmajątkiem",  'meritoros'), 'text' => __('Porządek w danych i dokumentach, jasna sprawozdawczość i kontrola nad obowiązkami.',                                        'meritoros')],
-    ['icon' => 'clipboard-list', 'title' => __("Sukcesja na trwałych\nregułach",     'meritoros'), 'text' => __('Przejrzyste zasady i przewidywalność – tak, aby rozwiązanie działało długoterminowo.',                                     'meritoros')],
-    ['icon' => 'calendar-check', 'title' => __("Spokój w kwestiach\nformalnych",     'meritoros'), 'text' => __('Dopilnujemy terminów i obowiązków sprawozdawczych, żeby nic „nie wyskakiwało" w ostatniej chwili.',                        'meritoros')],
-    ['icon' => 'badge-check',    'title' => __("Mniej ryzyk,\nmniej poprawek",       'meritoros'), 'text' => __('Praca procesowa, weryfikacja danych i standardy, które ograniczają błędy.',                                              'meritoros')],
+    ['icon' => 'shield-check',   'title' => "Bezpieczne zarządzanie\nmajątkiem",  'text' => 'Porządek w danych i dokumentach, jasna sprawozdawczość i kontrola nad obowiązkami.'],
+    ['icon' => 'clipboard-list', 'title' => "Sukcesja na trwałych\nregułach",     'text' => 'Przejrzyste zasady i przewidywalność – tak, aby rozwiązanie działało długoterminowo.'],
+    ['icon' => 'calendar-check', 'title' => "Spokój w kwestiach\nformalnych",     'text' => 'Dopilnujemy terminów i obowiązków sprawozdawczych, żeby nic „nie wyskakiwało" w ostatniej chwili.'],
+    ['icon' => 'badge-check',    'title' => "Mniej ryzyk,\nmniej poprawek",       'text' => 'Praca procesowa, weryfikacja danych i standardy, które ograniczają błędy.'],
 ];
 
 $cards = [];
@@ -16,8 +16,8 @@ for ($i = 1; $i <= 4; $i++) {
     $d = $card_defaults[$i - 1];
     $cards[] = [
         'icon'  => is_array($g) && !empty($g['icon'])  ? $g['icon']  : $d['icon'],
-        'title' => is_array($g) && !empty($g['title']) ? __($g['title'], 'meritoros') : $d['title'],
-        'text'  => is_array($g) && !empty($g['text'])  ? __($g['text'],  'meritoros') : $d['text'],
+        'title' => __( str_replace("\r\n", "\n", is_array($g) && !empty($g['title']) ? $g['title'] : $d['title']), 'meritoros' ),
+        'text'  => __( is_array($g) && !empty($g['text'])  ? $g['text']  : $d['text'],  'meritoros' ),
     ];
 }
 ?>

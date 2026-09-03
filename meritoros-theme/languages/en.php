@@ -274,6 +274,7 @@ and clear rules',
     'Bezpieczeństwo
 i compliance' => 'Security
 and compliance',
+    'Bezpieczeństwo i compliance' => 'Security and compliance',
     'Blog' => 'Blog',
     'Błąd połączenia. Spróbuj ponownie.' => 'Connection error. Please try again.',
     'Certyfikat' => 'Certificate',
