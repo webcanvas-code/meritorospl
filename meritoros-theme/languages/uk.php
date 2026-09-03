@@ -676,21 +676,25 @@ Bytom
     'Co zyskujesz, gdy księgowość
 fundacji jest poukładana' => 'Що ви отримуєте, коли бухгалтерія
 фонду впорядкована',
-    'Bezpieczne zarządzanie
-majątkiem' => 'Безпечне управління
-майном',
-    'Porządek w danych i dokumentach, jasna sprawozdawczość i kontrola nad obowiązkami.' => 'Порядок у даних і документах, чітка звітність та контроль над зобов’язаннями.',
-    'Sukcesja na trwałych
-regułach' => 'Спадкування на стійких
-засадах',
-    'Przejrzyste zasady i przewidywalność – tak, aby rozwiązanie działało długoterminowo.' => 'Прозорі правила та передбачуваність — щоб рішення працювало в довгостроковій перспективі.',
-    'Spokój w kwestiach
-formalnych' => 'Спокій у формальних
-питаннях',
-    'Dopilnujemy terminów i obowiązków sprawozdawczych, żeby nic „nie wyskakiwało" w ostatniej chwili.' => 'Ми подбаємо про терміни та звітні зобов’язання, щоб ніщо «не виринало» в останній момент.',
-    'Mniej ryzyk,
-mniej poprawek' => 'Менше ризиків,
-менше виправлень',
+    ‘Bezpieczne zarządzanie
+majątkiem’ => ‘Безпечне управління
+майном’,
+    ‘Bezpieczne zarządzanie majątkiem’ => ‘Безпечне управління майном’,
+    ‘Porządek w danych i dokumentach, jasna sprawozdawczość i kontrola nad obowiązkami.’ => ‘Порядок у даних і документах, чітка звітність та контроль над зобов’язаннями.’,
+    ‘Sukcesja na trwałych
+regułach’ => ‘Спадкування на стійких
+засадах’,
+    ‘Sukcesja na trwałych regułach’ => ‘Спадкування на стійких засадах’,
+    ‘Przejrzyste zasady i przewidywalność – tak, aby rozwiązanie działało długoterminowo.’ => ‘Прозорі правила та передбачуваність — щоб рішення працювало в довгостроковій перспективі.’,
+    ‘Spokój w kwestiach
+formalnych’ => ‘Спокій у формальних
+питаннях’,
+    ‘Spokój w kwestiach formalnych’ => ‘Спокій у формальних питаннях’,
+    ‘Dopilnujemy terminów i obowiązków sprawozdawczych, żeby nic „nie wyskakiwało" w ostatniej chwili.’ => ‘Ми подбаємо про терміни та звітні зобов’язання, щоб ніщо «не виринало» в останній момент.’,
+    ‘Mniej ryzyk,
+mniej poprawek’ => ‘Менше ризиків,
+менше виправлень’,
+    ‘Mniej ryzyk, mniej poprawek’ => ‘Менше ризиків, менше виправлень’,
     'Praca procesowa, weryfikacja danych i standardy, które ograniczają błędy.' => 'Процесна робота, перевірка даних і стандарти, що обмежують помилки.',
     'Dlaczego firmy wybierają nasze
 rozwiązania kadrowe' => 'Чому компанії обирають наші

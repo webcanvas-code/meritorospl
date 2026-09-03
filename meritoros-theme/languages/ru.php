@@ -679,18 +679,22 @@ fundacji jest poukładana' => 'Что вы получаете, когда бух
     'Bezpieczne zarządzanie
 majątkiem' => 'Безопасное управление
 имуществом',
+    'Bezpieczne zarządzanie majątkiem' => 'Безопасное управление имуществом',
     'Porządek w danych i dokumentach, jasna sprawozdawczość i kontrola nad obowiązkami.' => 'Порядок в данных и документах, чёткая отчётность и контроль над обязательствами.',
     'Sukcesja na trwałych
 regułach' => 'Наследование на прочных
 правилах',
+    'Sukcesja na trwałych regułach' => 'Наследование на прочных правилах',
     'Przejrzyste zasady i przewidywalność – tak, aby rozwiązanie działało długoterminowo.' => 'Прозрачные правила и предсказуемость — чтобы решение работало в долгосрочной перспективе.',
     'Spokój w kwestiach
 formalnych' => 'Спокойствие в формальных
 вопросах',
+    'Spokój w kwestiach formalnych' => 'Спокойствие в формальных вопросах',
     'Dopilnujemy terminów i obowiązków sprawozdawczych, żeby nic „nie wyskakiwało" w ostatniej chwili.' => 'Мы позаботимся о сроках и отчётных обязательствах, чтобы ничто не «выскакивало» в последний момент.',
     'Mniej ryzyk,
 mniej poprawek' => 'Меньше рисков,
 меньше исправлений',
+    'Mniej ryzyk, mniej poprawek' => 'Меньше рисков, меньше исправлений',
     'Praca procesowa, weryfikacja danych i standardy, które ograniczają błędy.' => 'Процессная работа, проверка данных и стандарты, ограничивающие ошибки.',
     'Dlaczego firmy wybierają nasze
 rozwiązania kadrowe' => 'Почему компании выбирают наши

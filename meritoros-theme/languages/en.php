@@ -680,18 +680,22 @@ accounting is in order',
     'Bezpieczne zarządzanie
 majątkiem' => 'Safe asset
 management',
+    'Bezpieczne zarządzanie majątkiem' => 'Safe asset management',
     'Porządek w danych i dokumentach, jasna sprawozdawczość i kontrola nad obowiązkami.' => 'Order in data and documents, clear reporting and control over obligations.',
     'Sukcesja na trwałych
 regułach' => 'Succession on solid
 foundations',
+    'Sukcesja na trwałych regułach' => 'Succession on solid foundations',
     'Przejrzyste zasady i przewidywalność – tak, aby rozwiązanie działało długoterminowo.' => 'Transparent rules and predictability — so that the solution works in the long term.',
     'Spokój w kwestiach
 formalnych' => 'Peace of mind
 in formal matters',
+    'Spokój w kwestiach formalnych' => 'Peace of mind in formal matters',
     'Dopilnujemy terminów i obowiązków sprawozdawczych, żeby nic „nie wyskakiwało" w ostatniej chwili.' => 'We will take care of deadlines and reporting obligations so that nothing "pops up" at the last moment.',
     'Mniej ryzyk,
 mniej poprawek' => 'Fewer risks,
 fewer corrections',
+    'Mniej ryzyk, mniej poprawek' => 'Fewer risks, fewer corrections',
     'Praca procesowa, weryfikacja danych i standardy, które ograniczają błędy.' => 'Process work, data verification and standards that limit errors.',
     'Dlaczego firmy wybierają nasze
 rozwiązania kadrowe' => 'Why companies choose our
