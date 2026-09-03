@@ -15,14 +15,25 @@ function mer_gettext_filter(string $translation, string $text, string $domain): 
     if ($domain !== 'meritoros') return $translation;
     static $map = null;
     if ($map === null) {
+        $map = []; // ustaw wcześnie — zapobiega rekurencji
         $uri = $_SERVER['REQUEST_URI'] ?? '/';
         preg_match('#^/(en|uk|ru)(/|$)#', $uri, $m);
-        $lang = $m[1] ?? 'pl';
-        if ($lang !== 'pl') {
+        $lang = $m[1] ?? '';
+        // Fallback 1: ?lang= query param (WPML tryb query)
+        if (!$lang) {
+            $ql = $_GET['lang'] ?? '';
+            if (in_array($ql, ['en', 'uk', 'ru'], true)) $lang = $ql;
+        }
+        // Fallback 2: stała WPML ICL_LANGUAGE_CODE
+        if (!$lang && defined('ICL_LANGUAGE_CODE') && in_array(ICL_LANGUAGE_CODE, ['en', 'uk', 'ru'], true)) {
+            $lang = ICL_LANGUAGE_CODE;
+        }
+        if ($lang && $lang !== 'pl') {
             $file = get_template_directory() . '/languages/' . $lang . '.php';
-            $map = file_exists($file) ? (include $file) : [];
-        } else {
-            $map = [];
+            if (file_exists($file)) {
+                $loaded = include $file;
+                if (is_array($loaded)) $map = $loaded;
+            }
         }
     }
     return $map[$text] ?? $translation;
