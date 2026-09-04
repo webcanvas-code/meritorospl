@@ -13,33 +13,46 @@ define('MER_TERMS_PDF',   get_template_directory_uri() . '/docs/Regulamin_newsle
 ------------------------------------------------------------------ */
 function mer_lang(): string {
     static $lang = null;
-    if ($lang === null) {
-        $uri = $_SERVER['REQUEST_URI'] ?? '/';
-        preg_match('#^/(en|uk|ru)(/|$)#', $uri, $m);
-        $lang = $m[1] ?? '';
-        if (!$lang) {
-            $ql = $_GET['lang'] ?? '';
-            if (in_array($ql, ['en', 'uk', 'ru'], true)) $lang = $ql;
-        }
-        if (!$lang && defined('ICL_LANGUAGE_CODE') && in_array(ICL_LANGUAGE_CODE, ['en', 'uk', 'ru'], true)) {
-            $lang = ICL_LANGUAGE_CODE;
-        }
-        if (!$lang) $lang = 'pl';
+    if ($lang !== null) return $lang;
+
+    $uri = $_SERVER['REQUEST_URI'] ?? '/';
+    preg_match('#^/(en|uk|ru)(/|$)#', $uri, $m);
+    $l = $m[1] ?? '';
+
+    if (!$l) {
+        $ql = $_GET['lang'] ?? '';
+        if (in_array($ql, ['en', 'uk', 'ru'], true)) $l = $ql;
     }
-    return $lang;
+    if (!$l && defined('ICL_LANGUAGE_CODE') && in_array(ICL_LANGUAGE_CODE, ['en', 'uk', 'ru', 'pl'], true)) {
+        $l = ICL_LANGUAGE_CODE;
+    }
+
+    // Blokuj statik tylko przy pewnej detekcji — nie zakładaj 'pl' zanim WPML
+    // nie ustawi ICL_LANGUAGE_CODE (strony EN mogą nie mieć prefiksu /en/ w URL)
+    if ($l) $lang = $l;
+    return $l ?: 'pl';
 }
 
 function mer_lang_map(): array {
     static $map = null;
-    if ($map === null) {
-        $lang = mer_lang();
-        if ($lang !== 'pl') {
-            $file = get_template_directory() . '/languages/' . $lang . '.php';
-            $loaded = file_exists($file) ? (include $file) : [];
-            $map = is_array($loaded) ? $loaded : [];
-        } else {
-            $map = [];
-        }
+    if ($map !== null) return $map;
+
+    $lang = mer_lang();
+
+    // Nie blokuj mapy jeśli lang nie jest jeszcze pewny (ICL_LANGUAGE_CODE niedostępny
+    // i brak prefiksu URL) — pozwól hookowi init ponownie zainicjować mapę
+    $uri = $_SERVER['REQUEST_URI'] ?? '/';
+    $from_url = (bool) preg_match('#^/(en|uk|ru)(/|$)#', $uri);
+    if ($lang === 'pl' && !$from_url && !defined('ICL_LANGUAGE_CODE')) {
+        return [];
+    }
+
+    if ($lang !== 'pl') {
+        $file = get_template_directory() . '/languages/' . $lang . '.php';
+        $loaded = file_exists($file) ? (include $file) : [];
+        $map = is_array($loaded) ? $loaded : [];
+    } else {
+        $map = [];
     }
     return $map;
 }
@@ -58,7 +71,7 @@ function mer_gettext_filter(string $translation, string $text, string $domain): 
 }
 add_filter('gettext', 'mer_gettext_filter', 999, 3);
 
-/* Pre-inicjalizacja mapy po init WPML (WPML ustawia ICL_LANGUAGE_CODE na priority 1) */
+/* Inicjalizacja mapy po init WPML (ICL_LANGUAGE_CODE dostępny od priority 1) */
 add_action('init', 'mer_lang_map', 5);
 
 /* ------------------------------------------------------------------
