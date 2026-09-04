@@ -49,7 +49,15 @@ function mer_lang_map(): array {
 
     if ($lang !== 'pl') {
         $file = get_template_directory() . '/languages/' . $lang . '.php';
-        $raw  = file_exists($file) ? (include $file) : [];
+        $raw  = [];
+        if (file_exists($file)) {
+            try {
+                $raw = include $file;
+            } catch (\ParseError $e) {
+                error_log('mer_lang_map ParseError [' . $lang . ']: ' . $e->getMessage() . ' in ' . $e->getFile() . ':' . $e->getLine());
+                $raw = [];
+            }
+        }
         if (is_array($raw)) {
             // Normalizuj CRLF→LF w kluczach (pliki uploadowane z Windows mają \r\n)
             $map = [];
