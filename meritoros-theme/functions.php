@@ -49,8 +49,16 @@ function mer_lang_map(): array {
 
     if ($lang !== 'pl') {
         $file = get_template_directory() . '/languages/' . $lang . '.php';
-        $loaded = file_exists($file) ? (include $file) : [];
-        $map = is_array($loaded) ? $loaded : [];
+        $raw  = file_exists($file) ? (include $file) : [];
+        if (is_array($raw)) {
+            // Normalizuj CRLF→LF w kluczach (pliki uploadowane z Windows mają \r\n)
+            $map = [];
+            foreach ($raw as $k => $v) {
+                $map[str_replace("\r\n", "\n", $k)] = $v;
+            }
+        } else {
+            $map = [];
+        }
     } else {
         $map = [];
     }
