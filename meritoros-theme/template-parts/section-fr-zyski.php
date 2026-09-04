@@ -1,7 +1,7 @@
 <?php
 $_page_id = get_the_ID();
 
-$title = __( mer_field('fr_zysk_title', "Co zyskujesz, gdy księgowość fundacji jest poukładana"), 'meritoros' );
+$title = __( str_replace(["\r\n", "\r", "\n"], ' ', trim(mer_field('fr_zysk_title', "Co zyskujesz, gdy księgowość fundacji jest poukładana"))), 'meritoros' );
 
 $card_defaults = [
     ['icon' => 'shield-check',   'title' => 'Bezpieczne zarządzanie majątkiem',  'text' => 'Porządek w danych i dokumentach, jasna sprawozdawczość i kontrola nad obowiązkami.'],
@@ -14,8 +14,8 @@ $cards = [];
 for ($i = 1; $i <= 4; $i++) {
     $g = get_field("fr_zysk_{$i}");
     $d = $card_defaults[$i - 1];
-    $raw_title = is_array($g) && !empty($g['title']) ? $g['title'] : $d['title'];
-    $raw_text  = is_array($g) && !empty($g['text'])  ? $g['text']  : $d['text'];
+    $raw_title = str_replace(["\r\n", "\r", "\n"], ' ', trim(is_array($g) && !empty($g['title']) ? $g['title'] : $d['title']));
+    $raw_text  = str_replace(["\r\n", "\r", "\n"], ' ', trim(is_array($g) && !empty($g['text'])  ? $g['text']  : $d['text']));
     $cards[] = [
         'icon'  => is_array($g) && !empty($g['icon'])  ? $g['icon']  : $d['icon'],
         'title' => __( $raw_title, 'meritoros' ),
