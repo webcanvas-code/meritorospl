@@ -381,6 +381,9 @@ pełna zastępowalność i ciągłość obsługi oraz gotowość do skalowania' 
 цифровий документообіг і впорядковані процеси
 
 повна взаємозамінність і безперервність обслуговування та готовність до масштабування',
+    'raportowanie zarządcze i sprawozdawcze dopasowane do potrzeb organizacji' => 'управлінська та фінансова звітність, адаптована до потреб організації',
+    'cyfrowy obieg dokumentów i uporządkowane procesy' => 'цифровий документообіг і впорядковані процеси',
+    'pełna zastępowalność i ciągłość obsługi oraz gotowość do skalowania' => 'повна взаємозамінність і безперервність обслуговування та готовність до масштабування',
     'Jakość potwierdzona
 standardami' => 'Якість, підтверджена
 стандартами',

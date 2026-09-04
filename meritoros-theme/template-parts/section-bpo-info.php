@@ -1,8 +1,8 @@
 <?php
 $info_title   = __( mer_field('bpo_info_title',   "Stabilne procesy. Rzetelne\ndane. Spokój zarządu."), 'meritoros' );
 $info_text    = __( mer_field('bpo_info_text',    'Wspieramy większe firmy w obszarze księgowości, kadr i płac, back-office, przejmując odpowiedzialność za jakość, terminowość i ciągłość działania. Dostarczamy dane i raporty w harmonogramie dopasowanym do zarządu – tak, żeby decyzje były oparte na spójnych informacjach, a nie „gaszeniu pożarów".'), 'meritoros' );
-$info_items_r = __( str_replace("\r\n", "\n", mer_field('bpo_info_items', "raportowanie zarządcze i sprawozdawcze dopasowane do potrzeb organizacji\n\ncyfrowy obieg dokumentów i uporządkowane procesy\n\npełna zastępowalność i ciągłość obsługi oraz gotowość do skalowania")), 'meritoros' );
-$info_items   = array_filter(array_map('trim', preg_split('/(\r?\n){2,}/', $info_items_r)));
+$_items_raw = str_replace(["\r\n", "\r"], "\n", trim(mer_field('bpo_info_items', "raportowanie zarządcze i sprawozdawcze dopasowane do potrzeb organizacji\ncyfrowy obieg dokumentów i uporządkowane procesy\npełna zastępowalność i ciągłość obsługi oraz gotowość do skalowania")));
+$info_items = array_filter(array_map(function($it) { return __( trim($it), 'meritoros' ); }, preg_split('/\n+/', $_items_raw)));
 
 $awards_title = __( mer_field('bpo_awards_title', 'Nagrody i wyróżnienia'), 'meritoros' );
 $awards_text  = __( mer_field('bpo_awards_text',  'Wyróżnienia są efektem tego, jak rozwijamy Meritoros: konsekwentnie i procesowo. Trzymamy standard, który ma działać w praktyce - codziennie.'), 'meritoros' );
@@ -11,10 +11,10 @@ $awards_logo1 = get_field('bpo_awards_logo1') ?: ['url' => $_img . 'forbes.png',
 $awards_logo2 = get_field('bpo_awards_logo2') ?: ['url' => $_img . 'logo_gazele.png', 'alt' => 'Gazele Biznesu'];
 
 $stat1_image = get_field('bpo_stat1_image') ?: ['url' => $_img . 'ISO27001.png', 'alt' => 'ISO 27001'];
-$stat1_text  = __( mer_field('bpo_stat1_text', "Bezpieczeństwo\ni compliance"), 'meritoros' );
+$stat1_text  = __( str_replace("\r\n", "\n", mer_field('bpo_stat1_text', "Bezpieczeństwo\ni compliance")), 'meritoros' );
 $stat2_image = get_field('bpo_stat2_image') ?: ['url' => $_img . 'ISO9001.png',  'alt' => 'ISO 9001'];
-$stat2_text  = __( mer_field('bpo_stat2_text', "Jakość potwierdzona\nstandardami"), 'meritoros' );
-$stat3_text  = __( mer_field('bpo_stat3_text', "Ponad 170\nexpertów"), 'meritoros' );
+$stat2_text  = __( str_replace("\r\n", "\n", mer_field('bpo_stat2_text', "Jakość potwierdzona\nstandardami")), 'meritoros' );
+$stat3_text  = __( str_replace("\r\n", "\n", mer_field('bpo_stat3_text', "Ponad 170\nexpertów")), 'meritoros' );
 ?>
 
 <section class="py-16 md:py-24 bg-white">

@@ -381,6 +381,9 @@ pełna zastępowalność i ciągłość obsługi oraz gotowość do skalowania' 
 digital document workflow and streamlined processes
 
 full staff substitutability, service continuity and readiness to scale',
+    'raportowanie zarządcze i sprawozdawcze dopasowane do potrzeb organizacji' => 'management and financial reporting tailored to the organisation\'s needs',
+    'cyfrowy obieg dokumentów i uporządkowane procesy' => 'digital document workflow and streamlined processes',
+    'pełna zastępowalność i ciągłość obsługi oraz gotowość do skalowania' => 'full staff substitutability, service continuity and readiness to scale',
     'Jakość potwierdzona
 standardami' => 'Quality confirmed
 by standards',
