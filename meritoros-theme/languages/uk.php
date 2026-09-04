@@ -681,7 +681,7 @@ fundacji jest poukładana' => 'Що ви отримуєте, коли бухга
 majątkiem’ => ‘Безпечне управління
 майном’,
     ‘Bezpieczne zarządzanie majątkiem’ => ‘Безпечне управління майном’,
-    ‘Porządek w danych i dokumentach, jasna sprawozdawczość i kontrola nad obowiązkami.’ => ‘Порядок у даних і документах, чітка звітність та контроль над зобов’язаннями.’,
+    ‘Porządek w danych i dokumentach, jasna sprawozdawczość i kontrola nad obowiązkami.’ => ‘Порядок у даних і документах, чітка звітність та контроль над зобов\’язаннями.’,
     ‘Sukcesja na trwałych
 regułach’ => ‘Спадкування на стійких
 засадах’,
@@ -691,7 +691,7 @@ regułach’ => ‘Спадкування на стійких
 formalnych’ => ‘Спокій у формальних
 питаннях’,
     ‘Spokój w kwestiach formalnych’ => ‘Спокій у формальних питаннях’,
-    ‘Dopilnujemy terminów i obowiązków sprawozdawczych, żeby nic „nie wyskakiwało" w ostatniej chwili.’ => ‘Ми подбаємо про терміни та звітні зобов’язання, щоб ніщо «не виринало» в останній момент.’,
+    ‘Dopilnujemy terminów i obowiązków sprawozdawczych, żeby nic „nie wyskakiwało" w ostatniej chwili.’ => ‘Ми подбаємо про терміни та звітні зобов\’язання, щоб ніщо «не виринало» в останній момент.’,
     ‘Mniej ryzyk,
 mniej poprawek’ => ‘Менше ризиків,
 менше виправлень’,

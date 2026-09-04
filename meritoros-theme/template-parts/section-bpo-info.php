@@ -1,7 +1,7 @@
 <?php
 $info_title   = __( mer_field('bpo_info_title',   "Stabilne procesy. Rzetelne\ndane. Spokój zarządu."), 'meritoros' );
 $info_text    = __( mer_field('bpo_info_text',    'Wspieramy większe firmy w obszarze księgowości, kadr i płac, back-office, przejmując odpowiedzialność za jakość, terminowość i ciągłość działania. Dostarczamy dane i raporty w harmonogramie dopasowanym do zarządu – tak, żeby decyzje były oparte na spójnych informacjach, a nie „gaszeniu pożarów".'), 'meritoros' );
-$info_items_r = __( mer_field('bpo_info_items',   "raportowanie zarządcze i sprawozdawcze dopasowane do potrzeb organizacji\n\ncyfrowy obieg dokumentów i uporządkowane procesy\n\npełna zastępowalność i ciągłość obsługi oraz gotowość do skalowania"), 'meritoros' );
+$info_items_r = __( str_replace("\r\n", "\n", mer_field('bpo_info_items', "raportowanie zarządcze i sprawozdawcze dopasowane do potrzeb organizacji\n\ncyfrowy obieg dokumentów i uporządkowane procesy\n\npełna zastępowalność i ciągłość obsługi oraz gotowość do skalowania")), 'meritoros' );
 $info_items   = array_filter(array_map('trim', preg_split('/(\r?\n){2,}/', $info_items_r)));
 
 $awards_title = __( mer_field('bpo_awards_title', 'Nagrody i wyróżnienia'), 'meritoros' );
