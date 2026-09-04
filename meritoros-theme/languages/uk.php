@@ -680,7 +680,7 @@ Bytom
 fundacji jest poukładana' => 'Що ви отримуєте, коли бухгалтерія
 фонду впорядкована',
     'Co zyskujesz, gdy księgowość fundacji jest poukładana' => 'Що ви отримуєте, коли бухгалтерія фонду впорядкована',
-    ‘Bezpieczne zarządzanie
+    'Bezpieczne zarządzanie
 majątkiem’ => ‘Безпечне управління
 майном’,
     ‘Bezpieczne zarządzanie majątkiem’ => ‘Безпечне управління майном’,
