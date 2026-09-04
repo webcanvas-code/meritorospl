@@ -1,30 +1,29 @@
 <?php
 $_page_id = get_the_ID();
 
-$_zysk_raw = str_replace(["\r\n", "\r", "\n"], ' ', trim(mer_field('fr_zysk_title', "Co zyskujesz, gdy księgowość fundacji jest poukładana")));
-$title = mer_tr($_zysk_raw) ?: $_zysk_raw;
+$title = __( mer_field('fr_zysk_title', "Co zyskujesz, gdy księgowość fundacji jest poukładana"), 'meritoros' );
 
 $card_defaults = [
-    ['icon' => 'shield-check',   'title' => "Bezpieczne zarządzanie majątkiem",  'text' => 'Porządek w danych i dokumentach, jasna sprawozdawczość i kontrola nad obowiązkami.'],
-    ['icon' => 'clipboard-list', 'title' => "Sukcesja na trwałych regułach",     'text' => 'Przejrzyste zasady i przewidywalność – tak, aby rozwiązanie działało długoterminowo.'],
-    ['icon' => 'calendar-check', 'title' => "Spokój w kwestiach formalnych",     'text' => 'Dopilnujemy terminów i obowiązków sprawozdawczych, żeby nic „nie wyskakiwało" w ostatniej chwili.'],
-    ['icon' => 'badge-check',    'title' => "Mniej ryzyk, mniej poprawek",       'text' => 'Praca procesowa, weryfikacja danych i standardy, które ograniczają błędy.'],
+    ['icon' => 'shield-check',   'title' => 'Bezpieczne zarządzanie majątkiem',  'text' => 'Porządek w danych i dokumentach, jasna sprawozdawczość i kontrola nad obowiązkami.'],
+    ['icon' => 'clipboard-list', 'title' => 'Sukcesja na trwałych regułach',     'text' => 'Przejrzyste zasady i przewidywalność – tak, aby rozwiązanie działało długoterminowo.'],
+    ['icon' => 'calendar-check', 'title' => 'Spokój w kwestiach formalnych',     'text' => 'Dopilnujemy terminów i obowiązków sprawozdawczych, żeby nic „nie wyskakiwało" w ostatniej chwili.'],
+    ['icon' => 'badge-check',    'title' => 'Mniej ryzyk, mniej poprawek',       'text' => 'Praca procesowa, weryfikacja danych i standardy, które ograniczają błędy.'],
 ];
 
 $cards = [];
 for ($i = 1; $i <= 4; $i++) {
     $g = get_field("fr_zysk_{$i}");
     $d = $card_defaults[$i - 1];
-    $raw_title = str_replace(["\r\n", "\r", "\n"], ' ', trim(is_array($g) && !empty($g['title']) ? $g['title'] : $d['title']));
+    $raw_title = is_array($g) && !empty($g['title']) ? $g['title'] : $d['title'];
     $raw_text  = is_array($g) && !empty($g['text'])  ? $g['text']  : $d['text'];
     $cards[] = [
         'icon'  => is_array($g) && !empty($g['icon'])  ? $g['icon']  : $d['icon'],
-        'title' => mer_tr($raw_title),
-        'text'  => mer_tr($raw_text),
+        'title' => __( $raw_title, 'meritoros' ),
+        'text'  => __( $raw_text,  'meritoros' ),
     ];
 }
 ?>
-<!-- MER-DEBUG lang=<?php echo esc_html(mer_lang()); ?> card1=<?php echo esc_html($cards[0]['title'] ?? 'MISSING'); ?> -->
+<script>/* MER-DBG lang=<?php echo esc_js(mer_lang()); ?> mapCnt=<?php echo count(mer_lang_map()); ?> card0=<?php echo esc_js($cards[0]['title'] ?? 'MISSING'); ?> */</script>
 <section class="py-10 md:py-16 bg-emerald-50 relative">
 
     <!-- Okrąg lewy — większy -->
