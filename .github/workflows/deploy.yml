@@ -26,6 +26,11 @@ jobs:
         env:
           FTP_PASSWORD: ${{ secrets.FTP_PASSWORD }}
         run: |
+          set -e
+          if [ ! -s changed_files.txt ]; then
+            echo "No changed files in meritoros-theme/ — skipping deploy"
+            exit 0
+          fi
           while IFS= read -r file; do
             remote="${file#meritoros-theme/}"
             remote_dir="/public_html/wp-content/themes/meritoros-theme/$(dirname "$remote")"
@@ -39,3 +44,8 @@ jobs:
               put $file -o /public_html/wp-content/themes/meritoros-theme/$remote
             "
           done < changed_files.txt
+
+      - name: Reset OPcache on server
+        run: |
+          curl -s --max-time 10 "https://meritoros.web-canvas.pl/wp-content/themes/meritoros-theme/opcache-reset.php" || true
+          echo "OPcache reset triggered"
