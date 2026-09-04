@@ -23,8 +23,11 @@ for ($i = 1; $i <= 4; $i++) {
     ];
 }
 ?>
-<script>/* MER-DBG lang=<?php echo esc_js(mer_lang()); ?> mapCnt=<?php echo count(mer_lang_map()); ?> card0=<?php echo esc_js($cards[0]['title'] ?? 'MISSING'); ?> */</script>
-<section class="py-10 md:py-16 bg-emerald-50 relative">
+<section
+    data-mer-lang="<?php echo esc_attr(mer_lang()); ?>"
+    data-mer-map="<?php echo esc_attr(count(mer_lang_map())); ?>"
+    data-mer-card0="<?php echo esc_attr($cards[0]['title'] ?? 'MISSING'); ?>"
+    class="py-10 md:py-16 bg-emerald-50 relative">
 
     <!-- Okrąg lewy — większy -->
     <div class="absolute -left-40 top-1/2 -translate-y-1/2 w-[500px] h-[500px] rounded-full border-[52px] border-emerald-300/40 pointer-events-none" aria-hidden="true"></div>
