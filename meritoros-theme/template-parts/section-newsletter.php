@@ -25,7 +25,7 @@ for ($i = 1; $i <= 4; $i++) {
 }
 ?>
 
-<section class="py-16 md:py-24 px-6 lg:px-12 bg-white border-t border-slate-100">
+<section id="newsletter" class="py-16 md:py-24 px-6 lg:px-12 bg-white border-t border-slate-100">
     <div class="max-w-[1400px] mx-auto">
         <div class="bg-slate-900 rounded-2xl md:rounded-[3rem] overflow-hidden grid grid-cols-1 lg:grid-cols-2">
 

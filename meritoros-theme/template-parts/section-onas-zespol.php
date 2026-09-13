@@ -25,7 +25,7 @@ for ($i = 1; $i <= 4; $i++) {
 }
 ?>
 
-<section class="py-12 md:py-24 bg-emerald-50">
+<section id="onas-zespol" class="py-12 md:py-24 bg-emerald-50">
     <div class="max-w-7xl mx-auto px-6">
 
         <h2 class="text-pretty text-4xl md:text-5xl font-bold tracking-tight text-slate-900 text-center mb-14">

@@ -18,7 +18,7 @@ $posts = get_posts([
 if (empty($posts)) return;
 ?>
 
-<section class="py-16 md:py-24 bg-emerald-50">
+<section id="media-mowia" class="py-16 md:py-24 bg-emerald-50">
     <div class="max-w-7xl mx-auto px-6">
 
         <h2 class="text-pretty text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight text-slate-900 mb-10">

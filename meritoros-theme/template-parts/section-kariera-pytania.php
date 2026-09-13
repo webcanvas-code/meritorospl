@@ -19,7 +19,7 @@ $photo_alt = is_array($photo) ? esc_attr($photo['alt'] ?: $name) : $name;
 $phone_clean = preg_replace('/[^0-9+]/', '', $phone);
 ?>
 
-<section class="py-16 sm:py-20 md:py-24 px-6 lg:px-12 bg-white relative">
+<section id="kariera-pytania" class="py-16 sm:py-20 md:py-24 px-6 lg:px-12 bg-white relative">
     <div class="absolute -right-28 top-1/2 -translate-y-1/2 w-[380px] h-[380px] rounded-full border-[55px] border-emerald-100 pointer-events-none"></div>
 
     <div class="max-w-7xl mx-auto relative z-10">

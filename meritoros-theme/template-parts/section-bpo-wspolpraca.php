@@ -19,16 +19,16 @@ $steps = [];
 for ($i = 1; $i <= 3; $i++) {
     $s = get_field("bpo_wsp_step_{$i}");
     $d = $step_defaults[$i - 1];
-    $raw_items = is_array($s) && !empty($s['items']) ? $s['items'] : $d['items'];
+    $raw_items = str_replace(["\r\n","\r"], "\n", is_array($s) && !empty($s['items']) ? $s['items'] : $d['items']);
     $steps[] = [
-        'title' => is_array($s) && !empty($s['title']) ? __($s['title'], 'meritoros') : $d['title'],
-        'lead'  => is_array($s) && !empty($s['lead'])  ? __($s['lead'],  'meritoros') : $d['lead'],
+        'title' => __( str_replace(["\r\n","\r"],"\n", is_array($s) && !empty($s['title']) ? $s['title'] : ''), 'meritoros') ?: $d['title'],
+        'lead'  => __( str_replace(["\r\n","\r"],"\n", is_array($s) && !empty($s['lead'])  ? $s['lead']  : ''), 'meritoros') ?: $d['lead'],
         'items' => array_values(array_filter(array_map(function($item) { return __($item, 'meritoros'); }, array_map('trim', explode("\n", $raw_items))))),
     ];
 }
 ?>
 
-<section class="py-16 md:py-24 bg-emerald-50 relative">
+<section id="bpo-wspolpraca" class="py-16 md:py-24 bg-emerald-50 relative">
     <div class="absolute top-0 left-0 w-96 h-96 border-[40px] border-emerald-200/40 rounded-full -translate-x-1/2 -translate-y-1/2 pointer-events-none"></div>
     <div class="absolute bottom-0 right-0 w-[600px] h-[600px] border-[60px] border-emerald-200/30 rounded-full translate-x-1/4 translate-y-1/4 pointer-events-none"></div>
 

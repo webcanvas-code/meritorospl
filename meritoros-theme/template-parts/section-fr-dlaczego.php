@@ -13,7 +13,7 @@ $d3_title = __( mer_field('fr_d3_title', 'Ponad 170 ekspertów'), 'meritoros' );
 $d3_text  = __( mer_field('fr_d3_text',  'Jakość potwierdzona standardami. Mamy wdrożone procedury kontroli jakości i weryfikacji danych. Dostarczamy informacje finansowe kompletne, spójne i użyteczne dla zarządu.'), 'meritoros' );
 ?>
 
-<section class="py-10 md:py-20 bg-white">
+<section id="fr-dlaczego" class="py-10 md:py-20 bg-white">
     <div class="max-w-7xl mx-auto px-6">
 
         <h2 class="text-pretty text-4xl md:text-5xl font-bold tracking-tight text-slate-900 mb-12">

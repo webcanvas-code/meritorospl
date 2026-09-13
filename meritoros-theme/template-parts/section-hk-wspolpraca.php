@@ -47,7 +47,7 @@ if (is_array($video_file) && !empty($video_file['url'])) {
 }
 ?>
 
-<section class="py-16 md:py-24 bg-white overflow-hidden">
+<section id="hk-wspolpraca" class="py-16 md:py-24 bg-white overflow-hidden">
     <div class="max-w-7xl mx-auto px-6">
         <div class="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
 

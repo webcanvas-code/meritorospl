@@ -20,7 +20,7 @@ for ($i = 1; $i <= 4; $i++) {
 ?>
 
 <?php if (empty($opinie)) return; ?>
-<section class="py-16 sm:py-20 md:py-24 px-6 lg:px-12 bg-white relative">
+<section id="kariera-opinie" class="py-16 sm:py-20 md:py-24 px-6 lg:px-12 bg-white relative">
     <div class="absolute -left-32 top-1/2 -translate-y-1/2 w-[420px] h-[420px] rounded-full border-[60px] border-emerald-100 pointer-events-none"></div>
 
     <div class="max-w-7xl mx-auto relative z-10">

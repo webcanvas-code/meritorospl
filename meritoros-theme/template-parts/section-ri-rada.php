@@ -2,11 +2,11 @@
 $title = __( mer_field('ri_rada_title', 'Rada nadzorcza'), 'meritoros' );
 
 $card_defaults = [
-    ['name' => 'Lidia Olszowska',   'role' => __('przewodnicząca rady nadzorczej', 'meritoros'), 'desc' => __("doradca podatkowy (certyfikat nr 00443)\nbył członek zarządu Małopolskiej Izby Doradców Podatkowych", 'meritoros')],
-    ['name' => 'Maria Gargas',      'role' => __('członek rady nadzorczej', 'meritoros'),         'desc' => __("przedsiębiorca\nprezes zarządu Emka Sp. z o.o.", 'meritoros')],
-    ['name' => 'Jacek Pieniądz',    'role' => __('członek rady nadzorczej', 'meritoros'),         'desc' => __("przedsiębiorca\nczłonek zarządu Chata Sp. z o.o.", 'meritoros')],
-    ['name' => 'Dominik Jaskulski', 'role' => __('członek rady nadzorczej', 'meritoros'),         'desc' => __("przedsiębiorca\nwiceprezes zarządu Office Samurai Sp. z o.o.", 'meritoros')],
-    ['name' => 'Michał Czaicki',    'role' => __('członek rady nadzorczej', 'meritoros'),         'desc' => __("przedsiębiorca\nprezes zarządu Printbox Sp. z o.o.", 'meritoros')],
+    ['name' => 'Lidia Olszowska',   'role' => 'przewodnicząca rady nadzorczej', 'desc' => "doradca podatkowy (certyfikat nr 00443)\nbył członek zarządu Małopolskiej Izby Doradców Podatkowych"],
+    ['name' => 'Maria Gargas',      'role' => 'członek rady nadzorczej',        'desc' => "przedsiębiorca\nprezes zarządu Emka Sp. z o.o."],
+    ['name' => 'Jacek Pieniądz',    'role' => 'członek rady nadzorczej',        'desc' => "przedsiębiorca\nczłonek zarządu Chata Sp. z o.o."],
+    ['name' => 'Dominik Jaskulski', 'role' => 'członek rady nadzorczej',        'desc' => "przedsiębiorca\nwiceprezes zarządu Office Samurai Sp. z o.o."],
+    ['name' => 'Michał Czaicki',    'role' => 'członek rady nadzorczej',        'desc' => "przedsiębiorca\nprezes zarządu Printbox Sp. z o.o."],
 ];
 
 $cards = [];
@@ -26,7 +26,7 @@ for ($i = 1; $i <= 9; $i++) {
 }
 </style>
 
-<section class="py-10 md:py-14 bg-white border-t border-slate-100">
+<section id="ri-rada" class="py-10 md:py-14 bg-white border-t border-slate-100">
 
     <div class="max-w-7xl mx-auto px-6 relative z-10">
         <h2 class="text-4xl md:text-5xl font-bold tracking-tight text-slate-900 mb-12">
@@ -40,8 +40,9 @@ for ($i = 1; $i <= 9; $i++) {
             <div id="ri-rada-track" class="flex gap-5 transition-transform duration-500 ease-in-out">
                 <?php foreach ($cards as $card) :
                     $name = esc_html($card['name'] ?? '');
-                    $role = esc_html($card['role'] ?? '');
-                    $desc = esc_html($card['desc'] ?? '');
+                    $role = esc_html(mer_tr($card['role'] ?? ''));
+                    $desc_lines = preg_split('/\r?\n/', $card['desc'] ?? '');
+                    $desc = esc_html(implode("\n", array_map('mer_tr', $desc_lines)));
                 ?>
                 <div class="ri-rada-card border border-slate-200 rounded-2xl p-7 flex flex-col gap-4 min-w-[85%] sm:min-w-[calc(50%-10px)] lg:min-w-[30%] shrink-0">
                     <div>

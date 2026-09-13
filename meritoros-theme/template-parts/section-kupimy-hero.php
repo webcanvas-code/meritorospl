@@ -13,7 +13,7 @@ $img_alt = is_array($image) ? esc_attr($image['alt'] ?: __('Kupimy biuro rachunk
 ?>
 
 <!-- ── Hero ──────────────────────────────────────────────────────── -->
-<section class="relative overflow-hidden pt-36 pb-16">
+<section id="kupimy-hero" class="relative overflow-hidden pt-36 pb-16">
 
     <!-- Zdjęcie w tle -->
     <div class="absolute inset-0">

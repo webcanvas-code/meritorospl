@@ -88,7 +88,7 @@ for ($i = 1; $i <= 2; $i++) {
 }
 ?>
 
-<section class="py-10 md:py-20 bg-white relative">
+<section id="bpo-historie" class="py-10 md:py-20 bg-white relative">
     <div class="max-w-7xl mx-auto px-6 mb-10 flex flex-col sm:flex-row sm:items-end sm:justify-between gap-4">
         <h2 class="text-pretty text-4xl md:text-5xl font-bold tracking-tight text-slate-900"><?php echo mer_esc($title); ?></h2>
         <div class="hidden sm:flex items-center gap-2 shrink-0">

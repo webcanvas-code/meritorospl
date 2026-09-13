@@ -40,7 +40,7 @@ if ( $yt_id ) {
 }
 ?>
 
-<section class="py-14 md:py-20 bg-white relative">
+<section id="kupimy-wideo" class="py-14 md:py-20 bg-white relative">
 
     <!-- Dekoracyjny okrąg po prawej -->
     <div class="absolute right-4 top-1/2 -translate-y-1/2 w-40 h-40 rounded-full border-[16px] border-emerald-200 pointer-events-none" aria-hidden="true"></div>

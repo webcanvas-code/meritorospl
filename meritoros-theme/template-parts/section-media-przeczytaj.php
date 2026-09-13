@@ -12,7 +12,7 @@ $posts = get_posts([
 if (empty($posts)) return;
 ?>
 
-<section class="py-14 md:py-20 bg-emerald-50">
+<section id="media-przeczytaj" class="py-14 md:py-20 bg-emerald-50">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
         <!-- Nagłówek z przyciskami nawigacji -->
@@ -81,7 +81,7 @@ if (empty($posts)) return;
                                     <?php echo mer_esc($text); ?>
                                 </p>
                             <?php endif; ?>
-                            <span class="mer-btn mer-btn--secondary mt-auto pt-4 inline-block text-sm font-semibold text-slate-900 border border-slate-300 rounded-full px-4 py-1.5 group-hover:border-emerald-500 group-hover:text-emerald-700 transition-colors w-fit">
+                            <span class="mt-auto pt-4 inline-block text-sm font-semibold text-slate-900 border-b-2 border-emerald-500 pb-0.5 group-hover:text-emerald-700 group-hover:border-emerald-700 transition-colors w-fit">
                                 <?php echo mer_esc($btn_text); ?>
                             </span>
                         </div>

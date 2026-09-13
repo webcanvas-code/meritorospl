@@ -4,13 +4,13 @@ $subtitle = __( mer_field('bpo_model_subtitle', "Możesz powierzyć nam całoś�
 
 $m1 = get_field('bpo_model1');
 $m1_icon  = is_array($m1) && !empty($m1['icon'])  ? $m1['icon']  : 'network';
-$m1_title = is_array($m1) && !empty($m1['title']) ? __($m1['title'], 'meritoros') : __('Kompleksowa obsługa', 'meritoros');
-$m1_text  = is_array($m1) && !empty($m1['text'])  ? __($m1['text'], 'meritoros')  : __('Obsługujemy proces end-to-end: od bieżącej ewidencji po zamknięcie miesiąca i raporty. Pracujesz z zespołem, który zapewnia zastępowalność i stały standard.', 'meritoros');
+$m1_title = __( str_replace(["\r\n","\r"],"\n", is_array($m1) && !empty($m1['title']) ? $m1['title'] : 'Kompleksowa obsługa'), 'meritoros');
+$m1_text  = __( str_replace(["\r\n","\r"],"\n", is_array($m1) && !empty($m1['text'])  ? $m1['text']  : 'Obsługujemy proces end-to-end: od bieżącej ewidencji po zamknięcie miesiąca i raporty. Pracujesz z zespołem, który zapewnia zastępowalność i stały standard.'), 'meritoros');
 
 $m2 = get_field('bpo_model2');
 $m2_image = is_array($m2) && !empty($m2['image']) ? $m2['image'] : null;
-$m2_title = is_array($m2) && !empty($m2['title']) ? __($m2['title'], 'meritoros') : __("Outsourcing wybranych\nprocesów", 'meritoros');
-$m2_text  = is_array($m2) && !empty($m2['text'])  ? __($m2['text'], 'meritoros')  : __('Przejmujemy konkretne procesy i dowozimy je w ustalonym standardzie i harmonogramie. To rozwiązanie dla firm, które chcą wzmocnić wewnętrzny dział finansów bez rozbudowy etatów.', 'meritoros');
+$m2_title = __( str_replace(["\r\n","\r"],"\n", is_array($m2) && !empty($m2['title']) ? $m2['title'] : "Outsourcing wybranych\nprocesów"), 'meritoros');
+$m2_text  = __( str_replace(["\r\n","\r"],"\n", is_array($m2) && !empty($m2['text'])  ? $m2['text']  : 'Przejmujemy konkretne procesy i dowozimy je w ustalonym standardzie i harmonogramie. To rozwiązanie dla firm, które chcą wzmocnić wewnętrzny dział finansów bez rozbudowy etatów.'), 'meritoros');
 
 $m2_img_url = is_array($m2_image) ? esc_url($m2_image['url']) : 'https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&q=80&w=800';
 $m2_img_alt = is_array($m2_image) ? esc_attr($m2_image['alt'] ?: 'Outsourcing') : 'Outsourcing';
@@ -27,7 +27,7 @@ $m2_img_alt = is_array($m2_image) ? esc_attr($m2_image['alt'] ?: 'Outsourcing') 
 .mer-model-card.open .mer-model-panel { transform: translateY(0); }
 </style>
 
-<section class="py-12 md:py-24 bg-emerald-50">
+<section id="bpo-model" class="py-12 md:py-24 bg-emerald-50">
     <div class="max-w-7xl mx-auto px-6">
         <div class="text-center mb-8 md:mb-16">
             <h2 class="text-pretty text-4xl md:text-5xl font-bold tracking-tight mb-6"><?php echo mer_esc($title); ?></h2>

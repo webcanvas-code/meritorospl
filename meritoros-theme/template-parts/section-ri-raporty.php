@@ -49,7 +49,7 @@ $subsections = [
         if (!empty($item['label'])) $items[] = $item;
     }
 ?>
-<section class="py-10 md:py-14 <?php echo $sub['bg']; ?>">
+<section id="ri-raporty" class="py-10 md:py-14 <?php echo $sub['bg']; ?>">
     <div class="max-w-7xl mx-auto px-6">
 
         <h2 class="text-pretty text-4xl md:text-5xl font-bold tracking-tight text-slate-900 mb-10">

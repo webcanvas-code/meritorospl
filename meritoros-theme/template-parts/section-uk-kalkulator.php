@@ -4,7 +4,7 @@ $description = __( mer_field('uk_kalk_desc',  'Oszacuj wstępny koszt usług ksi
 $disclaimer  = __( mer_field('uk_kalk_disclaimer', '* to jest wstępny szacunek, każda oferta jest jednak indywidualnie rozpatrywana i odpowiednio wyceniana.'), 'meritoros' );
 ?>
 
-<section id="kalkulator" class="py-10 md:py-20 bg-[#00d084] relative overflow-hidden">
+<section id="uk-kalkulator" class="py-10 md:py-20 bg-[#00d084] relative overflow-hidden">
 
     <!-- Dekoracyjny okrąg -->
     <div class="absolute -right-24 top-1/2 -translate-y-1/2 w-[420px] h-[420px] rounded-full border-[52px] border-white/20 pointer-events-none" aria-hidden="true"></div>

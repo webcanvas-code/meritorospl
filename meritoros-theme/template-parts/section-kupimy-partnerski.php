@@ -15,7 +15,7 @@ $benefits = array_values(array_filter(array_map('trim', preg_split('/(\r?\n){2,}
     "dostęp do automatyzacji i robotyzacji procesów\n\nwsparcie w digitalizacji i porządkowaniu operacji\n\ndostęp do wiedzy ekspertów i partnerów merytorycznych\n\nwsparcie HR i rekrutacyjne\n\nwsparcie marketingowe i sprzedażowe,\n\nwewnętrzne standardy jakości i audytu\n\nmożliwość dalszego rozwoju w strukturach większej organizacji"), 'meritoros' )))));
 ?>
 
-<section class="py-14 md:py-20 bg-emerald-50">
+<section id="kupimy-partnerski" class="py-14 md:py-20 bg-emerald-50">
     <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
 
         <!-- Górna część: zdjęcie + treść -->

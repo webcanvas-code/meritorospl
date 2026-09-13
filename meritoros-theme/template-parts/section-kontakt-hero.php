@@ -23,7 +23,7 @@ for ($i = 1; $i <= 4; $i++) {
 ?>
 
 <!-- Hero + Form -->
-<section class="pt-36 pb-16 bg-white relative overflow-hidden">
+<section id="kontakt-hero" class="pt-36 pb-16 bg-white relative overflow-hidden">
     <div class="absolute top-0 right-0 w-[500px] h-[500px] bg-emerald-100/60 rounded-full blur-3xl translate-x-1/3 -translate-y-1/4 pointer-events-none"></div>
 
     <div class="relative z-10 max-w-7xl mx-auto px-6">

@@ -3,7 +3,7 @@ $title    = mer_field('kar_cult_title',    __('Poznaj nasz Culturebook', 'merito
 $text1    = mer_field('kar_cult_text1',    __('Culturebook powstał po to, żebyśmy wszyscy w Meritoros w ten sam sposób rozumieli, kim jesteśmy, dokąd zmierzamy i jakie wartości są dla nas ważne. Opisuje naszą misję, sposób działania i standard współpracy – wewnątrz zespołu i z klientami.', 'meritoros'));
 $text2    = mer_field('kar_cult_text2',    __('Jeśli chcesz lepiej poznać nasz styl pracy, pobierz Culturebook i sprawdź, czy to podejście jest Ci bliskie', 'meritoros'));
 $btn_text = mer_field('kar_cult_btn_text', __('Pobierz plik', 'meritoros'));
-$consent  = mer_field('kar_cult_consent',  __('Klikając przycisk, zgadzasz się, że Meritoros może wykorzystać te dane, aby kontaktować się z Tobą w związku z materiałami i usługami, które mogą Cię zainteresować. Możesz zrezygnować w każdej chwili. Więcej informacji znajdziesz w naszej Polityce Prywatności.', 'meritoros'));
+$consent  = mer_tr( mer_field('kar_cult_consent') ?: 'Klikając przycisk, zgadzasz się, że Meritoros może wykorzystać te dane, aby kontaktować się z Tobą w związku z materiałami i usługami, które mogą Cię zainteresować. Możesz zrezygnować w każdej chwili. Więcej informacji znajdziesz w naszej Polityce Prywatności.' );
 
 $cover = get_field('kar_cult_cover');
 if (empty($cover)) {
@@ -21,7 +21,7 @@ $has_pdf = is_array($pdf) && !empty($pdf['url']);
 $nonce = wp_create_nonce('mer_culturebook_nonce');
 ?>
 
-<section class="py-12 sm:py-16 px-6 lg:px-12 bg-white">
+<section id="kariera-culturebook" class="py-12 sm:py-16 px-6 lg:px-12 bg-white">
     <div class="max-w-7xl mx-auto">
         <div class="bg-[#00d084] rounded-3xl overflow-hidden lg:overflow-visible relative min-h-[340px] flex items-center">
 

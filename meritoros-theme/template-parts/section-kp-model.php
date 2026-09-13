@@ -34,7 +34,7 @@ $m2_img_alt = is_array($m2_image) ? esc_attr($m2_image['alt'] ?: 'Outsourcing') 
 .mer-model-card.open .mer-model-panel { transform: translateY(0); }
 </style>
 
-<section class="py-12 md:py-24 bg-emerald-50">
+<section id="kp-model" class="py-12 md:py-24 bg-emerald-50">
     <div class="max-w-7xl mx-auto px-6">
         <div class="text-center mb-8 md:mb-16">
             <h2 class="text-pretty text-4xl md:text-5xl font-bold tracking-tight mb-6"><?php echo mer_esc($title); ?></h2>

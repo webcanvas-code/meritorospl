@@ -1,22 +1,24 @@
 <?php
 // Czytaj pola zawsze ze strony głównej — ACFML zwróci wersję w aktualnym języku
 $_blog_id      = (int) get_option('page_on_front');
-$section_label = (get_field('blog_label',     $_blog_id) ?: 'Wiedza i aktualności');
-$section_title = (get_field('blog_title',     $_blog_id) ?: 'Blog');
-$link_text     = (get_field('blog_link_text', $_blog_id) ?: 'Wszystkie wpisy');
+$section_label = (get_field('blog_label',     $_blog_id) ?: __('Wiedza i aktualności', 'meritoros'));
+$section_title = (get_field('blog_title',     $_blog_id) ?: __('Blog', 'meritoros'));
+$link_text     = (get_field('blog_link_text', $_blog_id) ?: __('Wszystkie wpisy', 'meritoros'));
 $link_url      = (get_field('blog_link_url',  $_blog_id) ?: get_permalink(get_option('page_for_posts')) ?: '/blog');
 
 // Query 3 latest posts
 $posts = new WP_Query([
-    'posts_per_page' => 3,
-    'post_status'    => 'publish',
-    'no_found_rows'  => true,
+    'posts_per_page'   => 3,
+    'post_status'      => 'publish',
+    'no_found_rows'    => true,
+    'suppress_filters' => true,  // pokaż wpisy PL niezależnie od języka WPML
+    'lang'             => 'pl',
 ]);
 
 if (!$posts->have_posts()) return;
 ?>
 
-<section class="py-16 md:py-24 px-6 lg:px-12 bg-slate-50 border-t border-slate-100">
+<section id="blog-posts" class="py-16 md:py-24 px-6 lg:px-12 bg-slate-50 border-t border-slate-100">
     <div class="max-w-[1400px] mx-auto">
 
         <div class="flex flex-col md:flex-row md:items-end justify-between mb-10 gap-6">
@@ -29,7 +31,7 @@ if (!$posts->have_posts()) return;
                 </h2>
             </div>
             <a href="<?php echo esc_url($link_url); ?>"
-               class="inline-flex items-center gap-2 text-base font-semibold text-slate-500 hover:text-[#00d084] transition-colors group shrink-0">
+               class="inline-flex items-center gap-2 text-base font-semibold text-slate-900 hover:text-[#00d084] transition-colors group shrink-0">
                 <?php echo mer_esc($link_text); ?>
                 <i data-lucide="arrow-up-right" class="w-5 h-5 stroke-[2] group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform"></i>
             </a>

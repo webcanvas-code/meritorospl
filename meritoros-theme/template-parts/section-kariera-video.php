@@ -37,7 +37,7 @@ if (is_array($video_file) && !empty($video_file['url'])) {
 }
 ?>
 
-<section class="bg-white">
+<section id="kariera-video" class="bg-white">
     <div class="px-6 lg:px-12 pt-12 sm:pt-16 pb-4 max-w-7xl mx-auto">
         <h2 class="text-pretty text-4xl md:text-5xl font-bold tracking-tight text-slate-900 text-center mb-8"><?php echo mer_esc($title); ?></h2>
     </div>

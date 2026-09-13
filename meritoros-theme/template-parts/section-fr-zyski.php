@@ -23,7 +23,7 @@ for ($i = 1; $i <= 4; $i++) {
     ];
 }
 ?>
-<section class="py-10 md:py-16 bg-emerald-50 relative">
+<section id="fr-zyski" class="py-10 md:py-16 bg-emerald-50 relative">
 
     <!-- Okrąg lewy — większy -->
     <div class="absolute -left-40 top-1/2 -translate-y-1/2 w-[500px] h-[500px] rounded-full border-[52px] border-emerald-300/40 pointer-events-none" aria-hidden="true"></div>

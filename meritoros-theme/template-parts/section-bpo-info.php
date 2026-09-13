@@ -17,7 +17,7 @@ $stat2_text  = __( str_replace("\r\n", "\n", mer_field('bpo_stat2_text', "Jakoś
 $stat3_text  = __( str_replace("\r\n", "\n", mer_field('bpo_stat3_text', "Ponad 170\nexpertów")), 'meritoros' );
 ?>
 
-<section class="py-16 md:py-24 bg-white">
+<section id="bpo-info" class="py-16 md:py-24 bg-white">
     <div class="max-w-7xl mx-auto px-6 w-full">
         <div class="grid lg:grid-cols-2 gap-16 lg:gap-24">
             <div>

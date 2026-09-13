@@ -6,9 +6,9 @@
  */
 $pid = $args['pid'] ?? get_the_ID();
 
-$label = __( get_field('wi_label', $pid) ?: 'Wideo',                'meritoros' );
-$title = __( get_field('wi_title', $pid) ?: 'Wideoinstruktaże',    'meritoros' );
-$desc  = __( get_field('wi_desc',  $pid) ?: 'Praktyczne instruktaże wideo z zakresu księgowości, podatków i kadr.', 'meritoros' );
+$label = mer_tr( get_field('wi_label', $pid) ?: 'Wideo' );
+$title = mer_tr( get_field('wi_title', $pid) ?: 'Wideoinstruktaże' );
+$desc  = mer_tr( get_field('wi_desc',  $pid) ?: 'Praktyczne instruktaże wideo z zakresu księgowości, podatków i kadr.' );
 
 $cards    = [];
 $per_page = 3;
@@ -35,7 +35,7 @@ for ($i = 1; $i <= 10; $i++) {
 
 $total = count($cards);
 ?>
-<section class="py-14 md:py-20 bg-slate-50 border-t border-slate-100">
+<section id="wideoinstruktaze" class="py-14 md:py-20 bg-slate-50 border-t border-slate-100">
     <div class="max-w-[1400px] mx-auto px-6 lg:px-12">
 
         <div class="mb-10">
@@ -96,7 +96,7 @@ $total = count($cards);
         <div id="wi-load-more-wrap" class="mt-10 text-center">
             <button id="wi-load-more"
                     class="mer-btn mer-btn--primary inline-flex items-center gap-2 border border-slate-300 text-slate-700 rounded-full px-8 py-3.5 text-sm font-semibold hover:border-[#00d084] hover:text-[#00d084] transition-colors duration-200">
-                <?php esc_html_e('Załaduj więcej', 'meritoros'); ?>
+                <?php echo mer_esc(mer_tr('Załaduj więcej')); ?>
                 <i data-lucide="chevron-down" class="w-4 h-4 stroke-[2.5]"></i>
             </button>
         </div>
@@ -110,7 +110,7 @@ $total = count($cards);
     <div id="wi-backdrop" class="absolute inset-0 bg-slate-900/80 backdrop-blur-sm"></div>
     <div class="relative w-full max-w-4xl z-10">
         <button id="wi-close" class="absolute -top-10 right-0 text-white/80 hover:text-white transition-colors flex items-center gap-1.5 text-sm">
-            <i data-lucide="x" class="w-5 h-5"></i> <?php esc_html_e('Zamknij', 'meritoros'); ?>
+            <i data-lucide="x" class="w-5 h-5"></i> <?php echo mer_esc(mer_tr('Zamknij')); ?>
         </button>
         <div class="relative w-full" style="padding-bottom:56.25%">
             <iframe id="wi-iframe" class="absolute inset-0 w-full h-full rounded-2xl"

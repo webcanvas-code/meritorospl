@@ -22,7 +22,7 @@ for ($i = 1; $i <= 4; $i++) {
 }
 ?>
 
-<section class="relative overflow-hidden bg-white">
+<section id="bpo-hero" class="relative overflow-hidden bg-white">
     <div class="absolute top-0 right-0 z-0 w-[800px] h-[800px] bg-slate-50 rounded-full blur-3xl opacity-50 translate-x-1/3 -translate-y-1/4 pointer-events-none"></div>
     <div class="absolute bottom-0 left-0 z-0 w-[600px] h-[600px] bg-emerald-50 rounded-full blur-3xl opacity-30 -translate-x-1/3 translate-y-1/4 pointer-events-none"></div>
 

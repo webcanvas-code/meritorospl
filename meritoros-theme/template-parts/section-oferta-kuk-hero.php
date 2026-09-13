@@ -9,7 +9,7 @@ $bg_url   = is_array($bg) ? esc_url($bg['url']) : 'https://images.unsplash.com/p
 $kariera_url = home_url('/kariera/');
 ?>
 
-<section class="relative overflow-hidden" style="min-height:75vh;">
+<section id="oferta-kuk-hero" class="relative overflow-hidden" style="min-height:75vh;">
     <img src="<?php echo $bg_url; ?>" alt="" class="absolute inset-0 w-full h-full object-cover object-center" loading="eager">
     <div class="absolute inset-0 bg-gradient-to-r from-slate-900/95 via-slate-900/80 to-slate-900/50"></div>
 

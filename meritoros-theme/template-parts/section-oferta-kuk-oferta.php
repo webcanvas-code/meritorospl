@@ -40,7 +40,7 @@ $karty = [
 ];
 ?>
 
-<section class="py-16 md:py-24 bg-slate-50 relative overflow-hidden">
+<section id="oferta-kuk-oferta" class="py-16 md:py-24 bg-slate-50 relative overflow-hidden">
     <div class="absolute -left-24 bottom-0 w-[300px] h-[300px] rounded-full border-[40px] border-[#00d084]/8 pointer-events-none"></div>
 
     <div class="relative z-10 max-w-7xl mx-auto px-6">

@@ -29,7 +29,7 @@ $photo_url = is_array($jak_photo) ? esc_url($jak_photo['url']) : '';
 $photo_alt = is_array($jak_photo) ? esc_attr($jak_photo['alt'] ?: __('Zespół Meritoros przy pracy', 'meritoros')) : __('Zespół Meritoros przy pracy', 'meritoros');
 ?>
 
-<section class="py-14 bg-emerald-50">
+<section id="onas-jak" class="py-14 bg-emerald-50">
     <div class="max-w-6xl mx-auto px-6">
         <div class="grid lg:grid-cols-2 gap-10 lg:gap-16 items-start">
 

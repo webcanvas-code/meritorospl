@@ -18,7 +18,7 @@ $posts = new WP_Query([
 if (!$posts->have_posts()) return;
 ?>
 
-<section class="py-16 md:py-24 px-6 lg:px-12 bg-slate-50 border-t border-slate-100">
+<section id="blog" class="py-16 md:py-24 px-6 lg:px-12 bg-slate-50 border-t border-slate-100">
     <div class="max-w-[1400px] mx-auto">
 
         <div class="flex flex-col md:flex-row md:items-end justify-between mb-10 gap-6">

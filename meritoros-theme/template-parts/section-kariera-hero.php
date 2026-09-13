@@ -7,7 +7,7 @@ $bg       = get_field('kar_hero_bg');
 $bg_url   = is_array($bg) ? esc_url($bg['url']) : 'https://images.unsplash.com/photo-1529156069898-49953e39b3ac?w=1600&q=80';
 ?>
 
-<section class="relative overflow-hidden" style="min-height:100vh;">
+<section id="kariera-hero" class="relative overflow-hidden" style="min-height:100vh;">
     <img src="<?php echo $bg_url; ?>" alt="" class="absolute inset-0 w-full h-full object-cover object-center" loading="eager">
     <div class="absolute inset-0 bg-gradient-to-r from-slate-900/85 via-slate-900/60 to-slate-900/10"></div>
     <div class="absolute -left-40 top-1/2 -translate-y-1/2 w-64 h-64 rounded-full border-[40px] border-[#00d084]/70 pointer-events-none"></div>

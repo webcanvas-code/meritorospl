@@ -54,7 +54,7 @@ $_iso9_url    = is_array($w6_badge) ? esc_url($w6_badge['url']) : esc_url($_img 
     }
 </style>
 
-<section class="min-h-screen flex flex-col justify-center py-8 lg:py-12 px-6 lg:px-12 max-w-[1400px] mx-auto">
+<section id="onas-wartosci" class="min-h-screen flex flex-col justify-center py-8 lg:py-12 px-6 lg:px-12 max-w-[1400px] mx-auto">
     <div class="text-center mb-6">
         <span class="text-[#00d084] uppercase tracking-widest text-base font-bold mb-2 block">
             <?php echo mer_esc($w_label); ?>

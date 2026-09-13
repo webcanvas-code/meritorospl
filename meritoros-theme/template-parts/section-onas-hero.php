@@ -10,7 +10,7 @@ $btn2_url   = mer_field('onas_hero_btn2_url', home_url('/kontakt/'));
 $bg_url = is_array($hero_bg) ? esc_url($hero_bg['url']) : '';
 ?>
 
-<section class="relative overflow-hidden pt-36 pb-16">
+<section id="onas-hero" class="relative overflow-hidden pt-36 pb-16">
     <div class="absolute inset-0 z-0 bg-slate-900">
         <?php if ($bg_url) : ?>
             <img src="<?php echo $bg_url; ?>" alt="" aria-hidden="true"

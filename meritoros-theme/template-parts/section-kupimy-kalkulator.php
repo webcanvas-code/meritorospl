@@ -8,7 +8,7 @@ $photo    = mer_field('kupimy_kalk_photo');
 $photo_url = is_array($photo) ? $photo['url'] : 'https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=1600&q=80';
 ?>
 
-<section class="relative overflow-hidden">
+<section id="kupimy-kalkulator" class="relative overflow-hidden">
 
     <!-- Zdjęcie w tle -->
     <div class="absolute inset-0">

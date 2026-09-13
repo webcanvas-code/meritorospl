@@ -5,7 +5,7 @@ $btn_text = __( mer_field('uk_cta_btn_text', 'Umów się na rozmowę'), 'meritor
 $btn_url  = mer_field('uk_cta_btn_url',  home_url('/kontakt/'));
 ?>
 
-<section class="py-8 bg-white">
+<section id="uk-cta" class="py-8 bg-white">
     <div class="max-w-7xl mx-auto px-6">
         <div class="mer-btn mer-btn--primary bg-[#00d084] rounded-2xl px-10 py-8 flex flex-col md:flex-row items-center justify-between gap-6">
             <div class="flex items-center gap-6">

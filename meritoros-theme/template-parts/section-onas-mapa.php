@@ -15,7 +15,7 @@ if (is_array($mapa_image) && !empty($mapa_image['url'])) {
 }
 ?>
 
-<section class="py-12 md:py-24 bg-white relative">
+<section id="onas-mapa" class="py-12 md:py-24 bg-white relative">
 
     <div class="hidden md:block absolute -right-40 top-1/2 -translate-y-1/2 w-[500px] h-[500px] rounded-full border-[60px] border-emerald-100 pointer-events-none"></div>
 

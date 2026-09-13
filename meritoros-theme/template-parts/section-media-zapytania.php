@@ -7,7 +7,7 @@ $photo_url = is_array($photo) ? ($photo['url'] ?? '') : '';
 $photo_alt = is_array($photo) ? ($photo['alt'] ?? $title) : $title;
 ?>
 
-<section class="py-16 md:py-24 bg-white relative" id="zapytania-medialne">
+<section id="media-zapytania" class="py-16 md:py-24 bg-white relative" id="zapytania-medialne">
 
     <!-- Dekoracyjne okręgi -->
     <div class="absolute -right-24 top-1/2 -translate-y-1/2 w-72 h-72 rounded-full border-[48px] border-emerald-100/60 pointer-events-none" aria-hidden="true"></div>

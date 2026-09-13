@@ -9,7 +9,7 @@ $rate_p   = (float) mer_field('kp_kalk_rate_p',   52);
 $rate_sub = (float) mer_field('kp_kalk_rate_sub', 42);
 ?>
 
-<section id="kalkulator" class="py-10 md:py-20 bg-[#00d084] relative overflow-hidden">
+<section id="kp-kalkulator" class="py-10 md:py-20 bg-[#00d084] relative overflow-hidden">
 
     <!-- Dekoracyjne okręgi -->
     <div class="absolute -right-24 top-1/2 -translate-y-1/2 w-[420px] h-[420px] rounded-full border-[52px] border-white/20 pointer-events-none" aria-hidden="true"></div>

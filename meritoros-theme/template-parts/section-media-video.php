@@ -67,7 +67,7 @@ $count     = count($videos);
 $has_multi = $count > 1;
 ?>
 
-<section class="py-16 md:py-24 bg-white relative overflow-hidden">
+<section id="media-video" class="py-16 md:py-24 bg-white relative overflow-hidden">
     <div class="absolute -left-16 top-1/2 -translate-y-1/2 w-[260px] h-[260px] rounded-full border-[32px] border-emerald-300/30 pointer-events-none" aria-hidden="true"></div>
 
     <div class="max-w-7xl mx-auto px-6">

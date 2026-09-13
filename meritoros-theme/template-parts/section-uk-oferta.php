@@ -11,7 +11,7 @@ $items_raw = mer_field('uk_oferta_items', "Prowadzenie ksiąg rachunkowych\n\nOb
 $items = array_values(array_filter(array_map(function($s) { return __($s, 'meritoros'); }, array_map('trim', preg_split('/(\r?\n){2,}/', $items_raw)))));
 ?>
 
-<section class="py-8 md:py-14 bg-white relative">
+<section id="uk-oferta" class="py-8 md:py-14 bg-white relative">
     <div class="hidden md:block absolute -right-40 top-1/2 -translate-y-1/2 w-[380px] h-[380px] rounded-full border-[50px] border-emerald-100 pointer-events-none"></div>
 
     <div class="max-w-7xl mx-auto px-6 relative z-10">
@@ -45,7 +45,7 @@ $items = array_values(array_filter(array_map(function($s) { return __($s, 'merit
             <a href="<?php echo esc_url($btn1_url); ?>" class="mer-btn mer-btn--secondary px-7 py-3.5 rounded-full border border-slate-300 text-slate-700 text-base font-semibold hover:bg-slate-50 transition-colors">
                 <?php echo mer_esc($btn1_text); ?>
             </a>
-            <a href="#kalkulator"
+            <a href="#uk-kalkulator"
                class="mer-btn mer-btn--primary px-7 py-3.5 rounded-full bg-[#00d084] text-white text-base font-semibold hover:bg-[#00b872] transition-colors">
                 <?php echo mer_esc($btn2_text); ?>
             </a>

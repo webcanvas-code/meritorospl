@@ -19,7 +19,7 @@ for ($i = 1; $i <= 4; $i++) {
 }
 ?>
 
-<section class="py-12 md:py-16 bg-white border-t border-slate-100">
+<section id="hk-logos" class="py-12 md:py-16 bg-white border-t border-slate-100">
     <div class="max-w-7xl mx-auto px-6">
 
         <p class="text-base md:text-lg text-slate-500 font-medium mb-6">

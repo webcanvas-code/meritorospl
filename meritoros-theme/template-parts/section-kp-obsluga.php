@@ -12,7 +12,7 @@ $img_url = is_array($image) ? esc_url($image['url']) : 'https://images.unsplash.
 $img_alt = is_array($image) ? esc_attr($image['alt'] ?: 'Obsługa kadrowo-płacowa') : 'Obsługa kadrowo-płacowa';
 ?>
 
-<section class="py-10 md:py-20 bg-white relative">
+<section id="kp-obsluga" class="py-10 md:py-20 bg-white relative">
     <div class="absolute -right-32 top-1/2 -translate-y-1/2 w-[360px] h-[360px] rounded-full border-[50px] border-emerald-100 pointer-events-none"></div>
 
     <div class="max-w-7xl mx-auto px-6 relative z-10">
@@ -33,7 +33,7 @@ $img_alt = is_array($image) ? esc_attr($image['alt'] ?: 'Obsługa kadrowo-płaco
                 <p class="text-base text-slate-900 font-semibold leading-relaxed mb-8">
                     <?php echo mer_esc($text2); ?>
                 </p>
-                <a href="#kalkulator"
+                <a href="#kp-kalkulator"
                    class="mer-btn mer-btn--primary inline-flex items-center gap-2 px-7 py-3.5 rounded-full bg-[#00d084] text-white text-base font-semibold hover:bg-[#00b872] transition-colors">
                     <?php echo mer_esc($btn_text); ?>
                     <i data-lucide="arrow-right" class="w-4 h-4"></i>

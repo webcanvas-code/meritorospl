@@ -50,7 +50,7 @@ $c6_cert       = mer_field('val_c6_cert', 'ISO 9001:2015');
         .val-iso9001  { width: 52.95px; height: 53px; }
     }
 </style>
-<section class="py-16 md:py-24 px-6 lg:px-12 max-w-[1400px] mx-auto">
+<section id="values" class="py-16 md:py-24 px-6 lg:px-12 max-w-[1400px] mx-auto">
     <div class="text-center mb-6">
         <span class="text-[#00d084] uppercase tracking-widest text-base font-bold mb-2 block">
             <?php echo mer_esc($label); ?>

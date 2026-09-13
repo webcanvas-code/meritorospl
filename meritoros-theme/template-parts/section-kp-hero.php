@@ -9,7 +9,7 @@ $btn2_text    = __( mer_field('kp_hero_btn2_text',   'Porozmawiajmy'), 'meritoro
 $btn2_url     = mer_field('kp_hero_btn2_url',    home_url('/kontakt/'));
 ?>
 
-<section class="relative bg-emerald-50 overflow-hidden pt-36 pb-16">
+<section id="kp-hero" class="relative bg-emerald-50 overflow-hidden pt-36 pb-16">
 
     <div class="absolute right-0 top-1/2 -translate-y-1/2 w-[460px] h-[460px] opacity-10 pointer-events-none pr-12 hidden lg:flex items-center justify-center">
         <svg viewBox="0 0 300 280" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-full h-full stroke-emerald-600" stroke-width="3">

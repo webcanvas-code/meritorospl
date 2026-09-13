@@ -8,7 +8,7 @@ $items    = array_values(array_filter(array_map('trim', preg_split('/(\r?\n){2,}
     "poziom i powtarzalność przychodów,\n\nrentowność biura,\n\nstruktura klientów i ryzyko koncentracji,\n\norganizacja pracy, technologia i stopień poukładania procesów."), 'meritoros' )))));
 ?>
 
-<section class="py-14 md:py-20 bg-white">
+<section id="kupimy-wycena" class="py-14 md:py-20 bg-white">
     <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-start">
 

@@ -18,7 +18,7 @@ $photo_url = is_array($photo) ? $photo['url'] : 'https://images.unsplash.com/pho
 $photo_alt = is_array($photo) ? ($photo['alt'] ?: $heading) : __('Spotkanie', 'meritoros');
 ?>
 
-<section class="py-14 md:py-20 bg-white relative">
+<section id="kupimy-kryteria" class="py-14 md:py-20 bg-white relative">
 
     <!-- Dekoracyjny okrąg po lewej -->
     <div class="absolute -left-48 top-1/2 -translate-y-1/2 w-[500px] h-[500px] rounded-full border-[48px] border-emerald-100 pointer-events-none" aria-hidden="true"></div>

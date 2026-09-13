@@ -7,7 +7,7 @@ $img_url = is_array($image) ? esc_url($image['url']) : 'https://images.unsplash.
 $img_alt = is_array($image) ? esc_attr($image['alt'] ?: 'Obsługa księgowa fundacji rodzinnej') : 'Obsługa księgowa fundacji rodzinnej';
 ?>
 
-<section class="py-10 md:py-20 bg-white overflow-hidden relative">
+<section id="fr-obsluga" class="py-10 md:py-20 bg-white overflow-hidden relative">
     <div class="max-w-7xl mx-auto px-6">
         <div class="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
 

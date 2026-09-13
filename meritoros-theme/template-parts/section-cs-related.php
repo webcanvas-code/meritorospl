@@ -21,7 +21,7 @@ $_demo_cards = [
 
 $use_demo = !$related->have_posts();
 ?>
-<section class="py-14 md:py-20 bg-emerald-50">
+<section id="cs-related" class="py-14 md:py-20 bg-emerald-50">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
         <!-- Nagłówek z przyciskami nawigacji -->

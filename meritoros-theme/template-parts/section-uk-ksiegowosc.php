@@ -12,7 +12,7 @@ $img_url = is_array($image) ? esc_url($image['url']) : 'https://images.unsplash.
 $img_alt = is_array($image) ? esc_attr($image['alt'] ?: 'Twoja księgowość') : 'Twoja księgowość';
 ?>
 
-<section class="py-10 md:py-20 bg-white relative">
+<section id="uk-ksiegowosc" class="py-10 md:py-20 bg-white relative">
     <div class="absolute -right-32 top-1/2 -translate-y-1/2 w-[360px] h-[360px] rounded-full border-[50px] border-emerald-100 pointer-events-none"></div>
 
     <div class="max-w-7xl mx-auto px-6 relative z-10">

@@ -9,7 +9,7 @@ $photo_url  = is_array($photo) ? ($photo['url'] ?? '') : '';
 $photo_alt  = is_array($photo) ? ($photo['alt'] ?? $title) : $title;
 ?>
 
-<section class="py-10 md:py-20 bg-white overflow-hidden relative">
+<section id="media-artykul" class="py-10 md:py-20 bg-white overflow-hidden relative">
 
     <!-- Dekoracyjny okrąg -->
     <div class="absolute -right-24 top-1/2 -translate-y-1/2 w-[420px] h-[420px] rounded-full border-[52px] border-emerald-300/30 pointer-events-none" aria-hidden="true"></div>

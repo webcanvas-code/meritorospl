@@ -22,7 +22,7 @@ for ($i = 1; $i <= 4; $i++) {
 }
 ?>
 
-<section class="py-10 md:py-20 bg-white relative">
+<section id="kp-dlaczego" class="py-10 md:py-20 bg-white relative">
     <div class="max-w-7xl mx-auto px-6 mb-10 flex flex-col sm:flex-row sm:items-end sm:justify-between gap-4">
         <h2 class="text-pretty text-4xl md:text-5xl font-bold tracking-tight text-slate-900">
             <?php echo nl2br(esc_html($title)); ?>

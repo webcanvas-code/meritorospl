@@ -8,7 +8,7 @@ $bg       = get_field('hk_cta_bg',       $page_id);
 $bg_url   = is_array($bg) && !empty($bg['url']) ? esc_url($bg['url']) : 'https://images.unsplash.com/photo-1515187029135-18ee286d815b?w=1600&q=80';
 ?>
 
-<section class="relative py-16 md:py-24 overflow-hidden">
+<section id="hk-cta" class="relative py-16 md:py-24 overflow-hidden">
     <img src="<?php echo $bg_url; ?>" alt="" class="absolute inset-0 w-full h-full object-cover object-center" loading="lazy">
     <div class="absolute inset-0 bg-slate-900/65"></div>
 

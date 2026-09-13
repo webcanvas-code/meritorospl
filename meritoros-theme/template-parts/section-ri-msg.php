@@ -9,7 +9,7 @@ for ($i = 1; $i <= 10; $i++) {
 }
 ?>
 
-<section class="py-10 md:py-14 bg-white">
+<section id="ri-msg" class="py-10 md:py-14 bg-white">
     <div class="max-w-7xl mx-auto px-6">
 
         <h2 class="text-pretty text-4xl md:text-5xl font-bold tracking-tight text-slate-900 mb-10">

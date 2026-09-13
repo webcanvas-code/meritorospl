@@ -26,7 +26,7 @@ for ($i = 1; $i <= 6; $i++) {
 }
 ?>
 
-<section class="py-12 md:py-24 bg-white">
+<section id="onas-kim" class="py-12 md:py-24 bg-white">
     <div class="max-w-[1400px] mx-auto px-6 lg:px-12">
 
         <div class="grid lg:grid-cols-2 gap-12 lg:gap-24 mb-20">

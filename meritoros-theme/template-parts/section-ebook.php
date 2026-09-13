@@ -7,13 +7,14 @@
  */
 $pid = $args['pid'] ?? get_the_ID();
 
-$label    = __( get_field('ebook_label',    $pid) ?: 'Darmowy materiał', 'meritoros' );
-$title    = __( get_field('ebook_title',    $pid) ?: 'Pobierz nasz darmowy Ebook', 'meritoros' );
+$label    = mer_tr( get_field('ebook_label',    $pid) ?: 'Darmowy materiał' );
+$title    = mer_tr( get_field('ebook_title',    $pid) ?: 'Pobierz nasz darmowy Ebook' );
 $subtitle_raw = get_field('ebook_subtitle', $pid) ?: '';
-$subtitle = $subtitle_raw ? __($subtitle_raw, 'meritoros') : '';
+$subtitle = $subtitle_raw ? mer_tr($subtitle_raw) : '';
 $desc_raw = get_field('ebook_desc', $pid) ?: '';
-$desc     = $desc_raw ? __($desc_raw, 'meritoros') : '';
-$btn      = __( get_field('ebook_btn_text', $pid) ?: 'Pobierz materiał', 'meritoros' );
+$_desc_norm = $desc_raw ? preg_replace('/[ \t]+/', ' ', preg_replace('/\r?\n/', ' ', $desc_raw)) : '';
+$desc     = $_desc_norm ? mer_tr($_desc_norm) : '';
+$btn      = mer_tr( get_field('ebook_btn_text', $pid) ?: 'Pobierz materiał' );
 
 $mockup     = get_field('ebook_mockup', $pid);
 $mockup_url = is_array($mockup) ? ($mockup['url'] ?? '') : '';
@@ -25,7 +26,7 @@ $has_pdf = is_array($pdf) && !empty($pdf['url']);
 $nonce = wp_create_nonce('mer_ebook_nonce');
 ?>
 
-<section class="py-16 md:py-24 bg-[#f0faf4] overflow-hidden">
+<section id="ebook" class="py-16 md:py-24 bg-[#f0faf4] overflow-hidden">
     <div class="max-w-[1400px] mx-auto px-6 lg:pl-12 lg:pr-0">
         <div class="flex flex-col lg:flex-row items-center gap-12 lg:gap-16">
 
@@ -54,7 +55,7 @@ $nonce = wp_create_nonce('mer_ebook_nonce');
                     <input type="hidden" name="page_id" value="<?php echo esc_attr($pid); ?>">
 
                     <input type="email" id="ebook-email" name="email" required
-                           placeholder="<?php esc_attr_e('Adres e-mail', 'meritoros'); ?>"
+                           placeholder="<?php echo esc_attr(mer_tr('Adres e-mail')); ?>"
                            class="mer-btn mer-btn--primary w-full px-6 py-4 rounded-full border border-slate-200 bg-white text-slate-900 text-base placeholder:text-slate-400 focus:outline-none focus:border-[#00d084] transition-colors duration-200 shadow-sm">
 
                     <button type="submit" id="ebook-submit"
@@ -69,7 +70,7 @@ $nonce = wp_create_nonce('mer_ebook_nonce');
 
                     <p id="ebook-success" class="hidden items-center gap-2 text-[#00d084] font-semibold text-sm">
                         <i data-lucide="check-circle" class="w-5 h-5 stroke-[2]"></i>
-                        <?php esc_html_e('Ebook został wysłany na podany adres e-mail!', 'meritoros'); ?>
+                        <?php echo mer_esc(mer_tr('Ebook został wysłany na podany adres e-mail!')); ?>
                     </p>
                     <p id="ebook-error" class="hidden text-red-500 text-sm"></p>
                 </form>
@@ -96,9 +97,9 @@ $nonce = wp_create_nonce('mer_ebook_nonce');
 <?php if ($has_pdf) : ?>
 <script>
 var merEbookL10n = {
-    emailInvalid: <?php echo json_encode(__('Podaj prawidłowy adres e-mail.', 'meritoros')); ?>,
-    errorGeneric: <?php echo json_encode(__('Wystąpił błąd. Spróbuj ponownie.', 'meritoros')); ?>,
-    errorNetwork: <?php echo json_encode(__('Błąd połączenia. Spróbuj ponownie.', 'meritoros')); ?>,
+    emailInvalid: <?php echo json_encode(mer_tr('Podaj prawidłowy adres e-mail.')); ?>,
+    errorGeneric: <?php echo json_encode(mer_tr('Wystąpił błąd. Spróbuj ponownie.')); ?>,
+    errorNetwork: <?php echo json_encode(mer_tr('Błąd połączenia. Spróbuj ponownie.')); ?>,
 };
 </script>
 <script>

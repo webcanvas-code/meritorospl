@@ -10,7 +10,7 @@ $items_raw = mer_field('kp_oferta_items', "Prowadzenie dokumentacji kadrowej\n\n
 $items = array_values(array_filter(array_map(function($s) { return __($s, 'meritoros'); }, array_map('trim', preg_split('/(\r?\n){2,}/', $items_raw)))));
 ?>
 
-<section class="py-8 md:py-14 bg-white relative">
+<section id="kp-oferta" class="py-8 md:py-14 bg-white relative">
     <div class="hidden md:block absolute -right-40 top-1/2 -translate-y-1/2 w-[380px] h-[380px] rounded-full border-[50px] border-emerald-100 pointer-events-none"></div>
 
     <div class="max-w-7xl mx-auto px-6 relative z-10">

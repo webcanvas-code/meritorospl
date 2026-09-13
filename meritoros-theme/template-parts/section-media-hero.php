@@ -3,7 +3,7 @@ $title = __( mer_field('media_hero_title', 'Media i informacje firmowe'), 'merit
 $text  = __( mer_field('media_hero_text',  'Najważniejsze wydarzenia z życia firmy: rozwój, nowe inicjatywy, wyróżnienia i ogłoszenia.'), 'meritoros' );
 ?>
 
-<section class="pt-36 pb-16 bg-white relative overflow-hidden">
+<section id="media-hero" class="pt-36 pb-16 bg-white relative overflow-hidden">
 
     <!-- Decorative illustration — stacked news cards, bleeds off right edge -->
     <div class="absolute -right-10 top-1/2 -translate-y-1/2 hidden lg:flex flex-col gap-4 pointer-events-none select-none" aria-hidden="true">

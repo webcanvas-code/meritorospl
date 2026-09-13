@@ -21,7 +21,7 @@ if (empty($clients)) {
 }
 ?>
 
-<section class="relative min-h-screen min-h-[100svh] flex flex-col overflow-hidden px-6 lg:px-12">
+<section id="hero" class="relative min-h-screen min-h-[100svh] flex flex-col overflow-hidden px-6 lg:px-12">
     <!-- Background -->
     <div class="absolute inset-0 z-0 bg-slate-900">
         <img src="<?php echo $bg_url; ?>" alt="<?php echo $bg_alt; ?>"

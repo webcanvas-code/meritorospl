@@ -35,7 +35,7 @@ for ($i = 1; $i <= 3; $i++) {
 }
 ?>
 
-<section class="py-16 md:py-24 bg-white overflow-hidden">
+<section id="kariera-jakosc" class="py-16 md:py-24 bg-white overflow-hidden">
     <div class="max-w-7xl mx-auto px-6">
 
         <div class="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center mb-16">

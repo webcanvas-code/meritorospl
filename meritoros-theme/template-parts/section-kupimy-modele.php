@@ -22,7 +22,7 @@ $cards = [
 ];
 ?>
 
-<section class="py-12 md:py-16 bg-white relative">
+<section id="kupimy-modele" class="py-12 md:py-16 bg-white relative">
     <div class="absolute -right-40 bottom-0 w-[480px] h-[480px] rounded-full border-[40px] border-emerald-100 pointer-events-none" aria-hidden="true"></div>
 
     <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative">

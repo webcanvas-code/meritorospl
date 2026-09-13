@@ -6,7 +6,7 @@ $btn_url  = mer_field('hk_hero_btn_url',  '#hk-video-section');
 if (!$btn_url || $btn_url === '#case-studies') $btn_url = '#hk-video-section';
 ?>
 
-<section class="pt-36 pb-16 bg-white relative">
+<section id="hk-hero" class="pt-36 pb-16 bg-white relative">
 
     <!-- Video player illustration -->
     <div class="absolute inset-0 overflow-hidden pointer-events-none select-none" aria-hidden="true">

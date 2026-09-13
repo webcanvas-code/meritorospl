@@ -45,7 +45,7 @@ if (empty($offices)) {
 ?>
 
 <!-- Contact info -->
-<section class="py-16 md:py-20 bg-emerald-50 relative overflow-hidden">
+<section id="kontakt-info" class="py-16 md:py-20 bg-emerald-50 relative overflow-hidden">
     <div class="absolute inset-0 pointer-events-none opacity-5">
         <svg viewBox="0 0 800 500" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-full h-full" aria-hidden="true">
             <circle cx="650" cy="250" r="300" fill="#00d084"/>

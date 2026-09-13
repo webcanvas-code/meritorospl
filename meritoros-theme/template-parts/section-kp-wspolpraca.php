@@ -28,7 +28,7 @@ $s2_items = array_values(array_filter(array_map(function($s) { return __($s, 'me
 $s3_items = array_values(array_filter(array_map(function($s) { return __($s, 'meritoros'); }, array_map('trim', explode("\n", $s3_items_raw)))));
 ?>
 
-<section class="py-16 md:py-24 bg-emerald-50 relative">
+<section id="kp-wspolpraca" class="py-16 md:py-24 bg-emerald-50 relative">
     <div class="absolute top-0 left-0 w-96 h-96 border-[40px] border-emerald-200/40 rounded-full -translate-x-1/2 -translate-y-1/2 pointer-events-none"></div>
     <div class="absolute bottom-0 right-0 w-[600px] h-[600px] border-[60px] border-emerald-200/30 rounded-full translate-x-1/4 translate-y-1/4 pointer-events-none"></div>
     <div class="absolute top-1/2 left-0 w-[500px] h-[500px] border-[50px] border-emerald-200/40 rounded-full -translate-x-1/2 pointer-events-none"></div>

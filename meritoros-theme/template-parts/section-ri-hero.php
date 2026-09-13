@@ -1,13 +1,16 @@
 <?php
-$title    = __( mer_field('ri_hero_title',    'Relacje inwestorskie'), 'meritoros' );
-$text     = __( mer_field('ri_hero_text',     'Poniżej udostępniamy kluczowe informacje i dokumenty dotyczące Meritoros SA, w tym sprawozdania finansowe i raporty okresowe.'), 'meritoros' );
-$image    = get_field('ri_hero_image');
+$_ri_pl  = get_page_by_path('relacje-inwestorskie');
+$_ri_pid = $_ri_pl ? (int) $_ri_pl->ID : get_the_ID();
+
+$title    = mer_tr( get_field('ri_hero_title',    $_ri_pid) ?: 'Relacje inwestorskie' );
+$text     = mer_tr( get_field('ri_hero_text',     $_ri_pid) ?: 'Poniżej udostępniamy kluczowe informacje i dokumenty dotyczące Meritoros SA, w tym sprawozdania finansowe i raporty okresowe.' );
+$image    = get_field('ri_hero_image', $_ri_pid);
 
 $img_url = is_array($image) ? esc_url($image['url']) : 'https://images.unsplash.com/photo-1521791136064-7986c2920216?auto=format&fit=crop&q=80&w=1600';
 $img_alt = is_array($image) ? esc_attr($image['alt'] ?: 'Relacje inwestorskie') : 'Relacje inwestorskie';
 ?>
 
-<section class="relative overflow-hidden pt-36 pb-16">
+<section id="ri-hero" class="relative overflow-hidden pt-36 pb-16">
 
     <!-- Zdjęcie w tle -->
     <div class="absolute inset-0">
@@ -19,7 +22,7 @@ $img_alt = is_array($image) ? esc_attr($image['alt'] ?: 'Relacje inwestorskie') 
 
         <!-- Breadcrumb -->
         <div class="flex items-center flex-wrap gap-1 text-xs sm:text-sm text-white/60 mb-6">
-            <a href="<?php echo esc_url(home_url('/')); ?>" class="hover:text-white transition-colors"><?php esc_html_e('Strona główna', 'meritoros'); ?></a>
+            <a href="<?php echo esc_url(home_url('/')); ?>" class="hover:text-white transition-colors"><?php echo mer_tr('Strona główna'); ?></a>
             <span>/</span>
             <span class="text-white/90 font-medium"><?php echo mer_esc($title); ?></span>
         </div>
