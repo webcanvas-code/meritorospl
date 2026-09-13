@@ -33,7 +33,7 @@ jobs:
           fi
           while IFS= read -r file; do
             remote="${file#meritoros-theme/}"
-            remote_path="/public_html/wp-content/themes/meritoros-theme/$remote"
+            remote_path="/domains/meritoros.web-canvas.pl/public_html/wp-content/themes/meritoros-theme/$remote"
             remote_dir="$(dirname "$remote_path")"
             echo "Uploading: $file -> $remote_path"
             lftp -c "
