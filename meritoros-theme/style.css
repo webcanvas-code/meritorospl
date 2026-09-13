@@ -250,3 +250,6 @@ section, main > * {
 /* Slider wideo — ukryj scrollbar */
 #mvid-slider::-webkit-scrollbar { display: none; }
 #mvid-slider { -ms-overflow-style: none; scrollbar-width: none; }
+
+/* BPO dlaczego slider — karty z minimalną wysokością */
+@media (min-width: 1024px) { .lg\:min-h-\[325px\] { min-height: 325px; } }
