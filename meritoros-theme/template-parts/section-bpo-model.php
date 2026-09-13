@@ -56,4 +56,4 @@ $btn_url  = home_url('/kontakt/');
         </div>
     </div>
 </section>
-/* deploy trigger */
+

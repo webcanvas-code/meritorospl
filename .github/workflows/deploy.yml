@@ -20,7 +20,10 @@ jobs:
         id: changed
         run: |
           git diff --name-only HEAD~1 HEAD -- meritoros-theme/ > changed_files.txt
+          echo "=== Changed files ==="
           cat changed_files.txt
+          echo "=== Count ==="
+          wc -l changed_files.txt
 
       - name: Deploy changed files via FTP
         env:
@@ -35,8 +38,12 @@ jobs:
             remote="${file#meritoros-theme/}"
             remote_path="/domains/meritoros.web-canvas.pl/public_html/wp-content/themes/meritoros-theme/$remote"
             remote_dir="$(dirname "$remote_path")"
-            echo "Uploading: $file -> $remote_path"
-            lftp -c "
+            echo "========================================"
+            echo "File: $file"
+            echo "Remote path: $remote_path"
+            echo "Remote dir: $remote_dir"
+            echo "Uploading..."
+            lftp -d -c "
               set net:timeout 30;
               set net:reconnect-interval-base 5;
               set net:max-retries 3;
@@ -44,9 +51,11 @@ jobs:
               set ftp:passive-mode yes;
               set cmd:fail-exit yes;
               open -u srv104971,$FTP_PASSWORD ftp://h96.seohost.pl;
-              mkdir -fp $remote_dir;
-              put $file -o $remote_path
-            "
+              ls $remote_dir;
+              put $file -o $remote_path;
+            " 2>&1 | grep -v "^---\|PASSWORD" || true
+            echo "Exit code: $?"
+            echo "Done: $file"
           done < changed_files.txt
 
       - name: Reset OPcache on server
