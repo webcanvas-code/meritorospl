@@ -9,102 +9,54 @@ $m1 = get_field('kp_model1') ?: ($_orig_id !== $_page_id ? get_field('kp_model1'
 $m1_icon     = is_array($m1) && !empty($m1['icon'])     ? $m1['icon']     : 'users-round';
 $m1_title    = __( is_array($m1) && !empty($m1['title'])    ? $m1['title']    : 'Kompleksowa obsługa', 'meritoros' );
 $m1_text     = __( is_array($m1) && !empty($m1['text'])     ? $m1['text']     : 'Przejmujemy pełną obsługę kadr i płac: dokumentację pracowniczą, naliczanie wynagrodzeń oraz rozliczenia i zgłoszenia do instytucji (m.in. ZUS). Pracujesz z dedykowanym zespołem i masz pewność terminowości oraz zgodności z przepisami.', 'meritoros' );
-$m1_btn_text = __( is_array($m1) && !empty($m1['btn_text']) ? $m1['btn_text'] : 'Zobacz', 'meritoros' );
+$m1_btn_text = __( is_array($m1) && !empty($m1['btn_text']) ? $m1['btn_text'] : 'Zapytaj o wycenę', 'meritoros' );
 $m1_btn_url  = is_array($m1) && !empty($m1['btn_url'])  ? $m1['btn_url']  : home_url('/kontakt/');
 
 $m2 = get_field('kp_model2') ?: ($_orig_id !== $_page_id ? get_field('kp_model2', $_orig_id) : null);
-$m2_image    = is_array($m2) && !empty($m2['image'])    ? $m2['image']    : null;
-$m2_title    = __( is_array($m2) && !empty($m2['title'])    ? $m2['title']    : "Outsourcing wybranych\nprocesów", 'meritoros' );
+$m2_icon     = is_array($m2) && !empty($m2['icon'])     ? $m2['icon']     : 'pen-line';
+$m2_title    = __( is_array($m2) && !empty($m2['title'])    ? $m2['title']    : 'Outsourcing wybranych procesów', 'meritoros' );
 $m2_text     = __( is_array($m2) && !empty($m2['text'])     ? $m2['text']     : 'Wspieramy wybrane obszary, które wymagają uporządkowania lub odciążenia zespołu np. same płace, obsługę dokumentacji, rozliczenia z ZUS czy raportowanie. Ustalamy standard i harmonogram działania, a zakres współpracy możesz elastycznie rozszerzać.', 'meritoros' );
-$m2_btn_text = __( is_array($m2) && !empty($m2['btn_text']) ? $m2['btn_text'] : 'Zobacz', 'meritoros' );
+$m2_btn_text = __( is_array($m2) && !empty($m2['btn_text']) ? $m2['btn_text'] : 'Zapytaj o wycenę', 'meritoros' );
 $m2_btn_url  = is_array($m2) && !empty($m2['btn_url'])  ? $m2['btn_url']  : home_url('/kontakt/');
-
-$m2_img_url = is_array($m2_image) ? esc_url($m2_image['url']) : 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&q=80&w=900';
-$m2_img_alt = is_array($m2_image) ? esc_attr($m2_image['alt'] ?: 'Outsourcing') : 'Outsourcing';
 ?>
 
-<style>
-.mer-model-panel {
-    transform: translateY(100%);
-    transition: transform 0.4s cubic-bezier(.4,0,.2,1);
-}
-@media (hover: hover) {
-    .mer-model-card:hover .mer-model-panel { transform: translateY(0); }
-}
-.mer-model-card.open .mer-model-panel { transform: translateY(0); }
-</style>
-
 <section id="kp-model" class="py-12 md:py-24 bg-emerald-50">
-    <div class="max-w-7xl mx-auto px-6">
-        <div class="text-center mb-8 md:mb-16">
-            <h2 class="text-pretty text-4xl md:text-5xl font-bold tracking-tight mb-6"><?php echo mer_esc($title); ?></h2>
-            <p class="text-base md:text-lg text-slate-500 max-w-4xl mx-auto"><?php echo nl2br(esc_html($subtitle)); ?></p>
+    <div class="max-w-5xl mx-auto px-6">
+        <div class="text-center mb-8 md:mb-12">
+            <h2 class="text-pretty text-4xl md:text-5xl font-bold tracking-tight mb-4 text-slate-900"><?php echo mer_esc($title); ?></h2>
+            <p class="text-base md:text-lg text-slate-500 max-w-2xl mx-auto"><?php echo nl2br(esc_html($subtitle)); ?></p>
         </div>
 
-        <div class="grid md:grid-cols-2 gap-8">
+        <div class="grid md:grid-cols-2 gap-6">
 
-            <!-- Karta 1: biała z ikoną -->
-            <div class="mer-model-card relative rounded-3xl overflow-hidden h-[420px] bg-white border border-slate-200 cursor-pointer">
-
-                <!-- Warstwa domyślna -->
-                <div class="absolute inset-0 flex flex-col items-center justify-center text-center p-10">
-                    <i data-lucide="<?php echo esc_attr($m1_icon); ?>" stroke-width="1" class="w-20 h-20 text-[#00d084] opacity-80 mb-6"></i>
-                    <h3 class="text-3xl font-bold text-slate-900"><?php echo mer_esc($m1_title); ?></h3>
+            <!-- Karta 1: biała -->
+            <div class="bg-white rounded-3xl p-8 border border-slate-100 shadow-sm flex flex-col">
+                <div class="w-14 h-14 bg-emerald-50 rounded-2xl flex items-center justify-center mb-6 text-[#00d084]">
+                    <i data-lucide="<?php echo esc_attr($m1_icon); ?>" class="w-7 h-7" stroke-width="1.5"></i>
                 </div>
-
-                <!-- Panel hover -->
-                <div class="mer-model-panel absolute inset-x-0 bottom-0 h-full bg-white p-10 flex flex-col justify-center">
-                    <i data-lucide="<?php echo esc_attr($m1_icon); ?>" stroke-width="0.5" class="absolute right-6 top-6 w-32 h-32 text-slate-100 pointer-events-none"></i>
-                    <h3 class="text-2xl font-bold text-slate-900 mb-4"><?php echo mer_esc($m1_title); ?></h3>
-                    <p class="text-lg text-slate-500 leading-relaxed"><?php echo mer_esc($m1_text); ?></p>
-                    <?php if ($m1_btn_url) : ?>
-                    <div class="mt-6">
-                        <a href="<?php echo esc_url($m1_btn_url); ?>" class="mer-btn mer-btn--white inline-flex px-7 py-3 rounded-full bg-white text-slate-700 text-sm font-medium border border-slate-200 hover:border-slate-300 hover:bg-slate-50 transition-colors">
-                            <?php echo mer_esc($m1_btn_text); ?>
-                        </a>
-                    </div>
-                    <?php endif; ?>
+                <h3 class="text-2xl font-bold text-slate-900 mb-3"><?php echo mer_esc($m1_title); ?></h3>
+                <p class="text-slate-500 leading-relaxed flex-1"><?php echo mer_esc($m1_text); ?></p>
+                <div class="mt-6">
+                    <a href="<?php echo esc_url($m1_btn_url); ?>" class="mer-btn mer-btn--white inline-flex px-6 py-2.5 rounded-full border border-slate-200 text-slate-700 text-sm font-medium hover:bg-slate-50 transition-colors">
+                        <?php echo mer_esc($m1_btn_text); ?>
+                    </a>
                 </div>
-
             </div>
 
-            <!-- Karta 2: ze zdjęciem -->
-            <div class="mer-model-card relative rounded-3xl overflow-hidden h-[420px] cursor-pointer">
-
-                <img src="<?php echo $m2_img_url; ?>" alt="<?php echo $m2_img_alt; ?>" class="absolute inset-0 w-full h-full object-cover" loading="lazy">
-
-                <!-- Overlay domyślny -->
-                <div class="absolute inset-0 bg-slate-900/45"></div>
-
-                <!-- Warstwa domyślna -->
-                <div class="absolute inset-0 flex items-center justify-center text-center p-10">
-                    <h3 class="text-3xl font-bold text-white"><?php echo nl2br(esc_html($m2_title)); ?></h3>
+            <!-- Karta 2: ciemna -->
+            <div class="bg-slate-900 rounded-3xl p-8 flex flex-col">
+                <div class="w-14 h-14 bg-white/10 rounded-2xl flex items-center justify-center mb-6 text-[#00d084]">
+                    <i data-lucide="<?php echo esc_attr($m2_icon); ?>" class="w-7 h-7" stroke-width="1.5"></i>
                 </div>
-
-                <!-- Panel hover -->
-                <div class="mer-model-panel absolute inset-x-0 bottom-0 h-full flex flex-col justify-end p-10">
-                    <div class="absolute inset-0 bg-slate-900/75"></div>
-                    <div class="relative z-10">
-                        <h3 class="text-2xl font-bold text-white mb-4"><?php echo nl2br(esc_html($m2_title)); ?></h3>
-                        <p class="text-lg text-white/80 leading-relaxed"><?php echo mer_esc($m2_text); ?></p>
-                        <?php if ($m2_btn_url) : ?>
-                        <div class="mt-6">
-                            <a href="<?php echo esc_url($m2_btn_url); ?>" class="mer-btn mer-btn--ghost inline-flex px-7 py-3 rounded-full bg-white text-slate-800 text-sm font-medium border border-white/30 hover:bg-white/90 transition-colors">
-                                <?php echo mer_esc($m2_btn_text); ?>
-                            </a>
-                        </div>
-                        <?php endif; ?>
-                    </div>
+                <h3 class="text-2xl font-bold text-white mb-3"><?php echo mer_esc($m2_title); ?></h3>
+                <p class="text-white/60 leading-relaxed flex-1"><?php echo mer_esc($m2_text); ?></p>
+                <div class="mt-6">
+                    <a href="<?php echo esc_url($m2_btn_url); ?>" class="mer-btn mer-btn--ghost inline-flex px-6 py-2.5 rounded-full border border-white/20 text-white text-sm font-medium hover:bg-white/10 transition-colors">
+                        <?php echo mer_esc($m2_btn_text); ?>
+                    </a>
                 </div>
-
             </div>
 
         </div>
     </div>
 </section>
-
-<script>
-document.querySelectorAll('.mer-model-card').forEach(function(card) {
-    card.addEventListener('click', function() { this.classList.toggle('open'); });
-});
-</script>
