@@ -37,11 +37,12 @@ $_nav_all  = [
         ]],
         ['label' => 'BPO',    'url' => home_url('/bpo/'),    'dropdown_links' => []],
         ['label' => 'O nas',  'url' => home_url('/o-nas/'),  'dropdown_links' => [
+            ['label' => 'Poznaj nas',               'url' => home_url('/o-nas/')],
             ['label' => 'Kupimy biuro rachunkowe', 'url' => home_url('/kupimy-biuro-rachunkowe/')],
             ['label' => 'Relacje inwestorskie',    'url' => home_url('/relacje-inwestorskie/')],
         ]],
         ['label' => 'Odkryj', 'url' => '#', 'dropdown_links' => [
-            ['label' => 'Wiedza i poradniki', 'url' => home_url('/blog/')],
+            ['label' => 'Blog', 'url' => home_url('/blog/')],
             ['label' => 'Media i newsroom',   'url' => home_url('/media/')],
             ['label' => 'Historie klientów',  'url' => home_url('/historie-klientow/')],
         ]],
@@ -55,6 +56,7 @@ $_nav_all  = [
         ]],
         ['label' => 'BPO',      'url' => home_url('/bpo/'),   'dropdown_links' => []],
         ['label' => 'About us', 'url' => home_url('/o-nas/'), 'dropdown_links' => [
+            ['label' => 'Meet us',                 'url' => home_url('/o-nas/')],
             ['label' => 'We buy accounting firms', 'url' => home_url('/kupimy-biuro-rachunkowe/')],
             ['label' => 'Investor relations',      'url' => home_url('/relacje-inwestorskie/')],
         ]],
@@ -73,6 +75,7 @@ $_nav_all  = [
         ]],
         ['label' => 'BPO',       'url' => home_url('/bpo/'),   'dropdown_links' => []],
         ['label' => 'Про нас',   'url' => home_url('/o-nas/'), 'dropdown_links' => [
+            ['label' => 'Дізнайтесь про нас',         'url' => home_url('/o-nas/')],
             ['label' => 'Купуємо бухгалтерські бюро', 'url' => home_url('/kupimy-biuro-rachunkowe/')],
             ['label' => 'Відносини з інвесторами',    'url' => home_url('/relacje-inwestorskie/')],
         ]],
@@ -91,6 +94,7 @@ $_nav_all  = [
         ]],
         ['label' => 'BPO',      'url' => home_url('/bpo/'),   'dropdown_links' => []],
         ['label' => 'О нас',    'url' => home_url('/o-nas/'), 'dropdown_links' => [
+            ['label' => 'Узнайте о нас',              'url' => home_url('/o-nas/')],
             ['label' => 'Купим бухгалтерские фирмы', 'url' => home_url('/kupimy-biuro-rachunkowe/')],
             ['label' => 'Отношения с инвесторами',   'url' => home_url('/relacje-inwestorskie/')],
         ]],
