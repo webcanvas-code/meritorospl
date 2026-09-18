@@ -102,74 +102,204 @@ function meritoros_setup(): void {
     load_theme_textdomain('meritoros', get_template_directory() . '/languages');
 
     register_nav_menus([
-        'primary' => __('Menu główne', 'meritoros'),
-        'footer'  => __('Menu stopki', 'meritoros'),
+        'primary-pl' => 'Menu główne (PL)',
+        'primary-en' => 'Main menu (EN)',
+        'primary-uk' => 'Головне меню (UK)',
+        'primary-ru' => 'Главное меню (RU)',
+        'footer'     => __('Menu stopki', 'meritoros'),
     ]);
 }
 add_action('after_setup_theme', 'meritoros_setup');
 
 /* ------------------------------------------------------------------
-   Auto-create Primary nav menu if missing or incomplete
+   Helper: pobierz pozycje menu WP jako tablicę
+   Zwraca format identyczny z dawnym $_nav_all:
+   [['label'=>..., 'url'=>..., 'dropdown_links'=>[...]], ...]
 ------------------------------------------------------------------ */
-function mer_create_primary_menu(): void {
-    // Sprawdź czy Primary ma menu z co najmniej 5 pozycjami
+function mer_get_nav_items(string $lang = 'pl'): array {
+    $location  = 'primary-' . $lang;
     $locations = get_nav_menu_locations();
-    if (!empty($locations['primary'])) {
-        $existing_obj   = wp_get_nav_menu_object($locations['primary']);
-        $existing_items = $existing_obj ? wp_get_nav_menu_items($existing_obj->term_id) : [];
-        if (count(array_filter($existing_items, fn($i) => !$i->menu_item_parent)) >= 5) {
-            return; // Menu jest OK — nie ruszamy
+
+    if (empty($locations[$location])) {
+        $location = 'primary-pl';
+    }
+    if (empty($locations[$location])) {
+        return [];
+    }
+
+    $items = wp_get_nav_menu_items($locations[$location]);
+    if (!$items) return [];
+
+    $children_map = [];
+    foreach ($items as $item) {
+        if ($item->menu_item_parent) {
+            $children_map[$item->menu_item_parent][] = [
+                'label' => $item->title,
+                'url'   => $item->url,
+            ];
         }
     }
 
-    // Utwórz (lub znajdź) menu o nazwie "Menu główne"
-    $menu_name = 'Menu główne';
-    $menu_obj  = wp_get_nav_menu_object($menu_name);
-    $menu_id   = $menu_obj ? $menu_obj->term_id : wp_create_nav_menu($menu_name);
-    if (is_wp_error($menu_id)) return;
-
-    // Usuń stare pozycje żeby zacząć od czystego stanu
-    foreach (wp_get_nav_menu_items($menu_id) ?: [] as $old) {
-        wp_delete_post($old->ID, true);
+    $nav = [];
+    foreach ($items as $item) {
+        if (!$item->menu_item_parent) {
+            $nav[] = [
+                'label'          => $item->title,
+                'url'            => $item->url,
+                'dropdown_links' => $children_map[$item->ID] ?? [],
+            ];
+        }
     }
 
-    // Helper: dodaj pozycję do menu
-    $add = function (string $title, string $url, int $parent = 0) use ($menu_id): int {
-        return (int) wp_update_nav_menu_item($menu_id, 0, [
-            'menu-item-title'     => $title,
-            'menu-item-url'       => $url,
-            'menu-item-status'    => 'publish',
-            'menu-item-type'      => 'custom',
-            'menu-item-parent-id' => $parent,
-        ]);
-    };
-
-    // Buduj strukturę menu
-    $biuro   = $add('Biuro rachunkowe', '#');
-                $add('Usługi księgowe',   home_url('/uslugi-ksiegowe/'),          $biuro);
-                $add('Kadry i płace',     home_url('/kadry-i-place/'),            $biuro);
-                $add('Fundacje rodzinne', home_url('/fundacje-rodzinne/'),        $biuro);
-
-    $add('BPO', home_url('/bpo/'));
-
-    $onas    = $add('O nas', home_url('/o-nas/'));
-                $add('O nas',                    home_url('/o-nas/'),                     $onas);
-                $add('Kupimy biuro rachunkowe',  home_url('/kupimy-biuro-rachunkowe/'),   $onas);
-                $add('Relacje inwestorskie',      home_url('/relacje-inwestorskie/'),      $onas);
-
-    $odkryj  = $add('Odkryj', '#');
-                $add('Wiedza i poradniki', home_url('/blog/'),              $odkryj);
-                $add('Media i newsroom',   home_url('/media/'),             $odkryj);
-                $add('Historie klientów',  home_url('/historie-klientow/'), $odkryj);
-
-    $add('Kariera', home_url('/kariera/'));
-
-    // Przypisz do lokalizacji Primary
-    $locs            = get_nav_menu_locations();
-    $locs['primary'] = $menu_id;
-    set_theme_mod('nav_menu_locations', $locs);
+    return $nav;
 }
-add_action('init', 'mer_create_primary_menu');
+
+/* ------------------------------------------------------------------
+   Auto-create nav menus for all 4 languages (runs once)
+------------------------------------------------------------------ */
+function mer_create_nav_menus(): void {
+    if (get_option('mer_nav_i18n_v1')) return;
+
+    $menus = [
+        'pl' => ['name' => 'Menu główne (PL)', 'items' => [
+            ['Biuro rachunkowe', '#', [
+                ['Usługi księgowe',   '/uslugi-ksiegowe/'],
+                ['Kadry i płace',    '/kadry-i-place/'],
+                ['Fundacje rodzinne','/fundacje-rodzinne/'],
+            ]],
+            ['BPO', '/bpo/'],
+            ['O nas', '/o-nas/', [
+                ['Poznaj nas',              '/o-nas/'],
+                ['Kupimy biuro rachunkowe', '/kupimy-biuro-rachunkowe/'],
+                ['Relacje inwestorskie',    '/relacje-inwestorskie/'],
+            ]],
+            ['Odkryj', '#', [
+                ['Blog',              '/blog/'],
+                ['Media i newsroom',  '/media/'],
+                ['Historie klientów', '/historie-klientow/'],
+            ]],
+            ['Kariera', '/kariera/'],
+        ]],
+        'en' => ['name' => 'Main menu (EN)', 'items' => [
+            ['Accounting', '#', [
+                ['Accounting services', '/uslugi-ksiegowe/'],
+                ['HR & Payroll',        '/kadry-i-place/'],
+                ['Family foundations',  '/fundacje-rodzinne/'],
+            ]],
+            ['BPO', '/bpo/'],
+            ['About us', '/o-nas/', [
+                ['Meet us',                 '/o-nas/'],
+                ['We buy accounting firms', '/kupimy-biuro-rachunkowe/'],
+                ['Investor relations',      '/relacje-inwestorskie/'],
+            ]],
+            ['Explore', '#', [
+                ['Knowledge & guides', '/blog/'],
+                ['Media & Newsroom',   '/media/'],
+                ['Customer stories',   '/historie-klientow/'],
+            ]],
+            ['Career', '/kariera/'],
+        ]],
+        'uk' => ['name' => 'Головне меню (UK)', 'items' => [
+            ['Бухгалтерія', '#', [
+                ['Бухгалтерські послуги', '/uslugi-ksiegowe/'],
+                ['Кадри та нарахування',  '/kadry-i-place/'],
+                ['Сімейні фонди',         '/fundacje-rodzinne/'],
+            ]],
+            ['BPO', '/bpo/'],
+            ['Про нас', '/o-nas/', [
+                ['Дізнайтесь про нас',         '/o-nas/'],
+                ['Купуємо бухгалтерські бюро', '/kupimy-biuro-rachunkowe/'],
+                ['Відносини з інвесторами',    '/relacje-inwestorskie/'],
+            ]],
+            ['Дізнатись', '#', [
+                ['Знання та поради',    '/blog/'],
+                ['Медіа та прес-центр', '/media/'],
+                ['Історії клієнтів',    '/historie-klientow/'],
+            ]],
+            ["Кар'єра", '/kariera/'],
+        ]],
+        'ru' => ['name' => 'Главное меню (RU)', 'items' => [
+            ['Бухгалтерия', '#', [
+                ['Бухгалтерские услуги', '/uslugi-ksiegowe/'],
+                ['Кадры и зарплата',     '/kadry-i-place/'],
+                ['Семейные фонды',       '/fundacje-rodzinne/'],
+            ]],
+            ['BPO', '/bpo/'],
+            ['О нас', '/o-nas/', [
+                ['Узнайте о нас',              '/o-nas/'],
+                ['Купим бухгалтерские фирмы', '/kupimy-biuro-rachunkowe/'],
+                ['Отношения с инвесторами',   '/relacje-inwestorskie/'],
+            ]],
+            ['Узнать', '#', [
+                ['Знания и советы',     '/blog/'],
+                ['Медиа и пресс-центр', '/media/'],
+                ['Истории клиентов',    '/historie-klientow/'],
+            ]],
+            ['Карьера', '/kariera/'],
+        ]],
+    ];
+
+    $locs = get_nav_menu_locations();
+
+    // Migracja: stare 'primary' -> 'primary-pl'
+    if (!empty($locs['primary']) && empty($locs['primary-pl'])) {
+        $locs['primary-pl'] = $locs['primary'];
+    }
+
+    foreach ($menus as $lang => $data) {
+        $loc_key = 'primary-' . $lang;
+
+        // Pomiń jeśli lokalizacja ma już menu z pozycjami
+        if (!empty($locs[$loc_key])) {
+            $existing = wp_get_nav_menu_object($locs[$loc_key]);
+            if ($existing) {
+                $ex_items = wp_get_nav_menu_items($existing->term_id);
+                if ($ex_items && count(array_filter($ex_items, fn($i) => !$i->menu_item_parent)) >= 4) {
+                    continue;
+                }
+            }
+        }
+
+        $menu_obj = wp_get_nav_menu_object($data['name']);
+        $menu_id  = $menu_obj ? $menu_obj->term_id : wp_create_nav_menu($data['name']);
+        if (is_wp_error($menu_id)) continue;
+
+        // Wyczyść stare pozycje
+        foreach (wp_get_nav_menu_items($menu_id) ?: [] as $old) {
+            wp_delete_post($old->ID, true);
+        }
+
+        // Dodaj pozycje
+        foreach ($data['items'] as $entry) {
+            $label    = $entry[0];
+            $url      = home_url($entry[1]);
+            $children = $entry[2] ?? [];
+
+            $parent_id = (int) wp_update_nav_menu_item($menu_id, 0, [
+                'menu-item-title'  => $label,
+                'menu-item-url'    => $url === home_url('#') ? '#' : $url,
+                'menu-item-status' => 'publish',
+                'menu-item-type'   => 'custom',
+            ]);
+
+            foreach ($children as $child) {
+                wp_update_nav_menu_item($menu_id, 0, [
+                    'menu-item-title'     => $child[0],
+                    'menu-item-url'       => home_url($child[1]),
+                    'menu-item-status'    => 'publish',
+                    'menu-item-type'      => 'custom',
+                    'menu-item-parent-id' => $parent_id,
+                ]);
+            }
+        }
+
+        $locs[$loc_key] = $menu_id;
+    }
+
+    set_theme_mod('nav_menu_locations', $locs);
+    update_option('mer_nav_i18n_v1', true);
+}
+add_action('init', 'mer_create_nav_menus');
 
 /* ------------------------------------------------------------------
    Enqueue Scripts & Styles
@@ -1331,4 +1461,20 @@ add_action('acf/save_post', function ($post_id) {
         }
     }
 }, 5);
+
+/* ── Newsletter: dołącz zainteresowania do maila CF7 ───────────────────────── */
+add_action('wpcf7_before_send_mail', function ($cf7) {
+    $submission = WPCF7_Submission::get_instance();
+    if (!$submission) return;
+    $posted = $submission->get_posted_data();
+
+    $interests = [];
+    if (!empty($posted['nl_interest_tax']))  $interests[] = 'Informacje podatkowo-księgowe';
+    if (!empty($posted['nl_interest_jobs'])) $interests[] = 'Oferty pracy';
+    if (empty($interests)) return;
+
+    $mail = $cf7->prop('mail');
+    $mail['body'] .= "\r\n\r\nZainteresowany/a: " . implode(', ', $interests);
+    $cf7->set_properties(['mail' => $mail]);
+});
 
