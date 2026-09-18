@@ -3,8 +3,10 @@ defined('ABSPATH') || exit;
 
 $heading  = __( mer_field('kupimy_hero_heading',  'Myślisz o sprzedaży swojego biura rachunkowego?'), 'meritoros' );
 $subtitle = __( mer_field('kupimy_hero_subtitle', 'Oferujemy dwa modele współpracy: całkowitą sprzedaż biura rachunkowego albo partnerstwo kapitałowe z zachowaniem operacyjnej autonomii.'), 'meritoros' );
-$btn_text = __( mer_field('kupimy_hero_btn_text', 'Kontakt'), 'meritoros' );
-$btn_url  = mer_field('kupimy_hero_btn_url',  get_permalink(get_page_by_path('kontakt')));
+$btn1_text = __( mer_field('kupimy_hero_btn1_text', 'Porozmawiajmy'), 'meritoros' );
+$btn1_url  = mer_field('kupimy_hero_btn1_url',  '#porozmawiajmy');
+$btn2_text = __( mer_field('kupimy_hero_btn2_text', 'Poznaj modele'), 'meritoros' );
+$btn2_url  = mer_field('kupimy_hero_btn2_url',  '#kupimy-modele');
 $intro    = __( mer_field('kupimy_hero_intro',    'Właściciele biur rachunkowych zgłaszają się do nas z różnymi potrzebami. Jedni chcą całkowicie wyjść z biznesu i sprzedać firmę, inni szukają partnera, który pomoże im dalej rozwijać biuro. W Meritoros rozmawiamy o obu scenariuszach.'), 'meritoros' );
 
 $image   = get_field('kupimy_hero_image');
@@ -37,10 +39,18 @@ $img_alt = is_array($image) ? esc_attr($image['alt'] ?: __('Kupimy biuro rachunk
             <p class="text-base sm:text-lg text-white/75 leading-relaxed mb-8 max-w-5xl">
                 <?php echo wp_kses_post($subtitle); ?>
             </p>
-            <a href="#porozmawiajmy"
-               class="mer-btn mer-btn--primary inline-flex items-center gap-2 px-7 py-3.5 rounded-full bg-[#00d084] hover:bg-[#00b872] text-white text-base font-semibold transition-colors duration-200">
-                <?php echo mer_esc($btn_text); ?>
-            </a>
+            <div class="flex flex-wrap items-center gap-4">
+                <a href="<?php echo esc_url($btn1_url); ?>"
+                   class="mer-btn mer-btn--primary inline-flex items-center gap-2 px-7 py-3.5 rounded-full bg-[#00d084] hover:bg-[#00b872] text-white text-base font-semibold transition-colors duration-200">
+                    <?php echo mer_esc($btn1_text); ?>
+                </a>
+                <?php if ($btn2_text) : ?>
+                <a href="<?php echo esc_url($btn2_url); ?>"
+                   class="mer-btn mer-btn--secondary inline-flex items-center gap-2 px-7 py-3.5 rounded-full border border-white/30 text-white text-base font-semibold hover:bg-white/10 transition-colors duration-200">
+                    <?php echo mer_esc($btn2_text); ?>
+                </a>
+                <?php endif; ?>
+            </div>
         </div>
     </div>
 </section>
