@@ -1959,6 +1959,18 @@ acf_add_local_field_group([
             ['key' => 'field_uk_model2_text',  'label' => 'Opis (tył)',   'name' => 'text',  'type' => 'textarea', 'rows' => 3, 'default_value' => 'Przejmujemy konkretne procesy i dowozimy je w ustalonym standardzie i harmonogramie. To rozwiązanie dla firm, które chcą wzmocnić wewnętrzny dział finansów bez rozbudowy etatów.'],
         ]],
 
+        ['key' => 'field_uk_m1_item1', 'label' => 'Karta 1 — punkt 1', 'name' => 'uk_m1_item1', 'type' => 'text', 'default_value' => 'Bieżąca ewidencja księgowa'],
+        ['key' => 'field_uk_m1_item2', 'label' => 'Karta 1 — punkt 2', 'name' => 'uk_m1_item2', 'type' => 'text', 'default_value' => 'Zamknięcie miesiąca i raportowanie'],
+        ['key' => 'field_uk_m1_item3', 'label' => 'Karta 1 — punkt 3', 'name' => 'uk_m1_item3', 'type' => 'text', 'default_value' => 'Raporty finansowe'],
+        ['key' => 'field_uk_m1_item4', 'label' => 'Karta 1 — punkt 4', 'name' => 'uk_m1_item4', 'type' => 'text', 'default_value' => 'Dedykowany zespół'],
+        ['key' => 'field_uk_m1_item5', 'label' => 'Karta 1 — punkt 5', 'name' => 'uk_m1_item5', 'type' => 'text', 'default_value' => 'Zastępowalność i ciągłość obsługi'],
+
+        ['key' => 'field_uk_m2_item1', 'label' => 'Karta 2 — punkt 1', 'name' => 'uk_m2_item1', 'type' => 'text', 'default_value' => 'Konkretny zakres procesów'],
+        ['key' => 'field_uk_m2_item2', 'label' => 'Karta 2 — punkt 2', 'name' => 'uk_m2_item2', 'type' => 'text', 'default_value' => 'Ustalony standard i harmonogram'],
+        ['key' => 'field_uk_m2_item3', 'label' => 'Karta 2 — punkt 3', 'name' => 'uk_m2_item3', 'type' => 'text', 'default_value' => 'Wzmocnienie działu finansów'],
+        ['key' => 'field_uk_m2_item4', 'label' => 'Karta 2 — punkt 4', 'name' => 'uk_m2_item4', 'type' => 'text', 'default_value' => 'Bez rozbudowy etatów'],
+        ['key' => 'field_uk_m2_item5', 'label' => 'Karta 2 — punkt 5', 'name' => 'uk_m2_item5', 'type' => 'text', 'default_value' => 'Możliwość rozszerzenia zakresu'],
+
         // ── TAB: Jak wygląda współpraca ──────────────────────────
         ['key' => 'field_uk_tab_wsp', 'label' => 'Jak wygląda współpraca', 'name' => '', 'type' => 'tab'],
 

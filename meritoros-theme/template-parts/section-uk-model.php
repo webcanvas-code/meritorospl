@@ -19,19 +19,19 @@ $btn_text = __('Zapytaj o wycenę', 'meritoros');
 $btn_url  = home_url('/kontakt/');
 
 $m1_items = [
-    __('Bieżąca ewidencja księgowa', 'meritoros'),
-    __('Zamknięcie miesiąca i raportowanie', 'meritoros'),
-    __('Raporty finansowe', 'meritoros'),
-    __('Dedykowany zespół', 'meritoros'),
-    __('Zastępowalność i ciągłość obsługi', 'meritoros'),
+    __( mer_field('uk_m1_item1', 'Bieżąca ewidencja księgowa'),        'meritoros' ),
+    __( mer_field('uk_m1_item2', 'Zamknięcie miesiąca i raportowanie'), 'meritoros' ),
+    __( mer_field('uk_m1_item3', 'Raporty finansowe'),                  'meritoros' ),
+    __( mer_field('uk_m1_item4', 'Dedykowany zespół'),                  'meritoros' ),
+    __( mer_field('uk_m1_item5', 'Zastępowalność i ciągłość obsługi'),  'meritoros' ),
 ];
 
 $m2_items = [
-    __('Konkretny zakres procesów', 'meritoros'),
-    __('Ustalony standard i harmonogram', 'meritoros'),
-    __('Wzmocnienie działu finansów', 'meritoros'),
-    __('Bez rozbudowy etatów', 'meritoros'),
-    __('Możliwość rozszerzenia zakresu', 'meritoros'),
+    __( mer_field('uk_m2_item1', 'Konkretny zakres procesów'),       'meritoros' ),
+    __( mer_field('uk_m2_item2', 'Ustalony standard i harmonogram'), 'meritoros' ),
+    __( mer_field('uk_m2_item3', 'Wzmocnienie działu finansów'),     'meritoros' ),
+    __( mer_field('uk_m2_item4', 'Bez rozbudowy etatów'),            'meritoros' ),
+    __( mer_field('uk_m2_item5', 'Możliwość rozszerzenia zakresu'),  'meritoros' ),
 ];
 ?>
 
