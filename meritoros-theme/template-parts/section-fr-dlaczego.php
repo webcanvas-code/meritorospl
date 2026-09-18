@@ -17,7 +17,7 @@ $d3_text  = __( mer_field('fr_d3_text',  'Jakość potwierdzona standardami. Mam
     <div class="max-w-7xl mx-auto px-6">
 
         <h2 class="text-pretty text-4xl md:text-5xl font-bold tracking-tight text-slate-900 mb-12">
-            <?php echo nl2br(str_replace('Meritoros', '<span class="text-[#00d084]">Meritoros</span>', esc_html($title))); ?>
+            <?php echo nl2br(esc_html($title)); ?>
         </h2>
 
         <div class="grid md:grid-cols-3 gap-6">
