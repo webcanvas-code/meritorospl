@@ -151,7 +151,7 @@ $c6_cert       = mer_field('val_c6_cert', 'ISO 9001:2015');
                 <?php echo mer_esc($c6_desc); ?>
             </p>
             <div class="mt-auto pt-4">
-                <img src="<?php echo esc_url(get_template_directory_uri() . '/images/ISO_9001.webp'); ?>" alt="ISO 9001" class="val-iso9001 object-contain" loading="lazy">
+                <img src="<?php echo esc_url(get_template_directory_uri() . '/images/ISO_9001_cert.png'); ?>" alt="ISO 9001:2015 Certified Company" class="val-iso9001 object-contain" loading="lazy">
             </div>
         </div>
 
