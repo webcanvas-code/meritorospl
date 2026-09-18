@@ -3,7 +3,7 @@ defined('ABSPATH') || exit;
 
 $heading  = __( mer_field('kupimy_kalk_heading',  'Kalkulator orientacyjnej wyceny biura rachunkowego'), 'meritoros' );
 $btn_text = __( mer_field('kupimy_kalk_btn_text', 'Sprawdź wycenę'), 'meritoros' );
-$btn_url  = mer_field('kupimy_kalk_btn_url',  '#');
+$btn_url  = mer_field('kupimy_kalk_btn_url',  home_url('/#wycen-biuro'));
 $photo    = mer_field('kupimy_kalk_photo');
 $photo_url = is_array($photo) ? $photo['url'] : 'https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=1600&q=80';
 ?>
@@ -26,7 +26,7 @@ $photo_url = is_array($photo) ? $photo['url'] : 'https://images.unsplash.com/pho
             <?php echo mer_esc($heading); ?>
         </h2>
 
-        <a href="<?php echo esc_url(home_url('/#wycen-biuro')); ?>"
+        <a href="<?php echo esc_url($btn_url); ?>"
            class="mer-btn mer-btn--primary inline-flex items-center justify-center px-8 py-3.5 rounded-full bg-white text-slate-800 text-base font-semibold hover:bg-emerald-50 transition-colors duration-200">
             <?php echo mer_esc($btn_text); ?>
         </a>

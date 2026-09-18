@@ -2743,7 +2743,7 @@ acf_add_local_field_group([
         ['key' => 'field_kupimy_tab_kalk',       'label' => 'Kalkulator',       'name' => '', 'type' => 'tab'],
         ['key' => 'field_kupimy_kalk_heading',   'label' => 'Nagłówek',         'name' => 'kupimy_kalk_heading',  'type' => 'textarea', 'rows' => 2, 'default_value' => 'Kalkulator orientacyjnej wyceny biura rachunkowego'],
         ['key' => 'field_kupimy_kalk_btn_text',  'label' => 'Przycisk — tekst', 'name' => 'kupimy_kalk_btn_text', 'type' => 'text',     'default_value' => 'Sprawdź wycenę'],
-        ['key' => 'field_kupimy_kalk_btn_url',   'label' => 'Przycisk — link',  'name' => 'kupimy_kalk_btn_url',  'type' => 'text'],
+        ['key' => 'field_kupimy_kalk_btn_url',   'label' => 'Przycisk — link',  'name' => 'kupimy_kalk_btn_url',  'type' => 'text', 'default_value' => '/#wycen-biuro', 'instructions' => 'Wpisz #id sekcji lub pełny URL.'],
         ['key' => 'field_kupimy_kalk_photo',     'label' => 'Zdjęcie w tle',    'name' => 'kupimy_kalk_photo',    'type' => 'image', 'return_format' => 'array', 'preview_size' => 'large'],
     ],
 ]);
