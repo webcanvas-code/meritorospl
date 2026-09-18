@@ -44,10 +44,10 @@ $c6_cert       = mer_field('val_c6_cert', 'ISO 9001:2015');
 
 <style>
     .val-iso27001 { width: 52px; height: 55px; }
-    .val-iso9001  { width: 64px; height: 64px; }
+    .val-iso9001  { width: 85px; height: 85px; }
     @media (min-width: 640px) {
         .val-iso27001 { width: 65px;    height: 69px; }
-        .val-iso9001  { width: 80px; height: 80px; }
+        .val-iso9001  { width: 110px; height: 110px; }
     }
 </style>
 <section id="values" class="py-16 md:py-24 px-6 lg:px-12 max-w-[1400px] mx-auto">
