@@ -17,7 +17,7 @@ $d3_text  = __( mer_field('fr_d3_text',  'Jakość potwierdzona standardami. Mam
     <div class="max-w-7xl mx-auto px-6">
 
         <h2 class="text-pretty text-4xl md:text-5xl font-bold tracking-tight text-slate-900 mb-12">
-            <?php echo nl2br(esc_html($title)); ?>
+            <?php echo nl2br(str_replace('Meritoros', '<span class="text-[#00d084]">Meritoros</span>', esc_html($title))); ?>
         </h2>
 
         <div class="grid md:grid-cols-3 gap-6">
@@ -36,10 +36,10 @@ $d3_text  = __( mer_field('fr_d3_text',  'Jakość potwierdzona standardami. Mam
                         : [$raw1, ''];
                 }
                 ?>
-                <h3 class="text-xl font-bold text-white mb-4 leading-snug">
+                <h3 class="text-xl font-bold text-slate-900 mb-4 leading-snug">
                     <span class="block"><?php echo mer_esc($d1_parts[0]); ?></span>
                     <?php if (!empty($d1_parts[1])) : ?>
-                    <span class="block text-white/80 font-medium"><?php echo mer_esc($d1_parts[1]); ?></span>
+                    <span class="block text-slate-700 font-medium"><?php echo mer_esc($d1_parts[1]); ?></span>
                     <?php endif; ?>
                 </h3>
                 <p class="text-white/85 text-base leading-relaxed"><?php echo mer_esc($d1_text); ?></p>
@@ -66,10 +66,10 @@ $d3_text  = __( mer_field('fr_d3_text',  'Jakość potwierdzona standardami. Mam
                         : [$raw2, ''];
                 }
                 ?>
-                <h3 class="text-xl font-bold text-white mb-4 leading-snug">
+                <h3 class="text-xl font-bold text-slate-900 mb-4 leading-snug">
                     <span class="block"><?php echo mer_esc($d2_parts[0]); ?></span>
                     <?php if (!empty($d2_parts[1])) : ?>
-                    <span class="block text-white/80 font-medium"><?php echo mer_esc($d2_parts[1]); ?></span>
+                    <span class="block text-slate-700 font-medium"><?php echo mer_esc($d2_parts[1]); ?></span>
                     <?php endif; ?>
                 </h3>
                 <p class="text-white/85 text-base leading-relaxed"><?php echo mer_esc($d2_text); ?></p>
@@ -87,7 +87,7 @@ $d3_text  = __( mer_field('fr_d3_text',  'Jakość potwierdzona standardami. Mam
                 <div class="absolute -bottom-4 -right-4 opacity-10">
                     <i data-lucide="users" class="w-48 h-48 text-white stroke-[0.5]"></i>
                 </div>
-                <h3 class="text-xl font-bold text-white mb-4 leading-snug"><?php echo mer_esc($d3_title); ?></h3>
+                <h3 class="text-xl font-bold text-slate-900 mb-4 leading-snug"><?php echo mer_esc($d3_title); ?></h3>
                 <p class="text-white/85 text-base leading-relaxed relative z-10"><?php echo mer_esc($d3_text); ?></p>
                 <div class="mt-auto pt-8 relative z-10">
                     <i data-lucide="user-check" stroke-width="1" class="w-14 h-14 text-white opacity-90"></i>
