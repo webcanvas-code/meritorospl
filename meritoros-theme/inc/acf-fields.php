@@ -1850,15 +1850,15 @@ acf_add_local_field_group([
 
         ['key' => 'field_fr_dlaczego_title', 'label' => 'Tytuł sekcji', 'name' => 'fr_dlaczego_title', 'type' => 'textarea', 'rows' => 1, 'default_value' => 'Dlaczego warto nam zaufać?'],
 
-        ['key' => 'field_fr_d1_title', 'label' => 'Karta 1 — tytuł', 'name' => 'fr_d1_title', 'type' => 'text', 'default_value' => "Bezpieczeństwo\ni compliance"],
+        ['key' => 'field_fr_d1_title', 'label' => 'Karta 1 — tytuł', 'name' => 'fr_d1_title', 'type' => 'textarea', 'rows' => 2, 'default_value' => "Bezpieczeństwo\ni compliance"],
         ['key' => 'field_fr_d1_text',  'label' => 'Karta 1 — opis',  'name' => 'fr_d1_text',  'type' => 'textarea', 'rows' => 4, 'default_value' => 'Działamy zgodnie z obowiązującymi regulacjami i standardami bezpieczeństwa danych. Dbamy o poufność informacji oraz jasne zasady współpracy – bez „skrótów" i ryzyk.'],
         ['key' => 'field_fr_d1_logo',  'label' => 'Karta 1 — logo (np. ISO 27001)', 'name' => 'fr_d1_logo', 'type' => 'image', 'return_format' => 'array', 'preview_size' => 'thumbnail', 'instructions' => 'Logo wyświetlane w stopce karty. Jeśli puste — pokazana zostanie ikona tarczy.'],
 
-        ['key' => 'field_fr_d2_title', 'label' => 'Karta 2 — tytuł', 'name' => 'fr_d2_title', 'type' => 'text', 'default_value' => "Jakość potwierdzona\nstandardami"],
+        ['key' => 'field_fr_d2_title', 'label' => 'Karta 2 — tytuł', 'name' => 'fr_d2_title', 'type' => 'textarea', 'rows' => 2, 'default_value' => "Jakość potwierdzona\nstandardami"],
         ['key' => 'field_fr_d2_text',  'label' => 'Karta 2 — opis',  'name' => 'fr_d2_text',  'type' => 'textarea', 'rows' => 4, 'default_value' => 'Mamy wdrożone procedury kontroli jakości i weryfikacji danych. Dostarczamy informacje finansowe kompletne, spójne i użyteczne dla zarządu.'],
         ['key' => 'field_fr_d2_logo',  'label' => 'Karta 2 — logo (np. ISO 9001)', 'name' => 'fr_d2_logo', 'type' => 'image', 'return_format' => 'array', 'preview_size' => 'thumbnail', 'instructions' => 'Logo wyświetlane w stopce karty. Jeśli puste — pokazana zostanie ikona nagrody.'],
 
-        ['key' => 'field_fr_d3_title', 'label' => 'Karta 3 — tytuł', 'name' => 'fr_d3_title', 'type' => 'text', 'default_value' => 'Ponad 170 ekspertów'],
+        ['key' => 'field_fr_d3_title', 'label' => 'Karta 3 — tytuł', 'name' => 'fr_d3_title', 'type' => 'textarea', 'rows' => 2, 'default_value' => 'Ponad 170 ekspertów'],
         ['key' => 'field_fr_d3_text',  'label' => 'Karta 3 — opis',  'name' => 'fr_d3_text',  'type' => 'textarea', 'rows' => 4, 'default_value' => 'Jakość potwierdzona standardami. Mamy wdrożone procedury kontroli jakości i weryfikacji danych. Dostarczamy informacje finansowe kompletne, spójne i użyteczne dla zarządu.'],
 
         // ── TAB: Model współpracy ────────────────────────────────
