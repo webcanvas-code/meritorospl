@@ -102,6 +102,7 @@ function meritoros_setup(): void {
     load_theme_textdomain('meritoros', get_template_directory() . '/languages');
 
     register_nav_menus([
+        'primary'    => __('Menu główne', 'meritoros'),
         'primary-pl' => 'Menu główne (PL)',
         'primary-en' => 'Main menu (EN)',
         'primary-uk' => 'Головне меню (UK)',
