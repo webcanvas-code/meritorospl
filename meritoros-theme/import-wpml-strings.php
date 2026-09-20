@@ -62,16 +62,20 @@ add_action('init', function () {
     echo '<p>Kontekst: <code>' . esc_html($context) . '</code></p>';
     echo '<p>Znaleziono <strong>' . count($all_keys) . '</strong> unikalnych stringów PL.</p>';
 
+    global $wpdb;
+
     foreach ($all_keys as $pl_string => $_) {
-        // Rejestruj string PL w WPML
-        // Nazwa = sam string (bo klucz = wartość PL)
-        $result = icl_register_string($context, $pl_string, $pl_string);
+        // Dla długich stringów użyj skróconej nazwy (WPML obcina name do ~160 znaków)
+        $name = (mb_strlen($pl_string) > 160)
+            ? mb_substr($pl_string, 0, 140) . '_' . md5($pl_string)
+            : $pl_string;
+
+        $result = icl_register_string($context, $name, $pl_string);
         $registered++;
 
-        // Pobierz ID zarejestrowanego stringa
-        global $wpdb;
+        // Pobierz ID - szukaj po value (bez limitu długości) zamiast name
         $string_id = $wpdb->get_var($wpdb->prepare(
-            "SELECT id FROM {$wpdb->prefix}icl_strings WHERE context = %s AND name = %s",
+            "SELECT id FROM {$wpdb->prefix}icl_strings WHERE context = %s AND value = %s",
             $context,
             $pl_string
         ));
