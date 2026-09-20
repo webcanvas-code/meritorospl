@@ -20,92 +20,10 @@ $_fp_id       = (int) get_option('page_on_front');
 $nav_cta_text = (get_field('nav_cta_text', $_fp_id) ?: __('Skontaktuj się', 'meritoros'));
 $nav_cta_url  = (get_field('nav_cta_url',  $_fp_id) ?: '#kontakt');
 
-$_uri          = $_SERVER['REQUEST_URI'] ?? '/';
-preg_match('#^/(en|uk|ru)(/|$)#', $_uri, $_lm);
-$_lang         = $_lm[1] ?? (apply_filters('wpml_current_language', null) ?: 'pl');
-$_panel_labels = ['pl' => 'Panel klienta', 'en' => 'Client panel', 'uk' => 'Кабінет клієнта', 'ru' => 'Кабинет клиента'];
-$_panel_label  = $_panel_labels[$_lang] ?? 'Panel klienta';
+$_panel_label = __('Panel klienta', 'meritoros');
 
-// Menu z WP (edytowalne w Wygląd > Menu) z fallbackiem na statyczną tablicę
-$nav_items = mer_get_nav_items($_lang);
-if (empty($nav_items)) {
-    // Fallback: statyczna tablica (zabezpieczenie gdy menu WP nie istnieje)
-    $_nav_all = [
-        'pl' => [
-            ['label' => 'Biuro rachunkowe', 'url' => '#', 'dropdown_links' => [
-                ['label' => 'Usługi księgowe',   'url' => home_url('/uslugi-ksiegowe/')],
-                ['label' => 'Kadry i płace',     'url' => home_url('/kadry-i-place/')],
-                ['label' => 'Fundacje rodzinne', 'url' => home_url('/fundacje-rodzinne/')],
-            ]],
-            ['label' => 'BPO',    'url' => home_url('/bpo/'),    'dropdown_links' => []],
-            ['label' => 'O nas',  'url' => home_url('/o-nas/'),  'dropdown_links' => [
-                ['label' => 'Kupimy biuro rachunkowe', 'url' => home_url('/kupimy-biuro-rachunkowe/')],
-                ['label' => 'Relacje inwestorskie',    'url' => home_url('/relacje-inwestorskie/')],
-            ]],
-            ['label' => 'Odkryj', 'url' => '#', 'dropdown_links' => [
-                ['label' => 'Blog', 'url' => home_url('/blog/')],
-                ['label' => 'Media i newsroom',   'url' => home_url('/media/')],
-                ['label' => 'Historie klientów',  'url' => home_url('/historie-klientow/')],
-            ]],
-            ['label' => 'Kariera', 'url' => home_url('/kariera/'), 'dropdown_links' => []],
-        ],
-        'en' => [
-            ['label' => 'Accounting', 'url' => '#', 'dropdown_links' => [
-                ['label' => 'Accounting services', 'url' => home_url('/uslugi-ksiegowe/')],
-                ['label' => 'HR & Payroll',        'url' => home_url('/kadry-i-place/')],
-                ['label' => 'Family foundations',   'url' => home_url('/fundacje-rodzinne/')],
-            ]],
-            ['label' => 'BPO',      'url' => home_url('/bpo/'),   'dropdown_links' => []],
-            ['label' => 'About us', 'url' => home_url('/o-nas/'), 'dropdown_links' => [
-                ['label' => 'We buy accounting firms', 'url' => home_url('/kupimy-biuro-rachunkowe/')],
-                ['label' => 'Investor relations',      'url' => home_url('/relacje-inwestorskie/')],
-            ]],
-            ['label' => 'Explore', 'url' => '#', 'dropdown_links' => [
-                ['label' => 'Knowledge & guides', 'url' => home_url('/blog/')],
-                ['label' => 'Media & Newsroom',   'url' => home_url('/media/')],
-                ['label' => 'Customer stories',   'url' => home_url('/historie-klientow/')],
-            ]],
-            ['label' => 'Career', 'url' => home_url('/kariera/'), 'dropdown_links' => []],
-        ],
-        'uk' => [
-            ['label' => 'Бухгалтерія', 'url' => '#', 'dropdown_links' => [
-                ['label' => 'Бухгалтерські послуги', 'url' => home_url('/uslugi-ksiegowe/')],
-                ['label' => 'Кадри та нарахування',  'url' => home_url('/kadry-i-place/')],
-                ['label' => 'Сімейні фонди',         'url' => home_url('/fundacje-rodzinne/')],
-            ]],
-            ['label' => 'BPO',       'url' => home_url('/bpo/'),   'dropdown_links' => []],
-            ['label' => 'Про нас',   'url' => home_url('/o-nas/'), 'dropdown_links' => [
-                ['label' => 'Купуємо бухгалтерські бюро', 'url' => home_url('/kupimy-biuro-rachunkowe/')],
-                ['label' => 'Відносини з інвесторами',    'url' => home_url('/relacje-inwestorskie/')],
-            ]],
-            ['label' => 'Дізнатись', 'url' => '#', 'dropdown_links' => [
-                ['label' => 'Знання та поради',    'url' => home_url('/blog/')],
-                ['label' => 'Медіа та прес-центр', 'url' => home_url('/media/')],
-                ['label' => 'Історії клієнтів',    'url' => home_url('/historie-klientow/')],
-            ]],
-            ['label' => "Кар'єра", 'url' => home_url('/kariera/'), 'dropdown_links' => []],
-        ],
-        'ru' => [
-            ['label' => 'Бухгалтерия', 'url' => '#', 'dropdown_links' => [
-                ['label' => 'Бухгалтерские услуги', 'url' => home_url('/uslugi-ksiegowe/')],
-                ['label' => 'Кадры и зарплата',     'url' => home_url('/kadry-i-place/')],
-                ['label' => 'Семейные фонды',       'url' => home_url('/fundacje-rodzinne/')],
-            ]],
-            ['label' => 'BPO',      'url' => home_url('/bpo/'),   'dropdown_links' => []],
-            ['label' => 'О нас',    'url' => home_url('/o-nas/'), 'dropdown_links' => [
-                ['label' => 'Купим бухгалтерские фирмы', 'url' => home_url('/kupimy-biuro-rachunkowe/')],
-                ['label' => 'Отношения с инвесторами',   'url' => home_url('/relacje-inwestorskie/')],
-            ]],
-            ['label' => 'Узнать', 'url' => '#', 'dropdown_links' => [
-                ['label' => 'Знания и советы',     'url' => home_url('/blog/')],
-                ['label' => 'Медиа и пресс-центр', 'url' => home_url('/media/')],
-                ['label' => 'Истории клиентов',    'url' => home_url('/historie-klientow/')],
-            ]],
-            ['label' => 'Карьера', 'url' => home_url('/kariera/'), 'dropdown_links' => []],
-        ],
-    ];
-    $nav_items = $_nav_all[$_lang] ?? $_nav_all['pl'];
-}
+// Menu z WP (edytowalne w Wygląd > Menu), WPML podmienia per język
+$nav_items = mer_get_nav_items();
 ?>
 
 <header id="mer-header" class="fixed top-0 left-0 right-0 z-50 px-6 lg:px-12 w-full max-w-[1400px] mx-auto" style="top:16px;">
