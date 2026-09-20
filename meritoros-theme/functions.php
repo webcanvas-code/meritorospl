@@ -733,6 +733,16 @@ if (is_admin()) {
 require_once get_template_directory() . '/inc/security.php';
 
 /* ------------------------------------------------------------------
+   WPML Import (jednorazowe skrypty — usunąć po imporcie)
+------------------------------------------------------------------ */
+if (file_exists(get_template_directory() . '/import-wpml-strings.php')) {
+    require_once get_template_directory() . '/import-wpml-strings.php';
+}
+if (file_exists(get_template_directory() . '/import-wpml-pages.php')) {
+    require_once get_template_directory() . '/import-wpml-pages.php';
+}
+
+/* ------------------------------------------------------------------
    Structured Data (JSON-LD)
 ------------------------------------------------------------------ */
 require_once get_template_directory() . '/inc/structured-data.php';
