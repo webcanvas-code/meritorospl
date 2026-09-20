@@ -143,9 +143,9 @@ add_action('send_headers', function (): void {
    9. Wyłącz edytor plików w dashboardzie
    Zapobiega edycji motywu/pluginów przez panel admina po włamaniu
 ------------------------------------------------------------------ */
-if (!defined('DISALLOW_FILE_EDIT')) {
-    define('DISALLOW_FILE_EDIT', true);
-}
+// if (!defined('DISALLOW_FILE_EDIT')) {
+//     define('DISALLOW_FILE_EDIT', true);
+// }
 
 /* ------------------------------------------------------------------
    10. Wyłącz self-pingbacki (pingback do własnej domeny)
