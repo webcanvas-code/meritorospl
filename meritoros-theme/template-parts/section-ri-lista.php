@@ -49,15 +49,16 @@ if (empty($cards)) {
         <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
             <?php foreach ($cards as $card) :
                 $name = is_array($card) ? ($card['name'] ?? '') : '';
-                $role = is_array($card) ? __($card['role'] ?? '', 'meritoros') : '';
-                $desc = is_array($card) ? ($card['desc'] ?? '') : '';
+                $role       = is_array($card) ? __($card['role'] ?? '', 'meritoros') : '';
+                $desc_lines = is_array($card) ? preg_split('/\r?\n/', $card['desc'] ?? '') : [];
+                $desc       = implode("\n", array_map(function($l){ return __($l, 'meritoros'); }, $desc_lines));
             ?>
                 <div class="border border-slate-200 rounded-2xl p-7 flex flex-col gap-4">
                     <div>
                         <p class="text-lg font-bold text-slate-900 mb-1"><?php echo mer_esc($name); ?></p>
                         <p class="text-sm text-slate-400"><?php echo mer_esc($role); ?></p>
                     </div>
-                    <p class="text-base text-slate-600 leading-relaxed"><?php echo mer_esc($desc); ?></p>
+                    <p class="text-base text-slate-600 leading-relaxed"><?php echo nl2br(esc_html($desc)); ?></p>
                 </div>
             <?php endforeach; ?>
         </div>

@@ -3,7 +3,7 @@ $title    = mer_field('kar_cult_title',    __('Poznaj nasz Culturebook', 'merito
 $text1    = mer_field('kar_cult_text1',    __('Culturebook powstał po to, żebyśmy wszyscy w Meritoros w ten sam sposób rozumieli, kim jesteśmy, dokąd zmierzamy i jakie wartości są dla nas ważne. Opisuje naszą misję, sposób działania i standard współpracy – wewnątrz zespołu i z klientami.', 'meritoros'));
 $text2    = mer_field('kar_cult_text2',    __('Jeśli chcesz lepiej poznać nasz styl pracy, pobierz Culturebook i sprawdź, czy to podejście jest Ci bliskie', 'meritoros'));
 $btn_text = mer_field('kar_cult_btn_text', __('Pobierz plik', 'meritoros'));
-$consent  = mer_tr( mer_field('kar_cult_consent') ?: 'Klikając przycisk, zgadzasz się, że Meritoros może wykorzystać te dane, aby kontaktować się z Tobą w związku z materiałami i usługami, które mogą Cię zainteresować. Możesz zrezygnować w każdej chwili. Więcej informacji znajdziesz w naszej Polityce Prywatności.' );
+$consent  = __( mer_field('kar_cult_consent') ?: 'Klikając przycisk, zgadzasz się, że Meritoros może wykorzystać te dane, aby kontaktować się z Tobą w związku z materiałami i usługami, które mogą Cię zainteresować. Możesz zrezygnować w każdej chwili. Więcej informacji znajdziesz w naszej Polityce Prywatności.', 'meritoros' );
 
 $cover = get_field('kar_cult_cover');
 if (empty($cover)) {

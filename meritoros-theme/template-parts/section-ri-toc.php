@@ -1,15 +1,15 @@
 <?php
 $links = [
-    ['href' => '#ri-info',                 'label' => __('O nas',                 'meritoros')],
-    ['href' => '#ri-rosniemy',             'label' => __('Rośniemy',              'meritoros')],
-    ['href' => '#ri-zarzad',               'label' => __('Zarząd',                'meritoros')],
-    ['href' => '#ri-dane',                 'label' => __('Dane finansowe',        'meritoros')],
-    ['href' => '#ri-lista',                'label' => __('Lista nadzorcza',       'meritoros')],
-    ['href' => '#ri-akcjonariat',          'label' => __('Akcjonariat',           'meritoros')],
-    ['href' => '#ri-sprawozdania',         'label' => __('Sprawozdania',          'meritoros')],
+    ['href' => '#ri-info',                 'label' => __('O nas', 'meritoros')],
+    ['href' => '#ri-rosniemy',             'label' => __('Rośniemy', 'meritoros')],
+    ['href' => '#ri-zarzad',               'label' => __('Zarząd', 'meritoros')],
+    ['href' => '#ri-dane',                 'label' => __('Dane finansowe', 'meritoros')],
+    ['href' => '#ri-lista',                'label' => __('Lista nadzorcza', 'meritoros')],
+    ['href' => '#ri-akcjonariat',          'label' => __('Akcjonariat', 'meritoros')],
+    ['href' => '#ri-sprawozdania',         'label' => __('Sprawozdania', 'meritoros')],
     ['href' => '#ri-sprawozdania-zarzadu', 'label' => __('Sprawozdania zarządu', 'meritoros')],
-    ['href' => '#ri-rewident',             'label' => __('Rewident',              'meritoros')],
-    ['href' => '#ri-uchwaly',              'label' => __('Uchwały',               'meritoros')],
+    ['href' => '#ri-rewident',             'label' => __('Rewident', 'meritoros')],
+    ['href' => '#ri-uchwaly',              'label' => __('Uchwały', 'meritoros')],
 ];
 ?>
 
@@ -20,14 +20,14 @@ $links = [
 <nav id="ri-toc-bar"
      class="sticky z-40 bg-white border-b border-slate-200 shadow-sm"
      style="top:80px;"
-     aria-label="<?php esc_attr_e('Spis treści', 'meritoros'); ?>">
+     aria-label="<?php echo esc_attr(__('Spis treści', 'meritoros')); ?>">
 
     <div class="max-w-7xl mx-auto px-6">
         <div class="flex items-center gap-1 overflow-x-auto py-4"
              style="-ms-overflow-style:none; scrollbar-width:none;">
 
             <span class="shrink-0 text-xs font-bold text-slate-400 uppercase tracking-widest pr-5 border-r border-slate-200 mr-2 whitespace-nowrap hidden sm:inline-block">
-                <?php esc_html_e('Spis treści', 'meritoros'); ?>
+                <?php echo esc_html(__('Spis treści', 'meritoros')); ?>
             </span>
 
             <?php foreach ($links as $link) : ?>

@@ -44,7 +44,7 @@ for ($i = 1; $i <= 6; $i++) {
 }
 ?>
 
-<section class="py-16 md:py-24 bg-white relative overflow-hidden">
+<section id="oferta-kuk-info" class="py-16 md:py-24 bg-white relative overflow-hidden">
     <div class="absolute -right-32 top-1/4 w-[420px] h-[420px] rounded-full border-[40px] border-[#00d084]/20 pointer-events-none"></div>
 
     <div class="relative z-10 max-w-7xl mx-auto px-6">
@@ -58,7 +58,7 @@ for ($i = 1; $i <= 6; $i++) {
             <?php endif; ?>
             <?php if ($team_info) : ?>
             <div>
-                <h3 class="text-base font-semibold text-slate-400 uppercase tracking-wider mb-2">Informacje o zespole</h3>
+                <h3 class="text-base font-semibold text-slate-400 uppercase tracking-wider mb-2"><?php echo mer_esc(__('Informacje o zespole', 'meritoros')); ?></h3>
                 <div class="text-lg text-slate-600 leading-relaxed">
                     <?php echo wp_kses_post($team_info); ?>
                 </div>
@@ -76,7 +76,7 @@ for ($i = 1; $i <= 6; $i++) {
                     <span class="w-10 h-10 rounded-xl bg-[#00d084]/10 flex items-center justify-center flex-shrink-0">
                         <i data-lucide="list-checks" class="w-5 h-5 text-[#00d084]"></i>
                     </span>
-                    <h2 class="text-2xl md:text-3xl font-bold text-slate-900">Zakres obowiązków</h2>
+                    <h2 class="text-2xl md:text-3xl font-bold text-slate-900"><?php echo mer_esc(__('Zakres obowiązków', 'meritoros')); ?></h2>
                 </div>
                 <ul class="space-y-4">
                     <?php foreach ($obowiazki as $item) : ?>
@@ -98,7 +98,7 @@ for ($i = 1; $i <= 6; $i++) {
                     <span class="w-10 h-10 rounded-xl bg-slate-100 flex items-center justify-center flex-shrink-0">
                         <i data-lucide="user-check" class="w-5 h-5 text-slate-600"></i>
                     </span>
-                    <h2 class="text-2xl md:text-3xl font-bold text-slate-900">Wymagania</h2>
+                    <h2 class="text-2xl md:text-3xl font-bold text-slate-900"><?php echo mer_esc(__('Wymagania', 'meritoros')); ?></h2>
                 </div>
                 <ul class="space-y-4">
                     <?php foreach ($wymagania as $item) : ?>
@@ -113,7 +113,7 @@ for ($i = 1; $i <= 6; $i++) {
 
                 <?php if ($mile_widziane) : ?>
                 <div class="mt-8 pt-8 border-t border-slate-100">
-                    <h3 class="text-lg font-semibold text-slate-600 mb-4">Mile widziane</h3>
+                    <h3 class="text-lg font-semibold text-slate-600 mb-4"><?php echo mer_esc(__('Mile widziane', 'meritoros')); ?></h3>
                     <ul class="space-y-4">
                         <?php foreach ($mile_widziane as $item) : ?>
                         <li class="flex items-start gap-3">
@@ -137,7 +137,7 @@ for ($i = 1; $i <= 6; $i++) {
                 <span class="w-10 h-10 rounded-xl bg-[#00d084]/10 flex items-center justify-center flex-shrink-0">
                     <i data-lucide="cpu" class="w-5 h-5 text-[#00d084]"></i>
                 </span>
-                <h2 class="text-2xl md:text-3xl font-bold text-slate-900">Nasze środowisko technologiczne</h2>
+                <h2 class="text-2xl md:text-3xl font-bold text-slate-900"><?php echo mer_esc(__('Nasze środowisko technologiczne', 'meritoros')); ?></h2>
             </div>
             <ul class="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 <?php foreach ($technologie as $item) : ?>

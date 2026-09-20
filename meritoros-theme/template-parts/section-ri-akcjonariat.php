@@ -1,10 +1,14 @@
 <?php
-$title    = __( mer_field('ri_akcjonariat_title',    'Informacje o strukturze akcjonariatu'), 'meritoros' );
-$subtitle = __( mer_field('ri_akcjonariat_subtitle', 'Kapitał zakładowy spółki wynosi 120 000 PLN i dzieli się na 1 200 000 akcji serii A o wartości nominalnej 0,10 PLN.'), 'meritoros' );
+// WPML tworzy osobne strony EN/UK z pustymi polami — pobieramy zawsze z polskiego oryginału
+$_ri_pl  = get_page_by_path('relacje-inwestorskie');
+$_ri_pid = $_ri_pl ? (int) $_ri_pl->ID : get_the_ID();
 
-$col1 = __( mer_field('ri_akcjonariat_col1', 'Akcjonariusz'), 'meritoros' );
-$col2 = __( mer_field('ri_akcjonariat_col2', 'Łączna liczba posiadanych akcji'), 'meritoros' );
-$col3 = __( mer_field('ri_akcjonariat_col3', 'Udział w łącznej liczbie głosów'), 'meritoros' );
+$title    = __( get_field('ri_akcjonariat_title',    $_ri_pid) ?: 'Informacje o strukturze akcjonariatu', 'meritoros' );
+$subtitle = __( get_field('ri_akcjonariat_subtitle', $_ri_pid) ?: 'Kapitał zakładowy spółki wynosi 120 000 PLN i dzieli się na 1 200 000 akcji serii A o wartości nominalnej 0,10 PLN.', 'meritoros' );
+
+$col1 = __( get_field('ri_akcjonariat_col1', $_ri_pid) ?: 'Akcjonariusz', 'meritoros' );
+$col2 = __( get_field('ri_akcjonariat_col2', $_ri_pid) ?: 'Łączna liczba posiadanych akcji', 'meritoros' );
+$col3 = __( get_field('ri_akcjonariat_col3', $_ri_pid) ?: 'Udział w łącznej liczbie głosów', 'meritoros' );
 
 // Wiersze – 10 osobnych grup ACF (ri_akcjonariat_row_1 … ri_akcjonariat_row_10)
 $rows = [];
@@ -48,7 +52,7 @@ if (empty($rows)) {
                 <!-- Wiersze -->
                 <tbody class="bg-white">
                     <?php foreach ($rows as $ri => $row) :
-                        $shareholder = is_array($row) ? ($row['shareholder'] ?? '') : '';
+                        $shareholder = __( is_array($row) ? ($row['shareholder'] ?? '') : '', 'meritoros' );
                         $shares      = is_array($row) ? ($row['shares']      ?? '') : '';
                         $votes       = is_array($row) ? ($row['votes']       ?? '') : '';
                         $is_last     = ($ri === count($rows) - 1);

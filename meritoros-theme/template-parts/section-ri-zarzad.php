@@ -1,5 +1,8 @@
 <?php
-$title = __( mer_field('ri_zarzad_title', 'Zarząd'), 'meritoros' );
+$_ri_pl  = get_page_by_path('relacje-inwestorskie');
+$_ri_pid = $_ri_pl ? (int) $_ri_pl->ID : get_the_ID();
+
+$title = __(get_field('ri_zarzad_title', $_ri_pid) ?: 'Zarząd' , 'meritoros');
 
 $img = get_template_directory_uri() . '/images/';
 $member_defaults = [
@@ -11,13 +14,13 @@ $member_defaults = [
 
 $members = [];
 for ($i = 1; $i <= 4; $i++) {
-    $m   = get_field("ri_zarzad_member_{$i}");
+    $m   = get_field("ri_zarzad_member_{$i}", $_ri_pid);
     $def = $member_defaults[$i - 1];
     $members[] = [
         'photo' => is_array($m) && !empty($m['photo']) ? $m['photo']['url'] : $def['photo'],
         'name'  => is_array($m) && !empty($m['name'])  ? $m['name']  : $def['name'],
-        'role'  => __( is_array($m) && !empty($m['role'])  ? $m['role']  : $def['role'], 'meritoros' ),
-        'bio'   => __( is_array($m) && !empty($m['bio'])   ? $m['bio']   : $def['bio'],  'meritoros' ),
+        'role'  => __(is_array($m) && !empty($m['role'])  ? $m['role']  : $def['role'] , 'meritoros'),
+        'bio'   => __(is_array($m) && !empty($m['bio'])   ? $m['bio']   : $def['bio'] , 'meritoros'),
     ];
 }
 ?>

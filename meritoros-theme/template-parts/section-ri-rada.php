@@ -40,9 +40,9 @@ for ($i = 1; $i <= 9; $i++) {
             <div id="ri-rada-track" class="flex gap-5 transition-transform duration-500 ease-in-out">
                 <?php foreach ($cards as $card) :
                     $name = esc_html($card['name'] ?? '');
-                    $role = esc_html(mer_tr($card['role'] ?? ''));
+                    $role = esc_html(__($card['role'] ?? '', 'meritoros'));
                     $desc_lines = preg_split('/\r?\n/', $card['desc'] ?? '');
-                    $desc = esc_html(implode("\n", array_map('mer_tr', $desc_lines)));
+                    $desc = esc_html(implode("\n", array_map(function($l){ return __($l, 'meritoros'); }, $desc_lines)));
                 ?>
                 <div class="ri-rada-card border border-slate-200 rounded-2xl p-7 flex flex-col gap-4 min-w-[85%] sm:min-w-[calc(50%-10px)] lg:min-w-[30%] shrink-0">
                     <div>

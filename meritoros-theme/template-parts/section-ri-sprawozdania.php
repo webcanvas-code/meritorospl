@@ -1,10 +1,14 @@
 <?php
-$title = __( mer_field('ri_spr_title', 'Sprawozdania finansowe spółki'), 'meritoros' );
+// WPML tworzy osobne strony EN/UK z pustymi polami — pobieramy zawsze z polskiego oryginału
+$_ri_pl  = get_page_by_path('relacje-inwestorskie');
+$_ri_pid = $_ri_pl ? (int) $_ri_pl->ID : get_the_ID();
+
+$title = __( get_field('ri_spr_title', $_ri_pid) ?: 'Sprawozdania finansowe spółki', 'meritoros' );
 
 // Pozycje – 10 osobnych grup ACF (ri_spr_item_1 … ri_spr_item_10)
 $items = [];
 for ($i = 1; $i <= 10; $i++) {
-    $item = get_field("ri_spr_item_{$i}");
+    $item = get_field("ri_spr_item_{$i}", $_ri_pid);
     if (!empty($item['label'])) $items[] = $item;
 }
 if (empty($items)) {
@@ -45,7 +49,7 @@ if (empty($items)) {
                                rel="noopener"
                                class="mer-btn mer-btn--white inline-flex items-center gap-2 bg-white text-slate-700 border border-slate-200 hover:border-slate-300 hover:bg-slate-50 text-sm font-medium px-5 py-2.5 rounded-full transition-colors">
                                 <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
-                                <?php echo mer_esc(mer_t('ri_pobierz_pdf', 'Pobierz PDF')); ?>
+                                <?php echo mer_esc(__('Pobierz PDF', 'meritoros')); ?>
                             </a>
                         <?php endif; ?>
                         <?php if ($url_xlsx) : ?>
@@ -54,7 +58,7 @@ if (empty($items)) {
                                rel="noopener"
                                class="mer-btn mer-btn--white inline-flex items-center gap-2 bg-white text-slate-700 border border-slate-200 hover:border-slate-300 hover:bg-slate-50 text-sm font-medium px-5 py-2.5 rounded-full transition-colors">
                                 <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
-                                <?php echo mer_esc(mer_t('ri_pobierz_xlsx', 'Pobierz XLSX')); ?>
+                                <?php echo mer_esc(__('Pobierz XLSX', 'meritoros')); ?>
                             </a>
                         <?php endif; ?>
                     </div>

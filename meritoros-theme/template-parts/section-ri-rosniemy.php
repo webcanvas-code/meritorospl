@@ -1,7 +1,10 @@
 <?php
-$title = __( mer_field('ri_rosniemy_title', 'Rośniemy'), 'meritoros' );
-$text  = __( mer_field('ri_rosniemy_text',  'Rozwój Meritoros SA znajduje odzwierciedlenie w systematycznym wzroście skali działalności i przychodów na przestrzeni ostatnich lat.'), 'meritoros' );
-$photo = get_field('ri_rosniemy_photo');
+$_ri_pl  = get_page_by_path('relacje-inwestorskie');
+$_ri_pid = $_ri_pl ? (int) $_ri_pl->ID : get_the_ID();
+
+$title = __( get_field('ri_rosniemy_title', $_ri_pid) ?: 'Rośniemy', 'meritoros' );
+$text  = __( get_field('ri_rosniemy_text',  $_ri_pid) ?: 'Rozwój Meritoros SA znajduje odzwierciedlenie w systematycznym wzroście skali działalności i przychodów na przestrzeni ostatnich lat.', 'meritoros' );
+$photo = get_field('ri_rosniemy_photo', $_ri_pid);
 $photo_url = is_array($photo) ? esc_url($photo['url']) : esc_url(get_template_directory_uri() . '/images/przychody.png');
 $photo_alt = is_array($photo) ? esc_attr($photo['alt'] ?: 'Wzrost przychodów Meritoros SA') : 'Wzrost przychodów Meritoros SA';
 ?>

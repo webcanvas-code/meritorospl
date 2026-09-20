@@ -8,89 +8,6 @@ define('MER_PRIVACY_PDF', get_template_directory_uri() . '/docs/Polityka-prywatn
 define('MER_TERMS_PDF',   get_template_directory_uri() . '/docs/Regulamin_newsletter.pdf');
 
 /* ------------------------------------------------------------------
-   URL-based translations — core helper
-   Wykrywa język i zwraca mapę tłumaczeń (niezależnie od gettext/WPML)
------------------------------------------------------------------- */
-function mer_lang(): string {
-    static $lang = null;
-    if ($lang !== null) return $lang;
-
-    $uri = $_SERVER['REQUEST_URI'] ?? '/';
-    preg_match('#^/(en|uk|ru)(/|$)#', $uri, $m);
-    $l = $m[1] ?? '';
-
-    if (!$l) {
-        $ql = $_GET['lang'] ?? '';
-        if (in_array($ql, ['en', 'uk', 'ru'], true)) $l = $ql;
-    }
-    if (!$l && defined('ICL_LANGUAGE_CODE') && in_array(ICL_LANGUAGE_CODE, ['en', 'uk', 'ru', 'pl'], true)) {
-        $l = ICL_LANGUAGE_CODE;
-    }
-
-    // Blokuj statik tylko przy pewnej detekcji — nie zakładaj 'pl' zanim WPML
-    // nie ustawi ICL_LANGUAGE_CODE (strony EN mogą nie mieć prefiksu /en/ w URL)
-    if ($l) $lang = $l;
-    return $l ?: 'pl';
-}
-
-function mer_lang_map(): array {
-    static $map = null;
-    if ($map !== null) return $map;
-
-    $lang = mer_lang();
-
-    // Nie blokuj mapy jeśli lang nie jest jeszcze pewny (ICL_LANGUAGE_CODE niedostępny
-    // i brak prefiksu URL) — pozwól hookowi init ponownie zainicjować mapę
-    $uri = $_SERVER['REQUEST_URI'] ?? '/';
-    $from_url = (bool) preg_match('#^/(en|uk|ru)(/|$)#', $uri);
-    if ($lang === 'pl' && !$from_url && !defined('ICL_LANGUAGE_CODE')) {
-        return [];
-    }
-
-    if ($lang !== 'pl') {
-        $file = get_template_directory() . '/languages/' . $lang . '.php';
-        $raw  = [];
-        if (file_exists($file)) {
-            try {
-                $raw = include $file;
-            } catch (\ParseError $e) {
-                error_log('mer_lang_map ParseError [' . $lang . ']: ' . $e->getMessage() . ' in ' . $e->getFile() . ':' . $e->getLine());
-                $raw = [];
-            }
-        }
-        if (is_array($raw)) {
-            // Normalizuj CRLF→LF w kluczach (pliki uploadowane z Windows mają \r\n)
-            $map = [];
-            foreach ($raw as $k => $v) {
-                $map[str_replace("\r\n", "\n", $k)] = $v;
-            }
-        } else {
-            $map = [];
-        }
-    } else {
-        $map = [];
-    }
-    return $map;
-}
-
-/* mer_tr() — tłumaczenie bezpośrednie, omija filtr gettext/WPML */
-function mer_tr(string $text): string {
-    $map = mer_lang_map();
-    return $map[$text] ?? $text;
-}
-
-/* Filtr gettext — dla pozostałych sekcji które używają __() */
-function mer_gettext_filter(string $translation, string $text, string $domain): string {
-    if ($domain !== 'meritoros') return $translation;
-    $map = mer_lang_map();
-    return $map[$text] ?? $translation;
-}
-add_filter('gettext', 'mer_gettext_filter', 999, 3);
-
-/* Inicjalizacja mapy po init WPML (ICL_LANGUAGE_CODE dostępny od priority 1) */
-add_action('init', 'mer_lang_map', 5);
-
-/* ------------------------------------------------------------------
    Theme Setup
 ------------------------------------------------------------------ */
 function meritoros_setup(): void {
@@ -1377,15 +1294,6 @@ function mer_esc(string $text): string {
 function mer_field(string $name, $fallback = ''): mixed {
     $value = get_field($name);
     return ($value !== null && $value !== false && $value !== '') ? $value : $fallback;
-}
-
-/**
- * Register a UI string with WPML and return its translation.
- * Falls back to $default when WPML is not active.
- */
-function mer_t(string $name, string $default): string {
-    do_action('wpml_register_single_string', 'meritoros-theme', $name, $default);
-    return function_exists('icl_t') ? (string) icl_t('meritoros-theme', $name, $default) : $default;
 }
 
 /**

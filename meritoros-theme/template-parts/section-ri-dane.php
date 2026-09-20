@@ -1,8 +1,12 @@
 <?php
-$title = __( mer_field('ri_dane_title', 'Wybrane dane finansowe'), 'meritoros' );
+// WPML tworzy osobne strony EN/UK z pustymi polami — pobieramy zawsze z polskiego oryginału
+$_ri_pl  = get_page_by_path('relacje-inwestorskie');
+$_ri_pid = $_ri_pl ? (int) $_ri_pl->ID : get_the_ID();
 
-// Próbuj nowego formatu (metaboksa tabelaryczna → JSON)
-$_ri_json = get_post_meta(get_the_ID(), '_ri_dane_table', true);
+$title = __( get_field('ri_dane_title', $_ri_pid) ?: 'Wybrane dane finansowe', 'meritoros' );
+
+// Próbuj nowego formatu (metaboksa tabelaryczna → JSON) — zawsze z polskiego oryginału
+$_ri_json = get_post_meta($_ri_pid, '_ri_dane_table', true);
 $_ri_data = $_ri_json ? json_decode($_ri_json, true) : null;
 
 // Naprawa danych uszkodzonych przez wp_unslash, który usuwał backslash z \uXXXX w JSON.
@@ -35,11 +39,11 @@ if (!empty($_ri_data['years']) && !empty($_ri_data['rows'])) {
     }, $_ri_data['rows']);
 } else {
     // Fallback: stare pola ACF (przecinkowe) — lata nie zawierają przecinka dziesiętnego
-    $years_str = mer_field('ri_dane_years', '2012,2013,2014,2015,2016,2017,2018,2019,2020,2021,2022,2023,2024');
+    $years_str = get_field('ri_dane_years', $_ri_pid) ?: '2012,2013,2014,2015,2016,2017,2018,2019,2020,2021,2022,2023,2024';
     $years     = array_values(array_filter(array_map('trim', explode(',', $years_str))));
     $rows      = [];
     for ($i = 1; $i <= 10; $i++) {
-        $r = get_field("ri_dane_row_{$i}");
+        $r = get_field("ri_dane_row_{$i}", $_ri_pid);
         if (!empty($r['label'])) {
             $rows[] = [
                 'label' => $r['label'],
@@ -87,7 +91,7 @@ $col_count = count($years);
                 <thead>
                     <tr class="bg-[#00d084] text-white">
                         <th class="mer-btn mer-btn--secondary text-left px-6 py-4 font-medium rounded-tl-2xl whitespace-nowrap">
-                            <?php echo mer_esc(mer_t('ri_dane_naglowek', 'Dane finansowe (tys. PLN)')); ?>
+                            <?php echo mer_esc(__( get_field('ri_dane_naglowek', $_ri_pid) ?: 'Dane finansowe (tys. PLN)', 'meritoros' )); ?>
                         </th>
                         <?php foreach ($years as $i => $year) : ?>
                             <th class="mer-btn mer-btn--secondary px-4 py-4 font-medium text-center whitespace-nowrap<?php echo ($i === $col_count - 1) ? ' rounded-tr-2xl' : ''; ?>">
@@ -106,7 +110,7 @@ $col_count = count($years);
                     ?>
                         <tr class="<?php echo $is_last ? '' : 'border-b border-slate-100'; ?> hover:bg-slate-50 transition-colors">
                             <td class="mer-btn mer-btn--secondary px-6 py-4 text-slate-700 font-medium whitespace-nowrap<?php echo $is_last ? ' rounded-bl-2xl' : ''; ?>">
-                                <?php echo mer_esc($label); ?>
+                                <?php echo mer_esc(__($label, 'meritoros')); ?>
                             </td>
                             <?php foreach ($years as $ci => $year) :
                                 $val = isset($cells[$ci]) ? $cells[$ci] : '—';

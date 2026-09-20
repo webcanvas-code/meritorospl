@@ -1,11 +1,15 @@
 <?php
-$title = __( mer_field('ri_info_title', "O nas"), 'meritoros' );
+// WPML tworzy osobne strony EN/UK z pustymi polami ACF — pobieramy zawsze z polskiego oryginału
+$_ri_pl   = get_page_by_path('relacje-inwestorskie');
+$_ri_pid  = $_ri_pl ? (int) $_ri_pl->ID : get_the_ID();
+
+$title = __( (get_field('ri_info_title', $_ri_pid) ?: 'O nas'), 'meritoros' );
 
 $subs = [
-    ['title' => __( mer_field('ri_sub1_title', 'Profil działalności'),       'meritoros' ), 'text' => mer_field('ri_sub1_text', ''), 'list' => false],
-    ['title' => __( mer_field('ri_sub2_title', 'Skala działalności'),        'meritoros' ), 'text' => mer_field('ri_sub2_text', ''), 'list' => false],
-    ['title' => __( mer_field('ri_sub3_title', 'Zasięg i grupa kapitałowa'), 'meritoros' ), 'text' => mer_field('ri_sub3_text', ''), 'list' => false, 'companies' => array_values(array_filter(array_map('trim', preg_split('/\r?\n/', get_field('ri_sub3_companies') ?: "Taxaide Sp. z o.o. z siedzibą we Wrocławiu, KRS: 0000811046\nBluematica Sp. z o.o. z siedzibą w Rzeszowie, KRS: 0000994219"))))],
-    ['title' => __( mer_field('ri_sub4_title', 'Strategia rozwoju'),         'meritoros' ), 'text' => mer_field('ri_sub4_text', ''), 'list' => false],
+    ['title' => __( (get_field('ri_sub1_title', $_ri_pid) ?: 'Profil działalności'),       'meritoros' ), 'text' => __(trim(str_replace(["\r\n","\r"],"\n", get_field('ri_sub1_text', $_ri_pid) ?: '')), 'meritoros'), 'list' => false],
+    ['title' => __( (get_field('ri_sub2_title', $_ri_pid) ?: 'Skala działalności'),        'meritoros' ), 'text' => __(trim(str_replace(["\r\n","\r"],"\n", get_field('ri_sub2_text', $_ri_pid) ?: '')), 'meritoros'), 'list' => false],
+    ['title' => __( (get_field('ri_sub3_title', $_ri_pid) ?: 'Zasięg i grupa kapitałowa'), 'meritoros' ), 'text' => __(trim(str_replace(["\r\n","\r"],"\n", get_field('ri_sub3_text', $_ri_pid) ?: '')), 'meritoros'), 'list' => false, 'companies' => array_values(array_filter(array_map(function($c){ return __(trim($c), 'meritoros'); }, preg_split('/\r?\n/', get_field('ri_sub3_companies', $_ri_pid) ?: "Taxaide Sp. z o.o. z siedzibą we Wrocławiu, KRS: 0000811046\nBluematica Sp. z o.o. z siedzibą w Rzeszowie, KRS: 0000994219"))))],
+    ['title' => __( (get_field('ri_sub4_title', $_ri_pid) ?: 'Strategia rozwoju'),         'meritoros' ), 'text' => __(trim(str_replace(["\r\n","\r"],"\n", get_field('ri_sub4_text', $_ri_pid) ?: '')), 'meritoros'), 'list' => false],
 ];
 
 $photo     = get_field('ri_info_photo');
@@ -19,8 +23,9 @@ $stats_raw = [
     get_field('ri_stat_4') ?: ['value' => '7',     'label' => __('lokalizacji',           'meritoros'), 'sublabel' => __('(ale ciągle rośniemy)', 'meritoros')],
 ];
 
-$award_title = __( mer_field('ri_award_title', 'Nagrody i wyróżnienia'), 'meritoros' );
-$award_text  = __( mer_field('ri_award_text',  'Wyróżnienia są efektem tego, jak rozwijamy Meritoros: konsekwentnie i procesowo. Trzymamy standard, który ma działać w praktyce – codziennie.'), 'meritoros' );
+$award_title = __(get_field('ri_award_title', $_ri_pid) ?: 'Nagrody i wyróżnienia' , 'meritoros');
+$award_text  = __(get_field('ri_award_text',  $_ri_pid) ?: 'Wyróżnienia są efektem tego, jak rozwijamy Meritoros: konsekwentnie i procesowo. Trzymamy standard, który ma działać w praktyce – codziennie.' , 'meritoros');
+
 ?>
 
 <section id="ri-info" class="py-10 md:py-14 bg-white relative overflow-hidden">
@@ -98,9 +103,9 @@ $award_text  = __( mer_field('ri_award_text',  'Wyróżnienia są efektem tego, 
                     <?php foreach ($stats_raw as $stat) : ?>
                     <div>
                         <div class="text-2xl font-bold text-slate-900"><?php echo mer_esc($stat['value']); ?></div>
-                        <div class="text-xs text-slate-500 leading-tight mt-1"><?php echo mer_esc($stat['label']); ?></div>
+                        <div class="text-xs text-slate-500 leading-tight mt-1"><?php echo mer_esc(__($stat['label'], 'meritoros')); ?></div>
                         <?php if (!empty($stat['sublabel'])) : ?>
-                        <div class="text-xs text-slate-400 leading-tight"><?php echo mer_esc($stat['sublabel']); ?></div>
+                        <div class="text-xs text-slate-400 leading-tight"><?php echo mer_esc(__($stat['sublabel'], 'meritoros')); ?></div>
                         <?php endif; ?>
                     </div>
                     <?php endforeach; ?>
