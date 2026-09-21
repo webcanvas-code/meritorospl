@@ -20,8 +20,8 @@ for ($i = 1; $i <= 4; $i++) {
     $def     = $stat_defaults[$i];
     $stats[] = [
         'icon'   => mer_field("buyout_stat_{$i}_icon",   $def['icon']),
-        'value'  => mer_field("buyout_stat_{$i}_value",  $def['value']),
-        'label'  => mer_field("buyout_stat_{$i}_label",  $def['label']),
+        'value'  => __( mer_field("buyout_stat_{$i}_value",  $def['value']), 'meritoros' ),
+        'label'  => __( mer_field("buyout_stat_{$i}_label",  $def['label']), 'meritoros' ),
         'accent' => (bool) mer_field("buyout_stat_{$i}_accent", $def['accent']),
     ];
 }
