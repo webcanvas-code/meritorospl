@@ -41,7 +41,7 @@ if (empty($items)) {
                 $url_xlsx = $item['url_xlsx']['url']    ?? '';
             ?>
                 <div class="mer-btn mer-btn--white bg-white rounded-2xl px-6 py-5 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
-                    <span class="text-slate-800 font-medium"><?php echo mer_esc($label); ?></span>
+                    <span class="text-slate-800 font-medium"><?php echo mer_esc(__($label, 'meritoros')); ?></span>
                     <div class="flex items-center gap-3 shrink-0">
                         <?php if ($url_pdf) : ?>
                             <a href="<?php echo esc_url($url_pdf); ?>"

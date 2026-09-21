@@ -383,6 +383,72 @@ function mer_cf7_body_newsletter(string $privacy_url, string $terms_url): string
 </div>';
 }
 
+/* -- CF7 form bodies: EN -- */
+
+function mer_cf7_body_kontakt_en(string $privacy_url): string {
+    return '<div class="space-y-4">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+[text* your-firstname placeholder "First name"]
+[text your-lastname placeholder "Last name (optional)"]
+[email* your-email placeholder "Email address"]
+[tel your-phone placeholder "Phone number"]
+</div>
+[select* your-area "Accounting services" "HR & Payroll" "Family foundations" "BPO" "Other"]
+[textarea your-message rows:5 maxlength:500 placeholder "Message"]
+<div class="flex justify-end mt-1"><span class="cf7-char-counter text-xs text-slate-400">0 / 500</span></div>
+<div class="space-y-1 mt-2">
+<label class="text-xs text-slate-500 font-medium">Attachment (optional, max 10 MB, pdf, doc, docx, jpg, png)</label>
+[file your-attachment limit:10mb filetypes:pdf|doc|docx|jpg|png]
+</div>
+<label class="flex items-start gap-3 cursor-pointer mt-2">
+[acceptance your-consent] <span class="text-xs text-slate-400 leading-relaxed">I consent to the processing of my personal data by Meritoros SA in order to respond to my inquiry, in accordance with the <a href="' . esc_url($privacy_url) . '" target="_blank" rel="noopener" class="underline hover:text-slate-600">Privacy Policy</a>.</span>[/acceptance]
+</label>
+[submit "Send message"]
+</div>';
+}
+
+function mer_cf7_body_kupimy_en(string $privacy_url): string {
+    return '<div class="flex flex-col gap-4">
+[text* your-name placeholder "Full name"]
+[email* your-email placeholder "Email"]
+[textarea your-message rows:6 placeholder "Message"]
+<label class="flex items-start gap-3 cursor-pointer">
+[acceptance your-consent] <span class="text-xs text-slate-500 leading-relaxed">I consent to the processing of my personal data by Meritoros sp. z o.o. in order to respond to my inquiry, in accordance with the <a href="' . esc_url($privacy_url) . '" target="_blank" rel="noopener" class="underline hover:text-slate-700">Privacy Policy</a>.</span>[/acceptance]
+</label>
+[submit "Send message"]
+</div>';
+}
+
+function mer_cf7_body_cv_en(string $privacy_url): string {
+    return '<div class="flex flex-col gap-4">
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+[text* your-firstname placeholder "First name"]
+[text your-lastname placeholder "Last name (optional)"]
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+[email* your-email placeholder "Email"]
+[tel your-phone placeholder "Phone number"]
+</div>
+[textarea your-message rows:4 maxlength:500 placeholder "Message"]
+<div class="flex justify-end mt-1"><span class="cf7-char-counter text-xs text-slate-400">0 / 500</span></div>
+<div class="mt-2">
+[file* your-cv limit:5mb filetypes:pdf|doc|docx]
+</div>
+<label class="flex items-start gap-3 cursor-pointer mt-2">
+[acceptance your-consent] <span class="text-xs text-slate-400 leading-relaxed">I consent to the processing of my personal data by Meritoros SA for recruitment purposes, in accordance with applicable data protection regulations (GDPR) and the <a href="' . esc_url($privacy_url) . '" target="_blank" rel="noopener" class="underline hover:text-slate-600">Privacy Policy</a>.</span>[/acceptance]
+</label>
+[submit "Send message"]
+</div>';
+}
+
+function mer_cf7_body_newsletter_en(string $privacy_url, string $terms_url): string {
+    return '<div class="flex flex-col gap-5">
+[email* your-email placeholder "Your email address"]
+[submit "Subscribe"]
+<p class="text-xs text-slate-400 leading-relaxed font-light">The data controller is Meritoros SA, Aleja Pokoju 62/8, Krakow. Data is processed solely for the purpose of sending the newsletter. <a href="' . esc_url($privacy_url) . '" target="_blank" rel="noopener" class="underline hover:text-slate-600">Privacy Policy</a> · <a href="' . esc_url($terms_url) . '" target="_blank" rel="noopener" class="underline hover:text-slate-600">Newsletter Terms</a></p>
+</div>';
+}
+
 /* ------------------------------------------------------------------
    CF7 — jednorazowa aktualizacja v2: dodanie pola załącznika do formularza kontaktowego
 ------------------------------------------------------------------ */
@@ -438,6 +504,114 @@ function mer_cf7_update_v3_name_split(): void {
     }
 
     update_option('mer_cf7_v3_name_split', true);
+}
+
+/* ------------------------------------------------------------------
+   CF7 — jednorazowa aktualizacja v4: angielskie formularze dla stron EN
+------------------------------------------------------------------ */
+add_action('admin_init', 'mer_cf7_update_v4_en_forms');
+function mer_cf7_update_v4_en_forms(): void {
+    if (!class_exists('WPCF7_ContactForm')) return;
+    if (!function_exists('update_field'))    return;
+    if (get_option('mer_cf7_v4_en_forms'))   return;
+    if (!function_exists('apply_filters') || !has_filter('wpml_object_id')) return;
+
+    $privacy_url = MER_PRIVACY_PDF;
+    $terms_url   = MER_TERMS_PDF;
+    $admin_email = get_option('admin_email');
+    $site_name   = get_bloginfo('name');
+
+    $forms = [
+        [
+            'title'        => '[Meritoros] Contact form (EN)',
+            'form'         => mer_cf7_body_kontakt_en($privacy_url),
+            'mail_subject' => '[Meritoros] New inquiry from [your-firstname] [your-lastname]',
+            'mail_body'    => "Name: [your-firstname] [your-lastname]\nEmail: [your-email]\nPhone: [your-phone]\nArea: [your-area]\n\nMessage:\n[your-message]",
+            'reply_to'     => '[your-email]',
+            'attachments'  => '[your-attachment]',
+            'template'     => 'page-kontakt.php',
+            'acf_field'    => 'kon_cf7_id',
+        ],
+        [
+            'title'        => '[Meritoros] Form - We buy accounting firms (EN)',
+            'form'         => mer_cf7_body_kupimy_en($privacy_url),
+            'mail_subject' => '[Meritoros] New inquiry - We buy accounting firms from [your-name]',
+            'mail_body'    => "Name: [your-name]\nEmail: [your-email]\n\nMessage:\n[your-message]",
+            'reply_to'     => '[your-email]',
+            'attachments'  => '',
+            'template'     => 'page-kupimy-biuro-rachunkowe.php',
+            'acf_field'    => 'kupimy_cf7_id',
+        ],
+        [
+            'title'        => '[Meritoros] CV form - Careers (EN)',
+            'form'         => mer_cf7_body_cv_en($privacy_url),
+            'mail_subject' => '[Meritoros] New CV from [your-firstname] [your-lastname]',
+            'mail_body'    => "Name: [your-firstname] [your-lastname]\nEmail: [your-email]\nPhone: [your-phone]\n\nMessage:\n[your-message]",
+            'reply_to'     => '[your-email]',
+            'attachments'  => '[your-cv]',
+            'template'     => 'page-kariera.php',
+            'acf_field'    => 'kar_cf7_id',
+        ],
+        [
+            'title'        => '[Meritoros] Newsletter (EN)',
+            'form'         => mer_cf7_body_newsletter_en($privacy_url, $terms_url),
+            'mail_subject' => '[Meritoros] New newsletter subscription',
+            'mail_body'    => "New newsletter subscription.\nEmail: [your-email]",
+            'reply_to'     => '',
+            'attachments'  => '',
+            'template'     => '',
+            'acf_field'    => 'nl_cf7_id',
+        ],
+    ];
+
+    $all_ok = true;
+    foreach ($forms as $config) {
+        $form_id = mer_cf7_create(
+            $config['title'],
+            $config['form'],
+            $config['mail_subject'],
+            $config['mail_body'],
+            $config['reply_to'],
+            $config['attachments'],
+            $admin_email,
+            $site_name
+        );
+
+        if (!$form_id) { $all_ok = false; continue; }
+
+        // Znajdz EN strone i przypisz formularz
+        if ($config['template']) {
+            $pages = get_posts([
+                'post_type'      => 'page',
+                'post_status'    => 'publish',
+                'posts_per_page' => -1,
+                'meta_query'     => [[
+                    'key'   => '_wp_page_template',
+                    'value' => $config['template'],
+                ]],
+            ]);
+            foreach ($pages as $page) {
+                $lang = apply_filters('wpml_element_language_code', null, [
+                    'element_id'   => $page->ID,
+                    'element_type' => 'page',
+                ]);
+                if ($lang === 'en') {
+                    update_field($config['acf_field'], $form_id, $page->ID);
+                }
+            }
+        } else {
+            // Newsletter - front page EN
+            $fp_pl = (int) get_option('page_on_front');
+            $fp_en = apply_filters('wpml_object_id', $fp_pl, 'page', false, 'en');
+            if ($fp_en && $fp_en !== $fp_pl) {
+                update_field($config['acf_field'], $form_id, $fp_en);
+            }
+        }
+    }
+
+    if ($all_ok) {
+        update_option('mer_cf7_v4_en_forms', true);
+    }
 }
 
 /* ------------------------------------------------------------------

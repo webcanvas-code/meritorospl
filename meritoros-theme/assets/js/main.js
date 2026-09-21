@@ -246,8 +246,21 @@ document.addEventListener('DOMContentLoaded', () => {
     if (mobileBackdrop) mobileBackdrop.addEventListener('click', closeMobileMenu);
 
     // ----------------------------------------------------------------
+    // Detect page language (WPML sets <html lang="...">)
+    // ----------------------------------------------------------------
+    const pageLang = (document.documentElement.lang || 'pl').slice(0, 2);
+
+    // ----------------------------------------------------------------
     // CF7 consent checkbox — walidacja po kliknięciu "Wyślij"
     // ----------------------------------------------------------------
+    const consentMsg = pageLang === 'pl'
+        ? 'Prosimy o wyrażenie zgody przed wysłaniem formularza.'
+        : pageLang === 'uk'
+        ? 'Будь ласка, надайте згоду перед відправленням форми.'
+        : pageLang === 'ru'
+        ? 'Пожалуйста, дайте согласие перед отправкой формы.'
+        : 'Please accept the consent before submitting the form.';
+
     document.querySelectorAll('.wpcf7-form').forEach(form => {
         const consentWrap = form.querySelector('.wpcf7-form-control-wrap[data-name="your-consent"]');
         if (!consentWrap) return;
@@ -268,15 +281,40 @@ document.addEventListener('DOMContentLoaded', () => {
             if (!consentWrap.querySelector('.mer-consent-tip')) {
                 const tip = document.createElement('span');
                 tip.className = 'mer-consent-tip';
-                tip.textContent = 'Prosimy o wyrażenie zgody przed wysłaniem formularza.';
+                tip.textContent = consentMsg;
                 consentWrap.appendChild(tip);
             }
             consentWrap.scrollIntoView({ behavior: 'smooth', block: 'center' });
-        }, true); // capture — uruchamia się przed handlerem CF7
+        }, true);
 
-        // Usuń wizualny błąd gdy użytkownik zaznaczy zgodę
         checkbox.addEventListener('change', () => { if (checkbox.checked) clearError(); });
     });
+
+    // ----------------------------------------------------------------
+    // jQuery Validate — nadpisanie komunikatów dla stron nie-PL
+    // ----------------------------------------------------------------
+    if (pageLang !== 'pl' && typeof jQuery !== 'undefined' && jQuery.validator) {
+        const msgs = pageLang === 'uk' ? {
+            required: 'Це поле обов\'язкове.',
+            email:    'Будь ласка, введіть дійсну адресу електронної пошти.',
+            url:      'Будь ласка, введіть дійсну URL-адресу.',
+            maxlength: jQuery.validator.format('Будь ласка, введіть не більше {0} символів.'),
+            minlength: jQuery.validator.format('Будь ласка, введіть не менше {0} символів.'),
+        } : pageLang === 'ru' ? {
+            required: 'Это поле обязательно.',
+            email:    'Пожалуйста, введите корректный адрес электронной почты.',
+            url:      'Пожалуйста, введите корректный URL.',
+            maxlength: jQuery.validator.format('Пожалуйста, введите не более {0} символов.'),
+            minlength: jQuery.validator.format('Пожалуйста, введите не менее {0} символов.'),
+        } : {
+            required: 'This field is required.',
+            email:    'Please enter a valid email address.',
+            url:      'Please enter a valid URL.',
+            maxlength: jQuery.validator.format('Please enter no more than {0} characters.'),
+            minlength: jQuery.validator.format('Please enter at least {0} characters.'),
+        };
+        jQuery.extend(jQuery.validator.messages, msgs);
+    }
 
     // ----------------------------------------------------------------
     // CF7 textarea: licznik znaków
