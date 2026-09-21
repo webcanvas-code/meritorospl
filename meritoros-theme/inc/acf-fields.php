@@ -2140,18 +2140,37 @@ acf_add_local_field_group([
 
         ['key' => 'field_kp_model1', 'label' => 'Karta 1 — Kompleksowa obsługa', 'name' => 'kp_model1', 'type' => 'group', 'layout' => 'block', 'sub_fields' => [
             ['key' => 'field_kp_m1_icon',     'label' => 'Ikona (lucide)', 'name' => 'icon',     'type' => 'text',     'default_value' => 'users-round'],
+            ['key' => 'field_kp_m1_label',    'label' => 'Etykieta (nad tytułem)', 'name' => 'label', 'type' => 'text', 'default_value' => 'Pełny zakres'],
             ['key' => 'field_kp_m1_title',    'label' => 'Tytuł',         'name' => 'title',    'type' => 'text',     'default_value' => 'Kompleksowa obsługa'],
             ['key' => 'field_kp_m1_text',     'label' => 'Opis (tył)',     'name' => 'text',     'type' => 'textarea', 'rows' => 4, 'default_value' => 'Przejmujemy pełną obsługę kadr i płac: dokumentację pracowniczą, naliczanie wynagrodzeń oraz rozliczenia i zgłoszenia do instytucji (m.in. ZUS). Pracujesz z dedykowanym zespołem i masz pewność terminowości oraz zgodności z przepisami.'],
             ['key' => 'field_kp_m1_btn_text', 'label' => 'Przycisk — tekst', 'name' => 'btn_text', 'type' => 'text', 'default_value' => 'Zobacz'],
             ['key' => 'field_kp_m1_btn_url',  'label' => 'Przycisk — link',  'name' => 'btn_url',  'type' => 'text', 'default_value' => '/kontakt/'],
         ]],
+        ['key' => 'field_kp_m1_item_1', 'label' => 'Karta 1 — punkt 1', 'name' => 'kp_m1_item_1', 'type' => 'text', 'default_value' => 'Dokumentacja pracownicza'],
+        ['key' => 'field_kp_m1_item_2', 'label' => 'Karta 1 — punkt 2', 'name' => 'kp_m1_item_2', 'type' => 'text', 'default_value' => 'Naliczanie wynagrodzeń'],
+        ['key' => 'field_kp_m1_item_3', 'label' => 'Karta 1 — punkt 3', 'name' => 'kp_m1_item_3', 'type' => 'text', 'default_value' => 'Rozliczenia i zgłoszenia do ZUS'],
+        ['key' => 'field_kp_m1_item_4', 'label' => 'Karta 1 — punkt 4', 'name' => 'kp_m1_item_4', 'type' => 'text', 'default_value' => 'Dedykowany opiekun'],
+        ['key' => 'field_kp_m1_item_5', 'label' => 'Karta 1 — punkt 5', 'name' => 'kp_m1_item_5', 'type' => 'text', 'default_value' => 'Raportowanie miesięczne'],
+        ['key' => 'field_kp_m1_item_6', 'label' => 'Karta 1 — punkt 6', 'name' => 'kp_m1_item_6', 'type' => 'text'],
+        ['key' => 'field_kp_m1_item_7', 'label' => 'Karta 1 — punkt 7', 'name' => 'kp_m1_item_7', 'type' => 'text'],
+        ['key' => 'field_kp_m1_item_8', 'label' => 'Karta 1 — punkt 8', 'name' => 'kp_m1_item_8', 'type' => 'text'],
+
         ['key' => 'field_kp_model2', 'label' => 'Karta 2 — Outsourcing', 'name' => 'kp_model2', 'type' => 'group', 'layout' => 'block', 'sub_fields' => [
             ['key' => 'field_kp_m2_image',    'label' => 'Zdjęcie tła', 'name' => 'image',    'type' => 'image',    'return_format' => 'array', 'preview_size' => 'medium'],
+            ['key' => 'field_kp_m2_label',    'label' => 'Etykieta (nad tytułem)', 'name' => 'label', 'type' => 'text', 'default_value' => 'Wybrany zakres'],
             ['key' => 'field_kp_m2_title',    'label' => 'Tytuł',       'name' => 'title',    'type' => 'text',     'default_value' => "Outsourcing wybranych\nprocesów"],
             ['key' => 'field_kp_m2_text',     'label' => 'Opis (tył)',   'name' => 'text',     'type' => 'textarea', 'rows' => 4, 'default_value' => 'Wspieramy wybrane obszary, które wymagają uporządkowania lub odciążenia zespołu np. same płace, obsługę dokumentacji, rozliczenia z ZUS czy raportowanie. Ustalamy standard i harmonogram działania, a zakres współpracy możesz elastycznie rozszerzać.'],
             ['key' => 'field_kp_m2_btn_text', 'label' => 'Przycisk — tekst', 'name' => 'btn_text', 'type' => 'text', 'default_value' => 'Zobacz'],
             ['key' => 'field_kp_m2_btn_url',  'label' => 'Przycisk — link',  'name' => 'btn_url',  'type' => 'text', 'default_value' => '/kontakt/'],
         ]],
+        ['key' => 'field_kp_m2_item_1', 'label' => 'Karta 2 — punkt 1', 'name' => 'kp_m2_item_1', 'type' => 'text', 'default_value' => 'Obsługa samych płac'],
+        ['key' => 'field_kp_m2_item_2', 'label' => 'Karta 2 — punkt 2', 'name' => 'kp_m2_item_2', 'type' => 'text', 'default_value' => 'Rozliczenia z ZUS'],
+        ['key' => 'field_kp_m2_item_3', 'label' => 'Karta 2 — punkt 3', 'name' => 'kp_m2_item_3', 'type' => 'text', 'default_value' => 'Obsługa dokumentacji'],
+        ['key' => 'field_kp_m2_item_4', 'label' => 'Karta 2 — punkt 4', 'name' => 'kp_m2_item_4', 'type' => 'text', 'default_value' => 'Elastyczny zakres współpracy'],
+        ['key' => 'field_kp_m2_item_5', 'label' => 'Karta 2 — punkt 5', 'name' => 'kp_m2_item_5', 'type' => 'text', 'default_value' => 'Możliwość rozszerzenia zakresu'],
+        ['key' => 'field_kp_m2_item_6', 'label' => 'Karta 2 — punkt 6', 'name' => 'kp_m2_item_6', 'type' => 'text'],
+        ['key' => 'field_kp_m2_item_7', 'label' => 'Karta 2 — punkt 7', 'name' => 'kp_m2_item_7', 'type' => 'text'],
+        ['key' => 'field_kp_m2_item_8', 'label' => 'Karta 2 — punkt 8', 'name' => 'kp_m2_item_8', 'type' => 'text'],
 
         // ── TAB: Jak wygląda współpraca ──────────────────────────
         ['key' => 'field_kp_tab_wsp', 'label' => 'Jak wygląda współpraca', 'name' => '', 'type' => 'tab'],

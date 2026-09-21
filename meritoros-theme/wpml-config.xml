@@ -1596,15 +1596,34 @@
         ═══════════════════════════════════════════ -->
         <!-- KP — model wspolpracy (grupy kp_model1/2) -->
         <custom-field action="copy">kp_model1_icon</custom-field>
+        <custom-field action="translate">kp_model1_label</custom-field>
         <custom-field action="translate">kp_model1_title</custom-field>
         <custom-field action="translate">kp_model1_text</custom-field>
         <custom-field action="translate">kp_model1_btn_text</custom-field>
         <custom-field action="copy">kp_model1_btn_url</custom-field>
         <custom-field action="copy">kp_model2_icon</custom-field>
+        <custom-field action="translate">kp_model2_label</custom-field>
         <custom-field action="translate">kp_model2_title</custom-field>
         <custom-field action="translate">kp_model2_text</custom-field>
         <custom-field action="translate">kp_model2_btn_text</custom-field>
         <custom-field action="copy">kp_model2_btn_url</custom-field>
+        <!-- KP — punkty checklist kart modelu -->
+        <custom-field action="translate">kp_m1_item_1</custom-field>
+        <custom-field action="translate">kp_m1_item_2</custom-field>
+        <custom-field action="translate">kp_m1_item_3</custom-field>
+        <custom-field action="translate">kp_m1_item_4</custom-field>
+        <custom-field action="translate">kp_m1_item_5</custom-field>
+        <custom-field action="translate">kp_m1_item_6</custom-field>
+        <custom-field action="translate">kp_m1_item_7</custom-field>
+        <custom-field action="translate">kp_m1_item_8</custom-field>
+        <custom-field action="translate">kp_m2_item_1</custom-field>
+        <custom-field action="translate">kp_m2_item_2</custom-field>
+        <custom-field action="translate">kp_m2_item_3</custom-field>
+        <custom-field action="translate">kp_m2_item_4</custom-field>
+        <custom-field action="translate">kp_m2_item_5</custom-field>
+        <custom-field action="translate">kp_m2_item_6</custom-field>
+        <custom-field action="translate">kp_m2_item_7</custom-field>
+        <custom-field action="translate">kp_m2_item_8</custom-field>
         <!-- KP — kroki wspolpracy (kp_wsp_step1 do 3) -->
         <custom-field action="translate">kp_wsp_step1_title</custom-field>
         <custom-field action="translate">kp_wsp_step1_lead</custom-field>
