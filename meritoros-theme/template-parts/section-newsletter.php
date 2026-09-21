@@ -30,30 +30,30 @@ for ($i = 1; $i <= 4; $i++) {
         <div class="bg-slate-900 rounded-2xl md:rounded-[3rem] overflow-hidden grid grid-cols-1 lg:grid-cols-2">
 
             <!-- Left: Branding + Benefits -->
-            <div class="relative p-7 sm:p-10 lg:p-16 flex flex-col justify-between overflow-hidden">
+            <div class="relative p-7 sm:p-10 lg:p-12 flex flex-col justify-between overflow-hidden">
                 <div class="absolute -bottom-16 -left-16 w-72 h-72 rounded-full bg-[#00d084]/10 blur-3xl pointer-events-none"></div>
                 <div class="absolute top-8 right-8 w-40 h-40 rounded-full bg-[#00d084]/5 blur-2xl pointer-events-none"></div>
 
                 <div class="relative z-10">
-                    <div class="flex items-center mb-8 lg:mb-12">
+                    <div class="flex items-center mb-6 lg:mb-8">
                         <img src="<?php echo esc_url(get_template_directory_uri() . '/images/logo.svg'); ?>" alt="<?php bloginfo('name'); ?>" class="h-8 w-auto brightness-0 invert" loading="lazy">
                     </div>
 
-                    <span class="text-[#00d084] uppercase tracking-widest text-base font-bold mb-4 block">
+                    <span class="text-[#00d084] uppercase tracking-widest text-sm font-bold mb-3 block">
                         <?php echo mer_esc($nl_label); ?>
                     </span>
-                    <h2 class="text-pretty text-3xl lg:text-4xl xl:text-5xl font-bold tracking-tight text-white leading-snug mb-6">
+                    <h2 class="text-pretty text-3xl lg:text-4xl font-bold tracking-tight text-white leading-snug mb-4">
                         <?php echo mer_esc($nl_title); ?>
                     </h2>
-                    <p class="text-slate-400 text-base sm:text-lg font-light leading-relaxed mb-10 max-w-sm">
+                    <p class="text-slate-400 text-base font-light leading-relaxed mb-6 max-w-sm">
                         <?php echo mer_esc($nl_desc); ?>
                     </p>
 
-                    <div class="flex flex-col gap-3">
+                    <div class="flex flex-col gap-2.5">
                         <?php foreach ($benefits as $benefit) : ?>
-                            <div class="flex items-center gap-3">
-                                <div class="w-7 h-7 rounded-full bg-[#00d084]/20 flex items-center justify-center shrink-0">
-                                    <i data-lucide="check" class="w-4 h-4 text-[#00d084] stroke-[2.5]"></i>
+                            <div class="flex items-center gap-2.5">
+                                <div class="w-6 h-6 rounded-full bg-[#00d084]/20 flex items-center justify-center shrink-0">
+                                    <i data-lucide="check" class="w-3.5 h-3.5 text-[#00d084] stroke-[2.5]"></i>
                                 </div>
                                 <span class="text-slate-300 text-sm font-medium">
                                     <?php echo mer_esc($benefit['text'] ?? ''); ?>
@@ -63,7 +63,7 @@ for ($i = 1; $i <= 4; $i++) {
                     </div>
                 </div>
 
-                <div class="relative z-10 mt-12 flex items-center gap-4">
+                <div class="relative z-10 mt-8 flex items-center gap-4">
                     <div class="flex -space-x-2">
                         <?php
                         $avatar_colors   = ['bg-[#00d084]', 'bg-blue-500', 'bg-purple-500', 'bg-slate-600'];
@@ -82,13 +82,25 @@ for ($i = 1; $i <= 4; $i++) {
             </div>
 
             <!-- Right: CF7 Form -->
-            <div class="bg-white p-7 sm:p-10 lg:p-16 flex flex-col justify-center rounded-b-2xl md:rounded-b-[3rem] lg:rounded-b-none lg:rounded-r-[3rem]">
-                <h3 class="text-2xl font-bold tracking-tight text-slate-900 mb-2">
+            <div class="bg-white p-7 sm:p-10 lg:p-12 flex flex-col justify-center rounded-b-2xl md:rounded-b-[3rem] lg:rounded-b-none lg:rounded-r-[3rem]">
+                <h3 class="text-2xl font-bold tracking-tight text-slate-900 mb-1">
                     <?php echo mer_esc($form_title); ?>
                 </h3>
-                <p class="text-slate-500 text-sm font-light mb-8">
+                <p class="text-slate-500 text-sm font-light mb-4">
                     <?php echo mer_esc($form_sub); ?>
                 </p>
+
+                <!-- Checkboxy zainteresowań -->
+                <div style="display:flex;flex-wrap:wrap;align-items:center;gap:6px 24px;margin-bottom:12px">
+                    <label style="display:inline-flex;align-items:center;gap:8px;cursor:pointer">
+                        <input type="checkbox" id="nl-interest-tax" style="width:16px;height:16px;accent-color:#00d084">
+                        <span style="font-size:0.8125rem;color:#334155;font-weight:500"><?php esc_html_e('Informacje podatkowo-księgowe', 'meritoros'); ?></span>
+                    </label>
+                    <label style="display:inline-flex;align-items:center;gap:8px;cursor:pointer">
+                        <input type="checkbox" id="nl-interest-jobs" style="width:16px;height:16px;accent-color:#00d084">
+                        <span style="font-size:0.8125rem;color:#334155;font-weight:500"><?php esc_html_e('Oferty pracy', 'meritoros'); ?></span>
+                    </label>
+                </div>
 
                 <div class="mer-nl-form">
                     <?php if ($cf7_id) : ?>
@@ -97,6 +109,51 @@ for ($i = 1; $i <= 4; $i++) {
                         <p class="text-slate-400 text-sm italic"><?php esc_html_e('Przypisz formularz CF7 w ustawieniach strony głównej (zakładka Newsletter → ID formularza CF7).', 'meritoros'); ?></p>
                     <?php endif; ?>
                 </div>
+
+                <script>
+                (function () {
+                    var cbTax  = document.getElementById('nl-interest-tax');
+                    var cbJobs = document.getElementById('nl-interest-jobs');
+                    var wrapper = cbTax && cbTax.closest('.mer-nl-form') ? cbTax.closest('.mer-nl-form') : document.querySelector('.mer-nl-form');
+
+                    function getForm() {
+                        return document.querySelector('.mer-nl-form form');
+                    }
+
+                    function injectHidden(form) {
+                        ['nl_interest_tax', 'nl_interest_jobs'].forEach(function (name) {
+                            var old = form.querySelector('input[name="' + name + '"]');
+                            if (old) old.parentNode.removeChild(old);
+                        });
+                        var t = document.createElement('input');
+                        t.type = 'hidden'; t.name = 'nl_interest_tax';
+                        t.value = (cbTax && cbTax.checked) ? '1' : '';
+                        form.appendChild(t);
+
+                        var j = document.createElement('input');
+                        j.type = 'hidden'; j.name = 'nl_interest_jobs';
+                        j.value = (cbJobs && cbJobs.checked) ? '1' : '';
+                        form.appendChild(j);
+                    }
+
+                    // CF7 ładuje formularz przez AJAX — czekamy na niego
+                    var observer = new MutationObserver(function () {
+                        var form = getForm();
+                        if (!form) return;
+                        observer.disconnect();
+                        form.addEventListener('submit', function () { injectHidden(form); });
+                    });
+                    var nlWrap = document.querySelector('.mer-nl-form');
+                    if (nlWrap) observer.observe(nlWrap, { childList: true, subtree: true });
+
+                    // Jeśli formularz już jest w DOM
+                    var form = getForm();
+                    if (form) {
+                        observer.disconnect();
+                        form.addEventListener('submit', function () { injectHidden(form); });
+                    }
+                })();
+                </script>
             </div>
 
         </div>

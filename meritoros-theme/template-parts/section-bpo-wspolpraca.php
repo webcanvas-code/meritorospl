@@ -94,7 +94,7 @@ for ($i = 1; $i <= 3; $i++) {
         </div>
 
         <div class="mt-10 md:mt-20 text-center">
-            <a href="<?php echo esc_url($btn_url); ?>" class="mer-btn mer-btn--primary px-8 py-4 rounded-full bg-[#00d084] text-white text-base md:text-lg font-medium hover:bg-[#00b872] transition-colors inline-block shadow-lg shadow-emerald-500/30">
+            <a href="<?php echo esc_url($btn_url); ?>" class="mer-btn mer-btn--white px-8 py-4 rounded-full bg-white border border-slate-200 text-slate-700 text-base md:text-lg font-medium hover:border-slate-300 hover:bg-slate-50 transition-colors inline-block">
                 <?php echo mer_esc($btn_txt); ?>
             </a>
         </div>

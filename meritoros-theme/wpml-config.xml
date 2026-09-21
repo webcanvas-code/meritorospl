@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <wpml-config>
+    <custom-types>
+        <custom-type translate="1">customer-story</custom-type>
+        <custom-type translate="1">media-article</custom-type>
+    </custom-types>
+
     <custom-fields>
 
         <!-- ═══════════════════════════════════════════
@@ -941,6 +946,808 @@
         <custom-field action="copy">onas_jak_4_icon</custom-field>
         <custom-field action="translate">onas_jak_4_title</custom-field>
         <custom-field action="translate">onas_jak_4_text</custom-field>
+
+
+        <!-- ═══════════════════════════════════════════
+             RELACJE INWESTORSKIE (RI) — Hero, Info, Rosniemy
+        ═══════════════════════════════════════════ -->
+        <custom-field action="translate">ri_hero_title</custom-field>
+        <custom-field action="translate">ri_hero_text</custom-field>
+        <custom-field action="copy">ri_hero_image</custom-field>
+        <custom-field action="translate">ri_info_title</custom-field>
+        <custom-field action="translate">ri_info_text</custom-field>
+        <custom-field action="copy">ri_info_photo</custom-field>
+        <custom-field action="translate">ri_award_title</custom-field>
+        <custom-field action="translate">ri_award_text</custom-field>
+        <custom-field action="copy">ri_award_logo1</custom-field>
+        <custom-field action="copy">ri_award_logo2</custom-field>
+        <custom-field action="translate">ri_rosniemy_title</custom-field>
+        <custom-field action="translate">ri_rosniemy_text</custom-field>
+        <custom-field action="copy">ri_rosniemy_photo</custom-field>
+
+        <!-- RI — Statystyki (ri_stat_1 do ri_stat_4) -->
+        <custom-field action="copy">ri_stat_1_value</custom-field>
+        <custom-field action="translate">ri_stat_1_label</custom-field>
+        <custom-field action="copy">ri_stat_2_value</custom-field>
+        <custom-field action="translate">ri_stat_2_label</custom-field>
+        <custom-field action="copy">ri_stat_3_value</custom-field>
+        <custom-field action="translate">ri_stat_3_label</custom-field>
+        <custom-field action="copy">ri_stat_4_value</custom-field>
+        <custom-field action="translate">ri_stat_4_label</custom-field>
+        <custom-field action="translate">ri_stat_4_sublabel</custom-field>
+
+        <!-- RI — Sub-sekcje (ri_sub1 do ri_sub4) -->
+        <custom-field action="translate">ri_sub1_title</custom-field>
+        <custom-field action="translate">ri_sub1_text</custom-field>
+        <custom-field action="translate">ri_sub2_title</custom-field>
+        <custom-field action="translate">ri_sub2_text</custom-field>
+        <custom-field action="translate">ri_sub3_title</custom-field>
+        <custom-field action="translate">ri_sub3_text</custom-field>
+        <custom-field action="translate">ri_sub3_companies</custom-field>
+        <custom-field action="translate">ri_sub4_title</custom-field>
+        <custom-field action="translate">ri_sub4_text</custom-field>
+
+        <!-- RI — Zarzad (ri_zarzad_member_1 do 4) -->
+        <custom-field action="translate">ri_zarzad_title</custom-field>
+        <custom-field action="translate">ri_zarzad_member_1_name</custom-field>
+        <custom-field action="translate">ri_zarzad_member_1_role</custom-field>
+        <custom-field action="translate">ri_zarzad_member_1_bio</custom-field>
+        <custom-field action="copy">ri_zarzad_member_1_photo</custom-field>
+        <custom-field action="translate">ri_zarzad_member_2_name</custom-field>
+        <custom-field action="translate">ri_zarzad_member_2_role</custom-field>
+        <custom-field action="translate">ri_zarzad_member_2_bio</custom-field>
+        <custom-field action="copy">ri_zarzad_member_2_photo</custom-field>
+        <custom-field action="translate">ri_zarzad_member_3_name</custom-field>
+        <custom-field action="translate">ri_zarzad_member_3_role</custom-field>
+        <custom-field action="translate">ri_zarzad_member_3_bio</custom-field>
+        <custom-field action="copy">ri_zarzad_member_3_photo</custom-field>
+        <custom-field action="translate">ri_zarzad_member_4_name</custom-field>
+        <custom-field action="translate">ri_zarzad_member_4_role</custom-field>
+        <custom-field action="translate">ri_zarzad_member_4_bio</custom-field>
+        <custom-field action="copy">ri_zarzad_member_4_photo</custom-field>
+
+        <!-- RI — Dane finansowe -->
+        <custom-field action="translate">ri_dane_title</custom-field>
+        <custom-field action="copy">ri_dane_years</custom-field>
+        <custom-field action="translate">ri_dane_naglowek</custom-field>
+        <custom-field action="translate">ri_dane_row_1_label</custom-field>
+        <custom-field action="copy">ri_dane_row_1_values</custom-field>
+        <custom-field action="translate">ri_dane_row_2_label</custom-field>
+        <custom-field action="copy">ri_dane_row_2_values</custom-field>
+        <custom-field action="translate">ri_dane_row_3_label</custom-field>
+        <custom-field action="copy">ri_dane_row_3_values</custom-field>
+        <custom-field action="translate">ri_dane_row_4_label</custom-field>
+        <custom-field action="copy">ri_dane_row_4_values</custom-field>
+        <custom-field action="translate">ri_dane_row_5_label</custom-field>
+        <custom-field action="copy">ri_dane_row_5_values</custom-field>
+        <custom-field action="translate">ri_dane_row_6_label</custom-field>
+        <custom-field action="copy">ri_dane_row_6_values</custom-field>
+        <custom-field action="translate">ri_dane_row_7_label</custom-field>
+        <custom-field action="copy">ri_dane_row_7_values</custom-field>
+        <custom-field action="translate">ri_dane_row_8_label</custom-field>
+        <custom-field action="copy">ri_dane_row_8_values</custom-field>
+        <custom-field action="translate">ri_dane_row_9_label</custom-field>
+        <custom-field action="copy">ri_dane_row_9_values</custom-field>
+        <custom-field action="translate">ri_dane_row_10_label</custom-field>
+        <custom-field action="copy">ri_dane_row_10_values</custom-field>
+
+        <!-- RI — Rada nadzorcza (ri_rada_card_1 do 9) -->
+        <custom-field action="translate">ri_rada_title</custom-field>
+        <custom-field action="translate">ri_rada_card_1_name</custom-field>
+        <custom-field action="translate">ri_rada_card_1_role</custom-field>
+        <custom-field action="translate">ri_rada_card_1_desc</custom-field>
+        <custom-field action="translate">ri_rada_card_2_name</custom-field>
+        <custom-field action="translate">ri_rada_card_2_role</custom-field>
+        <custom-field action="translate">ri_rada_card_2_desc</custom-field>
+        <custom-field action="translate">ri_rada_card_3_name</custom-field>
+        <custom-field action="translate">ri_rada_card_3_role</custom-field>
+        <custom-field action="translate">ri_rada_card_3_desc</custom-field>
+        <custom-field action="translate">ri_rada_card_4_name</custom-field>
+        <custom-field action="translate">ri_rada_card_4_role</custom-field>
+        <custom-field action="translate">ri_rada_card_4_desc</custom-field>
+        <custom-field action="translate">ri_rada_card_5_name</custom-field>
+        <custom-field action="translate">ri_rada_card_5_role</custom-field>
+        <custom-field action="translate">ri_rada_card_5_desc</custom-field>
+        <custom-field action="translate">ri_rada_card_6_name</custom-field>
+        <custom-field action="translate">ri_rada_card_6_role</custom-field>
+        <custom-field action="translate">ri_rada_card_6_desc</custom-field>
+        <custom-field action="translate">ri_rada_card_7_name</custom-field>
+        <custom-field action="translate">ri_rada_card_7_role</custom-field>
+        <custom-field action="translate">ri_rada_card_7_desc</custom-field>
+        <custom-field action="translate">ri_rada_card_8_name</custom-field>
+        <custom-field action="translate">ri_rada_card_8_role</custom-field>
+        <custom-field action="translate">ri_rada_card_8_desc</custom-field>
+        <custom-field action="translate">ri_rada_card_9_name</custom-field>
+        <custom-field action="translate">ri_rada_card_9_role</custom-field>
+        <custom-field action="translate">ri_rada_card_9_desc</custom-field>
+
+        <!-- RI — Lista nadzorcza (ri_lista_card_1 do 9) -->
+        <custom-field action="translate">ri_lista_title</custom-field>
+        <custom-field action="translate">ri_lista_card_1_name</custom-field>
+        <custom-field action="translate">ri_lista_card_1_role</custom-field>
+        <custom-field action="translate">ri_lista_card_1_desc</custom-field>
+        <custom-field action="translate">ri_lista_card_2_name</custom-field>
+        <custom-field action="translate">ri_lista_card_2_role</custom-field>
+        <custom-field action="translate">ri_lista_card_2_desc</custom-field>
+        <custom-field action="translate">ri_lista_card_3_name</custom-field>
+        <custom-field action="translate">ri_lista_card_3_role</custom-field>
+        <custom-field action="translate">ri_lista_card_3_desc</custom-field>
+        <custom-field action="translate">ri_lista_card_4_name</custom-field>
+        <custom-field action="translate">ri_lista_card_4_role</custom-field>
+        <custom-field action="translate">ri_lista_card_4_desc</custom-field>
+        <custom-field action="translate">ri_lista_card_5_name</custom-field>
+        <custom-field action="translate">ri_lista_card_5_role</custom-field>
+        <custom-field action="translate">ri_lista_card_5_desc</custom-field>
+        <custom-field action="translate">ri_lista_card_6_name</custom-field>
+        <custom-field action="translate">ri_lista_card_6_role</custom-field>
+        <custom-field action="translate">ri_lista_card_6_desc</custom-field>
+        <custom-field action="translate">ri_lista_card_7_name</custom-field>
+        <custom-field action="translate">ri_lista_card_7_role</custom-field>
+        <custom-field action="translate">ri_lista_card_7_desc</custom-field>
+        <custom-field action="translate">ri_lista_card_8_name</custom-field>
+        <custom-field action="translate">ri_lista_card_8_role</custom-field>
+        <custom-field action="translate">ri_lista_card_8_desc</custom-field>
+        <custom-field action="translate">ri_lista_card_9_name</custom-field>
+        <custom-field action="translate">ri_lista_card_9_role</custom-field>
+        <custom-field action="translate">ri_lista_card_9_desc</custom-field>
+
+        <!-- RI — Akcjonariat (ri_akcjonariat_row_1 do 10) -->
+        <custom-field action="translate">ri_akcjonariat_title</custom-field>
+        <custom-field action="translate">ri_akcjonariat_subtitle</custom-field>
+        <custom-field action="translate">ri_akcjonariat_col1</custom-field>
+        <custom-field action="translate">ri_akcjonariat_col2</custom-field>
+        <custom-field action="translate">ri_akcjonariat_col3</custom-field>
+        <custom-field action="translate">ri_akcjonariat_row_1_shareholder</custom-field>
+        <custom-field action="copy">ri_akcjonariat_row_1_shares</custom-field>
+        <custom-field action="copy">ri_akcjonariat_row_1_votes</custom-field>
+        <custom-field action="translate">ri_akcjonariat_row_2_shareholder</custom-field>
+        <custom-field action="copy">ri_akcjonariat_row_2_shares</custom-field>
+        <custom-field action="copy">ri_akcjonariat_row_2_votes</custom-field>
+        <custom-field action="translate">ri_akcjonariat_row_3_shareholder</custom-field>
+        <custom-field action="copy">ri_akcjonariat_row_3_shares</custom-field>
+        <custom-field action="copy">ri_akcjonariat_row_3_votes</custom-field>
+        <custom-field action="translate">ri_akcjonariat_row_4_shareholder</custom-field>
+        <custom-field action="copy">ri_akcjonariat_row_4_shares</custom-field>
+        <custom-field action="copy">ri_akcjonariat_row_4_votes</custom-field>
+        <custom-field action="translate">ri_akcjonariat_row_5_shareholder</custom-field>
+        <custom-field action="copy">ri_akcjonariat_row_5_shares</custom-field>
+        <custom-field action="copy">ri_akcjonariat_row_5_votes</custom-field>
+        <custom-field action="translate">ri_akcjonariat_row_6_shareholder</custom-field>
+        <custom-field action="copy">ri_akcjonariat_row_6_shares</custom-field>
+        <custom-field action="copy">ri_akcjonariat_row_6_votes</custom-field>
+        <custom-field action="translate">ri_akcjonariat_row_7_shareholder</custom-field>
+        <custom-field action="copy">ri_akcjonariat_row_7_shares</custom-field>
+        <custom-field action="copy">ri_akcjonariat_row_7_votes</custom-field>
+        <custom-field action="translate">ri_akcjonariat_row_8_shareholder</custom-field>
+        <custom-field action="copy">ri_akcjonariat_row_8_shares</custom-field>
+        <custom-field action="copy">ri_akcjonariat_row_8_votes</custom-field>
+        <custom-field action="translate">ri_akcjonariat_row_9_shareholder</custom-field>
+        <custom-field action="copy">ri_akcjonariat_row_9_shares</custom-field>
+        <custom-field action="copy">ri_akcjonariat_row_9_votes</custom-field>
+        <custom-field action="translate">ri_akcjonariat_row_10_shareholder</custom-field>
+        <custom-field action="copy">ri_akcjonariat_row_10_shares</custom-field>
+        <custom-field action="copy">ri_akcjonariat_row_10_votes</custom-field>
+
+        <!-- RI — Sprawozdania finansowe (ri_spr_item_1 do 10) -->
+        <custom-field action="translate">ri_spr_title</custom-field>
+        <custom-field action="translate">ri_spr_item_1_label</custom-field>
+        <custom-field action="copy">ri_spr_item_1_url_pdf</custom-field>
+        <custom-field action="copy">ri_spr_item_1_url_xlsx</custom-field>
+        <custom-field action="translate">ri_spr_item_2_label</custom-field>
+        <custom-field action="copy">ri_spr_item_2_url_pdf</custom-field>
+        <custom-field action="copy">ri_spr_item_2_url_xlsx</custom-field>
+        <custom-field action="translate">ri_spr_item_3_label</custom-field>
+        <custom-field action="copy">ri_spr_item_3_url_pdf</custom-field>
+        <custom-field action="copy">ri_spr_item_3_url_xlsx</custom-field>
+        <custom-field action="translate">ri_spr_item_4_label</custom-field>
+        <custom-field action="copy">ri_spr_item_4_url_pdf</custom-field>
+        <custom-field action="copy">ri_spr_item_4_url_xlsx</custom-field>
+        <custom-field action="translate">ri_spr_item_5_label</custom-field>
+        <custom-field action="copy">ri_spr_item_5_url_pdf</custom-field>
+        <custom-field action="copy">ri_spr_item_5_url_xlsx</custom-field>
+        <custom-field action="translate">ri_spr_item_6_label</custom-field>
+        <custom-field action="copy">ri_spr_item_6_url_pdf</custom-field>
+        <custom-field action="copy">ri_spr_item_6_url_xlsx</custom-field>
+        <custom-field action="translate">ri_spr_item_7_label</custom-field>
+        <custom-field action="copy">ri_spr_item_7_url_pdf</custom-field>
+        <custom-field action="copy">ri_spr_item_7_url_xlsx</custom-field>
+        <custom-field action="translate">ri_spr_item_8_label</custom-field>
+        <custom-field action="copy">ri_spr_item_8_url_pdf</custom-field>
+        <custom-field action="copy">ri_spr_item_8_url_xlsx</custom-field>
+        <custom-field action="translate">ri_spr_item_9_label</custom-field>
+        <custom-field action="copy">ri_spr_item_9_url_pdf</custom-field>
+        <custom-field action="copy">ri_spr_item_9_url_xlsx</custom-field>
+        <custom-field action="translate">ri_spr_item_10_label</custom-field>
+        <custom-field action="copy">ri_spr_item_10_url_pdf</custom-field>
+        <custom-field action="copy">ri_spr_item_10_url_xlsx</custom-field>
+
+        <!-- RI — Sprawozdania zarzadu (ri_szar_item_1 do 10) -->
+        <custom-field action="translate">ri_szar_title</custom-field>
+        <custom-field action="translate">ri_szar_item_1_label</custom-field>
+        <custom-field action="copy">ri_szar_item_1_url_pdf</custom-field>
+        <custom-field action="translate">ri_szar_item_2_label</custom-field>
+        <custom-field action="copy">ri_szar_item_2_url_pdf</custom-field>
+        <custom-field action="translate">ri_szar_item_3_label</custom-field>
+        <custom-field action="copy">ri_szar_item_3_url_pdf</custom-field>
+        <custom-field action="translate">ri_szar_item_4_label</custom-field>
+        <custom-field action="copy">ri_szar_item_4_url_pdf</custom-field>
+        <custom-field action="translate">ri_szar_item_5_label</custom-field>
+        <custom-field action="copy">ri_szar_item_5_url_pdf</custom-field>
+        <custom-field action="translate">ri_szar_item_6_label</custom-field>
+        <custom-field action="copy">ri_szar_item_6_url_pdf</custom-field>
+        <custom-field action="translate">ri_szar_item_7_label</custom-field>
+        <custom-field action="copy">ri_szar_item_7_url_pdf</custom-field>
+        <custom-field action="translate">ri_szar_item_8_label</custom-field>
+        <custom-field action="copy">ri_szar_item_8_url_pdf</custom-field>
+        <custom-field action="translate">ri_szar_item_9_label</custom-field>
+        <custom-field action="copy">ri_szar_item_9_url_pdf</custom-field>
+        <custom-field action="translate">ri_szar_item_10_label</custom-field>
+        <custom-field action="copy">ri_szar_item_10_url_pdf</custom-field>
+
+        <!-- RI — Ogloszenia WZA (ri_ogl_item_1 do 10) -->
+        <custom-field action="translate">ri_ogl_title</custom-field>
+        <custom-field action="translate">ri_ogl_item_1_label</custom-field>
+        <custom-field action="copy">ri_ogl_item_1_file</custom-field>
+        <custom-field action="translate">ri_ogl_item_2_label</custom-field>
+        <custom-field action="copy">ri_ogl_item_2_file</custom-field>
+        <custom-field action="translate">ri_ogl_item_3_label</custom-field>
+        <custom-field action="copy">ri_ogl_item_3_file</custom-field>
+        <custom-field action="translate">ri_ogl_item_4_label</custom-field>
+        <custom-field action="copy">ri_ogl_item_4_file</custom-field>
+        <custom-field action="translate">ri_ogl_item_5_label</custom-field>
+        <custom-field action="copy">ri_ogl_item_5_file</custom-field>
+        <custom-field action="translate">ri_ogl_item_6_label</custom-field>
+        <custom-field action="copy">ri_ogl_item_6_file</custom-field>
+        <custom-field action="translate">ri_ogl_item_7_label</custom-field>
+        <custom-field action="copy">ri_ogl_item_7_file</custom-field>
+        <custom-field action="translate">ri_ogl_item_8_label</custom-field>
+        <custom-field action="copy">ri_ogl_item_8_file</custom-field>
+        <custom-field action="translate">ri_ogl_item_9_label</custom-field>
+        <custom-field action="copy">ri_ogl_item_9_file</custom-field>
+        <custom-field action="translate">ri_ogl_item_10_label</custom-field>
+        <custom-field action="copy">ri_ogl_item_10_file</custom-field>
+
+        <!-- RI — Biegly rewident (ri_rew_item_1 do 10) -->
+        <custom-field action="translate">ri_rew_title</custom-field>
+        <custom-field action="translate">ri_rew_item_1_label</custom-field>
+        <custom-field action="copy">ri_rew_item_1_file</custom-field>
+        <custom-field action="translate">ri_rew_item_2_label</custom-field>
+        <custom-field action="copy">ri_rew_item_2_file</custom-field>
+        <custom-field action="translate">ri_rew_item_3_label</custom-field>
+        <custom-field action="copy">ri_rew_item_3_file</custom-field>
+        <custom-field action="translate">ri_rew_item_4_label</custom-field>
+        <custom-field action="copy">ri_rew_item_4_file</custom-field>
+        <custom-field action="translate">ri_rew_item_5_label</custom-field>
+        <custom-field action="copy">ri_rew_item_5_file</custom-field>
+        <custom-field action="translate">ri_rew_item_6_label</custom-field>
+        <custom-field action="copy">ri_rew_item_6_file</custom-field>
+        <custom-field action="translate">ri_rew_item_7_label</custom-field>
+        <custom-field action="copy">ri_rew_item_7_file</custom-field>
+        <custom-field action="translate">ri_rew_item_8_label</custom-field>
+        <custom-field action="copy">ri_rew_item_8_file</custom-field>
+        <custom-field action="translate">ri_rew_item_9_label</custom-field>
+        <custom-field action="copy">ri_rew_item_9_file</custom-field>
+        <custom-field action="translate">ri_rew_item_10_label</custom-field>
+        <custom-field action="copy">ri_rew_item_10_file</custom-field>
+
+        <!-- RI — Monitor Sadowy (ri_msg_item_1 do 10) -->
+        <custom-field action="translate">ri_msg_title</custom-field>
+        <custom-field action="translate">ri_msg_item_1_label</custom-field>
+        <custom-field action="copy">ri_msg_item_1_file</custom-field>
+        <custom-field action="translate">ri_msg_item_2_label</custom-field>
+        <custom-field action="copy">ri_msg_item_2_file</custom-field>
+        <custom-field action="translate">ri_msg_item_3_label</custom-field>
+        <custom-field action="copy">ri_msg_item_3_file</custom-field>
+        <custom-field action="translate">ri_msg_item_4_label</custom-field>
+        <custom-field action="copy">ri_msg_item_4_file</custom-field>
+        <custom-field action="translate">ri_msg_item_5_label</custom-field>
+        <custom-field action="copy">ri_msg_item_5_file</custom-field>
+        <custom-field action="translate">ri_msg_item_6_label</custom-field>
+        <custom-field action="copy">ri_msg_item_6_file</custom-field>
+        <custom-field action="translate">ri_msg_item_7_label</custom-field>
+        <custom-field action="copy">ri_msg_item_7_file</custom-field>
+        <custom-field action="translate">ri_msg_item_8_label</custom-field>
+        <custom-field action="copy">ri_msg_item_8_file</custom-field>
+        <custom-field action="translate">ri_msg_item_9_label</custom-field>
+        <custom-field action="copy">ri_msg_item_9_file</custom-field>
+        <custom-field action="translate">ri_msg_item_10_label</custom-field>
+        <custom-field action="copy">ri_msg_item_10_file</custom-field>
+
+        <!-- RI — Uchwaly WZA (ri_uch_item_1 do 10) -->
+        <custom-field action="translate">ri_uch_title</custom-field>
+        <custom-field action="translate">ri_uch_item_1_label</custom-field>
+        <custom-field action="copy">ri_uch_item_1_file</custom-field>
+        <custom-field action="translate">ri_uch_item_2_label</custom-field>
+        <custom-field action="copy">ri_uch_item_2_file</custom-field>
+        <custom-field action="translate">ri_uch_item_3_label</custom-field>
+        <custom-field action="copy">ri_uch_item_3_file</custom-field>
+        <custom-field action="translate">ri_uch_item_4_label</custom-field>
+        <custom-field action="copy">ri_uch_item_4_file</custom-field>
+        <custom-field action="translate">ri_uch_item_5_label</custom-field>
+        <custom-field action="copy">ri_uch_item_5_file</custom-field>
+        <custom-field action="translate">ri_uch_item_6_label</custom-field>
+        <custom-field action="copy">ri_uch_item_6_file</custom-field>
+        <custom-field action="translate">ri_uch_item_7_label</custom-field>
+        <custom-field action="copy">ri_uch_item_7_file</custom-field>
+        <custom-field action="translate">ri_uch_item_8_label</custom-field>
+        <custom-field action="copy">ri_uch_item_8_file</custom-field>
+        <custom-field action="translate">ri_uch_item_9_label</custom-field>
+        <custom-field action="copy">ri_uch_item_9_file</custom-field>
+        <custom-field action="translate">ri_uch_item_10_label</custom-field>
+        <custom-field action="copy">ri_uch_item_10_file</custom-field>
+
+        <!-- RI — Raporty kwartalne (ri_rap_kw_item_1 do 10) -->
+        <custom-field action="translate">ri_rap_kw_title</custom-field>
+        <custom-field action="translate">ri_rap_kw_item_1_label</custom-field>
+        <custom-field action="copy">ri_rap_kw_item_1_file</custom-field>
+        <custom-field action="translate">ri_rap_kw_item_2_label</custom-field>
+        <custom-field action="copy">ri_rap_kw_item_2_file</custom-field>
+        <custom-field action="translate">ri_rap_kw_item_3_label</custom-field>
+        <custom-field action="copy">ri_rap_kw_item_3_file</custom-field>
+        <custom-field action="translate">ri_rap_kw_item_4_label</custom-field>
+        <custom-field action="copy">ri_rap_kw_item_4_file</custom-field>
+        <custom-field action="translate">ri_rap_kw_item_5_label</custom-field>
+        <custom-field action="copy">ri_rap_kw_item_5_file</custom-field>
+        <custom-field action="translate">ri_rap_kw_item_6_label</custom-field>
+        <custom-field action="copy">ri_rap_kw_item_6_file</custom-field>
+        <custom-field action="translate">ri_rap_kw_item_7_label</custom-field>
+        <custom-field action="copy">ri_rap_kw_item_7_file</custom-field>
+        <custom-field action="translate">ri_rap_kw_item_8_label</custom-field>
+        <custom-field action="copy">ri_rap_kw_item_8_file</custom-field>
+        <custom-field action="translate">ri_rap_kw_item_9_label</custom-field>
+        <custom-field action="copy">ri_rap_kw_item_9_file</custom-field>
+        <custom-field action="translate">ri_rap_kw_item_10_label</custom-field>
+        <custom-field action="copy">ri_rap_kw_item_10_file</custom-field>
+
+        <!-- RI — Raporty EBI/ESPI (ri_rap_ebi_item_1 do 10) -->
+        <custom-field action="translate">ri_rap_ebi_title</custom-field>
+        <custom-field action="translate">ri_rap_ebi_item_1_label</custom-field>
+        <custom-field action="copy">ri_rap_ebi_item_1_file</custom-field>
+        <custom-field action="translate">ri_rap_ebi_item_2_label</custom-field>
+        <custom-field action="copy">ri_rap_ebi_item_2_file</custom-field>
+        <custom-field action="translate">ri_rap_ebi_item_3_label</custom-field>
+        <custom-field action="copy">ri_rap_ebi_item_3_file</custom-field>
+        <custom-field action="translate">ri_rap_ebi_item_4_label</custom-field>
+        <custom-field action="copy">ri_rap_ebi_item_4_file</custom-field>
+        <custom-field action="translate">ri_rap_ebi_item_5_label</custom-field>
+        <custom-field action="copy">ri_rap_ebi_item_5_file</custom-field>
+        <custom-field action="translate">ri_rap_ebi_item_6_label</custom-field>
+        <custom-field action="copy">ri_rap_ebi_item_6_file</custom-field>
+        <custom-field action="translate">ri_rap_ebi_item_7_label</custom-field>
+        <custom-field action="copy">ri_rap_ebi_item_7_file</custom-field>
+        <custom-field action="translate">ri_rap_ebi_item_8_label</custom-field>
+        <custom-field action="copy">ri_rap_ebi_item_8_file</custom-field>
+        <custom-field action="translate">ri_rap_ebi_item_9_label</custom-field>
+        <custom-field action="copy">ri_rap_ebi_item_9_file</custom-field>
+        <custom-field action="translate">ri_rap_ebi_item_10_label</custom-field>
+        <custom-field action="copy">ri_rap_ebi_item_10_file</custom-field>
+
+        <!-- RI — Animator Rynku (ri_rap_an_item_1 do 10) -->
+        <custom-field action="translate">ri_rap_an_title</custom-field>
+        <custom-field action="translate">ri_rap_an_item_1_label</custom-field>
+        <custom-field action="copy">ri_rap_an_item_1_file</custom-field>
+        <custom-field action="translate">ri_rap_an_item_2_label</custom-field>
+        <custom-field action="copy">ri_rap_an_item_2_file</custom-field>
+        <custom-field action="translate">ri_rap_an_item_3_label</custom-field>
+        <custom-field action="copy">ri_rap_an_item_3_file</custom-field>
+        <custom-field action="translate">ri_rap_an_item_4_label</custom-field>
+        <custom-field action="copy">ri_rap_an_item_4_file</custom-field>
+        <custom-field action="translate">ri_rap_an_item_5_label</custom-field>
+        <custom-field action="copy">ri_rap_an_item_5_file</custom-field>
+        <custom-field action="translate">ri_rap_an_item_6_label</custom-field>
+        <custom-field action="copy">ri_rap_an_item_6_file</custom-field>
+        <custom-field action="translate">ri_rap_an_item_7_label</custom-field>
+        <custom-field action="copy">ri_rap_an_item_7_file</custom-field>
+        <custom-field action="translate">ri_rap_an_item_8_label</custom-field>
+        <custom-field action="copy">ri_rap_an_item_8_file</custom-field>
+        <custom-field action="translate">ri_rap_an_item_9_label</custom-field>
+        <custom-field action="copy">ri_rap_an_item_9_file</custom-field>
+        <custom-field action="translate">ri_rap_an_item_10_label</custom-field>
+        <custom-field action="copy">ri_rap_an_item_10_file</custom-field>
+
+        <!-- RI — Autoryzowany Doradca (ri_rap_ad_item_1 do 10) -->
+        <custom-field action="translate">ri_rap_ad_title</custom-field>
+        <custom-field action="translate">ri_rap_ad_item_1_label</custom-field>
+        <custom-field action="copy">ri_rap_ad_item_1_file</custom-field>
+        <custom-field action="translate">ri_rap_ad_item_2_label</custom-field>
+        <custom-field action="copy">ri_rap_ad_item_2_file</custom-field>
+        <custom-field action="translate">ri_rap_ad_item_3_label</custom-field>
+        <custom-field action="copy">ri_rap_ad_item_3_file</custom-field>
+        <custom-field action="translate">ri_rap_ad_item_4_label</custom-field>
+        <custom-field action="copy">ri_rap_ad_item_4_file</custom-field>
+        <custom-field action="translate">ri_rap_ad_item_5_label</custom-field>
+        <custom-field action="copy">ri_rap_ad_item_5_file</custom-field>
+        <custom-field action="translate">ri_rap_ad_item_6_label</custom-field>
+        <custom-field action="copy">ri_rap_ad_item_6_file</custom-field>
+        <custom-field action="translate">ri_rap_ad_item_7_label</custom-field>
+        <custom-field action="copy">ri_rap_ad_item_7_file</custom-field>
+        <custom-field action="translate">ri_rap_ad_item_8_label</custom-field>
+        <custom-field action="copy">ri_rap_ad_item_8_file</custom-field>
+        <custom-field action="translate">ri_rap_ad_item_9_label</custom-field>
+        <custom-field action="copy">ri_rap_ad_item_9_file</custom-field>
+        <custom-field action="translate">ri_rap_ad_item_10_label</custom-field>
+        <custom-field action="copy">ri_rap_ad_item_10_file</custom-field>
+
+        <!-- RI — Pytania i odpowiedzi (ri_rap_qa_item_1 do 10) -->
+        <custom-field action="translate">ri_rap_qa_title</custom-field>
+        <custom-field action="translate">ri_rap_qa_item_1_label</custom-field>
+        <custom-field action="copy">ri_rap_qa_item_1_file</custom-field>
+        <custom-field action="translate">ri_rap_qa_item_2_label</custom-field>
+        <custom-field action="copy">ri_rap_qa_item_2_file</custom-field>
+        <custom-field action="translate">ri_rap_qa_item_3_label</custom-field>
+        <custom-field action="copy">ri_rap_qa_item_3_file</custom-field>
+        <custom-field action="translate">ri_rap_qa_item_4_label</custom-field>
+        <custom-field action="copy">ri_rap_qa_item_4_file</custom-field>
+        <custom-field action="translate">ri_rap_qa_item_5_label</custom-field>
+        <custom-field action="copy">ri_rap_qa_item_5_file</custom-field>
+        <custom-field action="translate">ri_rap_qa_item_6_label</custom-field>
+        <custom-field action="copy">ri_rap_qa_item_6_file</custom-field>
+        <custom-field action="translate">ri_rap_qa_item_7_label</custom-field>
+        <custom-field action="copy">ri_rap_qa_item_7_file</custom-field>
+        <custom-field action="translate">ri_rap_qa_item_8_label</custom-field>
+        <custom-field action="copy">ri_rap_qa_item_8_file</custom-field>
+        <custom-field action="translate">ri_rap_qa_item_9_label</custom-field>
+        <custom-field action="copy">ri_rap_qa_item_9_file</custom-field>
+        <custom-field action="translate">ri_rap_qa_item_10_label</custom-field>
+        <custom-field action="copy">ri_rap_qa_item_10_file</custom-field>
+
+        <!-- ═══════════════════════════════════════════
+             CUSTOMER STORY (CPT: customer-story)
+             cs_tags, cs_logo, cs_thumbnail, cs_video_url,
+             cs_video_file, cs_video_desc, cs_client_info
+             juz zadeklarowane wyzej w sekcji CASE STUDIES
+        ═══════════════════════════════════════════ -->
+        <custom-field action="copy">cs_logo_size</custom-field>
+        <custom-field action="copy">cs_logo_url</custom-field>
+        <custom-field action="copy">cs_cover_image</custom-field>
+        <custom-field action="translate">cs_subtitle</custom-field>
+        <custom-field action="translate">cs_client_sec_title</custom-field>
+        <custom-field action="translate">cs_cta_title</custom-field>
+        <custom-field action="translate">cs_cta_btn_text</custom-field>
+        <custom-field action="copy">cs_cta_btn_url</custom-field>
+        <custom-field action="translate">cs_challenge_sec_title</custom-field>
+        <custom-field action="translate">cs_challenge</custom-field>
+        <custom-field action="translate">cs_solution_sec_title</custom-field>
+        <custom-field action="translate">cs_solution_text</custom-field>
+        <custom-field action="translate">cs_solution_items</custom-field>
+        <custom-field action="translate">cs_solution_extra</custom-field>
+        <custom-field action="translate">cs_how_sec_title</custom-field>
+        <custom-field action="translate">cs_how</custom-field>
+        <custom-field action="translate">cs_effects_sec_title</custom-field>
+        <custom-field action="translate">cs_effects_intro</custom-field>
+        <custom-field action="translate">cs_effects_sub_title</custom-field>
+        <custom-field action="translate">cs_effects_items</custom-field>
+        <custom-field action="translate">cs_effects_tiles_title</custom-field>
+        <custom-field action="translate">cs_testimonial_text</custom-field>
+        <custom-field action="copy">cs_testimonial_author</custom-field>
+        <custom-field action="translate">cs_benefits_title</custom-field>
+        <custom-field action="copy">cs_is_general</custom-field>
+        <custom-field action="translate">cs_vid_general_text</custom-field>
+        <custom-field action="copy">cs_vid_general_url</custom-field>
+        <custom-field action="copy">cs_vid_general_img</custom-field>
+        <!-- CS — effect tiles (1-6) -->
+        <custom-field action="translate">cs_effect_tile_1_label</custom-field>
+        <custom-field action="translate">cs_effect_tile_1_desc</custom-field>
+        <custom-field action="translate">cs_effect_tile_2_label</custom-field>
+        <custom-field action="translate">cs_effect_tile_2_desc</custom-field>
+        <custom-field action="translate">cs_effect_tile_3_label</custom-field>
+        <custom-field action="translate">cs_effect_tile_3_desc</custom-field>
+        <custom-field action="translate">cs_effect_tile_4_label</custom-field>
+        <custom-field action="translate">cs_effect_tile_4_desc</custom-field>
+        <custom-field action="translate">cs_effect_tile_5_label</custom-field>
+        <custom-field action="translate">cs_effect_tile_5_desc</custom-field>
+        <custom-field action="translate">cs_effect_tile_6_label</custom-field>
+        <custom-field action="translate">cs_effect_tile_6_desc</custom-field>
+        <!-- CS — benefits (1-8) -->
+        <custom-field action="translate">cs_benefit_1_value</custom-field>
+        <custom-field action="translate">cs_benefit_1_label</custom-field>
+        <custom-field action="translate">cs_benefit_1_desc</custom-field>
+        <custom-field action="translate">cs_benefit_2_value</custom-field>
+        <custom-field action="translate">cs_benefit_2_label</custom-field>
+        <custom-field action="translate">cs_benefit_2_desc</custom-field>
+        <custom-field action="translate">cs_benefit_3_value</custom-field>
+        <custom-field action="translate">cs_benefit_3_label</custom-field>
+        <custom-field action="translate">cs_benefit_3_desc</custom-field>
+        <custom-field action="translate">cs_benefit_4_value</custom-field>
+        <custom-field action="translate">cs_benefit_4_label</custom-field>
+        <custom-field action="translate">cs_benefit_4_desc</custom-field>
+        <custom-field action="translate">cs_benefit_5_value</custom-field>
+        <custom-field action="translate">cs_benefit_5_label</custom-field>
+        <custom-field action="translate">cs_benefit_5_desc</custom-field>
+        <custom-field action="translate">cs_benefit_6_value</custom-field>
+        <custom-field action="translate">cs_benefit_6_label</custom-field>
+        <custom-field action="translate">cs_benefit_6_desc</custom-field>
+        <custom-field action="translate">cs_benefit_7_value</custom-field>
+        <custom-field action="translate">cs_benefit_7_label</custom-field>
+        <custom-field action="translate">cs_benefit_7_desc</custom-field>
+        <custom-field action="translate">cs_benefit_8_value</custom-field>
+        <custom-field action="translate">cs_benefit_8_label</custom-field>
+        <custom-field action="translate">cs_benefit_8_desc</custom-field>
+
+        <!-- ═══════════════════════════════════════════
+             WIDEOINSTRUKTAZE
+        ═══════════════════════════════════════════ -->
+        <custom-field action="translate">wi_label</custom-field>
+        <custom-field action="translate">wi_title</custom-field>
+        <custom-field action="translate">wi_desc</custom-field>
+        <custom-field action="translate">wi_1_title</custom-field>
+        <custom-field action="copy">wi_1_url</custom-field>
+        <custom-field action="translate">wi_2_title</custom-field>
+        <custom-field action="copy">wi_2_url</custom-field>
+        <custom-field action="translate">wi_3_title</custom-field>
+        <custom-field action="copy">wi_3_url</custom-field>
+        <custom-field action="translate">wi_4_title</custom-field>
+        <custom-field action="copy">wi_4_url</custom-field>
+        <custom-field action="translate">wi_5_title</custom-field>
+        <custom-field action="copy">wi_5_url</custom-field>
+        <custom-field action="translate">wi_6_title</custom-field>
+        <custom-field action="copy">wi_6_url</custom-field>
+        <custom-field action="translate">wi_7_title</custom-field>
+        <custom-field action="copy">wi_7_url</custom-field>
+        <custom-field action="translate">wi_8_title</custom-field>
+        <custom-field action="copy">wi_8_url</custom-field>
+        <custom-field action="translate">wi_9_title</custom-field>
+        <custom-field action="copy">wi_9_url</custom-field>
+        <custom-field action="translate">wi_10_title</custom-field>
+        <custom-field action="copy">wi_10_url</custom-field>
+
+        <!-- ═══════════════════════════════════════════
+             OFERTA PRACY (op_*)
+        ═══════════════════════════════════════════ -->
+        <custom-field action="translate">op_title</custom-field>
+        <custom-field action="copy">op_salary</custom-field>
+        <custom-field action="copy">op_location</custom-field>
+        <custom-field action="translate">op_category</custom-field>
+        <custom-field action="copy">op_hero_bg</custom-field>
+        <custom-field action="translate">op_intro</custom-field>
+        <custom-field action="translate">op_team_info</custom-field>
+        <custom-field action="copy">op_cv_url</custom-field>
+        <custom-field action="translate">op_duty_1</custom-field>
+        <custom-field action="translate">op_duty_2</custom-field>
+        <custom-field action="translate">op_duty_3</custom-field>
+        <custom-field action="translate">op_duty_4</custom-field>
+        <custom-field action="translate">op_duty_5</custom-field>
+        <custom-field action="translate">op_duty_6</custom-field>
+        <custom-field action="translate">op_duty_7</custom-field>
+        <custom-field action="translate">op_duty_8</custom-field>
+        <custom-field action="translate">op_duty_9</custom-field>
+        <custom-field action="translate">op_duty_10</custom-field>
+        <custom-field action="translate">op_duty_11</custom-field>
+        <custom-field action="translate">op_duty_12</custom-field>
+        <custom-field action="translate">op_req_1</custom-field>
+        <custom-field action="translate">op_req_2</custom-field>
+        <custom-field action="translate">op_req_3</custom-field>
+        <custom-field action="translate">op_req_4</custom-field>
+        <custom-field action="translate">op_req_5</custom-field>
+        <custom-field action="translate">op_req_6</custom-field>
+        <custom-field action="translate">op_req_7</custom-field>
+        <custom-field action="translate">op_req_8</custom-field>
+        <custom-field action="translate">op_req_9</custom-field>
+        <custom-field action="translate">op_req_10</custom-field>
+        <custom-field action="translate">op_req_11</custom-field>
+        <custom-field action="translate">op_req_12</custom-field>
+        <custom-field action="translate">op_nice_1</custom-field>
+        <custom-field action="translate">op_nice_2</custom-field>
+        <custom-field action="translate">op_nice_3</custom-field>
+        <custom-field action="translate">op_nice_4</custom-field>
+        <custom-field action="translate">op_nice_5</custom-field>
+        <custom-field action="translate">op_nice_6</custom-field>
+        <custom-field action="translate">op_tech_1</custom-field>
+        <custom-field action="translate">op_tech_2</custom-field>
+        <custom-field action="translate">op_tech_3</custom-field>
+        <custom-field action="translate">op_tech_4</custom-field>
+        <custom-field action="translate">op_tech_5</custom-field>
+        <custom-field action="translate">op_tech_6</custom-field>
+
+        <!-- ═══════════════════════════════════════════
+             BPO — brakujace pola
+        ═══════════════════════════════════════════ -->
+        <custom-field action="translate">bpo_stat1_text</custom-field>
+        <custom-field action="translate">bpo_stat2_text</custom-field>
+        <custom-field action="translate">bpo_stat3_text</custom-field>
+        <custom-field action="copy">bpo_awards_logo1</custom-field>
+        <custom-field action="copy">bpo_awards_logo2</custom-field>
+        <custom-field action="translate">bpo_td_btn_text</custom-field>
+        <custom-field action="copy">bpo_td_btn_url</custom-field>
+        <!-- BPO — model wspolpracy (grupy bpo_model1/2) -->
+        <custom-field action="copy">bpo_model1_icon</custom-field>
+        <custom-field action="translate">bpo_model1_title</custom-field>
+        <custom-field action="translate">bpo_model1_text</custom-field>
+        <custom-field action="copy">bpo_model2_icon</custom-field>
+        <custom-field action="translate">bpo_model2_title</custom-field>
+        <custom-field action="translate">bpo_model2_text</custom-field>
+        <!-- BPO — obszary wspolpracy (bpo_area 1-3) -->
+        <custom-field action="copy">bpo_area1_image</custom-field>
+        <custom-field action="translate">bpo_area1_title</custom-field>
+        <custom-field action="translate">bpo_area1_desc</custom-field>
+        <custom-field action="copy">bpo_area2_image</custom-field>
+        <custom-field action="translate">bpo_area2_title</custom-field>
+        <custom-field action="translate">bpo_area2_desc</custom-field>
+        <custom-field action="copy">bpo_area3_image</custom-field>
+        <custom-field action="translate">bpo_area3_title</custom-field>
+        <custom-field action="translate">bpo_area3_desc</custom-field>
+        <!-- BPO — dlaczego (bpo_d1 do bpo_d4) -->
+        <custom-field action="copy">bpo_d1_icon</custom-field>
+        <custom-field action="translate">bpo_d1_title</custom-field>
+        <custom-field action="translate">bpo_d1_text</custom-field>
+        <custom-field action="copy">bpo_d2_icon</custom-field>
+        <custom-field action="translate">bpo_d2_title</custom-field>
+        <custom-field action="translate">bpo_d2_text</custom-field>
+        <custom-field action="copy">bpo_d3_icon</custom-field>
+        <custom-field action="translate">bpo_d3_title</custom-field>
+        <custom-field action="translate">bpo_d3_text</custom-field>
+        <custom-field action="copy">bpo_d4_icon</custom-field>
+        <custom-field action="translate">bpo_d4_title</custom-field>
+        <custom-field action="translate">bpo_d4_text</custom-field>
+        <!-- BPO — kroki wspolpracy (bpo_wsp_step_1 do 3) -->
+        <custom-field action="translate">bpo_wsp_step_1_title</custom-field>
+        <custom-field action="translate">bpo_wsp_step_1_lead</custom-field>
+        <custom-field action="translate">bpo_wsp_step_1_items</custom-field>
+        <custom-field action="translate">bpo_wsp_step_2_title</custom-field>
+        <custom-field action="translate">bpo_wsp_step_2_lead</custom-field>
+        <custom-field action="translate">bpo_wsp_step_2_items</custom-field>
+        <custom-field action="translate">bpo_wsp_step_3_title</custom-field>
+        <custom-field action="translate">bpo_wsp_step_3_lead</custom-field>
+        <custom-field action="translate">bpo_wsp_step_3_items</custom-field>
+        <custom-field action="translate">bpo_wsp_step_3_note</custom-field>
+
+        <!-- ═══════════════════════════════════════════
+             KP — brakujace pola
+        ═══════════════════════════════════════════ -->
+        <!-- KP — model wspolpracy (grupy kp_model1/2) -->
+        <custom-field action="copy">kp_model1_icon</custom-field>
+        <custom-field action="translate">kp_model1_title</custom-field>
+        <custom-field action="translate">kp_model1_text</custom-field>
+        <custom-field action="translate">kp_model1_btn_text</custom-field>
+        <custom-field action="copy">kp_model1_btn_url</custom-field>
+        <custom-field action="copy">kp_model2_icon</custom-field>
+        <custom-field action="translate">kp_model2_title</custom-field>
+        <custom-field action="translate">kp_model2_text</custom-field>
+        <custom-field action="translate">kp_model2_btn_text</custom-field>
+        <custom-field action="copy">kp_model2_btn_url</custom-field>
+        <!-- KP — kroki wspolpracy (kp_wsp_step1 do 3) -->
+        <custom-field action="translate">kp_wsp_step1_title</custom-field>
+        <custom-field action="translate">kp_wsp_step1_lead</custom-field>
+        <custom-field action="translate">kp_wsp_step1_items</custom-field>
+        <custom-field action="translate">kp_wsp_step2_title</custom-field>
+        <custom-field action="translate">kp_wsp_step2_lead</custom-field>
+        <custom-field action="translate">kp_wsp_step2_items</custom-field>
+        <custom-field action="translate">kp_wsp_step3_title</custom-field>
+        <custom-field action="translate">kp_wsp_step3_lead</custom-field>
+        <custom-field action="translate">kp_wsp_step3_items</custom-field>
+        <custom-field action="translate">kp_wsp_step3_note</custom-field>
+
+        <!-- ═══════════════════════════════════════════
+             UK — brakujace pola
+        ═══════════════════════════════════════════ -->
+        <custom-field action="translate">uk_oferta_subtitle</custom-field>
+        <!-- UK — model wspolpracy (grupy uk_model1/2) -->
+        <custom-field action="copy">uk_model1_icon</custom-field>
+        <custom-field action="translate">uk_model1_title</custom-field>
+        <custom-field action="translate">uk_model1_text</custom-field>
+        <custom-field action="copy">uk_model2_icon</custom-field>
+        <custom-field action="translate">uk_model2_title</custom-field>
+        <custom-field action="translate">uk_model2_text</custom-field>
+        <!-- UK — pozycje modelu (uk_m1_item 1-5, uk_m2_item 1-5) -->
+        <custom-field action="translate">uk_m1_item1</custom-field>
+        <custom-field action="translate">uk_m1_item2</custom-field>
+        <custom-field action="translate">uk_m1_item3</custom-field>
+        <custom-field action="translate">uk_m1_item4</custom-field>
+        <custom-field action="translate">uk_m1_item5</custom-field>
+        <custom-field action="translate">uk_m2_item1</custom-field>
+        <custom-field action="translate">uk_m2_item2</custom-field>
+        <custom-field action="translate">uk_m2_item3</custom-field>
+        <custom-field action="translate">uk_m2_item4</custom-field>
+        <custom-field action="translate">uk_m2_item5</custom-field>
+        <!-- UK — kroki wspolpracy (uk_wsp_step1 do 3) -->
+        <custom-field action="translate">uk_wsp_step1_title</custom-field>
+        <custom-field action="translate">uk_wsp_step1_lead</custom-field>
+        <custom-field action="translate">uk_wsp_step1_items</custom-field>
+        <custom-field action="translate">uk_wsp_step2_title</custom-field>
+        <custom-field action="translate">uk_wsp_step2_lead</custom-field>
+        <custom-field action="translate">uk_wsp_step2_items</custom-field>
+        <custom-field action="translate">uk_wsp_step3_title</custom-field>
+        <custom-field action="translate">uk_wsp_step3_lead</custom-field>
+        <custom-field action="translate">uk_wsp_step3_items</custom-field>
+        <custom-field action="translate">uk_wsp_step3_note</custom-field>
+
+        <!-- ═══════════════════════════════════════════
+             FR — model wspolpracy (grupy fr_model1/2)
+        ═══════════════════════════════════════════ -->
+        <custom-field action="copy">fr_model1_icon</custom-field>
+        <custom-field action="translate">fr_model1_title</custom-field>
+        <custom-field action="translate">fr_model1_text</custom-field>
+        <custom-field action="copy">fr_model2_icon</custom-field>
+        <custom-field action="translate">fr_model2_title</custom-field>
+        <custom-field action="translate">fr_model2_text</custom-field>
+
+        <!-- ═══════════════════════════════════════════
+             TESTIMONIALS — brakujaca 4. statystyka
+        ═══════════════════════════════════════════ -->
+        <custom-field action="translate">test_stat_4_label</custom-field>
+        <custom-field action="copy">test_stat_4_value</custom-field>
+        <custom-field action="copy">test_stat_4_accent</custom-field>
+
+        <!-- ═══════════════════════════════════════════
+             HISTORIE KLIENTOW (HK) — brakujace pola
+        ═══════════════════════════════════════════ -->
+        <custom-field action="translate">hk_vid_label</custom-field>
+        <custom-field action="translate">hk_vid_title</custom-field>
+
+        <!-- ═══════════════════════════════════════════
+             KARIERA — brakujace pola
+        ═══════════════════════════════════════════ -->
+        <custom-field action="translate">kar_faq_title</custom-field>
+        <custom-field action="translate">kar_vid_desc</custom-field>
+        <custom-field action="translate">kar_cult_consent</custom-field>
+
+        <!-- ═══════════════════════════════════════════
+             KUPIMY — hero (btn1/btn2 zamiast btn)
+        ═══════════════════════════════════════════ -->
+        <custom-field action="translate">kupimy_hero_btn1_text</custom-field>
+        <custom-field action="copy">kupimy_hero_btn1_url</custom-field>
+        <custom-field action="translate">kupimy_hero_btn2_text</custom-field>
+        <custom-field action="copy">kupimy_hero_btn2_url</custom-field>
+        <custom-field action="copy">kupimy_hero_image</custom-field>
+
+        <!-- ═══════════════════════════════════════════
+             MEDIA ARTICLE (CPT) — brakujace pola
+        ═══════════════════════════════════════════ -->
+        <custom-field action="copy">ma_source</custom-field>
+        <custom-field action="copy">ma_author</custom-field>
+        <custom-field action="copy">ma_date_label</custom-field>
+        <custom-field action="copy">ma_video_url</custom-field>
+        <custom-field action="copy">ma_show_article_link</custom-field>
+        <custom-field action="copy">article_category</custom-field>
+        <!-- MA — sekcje tresci (ma_section_1 do 8) -->
+        <custom-field action="translate">ma_section_1_heading</custom-field>
+        <custom-field action="copy">ma_section_1_heading_level</custom-field>
+        <custom-field action="translate">ma_section_1_body</custom-field>
+        <custom-field action="translate">ma_section_2_heading</custom-field>
+        <custom-field action="copy">ma_section_2_heading_level</custom-field>
+        <custom-field action="translate">ma_section_2_body</custom-field>
+        <custom-field action="translate">ma_section_3_heading</custom-field>
+        <custom-field action="copy">ma_section_3_heading_level</custom-field>
+        <custom-field action="translate">ma_section_3_body</custom-field>
+        <custom-field action="translate">ma_section_4_heading</custom-field>
+        <custom-field action="copy">ma_section_4_heading_level</custom-field>
+        <custom-field action="translate">ma_section_4_body</custom-field>
+        <custom-field action="translate">ma_section_5_heading</custom-field>
+        <custom-field action="copy">ma_section_5_heading_level</custom-field>
+        <custom-field action="translate">ma_section_5_body</custom-field>
+        <custom-field action="translate">ma_section_6_heading</custom-field>
+        <custom-field action="copy">ma_section_6_heading_level</custom-field>
+        <custom-field action="translate">ma_section_6_body</custom-field>
+        <custom-field action="translate">ma_section_7_heading</custom-field>
+        <custom-field action="copy">ma_section_7_heading_level</custom-field>
+        <custom-field action="translate">ma_section_7_body</custom-field>
+        <custom-field action="translate">ma_section_8_heading</custom-field>
+        <custom-field action="copy">ma_section_8_heading_level</custom-field>
+        <custom-field action="translate">ma_section_8_body</custom-field>
+
+        <!-- ═══════════════════════════════════════════
+             MEDIA — zapytania (brakujace)
+        ═══════════════════════════════════════════ -->
+        <custom-field action="copy">media_zap_email</custom-field>
+
+        <!-- ═══════════════════════════════════════════
+             FOOTER — social links (1-4)
+        ═══════════════════════════════════════════ -->
+        <custom-field action="copy">footer_social_1_icon</custom-field>
+        <custom-field action="copy">footer_social_1_url</custom-field>
+        <custom-field action="copy">footer_social_2_icon</custom-field>
+        <custom-field action="copy">footer_social_2_url</custom-field>
+        <custom-field action="copy">footer_social_3_icon</custom-field>
+        <custom-field action="copy">footer_social_3_url</custom-field>
+        <custom-field action="copy">footer_social_4_icon</custom-field>
+        <custom-field action="copy">footer_social_4_url</custom-field>
+
+        <!-- ═══════════════════════════════════════════
+             HISTORIE — wspoldzielone (hist_1, hist_2 na front page)
+        ═══════════════════════════════════════════ -->
+        <custom-field action="translate">hist_title</custom-field>
+        <custom-field action="translate">hist_btn_text</custom-field>
+        <custom-field action="copy">hist_btn_url</custom-field>
 
     </custom-fields>
 </wpml-config>

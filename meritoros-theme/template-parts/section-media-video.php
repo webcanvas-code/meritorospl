@@ -30,14 +30,15 @@ $v1_thumb_url = (is_array($v1_thumb) && !empty($v1_thumb['url']))
     : ($v1_yt ? 'https://img.youtube.com/vi/' . $v1_yt . '/maxresdefault.jpg' : '');
 
 $videos = [[
-    'title'     => __( mer_field('media_vid_title',    'Jak z MINIMALNYM ryzykiem zacząć własny biznes? Sebastian Rafalik wspomina Meritoros.'), 'meritoros' ),
-    'text'      => __( mer_field('media_vid_text',     'Sebastian Rafalik (POL–FRA) w wywiadzie dla „Zaprojektuj Swoje Życie" mówi o tym, jak uporządkowanie księgowości i kadr z Meritoros pomogło mu odblokować skalowanie biznesu i zdjąć z siebie „wąskie gardło".'), 'meritoros' ),
-    'btn_text'  => __( mer_field('media_vid_btn_text', 'Posłuchaj wywiadu'), 'meritoros' ),
-    'btn_url'   => mer_field('media_vid_btn_url',  '#'),
-    'thumb_url' => $v1_thumb_url,
-    'play_src'  => $v1_play,
-    'play_type' => $v1_type,
-    'yt_id'     => $v1_yt,
+    'title'       => __( mer_field('media_vid_title',    'Jak z MINIMALNYM ryzykiem zacząć własny biznes? Sebastian Rafalik wspomina Meritoros.'), 'meritoros' ),
+    'text'        => __( mer_field('media_vid_text',     'Sebastian Rafalik (POL–FRA) w wywiadzie dla „Zaprojektuj Swoje Życie" mówi o tym, jak uporządkowanie księgowości i kadr z Meritoros pomogło mu odblokować skalowanie biznesu i zdjąć z siebie „wąskie gardło".'), 'meritoros' ),
+    'btn_text'    => __( mer_field('media_vid_btn_text', 'Posłuchaj wywiadu'), 'meritoros' ),
+    'btn_url'     => mer_field('media_vid_btn_url',  '#'),
+    'thumb_url'   => $v1_thumb_url,
+    'play_src'    => $v1_play,
+    'play_type'   => $v1_type,
+    'yt_id'       => $v1_yt,
+    'is_first'    => true,
 ]];
 
 // ── Videos 2–5 — group fields ────────────────────────────────────────────────
@@ -55,11 +56,12 @@ for ($i = 2; $i <= 5; $i++) {
         'title'     => !empty($g['title'])    ? $g['title']    : '',
         'text'      => !empty($g['text'])     ? $g['text']     : '',
         'btn_text'  => !empty($g['btn_text']) ? __($g['btn_text'], 'meritoros') : __('Obejrzyj materiał', 'meritoros'),
-        'btn_url'   => '#',
+        'btn_url'   => !empty($g['btn_url'])  ? $g['btn_url']  : '',
         'thumb_url' => $g_thumb_url,
         'play_src'  => $g_play,
         'play_type' => $g_type,
         'yt_id'     => $g_yt,
+        'is_first'  => false,
     ];
 }
 
@@ -96,17 +98,32 @@ $has_multi = $count > 1;
                     <p class="text-base sm:text-lg text-slate-500 leading-relaxed mb-8">
                         <?php echo mer_esc($vid['text']); ?>
                     </p>
-                    <?php if ($vid['play_src']) : ?>
+                    <?php if (!empty($vid['is_first'])) : ?>
+                        <?php if ($vid['play_src']) : ?>
                         <button class="mer-btn mer-btn--primary mvid-open inline-flex items-center gap-2 px-8 py-4 rounded-full bg-[#00d084] text-white text-base font-medium hover:bg-[#00b872] transition-colors"
                                 data-src="<?php echo $vid['play_src']; ?>"
                                 data-type="<?php echo esc_attr($vid['play_type']); ?>">
                             <?php echo mer_esc($vid['btn_text']); ?>
                         </button>
-                    <?php elseif (!empty($vid['btn_url']) && $vid['btn_url'] !== '#') : ?>
-                        <a href="<?php echo esc_url($vid['btn_url']); ?>"
-                           class="mer-btn mer-btn--primary inline-flex items-center gap-2 px-8 py-4 rounded-full bg-[#00d084] text-white text-base font-medium hover:bg-[#00b872] transition-colors">
-                            <?php echo mer_esc($vid['btn_text']); ?>
+                        <?php endif; ?>
+                        <a href="<?php echo esc_url(home_url('/historie-klientow/')); ?>"
+                           class="mer-btn mer-btn--white inline-flex items-center gap-2 px-8 py-4 rounded-full bg-white border border-slate-200 text-slate-700 text-base font-medium hover:border-slate-300 hover:bg-slate-50 transition-colors mt-4">
+                            <?php esc_html_e('Poznaj więcej historii', 'meritoros'); ?>
                         </a>
+                    <?php else : ?>
+                        <?php if ($vid['play_src']) : ?>
+                        <button class="mer-btn mer-btn--primary mvid-open inline-flex items-center gap-2 px-8 py-4 rounded-full bg-[#00d084] text-white text-base font-medium hover:bg-[#00b872] transition-colors"
+                                data-src="<?php echo $vid['play_src']; ?>"
+                                data-type="<?php echo esc_attr($vid['play_type']); ?>">
+                            <?php echo mer_esc($vid['btn_text']); ?>
+                        </button>
+                        <?php endif; ?>
+                        <?php if (!empty($vid['btn_url'])) : ?>
+                        <a href="<?php echo esc_url($vid['btn_url']); ?>"
+                           class="mer-btn mer-btn--white inline-flex items-center gap-2 px-8 py-4 rounded-full bg-white border border-slate-200 text-slate-700 text-base font-medium hover:border-slate-300 hover:bg-slate-50 transition-colors mt-4">
+                            <?php esc_html_e('Poznaj historię', 'meritoros'); ?>
+                        </a>
+                        <?php endif; ?>
                     <?php endif; ?>
                 </div>
 

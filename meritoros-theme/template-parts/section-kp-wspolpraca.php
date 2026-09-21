@@ -90,7 +90,7 @@ $s3_items = array_values(array_filter(array_map(function($s) { return __($s, 'me
         </div>
 
         <div class="mt-20 text-center">
-            <a href="<?php echo esc_url($btn_url); ?>" class="mer-btn mer-btn--primary px-7 py-3.5 rounded-full bg-[#00d084] text-white text-base font-semibold hover:bg-[#00b872] transition-colors inline-block shadow-lg shadow-emerald-500/30">
+            <a href="<?php echo esc_url($btn_url); ?>" class="mer-btn mer-btn--white px-7 py-3.5 rounded-full bg-white border border-slate-200 text-slate-700 text-base font-semibold hover:border-slate-300 hover:bg-slate-50 transition-colors inline-block">
                 <?php echo mer_esc($btn_text); ?>
             </a>
         </div>

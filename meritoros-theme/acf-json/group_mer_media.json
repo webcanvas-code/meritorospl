@@ -175,6 +175,17 @@
                 "instructions": "",
                 "required": 0,
                 "conditional_logic": 0,
+                "key": "field_media_vid_1_msg",
+                "label": "Wideo 1 (główne)",
+                "name": "media_vid_1_msg",
+                "type": "message",
+                "message": "Pola poniżej dotyczą pierwszego slajdu wideo. Przycisk tego slajdu prowadzi do strony Historii klientów.",
+                "wrapper": { "width": "", "class": "", "id": "" }
+            },
+            {
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
                 "wrapper": { "width": "", "class": "", "id": "" },
                 "key": "field_media_vid_title",
                 "label": "Tytuł",
@@ -286,7 +297,8 @@
                     {"key": "field_media_vid_2_text", "label": "Opis", "name": "text", "type": "textarea", "rows": 3, "default_value": "", "placeholder": "", "maxlength": "", "new_lines": "", "required": 0, "conditional_logic": 0, "wrapper": {"width": "", "class": "", "id": ""}},
                     {"key": "field_media_vid_2_btn", "label": "Tekst przycisku", "name": "btn_text", "type": "text", "default_value": "Obejrzyj materiał", "placeholder": "", "prepend": "", "append": "", "maxlength": "", "required": 0, "conditional_logic": 0, "wrapper": {"width": "", "class": "", "id": ""}},
                     {"key": "field_media_vid_2_url", "label": "URL wideo (YouTube / Vimeo)", "name": "vid_url", "type": "text", "instructions": "Wklej link YouTube lub Vimeo.", "default_value": "", "placeholder": "", "prepend": "", "append": "", "maxlength": "", "required": 0, "conditional_logic": 0, "wrapper": {"width": "", "class": "", "id": ""}},
-                    {"key": "field_media_vid_2_thumb", "label": "Miniatura wideo", "name": "thumbnail", "type": "image", "return_format": "array", "preview_size": "medium", "library": "all", "min_width": "", "min_height": "", "min_size": "", "max_width": "", "max_height": "", "max_size": "", "mime_types": "", "required": 0, "conditional_logic": 0, "wrapper": {"width": "", "class": "", "id": ""}}
+                    {"key": "field_media_vid_2_thumb", "label": "Miniatura wideo", "name": "thumbnail", "type": "image", "return_format": "array", "preview_size": "medium", "library": "all", "min_width": "", "min_height": "", "min_size": "", "max_width": "", "max_height": "", "max_size": "", "mime_types": "", "required": 0, "conditional_logic": 0, "wrapper": {"width": "", "class": "", "id": ""}},
+                    {"key": "field_media_vid_2_btn_url", "label": "Link do historii klienta", "name": "btn_url", "type": "text", "instructions": "URL do konkretnej historii klienta — wyświetli przycisk 'Poznaj historię'.", "default_value": "", "placeholder": "/historia-klienta/nazwa/", "prepend": "", "append": "", "maxlength": "", "required": 0, "conditional_logic": 0, "wrapper": {"width": "", "class": "", "id": ""}}
                 ]
             },
             {
@@ -299,7 +311,8 @@
                     {"key": "field_media_vid_3_text", "label": "Opis", "name": "text", "type": "textarea", "rows": 3, "default_value": "", "placeholder": "", "maxlength": "", "new_lines": "", "required": 0, "conditional_logic": 0, "wrapper": {"width": "", "class": "", "id": ""}},
                     {"key": "field_media_vid_3_btn", "label": "Tekst przycisku", "name": "btn_text", "type": "text", "default_value": "Obejrzyj materiał", "placeholder": "", "prepend": "", "append": "", "maxlength": "", "required": 0, "conditional_logic": 0, "wrapper": {"width": "", "class": "", "id": ""}},
                     {"key": "field_media_vid_3_url", "label": "URL wideo (YouTube / Vimeo)", "name": "vid_url", "type": "text", "instructions": "Wklej link YouTube lub Vimeo.", "default_value": "", "placeholder": "", "prepend": "", "append": "", "maxlength": "", "required": 0, "conditional_logic": 0, "wrapper": {"width": "", "class": "", "id": ""}},
-                    {"key": "field_media_vid_3_thumb", "label": "Miniatura wideo", "name": "thumbnail", "type": "image", "return_format": "array", "preview_size": "medium", "library": "all", "min_width": "", "min_height": "", "min_size": "", "max_width": "", "max_height": "", "max_size": "", "mime_types": "", "required": 0, "conditional_logic": 0, "wrapper": {"width": "", "class": "", "id": ""}}
+                    {"key": "field_media_vid_3_thumb", "label": "Miniatura wideo", "name": "thumbnail", "type": "image", "return_format": "array", "preview_size": "medium", "library": "all", "min_width": "", "min_height": "", "min_size": "", "max_width": "", "max_height": "", "max_size": "", "mime_types": "", "required": 0, "conditional_logic": 0, "wrapper": {"width": "", "class": "", "id": ""}},
+                    {"key": "field_media_vid_3_btn_url", "label": "Link do historii klienta", "name": "btn_url", "type": "text", "instructions": "URL do konkretnej historii klienta — wyświetli przycisk 'Poznaj historię'.", "default_value": "", "placeholder": "/historia-klienta/nazwa/", "prepend": "", "append": "", "maxlength": "", "required": 0, "conditional_logic": 0, "wrapper": {"width": "", "class": "", "id": ""}}
                 ]
             },
             {
@@ -312,7 +325,8 @@
                     {"key": "field_media_vid_4_text", "label": "Opis", "name": "text", "type": "textarea", "rows": 3, "default_value": "", "placeholder": "", "maxlength": "", "new_lines": "", "required": 0, "conditional_logic": 0, "wrapper": {"width": "", "class": "", "id": ""}},
                     {"key": "field_media_vid_4_btn", "label": "Tekst przycisku", "name": "btn_text", "type": "text", "default_value": "Obejrzyj materiał", "placeholder": "", "prepend": "", "append": "", "maxlength": "", "required": 0, "conditional_logic": 0, "wrapper": {"width": "", "class": "", "id": ""}},
                     {"key": "field_media_vid_4_url", "label": "URL wideo (YouTube / Vimeo)", "name": "vid_url", "type": "text", "instructions": "Wklej link YouTube lub Vimeo.", "default_value": "", "placeholder": "", "prepend": "", "append": "", "maxlength": "", "required": 0, "conditional_logic": 0, "wrapper": {"width": "", "class": "", "id": ""}},
-                    {"key": "field_media_vid_4_thumb", "label": "Miniatura wideo", "name": "thumbnail", "type": "image", "return_format": "array", "preview_size": "medium", "library": "all", "min_width": "", "min_height": "", "min_size": "", "max_width": "", "max_height": "", "max_size": "", "mime_types": "", "required": 0, "conditional_logic": 0, "wrapper": {"width": "", "class": "", "id": ""}}
+                    {"key": "field_media_vid_4_thumb", "label": "Miniatura wideo", "name": "thumbnail", "type": "image", "return_format": "array", "preview_size": "medium", "library": "all", "min_width": "", "min_height": "", "min_size": "", "max_width": "", "max_height": "", "max_size": "", "mime_types": "", "required": 0, "conditional_logic": 0, "wrapper": {"width": "", "class": "", "id": ""}},
+                    {"key": "field_media_vid_4_btn_url", "label": "Link do historii klienta", "name": "btn_url", "type": "text", "instructions": "URL do konkretnej historii klienta — wyświetli przycisk 'Poznaj historię'.", "default_value": "", "placeholder": "/historia-klienta/nazwa/", "prepend": "", "append": "", "maxlength": "", "required": 0, "conditional_logic": 0, "wrapper": {"width": "", "class": "", "id": ""}}
                 ]
             },
             {
@@ -325,7 +339,8 @@
                     {"key": "field_media_vid_5_text", "label": "Opis", "name": "text", "type": "textarea", "rows": 3, "default_value": "", "placeholder": "", "maxlength": "", "new_lines": "", "required": 0, "conditional_logic": 0, "wrapper": {"width": "", "class": "", "id": ""}},
                     {"key": "field_media_vid_5_btn", "label": "Tekst przycisku", "name": "btn_text", "type": "text", "default_value": "Obejrzyj materiał", "placeholder": "", "prepend": "", "append": "", "maxlength": "", "required": 0, "conditional_logic": 0, "wrapper": {"width": "", "class": "", "id": ""}},
                     {"key": "field_media_vid_5_url", "label": "URL wideo (YouTube / Vimeo)", "name": "vid_url", "type": "text", "instructions": "Wklej link YouTube lub Vimeo.", "default_value": "", "placeholder": "", "prepend": "", "append": "", "maxlength": "", "required": 0, "conditional_logic": 0, "wrapper": {"width": "", "class": "", "id": ""}},
-                    {"key": "field_media_vid_5_thumb", "label": "Miniatura wideo", "name": "thumbnail", "type": "image", "return_format": "array", "preview_size": "medium", "library": "all", "min_width": "", "min_height": "", "min_size": "", "max_width": "", "max_height": "", "max_size": "", "mime_types": "", "required": 0, "conditional_logic": 0, "wrapper": {"width": "", "class": "", "id": ""}}
+                    {"key": "field_media_vid_5_thumb", "label": "Miniatura wideo", "name": "thumbnail", "type": "image", "return_format": "array", "preview_size": "medium", "library": "all", "min_width": "", "min_height": "", "min_size": "", "max_width": "", "max_height": "", "max_size": "", "mime_types": "", "required": 0, "conditional_logic": 0, "wrapper": {"width": "", "class": "", "id": ""}},
+                    {"key": "field_media_vid_5_btn_url", "label": "Link do historii klienta", "name": "btn_url", "type": "text", "instructions": "URL do konkretnej historii klienta - wyswietli przycisk 'Poznaj historię'.", "default_value": "", "placeholder": "/historia-klienta/nazwa/", "prepend": "", "append": "", "maxlength": "", "required": 0, "conditional_logic": 0, "wrapper": {"width": "", "class": "", "id": ""}}
                 ]
             }
         ],

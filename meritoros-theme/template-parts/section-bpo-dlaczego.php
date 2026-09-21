@@ -2,23 +2,25 @@
 $_page_id = get_the_ID();
 $_orig_id = apply_filters('wpml_object_id', $_page_id, get_post_type(), true, apply_filters('wpml_default_language', null));
 
-$title = mer_field('bpo_dlaczego_title', __('Dlaczego BPO z Meritoros?', 'meritoros'));
+$title = __( mer_field('bpo_dlaczego_title', 'Dlaczego BPO z Meritoros?'), 'meritoros' );
 
 $card_defaults = [
-    ['icon' => 'trending-up',  'title' => __('Efektywność kosztowa', 'meritoros'),                 'text' => __('Outsourcing biznesowy pozwala na znaczne obniżenie kosztów operacyjnych. Dzięki nowoczesnej technologii i dużej skali obsługiwanych przez nas operacji oszczędności sięgają 20% lub więcej w porównaniu do obsługi procesów za pomocą własnych pracowników.', 'meritoros')],
-    ['icon' => 'clock',        'title' => __("Uwolnienie czasu\ni usprawnienie procesów", 'meritoros'), 'text' => __('Przekazując odpowiedzialność za pewne procesy wsparcia, Zarząd i kluczowi menedżerowie przedsiębiorstwa mogą skupić się na rozwoju rynkowym i strategicznym zarządzaniu swoim biznesem.', 'meritoros')],
-    ['icon' => 'expand',       'title' => __("Elastyczność i skalowanie\noperacji", 'meritoros'),     'text' => __('Elastyczność i indywidualne podejście pozwalają nam szybko dopasować się do zmieniających się potrzeb klientów i wspomóc ich na ścieżce skalowania swojej organizacji.', 'meritoros')],
-    ['icon' => 'shield-check', 'title' => __("Bezpieczeństwo\ni compliance", 'meritoros'),            'text' => __('Działamy zgodnie z normami ISO 9001 i ISO/IEC 27001. Zapewniamy poufność danych, ciągłość obsługi i pełną zgodność z obowiązującymi przepisami prawa.', 'meritoros')],
+    ['icon' => 'trending-up',  'title' => 'Efektywność kosztowa',                     'text' => 'Outsourcing biznesowy pozwala na znaczne obniżenie kosztów operacyjnych. Dzięki nowoczesnej technologii i dużej skali obsługiwanych przez nas operacji oszczędności sięgają 20% lub więcej w porównaniu do obsługi procesów za pomocą własnych pracowników.'],
+    ['icon' => 'clock',        'title' => "Uwolnienie czasu\ni usprawnienie procesów", 'text' => 'Przekazując odpowiedzialność za pewne procesy wsparcia, Zarząd i kluczowi menedżerowie przedsiębiorstwa mogą skupić się na rozwoju rynkowym i strategicznym zarządzaniu swoim biznesem.'],
+    ['icon' => 'expand',       'title' => "Elastyczność i skalowanie\noperacji",       'text' => 'Elastyczność i indywidualne podejście pozwalają nam szybko dopasować się do zmieniających się potrzeb klientów i wspomóc ich na ścieżce skalowania swojej organizacji.'],
+    ['icon' => 'shield-check', 'title' => "Bezpieczeństwo\ni compliance",              'text' => 'Działamy zgodnie z normami ISO 9001 i ISO/IEC 27001. Zapewniamy poufność danych, ciągłość obsługi i pełną zgodność z obowiązującymi przepisami prawa.'],
 ];
 
 $cards = [];
 for ($i = 1; $i <= 4; $i++) {
     $g = get_field("bpo_d{$i}");
     $d = $card_defaults[$i - 1];
+    $raw_title = str_replace(["\r\n", "\r"], "\n", is_array($g) && !empty($g['title']) ? $g['title'] : $d['title']);
+    $raw_text  = is_array($g) && !empty($g['text'])  ? $g['text']  : $d['text'];
     $cards[] = [
         'icon'  => is_array($g) && !empty($g['icon'])  ? $g['icon']  : $d['icon'],
-        'title' => is_array($g) && !empty($g['title']) ? $g['title'] : $d['title'],
-        'text'  => is_array($g) && !empty($g['text'])  ? $g['text']  : $d['text'],
+        'title' => __( $raw_title, 'meritoros' ),
+        'text'  => __( $raw_text,  'meritoros' ),
     ];
 }
 ?>
@@ -60,7 +62,7 @@ for ($i = 1; $i <= 4; $i++) {
                         : [$raw, ''];
                 }
             ?>
-            <div class="bg-white rounded-2xl p-8 flex flex-col min-w-[85%] sm:min-w-[calc(50%-12px)] lg:w-[400px] lg:min-w-[400px] lg:h-[325px] border border-emerald-200">
+            <div class="bg-white rounded-2xl p-8 flex flex-col min-w-[85%] sm:min-w-[calc(50%-12px)] lg:w-[400px] lg:min-w-[400px] lg:min-h-[325px] border border-emerald-200">
                 <i data-lucide="<?php echo esc_attr($card['icon']); ?>" stroke-width="1" class="w-14 h-14 text-[#00d084] mb-8"></i>
                 <h3 class="text-xl md:text-2xl font-bold text-slate-900 mb-3 leading-snug">
                     <span class="block"><?php echo mer_esc($title_parts[0]); ?></span>
@@ -136,6 +138,6 @@ for ($i = 1; $i <= 4; $i++) {
         d.addEventListener('click', function () { current = parseInt(d.dataset.i); update(); });
     });
     window.addEventListener('resize', update);
-    (function tryInit() { if (cards[0] && cards[0].offsetWidth > 0) { update(); } else { requestAnimationFrame(tryInit); } })();
+    (function tryInit() { if (cards[0] && cards[0].offsetWidth > 0) { update(); if (typeof lucide !== 'undefined') lucide.createIcons(); } else { requestAnimationFrame(tryInit); } })();
 })();
 </script>

@@ -6,8 +6,8 @@ $btn1_u  = mer_field('bpo_kad_btn1_url',  home_url('/bpo/#bpo-dlaczego'));
 $btn2_t  = __( mer_field('bpo_kad_btn2_text', 'Sprawdź rozwiązania kadrowe'), 'meritoros' );
 $btn2_u  = mer_field('bpo_kad_btn2_url',  home_url('/kadry-i-place/'));
 
-$items_raw = __( mer_field('bpo_kad_items', "Prowadzenie dokumentacji kadrowej\n\nNaliczanie wynagrodzeń i świadczeń\n\nObsługa umów o pracę i umów cywilnoprawnych\n\nRozliczenia z ZUS i instytucjami publicznymi\n\nSporządzanie deklaracji podatkowych\n\nKontrolowanie limitów urlopowych, terminów badań lekarskich, szkoleń BHP oraz wygasających umów\n\nReprezentowanie podczas kontroli i czynności sprawdzających\n\nZarządzanie programami PPK i PPE\n\nPlatforma pracownicza z dostępem do wniosków urlopowych i dokumentów online"), 'meritoros' );
-$items = array_values(array_filter(array_map('trim', preg_split('/(\r?\n){2,}/', $items_raw))));
+$_items_raw = str_replace(["\r\n", "\r"], "\n", trim(mer_field('bpo_kad_items', "Prowadzenie dokumentacji kadrowej\nNaliczanie wynagrodzeń i świadczeń\nObsługa umów o pracę i umów cywilnoprawnych\nRozliczenia z ZUS i instytucjami publicznymi\nSporządzanie deklaracji podatkowych\nKontrolowanie limitów urlopowych, terminów badań lekarskich, szkoleń BHP oraz wygasających umów\nReprezentowanie podczas kontroli i czynności sprawdzających\nZarządzanie programami PPK i PPE\nPlatforma pracownicza z dostępem do wniosków urlopowych i dokumentów online")));
+$items = array_values(array_filter(array_map(function($it) { return __( trim($it), 'meritoros' ); }, preg_split('/\n+/', $_items_raw))));
 ?>
 
 <section id="bpo-kadrowe" class="py-12 md:py-24 bg-white relative overflow-hidden">

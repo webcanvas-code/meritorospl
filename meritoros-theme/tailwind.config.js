@@ -24,6 +24,7 @@ module.exports = {
   safelist: [
     'sm:w-[55%]', 'sm:w-[45%]',
     'sm:min-h-0', 'sm:h-auto', 'sm:h-[400px]',
+    'lg:min-h-[325px]',
   ],
   plugins: [],
 }

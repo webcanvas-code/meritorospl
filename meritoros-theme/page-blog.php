@@ -7,6 +7,9 @@ get_header();
 
 /* ── Capture page ID before any WP_Query loops overwrite $post ─── */
 $blog_page_id = get_the_ID();
+// WPML: EN/UK/RU pages have empty ACF — always read from Polish original
+$_blog_pl_id = apply_filters('wpml_object_id', $blog_page_id, 'page', true, 'pl');
+if ($_blog_pl_id) $blog_page_id = (int) $_blog_pl_id;
 
 /* ── ACF hero fields ───────────────────────────────────────────── */
 $hero_title  = get_field('blog_hero_title')  ?: __('Wiedza i poradniki', 'meritoros');
