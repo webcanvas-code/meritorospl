@@ -10,13 +10,13 @@ $btn1_text   = (get_field('footer_btn1_text',  $_ft_id) ?: __('Umów rozmowę', 
 $btn1_url    = (get_field('footer_btn1_url',   $_ft_id) ?: '#kontakt');
 $tagline     = (get_field('footer_tagline',    $_ft_id) ?: __('Profesjonalne biuro rachunkowe i BPO dla firm z ambicjami.', 'meritoros'));
 
-// Pola wspólne dla wszystkich języków — dane kontaktowe i meta
-$address     = mer_field('footer_address',   'Aleja Pokoju 62/8, Kraków');
-$phone       = mer_field('footer_phone',     '+48 000 000 000');
-$email       = mer_field('footer_email',     'biuro@meritoros.pl');
-$copyright   = mer_field('footer_copyright', '© ' . date('Y') . ' Meritoros SA. Wszelkie prawa zastrzeżone.');
-$credit_text = mer_field('footer_credit_text', 'Web-Canvas');
-$credit_url  = mer_field('footer_credit_url',  '#');
+// Dane kontaktowe i meta — czytaj z front page (jak CTA wyżej)
+$address     = get_field('footer_address',   $_ft_id) ?: 'Aleja Pokoju 62/8, Kraków';
+$phone       = get_field('footer_phone',     $_ft_id) ?: '+48 000 000 000';
+$email       = get_field('footer_email',     $_ft_id) ?: 'biuro@meritoros.pl';
+$copyright   = get_field('footer_copyright', $_ft_id) ?: __('© ' . date('Y') . ' Meritoros SA. Wszelkie prawa zastrzeżone.', 'meritoros');
+$credit_text = get_field('footer_credit_text', $_ft_id) ?: 'Web-Canvas';
+$credit_url  = get_field('footer_credit_url',  $_ft_id) ?: '#';
 
 $social_defaults = [
     1 => ['icon' => 'facebook',  'url' => 'https://www.facebook.com/Meritoros'],
@@ -27,8 +27,8 @@ $social_defaults = [
 $socials = [];
 for ($i = 1; $i <= 4; $i++) {
     $def  = $social_defaults[$i];
-    $icon = mer_field("footer_social_{$i}_icon", $def['icon']);
-    $url  = mer_field("footer_social_{$i}_url",  $def['url']);
+    $icon = get_field("footer_social_{$i}_icon", $_ft_id) ?: $def['icon'];
+    $url  = get_field("footer_social_{$i}_url",  $_ft_id) ?: $def['url'];
     // Jeśli ACF ma '#' lub pusty string — użyj prawdziwego domyślnego URL
     if (empty($url) || $url === '#') {
         $url = $def['url'];
