@@ -14,7 +14,7 @@ $items = array_values(array_filter(array_map(function($s) { return __($s, 'merit
 <section id="uk-oferta" class="py-8 md:py-14 bg-white relative">
     <div class="hidden md:block absolute -right-40 top-1/2 -translate-y-1/2 w-[380px] h-[380px] rounded-full border-[50px] border-emerald-100 pointer-events-none"></div>
 
-    <div class="max-w-7xl mx-auto px-6 relative z-10">
+    <div class="max-w-[1400px] mx-auto px-6 relative z-10">
         <h2 class="text-pretty text-4xl md:text-5xl font-bold tracking-tight text-slate-900 mb-4"><?php echo mer_esc($title); ?></h2>
         <p class="text-base text-slate-800 font-medium leading-relaxed mb-2 max-w-4xl"><?php echo nl2br(esc_html($subtitle)); ?></p>
         <p class="text-sm text-slate-600 mb-8"><?php echo mer_esc($sub_note); ?></p>
