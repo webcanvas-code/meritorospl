@@ -100,7 +100,7 @@ $has_multi = $count > 1;
                     </p>
                     <?php if (!empty($vid['is_first'])) : ?>
                         <?php if ($vid['play_src']) : ?>
-                        <button class="mer-btn mer-btn--primary mvid-open inline-flex items-center gap-2 px-8 py-4 rounded-full bg-[#00d084] text-white text-base font-medium hover:bg-[#00b872] transition-colors"
+                        <button class="mer-btn mer-btn--dark mvid-open inline-flex items-center gap-2 px-8 py-4 rounded-full bg-slate-900 text-white text-base font-medium hover:bg-slate-700 transition-colors"
                                 data-src="<?php echo $vid['play_src']; ?>"
                                 data-type="<?php echo esc_attr($vid['play_type']); ?>">
                             <?php echo mer_esc($vid['btn_text']); ?>
@@ -112,7 +112,7 @@ $has_multi = $count > 1;
                         </a>
                     <?php else : ?>
                         <?php if ($vid['play_src']) : ?>
-                        <button class="mer-btn mer-btn--primary mvid-open inline-flex items-center gap-2 px-8 py-4 rounded-full bg-[#00d084] text-white text-base font-medium hover:bg-[#00b872] transition-colors"
+                        <button class="mer-btn mer-btn--dark mvid-open inline-flex items-center gap-2 px-8 py-4 rounded-full bg-slate-900 text-white text-base font-medium hover:bg-slate-700 transition-colors"
                                 data-src="<?php echo $vid['play_src']; ?>"
                                 data-type="<?php echo esc_attr($vid['play_type']); ?>">
                             <?php echo mer_esc($vid['btn_text']); ?>

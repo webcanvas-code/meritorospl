@@ -49,7 +49,7 @@ $has_pdf = is_array($pdf) && !empty($pdf['url']);
 
                 <?php if ($has_pdf) : ?>
                     <a href="<?php echo esc_url($pdf['url']); ?>" target="_blank" rel="noopener"
-                       class="mer-btn mer-btn--primary inline-flex items-center justify-center bg-[#00d084] text-white px-8 py-4 rounded-full text-base font-bold hover:bg-[#00b872] transition-colors duration-200 w-fit">
+                       class="mer-btn mer-btn--dark inline-flex items-center justify-center bg-slate-900 text-white px-8 py-4 rounded-full text-base font-bold hover:bg-slate-700 transition-colors duration-200 w-fit">
                         <?php echo mer_esc($btn); ?>
                     </a>
                 <?php else : ?>

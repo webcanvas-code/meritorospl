@@ -136,9 +136,8 @@ if ($total === 0) return;
                 <?php endif; ?>
 
                 <a href="<?php echo esc_url($vid['story_url']); ?>"
-                   class="mer-btn mer-btn--primary mt-auto inline-flex items-center justify-center gap-2 px-5 py-2.5 rounded-full bg-[#00d084] hover:bg-[#00b872] text-white text-sm font-semibold transition-colors duration-200 group/link">
+                   class="mer-btn mer-btn--dark mt-auto inline-flex items-center justify-center px-5 py-2.5 rounded-full bg-slate-900 hover:bg-slate-700 text-white text-sm font-semibold transition-colors duration-200">
                     <?php esc_html_e('Czytaj historię', 'meritoros'); ?>
-                    <i data-lucide="arrow-right" class="w-4 h-4 transition-transform duration-200 group-hover/link:translate-x-1"></i>
                 </a>
 
             </div>

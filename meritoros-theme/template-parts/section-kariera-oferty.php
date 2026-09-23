@@ -60,12 +60,12 @@ for ($i = 1; $i <= 6; $i++) {
                     <?php if (!empty($o['traffit_url'])) : ?>
                     <a href="<?php echo esc_url($o['traffit_url']); ?>" target="_blank" rel="noopener noreferrer"
                        class="mer-btn mer-btn--white inline-flex items-center gap-2 px-5 py-2.5 rounded-full border border-slate-300 text-slate-700 group-hover:bg-white group-hover:text-slate-900 group-hover:border-transparent text-sm font-medium transition-all duration-300">
-                        <?php echo mer_esc(__('Aplikuj teraz', 'meritoros')); ?> <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                        <?php echo mer_esc(__('Aplikuj teraz', 'meritoros')); ?>
                     </a>
                     <?php else : ?>
                     <button onclick="document.getElementById('zostaw-cv').scrollIntoView({behavior:'smooth'})"
                             class="mer-btn mer-btn--white inline-flex items-center gap-2 px-5 py-2.5 rounded-full border border-slate-300 text-slate-700 group-hover:bg-white group-hover:text-slate-900 group-hover:border-transparent text-sm font-medium transition-all duration-300">
-                        <?php echo mer_esc(__('Aplikuj teraz', 'meritoros')); ?> <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                        <?php echo mer_esc(__('Aplikuj teraz', 'meritoros')); ?>
                     </button>
                     <?php endif; ?>
                     <?php if (!empty($o['url'])) : ?>

@@ -33,9 +33,8 @@ $kroki = [
 
                 <div class="flex flex-wrap gap-4">
                     <a href="<?php echo esc_url($cv_url); ?>" target="_blank" rel="noopener noreferrer"
-                       class="mer-btn mer-btn--primary inline-flex items-center gap-2 px-8 py-4 rounded-full bg-[#00d084] text-white text-base font-semibold hover:bg-[#00b872] transition-colors">
+                       class="mer-btn mer-btn--dark inline-flex items-center px-8 py-4 rounded-full bg-slate-900 text-white text-base font-semibold hover:bg-slate-700 transition-colors">
                         <?php esc_html_e('Wyślij CV', 'meritoros'); ?>
-                        <i data-lucide="arrow-right" class="w-4 h-4"></i>
                     </a>
                     <a href="<?php echo esc_url(home_url('/kariera/')); ?>"
                        class="mer-btn mer-btn--secondary inline-flex items-center gap-2 px-8 py-4 rounded-full border border-slate-300 text-slate-700 text-base font-medium hover:border-slate-400 transition-colors">
