@@ -47,10 +47,10 @@ $_iso9_url    = is_array($w6_badge) ? esc_url($w6_badge['url']) : esc_url($_img 
 
 <style>
     .val-iso27001 { width: 52px; height: 55px; }
-    .val-iso9001  { width: 42px; height: 43px; }
+    .val-iso9001  { width: 52px; height: 55px; }
     @media (min-width: 640px) {
-        .val-iso27001 { width: 65px;    height: 69px; }
-        .val-iso9001  { width: 52.95px; height: 53px; }
+        .val-iso27001 { width: 65px; height: 69px; }
+        .val-iso9001  { width: 65px; height: 69px; }
     }
 </style>
 
