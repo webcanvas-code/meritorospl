@@ -46,7 +46,7 @@ $items = array_values(array_filter(array_map(function($s) { return __($s, 'merit
                 <?php echo mer_esc($btn1_text); ?>
             </a>
             <a href="#uk-kalkulator"
-               class="mer-btn mer-btn--dark px-7 py-3.5 rounded-full bg-slate-900 text-white text-base font-semibold hover:bg-slate-700 transition-colors">
+               class="mer-btn mer-btn--dark inline-flex items-center px-7 py-3.5 rounded-full bg-slate-900 text-white text-base font-semibold hover:bg-slate-700 transition-colors">
                 <?php echo mer_esc($btn2_text); ?>
             </a>
         </div>

@@ -17,7 +17,7 @@ $btn_url  = mer_field('uk_cta_btn_url',  home_url('/kontakt/'));
                     <p class="text-white/75 text-lg"><?php echo mer_esc($text); ?></p>
                 </div>
             </div>
-            <a href="<?php echo esc_url($btn_url); ?>" class="mer-btn mer-btn--primary shrink-0 px-7 py-3.5 rounded-full bg-white text-slate-800 text-base font-semibold hover:bg-emerald-50 transition-colors whitespace-nowrap">
+            <a href="<?php echo esc_url($btn_url); ?>" class="mer-btn mer-btn--light shrink-0 px-7 py-3.5 rounded-full bg-white text-slate-900 text-base font-semibold hover:bg-slate-100 transition-colors whitespace-nowrap">
                 <?php echo mer_esc($btn_text); ?>
             </a>
         </div>
