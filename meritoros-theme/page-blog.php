@@ -153,7 +153,7 @@ usort($all_posts, function ($a, $b) {
                 'historie'  => __('Historie klientów', 'meritoros'),
             ];
             foreach ($filters as $slug => $label) :
-                $is_active = ($slug === 'wszystkie');
+                $is_active = ($slug === 'podatkowe');
             ?>
                 <button
                     data-filter="<?php echo esc_attr($slug); ?>"
@@ -585,7 +585,7 @@ usort($all_posts, function ($a, $b) {
     var emptyEl    = document.getElementById('blog-empty');
     var loadMoreEl = document.getElementById('blog-load-more');
     var loadWrap   = document.getElementById('blog-load-more-wrap');
-    var activeFilter = 'wszystkie';
+    var activeFilter = 'podatkowe';
     var visibleCount = 0;
 
     function getFilteredCards() {
