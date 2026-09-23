@@ -80,21 +80,13 @@ $_iso9_url    = is_array($w6_badge) ? esc_url($w6_badge['url']) : esc_url($_img 
         </div>
 
         <!-- Card 2: image (zdjęcie bez zmian) -->
-        <div class="sm:col-span-2 lg:col-span-2 rounded-[2rem] overflow-hidden min-h-[200px] lg:min-h-[240px] relative group h-full cursor-pointer shadow-sm">
+        <div class="sm:col-span-2 lg:col-span-2 rounded-[2rem] overflow-hidden min-h-[200px] lg:min-h-[240px] relative h-full shadow-sm">
             <?php if ($w2_img_url) : ?>
                 <img src="<?php echo $w2_img_url; ?>" alt="<?php echo $w2_img_alt; ?>"
-                    class="w-full h-full object-cover absolute inset-0 group-hover:scale-105 transition-transform duration-700" loading="lazy">
+                    class="w-full h-full object-cover absolute inset-0" loading="lazy">
             <?php else : ?>
                 <div class="w-full h-full bg-slate-300 absolute inset-0"></div>
             <?php endif; ?>
-            <div class="absolute inset-0 bg-gradient-to-t from-slate-900/60 via-transparent to-transparent opacity-60 group-hover:opacity-90 transition-opacity duration-300"></div>
-            <a href="<?php echo esc_url($w2_url); ?>"
-                class="absolute bottom-8 left-8 right-8 z-10 translate-y-4 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-300">
-                <p class="text-white font-medium text-lg flex items-center gap-2">
-                    <?php echo mer_esc($w2_hover); ?>
-                    <i data-lucide="arrow-right" class="w-5 h-5"></i>
-                </p>
-            </a>
         </div>
 
         <!-- Card 3: dark -->
