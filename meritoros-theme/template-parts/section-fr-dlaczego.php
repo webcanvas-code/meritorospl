@@ -59,9 +59,9 @@ for ($i = 1; $i <= 6; $i++) {
                 <?php if (is_array($card['logo']) || !empty($card['fallback_img']) || !empty($card['fallback_icon'])) : ?>
                 <div class="mt-auto pt-8 relative z-10">
                     <?php if (is_array($card['logo'])) : ?>
-                        <img src="<?php echo esc_url($card['logo']['url']); ?>" alt="<?php echo esc_attr($card['logo']['alt'] ?: ''); ?>" class="h-14 w-auto object-contain brightness-0 invert opacity-90" loading="lazy">
+                        <img src="<?php echo esc_url($card['logo']['url']); ?>" alt="<?php echo esc_attr($card['logo']['alt'] ?: ''); ?>" class="h-[4.5rem] w-auto object-contain brightness-0 invert opacity-90" loading="lazy">
                     <?php elseif (!empty($card['fallback_img'])) : ?>
-                        <img src="<?php echo esc_url(get_template_directory_uri() . '/images/' . $card['fallback_img']); ?>" alt="" class="h-14 w-auto object-contain brightness-0 invert opacity-90" loading="lazy">
+                        <img src="<?php echo esc_url(get_template_directory_uri() . '/images/' . $card['fallback_img']); ?>" alt="" class="h-[4.5rem] w-auto object-contain brightness-0 invert opacity-90" loading="lazy">
                     <?php elseif (!empty($card['fallback_icon'])) : ?>
                         <i data-lucide="<?php echo esc_attr($card['fallback_icon']); ?>" stroke-width="1" class="w-14 h-14 text-white opacity-90"></i>
                     <?php endif; ?>
