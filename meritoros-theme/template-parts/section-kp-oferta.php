@@ -15,7 +15,7 @@ $items = array_values(array_filter(array_map(function($s) { return __($s, 'merit
 
     <div class="max-w-7xl mx-auto px-6 relative z-10">
         <h2 class="text-pretty text-4xl md:text-5xl font-bold tracking-tight text-slate-900 mb-3"><?php echo mer_esc($title); ?></h2>
-        <p class="text-base text-slate-500 leading-relaxed mb-8 max-w-2xl"><?php echo nl2br(esc_html($subtitle)); ?></p>
+        <p class="text-base text-slate-500 leading-relaxed mb-8 max-w-4xl"><?php echo nl2br(esc_html($subtitle)); ?></p>
 
         <div class="rounded-2xl border border-slate-200 overflow-hidden mb-8">
             <div class="grid md:grid-cols-2 lg:grid-cols-3">
