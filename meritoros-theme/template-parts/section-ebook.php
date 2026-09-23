@@ -22,12 +22,10 @@ $mockup_alt = is_array($mockup) ? ($mockup['alt'] ?? 'Ebook') : 'Ebook';
 
 $pdf     = get_field('ebook_pdf', $pid);
 $has_pdf = is_array($pdf) && !empty($pdf['url']);
-
-$nonce = wp_create_nonce('mer_ebook_nonce');
 ?>
 
-<section id="ebook" class="py-16 md:py-24 bg-[#f0faf4] overflow-hidden">
-    <div class="max-w-[1400px] mx-auto px-6 lg:pl-12 lg:pr-0">
+<section id="ebook" class="py-16 md:py-24 bg-[#f0faf4]">
+    <div class="max-w-[1400px] mx-auto px-6 lg:px-12">
         <div class="flex flex-col lg:flex-row items-center gap-12 lg:gap-16">
 
             <!-- Lewa: treść + formularz -->
@@ -50,30 +48,10 @@ $nonce = wp_create_nonce('mer_ebook_nonce');
                 <?php endif; ?>
 
                 <?php if ($has_pdf) : ?>
-                <form id="ebook-form" class="flex flex-col gap-4" novalidate>
-                    <?php wp_nonce_field('mer_ebook_nonce', 'ebook_nonce_field'); ?>
-                    <input type="hidden" name="page_id" value="<?php echo esc_attr($pid); ?>">
-
-                    <input type="email" id="ebook-email" name="email" required
-                           placeholder="<?php echo esc_attr(__('Adres e-mail', 'meritoros')); ?>"
-                           class="mer-btn mer-btn--primary w-full px-6 py-4 rounded-full border border-slate-200 bg-white text-slate-900 text-base placeholder:text-slate-400 focus:outline-none focus:border-[#00d084] transition-colors duration-200 shadow-sm">
-
-                    <button type="submit" id="ebook-submit"
-                            class="mer-btn mer-btn--primary inline-flex items-center justify-center gap-2 bg-[#00d084] text-white px-8 py-4 rounded-full text-base font-bold hover:bg-[#00b872] transition-colors duration-200 w-fit">
-                        <span id="ebook-btn-label"><?php echo mer_esc($btn); ?></span>
-                        <i data-lucide="download" class="w-5 h-5 stroke-[2]" id="ebook-btn-icon"></i>
-                        <svg id="ebook-spinner" class="hidden animate-spin w-5 h-5" viewBox="0 0 24 24" fill="none">
-                            <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
-                            <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8v8z"></path>
-                        </svg>
-                    </button>
-
-                    <p id="ebook-success" class="hidden items-center gap-2 text-[#00d084] font-semibold text-sm">
-                        <i data-lucide="check-circle" class="w-5 h-5 stroke-[2]"></i>
-                        <?php echo mer_esc(__('Ebook został wysłany na podany adres e-mail!', 'meritoros')); ?>
-                    </p>
-                    <p id="ebook-error" class="hidden text-red-500 text-sm"></p>
-                </form>
+                    <a href="<?php echo esc_url($pdf['url']); ?>" target="_blank" rel="noopener"
+                       class="mer-btn mer-btn--primary inline-flex items-center justify-center bg-[#00d084] text-white px-8 py-4 rounded-full text-base font-bold hover:bg-[#00b872] transition-colors duration-200 w-fit">
+                        <?php echo mer_esc($btn); ?>
+                    </a>
                 <?php else : ?>
                     <p class="text-slate-400 text-sm italic">Brak przypisanego pliku PDF. Wgraj plik w zakładce "Sekcja Ebook" w ustawieniach strony.</p>
                 <?php endif; ?>
@@ -81,12 +59,10 @@ $nonce = wp_create_nonce('mer_ebook_nonce');
 
             <!-- Prawa: mockup -->
             <?php if ($mockup_url) : ?>
-            <div class="flex-1 hidden lg:flex items-center justify-center lg:justify-end"
-                 style="margin-right: calc(-1 * (max(0px, (100vw - 1400px) / 2) + 8rem))">
+            <div class="flex-1 hidden lg:flex items-center justify-center">
                 <img src="<?php echo esc_url($mockup_url); ?>"
                      alt="<?php echo esc_attr($mockup_alt); ?>"
-                     class="ebook-mockup-img object-contain drop-shadow-2xl"
-                     style="transform: rotate(6deg)" loading="lazy">
+                     class="max-h-[480px] w-auto object-contain drop-shadow-2xl" loading="lazy">
             </div>
             <?php endif; ?>
 
@@ -94,70 +70,3 @@ $nonce = wp_create_nonce('mer_ebook_nonce');
     </div>
 </section>
 
-<?php if ($has_pdf) : ?>
-<script>
-var merEbookL10n = {
-    emailInvalid: <?php echo json_encode(__('Podaj prawidłowy adres e-mail.', 'meritoros')); ?>,
-    errorGeneric: <?php echo json_encode(__('Wystąpił błąd. Spróbuj ponownie.', 'meritoros')); ?>,
-    errorNetwork: <?php echo json_encode(__('Błąd połączenia. Spróbuj ponownie.', 'meritoros')); ?>,
-};
-</script>
-<script>
-(function () {
-    var form    = document.getElementById('ebook-form');
-    var emailEl = document.getElementById('ebook-email');
-    var submit  = document.getElementById('ebook-submit');
-    var icon    = document.getElementById('ebook-btn-icon');
-    var spinner = document.getElementById('ebook-spinner');
-    var success = document.getElementById('ebook-success');
-    var error   = document.getElementById('ebook-error');
-    if (!form) return;
-
-    form.addEventListener('submit', function (e) {
-        e.preventDefault();
-        error.classList.add('hidden');
-        error.textContent = '';
-
-        var email = emailEl.value.trim();
-        if (!email || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
-            error.textContent = merEbookL10n.emailInvalid;
-            error.classList.remove('hidden');
-            return;
-        }
-
-        submit.disabled = true;
-        icon.classList.add('hidden');
-        spinner.classList.remove('hidden');
-
-        var data = new FormData(form);
-        data.set('action', 'mer_ebook');
-        data.set('nonce', document.getElementById('ebook_nonce_field').value);
-
-        fetch('<?php echo esc_url(admin_url('admin-ajax.php')); ?>', {
-            method: 'POST', body: data, credentials: 'same-origin',
-        })
-        .then(function (r) { return r.json(); })
-        .then(function (res) {
-            if (res.success) {
-                form.style.display = 'none';
-                success.classList.remove('hidden');
-                success.classList.add('flex');
-            } else {
-                error.textContent = res.data || merEbookL10n.errorGeneric;
-                error.classList.remove('hidden');
-                submit.disabled = false;
-                icon.classList.remove('hidden');
-                spinner.classList.add('hidden');
-            }
-        })
-        .catch(function () {
-            error.textContent = merEbookL10n.errorNetwork;
-            error.classList.remove('hidden');
-            submit.disabled = false;
-            icon.classList.remove('hidden');
-            spinner.classList.add('hidden');
-        });
-    });
-})();
-</script>
-<?php endif; ?>
