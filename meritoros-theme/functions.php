@@ -652,6 +652,9 @@ if (file_exists(get_template_directory() . '/import-wpml-strings.php')) {
 if (file_exists(get_template_directory() . '/import-wpml-pages.php')) {
     require_once get_template_directory() . '/import-wpml-pages.php';
 }
+if (file_exists(get_template_directory() . '/import-wpml-footer-header.php')) {
+    require_once get_template_directory() . '/import-wpml-footer-header.php';
+}
 
 /* ------------------------------------------------------------------
    Structured Data (JSON-LD)
