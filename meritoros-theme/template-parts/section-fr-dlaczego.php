@@ -42,19 +42,19 @@ for ($i = 1; $i <= 6; $i++) {
                 }
             ?>
             <div class="bg-[#00d084] rounded-3xl p-8 flex flex-col min-h-[380px] relative overflow-hidden">
-                <h3 class="text-xl font-bold text-slate-900 mb-4 leading-snug">
+                <h3 class="text-xl font-bold text-white mb-4 leading-snug">
                     <span class="block"><?php echo mer_esc($parts[0]); ?></span>
                     <?php if (!empty($parts[1])) : ?>
-                    <span class="block text-slate-700 font-medium"><?php echo mer_esc($parts[1]); ?></span>
+                    <span class="block"><?php echo mer_esc($parts[1]); ?></span>
                     <?php endif; ?>
                 </h3>
                 <p class="text-white/85 text-base leading-relaxed"><?php echo mer_esc($card['text']); ?></p>
                 <?php if (is_array($card['logo']) || !empty($card['fallback_img'])) : ?>
                 <div class="mt-auto pt-8">
                     <?php if (is_array($card['logo'])) : ?>
-                        <img src="<?php echo esc_url($card['logo']['url']); ?>" alt="<?php echo esc_attr($card['logo']['alt'] ?: ''); ?>" class="h-16 w-auto object-contain brightness-0 invert opacity-90" loading="lazy">
+                        <img src="<?php echo esc_url($card['logo']['url']); ?>" alt="<?php echo esc_attr($card['logo']['alt'] ?: ''); ?>" class="h-14 w-auto object-contain brightness-0 invert opacity-90" loading="lazy">
                     <?php elseif (!empty($card['fallback_img'])) : ?>
-                        <img src="<?php echo esc_url(get_template_directory_uri() . '/images/' . $card['fallback_img']); ?>" alt="" class="h-20 w-auto object-contain opacity-90" loading="lazy">
+                        <img src="<?php echo esc_url(get_template_directory_uri() . '/images/' . $card['fallback_img']); ?>" alt="" class="h-14 w-auto object-contain brightness-0 invert opacity-90" loading="lazy">
                     <?php endif; ?>
                 </div>
                 <?php endif; ?>
