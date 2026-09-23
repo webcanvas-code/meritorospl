@@ -31,11 +31,11 @@ $items = array_values(array_filter(array_map('trim', preg_split('/(\r?\n){2,}/',
                     if ($col === 0) $border .= ' md:border-r';
                     if ($col === 1) $border .= ' lg:border-r';
                 ?>
-                    <div class="flex items-start gap-4 p-5 md:block md:p-8<?php echo $border; ?> border-slate-200">
-                        <div class="w-8 h-8 md:w-10 md:h-10 rounded-full border border-emerald-200 flex items-center justify-center shrink-0 md:mb-6">
-                            <i data-lucide="check" stroke-width="2" class="w-4 h-4 md:w-5 md:h-5 text-[#00d084]"></i>
+                    <div class="flex items-start gap-4 p-4 md:block md:p-6<?php echo $border; ?> border-slate-200">
+                        <div class="w-8 h-8 rounded-full border border-emerald-200 flex items-center justify-center shrink-0 md:mb-4">
+                            <i data-lucide="check" stroke-width="2" class="w-4 h-4 text-[#00d084]"></i>
                         </div>
-                        <h3 class="text-sm md:text-xl font-bold text-slate-900 leading-snug"><?php echo mer_esc($item); ?></h3>
+                        <h3 class="text-sm md:text-base font-bold text-slate-900 leading-snug"><?php echo mer_esc($item); ?></h3>
                     </div>
                 <?php endforeach; ?>
             </div>
