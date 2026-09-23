@@ -2,35 +2,35 @@
 $_page_id = get_the_ID();
 $_orig_id = apply_filters('wpml_object_id', $_page_id, get_post_type(), true, apply_filters('wpml_default_language', null));
 
-$title    = __( mer_field('kp_model_title',    'Model współpracy'), 'meritoros' );
-$subtitle = __( mer_field('kp_model_subtitle', "Możesz powierzyć nam całość procesów kadrowych lub wybrane obszary wymagające uporządkowania.\nDopasowujemy zakres wsparcia do realnej sytuacji Twojej firmy."), 'meritoros' );
+$title    = mer_field('kp_model_title',    'Model współpracy');
+$subtitle = mer_field('kp_model_subtitle', "Możesz powierzyć nam całość procesów kadrowych lub wybrane obszary wymagające uporządkowania.\nDopasowujemy zakres wsparcia do realnej sytuacji Twojej firmy.");
 
 $m1 = get_field('kp_model1') ?: ($_orig_id !== $_page_id ? get_field('kp_model1', $_orig_id) : null);
 $m1_icon     = is_array($m1) && !empty($m1['icon'])     ? $m1['icon']     : 'users-round';
-$m1_label    = __( is_array($m1) && !empty($m1['label'])    ? $m1['label']    : 'Pełny zakres', 'meritoros' );
-$m1_title    = __( is_array($m1) && !empty($m1['title'])    ? $m1['title']    : 'Kompleksowa obsługa', 'meritoros' );
-$m1_text     = __( is_array($m1) && !empty($m1['text'])     ? $m1['text']     : 'Przejmujemy pełną obsługę kadrowo-płacową. Dedykowany zespół, terminowość i zgodność z przepisami.', 'meritoros' );
-$m1_btn_text = __( is_array($m1) && !empty($m1['btn_text']) ? $m1['btn_text'] : 'Zapytaj o wycenę', 'meritoros' );
+$m1_label    = is_array($m1) && !empty($m1['label'])    ? $m1['label']    : 'Pełny zakres';
+$m1_title    = is_array($m1) && !empty($m1['title'])    ? $m1['title']    : 'Kompleksowa obsługa';
+$m1_text     = is_array($m1) && !empty($m1['text'])     ? $m1['text']     : 'Przejmujemy pełną obsługę kadrowo-płacową. Dedykowany zespół, terminowość i zgodność z przepisami.';
+$m1_btn_text = is_array($m1) && !empty($m1['btn_text']) ? $m1['btn_text'] : 'Zapytaj o wycenę';
 $m1_btn_url  = is_array($m1) && !empty($m1['btn_url'])  ? $m1['btn_url']  : home_url('/kontakt/');
 
 $m2 = get_field('kp_model2') ?: ($_orig_id !== $_page_id ? get_field('kp_model2', $_orig_id) : null);
 $m2_icon     = is_array($m2) && !empty($m2['icon'])     ? $m2['icon']     : 'pen-line';
-$m2_label    = __( is_array($m2) && !empty($m2['label'])    ? $m2['label']    : 'Wybrany zakres', 'meritoros' );
-$m2_title    = __( is_array($m2) && !empty($m2['title'])    ? $m2['title']    : 'Outsourcing wybranych procesów', 'meritoros' );
-$m2_text     = __( is_array($m2) && !empty($m2['text'])     ? $m2['text']     : 'Wspieramy wybrane obszary dopasowane do Twoich potrzeb. Elastyczny zakres, który możesz rozszerzać.', 'meritoros' );
-$m2_btn_text = __( is_array($m2) && !empty($m2['btn_text']) ? $m2['btn_text'] : 'Zapytaj o wycenę', 'meritoros' );
+$m2_label    = is_array($m2) && !empty($m2['label'])    ? $m2['label']    : 'Wybrany zakres';
+$m2_title    = is_array($m2) && !empty($m2['title'])    ? $m2['title']    : 'Outsourcing wybranych procesów';
+$m2_text     = is_array($m2) && !empty($m2['text'])     ? $m2['text']     : 'Wspieramy wybrane obszary dopasowane do Twoich potrzeb. Elastyczny zakres, który możesz rozszerzać.';
+$m2_btn_text = is_array($m2) && !empty($m2['btn_text']) ? $m2['btn_text'] : 'Zapytaj o wycenę';
 $m2_btn_url  = is_array($m2) && !empty($m2['btn_url'])  ? $m2['btn_url']  : home_url('/kontakt/');
 
 $m1_items = [];
 for ($i = 1; $i <= 8; $i++) {
     $v = mer_field("kp_m1_item_{$i}", '');
-    if ($v !== '') $m1_items[] = __($v, 'meritoros');
+    if ($v !== '') $m1_items[] = $v;
 }
 
 $m2_items = [];
 for ($i = 1; $i <= 8; $i++) {
     $v = mer_field("kp_m2_item_{$i}", '');
-    if ($v !== '') $m2_items[] = __($v, 'meritoros');
+    if ($v !== '') $m2_items[] = $v;
 }
 ?>
 

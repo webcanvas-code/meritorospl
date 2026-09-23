@@ -2,18 +2,18 @@
 $_page_id = get_the_ID();
 $_orig_id = apply_filters('wpml_object_id', $_page_id, get_post_type(), true, apply_filters('wpml_default_language', null));
 
-$title    = __( mer_field('bpo_model_title', 'Model współpracy'), 'meritoros' );
-$subtitle = __( mer_field('bpo_model_subtitle', "Możesz powierzyć nam całość procesów księgowych lub wybrane obszary wymagające uporządkowania.\nDopasowujemy zakres wsparcia do realnej sytuacji Twojej firmy."), 'meritoros' );
+$title    = mer_field('bpo_model_title', 'Model współpracy');
+$subtitle = mer_field('bpo_model_subtitle', "Możesz powierzyć nam całość procesów księgowych lub wybrane obszary wymagające uporządkowania.\nDopasowujemy zakres wsparcia do realnej sytuacji Twojej firmy.");
 
 $m1 = get_field('bpo_model1') ?: ($_orig_id !== $_page_id ? get_field('bpo_model1', $_orig_id) : null);
 $m1_icon  = is_array($m1) && !empty($m1['icon'])  ? $m1['icon']  : 'network';
-$m1_title = __( str_replace(["\r\n","\r"],"\n", is_array($m1) && !empty($m1['title']) ? $m1['title'] : 'Kompleksowa obsługa'), 'meritoros');
-$m1_text  = __( str_replace(["\r\n","\r"],"\n", is_array($m1) && !empty($m1['text'])  ? $m1['text']  : 'Obsługujemy proces end-to-end: od bieżącej ewidencji po zamknięcie miesiąca i raporty. Pracujesz z zespołem, który zapewnia zastępowalność i stały standard.'), 'meritoros');
+$m1_title = str_replace(["\r\n","\r"],"\n", is_array($m1) && !empty($m1['title']) ? $m1['title'] : 'Kompleksowa obsługa');
+$m1_text  = str_replace(["\r\n","\r"],"\n", is_array($m1) && !empty($m1['text'])  ? $m1['text']  : 'Obsługujemy proces end-to-end: od bieżącej ewidencji po zamknięcie miesiąca i raporty. Pracujesz z zespołem, który zapewnia zastępowalność i stały standard.');
 
 $m2 = get_field('bpo_model2') ?: ($_orig_id !== $_page_id ? get_field('bpo_model2', $_orig_id) : null);
 $m2_icon  = is_array($m2) && !empty($m2['icon'])  ? $m2['icon']  : 'pen-line';
-$m2_title = __( str_replace(["\r\n","\r"],"\n", is_array($m2) && !empty($m2['title']) ? $m2['title'] : 'Outsourcing wybranych procesów'), 'meritoros');
-$m2_text  = __( str_replace(["\r\n","\r"],"\n", is_array($m2) && !empty($m2['text'])  ? $m2['text']  : 'Przejmujemy konkretne procesy i dowozimy je w ustalonym standardzie i harmonogramie. To rozwiązanie dla firm, które chcą wzmocnić wewnętrzny dział finansów bez rozbudowy etatów.'), 'meritoros');
+$m2_title = str_replace(["\r\n","\r"],"\n", is_array($m2) && !empty($m2['title']) ? $m2['title'] : 'Outsourcing wybranych procesów');
+$m2_text  = str_replace(["\r\n","\r"],"\n", is_array($m2) && !empty($m2['text'])  ? $m2['text']  : 'Przejmujemy konkretne procesy i dowozimy je w ustalonym standardzie i harmonogramie. To rozwiązanie dla firm, które chcą wzmocnić wewnętrzny dział finansów bez rozbudowy etatów.');
 
 $btn_text = __('Zapytaj o wycenę', 'meritoros');
 $btn_url  = home_url('/kontakt/');
