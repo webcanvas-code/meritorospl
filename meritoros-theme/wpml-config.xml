@@ -152,8 +152,7 @@
         <custom-field action="translate">kar_pyt_name</custom-field>
         <custom-field action="translate">kar_pyt_role</custom-field>
         <custom-field action="translate">kar_pyt_phone</custom-field>
-        <custom-field action="translate">kar_pyt_btn_text</custom-field>
-        <custom-field action="copy">kar_pyt_btn_url</custom-field>
+        <custom-field action="copy">kar_pyt_email</custom-field>
         <custom-field action="copy">kar_pyt_photo</custom-field>
         <custom-field action="copy">kar_cv_photo</custom-field>
         <custom-field action="copy">kar_cf7_id</custom-field>

@@ -4,8 +4,7 @@ $name     = mer_field('kar_pyt_name',     'Anna Kowalska');
 $role     = mer_field('kar_pyt_role',     __('Marketing manager', 'meritoros'));
 $phone    = mer_field('kar_pyt_phone',    '(+48) 12 423 32 99');
 $phone_raw = mer_field('kar_pyt_phone',   '+48124233299');
-$btn_text = mer_field('kar_pyt_btn_text', __('Wyślij zapytanie', 'meritoros'));
-$btn_url  = mer_field('kar_pyt_btn_url',  home_url('/kontakt/'));
+$email    = mer_field('kar_pyt_email',    'monika.motyka@meritoros.pl');
 $photo = get_field('kar_pyt_photo');
 if (empty($photo)) {
     $original_id = apply_filters('wpml_object_id', get_the_ID(), get_post_type(), true, apply_filters('wpml_default_language', null));
@@ -35,12 +34,12 @@ $phone_clean = preg_replace('/[^0-9+]/', '', $phone);
                     <p class="text-slate-500 text-lg mt-1"><?php echo mer_esc($role); ?></p>
                 </div>
                 <a href="tel:<?php echo esc_attr($phone_clean); ?>" class="text-3xl font-semibold text-[#00d084] hover:text-[#00d084] transition-colors duration-200"><?php echo mer_esc($phone); ?></a>
-                <p class="text-slate-400 text-lg"><?php esc_html_e('lub napisz wiadomość', 'meritoros'); ?></p>
-                <div>
-                    <a href="<?php echo esc_url($btn_url); ?>" class="mer-btn mer-btn--dark inline-block bg-slate-900 text-white font-semibold text-base px-8 py-3.5 rounded-full hover:bg-slate-700 transition-colors duration-200">
-                        <?php echo mer_esc($btn_text); ?>
-                    </a>
-                </div>
+                <?php if ($email) : ?>
+                <a href="mailto:<?php echo esc_attr($email); ?>"
+                   class="mer-btn mer-btn--dark inline-flex items-center px-7 py-4 rounded-full bg-slate-900 text-white text-base font-semibold hover:bg-slate-700 transition-colors">
+                    <?php echo mer_esc($email); ?>
+                </a>
+                <?php endif; ?>
             </div>
         </div>
     </div>

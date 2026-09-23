@@ -2674,8 +2674,7 @@ acf_add_local_field_group([
         ['key' => 'field_kar_pyt_name',     'label' => 'Imię i nazwisko','name' => 'kar_pyt_name',     'type' => 'text', 'default_value' => 'Anna Kowalska'],
         ['key' => 'field_kar_pyt_role',     'label' => 'Stanowisko',     'name' => 'kar_pyt_role',     'type' => 'text', 'default_value' => 'Marketing manager'],
         ['key' => 'field_kar_pyt_phone',    'label' => 'Telefon (wyświetlany)', 'name' => 'kar_pyt_phone', 'type' => 'text', 'default_value' => '(+48) 12 423 32 99'],
-        ['key' => 'field_kar_pyt_btn_text', 'label' => 'Tekst przycisku', 'name' => 'kar_pyt_btn_text', 'type' => 'text', 'default_value' => 'Wyślij zapytanie'],
-        ['key' => 'field_kar_pyt_btn_url',  'label' => 'Link przycisku',  'name' => 'kar_pyt_btn_url',  'type' => 'text'],
+        ['key' => 'field_kar_pyt_email',    'label' => 'Adres e-mail',    'name' => 'kar_pyt_email',    'type' => 'email', 'default_value' => 'monika.motyka@meritoros.pl'],
         ['key' => 'field_kar_pyt_photo',    'label' => 'Zdjęcie osoby',   'name' => 'kar_pyt_photo',    'type' => 'image', 'return_format' => 'array', 'preview_size' => 'medium'],
 
         // ── FAQ ──────────────────────────────────────────────────────────────
