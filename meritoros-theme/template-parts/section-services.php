@@ -51,7 +51,7 @@ $icon_classes = ['rotate-3', '-rotate-3', 'rotate-3', '-rotate-3', 'rotate-3'];
             <?php foreach ($items as $i => $item) :
                 $icon     = esc_attr($item['icon'] ?? 'briefcase');
                 $s_title  = esc_html($item['title'] ?? '');
-                $s_desc   = esc_html($item['description'] ?? '');
+                $s_desc   = nl2br(esc_html($item['description'] ?? ''));
                 $s_url    = esc_url($item['url'] ?? '#');
                 $rot      = $icon_classes[$i % count($icon_classes)];
             ?>
