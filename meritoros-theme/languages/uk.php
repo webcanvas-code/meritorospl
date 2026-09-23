@@ -982,4 +982,16 @@ czy mamy ofertę dla Ciebie.' => 'Ми будуємо впорядковані �
     'Obsługujemy ponad 1200 podmiotów, a zespół tworzy ponad 170 specjalistów w obszarach księgowości, kadr i płac, IT oraz RPA.' => 'Ми обслуговуємо понад 1200 суб\'єктів, а команда налічує понад 170 фахівців у сферах бухгалтерії, кадрів і зарплат, ІТ та RPA.',
     'Posiadamy biura w Warszawie, Krakowie, Wrocławiu, Katowicach, Rzeszowie, Łodzi i Bytomiu. Posiadamy również oddziały wirtualne.' => 'Ми маємо офіси у Варшаві, Кракові, Вроцлаві, Катовіце, Жешуві, Лодзі та Битомі. Ми також працюємо у форматі віртуальних відділень.',
     'Nasza strategia zakłada rozwój organiczny oraz rozwój poprzez akwizycje podmiotów z branży. Celem Meritoros SA jest osiągnięcie pozycji lidera w zakresie outsourcingu księgowości oraz kadr i płac dla sektora MŚP i dużych podmiotów na rynku polskim.  Równolegle inwestujemy w technologie wspierające rozwój usług komplementarnych, ze szczególnym naciskiem na Robotic Process Automation.' => 'Наша стратегія передбачає органічне зростання та зростання через придбання компаній галузі. Метою Meritoros SA є досягнення лідируючої позиції у сфері аутсорсингу бухгалтерського обліку та послуг з кадрів і зарплат для сегментів МСБ і великих підприємств на польському ринку. Паралельно ми інвестуємо в технології, що підтримують розвиток додаткових послуг, з особливим акцентом на Robotic Process Automation.',
+    // Brakujace stringi - dodane 2026-09-23
+    'Brak' => 'Немає',
+    'Informacje podatkowo-księgowe' => 'Податкова інформація',
+    'Oferty pracy' => 'Вакансії',
+    'Panel klienta' => 'Панель клієнта',
+    'Pełny zakres' => 'Повний обсяг',
+    'Pobierz dokument' => 'Завантажити документ',
+    'Poznaj historię' => 'Дізнатися історію',
+    'Wybrany zakres' => 'Обраний обсяг',
+    'Zapytaj o wycenę' => 'Запитати розрахунок',
+    'myślących długoterminowo' => 'що мислять довгостроково',
+    'Spotkanie' => 'Зустріч',
 ];

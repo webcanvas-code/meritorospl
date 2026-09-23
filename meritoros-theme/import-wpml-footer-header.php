@@ -133,6 +133,56 @@ add_action('init', function () {
             'ru' => 'Назначьте форму CF7 в настройках главной страницы (вкладка Newsletter → ID формы CF7).',
             'uk' => 'Призначте форму CF7 в налаштуваннях головної сторінки (вкладка Newsletter → ID форми CF7).',
         ],
+
+        // --- RI: sekcje dokumentow ---
+        'Brak' => [
+            'en' => 'None',
+            'ru' => 'Нет',
+            'uk' => 'Немає',
+        ],
+        'Pobierz dokument' => [
+            'en' => 'Download document',
+            'ru' => 'Скачать документ',
+            'uk' => 'Завантажити документ',
+        ],
+
+        // --- Model wspolpracy ---
+        'Pełny zakres' => [
+            'en' => 'Full scope',
+            'ru' => 'Полный объём',
+            'uk' => 'Повний обсяг',
+        ],
+        'Wybrany zakres' => [
+            'en' => 'Selected scope',
+            'ru' => 'Выбранный объём',
+            'uk' => 'Обраний обсяг',
+        ],
+        'Zapytaj o wycenę' => [
+            'en' => 'Request a quote',
+            'ru' => 'Запросить расчёт',
+            'uk' => 'Запитати розрахунок',
+        ],
+
+        // --- Case studies / Media ---
+        'Poznaj historię' => [
+            'en' => 'Read the story',
+            'ru' => 'Узнать историю',
+            'uk' => 'Дізнатися історію',
+        ],
+
+        // --- Fundacje rodzinne ---
+        'myślących długoterminowo' => [
+            'en' => 'thinking long-term',
+            'ru' => 'мыслящих долгосрочно',
+            'uk' => 'що мислять довгостроково',
+        ],
+
+        // --- Kupimy: kryteria ---
+        'Spotkanie' => [
+            'en' => 'Meeting',
+            'ru' => 'Встреча',
+            'uk' => 'Зустріч',
+        ],
     ];
 
     global $wpdb;
