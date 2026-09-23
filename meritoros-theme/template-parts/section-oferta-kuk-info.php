@@ -26,6 +26,7 @@ $req_fallbacks = [
 
 $obowiazki = [];
 $wymagania = [];
+$oferujemy = [];
 $technologie = [];
 $mile_widziane = [];
 for ($i = 1; $i <= 12; $i++) {
@@ -34,6 +35,9 @@ for ($i = 1; $i <= 12; $i++) {
 
     $r = __( mer_field("op_req_{$i}", $req_fallbacks[$i]), 'meritoros' );
     if ($r !== '') $wymagania[] = $r;
+
+    $o = mer_field("op_offer_{$i}", '');
+    if ($o !== '') $oferujemy[] = $o;
 }
 for ($i = 1; $i <= 6; $i++) {
     $t = mer_field("op_tech_{$i}", '');
@@ -126,6 +130,28 @@ for ($i = 1; $i <= 6; $i++) {
                     </ul>
                 </div>
                 <?php endif; ?>
+            </div>
+            <?php endif; ?>
+
+            <!-- Oferujemy -->
+            <?php if ($oferujemy) : ?>
+            <div>
+                <div class="flex items-center gap-3 mb-8">
+                    <span class="w-10 h-10 rounded-xl bg-[#00d084]/10 flex items-center justify-center flex-shrink-0">
+                        <i data-lucide="gift" class="w-5 h-5 text-[#00d084]"></i>
+                    </span>
+                    <h2 class="text-2xl md:text-3xl font-bold text-slate-900"><?php echo mer_esc(__('Oferujemy', 'meritoros')); ?></h2>
+                </div>
+                <ul class="space-y-4">
+                    <?php foreach ($oferujemy as $item) : ?>
+                    <li class="flex items-start gap-3">
+                        <span class="w-6 h-6 rounded-full bg-[#00d084]/15 flex items-center justify-center flex-shrink-0 mt-0.5">
+                            <i data-lucide="check" class="w-3.5 h-3.5 text-[#00d084]"></i>
+                        </span>
+                        <span class="text-lg text-slate-700 leading-relaxed"><?php echo mer_esc($item); ?></span>
+                    </li>
+                    <?php endforeach; ?>
+                </ul>
             </div>
             <?php endif; ?>
 

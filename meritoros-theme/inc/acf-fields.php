@@ -3244,6 +3244,21 @@ acf_add_local_field_group([
         ['key' => 'field_op_req_11', 'label' => 'Wymaganie 11', 'name' => 'op_req_11', 'type' => 'text'],
         ['key' => 'field_op_req_12', 'label' => 'Wymaganie 12', 'name' => 'op_req_12', 'type' => 'text'],
 
+        // ── TAB: Oferujemy ───────────────────────────────────
+        ['key' => 'field_op_tab_offer', 'label' => 'Oferujemy', 'name' => '', 'type' => 'tab'],
+        ['key' => 'field_op_offer_1',  'label' => 'Oferujemy 1',  'name' => 'op_offer_1',  'type' => 'text'],
+        ['key' => 'field_op_offer_2',  'label' => 'Oferujemy 2',  'name' => 'op_offer_2',  'type' => 'text'],
+        ['key' => 'field_op_offer_3',  'label' => 'Oferujemy 3',  'name' => 'op_offer_3',  'type' => 'text'],
+        ['key' => 'field_op_offer_4',  'label' => 'Oferujemy 4',  'name' => 'op_offer_4',  'type' => 'text'],
+        ['key' => 'field_op_offer_5',  'label' => 'Oferujemy 5',  'name' => 'op_offer_5',  'type' => 'text'],
+        ['key' => 'field_op_offer_6',  'label' => 'Oferujemy 6',  'name' => 'op_offer_6',  'type' => 'text'],
+        ['key' => 'field_op_offer_7',  'label' => 'Oferujemy 7',  'name' => 'op_offer_7',  'type' => 'text'],
+        ['key' => 'field_op_offer_8',  'label' => 'Oferujemy 8',  'name' => 'op_offer_8',  'type' => 'text'],
+        ['key' => 'field_op_offer_9',  'label' => 'Oferujemy 9',  'name' => 'op_offer_9',  'type' => 'text'],
+        ['key' => 'field_op_offer_10', 'label' => 'Oferujemy 10', 'name' => 'op_offer_10', 'type' => 'text'],
+        ['key' => 'field_op_offer_11', 'label' => 'Oferujemy 11', 'name' => 'op_offer_11', 'type' => 'text'],
+        ['key' => 'field_op_offer_12', 'label' => 'Oferujemy 12', 'name' => 'op_offer_12', 'type' => 'text'],
+
         // ── TAB: Środowisko technologiczne ───────────────────
         ['key' => 'field_op_tab_tech', 'label' => 'Środowisko technologiczne', 'name' => '', 'type' => 'tab'],
         ['key' => 'field_op_tech_1', 'label' => 'Narzędzie / technologia 1', 'name' => 'op_tech_1', 'type' => 'text'],

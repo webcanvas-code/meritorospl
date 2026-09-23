@@ -609,6 +609,7 @@ dla Twojego biznesu' => 'Let\'s talk about solutions
 for your business',
     'Zakres obowiązków' => 'Scope of responsibilities',
     'Wymagania' => 'Requirements',
+    'Oferujemy' => 'We offer',
     'Mile widziane' => 'Nice to have',
     'Nasze środowisko technologiczne' => 'Our technology stack',
     'Informacje o zespole' => 'Team information',

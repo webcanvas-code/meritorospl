@@ -608,6 +608,7 @@ dla Twojego biznesu' => 'Поговорим о решениях
 для вашего бизнеса',
     'Zakres obowiązków' => 'Обязанности',
     'Wymagania' => 'Требования',
+    'Oferujemy' => 'Мы предлагаем',
     'Mile widziane' => 'Будет преимуществом',
     'Nasze środowisko technologiczne' => 'Наш технологический стек',
     'Informacje o zespole' => 'Информация о команде',
