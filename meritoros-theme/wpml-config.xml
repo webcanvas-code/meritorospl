@@ -333,6 +333,15 @@
         <custom-field action="translate">fr_d2_text</custom-field>
         <custom-field action="translate">fr_d3_title</custom-field>
         <custom-field action="translate">fr_d3_text</custom-field>
+        <custom-field action="translate">fr_d4_title</custom-field>
+        <custom-field action="translate">fr_d4_text</custom-field>
+        <custom-field action="copy">fr_d4_logo</custom-field>
+        <custom-field action="translate">fr_d5_title</custom-field>
+        <custom-field action="translate">fr_d5_text</custom-field>
+        <custom-field action="copy">fr_d5_logo</custom-field>
+        <custom-field action="translate">fr_d6_title</custom-field>
+        <custom-field action="translate">fr_d6_text</custom-field>
+        <custom-field action="copy">fr_d6_logo</custom-field>
         <custom-field action="copy">fr_d1_logo</custom-field>
         <custom-field action="copy">fr_d2_logo</custom-field>
         <custom-field action="translate">fr_obs_title</custom-field>
@@ -870,6 +879,22 @@
         <custom-field action="translate">uk_dlaczego_4_title</custom-field>
         <custom-field action="translate">uk_dlaczego_4_text</custom-field>
         <custom-field action="copy">uk_dlaczego_4_highlighted</custom-field>
+        <custom-field action="copy">uk_dlaczego_5_icon</custom-field>
+        <custom-field action="translate">uk_dlaczego_5_title</custom-field>
+        <custom-field action="translate">uk_dlaczego_5_text</custom-field>
+        <custom-field action="copy">uk_dlaczego_5_highlighted</custom-field>
+        <custom-field action="copy">uk_dlaczego_6_icon</custom-field>
+        <custom-field action="translate">uk_dlaczego_6_title</custom-field>
+        <custom-field action="translate">uk_dlaczego_6_text</custom-field>
+        <custom-field action="copy">uk_dlaczego_6_highlighted</custom-field>
+        <custom-field action="copy">uk_dlaczego_7_icon</custom-field>
+        <custom-field action="translate">uk_dlaczego_7_title</custom-field>
+        <custom-field action="translate">uk_dlaczego_7_text</custom-field>
+        <custom-field action="copy">uk_dlaczego_7_highlighted</custom-field>
+        <custom-field action="copy">uk_dlaczego_8_icon</custom-field>
+        <custom-field action="translate">uk_dlaczego_8_title</custom-field>
+        <custom-field action="translate">uk_dlaczego_8_text</custom-field>
+        <custom-field action="copy">uk_dlaczego_8_highlighted</custom-field>
 
         <!-- KP — dlaczego (kp_dlaczego_1 do kp_dlaczego_4) -->
         <custom-field action="copy">kp_dlaczego_1_icon</custom-field>
@@ -888,6 +913,18 @@
         <custom-field action="translate">kp_dlaczego_4_title</custom-field>
         <custom-field action="translate">kp_dlaczego_4_text</custom-field>
         <custom-field action="copy">kp_dlaczego_4_highlighted</custom-field>
+        <custom-field action="copy">kp_dlaczego_5_icon</custom-field>
+        <custom-field action="translate">kp_dlaczego_5_title</custom-field>
+        <custom-field action="translate">kp_dlaczego_5_text</custom-field>
+        <custom-field action="copy">kp_dlaczego_6_icon</custom-field>
+        <custom-field action="translate">kp_dlaczego_6_title</custom-field>
+        <custom-field action="translate">kp_dlaczego_6_text</custom-field>
+        <custom-field action="copy">kp_dlaczego_7_icon</custom-field>
+        <custom-field action="translate">kp_dlaczego_7_title</custom-field>
+        <custom-field action="translate">kp_dlaczego_7_text</custom-field>
+        <custom-field action="copy">kp_dlaczego_8_icon</custom-field>
+        <custom-field action="translate">kp_dlaczego_8_title</custom-field>
+        <custom-field action="translate">kp_dlaczego_8_text</custom-field>
 
         <!-- FR — zyski (fr_zysk_1 do fr_zysk_4) -->
         <custom-field action="copy">fr_zysk_1_icon</custom-field>
@@ -1579,6 +1616,18 @@
         <custom-field action="copy">bpo_d4_icon</custom-field>
         <custom-field action="translate">bpo_d4_title</custom-field>
         <custom-field action="translate">bpo_d4_text</custom-field>
+        <custom-field action="copy">bpo_d5_icon</custom-field>
+        <custom-field action="translate">bpo_d5_title</custom-field>
+        <custom-field action="translate">bpo_d5_text</custom-field>
+        <custom-field action="copy">bpo_d6_icon</custom-field>
+        <custom-field action="translate">bpo_d6_title</custom-field>
+        <custom-field action="translate">bpo_d6_text</custom-field>
+        <custom-field action="copy">bpo_d7_icon</custom-field>
+        <custom-field action="translate">bpo_d7_title</custom-field>
+        <custom-field action="translate">bpo_d7_text</custom-field>
+        <custom-field action="copy">bpo_d8_icon</custom-field>
+        <custom-field action="translate">bpo_d8_title</custom-field>
+        <custom-field action="translate">bpo_d8_text</custom-field>
         <!-- BPO — kroki wspolpracy (bpo_wsp_step_1 do 3) -->
         <custom-field action="translate">bpo_wsp_step_1_title</custom-field>
         <custom-field action="translate">bpo_wsp_step_1_lead</custom-field>

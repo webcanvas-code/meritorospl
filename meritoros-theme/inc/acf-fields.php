@@ -1158,6 +1158,46 @@ acf_add_local_field_group([
                 ['key' => 'field_bpo_d3_text',  'label' => 'Opis',           'name' => 'text',  'type' => 'textarea', 'rows' => 3],
             ],
         ],
+        [
+            'key' => 'field_bpo_d4', 'label' => 'Karta 4', 'name' => 'bpo_d4', 'type' => 'group',
+            'sub_fields' => [
+                ['key' => 'field_bpo_d4_icon',  'label' => 'Ikona (Lucide)', 'name' => 'icon',  'type' => 'text'],
+                ['key' => 'field_bpo_d4_title', 'label' => 'Tytuł',          'name' => 'title', 'type' => 'textarea', 'rows' => 1],
+                ['key' => 'field_bpo_d4_text',  'label' => 'Opis',           'name' => 'text',  'type' => 'textarea', 'rows' => 3],
+            ],
+        ],
+        [
+            'key' => 'field_bpo_d5', 'label' => 'Karta 5', 'name' => 'bpo_d5', 'type' => 'group',
+            'sub_fields' => [
+                ['key' => 'field_bpo_d5_icon',  'label' => 'Ikona (Lucide)', 'name' => 'icon',  'type' => 'text'],
+                ['key' => 'field_bpo_d5_title', 'label' => 'Tytuł',          'name' => 'title', 'type' => 'textarea', 'rows' => 1],
+                ['key' => 'field_bpo_d5_text',  'label' => 'Opis',           'name' => 'text',  'type' => 'textarea', 'rows' => 3],
+            ],
+        ],
+        [
+            'key' => 'field_bpo_d6', 'label' => 'Karta 6', 'name' => 'bpo_d6', 'type' => 'group',
+            'sub_fields' => [
+                ['key' => 'field_bpo_d6_icon',  'label' => 'Ikona (Lucide)', 'name' => 'icon',  'type' => 'text'],
+                ['key' => 'field_bpo_d6_title', 'label' => 'Tytuł',          'name' => 'title', 'type' => 'textarea', 'rows' => 1],
+                ['key' => 'field_bpo_d6_text',  'label' => 'Opis',           'name' => 'text',  'type' => 'textarea', 'rows' => 3],
+            ],
+        ],
+        [
+            'key' => 'field_bpo_d7', 'label' => 'Karta 7', 'name' => 'bpo_d7', 'type' => 'group',
+            'sub_fields' => [
+                ['key' => 'field_bpo_d7_icon',  'label' => 'Ikona (Lucide)', 'name' => 'icon',  'type' => 'text'],
+                ['key' => 'field_bpo_d7_title', 'label' => 'Tytuł',          'name' => 'title', 'type' => 'textarea', 'rows' => 1],
+                ['key' => 'field_bpo_d7_text',  'label' => 'Opis',           'name' => 'text',  'type' => 'textarea', 'rows' => 3],
+            ],
+        ],
+        [
+            'key' => 'field_bpo_d8', 'label' => 'Karta 8', 'name' => 'bpo_d8', 'type' => 'group',
+            'sub_fields' => [
+                ['key' => 'field_bpo_d8_icon',  'label' => 'Ikona (Lucide)', 'name' => 'icon',  'type' => 'text'],
+                ['key' => 'field_bpo_d8_title', 'label' => 'Tytuł',          'name' => 'title', 'type' => 'textarea', 'rows' => 1],
+                ['key' => 'field_bpo_d8_text',  'label' => 'Opis',           'name' => 'text',  'type' => 'textarea', 'rows' => 3],
+            ],
+        ],
 
         // ── TAB: Model współpracy ─────────────────────────────────
         ['key' => 'field_bpo_tab_model', 'label' => 'Model współpracy', 'name' => '', 'type' => 'tab'],
@@ -1861,6 +1901,18 @@ acf_add_local_field_group([
         ['key' => 'field_fr_d3_title', 'label' => 'Karta 3 — tytuł', 'name' => 'fr_d3_title', 'type' => 'textarea', 'rows' => 2, 'default_value' => 'Ponad 170 ekspertów'],
         ['key' => 'field_fr_d3_text',  'label' => 'Karta 3 — opis',  'name' => 'fr_d3_text',  'type' => 'textarea', 'rows' => 4, 'default_value' => 'Jakość potwierdzona standardami. Mamy wdrożone procedury kontroli jakości i weryfikacji danych. Dostarczamy informacje finansowe kompletne, spójne i użyteczne dla zarządu.'],
 
+        ['key' => 'field_fr_d4_title', 'label' => 'Karta 4 — tytuł', 'name' => 'fr_d4_title', 'type' => 'textarea', 'rows' => 2],
+        ['key' => 'field_fr_d4_text',  'label' => 'Karta 4 — opis',  'name' => 'fr_d4_text',  'type' => 'textarea', 'rows' => 4],
+        ['key' => 'field_fr_d4_logo',  'label' => 'Karta 4 — logo',  'name' => 'fr_d4_logo',  'type' => 'image', 'return_format' => 'array', 'preview_size' => 'thumbnail'],
+
+        ['key' => 'field_fr_d5_title', 'label' => 'Karta 5 — tytuł', 'name' => 'fr_d5_title', 'type' => 'textarea', 'rows' => 2],
+        ['key' => 'field_fr_d5_text',  'label' => 'Karta 5 — opis',  'name' => 'fr_d5_text',  'type' => 'textarea', 'rows' => 4],
+        ['key' => 'field_fr_d5_logo',  'label' => 'Karta 5 — logo',  'name' => 'fr_d5_logo',  'type' => 'image', 'return_format' => 'array', 'preview_size' => 'thumbnail'],
+
+        ['key' => 'field_fr_d6_title', 'label' => 'Karta 6 — tytuł', 'name' => 'fr_d6_title', 'type' => 'textarea', 'rows' => 2],
+        ['key' => 'field_fr_d6_text',  'label' => 'Karta 6 — opis',  'name' => 'fr_d6_text',  'type' => 'textarea', 'rows' => 4],
+        ['key' => 'field_fr_d6_logo',  'label' => 'Karta 6 — logo',  'name' => 'fr_d6_logo',  'type' => 'image', 'return_format' => 'array', 'preview_size' => 'thumbnail'],
+
         // ── TAB: Model współpracy ────────────────────────────────
         ['key' => 'field_fr_tab_model', 'label' => 'Model współpracy', 'name' => '', 'type' => 'tab'],
 
@@ -2023,6 +2075,30 @@ acf_add_local_field_group([
             ['key' => 'field_uk_dl4_title', 'label' => 'Tytuł',        'name' => 'title',       'type' => 'text',      'default_value' => 'Bezpieczeństwo danych'],
             ['key' => 'field_uk_dl4_text',  'label' => 'Opis',         'name' => 'text',        'type' => 'textarea',  'rows' => 3, 'default_value' => 'Dane klientów chronimy zgodnie z normą ISO 27001 — wdrożone procedury, szyfrowanie i regularne audyty bezpieczeństwa.'],
             ['key' => 'field_uk_dl4_hl',    'label' => 'Karta zielona?','name' => 'highlighted', 'type' => 'true_false','default_value' => 0, 'ui' => 1],
+        ]],
+        ['key' => 'field_uk_dlaczego_5', 'label' => 'Karta 5', 'name' => 'uk_dlaczego_5', 'type' => 'group', 'layout' => 'table', 'sub_fields' => [
+            ['key' => 'field_uk_dl5_icon',  'label' => 'Ikona',        'name' => 'icon',        'type' => 'text'],
+            ['key' => 'field_uk_dl5_title', 'label' => 'Tytuł',        'name' => 'title',       'type' => 'text'],
+            ['key' => 'field_uk_dl5_text',  'label' => 'Opis',         'name' => 'text',        'type' => 'textarea',  'rows' => 3],
+            ['key' => 'field_uk_dl5_hl',    'label' => 'Karta zielona?','name' => 'highlighted', 'type' => 'true_false','default_value' => 0, 'ui' => 1],
+        ]],
+        ['key' => 'field_uk_dlaczego_6', 'label' => 'Karta 6', 'name' => 'uk_dlaczego_6', 'type' => 'group', 'layout' => 'table', 'sub_fields' => [
+            ['key' => 'field_uk_dl6_icon',  'label' => 'Ikona',        'name' => 'icon',        'type' => 'text'],
+            ['key' => 'field_uk_dl6_title', 'label' => 'Tytuł',        'name' => 'title',       'type' => 'text'],
+            ['key' => 'field_uk_dl6_text',  'label' => 'Opis',         'name' => 'text',        'type' => 'textarea',  'rows' => 3],
+            ['key' => 'field_uk_dl6_hl',    'label' => 'Karta zielona?','name' => 'highlighted', 'type' => 'true_false','default_value' => 0, 'ui' => 1],
+        ]],
+        ['key' => 'field_uk_dlaczego_7', 'label' => 'Karta 7', 'name' => 'uk_dlaczego_7', 'type' => 'group', 'layout' => 'table', 'sub_fields' => [
+            ['key' => 'field_uk_dl7_icon',  'label' => 'Ikona',        'name' => 'icon',        'type' => 'text'],
+            ['key' => 'field_uk_dl7_title', 'label' => 'Tytuł',        'name' => 'title',       'type' => 'text'],
+            ['key' => 'field_uk_dl7_text',  'label' => 'Opis',         'name' => 'text',        'type' => 'textarea',  'rows' => 3],
+            ['key' => 'field_uk_dl7_hl',    'label' => 'Karta zielona?','name' => 'highlighted', 'type' => 'true_false','default_value' => 0, 'ui' => 1],
+        ]],
+        ['key' => 'field_uk_dlaczego_8', 'label' => 'Karta 8', 'name' => 'uk_dlaczego_8', 'type' => 'group', 'layout' => 'table', 'sub_fields' => [
+            ['key' => 'field_uk_dl8_icon',  'label' => 'Ikona',        'name' => 'icon',        'type' => 'text'],
+            ['key' => 'field_uk_dl8_title', 'label' => 'Tytuł',        'name' => 'title',       'type' => 'text'],
+            ['key' => 'field_uk_dl8_text',  'label' => 'Opis',         'name' => 'text',        'type' => 'textarea',  'rows' => 3],
+            ['key' => 'field_uk_dl8_hl',    'label' => 'Karta zielona?','name' => 'highlighted', 'type' => 'true_false','default_value' => 0, 'ui' => 1],
         ]],
 
         // ── TAB: Kalkulator ──────────────────────────────────────
@@ -2219,6 +2295,26 @@ acf_add_local_field_group([
             ['key' => 'field_kp_dl4_icon',  'label' => 'Ikona', 'name' => 'icon',  'type' => 'text',     'default_value' => 'refresh-cw'],
             ['key' => 'field_kp_dl4_title', 'label' => 'Tytuł', 'name' => 'title', 'type' => 'text',     'default_value' => 'Business continuity'],
             ['key' => 'field_kp_dl4_text',  'label' => 'Opis',  'name' => 'text',  'type' => 'textarea', 'rows' => 3, 'default_value' => 'Usługi realizuje cały zespół specjalistów, dlatego urlopy i rotacja pracowników nie wpływają na terminowość i ciągłość obsługi Twojej firmy.'],
+        ]],
+        ['key' => 'field_kp_dlaczego_5', 'label' => 'Karta 5', 'name' => 'kp_dlaczego_5', 'type' => 'group', 'layout' => 'table', 'sub_fields' => [
+            ['key' => 'field_kp_dl5_icon',  'label' => 'Ikona', 'name' => 'icon',  'type' => 'text'],
+            ['key' => 'field_kp_dl5_title', 'label' => 'Tytuł', 'name' => 'title', 'type' => 'text'],
+            ['key' => 'field_kp_dl5_text',  'label' => 'Opis',  'name' => 'text',  'type' => 'textarea', 'rows' => 3],
+        ]],
+        ['key' => 'field_kp_dlaczego_6', 'label' => 'Karta 6', 'name' => 'kp_dlaczego_6', 'type' => 'group', 'layout' => 'table', 'sub_fields' => [
+            ['key' => 'field_kp_dl6_icon',  'label' => 'Ikona', 'name' => 'icon',  'type' => 'text'],
+            ['key' => 'field_kp_dl6_title', 'label' => 'Tytuł', 'name' => 'title', 'type' => 'text'],
+            ['key' => 'field_kp_dl6_text',  'label' => 'Opis',  'name' => 'text',  'type' => 'textarea', 'rows' => 3],
+        ]],
+        ['key' => 'field_kp_dlaczego_7', 'label' => 'Karta 7', 'name' => 'kp_dlaczego_7', 'type' => 'group', 'layout' => 'table', 'sub_fields' => [
+            ['key' => 'field_kp_dl7_icon',  'label' => 'Ikona', 'name' => 'icon',  'type' => 'text'],
+            ['key' => 'field_kp_dl7_title', 'label' => 'Tytuł', 'name' => 'title', 'type' => 'text'],
+            ['key' => 'field_kp_dl7_text',  'label' => 'Opis',  'name' => 'text',  'type' => 'textarea', 'rows' => 3],
+        ]],
+        ['key' => 'field_kp_dlaczego_8', 'label' => 'Karta 8', 'name' => 'kp_dlaczego_8', 'type' => 'group', 'layout' => 'table', 'sub_fields' => [
+            ['key' => 'field_kp_dl8_icon',  'label' => 'Ikona', 'name' => 'icon',  'type' => 'text'],
+            ['key' => 'field_kp_dl8_title', 'label' => 'Tytuł', 'name' => 'title', 'type' => 'text'],
+            ['key' => 'field_kp_dl8_text',  'label' => 'Opis',  'name' => 'text',  'type' => 'textarea', 'rows' => 3],
         ]],
 
         // ── TAB: Kalkulator ──────────────────────────────────────

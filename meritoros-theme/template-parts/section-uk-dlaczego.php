@@ -12,14 +12,16 @@ $card_defaults = [
 ];
 
 $cards = [];
-for ($i = 1; $i <= 4; $i++) {
+for ($i = 1; $i <= 8; $i++) {
     $g = get_field("uk_dlaczego_{$i}") ?: ($_orig_id !== $_page_id ? get_field("uk_dlaczego_{$i}", $_orig_id) : null);
-    $d = $card_defaults[$i - 1];
+    $d = $card_defaults[$i - 1] ?? null;
+    $title = is_array($g) && !empty($g['title']) ? $g['title'] : ($d['title'] ?? '');
+    if (empty($title)) continue;
     $cards[] = [
-        'icon'        => is_array($g) && !empty($g['icon'])  ? $g['icon']  : $d['icon'],
-        'title'       => is_array($g) && !empty($g['title']) ? $g['title'] : $d['title'],
-        'text'        => is_array($g) && !empty($g['text'])  ? $g['text']  : $d['text'],
-        'highlighted' => is_array($g) && isset($g['highlighted']) ? (bool)$g['highlighted'] : $d['highlighted'],
+        'icon'        => is_array($g) && !empty($g['icon'])  ? $g['icon']  : ($d['icon'] ?? 'circle'),
+        'title'       => $title,
+        'text'        => is_array($g) && !empty($g['text'])  ? $g['text']  : ($d['text'] ?? ''),
+        'highlighted' => is_array($g) && isset($g['highlighted']) ? (bool)$g['highlighted'] : ($d['highlighted'] ?? false),
     ];
 }
 ?>

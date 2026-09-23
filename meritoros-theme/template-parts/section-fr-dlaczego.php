@@ -1,16 +1,24 @@
 <?php
 $title = __( mer_field('fr_dlaczego_title', 'Dlaczego Meritoros'), 'meritoros' );
 
-$d1_title = __( mer_field('fr_d1_title', "Bezpieczeństwo\ni compliance"), 'meritoros' );
-$d1_text  = __( mer_field('fr_d1_text',  'Działamy zgodnie z obowiązującymi regulacjami i standardami bezpieczeństwa danych. Dbamy o poufność informacji oraz jasne zasady współpracy – bez „skrótów" i ryzyk.'), 'meritoros' );
-$d1_logo  = get_field('fr_d1_logo');
+$card_defaults = [
+    1 => ['title' => "Bezpieczeństwo\ni compliance", 'text' => 'Działamy zgodnie z obowiązującymi regulacjami i standardami bezpieczeństwa danych. Dbamy o poufność informacji oraz jasne zasady współpracy – bez „skrótów" i ryzyk.', 'fallback_img' => 'ISO_27001.svg'],
+    2 => ['title' => "Jakość potwierdzona\nstandardami", 'text' => 'Mamy wdrożone procedury kontroli jakości i weryfikacji danych. Dostarczamy informacje finansowe kompletne, spójne i użyteczne dla zarządu.', 'fallback_img' => 'ISO9001.png'],
+    3 => ['title' => 'Ponad 170 ekspertów', 'text' => 'Jakość potwierdzona standardami. Mamy wdrożone procedury kontroli jakości i weryfikacji danych. Dostarczamy informacje finansowe kompletne, spójne i użyteczne dla zarządu.'],
+];
 
-$d2_title = __( mer_field('fr_d2_title', "Jakość potwierdzona\nstandardami"), 'meritoros' );
-$d2_text  = __( mer_field('fr_d2_text',  'Mamy wdrożone procedury kontroli jakości i weryfikacji danych. Dostarczamy informacje finansowe kompletne, spójne i użyteczne dla zarządu.'), 'meritoros' );
-$d2_logo  = get_field('fr_d2_logo');
-
-$d3_title = __( mer_field('fr_d3_title', 'Ponad 170 ekspertów'), 'meritoros' );
-$d3_text  = __( mer_field('fr_d3_text',  'Jakość potwierdzona standardami. Mamy wdrożone procedury kontroli jakości i weryfikacji danych. Dostarczamy informacje finansowe kompletne, spójne i użyteczne dla zarządu.'), 'meritoros' );
+$cards = [];
+for ($i = 1; $i <= 6; $i++) {
+    $d = $card_defaults[$i] ?? null;
+    $card_title = __( mer_field("fr_d{$i}_title", $d['title'] ?? ''), 'meritoros' );
+    if (empty(trim($card_title))) continue;
+    $cards[] = [
+        'title'        => $card_title,
+        'text'         => __( mer_field("fr_d{$i}_text", $d['text'] ?? ''), 'meritoros' ),
+        'logo'         => get_field("fr_d{$i}_logo"),
+        'fallback_img' => $d['fallback_img'] ?? '',
+    ];
+}
 ?>
 
 <section id="fr-dlaczego" class="py-10 md:py-20 bg-white">
@@ -21,79 +29,37 @@ $d3_text  = __( mer_field('fr_d3_text',  'Jakość potwierdzona standardami. Mam
         </h2>
 
         <div class="grid md:grid-cols-3 gap-6">
-
-            <!-- Card 1 -->
-            <div class="bg-[#00d084] rounded-3xl p-8 flex flex-col min-h-[380px] relative overflow-hidden">
-                <?php
-                $raw1 = $d1_title;
-                if (strpos($raw1, "\n") !== false) {
-                    $d1_parts = explode("\n", $raw1, 2);
+            <?php foreach ($cards as $idx => $card) :
+                $raw = $card['title'];
+                if (strpos($raw, "\n") !== false) {
+                    $parts = explode("\n", $raw, 2);
                 } else {
-                    $mid1 = (int) ceil(mb_strlen($raw1) / 2);
-                    $pos1 = mb_strrpos(mb_substr($raw1, 0, $mid1 + 6), ' ');
-                    $d1_parts = $pos1 !== false
-                        ? [mb_substr($raw1, 0, $pos1), mb_substr($raw1, $pos1 + 1)]
-                        : [$raw1, ''];
+                    $mid = (int) ceil(mb_strlen($raw) / 2);
+                    $pos = mb_strrpos(mb_substr($raw, 0, $mid + 6), ' ');
+                    $parts = $pos !== false
+                        ? [mb_substr($raw, 0, $pos), mb_substr($raw, $pos + 1)]
+                        : [$raw, ''];
                 }
-                ?>
+            ?>
+            <div class="bg-[#00d084] rounded-3xl p-8 flex flex-col min-h-[380px] relative overflow-hidden">
                 <h3 class="text-xl font-bold text-slate-900 mb-4 leading-snug">
-                    <span class="block"><?php echo mer_esc($d1_parts[0]); ?></span>
-                    <?php if (!empty($d1_parts[1])) : ?>
-                    <span class="block text-slate-700 font-medium"><?php echo mer_esc($d1_parts[1]); ?></span>
+                    <span class="block"><?php echo mer_esc($parts[0]); ?></span>
+                    <?php if (!empty($parts[1])) : ?>
+                    <span class="block text-slate-700 font-medium"><?php echo mer_esc($parts[1]); ?></span>
                     <?php endif; ?>
                 </h3>
-                <p class="text-white/85 text-base leading-relaxed"><?php echo mer_esc($d1_text); ?></p>
+                <p class="text-white/85 text-base leading-relaxed"><?php echo mer_esc($card['text']); ?></p>
+                <?php if (is_array($card['logo']) || !empty($card['fallback_img'])) : ?>
                 <div class="mt-auto pt-8">
-                    <?php if (is_array($d1_logo)) : ?>
-                        <img src="<?php echo esc_url($d1_logo['url']); ?>" alt="<?php echo esc_attr($d1_logo['alt'] ?: 'ISO 27001'); ?>" class="h-16 w-auto object-contain brightness-0 invert opacity-90" loading="lazy">
-                    <?php else : ?>
-                        <img src="<?php echo get_template_directory_uri(); ?>/images/ISO_27001.svg" alt="ISO 27001" class="h-20 w-auto object-contain opacity-90" loading="lazy">
+                    <?php if (is_array($card['logo'])) : ?>
+                        <img src="<?php echo esc_url($card['logo']['url']); ?>" alt="<?php echo esc_attr($card['logo']['alt'] ?: ''); ?>" class="h-16 w-auto object-contain brightness-0 invert opacity-90" loading="lazy">
+                    <?php elseif (!empty($card['fallback_img'])) : ?>
+                        <img src="<?php echo esc_url(get_template_directory_uri() . '/images/' . $card['fallback_img']); ?>" alt="" class="h-20 w-auto object-contain opacity-90" loading="lazy">
                     <?php endif; ?>
                 </div>
+                <?php endif; ?>
             </div>
-
-            <!-- Card 2 -->
-            <div class="bg-[#00d084] rounded-3xl p-8 flex flex-col min-h-[380px] relative overflow-hidden">
-                <?php
-                $raw2 = $d2_title;
-                if (strpos($raw2, "\n") !== false) {
-                    $d2_parts = explode("\n", $raw2, 2);
-                } else {
-                    $mid2 = (int) ceil(mb_strlen($raw2) / 2);
-                    $pos2 = mb_strrpos(mb_substr($raw2, 0, $mid2 + 6), ' ');
-                    $d2_parts = $pos2 !== false
-                        ? [mb_substr($raw2, 0, $pos2), mb_substr($raw2, $pos2 + 1)]
-                        : [$raw2, ''];
-                }
-                ?>
-                <h3 class="text-xl font-bold text-slate-900 mb-4 leading-snug">
-                    <span class="block"><?php echo mer_esc($d2_parts[0]); ?></span>
-                    <?php if (!empty($d2_parts[1])) : ?>
-                    <span class="block text-slate-700 font-medium"><?php echo mer_esc($d2_parts[1]); ?></span>
-                    <?php endif; ?>
-                </h3>
-                <p class="text-white/85 text-base leading-relaxed"><?php echo mer_esc($d2_text); ?></p>
-                <div class="mt-auto pt-8">
-                    <?php if (is_array($d2_logo)) : ?>
-                        <img src="<?php echo esc_url($d2_logo['url']); ?>" alt="<?php echo esc_attr($d2_logo['alt'] ?: 'ISO 9001'); ?>" class="h-16 w-auto object-contain brightness-0 invert opacity-90" loading="lazy">
-                    <?php else : ?>
-                        <img src="<?php echo get_template_directory_uri(); ?>/images/ISO9001.png" alt="ISO 9001" class="h-20 w-auto object-contain opacity-90" loading="lazy">
-                    <?php endif; ?>
-                </div>
-            </div>
-
-            <!-- Card 3 -->
-            <div class="bg-[#00d084] rounded-3xl p-8 flex flex-col min-h-[380px] relative overflow-hidden">
-                <div class="absolute -bottom-4 -right-4 opacity-10">
-                    <i data-lucide="users" class="w-48 h-48 text-white stroke-[0.5]"></i>
-                </div>
-                <h3 class="text-xl font-bold text-slate-900 mb-4 leading-snug"><?php echo mer_esc($d3_title); ?></h3>
-                <p class="text-white/85 text-base leading-relaxed relative z-10"><?php echo mer_esc($d3_text); ?></p>
-                <div class="mt-auto pt-8 relative z-10">
-                    <i data-lucide="user-check" stroke-width="1" class="w-14 h-14 text-white opacity-90"></i>
-                </div>
-            </div>
-
+            <?php endforeach; ?>
         </div>
     </div>
 </section>

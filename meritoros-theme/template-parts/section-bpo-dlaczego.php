@@ -12,13 +12,15 @@ $card_defaults = [
 ];
 
 $cards = [];
-for ($i = 1; $i <= 4; $i++) {
+for ($i = 1; $i <= 8; $i++) {
     $g = get_field("bpo_d{$i}");
-    $d = $card_defaults[$i - 1];
-    $raw_title = str_replace(["\r\n", "\r"], "\n", is_array($g) && !empty($g['title']) ? $g['title'] : $d['title']);
-    $raw_text  = is_array($g) && !empty($g['text'])  ? $g['text']  : $d['text'];
+    $d = $card_defaults[$i - 1] ?? null;
+    $raw_title = is_array($g) && !empty($g['title']) ? $g['title'] : ($d['title'] ?? '');
+    $raw_text  = is_array($g) && !empty($g['text'])  ? $g['text']  : ($d['text'] ?? '');
+    if (empty($raw_title)) continue;
+    $raw_title = str_replace(["\r\n", "\r"], "\n", $raw_title);
     $cards[] = [
-        'icon'  => is_array($g) && !empty($g['icon'])  ? $g['icon']  : $d['icon'],
+        'icon'  => is_array($g) && !empty($g['icon'])  ? $g['icon']  : ($d['icon'] ?? 'circle'),
         'title' => __( $raw_title, 'meritoros' ),
         'text'  => __( $raw_text,  'meritoros' ),
     ];

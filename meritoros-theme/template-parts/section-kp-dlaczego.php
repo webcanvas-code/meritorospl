@@ -11,13 +11,15 @@ $card_defaults = [
 ];
 
 $cards = [];
-for ($i = 1; $i <= 4; $i++) {
+for ($i = 1; $i <= 8; $i++) {
     $g = get_field("kp_dlaczego_{$i}");
-    $d = $card_defaults[$i - 1];
+    $d = $card_defaults[$i - 1] ?? null;
+    $raw_title = is_array($g) && !empty($g['title']) ? $g['title'] : ($d['title'] ?? '');
+    if (empty($raw_title)) continue;
     $cards[] = [
-        'icon'  => is_array($g) && !empty($g['icon'])  ? $g['icon']  : $d['icon'],
-        'title' => __( is_array($g) && !empty($g['title']) ? $g['title'] : $d['title'], 'meritoros' ),
-        'text'  => __( is_array($g) && !empty($g['text'])  ? $g['text']  : $d['text'],  'meritoros' ),
+        'icon'  => is_array($g) && !empty($g['icon'])  ? $g['icon']  : ($d['icon'] ?? 'circle'),
+        'title' => __( $raw_title, 'meritoros' ),
+        'text'  => __( is_array($g) && !empty($g['text'])  ? $g['text']  : ($d['text'] ?? ''),  'meritoros' ),
     ];
 }
 ?>
