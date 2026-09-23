@@ -35,7 +35,7 @@ for ($i = 1; $i <= 4; $i++) {
                 <div id="opinie-track" class="flex gap-6 transition-transform duration-500 ease-in-out">
                     <?php foreach ($opinie as $op) : ?>
                     <div class="opinia-card shrink-0 bg-white border border-slate-100 rounded-2xl p-5 sm:p-8 flex flex-col justify-between shadow-sm">
-                        <p class="text-slate-600 text-base sm:text-lg italic leading-relaxed mb-5 sm:mb-8 line-clamp-5 sm:line-clamp-none">"<?php echo mer_esc($op['quote']); ?>"</p>
+                        <p class="text-slate-600 text-base sm:text-lg italic leading-relaxed mb-5 sm:mb-8 whitespace-pre-line">"<?php echo esc_html($op['quote']); ?>"</p>
                         <div class="flex items-center gap-4">
                             <div>
                                 <p class="font-bold text-slate-900 text-sm"><?php echo mer_esc($op['name']); ?></p>
