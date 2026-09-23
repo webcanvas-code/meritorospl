@@ -18,21 +18,17 @@ $m2_text  = __( is_array($m2) && !empty($m2['text'])  ? $m2['text']  : 'Przejmuj
 $btn_text = __('Zapytaj o wycenę', 'meritoros');
 $btn_url  = home_url('/kontakt/');
 
-$m1_items = [
-    __( mer_field('uk_m1_item1', 'Bieżąca ewidencja księgowa'),        'meritoros' ),
-    __( mer_field('uk_m1_item2', 'Zamknięcie miesiąca i raportowanie'), 'meritoros' ),
-    __( mer_field('uk_m1_item3', 'Raporty finansowe'),                  'meritoros' ),
-    __( mer_field('uk_m1_item4', 'Dedykowany zespół'),                  'meritoros' ),
-    __( mer_field('uk_m1_item5', 'Zastępowalność i ciągłość obsługi'),  'meritoros' ),
-];
+$m1_items = [];
+for ($i = 1; $i <= 5; $i++) {
+    $v = mer_field("uk_m1_item{$i}", '');
+    if ($v !== '') $m1_items[] = __($v, 'meritoros');
+}
 
-$m2_items = [
-    __( mer_field('uk_m2_item1', 'Konkretny zakres procesów'),       'meritoros' ),
-    __( mer_field('uk_m2_item2', 'Ustalony standard i harmonogram'), 'meritoros' ),
-    __( mer_field('uk_m2_item3', 'Wzmocnienie działu finansów'),     'meritoros' ),
-    __( mer_field('uk_m2_item4', 'Bez rozbudowy etatów'),            'meritoros' ),
-    __( mer_field('uk_m2_item5', 'Możliwość rozszerzenia zakresu'),  'meritoros' ),
-];
+$m2_items = [];
+for ($i = 1; $i <= 5; $i++) {
+    $v = mer_field("uk_m2_item{$i}", '');
+    if ($v !== '') $m2_items[] = __($v, 'meritoros');
+}
 ?>
 
 <section id="uk-model" class="py-12 md:py-24 bg-white">
@@ -56,6 +52,7 @@ $m2_items = [
                     </div>
                 </div>
                 <p class="text-slate-500 text-sm leading-relaxed mb-6"><?php echo mer_esc($m1_text); ?></p>
+                <?php if ($m1_items) : ?>
                 <ul class="space-y-2.5 mb-8 flex-1">
                     <?php foreach ($m1_items as $item): ?>
                     <li class="flex items-start gap-3 text-sm text-slate-700">
@@ -64,6 +61,9 @@ $m2_items = [
                     </li>
                     <?php endforeach; ?>
                 </ul>
+                <?php else : ?>
+                <div class="flex-1"></div>
+                <?php endif; ?>
                 <a href="<?php echo esc_url($btn_url); ?>" class="mer-btn w-full text-center inline-block px-6 py-3 rounded-full bg-[#00d084] text-white text-sm font-semibold hover:bg-[#00b872] transition-colors">
                     <?php echo mer_esc($btn_text); ?>
                 </a>
@@ -81,6 +81,7 @@ $m2_items = [
                     </div>
                 </div>
                 <p class="text-slate-500 text-sm leading-relaxed mb-6"><?php echo mer_esc($m2_text); ?></p>
+                <?php if ($m2_items) : ?>
                 <ul class="space-y-2.5 mb-8 flex-1">
                     <?php foreach ($m2_items as $item): ?>
                     <li class="flex items-start gap-3 text-sm text-slate-700">
@@ -89,6 +90,9 @@ $m2_items = [
                     </li>
                     <?php endforeach; ?>
                 </ul>
+                <?php else : ?>
+                <div class="flex-1"></div>
+                <?php endif; ?>
                 <a href="<?php echo esc_url($btn_url); ?>" class="mer-btn mer-btn--white w-full text-center inline-block px-6 py-3 rounded-full border border-slate-200 text-slate-700 text-sm font-semibold hover:bg-slate-50 hover:border-slate-300 transition-colors">
                     <?php echo mer_esc($btn_text); ?>
                 </a>
