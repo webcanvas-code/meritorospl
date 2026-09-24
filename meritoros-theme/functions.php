@@ -1093,6 +1093,26 @@ function _mer_register_media_fields(): void {
                 'library'       => 'all',
                 'instructions'  => 'Alternatywnie: wgraj plik zamiast podawać URL.',
             ],
+
+            /* ── Wideo 2–5 (grupy) ── */
+            ...array_map(function ($i) {
+                return [
+                    'key'          => "field_media_vid_{$i}",
+                    'label'        => "Wideo {$i}",
+                    'name'         => "media_vid_{$i}",
+                    'type'         => 'group',
+                    'layout'       => 'block',
+                    'instructions' => "Wideo {$i} — zostaw puste jeśli nieużywane",
+                    'sub_fields'   => [
+                        ['key' => "field_media_vid_{$i}_title",   'label' => 'Tytuł',                          'name' => 'title',     'type' => 'text'],
+                        ['key' => "field_media_vid_{$i}_text",    'label' => 'Opis',                            'name' => 'text',      'type' => 'textarea', 'rows' => 3],
+                        ['key' => "field_media_vid_{$i}_btn",     'label' => 'Tekst przycisku',                 'name' => 'btn_text',  'type' => 'text', 'default_value' => 'Obejrzyj materiał'],
+                        ['key' => "field_media_vid_{$i}_url",     'label' => 'URL wideo (YouTube / Vimeo)',     'name' => 'vid_url',   'type' => 'text', 'instructions' => 'Wklej link YouTube lub Vimeo.'],
+                        ['key' => "field_media_vid_{$i}_thumb",   'label' => 'Miniatura wideo',                 'name' => 'thumbnail', 'type' => 'image', 'return_format' => 'array', 'preview_size' => 'medium', 'library' => 'all'],
+                        ['key' => "field_media_vid_{$i}_btn_url", 'label' => 'Link do historii klienta',        'name' => 'btn_url',   'type' => 'text', 'instructions' => "URL do konkretnej historii klienta.", 'placeholder' => '/historia-klienta/nazwa/'],
+                    ],
+                ];
+            }, range(2, 5)),
         ],
     ]);
 }
