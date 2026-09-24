@@ -33,10 +33,9 @@ for ($i = 1; $i <= 3; $i++) {
                 $img_url = $card['image'] ? esc_url($card['image']['url']) : '';
                 $img_alt = $card['image'] ? esc_attr($card['image']['alt'] ?: $card['title']) : esc_attr($card['title']);
             ?>
-                <button
-                    type="button"
-                    onclick="document.getElementById('<?php echo esc_js($card['target']); ?>').scrollIntoView({behavior:'smooth', block:'start'})"
-                    class="group relative aspect-[4/3] rounded-2xl overflow-hidden bg-slate-700 shadow-lg hover:shadow-xl transition-shadow duration-300 cursor-pointer text-left w-full"
+                <a
+                    href="#<?php echo esc_attr($card['target']); ?>"
+                    class="group relative aspect-[4/3] rounded-2xl overflow-hidden bg-slate-700 shadow-lg hover:shadow-xl transition-shadow duration-300 cursor-pointer text-left w-full block"
                 >
                     <?php if ($img_url) : ?>
                         <img src="<?php echo $img_url; ?>" alt="<?php echo $img_alt; ?>"
@@ -54,7 +53,7 @@ for ($i = 1; $i <= 3; $i++) {
                             <svg xmlns="http://www.w3.org/2000/svg" class="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><polyline points="19 12 12 19 5 12"/></svg>
                         </span>
                     </div>
-                </button>
+                </a>
             <?php endforeach; ?>
         </div>
     </div>
