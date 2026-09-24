@@ -67,7 +67,7 @@ for ($i = 1; $i <= 5; $i++) {
                         <?php echo mer_esc($desc); ?>
                     </p>
                     <a href="<?php echo esc_url($cta_url); ?>"
-                       class="mer-btn mer-btn--dark inline-flex items-center gap-2 bg-slate-900 text-white px-6 py-3 lg:px-8 lg:py-4 rounded-full text-sm lg:text-base font-semibold hover:bg-slate-700 transition-all duration-300">
+                       class="mer-btn inline-flex items-center gap-2 bg-white text-slate-900 px-6 py-3 lg:px-8 lg:py-4 rounded-full text-sm lg:text-base font-semibold hover:bg-slate-100 transition-all duration-300">
                         <?php echo mer_esc($cta_text); ?>
                     </a>
                 </div>
