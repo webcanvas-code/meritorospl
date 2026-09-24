@@ -3276,6 +3276,11 @@ acf_add_local_field_group([
         ['key' => 'field_op_nice_5', 'label' => 'Mile widziane 5', 'name' => 'op_nice_5', 'type' => 'text'],
         ['key' => 'field_op_nice_6', 'label' => 'Mile widziane 6', 'name' => 'op_nice_6', 'type' => 'text'],
 
+        // ── TAB: Sekcje ───────────────────────────────────────
+        ['key' => 'field_op_tab_sections', 'label' => 'Sekcje', 'name' => '', 'type' => 'tab'],
+        ['key' => 'field_op_hide_oferta', 'label' => 'Ukryj sekcję "Co oferujemy"', 'name' => 'op_hide_oferta', 'type' => 'true_false', 'default_value' => 0, 'ui' => 1,
+         'instructions' => 'Włącz, aby ukryć sekcję "Co oferujemy Dołączając do Meritoros" na tej ofercie.'],
+
         // ── TAB: Aplikuj ──────────────────────────────────────
         ['key' => 'field_op_tab_apply', 'label' => 'Aplikuj', 'name' => '', 'type' => 'tab'],
         ['key' => 'field_op_cv_url', 'label' => 'Link do aplikowania (Traffit)', 'name' => 'op_cv_url', 'type' => 'url',
