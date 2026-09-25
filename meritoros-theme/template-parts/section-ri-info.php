@@ -12,15 +12,15 @@ $subs = [
     ['title' => __( (get_field('ri_sub4_title', $_ri_pid) ?: 'Strategia rozwoju'),         'meritoros' ), 'text' => __(trim(str_replace(["\r\n","\r"],"\n", get_field('ri_sub4_text', $_ri_pid) ?: '')), 'meritoros'), 'list' => false],
 ];
 
-$photo     = get_field('ri_info_photo');
+$photo     = get_field('ri_info_photo', $_ri_pid);
 $photo_url = is_array($photo) ? esc_url($photo['url']) : 'https://images.unsplash.com/photo-1600880292203-757bb62b4baf?auto=format&fit=crop&q=80&w=900';
 $photo_alt = is_array($photo) ? esc_attr($photo['alt'] ?: 'Meritoros SA') : 'Meritoros SA';
 
 $stats_raw = [
-    get_field('ri_stat_1') ?: ['value' => '2004',  'label' => __('Początek działalności', 'meritoros'), 'sublabel' => ''],
-    get_field('ri_stat_2') ?: ['value' => '1200+', 'label' => __('Klientów',              'meritoros'), 'sublabel' => ''],
-    get_field('ri_stat_3') ?: ['value' => '180+',  'label' => __('Specjalistów',          'meritoros'), 'sublabel' => ''],
-    get_field('ri_stat_4') ?: ['value' => '7',     'label' => __('lokalizacji',           'meritoros'), 'sublabel' => __('(ale ciągle rośniemy)', 'meritoros')],
+    get_field('ri_stat_1', $_ri_pid) ?: ['value' => '2004',  'label' => __('Początek działalności', 'meritoros'), 'sublabel' => ''],
+    get_field('ri_stat_2', $_ri_pid) ?: ['value' => '1200+', 'label' => __('Klientów',              'meritoros'), 'sublabel' => ''],
+    get_field('ri_stat_3', $_ri_pid) ?: ['value' => '180+',  'label' => __('Specjalistów',          'meritoros'), 'sublabel' => ''],
+    get_field('ri_stat_4', $_ri_pid) ?: ['value' => '7',     'label' => __('lokalizacji',           'meritoros'), 'sublabel' => __('(ale ciągle rośniemy)', 'meritoros')],
 ];
 
 $award_title = __(get_field('ri_award_title', $_ri_pid) ?: 'Nagrody i wyróżnienia' , 'meritoros');
