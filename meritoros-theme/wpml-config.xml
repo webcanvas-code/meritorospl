@@ -1015,7 +1015,6 @@
         <custom-field action="translate">ri_hero_text</custom-field>
         <custom-field action="copy">ri_hero_image</custom-field>
         <custom-field action="translate">ri_info_title</custom-field>
-        <custom-field action="translate">ri_info_text</custom-field>
         <custom-field action="copy">ri_info_photo</custom-field>
         <custom-field action="translate">ri_award_title</custom-field>
         <custom-field action="translate">ri_award_text</custom-field>
