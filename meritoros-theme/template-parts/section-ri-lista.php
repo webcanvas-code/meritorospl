@@ -1,10 +1,14 @@
 <?php
-$title = __( mer_field('ri_lista_title', 'Lista nadzorcza'), 'meritoros' );
+// WPML tworzy osobne strony EN/UK z pustymi polami — pobieramy zawsze z polskiego oryginału
+$_ri_pl  = get_page_by_path('relacje-inwestorskie');
+$_ri_pid = $_ri_pl ? (int) $_ri_pl->ID : get_the_ID();
+
+$title = __( get_field('ri_lista_title', $_ri_pid) ?: 'Lista nadzorcza', 'meritoros' );
 
 // Karty – 9 osobnych grup ACF (ri_lista_card_1 … ri_lista_card_9)
 $cards = [];
 for ($i = 1; $i <= 9; $i++) {
-    $c = get_field("ri_lista_card_{$i}");
+    $c = get_field("ri_lista_card_{$i}", $_ri_pid);
     if (!empty($c['name'])) $cards[] = $c;
 }
 if (empty($cards)) {

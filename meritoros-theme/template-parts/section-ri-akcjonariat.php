@@ -13,7 +13,7 @@ $col3 = __( get_field('ri_akcjonariat_col3', $_ri_pid) ?: 'Udział w łącznej l
 // Wiersze – 10 osobnych grup ACF (ri_akcjonariat_row_1 … ri_akcjonariat_row_10)
 $rows = [];
 for ($i = 1; $i <= 10; $i++) {
-    $r = get_field("ri_akcjonariat_row_{$i}");
+    $r = get_field("ri_akcjonariat_row_{$i}", $_ri_pid);
     if (!empty($r['shareholder'])) $rows[] = $r;
 }
 if (empty($rows)) {
