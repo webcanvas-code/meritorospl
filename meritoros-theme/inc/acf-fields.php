@@ -2898,6 +2898,18 @@ acf_add_local_field_group([
         ['key' => 'field_ri_tab_info',    'label' => 'Informacje o spolce', 'name' => '', 'type' => 'tab'],
         ['key' => 'field_ri_info_title',  'label' => 'Naglowek sekcji',     'name' => 'ri_info_title',  'type' => 'textarea', 'rows' => 2],
         ['key' => 'field_ri_info_photo',  'label' => 'Zdjecie prawa kolumna', 'name' => 'ri_info_photo', 'type' => 'image', 'return_format' => 'array', 'preview_size' => 'medium'],
+
+        // ── Podsekcje w lewej kolumnie (O nas) ────────────────────
+        ['key' => 'field_ri_sub1_title', 'label' => 'Profil działalności — naglowek', 'name' => 'ri_sub1_title', 'type' => 'text',     'default_value' => 'Profil działalności'],
+        ['key' => 'field_ri_sub1_text',  'label' => 'Profil działalności — tresc',    'name' => 'ri_sub1_text',  'type' => 'textarea', 'rows' => 4],
+        ['key' => 'field_ri_sub2_title', 'label' => 'Skala działalności — naglowek', 'name' => 'ri_sub2_title', 'type' => 'text',     'default_value' => 'Skala działalności'],
+        ['key' => 'field_ri_sub2_text',  'label' => 'Skala działalności — tresc',    'name' => 'ri_sub2_text',  'type' => 'textarea', 'rows' => 4],
+        ['key' => 'field_ri_sub3_title',     'label' => 'Zasięg i grupa kapitałowa — naglowek',          'name' => 'ri_sub3_title',     'type' => 'text',     'default_value' => 'Zasięg i grupa kapitałowa'],
+        ['key' => 'field_ri_sub3_text',      'label' => 'Zasięg i grupa kapitałowa — tresc',             'name' => 'ri_sub3_text',      'type' => 'textarea', 'rows' => 4],
+        ['key' => 'field_ri_sub3_companies', 'label' => 'Zasięg i grupa kapitałowa — spolki (kazda w osobnej linii)', 'name' => 'ri_sub3_companies', 'type' => 'textarea', 'rows' => 4],
+        ['key' => 'field_ri_sub4_title', 'label' => 'Strategia rozwoju — naglowek', 'name' => 'ri_sub4_title', 'type' => 'text',     'default_value' => 'Strategia rozwoju'],
+        ['key' => 'field_ri_sub4_text',  'label' => 'Strategia rozwoju — tresc',    'name' => 'ri_sub4_text',  'type' => 'textarea', 'rows' => 4],
+
         ['key' => 'field_ri_award_title', 'label' => 'Nagrody — tytul',    'name' => 'ri_award_title', 'type' => 'text',     'default_value' => 'Nagrody i wyroznienia'],
         ['key' => 'field_ri_award_text',  'label' => 'Nagrody — opis',     'name' => 'ri_award_text',  'type' => 'textarea', 'rows' => 3],
         ['key' => 'field_ri_award_logo1', 'label' => 'Nagrody — logo 1',   'name' => 'ri_award_logo1', 'type' => 'image',    'return_format' => 'array', 'preview_size' => 'thumbnail'],
@@ -2936,17 +2948,6 @@ acf_add_local_field_group([
             ['key' => 'field_ri_zarzad_m4_bio',   'label' => 'Bio',             'name' => 'bio',   'type' => 'textarea', 'rows' => 3],
             ['key' => 'field_ri_zarzad_m4_photo', 'label' => 'Zdjecie',         'name' => 'photo', 'type' => 'image', 'return_format' => 'array', 'preview_size' => 'medium'],
         ]],
-
-        // ── Podsekcje w lewej kolumnie ────────────────────────────
-        ['key' => 'field_ri_sub1_title', 'label' => 'Profil działalności — naglowek', 'name' => 'ri_sub1_title', 'type' => 'text',     'default_value' => 'Profil działalności'],
-        ['key' => 'field_ri_sub1_text',  'label' => 'Profil działalności — tresc',    'name' => 'ri_sub1_text',  'type' => 'textarea', 'rows' => 4],
-        ['key' => 'field_ri_sub2_title', 'label' => 'Skala działalności — naglowek', 'name' => 'ri_sub2_title', 'type' => 'text',     'default_value' => 'Skala działalności'],
-        ['key' => 'field_ri_sub2_text',  'label' => 'Skala działalności — tresc',    'name' => 'ri_sub2_text',  'type' => 'textarea', 'rows' => 4],
-        ['key' => 'field_ri_sub3_title',     'label' => 'Zasięg i grupa kapitałowa — naglowek',          'name' => 'ri_sub3_title',     'type' => 'text',     'default_value' => 'Zasięg i grupa kapitałowa'],
-        ['key' => 'field_ri_sub3_text',      'label' => 'Zasięg i grupa kapitałowa — tresc',             'name' => 'ri_sub3_text',      'type' => 'textarea', 'rows' => 4],
-        ['key' => 'field_ri_sub3_companies', 'label' => 'Zasięg i grupa kapitałowa — spolki (kazda w osobnej linii)', 'name' => 'ri_sub3_companies', 'type' => 'textarea', 'rows' => 4],
-        ['key' => 'field_ri_sub4_title', 'label' => 'Strategia rozwoju — naglowek', 'name' => 'ri_sub4_title', 'type' => 'text',     'default_value' => 'Strategia rozwoju'],
-        ['key' => 'field_ri_sub4_text',  'label' => 'Strategia rozwoju — tresc',    'name' => 'ri_sub4_text',  'type' => 'textarea', 'rows' => 4],
 
         // ── TAB: O nas — Statystyki ───────────────────────────────
         ['key' => 'field_ri_tab_stats', 'label' => '◆ O nas — Statystyki', 'name' => '', 'type' => 'tab'],
