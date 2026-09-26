@@ -3,7 +3,7 @@ defined('ABSPATH') || exit;
 
 $heading  = __( mer_field('kupimy_form_heading',  'Porozmawiajmy'), 'meritoros' );
 $subtitle = __( mer_field('kupimy_form_subtitle', 'Pierwsza rozmowa jest niezobowiązująca. Ustalimy, jaki model ma sens i czy jest przestrzeń do współpracy.'), 'meritoros' );
-$cf7_id   = intval(mer_field('kupimy_cf7_id', 0));
+$cf7_id   = trim(mer_field('kupimy_cf7_id', ''));
 $photo    = mer_field('kupimy_form_photo');
 $photo_url = is_array($photo) ? $photo['url'] : 'https://images.unsplash.com/photo-1557804506-669a67965ba0?w=900&q=80';
 $photo_alt = is_array($photo) ? ($photo['alt'] ?: 'Porozmawiajmy') : 'Porozmawiajmy';
@@ -27,7 +27,7 @@ $photo_alt = is_array($photo) ? ($photo['alt'] ?: 'Porozmawiajmy') : 'Porozmawia
                 </p>
 
                 <?php if ($cf7_id) : ?>
-                    <?php echo do_shortcode('[contact-form-7 id="' . $cf7_id . '"]'); ?>
+                    <?php echo do_shortcode('[contact-form-7 id="' . esc_attr($cf7_id) . '"]'); ?>
                 <?php else : ?>
                     <p class="text-slate-400 text-sm italic">Przypisz formularz CF7 w ustawieniach strony (zakładka Formularz kontaktowy → ID formularza CF7).</p>
                 <?php endif; ?>

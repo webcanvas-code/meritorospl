@@ -2,7 +2,7 @@
 $title_green = mer_field('kon_title_green', __('Umów rozmowę', 'meritoros'));
 $title_dark  = mer_field('kon_title_dark',  __('i sprawdź, jak możemy pomóc', 'meritoros'));
 $subtitle    = mer_field('kon_subtitle',    __('Wysłuchamy, przeanalizujemy sytuację i zaproponujemy kolejne kroki.', 'meritoros'));
-$cf7_id      = intval(mer_field('kon_cf7_id', 0));
+$cf7_id      = trim(mer_field('kon_cf7_id', ''));
 
 // Kroki — 4 osobne grupy ACF
 $steps = [];
@@ -48,7 +48,7 @@ for ($i = 1; $i <= 4; $i++) {
         <!-- CF7 Form -->
         <div class="max-w-4xl">
             <?php if ($cf7_id) : ?>
-                <?php echo do_shortcode('[contact-form-7 id="' . $cf7_id . '"]'); ?>
+                <?php echo do_shortcode('[contact-form-7 id="' . esc_attr($cf7_id) . '"]'); ?>
             <?php else : ?>
                 <p class="text-slate-400 text-sm italic"><?php esc_html_e('Przypisz formularz CF7 w ustawieniach strony (zakładka Hero & Formularz → ID formularza CF7).', 'meritoros'); ?></p>
             <?php endif; ?>

@@ -900,9 +900,8 @@ acf_add_local_field_group([
             'key'          => 'field_mer_nl_cf7_id',
             'label'        => 'ID formularza CF7 (Newsletter)',
             'name'         => 'nl_cf7_id',
-            'type'         => 'number',
-            'instructions' => 'ID formularza Contact Form 7 zintegrowanego z Mailchimp (MC4WP: Mailchimp for WordPress).',
-            'min'          => 0,
+            'type'         => 'text',
+            'instructions' => 'ID formularza Contact Form 7 (numeryczne lub hash, np. "0ea1040").',
         ],
     ],
     'location'   => $front_page_location,
@@ -1579,9 +1578,8 @@ acf_add_local_field_group([
             'key'          => 'field_kon_cf7_id',
             'label'        => 'ID formularza CF7',
             'name'         => 'kon_cf7_id',
-            'type'         => 'number',
-            'instructions' => 'Wklej ID formularza Contact Form 7 (widoczny w WP Admin → Kontakt).',
-            'min'          => 0,
+            'type'         => 'text',
+            'instructions' => 'ID formularza Contact Form 7 (numeryczne lub hash, np. "0ea1040").',
         ],
 
         // ── TAB: Kroki procesu ────────────────────────────────────
@@ -2566,7 +2564,7 @@ acf_add_local_field_group([
         ['key' => 'field_kar_cv_rodo',        'label' => 'Treść RODO',     'name' => 'kar_cv_rodo',        'type' => 'textarea', 'rows' => 3, 'default_value' => 'Wyrażam zgodę na przetwarzanie moich danych osobowych przez Meritoros SA w celu przeprowadzenia procesu rekrutacji, zgodnie z obowiązującymi przepisami o ochronie danych osobowych (RODO).'],
         ['key' => 'field_kar_cv_btn_text',    'label' => 'Tekst przycisku', 'name' => 'kar_cv_btn_text',    'type' => 'text',     'default_value' => 'Wyślij wiadomość'],
         ['key' => 'field_kar_cv_tag_text',    'label' => 'Tag na zdjęciu',  'name' => 'kar_cv_tag_text',    'type' => 'text',     'default_value' => 'Dołącz do nas!'],
-        ['key' => 'field_kar_cf7_id', 'label' => 'ID formularza CF7', 'name' => 'kar_cf7_id', 'type' => 'number', 'instructions' => 'ID formularza Contact Form 7 do wysyłki CV.', 'min' => 0],
+        ['key' => 'field_kar_cf7_id', 'label' => 'ID formularza CF7', 'name' => 'kar_cf7_id', 'type' => 'text', 'instructions' => 'ID formularza Contact Form 7 (numeryczne lub hash, np. "0ea1040").'],
         ['key' => 'field_kar_cv_photo',       'label' => 'Zdjęcie',        'name' => 'kar_cv_photo',       'type' => 'image',    'return_format' => 'array', 'preview_size' => 'medium'],
 
         // ── REKRUTACJA ────────────────────────────────────────────────
@@ -2849,7 +2847,7 @@ acf_add_local_field_group([
         ['key' => 'field_kupimy_form_btn_text',   'label' => 'Przycisk — tekst', 'name' => 'kupimy_form_btn_text', 'type' => 'text', 'default_value' => 'Wyślij wiadomość'],
         ['key' => 'field_kupimy_form_rodo',       'label' => 'Treść zgody RODO', 'name' => 'kupimy_form_rodo', 'type' => 'textarea', 'rows' => 3],
         ['key' => 'field_kupimy_form_photo',      'label' => 'Zdjęcie',          'name' => 'kupimy_form_photo', 'type' => 'image', 'return_format' => 'array', 'preview_size' => 'medium'],
-        ['key' => 'field_kupimy_cf7_id', 'label' => 'ID formularza CF7', 'name' => 'kupimy_cf7_id', 'type' => 'number', 'instructions' => 'ID formularza Contact Form 7.', 'min' => 0],
+        ['key' => 'field_kupimy_cf7_id', 'label' => 'ID formularza CF7', 'name' => 'kupimy_cf7_id', 'type' => 'text', 'instructions' => 'ID formularza Contact Form 7 (numeryczne lub hash, np. "0ea1040").'],
 
         // ── TAB: Wycena ───────────────────────────────────────────
         ['key' => 'field_kupimy_tab_wycena',         'label' => 'Wycena',           'name' => '', 'type' => 'tab'],

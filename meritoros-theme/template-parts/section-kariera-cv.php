@@ -1,7 +1,7 @@
 <?php
 $title    = mer_field('kar_cv_title',    __("Chcesz do nas dołączyć?\nZostaw swoje CV", 'meritoros'));
 $tag_text = mer_field('kar_cv_tag_text', __('Dołącz do nas!', 'meritoros'));
-$cf7_id   = intval(mer_field('kar_cf7_id', 0));
+$cf7_id   = trim(mer_field('kar_cf7_id', ''));
 $photo    = get_field('kar_cv_photo');
 $photo_url = is_array($photo) ? esc_url($photo['url']) : 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=800&q=80';
 $photo_alt = is_array($photo) ? esc_attr($photo['alt'] ?: '') : '';
@@ -18,7 +18,7 @@ $photo_alt = is_array($photo) ? esc_attr($photo['alt'] ?: '') : '';
 
             <div>
                 <?php if ($cf7_id) : ?>
-                    <?php echo do_shortcode('[contact-form-7 id="' . $cf7_id . '"]'); ?>
+                    <?php echo do_shortcode('[contact-form-7 id="' . esc_attr($cf7_id) . '"]'); ?>
                 <?php else : ?>
                     <p class="text-slate-400 text-sm italic"><?php esc_html_e('Przypisz formularz CF7 w ustawieniach strony (zakładka Formularz CV → ID formularza CF7).', 'meritoros'); ?></p>
                 <?php endif; ?>

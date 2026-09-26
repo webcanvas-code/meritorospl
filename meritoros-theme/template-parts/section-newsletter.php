@@ -8,7 +8,7 @@ $sub_count     = (get_field('nl_subscriber_count', $_nl_id) ?: __('2 400+ czytel
 $sub_label     = (get_field('nl_subscriber_label', $_nl_id) ?: __('dołączyło do naszego newslettera', 'meritoros'));
 $form_title    = (get_field('nl_form_title',       $_nl_id) ?: __('Zapisz się bezpłatnie', 'meritoros'));
 $form_sub      = (get_field('nl_form_sub',         $_nl_id) ?: __('Dołącz do ponad 2 400 specjalistów finansowych.', 'meritoros'));
-$cf7_id        = intval(get_field('nl_cf7_id',     $_nl_id) ?: 0);
+$cf7_id        = trim(get_field('nl_cf7_id',     $_nl_id) ?: '');
 
 $benefit_defaults = [
     1 => __('Miesięczne podsumowania zmian podatkowych', 'meritoros'),
@@ -104,7 +104,7 @@ for ($i = 1; $i <= 4; $i++) {
 
                 <div class="mer-nl-form">
                     <?php if ($cf7_id) : ?>
-                        <?php echo do_shortcode('[contact-form-7 id="' . $cf7_id . '"]'); ?>
+                        <?php echo do_shortcode('[contact-form-7 id="' . esc_attr($cf7_id) . '"]'); ?>
                     <?php else : ?>
                         <p class="text-slate-400 text-sm italic"><?php esc_html_e('Przypisz formularz CF7 w ustawieniach strony głównej (zakładka Newsletter → ID formularza CF7).', 'meritoros'); ?></p>
                     <?php endif; ?>
