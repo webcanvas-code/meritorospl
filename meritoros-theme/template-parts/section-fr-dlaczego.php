@@ -50,9 +50,9 @@ for ($i = 1; $i <= 6; $i++) {
                 </div>
                 <?php endif; ?>
                 <h3 class="text-lg lg:text-xl font-bold text-white mb-4 leading-snug">
-                    <span class="block"><?php echo mer_esc($parts[0]); ?></span>
+                    <span class="block whitespace-nowrap"><?php echo mer_esc($parts[0]); ?></span>
                     <?php if (!empty($parts[1])) : ?>
-                    <span class="block"><?php echo mer_esc($parts[1]); ?></span>
+                    <span class="block whitespace-nowrap"><?php echo mer_esc($parts[1]); ?></span>
                     <?php endif; ?>
                 </h3>
                 <p class="text-white/85 text-base leading-relaxed relative z-10"><?php echo mer_esc($card['text']); ?></p>
