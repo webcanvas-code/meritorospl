@@ -30,7 +30,7 @@ for ($i = 1; $i <= 6; $i++) {
             <?php echo nl2br(str_replace('Meritoros', '<span class="text-[#00d084]">Meritoros</span>', esc_html($title))); ?>
         </h2>
 
-        <div class="grid md:grid-cols-3 gap-6">
+        <div class="grid lg:grid-cols-3 gap-6">
             <?php foreach ($cards as $idx => $card) :
                 $raw = $card['title'];
                 if (strpos($raw, "\n") !== false) {
@@ -43,7 +43,7 @@ for ($i = 1; $i <= 6; $i++) {
                         : [$raw, ''];
                 }
             ?>
-            <div class="bg-[#00d084] rounded-3xl p-8 flex flex-col min-h-[380px] relative overflow-hidden">
+            <div class="bg-[#00d084] rounded-3xl p-6 lg:p-8 flex flex-col min-h-[380px] relative overflow-hidden">
                 <?php if (!empty($card['bg_icon'])) : ?>
                 <div class="absolute -bottom-4 -right-4 opacity-10">
                     <i data-lucide="<?php echo esc_attr($card['bg_icon']); ?>" class="w-48 h-48 text-white stroke-[0.5]"></i>
