@@ -602,6 +602,9 @@
         <!-- ═══════════════════════════════════════════
              CASE STUDIES — pola numerowane cs_1_ ... cs_4_
         ═══════════════════════════════════════════ -->
+        <custom-field action="translate">cs_cta_text</custom-field>
+        <custom-field action="translate">cs_cta_general_text</custom-field>
+
         <custom-field action="translate">cs_1_client_name</custom-field>
         <custom-field action="translate">cs_1_industries</custom-field>
         <custom-field action="translate">cs_1_scope_title</custom-field>
@@ -749,19 +752,19 @@
              BUYOUT — statystyki buyout_stat_1_ ... buyout_stat_4_
         ═══════════════════════════════════════════ -->
         <custom-field action="translate">buyout_stat_1_label</custom-field>
-        <custom-field action="copy">buyout_stat_1_value</custom-field>
+        <custom-field action="translate">buyout_stat_1_value</custom-field>
         <custom-field action="copy">buyout_stat_1_icon</custom-field>
         <custom-field action="copy">buyout_stat_1_accent</custom-field>
         <custom-field action="translate">buyout_stat_2_label</custom-field>
-        <custom-field action="copy">buyout_stat_2_value</custom-field>
+        <custom-field action="translate">buyout_stat_2_value</custom-field>
         <custom-field action="copy">buyout_stat_2_icon</custom-field>
         <custom-field action="copy">buyout_stat_2_accent</custom-field>
         <custom-field action="translate">buyout_stat_3_label</custom-field>
-        <custom-field action="copy">buyout_stat_3_value</custom-field>
+        <custom-field action="translate">buyout_stat_3_value</custom-field>
         <custom-field action="copy">buyout_stat_3_icon</custom-field>
         <custom-field action="copy">buyout_stat_3_accent</custom-field>
         <custom-field action="translate">buyout_stat_4_label</custom-field>
-        <custom-field action="copy">buyout_stat_4_value</custom-field>
+        <custom-field action="translate">buyout_stat_4_value</custom-field>
         <custom-field action="copy">buyout_stat_4_icon</custom-field>
         <custom-field action="copy">buyout_stat_4_accent</custom-field>
 

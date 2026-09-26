@@ -53,7 +53,7 @@ $has_pdf = is_array($pdf) && !empty($pdf['url']);
                         <?php echo mer_esc($btn); ?>
                     </a>
                 <?php else : ?>
-                    <p class="text-slate-400 text-sm italic">Brak przypisanego pliku PDF. Wgraj plik w zakładce "Sekcja Ebook" w ustawieniach strony.</p>
+                    <p class="text-slate-400 text-sm italic"><?php esc_html_e('Brak przypisanego pliku PDF. Wgraj plik w zakładce "Sekcja Ebook" w ustawieniach strony.', 'meritoros'); ?></p>
                 <?php endif; ?>
             </div>
 

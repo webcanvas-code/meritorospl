@@ -11,12 +11,12 @@ $related = new WP_Query([
 
 /* ── Demo data (fallback gdy brak wpisów) ────────────────────────── */
 $_demo_cards = [
-    ['thumb' => 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=800&q=80', 'tags' => ['Geologia inżynierska', 'Ochrona środowiska'], 'title' => 'Kadry i płace, wsparcie w procesie audytu kadrowego',   'desc' => 'Po kilku zmianach w dziale HR spółka potrzebowała szybkiego uporządkowania dokumentacji kadrowej i bezpiecznego zamknięcia roku.'],
-    ['thumb' => 'https://images.unsplash.com/photo-1552664730-d307ca884978?w=800&q=80', 'tags' => ['E-commerce', 'Technologia'],              'title' => 'Pełna obsługa kadrowo-płacowa, raportowanie HR',           'desc' => 'Dynamicznie rosnąca spółka technologiczna potrzebowała partnera, który zapewni sprawne naliczanie płac.'],
-    ['thumb' => 'https://images.unsplash.com/photo-1515187029135-18ee286d815b?w=800&q=80', 'tags' => ['Finanse', 'Bookkeeping'],               'title' => 'Obsługa księgowa i doradztwo podatkowe',                   'desc' => 'Firma potrzebowała stabilnego partnera do prowadzenia pełnej księgowości i optymalizacji podatkowej.'],
-    ['thumb' => 'https://images.unsplash.com/photo-1542744173-8e7e53415bb0?w=800&q=80', 'tags' => ['Produkcja', 'Logistyka'],              'title' => 'Kadry, płace i obsługa audytu ZUS',                         'desc' => 'Klient wymagał kompleksowego wsparcia przy kontroli ZUS i bieżącej obsłudze kadrowo-płacowej.'],
-    ['thumb' => 'https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=800&q=80', 'tags' => ['IT', 'SaaS'],                        'title' => 'Outsourcing księgowości dla spółki technologicznej',          'desc' => 'Startup potrzebował elastycznego modelu obsługi finansowej dopasowanego do dynamicznego wzrostu.'],
-    ['thumb' => 'https://images.unsplash.com/photo-1521737604893-d14cc237f11d?w=800&q=80', 'tags' => ['Handel', 'Dystrybucja'],             'title' => 'Optymalizacja procesów finansowo-księgowych',                'desc' => 'Sieć handlowa potrzebowała zunifikowania procesów i raportowania w wielu oddziałach.'],
+    ['thumb' => 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=800&q=80', 'tags' => [__('Geologia inżynierska', 'meritoros'), __('Ochrona środowiska', 'meritoros')], 'title' => __('Kadry i płace, wsparcie w procesie audytu kadrowego', 'meritoros'),   'desc' => __('Po kilku zmianach w dziale HR spółka potrzebowała szybkiego uporządkowania dokumentacji kadrowej i bezpiecznego zamknięcia roku.', 'meritoros')],
+    ['thumb' => 'https://images.unsplash.com/photo-1552664730-d307ca884978?w=800&q=80', 'tags' => [__('E-commerce', 'meritoros'), __('Technologia', 'meritoros')],              'title' => __('Pełna obsługa kadrowo-płacowa, raportowanie HR', 'meritoros'),           'desc' => __('Dynamicznie rosnąca spółka technologiczna potrzebowała partnera, który zapewni sprawne naliczanie płac.', 'meritoros')],
+    ['thumb' => 'https://images.unsplash.com/photo-1515187029135-18ee286d815b?w=800&q=80', 'tags' => [__('Finanse', 'meritoros'), __('Bookkeeping', 'meritoros')],               'title' => __('Obsługa księgowa i doradztwo podatkowe', 'meritoros'),                   'desc' => __('Firma potrzebowała stabilnego partnera do prowadzenia pełnej księgowości i optymalizacji podatkowej.', 'meritoros')],
+    ['thumb' => 'https://images.unsplash.com/photo-1542744173-8e7e53415bb0?w=800&q=80', 'tags' => [__('Produkcja', 'meritoros'), __('Logistyka', 'meritoros')],              'title' => __('Kadry, płace i obsługa audytu ZUS', 'meritoros'),                         'desc' => __('Klient wymagał kompleksowego wsparcia przy kontroli ZUS i bieżącej obsłudze kadrowo-płacowej.', 'meritoros')],
+    ['thumb' => 'https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=800&q=80', 'tags' => [__('IT', 'meritoros'), __('SaaS', 'meritoros')],                        'title' => __('Outsourcing księgowości dla spółki technologicznej', 'meritoros'),          'desc' => __('Startup potrzebował elastycznego modelu obsługi finansowej dopasowanego do dynamicznego wzrostu.', 'meritoros')],
+    ['thumb' => 'https://images.unsplash.com/photo-1521737604893-d14cc237f11d?w=800&q=80', 'tags' => [__('Handel', 'meritoros'), __('Dystrybucja', 'meritoros')],             'title' => __('Optymalizacja procesów finansowo-księgowych', 'meritoros'),                'desc' => __('Sieć handlowa potrzebowała zunifikowania procesów i raportowania w wielu oddziałach.', 'meritoros')],
 ];
 
 $use_demo = !$related->have_posts();
@@ -26,7 +26,7 @@ $use_demo = !$related->have_posts();
 
         <!-- Nagłówek z przyciskami nawigacji -->
         <div class="flex items-center justify-between mb-10">
-            <h2 class="text-pretty text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight text-slate-900">Przeczytaj również</h2>
+            <h2 class="text-pretty text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight text-slate-900"><?php esc_html_e('Przeczytaj również', 'meritoros'); ?></h2>
             <div class="flex items-center gap-2">
                 <button id="cs-rel-prev"
                         class="w-11 h-11 rounded-full bg-white border border-slate-200 hover:border-emerald-400 hover:text-[#00d084] flex items-center justify-center text-slate-500 transition-colors duration-200 shadow-sm"
@@ -69,7 +69,7 @@ $use_demo = !$related->have_posts();
                             <span class="mer-btn mer-btn--secondary text-sm text-slate-500 border border-slate-200 rounded-full px-3 py-1"><?php echo mer_esc($tag); ?></span>
                             <?php endforeach; ?>
                         </div>
-                        <p class="text-sm font-bold text-slate-900 mb-1">Zakres współpracy:</p>
+                        <p class="text-sm font-bold text-slate-900 mb-1"><?php esc_html_e('Zakres współpracy:', 'meritoros'); ?></p>
                         <p class="text-lg font-semibold text-slate-900 leading-snug mb-2"><?php echo mer_esc($card['title']); ?></p>
                         <p class="text-base sm:text-lg text-slate-500 leading-relaxed"><?php echo mer_esc($card['desc']); ?></p>
                     </div>
@@ -127,7 +127,7 @@ $use_demo = !$related->have_posts();
                             <?php endforeach; ?>
                         </div>
                         <?php endif; ?>
-                        <p class="text-sm font-bold text-slate-900 mb-1">Zakres współpracy:</p>
+                        <p class="text-sm font-bold text-slate-900 mb-1"><?php esc_html_e('Zakres współpracy:', 'meritoros'); ?></p>
                         <p class="text-lg font-semibold text-slate-900 leading-snug mb-2"><?php the_title(); ?></p>
                         <?php if ($r_desc) : ?>
                         <p class="text-base sm:text-lg text-slate-500 leading-relaxed"><?php echo mer_esc($r_desc); ?></p>

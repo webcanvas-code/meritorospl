@@ -2,71 +2,54 @@
 // Czytaj pola zawsze ze strony głównej — ACFML zwróci wersję w aktualnym języku
 $_cs_id = (int) get_option('page_on_front');
 
-// Wykryj język z URL (URL-based i18n, bez WPML)
-$_uri = $_SERVER['REQUEST_URI'] ?? '/';
-preg_match('#^/(en|uk|ru)(/|$)#', $_uri, $_lm);
-$_cs_lang = $_lm[1] ?? 'pl';
-
-$_cs_labels = [
-    'pl' => ['label' => 'Case Studies', 'title' => 'Historie naszych klientów', 'subtitle' => 'Krótkie historie firm, którym pomagamy uporządkować finanse i procesy. Przesuń palcem lub użyj strzałek.'],
-    'en' => ['label' => 'Case Studies', 'title' => 'Our clients\' stories',      'subtitle' => 'Short stories of companies we help organize their finances and processes. Swipe or use the arrows.'],
-    'uk' => ['label' => 'Кейси',        'title' => 'Історії наших клієнтів',    'subtitle' => 'Короткі історії компаній, яким ми допомагаємо впорядкувати фінанси та процеси. Проведіть пальцем або скористайтеся стрілками.'],
-    'ru' => ['label' => 'Кейсы',        'title' => 'Истории наших клиентов',    'subtitle' => 'Короткие истории компаний, которым мы помогаем упорядочить финансы и процессы. Проведите пальцем или используйте стрелки.'],
-];
-$_cs_t = $_cs_labels[$_cs_lang] ?? $_cs_labels['pl'];
-
-if ($_cs_lang === 'pl') {
-    $label    = (get_field('cs_label',    $_cs_id) ?: $_cs_t['label']);
-    $title    = (get_field('cs_title',    $_cs_id) ?: $_cs_t['title']);
-    $subtitle = (get_field('cs_subtitle', $_cs_id) ?: $_cs_t['subtitle']);
-} else {
-    $label    = $_cs_t['label'];
-    $title    = $_cs_t['title'];
-    $subtitle = $_cs_t['subtitle'];
-}
+$label    = __( get_field('cs_label',    $_cs_id) ?: 'Case Studies', 'meritoros' );
+$title    = __( get_field('cs_title',    $_cs_id) ?: 'Historie naszych klientów', 'meritoros' );
+$subtitle = __( get_field('cs_subtitle', $_cs_id) ?: 'Krótkie historie firm, którym pomagamy uporządkować finanse i procesy. Przesuń palcem lub użyj strzałek.', 'meritoros' );
 
 $historie_klientow_url = home_url('/historie-klientow/');
+$cs_cta_text         = __( get_field('cs_cta_text', $_cs_id) ?: 'Poznaj historię', 'meritoros' );
+$cs_cta_general_text = __( get_field('cs_cta_general_text', $_cs_id) ?: 'Poznaj więcej historii', 'meritoros' );
 
 // Domyślne treści i grafiki zsynchronizowane z index.html (prototyp strony).
 $cs_defaults = [
     1 => [
         'client_name' => 'HPC',
         'logo_html'   => '<span class="text-2xl lg:text-3xl font-bold tracking-tight text-[#0f4c81]">HPC</span><div class="flex gap-1.5 mt-1"><div class="w-4 h-4 bg-[#8cc63f] rounded-tl-full rounded-br-full"></div><div class="w-4 h-4 bg-[#1b75bc] rounded-tr-full rounded-bl-full"></div></div>',
-        'industries'  => 'Geologia inżynierska, Ochrona środowiska',
-        'scope_title' => 'Usługi rachunkowe, obszar kadr i płac, wsparcie w audytach',
-        'scope_desc'  => 'Po kilku zmianach głównej księgowej spółka potrzebowała szybkiego uporządkowania księgowości i bezpiecznego zamknięcia roku obrotowego. Wdrożyliśmy usprawnienia procesowe.',
+        'industries'  => __('Geologia inżynierska, Ochrona środowiska', 'meritoros'),
+        'scope_title' => __('Usługi rachunkowe, obszar kadr i płac, wsparcie w audytach', 'meritoros'),
+        'scope_desc'  => __('Po kilku zmianach głównej księgowej spółka potrzebowała szybkiego uporządkowania księgowości i bezpiecznego zamknięcia roku obrotowego. Wdrożyliśmy usprawnienia procesowe.', 'meritoros'),
         'img_url'     => 'https://images.unsplash.com/photo-1553877522-43269d4ea984?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80',
-        'video_label' => 'Nasz wpływ na operacje HPC',
+        'video_label' => __('Nasz wpływ na operacje HPC', 'meritoros'),
         'video_dur'   => '03:45',
     ],
     2 => [
         'client_name' => 'Printbox',
         'logo_html'   => '<span class="text-2xl lg:text-3xl font-bold tracking-tight text-slate-900">Printbox</span><span class="mer-btn mer-btn--light bg-slate-100 text-slate-500 rounded-md px-2 py-1 text-xs font-bold uppercase tracking-wider">SaaS</span>',
-        'industries'  => 'Technologia druku, E-commerce B2B',
-        'scope_title' => 'Pełna obsługa BPO, rozliczenia międzynarodowe VAT OSS',
-        'scope_desc'  => 'Przy dynamicznym wzroście sprzedaży cross-border firma potrzebowała partnera gotowego na złożone rozliczenia VAT OSS w wielu krajach UE. Przejęliśmy całość obsługi finansowej.',
+        'industries'  => __('Technologia druku, E-commerce B2B', 'meritoros'),
+        'scope_title' => __('Pełna obsługa BPO, rozliczenia międzynarodowe VAT OSS', 'meritoros'),
+        'scope_desc'  => __('Przy dynamicznym wzroście sprzedaży cross-border firma potrzebowała partnera gotowego na złożone rozliczenia VAT OSS w wielu krajach UE. Przejęliśmy całość obsługi finansowej.', 'meritoros'),
         'img_url'     => 'https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80',
-        'video_label' => 'Jak Printbox skaluje finanse globalnie',
+        'video_label' => __('Jak Printbox skaluje finanse globalnie', 'meritoros'),
         'video_dur'   => '04:10',
     ],
     3 => [
         'client_name' => 'SITECH',
         'logo_html'   => '<span class="text-2xl lg:text-3xl font-bold tracking-tight text-slate-900">SITECH</span>',
-        'industries'  => 'Budownictwo, Inżynieria',
-        'scope_title' => 'Kadry, płace, Intrastat, rozliczenia delegacji zagranicznych',
-        'scope_desc'  => 'Firma realizowała kontrakty w kilku krajach jednocześnie. Meritoros przejął obsługę kadrową i rozliczenia Intrastat, odciążając zarząd od złożoności administracyjnej.',
+        'industries'  => __('Budownictwo, Inżynieria', 'meritoros'),
+        'scope_title' => __('Kadry, płace, Intrastat, rozliczenia delegacji zagranicznych', 'meritoros'),
+        'scope_desc'  => __('Firma realizowała kontrakty w kilku krajach jednocześnie. Meritoros przejął obsługę kadrową i rozliczenia Intrastat, odciążając zarząd od złożoności administracyjnej.', 'meritoros'),
         'img_url'     => 'https://images.unsplash.com/photo-1560179707-f14e90ef3623?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80',
-        'video_label' => 'Obsługa kadrowa na skalę międzynarodową',
+        'video_label' => __('Obsługa kadrowa na skalę międzynarodową', 'meritoros'),
         'video_dur'   => '05:22',
     ],
     4 => [
         'client_name' => 'ROFA',
         'logo_html'   => '<span class="text-2xl lg:text-3xl font-bold tracking-tight text-slate-900">ROFA</span><div class="w-5 h-5 rounded-full bg-slate-900 flex items-center justify-center"><i data-lucide="circle" class="w-3 h-3 fill-white stroke-[2] text-white"></i></div>',
-        'industries'  => 'Produkcja przemysłowa, Eksport',
-        'scope_title' => 'Pełna księgowość, fundacja rodzinna, compliance',
-        'scope_desc'  => 'Właściciel grupy produkcyjnej chciał oddzielić majątek prywatny od firmowego poprzez fundację rodzinną. Meritoros poprowadził cały proces prawno-księgowy od podstaw.',
+        'industries'  => __('Produkcja przemysłowa, Eksport', 'meritoros'),
+        'scope_title' => __('Pełna księgowość, fundacja rodzinna, compliance', 'meritoros'),
+        'scope_desc'  => __('Właściciel grupy produkcyjnej chciał oddzielić majątek prywatny od firmowego poprzez fundację rodzinną. Meritoros poprowadził cały proces prawno-księgowy od podstaw.', 'meritoros'),
         'img_url'     => 'https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80',
-        'video_label' => 'Fundacja rodzinna krok po kroku',
+        'video_label' => __('Fundacja rodzinna krok po kroku', 'meritoros'),
         'video_dur'   => '06:08',
     ],
 ];
@@ -287,9 +270,9 @@ $total = count($items);
                         <a href="<?php echo esc_url($item['cta_url']); ?>"
                            class="mer-btn mer-btn--white inline-flex w-full sm:w-auto min-h-[48px] items-center justify-center gap-2 rounded-full bg-white border border-slate-200 px-5 py-3.5 text-sm font-semibold text-slate-700 transition hover:border-slate-300 hover:bg-slate-50 group/cta">
                             <?php if (!empty($item['is_general'])) : ?>
-                                <?php esc_html_e('Poznaj więcej historii', 'meritoros'); ?>
+                                <?php echo esc_html($cs_cta_general_text); ?>
                             <?php else : ?>
-                                <?php esc_html_e('Poznaj historię', 'meritoros'); ?>
+                                <?php echo esc_html($cs_cta_text); ?>
                             <?php endif; ?>
                             <i data-lucide="arrow-right" class="w-4 h-4 transition group-hover/cta:translate-x-0.5"></i>
                         </a>

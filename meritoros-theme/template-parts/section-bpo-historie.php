@@ -1,25 +1,25 @@
 <?php
 $_fp_id = (int) get_option('page_on_front');
-$title  = (get_field('hist_title',    $_fp_id) ?: 'Historie naszych klientów');
-$btn_t  = (get_field('hist_btn_text', $_fp_id) ?: 'Poznaj więcej historii');
+$title  = __( get_field('hist_title',    $_fp_id) ?: 'Historie naszych klientów', 'meritoros' );
+$btn_t  = __( get_field('hist_btn_text', $_fp_id) ?: 'Poznaj więcej historii', 'meritoros' );
 $btn_u  = (get_field('hist_btn_url',  $_fp_id) ?: home_url('/historie-klientow/'));
 
 $slide_defaults = [
     [
         'logo'       => null,
         'logo_alt'   => 'HPC',
-        'industries' => "Geologia inżynierska\nOchrona środowiska",
-        'scope'      => 'Usługi rachunkowe, kadry i płace, wsparcie w procesie audytu',
-        'text'       => 'Po kilku zmianach głównej księgowej spółka potrzebowała szybkiego uporządkowania księgowości i bezpiecznego zamknięcia roku obrotowego.',
+        'industries' => __("Geologia inżynierska\nOchrona środowiska", 'meritoros'),
+        'scope'      => __('Usługi rachunkowe, kadry i płace, wsparcie w procesie audytu', 'meritoros'),
+        'text'       => __('Po kilku zmianach głównej księgowej spółka potrzebowała szybkiego uporządkowania księgowości i bezpiecznego zamknięcia roku obrotowego.', 'meritoros'),
         'image'      => null,
         'video_url'  => '',
     ],
     [
         'logo'       => null,
         'logo_alt'   => 'Printbox',
-        'industries' => "E-commerce\nTechnologia",
-        'scope'      => 'Pełna księgowość, raportowanie zarządcze, wsparcie podczas audytu',
-        'text'       => 'Dynamicznie rosnąca spółka technologiczna potrzebowała partnera, który zapewni rzetelną sprawozdawczość i gotowość do pozyskania inwestora.',
+        'industries' => __("E-commerce\nTechnologia", 'meritoros'),
+        'scope'      => __('Pełna księgowość, raportowanie zarządcze, wsparcie podczas audytu', 'meritoros'),
+        'text'       => __('Dynamicznie rosnąca spółka technologiczna potrzebowała partnera, który zapewni rzetelną sprawozdawczość i gotowość do pozyskania inwestora.', 'meritoros'),
         'image'      => null,
         'video_url'  => '',
     ],

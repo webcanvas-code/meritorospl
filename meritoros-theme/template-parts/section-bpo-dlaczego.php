@@ -5,10 +5,10 @@ $_orig_id = apply_filters('wpml_object_id', $_page_id, get_post_type(), true, ap
 $title = __( mer_field('bpo_dlaczego_title', 'Dlaczego BPO z Meritoros?'), 'meritoros' );
 
 $card_defaults = [
-    ['icon' => 'trending-up',  'title' => 'Efektywność kosztowa',                     'text' => 'Outsourcing biznesowy pozwala na znaczne obniżenie kosztów operacyjnych. Dzięki nowoczesnej technologii i dużej skali obsługiwanych przez nas operacji oszczędności sięgają 20% lub więcej w porównaniu do obsługi procesów za pomocą własnych pracowników.'],
-    ['icon' => 'clock',        'title' => "Uwolnienie czasu\ni usprawnienie procesów", 'text' => 'Przekazując odpowiedzialność za pewne procesy wsparcia, Zarząd i kluczowi menedżerowie przedsiębiorstwa mogą skupić się na rozwoju rynkowym i strategicznym zarządzaniu swoim biznesem.'],
-    ['icon' => 'expand',       'title' => "Elastyczność i skalowanie\noperacji",       'text' => 'Elastyczność i indywidualne podejście pozwalają nam szybko dopasować się do zmieniających się potrzeb klientów i wspomóc ich na ścieżce skalowania swojej organizacji.'],
-    ['icon' => 'shield-check', 'title' => "Bezpieczeństwo\ni compliance",              'text' => 'Działamy zgodnie z normami ISO 9001 i ISO/IEC 27001. Zapewniamy poufność danych, ciągłość obsługi i pełną zgodność z obowiązującymi przepisami prawa.'],
+    ['icon' => 'trending-up',  'title' => __('Efektywność kosztowa', 'meritoros'),                          'text' => __('Outsourcing biznesowy pozwala na znaczne obniżenie kosztów operacyjnych. Dzięki nowoczesnej technologii i dużej skali obsługiwanych przez nas operacji oszczędności sięgają 20% lub więcej w porównaniu do obsługi procesów za pomocą własnych pracowników.', 'meritoros')],
+    ['icon' => 'clock',        'title' => __("Uwolnienie czasu\ni usprawnienie procesów", 'meritoros'),     'text' => __('Przekazując odpowiedzialność za pewne procesy wsparcia, Zarząd i kluczowi menedżerowie przedsiębiorstwa mogą skupić się na rozwoju rynkowym i strategicznym zarządzaniu swoim biznesem.', 'meritoros')],
+    ['icon' => 'expand',       'title' => __("Elastyczność i skalowanie\noperacji", 'meritoros'),            'text' => __('Elastyczność i indywidualne podejście pozwalają nam szybko dopasować się do zmieniających się potrzeb klientów i wspomóc ich na ścieżce skalowania swojej organizacji.', 'meritoros')],
+    ['icon' => 'shield-check', 'title' => __("Bezpieczeństwo\ni compliance", 'meritoros'),                   'text' => __('Działamy zgodnie z normami ISO 9001 i ISO/IEC 27001. Zapewniamy poufność danych, ciągłość obsługi i pełną zgodność z obowiązującymi przepisami prawa.', 'meritoros')],
 ];
 
 $cards = [];

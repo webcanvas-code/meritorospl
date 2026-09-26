@@ -235,7 +235,7 @@ $hk_url  = $hk_page ? get_permalink($hk_page) : home_url('/historie-klientow/');
 
                     <div class="mt-auto rounded-2xl bg-slate-900 p-6 relative overflow-hidden">
                         <div class="absolute -right-8 -top-8 w-32 h-32 bg-[#00d084]/20 blur-2xl rounded-full pointer-events-none"></div>
-                        <span class="text-[#00d084] text-xs font-bold uppercase tracking-widest mb-3 block relative z-10">Skontaktuj się</span>
+                        <span class="text-[#00d084] text-xs font-bold uppercase tracking-widest mb-3 block relative z-10"><?php esc_html_e('Skontaktuj się', 'meritoros'); ?></span>
                         <p class="text-white text-lg font-bold leading-snug mb-5 relative z-10">
                             <?php echo mer_esc($cta_title); ?>
                         </p>
@@ -278,7 +278,7 @@ $hk_url  = $hk_page ? get_permalink($hk_page) : home_url('/historie-klientow/');
                 <div class="rounded-2xl bg-slate-900 p-8 relative overflow-hidden text-center">
                     <div class="absolute -right-8 -top-8 w-40 h-40 bg-[#00d084]/20 blur-2xl rounded-full pointer-events-none"></div>
                     <div class="absolute -left-8 -bottom-8 w-40 h-40 bg-[#00d084]/10 blur-2xl rounded-full pointer-events-none"></div>
-                    <span class="text-[#00d084] text-xs font-bold uppercase tracking-widest mb-3 block relative z-10">Skontaktuj się</span>
+                    <span class="text-[#00d084] text-xs font-bold uppercase tracking-widest mb-3 block relative z-10"><?php esc_html_e('Skontaktuj się', 'meritoros'); ?></span>
                     <p class="text-white text-xl md:text-2xl font-bold leading-snug mb-6 relative z-10">
                         <?php echo mer_esc($cta_title); ?>
                     </p>
