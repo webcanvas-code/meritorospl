@@ -24,7 +24,7 @@ for ($i = 1; $i <= 6; $i++) {
 ?>
 
 <section id="fr-dlaczego" class="py-10 md:py-20 bg-white">
-    <div class="max-w-7xl mx-auto px-6">
+    <div class="max-w-[1400px] mx-auto px-6">
 
         <h2 class="text-pretty text-4xl md:text-5xl font-bold tracking-tight text-slate-900 mb-12">
             <?php echo nl2br(str_replace('Meritoros', '<span class="text-[#00d084]">Meritoros</span>', esc_html($title))); ?>
@@ -49,7 +49,7 @@ for ($i = 1; $i <= 6; $i++) {
                     <i data-lucide="<?php echo esc_attr($card['bg_icon']); ?>" class="w-48 h-48 text-white stroke-[0.5]"></i>
                 </div>
                 <?php endif; ?>
-                <h3 class="text-xl font-bold text-white mb-4 leading-snug">
+                <h3 class="text-lg lg:text-xl font-bold text-white mb-4 leading-snug">
                     <span class="block"><?php echo mer_esc($parts[0]); ?></span>
                     <?php if (!empty($parts[1])) : ?>
                     <span class="block"><?php echo mer_esc($parts[1]); ?></span>
