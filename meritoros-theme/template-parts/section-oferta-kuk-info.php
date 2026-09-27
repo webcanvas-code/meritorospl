@@ -1,6 +1,9 @@
 <?php
-$intro     = mer_field('op_intro', '');
-$team_info = mer_field('op_team_info', '');
+$_op_page_id = get_the_ID();
+$_op_orig_id = apply_filters('wpml_object_id', $_op_page_id, 'page', true, apply_filters('wpml_default_language', null));
+
+$intro     = mer_field('op_intro', '') ?: ($_op_orig_id !== $_op_page_id ? get_field('op_intro', $_op_orig_id) : '');
+$team_info = mer_field('op_team_info', '') ?: ($_op_orig_id !== $_op_page_id ? get_field('op_team_info', $_op_orig_id) : '');
 
 // Obowiązki – do 12 pól ACF; jeśli puste, fallback dla oferty Księgowej z j. ukraińskim
 $duty_fallbacks = [
