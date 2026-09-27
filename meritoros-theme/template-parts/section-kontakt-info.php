@@ -152,7 +152,10 @@ if (empty($offices)) {
             <!-- Map -->
             <div class="w-full flex items-center justify-center">
                 <?php
-                $_onas_map = get_field('onas_mapa_image', get_page_by_path('o-nas'));
+                do_action('wpml_switch_language', apply_filters('wpml_default_language', null));
+                $_onas_pl_page = get_page_by_path('o-nas');
+                do_action('wpml_switch_language', null);
+                $_onas_map = $_onas_pl_page ? get_field('onas_mapa_image', $_onas_pl_page->ID) : null;
                 if (!is_array($_onas_map)) $_onas_map = $map_img;
                 $map_url = is_array($_onas_map) ? esc_url($_onas_map['url']) : esc_url(get_template_directory_uri() . '/images/mapaPL.svg');
                 $map_alt = is_array($_onas_map) ? esc_attr($_onas_map['title'] ?: __('Mapa Polski z oddziałami', 'meritoros')) : esc_attr(__('Mapa Polski z oddziałami', 'meritoros'));
