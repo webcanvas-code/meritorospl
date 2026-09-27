@@ -60,14 +60,14 @@ for ($i = 1; $i <= 6; $i++) {
         <div class="mb-12 max-w-5xl space-y-6">
             <?php if ($intro) : ?>
             <div class="text-lg text-slate-600 leading-relaxed">
-                <?php echo wp_kses_post($intro); ?>
+                <?php echo wp_kses($intro, ['br' => [], 'strong' => [], 'em' => [], 'a' => ['href' => [], 'target' => []]]); ?>
             </div>
             <?php endif; ?>
             <?php if ($team_info) : ?>
             <div>
                 <h3 class="text-base font-semibold text-slate-400 uppercase tracking-wider mb-2"><?php echo mer_esc(__('Informacje o zespole', 'meritoros')); ?></h3>
                 <div class="text-lg text-slate-600 leading-relaxed">
-                    <?php echo wp_kses_post($team_info); ?>
+                    <?php echo wp_kses($team_info, ['br' => [], 'strong' => [], 'em' => [], 'a' => ['href' => [], 'target' => []]]); ?>
                 </div>
             </div>
             <?php endif; ?>
