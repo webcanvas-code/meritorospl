@@ -470,14 +470,6 @@ if (is_admin()) {
 require_once get_template_directory() . '/inc/security.php';
 
 /* ------------------------------------------------------------------
-   WPML: jednorazowy skrypt migracji .po → String Translation
-   Po uruchomieniu: usuń migrate-po-to-wpml.php z serwera
------------------------------------------------------------------- */
-if (file_exists(get_template_directory() . '/migrate-po-to-wpml.php')) {
-    require_once get_template_directory() . '/migrate-po-to-wpml.php';
-}
-
-/* ------------------------------------------------------------------
    Structured Data (JSON-LD)
 ------------------------------------------------------------------ */
 require_once get_template_directory() . '/inc/structured-data.php';
