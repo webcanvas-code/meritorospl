@@ -5,6 +5,12 @@ $_op_orig_id = apply_filters('wpml_object_id', $_op_page_id, 'page', true, apply
 $intro     = mer_field('op_intro', '') ?: ($_op_orig_id !== $_op_page_id ? get_field('op_intro', $_op_orig_id) : '');
 $team_info = mer_field('op_team_info', '') ?: ($_op_orig_id !== $_op_page_id ? get_field('op_team_info', $_op_orig_id) : '');
 
+// ACF new_lines=>'br' stosuje nl2br() przy odczycie. Jezeli wartosc byla juz zapisana
+// z <br> tagami (skopiowana przez create script), nl2br() podwaja je do <br><br><br><br>.
+// Normalizujemy: 3+ kolejne <br> (z opcjonalnymi bialymi znakami) -> max 2 <br>.
+$intro     = $intro     ? preg_replace('/(<br\s*\/?>\s*){3,}/i', '<br><br>', $intro)     : '';
+$team_info = $team_info ? preg_replace('/(<br\s*\/?>\s*){3,}/i', '<br><br>', $team_info) : '';
+
 // Obowiązki – do 12 pól ACF; jeśli puste, fallback dla oferty Księgowej z j. ukraińskim
 $duty_fallbacks = [
     1 => __('Prowadzenie ksiąg rachunkowych i ewidencji podatkowych (PKPB)', 'meritoros'),
