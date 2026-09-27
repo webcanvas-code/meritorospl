@@ -437,7 +437,7 @@
         <custom-field action="translate">onas_mapa_title</custom-field>
         <custom-field action="translate">onas_mapa_text</custom-field>
         <custom-field action="copy">onas_mapa_image</custom-field>
-        <custom-field action="copy">onas_mapa_cities</custom-field>
+        <custom-field action="translate">onas_mapa_cities</custom-field>
 
         <!-- ═══════════════════════════════════════════
              MEDIA
