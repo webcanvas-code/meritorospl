@@ -2,6 +2,12 @@
 $mapa_title = __( mer_field('onas_mapa_title', 'Gdzie działamy'), 'meritoros' );
 $mapa_text  = __( mer_field('onas_mapa_text',  'Posiadamy 7 oddziałów stacjonarnych w miastach Polski oraz oddziały wirtualne, dzięki czemu obsługujemy firmy niezależnie od ich lokalizacji:'), 'meritoros' );
 $mapa_image = get_field('onas_mapa_image');
+if (empty($mapa_image)) {
+    $_onas_orig = (int) apply_filters('wpml_object_id', get_the_ID(), 'page', true, apply_filters('wpml_default_language', null));
+    if ($_onas_orig && $_onas_orig !== get_the_ID()) {
+        $mapa_image = get_field('onas_mapa_image', $_onas_orig);
+    }
+}
 $_mapa_cities_raw = str_replace("\r\n", "\n", mer_field('onas_mapa_cities', "Kraków (siedziba główna oraz 3 oddziały)\nWarszawa\nKatowice\nRzeszów\nWrocław\nŁódź\nBytom\n2 oddziały wirtualne działające w pełni online"));
 $mapa_items = array_filter(array_map(function($item) {
     return __( trim($item), 'meritoros' );
