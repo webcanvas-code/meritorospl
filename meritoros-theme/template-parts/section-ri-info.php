@@ -2,28 +2,51 @@
 $_ri_pl   = get_page_by_path('relacje-inwestorskie');
 $_ri_pid  = $_ri_pl ? (int) apply_filters('wpml_object_id', $_ri_pl->ID, 'page', true) : get_the_ID();
 
-$title = __( (get_field('ri_info_title', $_ri_pid) ?: 'O nas'), 'meritoros' );
+$title = get_field('ri_info_title', $_ri_pid) ?: __('O nas', 'meritoros');
 
-$subs = [
-    ['title' => __( (get_field('ri_sub1_title', $_ri_pid) ?: 'Profil działalności'),       'meritoros' ), 'text' => __(trim(str_replace(["\r\n","\r"],"\n", get_field('ri_sub1_text', $_ri_pid) ?: '')), 'meritoros'), 'list' => false],
-    ['title' => __( (get_field('ri_sub2_title', $_ri_pid) ?: 'Skala działalności'),        'meritoros' ), 'text' => __(trim(str_replace(["\r\n","\r"],"\n", get_field('ri_sub2_text', $_ri_pid) ?: '')), 'meritoros'), 'list' => false],
-    ['title' => __( (get_field('ri_sub3_title', $_ri_pid) ?: 'Zasięg i grupa kapitałowa'), 'meritoros' ), 'text' => __(trim(str_replace(["\r\n","\r"],"\n", get_field('ri_sub3_text', $_ri_pid) ?: '')), 'meritoros'), 'list' => false, 'companies' => array_values(array_filter(array_map(function($c){ return __(trim($c), 'meritoros'); }, preg_split('/\r?\n/', get_field('ri_sub3_companies', $_ri_pid) ?: "Taxaide Sp. z o.o. z siedzibą we Wrocławiu, KRS: 0000811046\nBluematica Sp. z o.o. z siedzibą w Rzeszowie, KRS: 0000994219"))))],
-    ['title' => __( (get_field('ri_sub4_title', $_ri_pid) ?: 'Strategia rozwoju'),         'meritoros' ), 'text' => __(trim(str_replace(["\r\n","\r"],"\n", get_field('ri_sub4_text', $_ri_pid) ?: '')), 'meritoros'), 'list' => false],
+$subs = [];
+$sub_defaults = [
+    ['title' => 'Profil działalności',       'text_field' => 'ri_sub1_text', 'title_field' => 'ri_sub1_title'],
+    ['title' => 'Skala działalności',        'text_field' => 'ri_sub2_text', 'title_field' => 'ri_sub2_title'],
+    ['title' => 'Zasięg i grupa kapitałowa', 'text_field' => 'ri_sub3_text', 'title_field' => 'ri_sub3_title'],
+    ['title' => 'Strategia rozwoju',         'text_field' => 'ri_sub4_text', 'title_field' => 'ri_sub4_title'],
 ];
+foreach ($sub_defaults as $idx => $sd) {
+    $sub = [
+        'title' => get_field($sd['title_field'], $_ri_pid) ?: __($sd['title'], 'meritoros'),
+        'text'  => trim(str_replace("\r\n", "\n", get_field($sd['text_field'], $_ri_pid) ?: '')),
+        'list'  => false,
+    ];
+    if ($idx === 2) {
+        $companies_raw = str_replace("\r\n", "\n", get_field('ri_sub3_companies', $_ri_pid) ?: "Taxaide Sp. z o.o. z siedzibą we Wrocławiu, KRS: 0000811046\nBluematica Sp. z o.o. z siedzibą w Rzeszowie, KRS: 0000994219");
+        $sub['companies'] = array_values(array_filter(array_map('trim', explode("\n", $companies_raw))));
+    }
+    $subs[] = $sub;
+}
 
 $photo     = get_field('ri_info_photo', $_ri_pid);
 $photo_url = is_array($photo) ? esc_url($photo['url']) : 'https://images.unsplash.com/photo-1600880292203-757bb62b4baf?auto=format&fit=crop&q=80&w=900';
 $photo_alt = is_array($photo) ? esc_attr($photo['alt'] ?: 'Meritoros SA') : 'Meritoros SA';
 
-$stats_raw = [
-    get_field('ri_stat_1', $_ri_pid) ?: ['value' => '2004',  'label' => __('Początek działalności', 'meritoros'), 'sublabel' => ''],
-    get_field('ri_stat_2', $_ri_pid) ?: ['value' => '1200+', 'label' => __('Klientów',              'meritoros'), 'sublabel' => ''],
-    get_field('ri_stat_3', $_ri_pid) ?: ['value' => '180+',  'label' => __('Specjalistów',          'meritoros'), 'sublabel' => ''],
-    get_field('ri_stat_4', $_ri_pid) ?: ['value' => '7',     'label' => __('lokalizacji',           'meritoros'), 'sublabel' => __('(ale ciągle rośniemy)', 'meritoros')],
+$stat_defaults = [
+    ['value' => '2004',  'label' => 'Początek działalności', 'sublabel' => ''],
+    ['value' => '1200+', 'label' => 'Klientów',              'sublabel' => ''],
+    ['value' => '180+',  'label' => 'Specjalistów',          'sublabel' => ''],
+    ['value' => '7',     'label' => 'lokalizacji',           'sublabel' => '(ale ciągle rośniemy)'],
 ];
+$stats_raw = [];
+for ($i = 1; $i <= 4; $i++) {
+    $s = get_field("ri_stat_{$i}", $_ri_pid);
+    $d = $stat_defaults[$i - 1];
+    $stats_raw[] = [
+        'value'    => is_array($s) && !empty($s['value'])    ? $s['value']    : $d['value'],
+        'label'    => is_array($s) && !empty($s['label'])    ? $s['label']    : $d['label'],
+        'sublabel' => is_array($s) && !empty($s['sublabel']) ? $s['sublabel'] : $d['sublabel'],
+    ];
+}
 
-$award_title = __(get_field('ri_award_title', $_ri_pid) ?: 'Nagrody i wyróżnienia' , 'meritoros');
-$award_text  = __(get_field('ri_award_text',  $_ri_pid) ?: 'Wyróżnienia są efektem tego, jak rozwijamy Meritoros: konsekwentnie i procesowo. Trzymamy standard, który ma działać w praktyce – codziennie.' , 'meritoros');
+$award_title = get_field('ri_award_title', $_ri_pid) ?: __('Nagrody i wyróżnienia', 'meritoros');
+$award_text  = get_field('ri_award_text',  $_ri_pid) ?: __('Wyróżnienia są efektem tego, jak rozwijamy Meritoros: konsekwentnie i procesowo. Trzymamy standard, który ma działać w praktyce – codziennie.', 'meritoros');
 
 ?>
 
@@ -102,9 +125,9 @@ $award_text  = __(get_field('ri_award_text',  $_ri_pid) ?: 'Wyróżnienia są ef
                     <?php foreach ($stats_raw as $stat) : ?>
                     <div>
                         <div class="text-2xl font-bold text-slate-900"><?php echo mer_esc($stat['value']); ?></div>
-                        <div class="text-xs text-slate-500 leading-tight mt-1"><?php echo mer_esc(__($stat['label'], 'meritoros')); ?></div>
+                        <div class="text-xs text-slate-500 leading-tight mt-1"><?php echo mer_esc($stat['label']); ?></div>
                         <?php if (!empty($stat['sublabel'])) : ?>
-                        <div class="text-xs text-slate-400 leading-tight"><?php echo mer_esc(__($stat['sublabel'], 'meritoros')); ?></div>
+                        <div class="text-xs text-slate-400 leading-tight"><?php echo mer_esc($stat['sublabel']); ?></div>
                         <?php endif; ?>
                     </div>
                     <?php endforeach; ?>
