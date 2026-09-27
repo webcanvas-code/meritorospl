@@ -1112,8 +1112,19 @@ function _mer_register_media_article_fields(): void {
 
 // ACF textarea zapisuje \r\n (CRLF), a WPML String Translation rejestruje stringi
 // z \n (LF). Normalizujemy globalnie, żeby __() mogło matchować stringi.
+// Rekurencyjnie dla pól typu group (zwracają tablicę sub-wartości).
 add_filter('acf/format_value', function ($value) {
-    return is_string($value) ? str_replace("\r\n", "\n", $value) : $value;
+    if (is_string($value)) {
+        return str_replace("\r\n", "\n", $value);
+    }
+    if (is_array($value)) {
+        foreach ($value as $k => $v) {
+            if (is_string($v)) {
+                $value[$k] = str_replace("\r\n", "\n", $v);
+            }
+        }
+    }
+    return $value;
 }, 5);
 
 /**
