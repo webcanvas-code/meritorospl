@@ -15,12 +15,22 @@ $oferty = [];
 for ($i = 1; $i <= 6; $i++) {
     $g = get_field("kar_oferta_{$i}", $_kar_pid);
     if (!is_array($g) || empty($g['title'])) continue;
+
+    $offer_url = $g['url'] ?? '';
+    if ($offer_url) {
+        $page_id = url_to_postid($offer_url);
+        if ($page_id) {
+            $translated_id = apply_filters('wpml_object_id', $page_id, 'page', true);
+            $offer_url = get_permalink($translated_id);
+        }
+    }
+
     $oferty[] = [
         'title'       => $g['title'],
         'salary'      => $g['salary'] ?? '',
         'cat'         => $g['cat']    ?? 'inne',
         'traffit_url' => $g['traffit_url'] ?? '',
-        'url'         => $g['url']         ?? '',
+        'url'         => $offer_url,
     ];
 }
 ?>

@@ -6,7 +6,13 @@ $category = mer_field('op_category', '');
 $bg       = get_field('op_hero_bg');
 $bg_url   = is_array($bg) ? esc_url($bg['url']) : 'https://images.unsplash.com/photo-1521737711867-e3b97375f902?w=1600&q=80';
 
-$kariera_url = home_url('/kariera/');
+$_kariera_pl = get_page_by_path('kariera');
+if ($_kariera_pl) {
+    $_kariera_id = apply_filters('wpml_object_id', $_kariera_pl->ID, 'page', true);
+    $kariera_url = get_permalink($_kariera_id);
+} else {
+    $kariera_url = home_url('/kariera/');
+}
 ?>
 
 <section id="oferta-kuk-hero" class="relative overflow-hidden" style="min-height:75vh;">
