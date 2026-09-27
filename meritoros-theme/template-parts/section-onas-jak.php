@@ -15,12 +15,17 @@ $jak_items = [];
 for ($i = 1; $i <= 4; $i++) {
     $item = get_field("onas_jak_{$i}");
     if (!empty($item['title'])) {
+        $t = str_replace("\r\n", "\n", $item['title']);
+        $x = str_replace("\r\n", "\n", $item['text'] ?? '');
+        $_tr = __($t, 'meritoros');
+        echo "<!-- DEBUG jak{$i}: src=acf, has_crlf=" . (strpos($item['title'], "\r\n") !== false ? 'YES' : 'NO') . ", title_hex=" . bin2hex(mb_substr($t, 0, 30)) . ", same=" . ($t === $_tr ? 'YES' : 'NO') . " -->\n";
         $jak_items[] = [
             'icon'  => !empty($item['icon'])  ? $item['icon']  : $jak_defaults[$i - 1]['icon'],
-            'title' => __($item['title'], 'meritoros'),
-            'text'  => !empty($item['text'])  ? __($item['text'], 'meritoros')  : '',
+            'title' => $_tr,
+            'text'  => !empty($x)  ? __($x, 'meritoros')  : '',
         ];
     } else {
+        echo "<!-- DEBUG jak{$i}: src=default -->\n";
         $jak_items[] = $jak_defaults[$i - 1];
     }
 }

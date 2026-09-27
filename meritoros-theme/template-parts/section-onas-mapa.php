@@ -1,8 +1,10 @@
 <?php
+$_mapa_cities_raw = mer_field('onas_mapa_cities', "Kraków (siedziba główna oraz 3 oddziały)\nWarszawa\nKatowice\nRzeszów\nWrocław\nŁódź\nBytom\n2 oddziały wirtualne działające w pełni online");
+echo "<!-- DEBUG mapa: cities_has_crlf=" . (strpos($_mapa_cities_raw, "\r\n") !== false ? 'YES' : 'NO') . ", cities_hex=" . bin2hex(mb_substr($_mapa_cities_raw, 0, 40)) . " -->\n";
 $mapa_title = __( mer_field('onas_mapa_title', 'Gdzie działamy'), 'meritoros' );
 $mapa_text  = __( mer_field('onas_mapa_text',  'Posiadamy 7 oddziałów stacjonarnych w miastach Polski oraz oddziały wirtualne, dzięki czemu obsługujemy firmy niezależnie od ich lokalizacji:'), 'meritoros' );
 $mapa_image = get_field('onas_mapa_image');
-$mapa_raw   = __( mer_field('onas_mapa_cities', "Kraków (siedziba główna oraz 3 oddziały)\nWarszawa\nKatowice\nRzeszów\nWrocław\nŁódź\nBytom\n2 oddziały wirtualne działające w pełni online"), 'meritoros' );
+$mapa_raw   = __( str_replace("\r\n", "\n", $_mapa_cities_raw), 'meritoros' );
 $mapa_items = array_filter(array_map('trim', explode("\n", $mapa_raw)));
 
 // Map image source
