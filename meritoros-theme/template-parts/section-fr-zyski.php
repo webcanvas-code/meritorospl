@@ -14,8 +14,8 @@ $cards = [];
 for ($i = 1; $i <= 4; $i++) {
     $g = get_field("fr_zysk_{$i}");
     $d = $card_defaults[$i - 1];
-    $raw_title = str_replace("\r\n", "\n", trim(is_array($g) && !empty($g['title']) ? $g['title'] : $d['title']));
-    $raw_text  = str_replace("\r\n", "\n", trim(is_array($g) && !empty($g['text'])  ? $g['text']  : $d['text']));
+    $raw_title = trim(is_array($g) && !empty($g['title']) ? $g['title'] : $d['title']);
+    $raw_text  = trim(is_array($g) && !empty($g['text'])  ? $g['text']  : $d['text']);
     $cards[] = [
         'icon'  => is_array($g) && !empty($g['icon'])  ? $g['icon']  : $d['icon'],
         'title' => __( $raw_title, 'meritoros' ),

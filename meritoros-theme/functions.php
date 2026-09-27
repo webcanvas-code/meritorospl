@@ -1110,6 +1110,12 @@ function _mer_register_media_article_fields(): void {
    Helpers
 ------------------------------------------------------------------ */
 
+// ACF textarea zapisuje \r\n (CRLF), a WPML String Translation rejestruje stringi
+// z \n (LF). Normalizujemy globalnie, żeby __() mogło matchować stringi.
+add_filter('acf/format_value', function ($value) {
+    return is_string($value) ? str_replace("\r\n", "\n", $value) : $value;
+}, 5);
+
 /**
  * Escape text for HTML output, converting newlines to <br> tags.
  * Use instead of esc_html() for any content that may contain intentional line breaks.

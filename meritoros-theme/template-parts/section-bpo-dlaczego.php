@@ -18,7 +18,6 @@ for ($i = 1; $i <= 8; $i++) {
     $raw_title = is_array($g) && !empty($g['title']) ? $g['title'] : ($d['title'] ?? '');
     $raw_text  = is_array($g) && !empty($g['text'])  ? $g['text']  : ($d['text'] ?? '');
     if (empty($raw_title)) continue;
-    $raw_title = str_replace(["\r\n", "\r"], "\n", $raw_title);
     $cards[] = [
         'icon'  => is_array($g) && !empty($g['icon'])  ? $g['icon']  : ($d['icon'] ?? 'circle'),
         'title' => __( $raw_title, 'meritoros' ),
