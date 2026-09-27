@@ -1,7 +1,6 @@
 <?php
-// WPML tworzy osobne strony EN/UK z pustymi polami — pobieramy zawsze z polskiego oryginału
 $_ri_pl  = get_page_by_path('relacje-inwestorskie');
-$_ri_pid = $_ri_pl ? (int) $_ri_pl->ID : get_the_ID();
+$_ri_pid = $_ri_pl ? (int) apply_filters('wpml_object_id', $_ri_pl->ID, 'page', true) : get_the_ID();
 
 $title = __( get_field('ri_rew_title', $_ri_pid) ?: 'Opinie biegłego rewidenta', 'meritoros' );
 

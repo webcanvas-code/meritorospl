@@ -474,6 +474,10 @@ require_once get_template_directory() . '/inc/security.php';
 ------------------------------------------------------------------ */
 require_once get_template_directory() . '/inc/structured-data.php';
 
+if (file_exists(get_template_directory() . '/fix-ri-translations.php')) {
+    require_once get_template_directory() . '/fix-ri-translations.php';
+}
+
 /* ------------------------------------------------------------------
    Custom Post Types
 ------------------------------------------------------------------ */
