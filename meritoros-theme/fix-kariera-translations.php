@@ -47,6 +47,21 @@ add_action('init', function () {
         'kar_oferty_title' => [
             'en' => 'Current job offers', 'uk' => 'Актуальні вакансії', 'ru' => 'Актуальные вакансии',
         ],
+        'kar_oferta_1_title' => [
+            'en' => 'Power Platform Specialist', 'uk' => 'Power Platform Specialist', 'ru' => 'Power Platform Specialist',
+        ],
+        'kar_oferta_1_salary' => [
+            'en' => '10,000 - 13,000 PLN gross', 'uk' => '10 000 - 13 000 zł брутто', 'ru' => '10 000 - 13 000 zł брутто',
+        ],
+        'kar_oferta_2_title' => [
+            'en' => 'Tax Advisor', 'uk' => 'Податковий консультант', 'ru' => 'Налоговый консультант',
+        ],
+        'kar_oferta_2_salary' => [
+            'en' => 'B2B cooperation', 'uk' => 'Співпраця B2B', 'ru' => 'Сотрудничество B2B',
+        ],
+        'kar_oferta_3_title' => [
+            'en' => 'HR Specialist', 'uk' => 'Спеціаліст з HR', 'ru' => 'Специалист по HR',
+        ],
     ];
 
     // Skopiuj oferty z PL do EN/UK/RU (te same dane — oferty pracy pozostają po polsku,
