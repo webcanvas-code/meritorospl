@@ -47,7 +47,7 @@ add_action('init', function () {
         }
 
         $entries = parse_po_file($file);
-        echo "Parsed {$file}: " . count($entries) . " entries\n";
+        echo "Parsed .po {$lang}: " . count($entries) . " entries\n";
 
         foreach ($entries as $msgid => $msgstr) {
             if ($msgid === '' || $msgstr === '') continue;
@@ -56,6 +56,37 @@ add_action('init', function () {
             }
             $all_translations[$msgid][$lang] = $msgstr;
         }
+    }
+
+    // Parsuj pliki languages/*.php (zawierają dodatkowe warianty kluczy, np. bez \n)
+    $php_files = [
+        'en' => $theme_dir . '/languages/en.php',
+        'uk' => $theme_dir . '/languages/uk.php',
+        'ru' => $theme_dir . '/languages/ru.php',
+    ];
+
+    foreach ($php_files as $lang => $file) {
+        if (!file_exists($file)) continue;
+        $raw = include $file;
+        if (!is_array($raw)) continue;
+
+        $php_count = 0;
+        foreach ($raw as $pl_key => $translation) {
+            if (empty($pl_key) || empty($translation)) continue;
+            // Normalizuj CRLF
+            $pl_key     = str_replace("\r\n", "\n", $pl_key);
+            $translation = str_replace("\r\n", "\n", $translation);
+
+            if (!isset($all_translations[$pl_key])) {
+                $all_translations[$pl_key] = [];
+            }
+            // Nie nadpisuj istniejących tłumaczeń z .po
+            if (empty($all_translations[$pl_key][$lang])) {
+                $all_translations[$pl_key][$lang] = $translation;
+                $php_count++;
+            }
+        }
+        echo "Parsed .php {$lang}: {$php_count} new entries (not in .po)\n";
     }
 
     echo "\n=== Unikalne stringi PL: " . count($all_translations) . " ===\n\n";
