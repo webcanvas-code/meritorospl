@@ -474,10 +474,6 @@ require_once get_template_directory() . '/inc/security.php';
 ------------------------------------------------------------------ */
 require_once get_template_directory() . '/inc/structured-data.php';
 
-if (file_exists(get_template_directory() . '/fix-kupimy-btn.php')) {
-    require_once get_template_directory() . '/fix-kupimy-btn.php';
-}
-
 /* ------------------------------------------------------------------
    Custom Post Types
 ------------------------------------------------------------------ */
