@@ -474,14 +474,6 @@ require_once get_template_directory() . '/inc/security.php';
 ------------------------------------------------------------------ */
 require_once get_template_directory() . '/inc/structured-data.php';
 
-// Jednorazowe skrypty tłumaczeń — usuń po uruchomieniu
-if (file_exists(get_template_directory() . '/fix-onas-translations.php')) {
-    require_once get_template_directory() . '/fix-onas-translations.php';
-}
-if (file_exists(get_template_directory() . '/fix-kupimy-translations.php')) {
-    require_once get_template_directory() . '/fix-kupimy-translations.php';
-}
-
 /* ------------------------------------------------------------------
    Custom Post Types
 ------------------------------------------------------------------ */
