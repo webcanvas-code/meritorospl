@@ -1,8 +1,7 @@
 <?php
-// WPML: zawsze czytamy z polskiego oryginału
-$_kar_pid = (int) apply_filters('wpml_object_id', get_the_ID(), 'page', true, 'pl') ?: get_the_ID();
+$_kar_pid = get_the_ID();
 
-$title = __( get_field('kar_oferty_title', $_kar_pid) ?: 'Aktualne oferty', 'meritoros' );
+$title = get_field('kar_oferty_title', $_kar_pid) ?: __('Aktualne oferty', 'meritoros');
 
 $cat_labels = [
     'ksiegowosc' => __('Księgowość', 'meritoros'),
@@ -17,7 +16,7 @@ for ($i = 1; $i <= 6; $i++) {
     $g = get_field("kar_oferta_{$i}", $_kar_pid);
     if (!is_array($g) || empty($g['title'])) continue;
     $oferty[] = [
-        'title'       => __($g['title'], 'meritoros'),
+        'title'       => $g['title'],
         'salary'      => $g['salary'] ?? '',
         'cat'         => $g['cat']    ?? 'inne',
         'traffit_url' => $g['traffit_url'] ?? '',

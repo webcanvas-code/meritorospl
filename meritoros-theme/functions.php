@@ -477,6 +477,9 @@ require_once get_template_directory() . '/inc/structured-data.php';
 if (file_exists(get_template_directory() . '/fix-ri-translations.php')) {
     require_once get_template_directory() . '/fix-ri-translations.php';
 }
+if (file_exists(get_template_directory() . '/fix-kariera-translations.php')) {
+    require_once get_template_directory() . '/fix-kariera-translations.php';
+}
 
 /* ------------------------------------------------------------------
    Custom Post Types
