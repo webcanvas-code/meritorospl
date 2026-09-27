@@ -8504,3 +8504,21 @@ msgstr "We build orderly processes and a good atmosphere.\n"
 
 msgid "Aktualne oferty pracy"
 msgstr "Current job offers"
+
+msgid "Zakres obowiązków"
+msgstr "Scope of responsibilities"
+
+msgid "Wymagania"
+msgstr "Requirements"
+
+msgid "Mile widziane"
+msgstr "Nice to have"
+
+msgid "Nasze środowisko technologiczne"
+msgstr "Our technology environment"
+
+msgid "Informacje o zespole"
+msgstr "Team information"
+
+msgid "Oferujemy"
+msgstr "We offer"

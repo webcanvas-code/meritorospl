@@ -8489,3 +8489,21 @@ msgstr "Ми будуємо впорядковані процеси та гар�
 
 msgid "Aktualne oferty pracy"
 msgstr "Актуальні вакансії"
+
+msgid "Zakres obowiązków"
+msgstr "Обов’язки"
+
+msgid "Wymagania"
+msgstr "Вимоги"
+
+msgid "Mile widziane"
+msgstr "Буде перевагою"
+
+msgid "Nasze środowisko technologiczne"
+msgstr "Наше технологічне середовище"
+
+msgid "Informacje o zespole"
+msgstr "Інформація про команду"
+
+msgid "Oferujemy"
+msgstr "Пропонуємо"

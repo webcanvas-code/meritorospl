@@ -8489,3 +8489,21 @@ msgstr "Мы строим упорядоченные процессы и хор�
 
 msgid "Aktualne oferty pracy"
 msgstr "Актуальные вакансии"
+
+msgid "Zakres obowiązków"
+msgstr "Обязанности"
+
+msgid "Wymagania"
+msgstr "Требования"
+
+msgid "Mile widziane"
+msgstr "Будет плюсом"
+
+msgid "Nasze środowisko technologiczne"
+msgstr "Наша технологическая среда"
+
+msgid "Informacje o zespole"
+msgstr "Информация о команде"
+
+msgid "Oferujemy"
+msgstr "Предлагаем"
