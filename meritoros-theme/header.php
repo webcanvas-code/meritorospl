@@ -18,7 +18,20 @@
 <?php
 $_fp_id       = (int) get_option('page_on_front');
 $nav_cta_text = (get_field('nav_cta_text', $_fp_id) ?: __('Skontaktuj się', 'meritoros'));
-$nav_cta_url  = (get_field('nav_cta_url',  $_fp_id) ?: '#kontakt');
+$_nav_cta_raw = (get_field('nav_cta_url',  $_fp_id) ?: '#kontakt');
+
+// Przetłumacz URL strony kontakt na aktualny język WPML
+$nav_cta_url = $_nav_cta_raw;
+if ($_nav_cta_raw && $_nav_cta_raw[0] === '/' && has_filter('wpml_object_id')) {
+    $_default_lang = apply_filters('wpml_default_language', null);
+    do_action('wpml_switch_language', $_default_lang);
+    $_cta_page = get_page_by_path(trim($_nav_cta_raw, '/'));
+    do_action('wpml_switch_language', null);
+    if ($_cta_page) {
+        $_cta_translated = (int) apply_filters('wpml_object_id', $_cta_page->ID, 'page', true);
+        $nav_cta_url = get_permalink($_cta_translated) ?: $_nav_cta_raw;
+    }
+}
 
 $_panel_label = __('Panel klienta', 'meritoros');
 

@@ -5,7 +5,18 @@
  */
 get_header();
 
-$nav_cta_url = get_field('nav_cta_url', (int) get_option('page_on_front')) ?: home_url('/kontakt/');
+$_404_fp_id  = (int) get_option('page_on_front');
+$_404_raw    = get_field('nav_cta_url', $_404_fp_id) ?: '/kontakt/';
+$nav_cta_url = $_404_raw;
+if ($_404_raw && $_404_raw[0] === '/' && has_filter('wpml_object_id')) {
+    do_action('wpml_switch_language', apply_filters('wpml_default_language', null));
+    $_404_page = get_page_by_path(trim($_404_raw, '/'));
+    do_action('wpml_switch_language', null);
+    if ($_404_page) {
+        $_404_tr = (int) apply_filters('wpml_object_id', $_404_page->ID, 'page', true);
+        $nav_cta_url = get_permalink($_404_tr) ?: $_404_raw;
+    }
+}
 ?>
 
 <main class="min-h-[70vh] flex items-center justify-center px-6 py-24">
