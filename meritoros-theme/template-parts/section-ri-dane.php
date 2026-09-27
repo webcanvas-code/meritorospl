@@ -53,16 +53,16 @@ if (!empty($_ri_data['years']) && !empty($_ri_data['rows'])) {
     }
     if (empty($rows)) {
         $rows = [
-            ['label' => 'Przychody ze sprzedaży',           'cells' => []],
-            ['label' => 'Zysk brutto ze sprzedaży',         'cells' => []],
-            ['label' => 'Zysk z działalności operacyjnej',  'cells' => []],
-            ['label' => 'EBITDA',                            'cells' => []],
-            ['label' => 'Zysk netto',                        'cells' => []],
-            ['label' => 'Aktywa trwałe',                     'cells' => []],
-            ['label' => 'Aktywa obrotowe',                   'cells' => []],
-            ['label' => 'Aktywa razem',                      'cells' => []],
-            ['label' => 'Kapitał własny',                    'cells' => []],
-            ['label' => 'Zobowiązania razem',                'cells' => []],
+            ['label' => __('Przychody ze sprzedaży', 'meritoros'),           'cells' => []],
+            ['label' => __('Zysk brutto ze sprzedaży', 'meritoros'),         'cells' => []],
+            ['label' => __('Zysk z działalności operacyjnej', 'meritoros'),  'cells' => []],
+            ['label' => 'EBITDA',                                            'cells' => []],
+            ['label' => __('Zysk netto', 'meritoros'),                       'cells' => []],
+            ['label' => __('Aktywa trwałe', 'meritoros'),                    'cells' => []],
+            ['label' => __('Aktywa obrotowe', 'meritoros'),                  'cells' => []],
+            ['label' => __('Aktywa razem', 'meritoros'),                     'cells' => []],
+            ['label' => __('Kapitał własny', 'meritoros'),                   'cells' => []],
+            ['label' => __('Zobowiązania razem', 'meritoros'),               'cells' => []],
         ];
     }
 }

@@ -9,7 +9,7 @@ $btn_url      = mer_field('uk_ks_btn_url',      home_url('/kontakt/'));
 $image        = get_field('uk_ks_image');
 
 $img_url = is_array($image) ? esc_url($image['url']) : 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&q=80&w=900';
-$img_alt = is_array($image) ? esc_attr($image['alt'] ?: 'Twoja księgowość') : 'Twoja księgowość';
+$img_alt = is_array($image) ? esc_attr($image['alt'] ?: __('Twoja księgowość', 'meritoros')) : esc_attr(__('Twoja księgowość', 'meritoros'));
 ?>
 
 <section id="uk-ksiegowosc" class="py-10 md:py-20 bg-white relative">

@@ -4,7 +4,7 @@ $text  = __( mer_field('fr_obs_text',  'Prowadzimy księgowość fundacji rodzin
 $image = get_field('fr_obs_image');
 
 $img_url = is_array($image) ? esc_url($image['url']) : 'https://images.unsplash.com/photo-1600880292203-757bb62b4baf?auto=format&fit=crop&q=80&w=900';
-$img_alt = is_array($image) ? esc_attr($image['alt'] ?: 'Obsługa księgowa fundacji rodzinnej') : 'Obsługa księgowa fundacji rodzinnej';
+$img_alt = is_array($image) ? esc_attr($image['alt'] ?: __('Obsługa księgowa fundacji rodzinnej', 'meritoros')) : esc_attr(__('Obsługa księgowa fundacji rodzinnej', 'meritoros'));
 ?>
 
 <section id="fr-obsluga" class="py-10 md:py-20 bg-white overflow-hidden relative">

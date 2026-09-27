@@ -19,13 +19,13 @@ $thumb_url = '';
 $thumb_alt = '';
 if ($yt_id) {
     $thumb_url = 'https://img.youtube.com/vi/' . $yt_id . '/maxresdefault.jpg';
-    $thumb_alt = esc_attr(mer_field('hk_wsp_title_pre', 'Historia klienta Meritoros') . ' ' . mer_field('hk_wsp_title_green', '') . ' — wideo');
+    $thumb_alt = esc_attr($title_pre . ' ' . $title_green . ' — ' . __('wideo', 'meritoros'));
 } elseif (is_array($thumbnail) && !empty($thumbnail['url'])) {
     $thumb_url = esc_url($thumbnail['url']);
-    $thumb_alt = esc_attr($thumbnail['alt'] ?: mer_field('hk_wsp_title_pre', 'Historia klienta Meritoros') . ' ' . mer_field('hk_wsp_title_green', ''));
+    $thumb_alt = esc_attr($thumbnail['alt'] ?: $title_pre . ' ' . $title_green);
 } else {
     $thumb_url = 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=900&q=80';
-    $thumb_alt = esc_attr('Historia klienta Meritoros — wideo');
+    $thumb_alt = esc_attr($title_pre . ' ' . $title_green . ' — ' . __('wideo', 'meritoros'));
 }
 
 if (is_array($video_file) && !empty($video_file['url'])) {

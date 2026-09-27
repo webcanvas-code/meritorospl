@@ -9,7 +9,7 @@ $btn_url      = mer_field('kp_obs_btn_url',     '#kalkulator');
 $image        = get_field('kp_obs_image');
 
 $img_url = is_array($image) ? esc_url($image['url']) : 'https://images.unsplash.com/photo-1521737711867-e3b97375f902?auto=format&fit=crop&q=80&w=900';
-$img_alt = is_array($image) ? esc_attr($image['alt'] ?: 'Obsługa kadrowo-płacowa') : 'Obsługa kadrowo-płacowa';
+$img_alt = is_array($image) ? esc_attr($image['alt'] ?: __('Obsługa kadrowo-płacowa', 'meritoros')) : esc_attr(__('Obsługa kadrowo-płacowa', 'meritoros'));
 ?>
 
 <section id="kp-obsluga" class="py-10 md:py-20 bg-white relative">

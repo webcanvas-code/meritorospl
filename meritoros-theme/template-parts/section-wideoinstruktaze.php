@@ -27,7 +27,7 @@ for ($i = 1; $i <= 10; $i++) {
     }
 
     $cards[] = [
-        'title' => $t ?: "Film {$i}",
+        'title' => $t ?: sprintf(__('Film %d', 'meritoros'), $i),
         'embed' => $yt ? "https://www.youtube.com/embed/{$yt}?autoplay=1&rel=0" : $u,
         'thumb' => $yt ? "https://img.youtube.com/vi/{$yt}/maxresdefault.jpg"   : '',
     ];

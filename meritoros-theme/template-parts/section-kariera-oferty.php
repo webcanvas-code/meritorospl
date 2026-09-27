@@ -12,14 +12,12 @@ $cat_labels = [
     'praktyki'   => __('Praktyki i staże', 'meritoros'),
 ];
 
-$_lang  = apply_filters('wpml_current_language', null) ?: 'pl';
 $oferty = [];
 for ($i = 1; $i <= 6; $i++) {
     $g = get_field("kar_oferta_{$i}", $_kar_pid);
     if (!is_array($g) || empty($g['title'])) continue;
-    $title_lang = ($_lang !== 'pl' && !empty($g["title_{$_lang}"])) ? $g["title_{$_lang}"] : $g['title'];
     $oferty[] = [
-        'title'       => $title_lang,
+        'title'       => __($g['title'], 'meritoros'),
         'salary'      => $g['salary'] ?? '',
         'cat'         => $g['cat']    ?? 'inne',
         'traffit_url' => $g['traffit_url'] ?? '',

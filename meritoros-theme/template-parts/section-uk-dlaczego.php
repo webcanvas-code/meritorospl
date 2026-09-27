@@ -19,8 +19,8 @@ for ($i = 1; $i <= 8; $i++) {
     if (empty($title)) continue;
     $cards[] = [
         'icon'        => is_array($g) && !empty($g['icon'])  ? $g['icon']  : ($d['icon'] ?? 'circle'),
-        'title'       => $title,
-        'text'        => is_array($g) && !empty($g['text'])  ? $g['text']  : ($d['text'] ?? ''),
+        'title'       => __( $title, 'meritoros' ),
+        'text'        => __( is_array($g) && !empty($g['text'])  ? $g['text']  : ($d['text'] ?? ''), 'meritoros' ),
         'highlighted' => is_array($g) && isset($g['highlighted']) ? (bool)$g['highlighted'] : ($d['highlighted'] ?? false),
     ];
 }

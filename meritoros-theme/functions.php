@@ -17,7 +17,7 @@ function meritoros_setup(): void {
     add_theme_support('html5', ['search-form', 'comment-form', 'gallery', 'caption', 'script', 'style']);
     add_theme_support('custom-logo');
 
-    load_theme_textdomain('meritoros', get_template_directory() . '/languages');
+    // Tłumaczenia obsługuje WPML String Translation (nie .po/.mo)
 
     register_nav_menus([
         'primary' => __('Menu główne', 'meritoros'),
@@ -470,16 +470,11 @@ if (is_admin()) {
 require_once get_template_directory() . '/inc/security.php';
 
 /* ------------------------------------------------------------------
-   WPML Import (jednorazowe skrypty — usunąć po imporcie)
+   WPML: jednorazowy skrypt migracji .po → String Translation
+   Po uruchomieniu: usuń migrate-po-to-wpml.php z serwera
 ------------------------------------------------------------------ */
-if (file_exists(get_template_directory() . '/import-wpml-strings.php')) {
-    require_once get_template_directory() . '/import-wpml-strings.php';
-}
-if (file_exists(get_template_directory() . '/import-wpml-pages.php')) {
-    require_once get_template_directory() . '/import-wpml-pages.php';
-}
-if (file_exists(get_template_directory() . '/import-wpml-footer-header.php')) {
-    require_once get_template_directory() . '/import-wpml-footer-header.php';
+if (file_exists(get_template_directory() . '/migrate-po-to-wpml.php')) {
+    require_once get_template_directory() . '/migrate-po-to-wpml.php';
 }
 
 /* ------------------------------------------------------------------

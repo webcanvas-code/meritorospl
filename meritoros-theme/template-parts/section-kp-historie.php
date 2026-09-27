@@ -17,8 +17,8 @@ function kp_video_thumbnail(string $url): string {
 }
 
 $_fp_id   = (int) get_option('page_on_front');
-$title    = (get_field('hist_title',    $_fp_id) ?: 'Historie naszych klientów');
-$btn_text = (get_field('hist_btn_text', $_fp_id) ?: 'Poznaj więcej historii');
+$title    = __( get_field('hist_title',    $_fp_id) ?: 'Historie naszych klientów', 'meritoros' );
+$btn_text = __( get_field('hist_btn_text', $_fp_id) ?: 'Poznaj więcej historii', 'meritoros' );
 $btn_url  = (get_field('hist_btn_url',  $_fp_id) ?: home_url('/historie-klientow/'));
 
 $slide_defaults = [
@@ -44,9 +44,9 @@ for ($i = 1; $i <= 2; $i++) {
     $d = $slide_defaults[$i];
 
     $logo           = is_array($g) && !empty($g['logo'])       ? $g['logo']       : null;
-    $industries_raw = is_array($g) && !empty($g['industries']) ? $g['industries'] : $d['industries'];
-    $scope          = is_array($g) && !empty($g['scope'])      ? $g['scope']      : $d['scope'];
-    $desc           = is_array($g) && !empty($g['desc'])       ? $g['desc']       : $d['desc'];
+    $industries_raw = __( is_array($g) && !empty($g['industries']) ? $g['industries'] : $d['industries'], 'meritoros' );
+    $scope          = __( is_array($g) && !empty($g['scope'])      ? $g['scope']      : $d['scope'], 'meritoros' );
+    $desc           = __( is_array($g) && !empty($g['desc'])       ? $g['desc']       : $d['desc'], 'meritoros' );
     $image          = is_array($g) && !empty($g['image'])      ? $g['image']      : null;
     $video_file     = is_array($g) && !empty($g['video_file']) ? $g['video_file'] : null;
     $video_url      = is_array($g) && !empty($g['video_url'])  ? $g['video_url']  : '';

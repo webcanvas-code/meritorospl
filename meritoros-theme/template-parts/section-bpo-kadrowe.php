@@ -37,7 +37,7 @@ $items = array_values(array_filter(array_map('trim', preg_split('/(\r?\n){2,}/',
                         <div class="w-8 h-8 rounded-full border border-emerald-200 flex items-center justify-center shrink-0 md:mb-4">
                             <i data-lucide="check" stroke-width="2" class="w-4 h-4 text-[#00d084]"></i>
                         </div>
-                        <h3 class="text-sm md:text-base font-bold text-slate-900 leading-snug"><?php echo mer_esc($item); ?></h3>
+                        <h3 class="text-sm md:text-base font-bold text-slate-900 leading-snug"><?php echo mer_esc(__($item, 'meritoros')); ?></h3>
                     </div>
                 <?php endforeach; ?>
             </div>

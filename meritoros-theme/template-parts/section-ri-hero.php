@@ -7,7 +7,7 @@ $text     = __( get_field('ri_hero_text',     $_ri_pid) ?: 'Poniżej udostępnia
 $image    = get_field('ri_hero_image', $_ri_pid);
 
 $img_url = is_array($image) ? esc_url($image['url']) : 'https://images.unsplash.com/photo-1521791136064-7986c2920216?auto=format&fit=crop&q=80&w=1600';
-$img_alt = is_array($image) ? esc_attr($image['alt'] ?: 'Relacje inwestorskie') : 'Relacje inwestorskie';
+$img_alt = is_array($image) ? esc_attr($image['alt'] ?: __('Relacje inwestorskie', 'meritoros')) : esc_attr(__('Relacje inwestorskie', 'meritoros'));
 ?>
 
 <section id="ri-hero" class="relative overflow-hidden pt-36 pb-16">
