@@ -3,9 +3,9 @@ defined('ABSPATH') || exit;
 
 $heading  = __( mer_field('kupimy_hero_heading',  'Myślisz o sprzedaży swojego biura rachunkowego?'), 'meritoros' );
 $subtitle = __( mer_field('kupimy_hero_subtitle', 'Oferujemy dwa modele współpracy: całkowitą sprzedaż biura rachunkowego albo partnerstwo kapitałowe z zachowaniem operacyjnej autonomii.'), 'meritoros' );
-$btn1_text = __( mer_field('kupimy_hero_btn1_text', 'Porozmawiajmy'), 'meritoros' );
+$btn1_text = mer_field('kupimy_hero_btn1_text', __('Porozmawiajmy', 'meritoros'));
 $btn1_url  = mer_field('kupimy_hero_btn1_url',  '#porozmawiajmy');
-$btn2_text = __( mer_field('kupimy_hero_btn2_text', 'Poznaj modele'), 'meritoros' );
+$btn2_text = mer_field('kupimy_hero_btn2_text', __('Poznaj modele', 'meritoros'));
 $btn2_url  = mer_field('kupimy_hero_btn2_url',  '#kupimy-modele');
 $intro    = __( mer_field('kupimy_hero_intro',    'Właściciele biur rachunkowych zgłaszają się do nas z różnymi potrzebami. Jedni chcą całkowicie wyjść z biznesu i sprzedać firmę, inni szukają partnera, który pomoże im dalej rozwijać biuro. W Meritoros rozmawiamy o obu scenariuszach.'), 'meritoros' );
 
