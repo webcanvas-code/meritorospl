@@ -28,7 +28,7 @@ for ($i = 1; $i <= 6; $i++) {
     $oferty[] = [
         'title'       => $g['title'],
         'salary'      => $g['salary'] ?? '',
-        'cat'         => $g['cat']    ?? 'inne',
+        'cat'         => strtolower(trim($g['cat'] ?? 'inne')),
         'traffit_url' => $g['traffit_url'] ?? '',
         'url'         => $offer_url,
     ];
