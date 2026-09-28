@@ -100,7 +100,7 @@ acf_add_local_field_group([
         ],
         [
             'key'           => 'field_mer_hero_headline',
-            'label'         => 'Nagłówek główny',
+            'label'         => 'Nagłówek główny (H1)',
             'name'          => 'hero_headline',
             'type'          => 'textarea',
             'rows'          => 3,
@@ -202,7 +202,7 @@ acf_add_local_field_group([
         ],
         [
             'key'           => 'field_mer_val_title',
-            'label'         => 'Tytuł sekcji',
+            'label'         => 'Tytuł sekcji (H2)',
             'name'          => 'values_title',
             'type'          => 'textarea',
             'rows'          => 2,
@@ -218,7 +218,7 @@ acf_add_local_field_group([
         ],
         [
             'key'           => 'field_mer_val_c1_title',
-            'label'         => 'Karta 1 — Tytuł',
+            'label'         => 'Karta 1 — Tytuł (H3)',
             'name'          => 'val_c1_title',
             'type'          => 'textarea',
             'rows'          => 2,
@@ -258,7 +258,7 @@ acf_add_local_field_group([
         ],
         [
             'key'           => 'field_mer_val_c3_title',
-            'label'         => 'Karta 3 — Tytuł',
+            'label'         => 'Karta 3 — Tytuł (H3)',
             'name'          => 'val_c3_title',
             'type'          => 'textarea',
             'rows'          => 2,
@@ -281,7 +281,7 @@ acf_add_local_field_group([
         ],
         [
             'key'           => 'field_mer_val_c4_title',
-            'label'         => 'Karta 4 — Tytuł',
+            'label'         => 'Karta 4 — Tytuł (H3)',
             'name'          => 'val_c4_title',
             'type'          => 'textarea',
             'rows'          => 2,
@@ -297,7 +297,7 @@ acf_add_local_field_group([
         // Karta 5 — nagrody
         [
             'key'           => 'field_mer_val_c5_title',
-            'label'         => 'Karta 5 — Tytuł',
+            'label'         => 'Karta 5 — Tytuł (H3)',
             'name'          => 'val_c5_title',
             'type'          => 'textarea',
             'rows'          => 1,
@@ -336,7 +336,7 @@ acf_add_local_field_group([
         ],
         [
             'key'           => 'field_mer_val_c6_title',
-            'label'         => 'Karta 6 — Tytuł',
+            'label'         => 'Karta 6 — Tytuł (H3)',
             'name'          => 'val_c6_title',
             'type'          => 'textarea',
             'rows'          => 1,
@@ -387,7 +387,7 @@ acf_add_local_field_group([
         ],
         [
             'key'           => 'field_mer_svc_title',
-            'label'         => 'Tytuł sekcji',
+            'label'         => 'Tytuł sekcji (H2)',
             'name'          => 'services_title',
             'type'          => 'textarea',
             'rows'          => 2,
@@ -433,7 +433,7 @@ acf_add_local_field_group([
         ['key' => 'field_mer_svc_tab_cta', 'label' => '◆ Karta CTA', 'name' => 'svc_tab_cta', 'type' => 'tab'],
         [
             'key'           => 'field_mer_svc_cta_title',
-            'label'         => 'Karta CTA — Tytuł',
+            'label'         => 'Karta CTA — Tytuł (H3)',
             'name'          => 'services_cta_title',
             'type'          => 'textarea',
             'rows'          => 1,
@@ -1070,8 +1070,8 @@ acf_add_local_field_group([
 
         // ── TAB: Hero ─────────────────────────────────────────────
         ['key' => 'field_bpo_tab_hero', 'label' => 'Hero', 'name' => '', 'type' => 'tab'],
-        ['key' => 'field_bpo_hero_title_normal', 'label' => 'Tytuł — czarna część',  'name' => 'bpo_hero_title_normal', 'type' => 'textarea', 'rows' => 1, 'default_value' => 'Rozwiązania BPO'],
-        ['key' => 'field_bpo_hero_title_green',  'label' => 'Tytuł — zielona część', 'name' => 'bpo_hero_title_green',  'type' => 'textarea', 'rows' => 1, 'default_value' => 'dla większych organizacji'],
+        ['key' => 'field_bpo_hero_title_normal', 'label' => 'Tytuł — czarna część (H1)',  'name' => 'bpo_hero_title_normal', 'type' => 'textarea', 'rows' => 1, 'default_value' => 'Rozwiązania BPO'],
+        ['key' => 'field_bpo_hero_title_green',  'label' => 'Tytuł — zielona część (H1)', 'name' => 'bpo_hero_title_green',  'type' => 'textarea', 'rows' => 1, 'default_value' => 'dla większych organizacji'],
         ['key' => 'field_bpo_hero_subtitle',     'label' => 'Podtytuł',              'name' => 'bpo_hero_subtitle',     'type' => 'textarea', 'rows' => 3, 'new_lines' => 'br', 'default_value' => 'Zapewniamy kompleksową obsługę kadrowo-płacową firm o różnej skali działalności.'],
         ['key' => 'field_bpo_hero_btn1_text',    'label' => 'Przycisk 1 — tekst',    'name' => 'bpo_hero_btn1_text',    'type' => 'textarea', 'rows' => 1, 'default_value' => 'Poznaj ofertę'],
         ['key' => 'field_bpo_hero_btn1_url',     'label' => 'Przycisk 1 — link',     'name' => 'bpo_hero_btn1_url',     'type' => 'text',     'default_value' => '#'],
@@ -1085,10 +1085,10 @@ acf_add_local_field_group([
 
         // ── TAB: Info & Nagrody ───────────────────────────────────
         ['key' => 'field_bpo_tab_info', 'label' => 'Info & Nagrody', 'name' => '', 'type' => 'tab'],
-        ['key' => 'field_bpo_info_title',    'label' => 'Tytuł sekcji',          'name' => 'bpo_info_title',    'type' => 'textarea', 'rows' => 2, 'default_value' => "Stabilne procesy. Rzetelne\ndane. Spokój zarządu."],
+        ['key' => 'field_bpo_info_title',    'label' => 'Tytuł sekcji (H2)',          'name' => 'bpo_info_title',    'type' => 'textarea', 'rows' => 2, 'default_value' => "Stabilne procesy. Rzetelne\ndane. Spokój zarządu."],
         ['key' => 'field_bpo_info_text',     'label' => 'Opis',                  'name' => 'bpo_info_text',     'type' => 'textarea', 'rows' => 4],
         ['key' => 'field_bpo_info_items',    'label' => 'Lista punktów (1 = 1 linia)', 'name' => 'bpo_info_items', 'type' => 'textarea', 'rows' => 4, 'default_value' => "raportowanie zarządcze i sprawozdawcze dopasowane do potrzeb organizacji\ncyfrowy obieg dokumentów i uporządkowane procesy\npełna zastępowalność i ciągłość obsługi oraz gotowość do skalowania"],
-        ['key' => 'field_bpo_awards_title',  'label' => 'Nagrody — tytuł',       'name' => 'bpo_awards_title',  'type' => 'textarea', 'rows' => 1, 'default_value' => 'Nagrody i wyróżnienia'],
+        ['key' => 'field_bpo_awards_title',  'label' => 'Nagrody — tytuł (H3)',       'name' => 'bpo_awards_title',  'type' => 'textarea', 'rows' => 1, 'default_value' => 'Nagrody i wyróżnienia'],
         ['key' => 'field_bpo_awards_text',   'label' => 'Nagrody — opis',        'name' => 'bpo_awards_text',   'type' => 'textarea', 'rows' => 2],
         ['key' => 'field_bpo_awards_logo1',  'label' => 'Nagrody — Logo 1',      'name' => 'bpo_awards_logo1',  'type' => 'image',    'return_format' => 'array', 'preview_size' => 'thumbnail'],
         ['key' => 'field_bpo_awards_logo2',  'label' => 'Nagrody — Logo 2',      'name' => 'bpo_awards_logo2',  'type' => 'image',    'return_format' => 'array', 'preview_size' => 'thumbnail'],
@@ -1100,7 +1100,7 @@ acf_add_local_field_group([
 
         // ── TAB: Obszary współpracy ───────────────────────────────
         ['key' => 'field_bpo_tab_obszary', 'label' => 'Obszary współpracy', 'name' => '', 'type' => 'tab'],
-        ['key' => 'field_bpo_areas_title',   'label' => 'Tytuł sekcji',   'name' => 'bpo_areas_title',   'type' => 'textarea', 'rows' => 1, 'default_value' => 'Obszar współpracy'],
+        ['key' => 'field_bpo_areas_title',   'label' => 'Tytuł sekcji (H2)',   'name' => 'bpo_areas_title',   'type' => 'textarea', 'rows' => 1, 'default_value' => 'Obszar współpracy'],
         ['key' => 'field_bpo_area1_title',   'label' => 'Karta 1 — Tytuł',  'name' => 'bpo_area1_title',  'type' => 'textarea', 'rows' => 1, 'default_value' => 'Rozwiązania kadrowe'],
         ['key' => 'field_bpo_area1_desc',    'label' => 'Karta 1 — Opis',   'name' => 'bpo_area1_desc',   'type' => 'textarea', 'rows' => 2, 'default_value' => 'Kompleksowa obsługa kadrowo-płacowa – od umów i list płac po rozliczenia z ZUS i US, z pełną zastępowalnością zespołu.'],
         ['key' => 'field_bpo_area1_image',   'label' => 'Karta 1 — Zdjęcie','name' => 'bpo_area1_image',  'type' => 'image',    'return_format' => 'array', 'preview_size' => 'medium'],
@@ -1141,7 +1141,7 @@ acf_add_local_field_group([
 
         // ── TAB: Transformacja cyfrowa ────────────────────────────
         ['key' => 'field_bpo_tab_td', 'label' => 'Transformacja cyfrowa', 'name' => '', 'type' => 'tab'],
-        ['key' => 'field_bpo_td_title', 'label' => 'Tytuł',                          'name' => 'bpo_td_title', 'type' => 'textarea', 'rows' => 1, 'default_value' => 'Transformacja Cyfrowa'],
+        ['key' => 'field_bpo_td_title', 'label' => 'Tytuł (H2)',                          'name' => 'bpo_td_title', 'type' => 'textarea', 'rows' => 1, 'default_value' => 'Transformacja Cyfrowa'],
         ['key' => 'field_bpo_td_text',  'label' => 'Opis',                           'name' => 'bpo_td_text',  'type' => 'textarea', 'rows' => 4],
         ['key' => 'field_bpo_td_bg',    'label' => 'Zdjęcie tła (ciemne)',           'name' => 'bpo_td_bg',    'type' => 'image',    'return_format' => 'array', 'preview_size' => 'medium'],
         ['key' => 'field_bpo_td_items', 'label' => 'Lista punktów (1 linia = 1 pkt)','name' => 'bpo_td_items', 'type' => 'textarea', 'rows' => 6, 'default_value' => "Robotyzacja RPA\nE-teczki\nOptymalizacja procesów\nElektroniczny obieg dokumentów\nAutomatyzacja raportowania"],
@@ -1216,7 +1216,7 @@ acf_add_local_field_group([
 
         // ── TAB: Model współpracy ─────────────────────────────────
         ['key' => 'field_bpo_tab_model', 'label' => 'Model współpracy', 'name' => '', 'type' => 'tab'],
-        ['key' => 'field_bpo_model_title',    'label' => 'Tytuł sekcji', 'name' => 'bpo_model_title',    'type' => 'textarea', 'rows' => 1, 'default_value' => 'Model współpracy'],
+        ['key' => 'field_bpo_model_title',    'label' => 'Tytuł sekcji (H2)', 'name' => 'bpo_model_title',    'type' => 'textarea', 'rows' => 1, 'default_value' => 'Model współpracy'],
         ['key' => 'field_bpo_model_subtitle', 'label' => 'Opis',         'name' => 'bpo_model_subtitle', 'type' => 'textarea', 'rows' => 2],
         [
             'key' => 'field_bpo_model1', 'label' => 'Karta 1 (biała)', 'name' => 'bpo_model1', 'type' => 'group',
@@ -1237,13 +1237,13 @@ acf_add_local_field_group([
 
         // ── TAB: Jak wygląda współpraca ───────────────────────────
         ['key' => 'field_bpo_tab_wsp', 'label' => 'Jak wygląda współpraca', 'name' => '', 'type' => 'tab'],
-        ['key' => 'field_bpo_wsp_title',    'label' => 'Tytuł sekcji',    'name' => 'bpo_wsp_title',    'type' => 'textarea', 'rows' => 1, 'default_value' => 'Jak wygląda bieżąca współpraca'],
+        ['key' => 'field_bpo_wsp_title',    'label' => 'Tytuł sekcji (H2)',    'name' => 'bpo_wsp_title',    'type' => 'textarea', 'rows' => 1, 'default_value' => 'Jak wygląda bieżąca współpraca'],
         ['key' => 'field_bpo_wsp_btn_text', 'label' => 'Przycisk — tekst','name' => 'bpo_wsp_btn_text', 'type' => 'textarea', 'rows' => 1, 'default_value' => 'Poznaj więcej historii'],
         ['key' => 'field_bpo_wsp_btn_url',  'label' => 'Przycisk — link', 'name' => 'bpo_wsp_btn_url',  'type' => 'text', 'default_value' => '#'],
         [
             'key' => 'field_bpo_wsp_step_1', 'label' => 'Krok 01', 'name' => 'bpo_wsp_step_1', 'type' => 'group',
             'sub_fields' => [
-                ['key' => 'field_bpo_wsp1_title', 'label' => 'Tytuł', 'name' => 'title', 'type' => 'textarea', 'rows' => 1, 'default_value' => 'Indywidualna organizacja pracy'],
+                ['key' => 'field_bpo_wsp1_title', 'label' => 'Tytuł (H3)', 'name' => 'title', 'type' => 'textarea', 'rows' => 1, 'default_value' => 'Indywidualna organizacja pracy'],
                 ['key' => 'field_bpo_wsp1_lead',  'label' => 'Intro', 'name' => 'lead',  'type' => 'textarea', 'rows' => 1, 'default_value' => 'W zależności od potrzeb możemy pracować:'],
                 ['key' => 'field_bpo_wsp1_items', 'label' => 'Punkty (1 linia = 1 pkt)', 'name' => 'items', 'type' => 'textarea', 'rows' => 3, 'default_value' => "na bieżąco – obsługując codzienne procesy\nw cyklach tygodniowych\nw innych ustalonych odstępach czasu"],
             ],
@@ -1251,7 +1251,7 @@ acf_add_local_field_group([
         [
             'key' => 'field_bpo_wsp_step_2', 'label' => 'Krok 02', 'name' => 'bpo_wsp_step_2', 'type' => 'group',
             'sub_fields' => [
-                ['key' => 'field_bpo_wsp2_title', 'label' => 'Tytuł', 'name' => 'title', 'type' => 'textarea', 'rows' => 1, 'default_value' => 'Elastyczne zamknięcie miesiąca'],
+                ['key' => 'field_bpo_wsp2_title', 'label' => 'Tytuł (H3)', 'name' => 'title', 'type' => 'textarea', 'rows' => 1, 'default_value' => 'Elastyczne zamknięcie miesiąca'],
                 ['key' => 'field_bpo_wsp2_lead',  'label' => 'Intro', 'name' => 'lead',  'type' => 'textarea', 'rows' => 2],
                 ['key' => 'field_bpo_wsp2_items', 'label' => 'Punkty (1 linia = 1 pkt)', 'name' => 'items', 'type' => 'textarea', 'rows' => 3, 'default_value' => "część firm potrzebuje raportów do 20. dnia miesiąca\ninne wymagają wyników już w 3. lub 4. dniu roboczym"],
             ],
@@ -1259,7 +1259,7 @@ acf_add_local_field_group([
         [
             'key' => 'field_bpo_wsp_step_3', 'label' => 'Krok 03', 'name' => 'bpo_wsp_step_3', 'type' => 'group',
             'sub_fields' => [
-                ['key' => 'field_bpo_wsp3_title', 'label' => 'Tytuł', 'name' => 'title', 'type' => 'textarea', 'rows' => 1, 'default_value' => 'Zakres i częstotliwość raportowania ustalamy indywidualnie.'],
+                ['key' => 'field_bpo_wsp3_title', 'label' => 'Tytuł (H3)', 'name' => 'title', 'type' => 'textarea', 'rows' => 1, 'default_value' => 'Zakres i częstotliwość raportowania ustalamy indywidualnie.'],
                 ['key' => 'field_bpo_wsp3_lead',  'label' => 'Intro', 'name' => 'lead',  'type' => 'textarea', 'rows' => 1, 'default_value' => 'W standardzie klient otrzymuje:'],
                 ['key' => 'field_bpo_wsp3_items', 'label' => 'Punkty (1 linia = 1 pkt)', 'name' => 'items', 'type' => 'textarea', 'rows' => 3, 'default_value' => "rachunek zysków i strat\nbilans\nzestawienie należności i zobowiązań"],
             ],
@@ -1267,7 +1267,7 @@ acf_add_local_field_group([
 
         // ── TAB: Historie klientów ────────────────────────────────
         ['key' => 'field_bpo_tab_hist', 'label' => 'Historie klientów', 'name' => '', 'type' => 'tab'],
-        ['key' => 'field_bpo_hist_title',    'label' => 'Tytuł sekcji',   'name' => 'bpo_hist_title',    'type' => 'textarea', 'rows' => 1, 'default_value' => 'Historie naszych klientów'],
+        ['key' => 'field_bpo_hist_title',    'label' => 'Tytuł sekcji (H2)',   'name' => 'bpo_hist_title',    'type' => 'textarea', 'rows' => 1, 'default_value' => 'Historie naszych klientów'],
         ['key' => 'field_bpo_hist_btn_text', 'label' => 'Przycisk — tekst','name' => 'bpo_hist_btn_text', 'type' => 'textarea', 'rows' => 1, 'default_value' => 'Poznaj więcej historii'],
         ['key' => 'field_bpo_hist_btn_url',  'label' => 'Przycisk — link', 'name' => 'bpo_hist_btn_url',  'type' => 'text', 'default_value' => '#'],
         [
@@ -1327,7 +1327,7 @@ acf_add_local_field_group([
         // ── TAB: Hero ─────────────────────────────────────────────
         ['key' => 'field_onas_tab_hero', 'label' => 'Hero', 'name' => '', 'type' => 'tab'],
         ['key' => 'field_onas_hero_bg',       'label' => 'Zdjęcie tła (Hero)',    'name' => 'onas_hero_bg',       'type' => 'image',    'return_format' => 'array', 'preview_size' => 'medium'],
-        ['key' => 'field_onas_hero_title',     'label' => 'Nagłówek H1',          'name' => 'onas_hero_title',     'type' => 'textarea', 'rows' => 3, 'default_value' => "Poznaj nasze biuro rachunkowe\ni wartości które stoją za naszą\ncodzienną pracą"],
+        ['key' => 'field_onas_hero_title',     'label' => 'Nagłówek (H1)',          'name' => 'onas_hero_title',     'type' => 'textarea', 'rows' => 3, 'default_value' => "Poznaj nasze biuro rachunkowe\ni wartości które stoją za naszą\ncodzienną pracą"],
         ['key' => 'field_onas_hero_sub',       'label' => 'Podtytuł',             'name' => 'onas_hero_sub',       'type' => 'textarea', 'rows' => 2, 'new_lines' => 'br', 'default_value' => 'Pracujemy tak, by być dumni z jakości informacji dostarczanych naszym klientom.'],
         ['key' => 'field_onas_hero_btn1_text', 'label' => 'Przycisk 1 — tekst',  'name' => 'onas_hero_btn1_text', 'type' => 'textarea', 'rows' => 1, 'default_value' => 'Poznaj ofertę'],
         ['key' => 'field_onas_hero_btn1_url',  'label' => 'Przycisk 1 — link',   'name' => 'onas_hero_btn1_url',  'type' => 'text',     'default_value' => '#'],
@@ -1385,7 +1385,7 @@ acf_add_local_field_group([
 
         // ── TAB: Jak pracujemy ────────────────────────────────────
         ['key' => 'field_onas_tab_jak', 'label' => 'Jak pracujemy', 'name' => '', 'type' => 'tab'],
-        ['key' => 'field_onas_jak_title', 'label' => 'Tytuł sekcji',      'name' => 'onas_jak_title', 'type' => 'textarea', 'rows' => 1, 'default_value' => 'Jak pracujemy?'],
+        ['key' => 'field_onas_jak_title', 'label' => 'Tytuł sekcji (H2)',      'name' => 'onas_jak_title', 'type' => 'textarea', 'rows' => 1, 'default_value' => 'Jak pracujemy?'],
         ['key' => 'field_onas_jak_photo', 'label' => 'Zdjęcie (prawa strona)', 'name' => 'onas_jak_photo', 'type' => 'image', 'return_format' => 'array', 'preview_size' => 'medium'],
         [
             'key' => 'field_onas_jak_1', 'label' => 'Punkt 1', 'name' => 'onas_jak_1', 'type' => 'group',
@@ -1454,7 +1454,7 @@ acf_add_local_field_group([
 
         // ── TAB: Gdzie działamy ───────────────────────────────────
         ['key' => 'field_onas_tab_mapa', 'label' => 'Gdzie działamy', 'name' => '', 'type' => 'tab'],
-        ['key' => 'field_onas_mapa_title', 'label' => 'Tytuł sekcji',        'name' => 'onas_mapa_title', 'type' => 'textarea', 'rows' => 1, 'default_value' => 'Gdzie działamy'],
+        ['key' => 'field_onas_mapa_title', 'label' => 'Tytuł sekcji (H2)',        'name' => 'onas_mapa_title', 'type' => 'textarea', 'rows' => 1, 'default_value' => 'Gdzie działamy'],
         ['key' => 'field_onas_mapa_text',  'label' => 'Opis pod tytułem',    'name' => 'onas_mapa_text',  'type' => 'textarea', 'rows' => 2, 'default_value' => 'Posiadamy 7 oddziałów stacjonarnych w miastach Polski oraz oddziały wirtualne, dzięki czemu obsługujemy firmy niezależnie od ich lokalizacji:'],
         ['key' => 'field_onas_mapa_image', 'label' => 'Mapa Polski (SVG/PNG)','name' => 'onas_mapa_image', 'type' => 'file',  'return_format' => 'array', 'library' => 'all'],
         ['key' => 'field_onas_mapa_cities','label' => 'Lista miast (jeden wpis = jedna linia)', 'name' => 'onas_mapa_cities', 'type' => 'textarea', 'rows' => 10, 'default_value' => "Kraków (siedziba główna oraz 3 oddziały)\nWarszawa\nKatowice\nRzeszów\nWrocław\nŁódź\nBytom\n2 oddziały wirtualne działające w pełni online"],
@@ -1530,7 +1530,7 @@ acf_add_local_field_group([
         ],
         [
             'key'           => 'field_kon_title_green',
-            'label'         => 'Tytuł — zielona część',
+            'label'         => 'Tytuł — zielona część (H1)',
             'name'          => 'kon_title_green',
             'type'          => 'textarea',
             'rows'          => 1,
@@ -1538,7 +1538,7 @@ acf_add_local_field_group([
         ],
         [
             'key'           => 'field_kon_title_dark',
-            'label'         => 'Tytuł — ciemna część',
+            'label'         => 'Tytuł — ciemna część (H1)',
             'name'          => 'kon_title_dark',
             'type'          => 'textarea',
             'rows'          => 1,
@@ -1845,9 +1845,9 @@ acf_add_local_field_group([
         // ── TAB: Hero ────────────────────────────────────────────
         ['key' => 'field_fr_tab_hero', 'label' => 'Hero', 'name' => '', 'type' => 'tab'],
 
-        ['key' => 'field_fr_hero_title_normal', 'label' => 'Nagłówek — część 1 (czarna)', 'name' => 'fr_hero_title_normal', 'type' => 'textarea', 'rows' => 1, 'default_value' => 'Fundacja rodzinna'],
-        ['key' => 'field_fr_hero_title_green',  'label' => 'Nagłówek — wyróżnienie (zielone)', 'name' => 'fr_hero_title_green', 'type' => 'textarea', 'rows' => 1, 'default_value' => 'bez stresu'],
-        ['key' => 'field_fr_hero_title_line2',  'label' => 'Nagłówek — linia 2', 'name' => 'fr_hero_title_line2', 'type' => 'textarea', 'rows' => 1, 'default_value' => 'księgowość pod kontrolą'],
+        ['key' => 'field_fr_hero_title_normal', 'label' => 'Nagłówek — część 1 czarna (H1)', 'name' => 'fr_hero_title_normal', 'type' => 'textarea', 'rows' => 1, 'default_value' => 'Fundacja rodzinna'],
+        ['key' => 'field_fr_hero_title_green',  'label' => 'Nagłówek — wyróżnienie zielone (H1)', 'name' => 'fr_hero_title_green', 'type' => 'textarea', 'rows' => 1, 'default_value' => 'bez stresu'],
+        ['key' => 'field_fr_hero_title_line2',  'label' => 'Nagłówek — linia 2 (H1)', 'name' => 'fr_hero_title_line2', 'type' => 'textarea', 'rows' => 1, 'default_value' => 'księgowość pod kontrolą'],
         ['key' => 'field_fr_hero_subtitle',     'label' => 'Podtytuł', 'name' => 'fr_hero_subtitle', 'type' => 'textarea', 'rows' => 3, 'new_lines' => 'br', 'default_value' => 'Prowadzimy pełną obsługę księgową fundacji rodzinnych. Zajmujemy się ewidencją, sprawozdawczością i terminami, żebyś mógł skupić się na tym, co ważne.'],
         ['key' => 'field_fr_hero_btn1_text', 'label' => 'Przycisk 1 — tekst', 'name' => 'fr_hero_btn1_text', 'type' => 'textarea', 'rows' => 1, 'default_value' => 'Umów konsultację'],
         ['key' => 'field_fr_hero_btn1_url',  'label' => 'Przycisk 1 — link',  'name' => 'fr_hero_btn1_url',  'type' => 'text', 'default_value' => '/kontakt/'],
@@ -1864,7 +1864,7 @@ acf_add_local_field_group([
         // ── TAB: Oferta ──────────────────────────────────────────
         ['key' => 'field_fr_tab_oferta', 'label' => 'Oferta', 'name' => '', 'type' => 'tab'],
 
-        ['key' => 'field_fr_oferta_title',    'label' => 'Tytuł',    'name' => 'fr_oferta_title',    'type' => 'textarea', 'rows' => 1, 'default_value' => 'Poznaj naszą ofertę'],
+        ['key' => 'field_fr_oferta_title',    'label' => 'Tytuł (H2)',    'name' => 'fr_oferta_title',    'type' => 'textarea', 'rows' => 1, 'default_value' => 'Poznaj naszą ofertę'],
         ['key' => 'field_fr_oferta_subtitle', 'label' => 'Podtytuł', 'name' => 'fr_oferta_subtitle', 'type' => 'textarea', 'rows' => 3, 'default_value' => 'Zapewniamy kompleksową obsługę księgową i podatkową, która porządkuje finanse fundacji i daje poczucie bezpieczeństwa jej fundatorom.'],
         ['key' => 'field_fr_oferta_items',    'label' => 'Elementy listy (1 linia = 1 kafelek)', 'name' => 'fr_oferta_items', 'type' => 'textarea', 'rows' => 8, 'instructions' => 'Każda linia to oddzielny kafelek w siatce.', 'default_value' => "Prowadzenie ksiąg rachunkowych\nRozliczanie i składanie deklaracji podatkowych\nPrzygotowywanie sprawozdań finansowych\nAsystowanie podczas badania sprawozdania finansowego oraz kontroli urzędów\nRaportowanie na cele zarządcze\nSporządzanie polityki rachunkowości"],
         ['key' => 'field_fr_oferta_btn_text', 'label' => 'Przycisk — tekst', 'name' => 'fr_oferta_btn_text', 'type' => 'textarea', 'rows' => 1, 'default_value' => 'Wyceń usługę'],
@@ -1930,7 +1930,7 @@ acf_add_local_field_group([
         // ── TAB: Model współpracy ────────────────────────────────
         ['key' => 'field_fr_tab_model', 'label' => 'Model współpracy', 'name' => '', 'type' => 'tab'],
 
-        ['key' => 'field_fr_model_title',    'label' => 'Tytuł sekcji', 'name' => 'fr_model_title',    'type' => 'text',     'default_value' => 'Model współpracy'],
+        ['key' => 'field_fr_model_title',    'label' => 'Tytuł sekcji (H2)', 'name' => 'fr_model_title',    'type' => 'text',     'default_value' => 'Model współpracy'],
         ['key' => 'field_fr_model_subtitle', 'label' => 'Podtytuł',    'name' => 'fr_model_subtitle', 'type' => 'textarea', 'rows' => 2, 'default_value' => 'Możesz powierzyć nam całość procesów księgowych lub wybrane obszary wymagające uporządkowania. Dopasowujemy zakres wsparcia do realnej sytuacji Twojej firmy.'],
 
         ['key' => 'field_fr_model1', 'label' => 'Karta 1 — Kompleksowa obsługa', 'name' => 'fr_model1', 'type' => 'group', 'layout' => 'table', 'sub_fields' => [
@@ -1967,9 +1967,9 @@ acf_add_local_field_group([
         // ── TAB: Hero ────────────────────────────────────────────
         ['key' => 'field_uk_tab_hero', 'label' => 'Hero', 'name' => '', 'type' => 'tab'],
 
-        ['key' => 'field_uk_hero_title_before', 'label' => 'Nagłówek — przed zieloną częścią', 'name' => 'uk_hero_title_before', 'type' => 'text',     'default_value' => 'Rozwiązania księgowe dla firm, które'],
-        ['key' => 'field_uk_hero_title_green',  'label' => 'Nagłówek — zielona część',         'name' => 'uk_hero_title_green',  'type' => 'text',     'default_value' => 'chcą mieć porządek'],
-        ['key' => 'field_uk_hero_title_after',  'label' => 'Nagłówek — po zielonej części',    'name' => 'uk_hero_title_after',  'type' => 'text',     'default_value' => 'i spokój w biznesie'],
+        ['key' => 'field_uk_hero_title_before', 'label' => 'Nagłówek — przed zieloną częścią (H1)', 'name' => 'uk_hero_title_before', 'type' => 'text',     'default_value' => 'Rozwiązania księgowe dla firm, które'],
+        ['key' => 'field_uk_hero_title_green',  'label' => 'Nagłówek — zielona część (H1)',         'name' => 'uk_hero_title_green',  'type' => 'text',     'default_value' => 'chcą mieć porządek'],
+        ['key' => 'field_uk_hero_title_after',  'label' => 'Nagłówek — po zielonej części (H1)',    'name' => 'uk_hero_title_after',  'type' => 'text',     'default_value' => 'i spokój w biznesie'],
         ['key' => 'field_uk_hero_subtitle',     'label' => 'Podtytuł',                         'name' => 'uk_hero_subtitle',     'type' => 'textarea', 'rows' => 3, 'new_lines' => 'br', 'default_value' => 'Zapewniamy kompleksową obsługę księgową firm o różnej skali działalności. Przejmujemy odpowiedzialność za poprawność, terminowość i ciągłość procesów księgowych, aby nasi klienci mogli skupić się na prowadzeniu i rozwoju biznesu.'],
         ['key' => 'field_uk_hero_btn1_text', 'label' => 'Przycisk 1 — tekst', 'name' => 'uk_hero_btn1_text', 'type' => 'text', 'default_value' => 'Poznaj ofertę'],
         ['key' => 'field_uk_hero_btn1_url',  'label' => 'Przycisk 1 — link',  'name' => 'uk_hero_btn1_url',  'type' => 'text', 'default_value' => '#oferta'],
@@ -1991,7 +1991,7 @@ acf_add_local_field_group([
         // ── TAB: Oferta ──────────────────────────────────────────
         ['key' => 'field_uk_tab_oferta', 'label' => 'Oferta', 'name' => '', 'type' => 'tab'],
 
-        ['key' => 'field_uk_oferta_title',      'label' => 'Tytuł',                          'name' => 'uk_oferta_title',      'type' => 'text',     'default_value' => 'Oferta rozwiązań księgowych'],
+        ['key' => 'field_uk_oferta_title',      'label' => 'Tytuł (H2)',                          'name' => 'uk_oferta_title',      'type' => 'text',     'default_value' => 'Oferta rozwiązań księgowych'],
         ['key' => 'field_uk_oferta_subtitle',    'label' => 'Podtytuł',                       'name' => 'uk_oferta_subtitle',   'type' => 'textarea', 'default_value' => "Obsługujemy firmy na różnych formach rozliczeń zarówno w pełnej księgowości (spółki),\njak i w uproszczonych formach ewidencji (np. KPiR)", 'rows' => 3, 'new_lines' => 'br'],
         ['key' => 'field_uk_oferta_sub_note',   'label' => 'Drobny tekst pod podtytułem',    'name' => 'uk_oferta_sub_note',   'type' => 'text',     'default_value' => 'Poniżej pokazujemy przykładowy zakres działań. Jeśli potrzebujesz innej usługi chętnie porozmawiamy.'],
         ['key' => 'field_uk_oferta_items',      'label' => 'Elementy listy (1 linia = 1 kafelek)', 'name' => 'uk_oferta_items', 'type' => 'textarea', 'rows' => 10, 'instructions' => 'Każda linia to oddzielny kafelek w siatce 3-kolumnowej.', 'default_value' => "Prowadzenie ksiąg rachunkowych\nObliczanie podatków i składanie deklaracji podatkowych\nBieżące rozliczanie wyciągów i kontrolowanie rozrachunków\nRaportowanie zarządcze i sprawozdawcze\nRaportowanie do instytucji publicznych\nSporządzanie sprawozdań finansowych oraz deklaracji rocznych\nReprezentowanie podczas kontroli i czynności sprawdzających\nObsługa niestandardowych rozliczeń\nAsystowanie i wsparcie podczas audytu"],
@@ -2011,7 +2011,7 @@ acf_add_local_field_group([
         // ── TAB: Model współpracy ────────────────────────────────
         ['key' => 'field_uk_tab_model', 'label' => 'Model współpracy', 'name' => '', 'type' => 'tab'],
 
-        ['key' => 'field_uk_model_title',    'label' => 'Tytuł',    'name' => 'uk_model_title',    'type' => 'text',     'default_value' => 'Model współpracy'],
+        ['key' => 'field_uk_model_title',    'label' => 'Tytuł (H2)',    'name' => 'uk_model_title',    'type' => 'text',     'default_value' => 'Model współpracy'],
         ['key' => 'field_uk_model_subtitle', 'label' => 'Podtytuł', 'name' => 'uk_model_subtitle', 'type' => 'textarea', 'rows' => 2, 'default_value' => 'Możesz powierzyć nam całość procesów księgowych lub wybrane obszary wymagające uporządkowania. Dopasowujemy zakres wsparcia do realnej sytuacji Twojej firmy.'],
 
         ['key' => 'field_uk_model1', 'label' => 'Karta 1 — Kompleksowa obsługa', 'name' => 'uk_model1', 'type' => 'group', 'layout' => 'table', 'sub_fields' => [
@@ -2040,7 +2040,7 @@ acf_add_local_field_group([
         // ── TAB: Jak wygląda współpraca ──────────────────────────
         ['key' => 'field_uk_tab_wsp', 'label' => 'Jak wygląda współpraca', 'name' => '', 'type' => 'tab'],
 
-        ['key' => 'field_uk_wsp_title', 'label' => 'Tytuł sekcji', 'name' => 'uk_wsp_title', 'type' => 'text', 'default_value' => 'Jak wygląda bieżąca współpraca'],
+        ['key' => 'field_uk_wsp_title', 'label' => 'Tytuł sekcji (H2)', 'name' => 'uk_wsp_title', 'type' => 'text', 'default_value' => 'Jak wygląda bieżąca współpraca'],
 
         ['key' => 'field_uk_wsp_step1', 'label' => 'Krok 01', 'name' => 'uk_wsp_step1', 'type' => 'group', 'layout' => 'block', 'sub_fields' => [
             ['key' => 'field_uk_wsp_s1_title', 'label' => 'Tytuł',              'name' => 'title', 'type' => 'text',     'default_value' => 'Indywidualna organizacja pracy'],
@@ -2125,7 +2125,7 @@ acf_add_local_field_group([
         // ── TAB: Historie klientów ───────────────────────────────
         ['key' => 'field_uk_tab_hist', 'label' => 'Historie klientów', 'name' => '', 'type' => 'tab'],
 
-        ['key' => 'field_uk_hist_title',    'label' => 'Tytuł sekcji', 'name' => 'uk_hist_title',    'type' => 'text', 'default_value' => 'Historie naszych klientów'],
+        ['key' => 'field_uk_hist_title',    'label' => 'Tytuł sekcji (H2)', 'name' => 'uk_hist_title',    'type' => 'text', 'default_value' => 'Historie naszych klientów'],
         ['key' => 'field_uk_hist_btn_text', 'label' => 'Przycisk — tekst', 'name' => 'uk_hist_btn_text', 'type' => 'text', 'default_value' => 'Poznaj więcej historii'],
         ['key' => 'field_uk_hist_btn_url',  'label' => 'Przycisk — link',  'name' => 'uk_hist_btn_url',  'type' => 'text', 'default_value' => '/blog/'],
 
@@ -2151,7 +2151,7 @@ acf_add_local_field_group([
         // ── TAB: Systemy księgowe ────────────────────────────────
         ['key' => 'field_uk_tab_sys', 'label' => 'Systemy księgowe', 'name' => '', 'type' => 'tab'],
 
-        ['key' => 'field_uk_sys_title', 'label' => 'Tytuł',  'name' => 'uk_sys_title', 'type' => 'textarea', 'rows' => 2, 'default_value' => "Obsługa wielu systemów\nksiągowych"],
+        ['key' => 'field_uk_sys_title', 'label' => 'Tytuł (H2)',  'name' => 'uk_sys_title', 'type' => 'textarea', 'rows' => 2, 'default_value' => "Obsługa wielu systemów\nksiągowych"],
         ['key' => 'field_uk_sys_text',  'label' => 'Tekst',  'name' => 'uk_sys_text',  'type' => 'textarea', 'rows' => 3, 'default_value' => 'Nasz zespół obsługuje wiele systemów księgowych, m.in. Comarch Optima, SAP czy Enova. Współpracę dostosowujemy do istniejących narzędzi i procesów oraz wymagań klienta. Istnieje także możliwość pracy na preferowanych przez klienta programach księgowych.'],
         ['key' => 'field_uk_sys_logo1', 'label' => 'Logo 1', 'name' => 'uk_sys_logo1', 'type' => 'image', 'return_format' => 'array', 'preview_size' => 'thumbnail'],
         ['key' => 'field_uk_sys_logo2', 'label' => 'Logo 2', 'name' => 'uk_sys_logo2', 'type' => 'image', 'return_format' => 'array', 'preview_size' => 'thumbnail'],
@@ -2182,9 +2182,9 @@ acf_add_local_field_group([
         // ── TAB: Hero ────────────────────────────────────────────
         ['key' => 'field_kp_tab_hero', 'label' => 'Hero', 'name' => '', 'type' => 'tab'],
 
-        ['key' => 'field_kp_hero_line1',  'label' => 'Nagłówek — linia 1',         'name' => 'kp_hero_title_line1', 'type' => 'text',     'default_value' => 'Kadry i płace, które dają'],
-        ['key' => 'field_kp_hero_green',  'label' => 'Nagłówek — zielone słowo',   'name' => 'kp_hero_title_green', 'type' => 'text',     'default_value' => 'spokój'],
-        ['key' => 'field_kp_hero_line2',  'label' => 'Nagłówek — linia 2',         'name' => 'kp_hero_title_line2', 'type' => 'text',     'default_value' => 'organizacji'],
+        ['key' => 'field_kp_hero_line1',  'label' => 'Nagłówek — linia 1 (H1)',         'name' => 'kp_hero_title_line1', 'type' => 'text',     'default_value' => 'Kadry i płace, które dają'],
+        ['key' => 'field_kp_hero_green',  'label' => 'Nagłówek — zielone słowo (H1)',   'name' => 'kp_hero_title_green', 'type' => 'text',     'default_value' => 'spokój'],
+        ['key' => 'field_kp_hero_line2',  'label' => 'Nagłówek — linia 2 (H1)',         'name' => 'kp_hero_title_line2', 'type' => 'text',     'default_value' => 'organizacji'],
         ['key' => 'field_kp_hero_sub',    'label' => 'Podtytuł',                   'name' => 'kp_hero_subtitle',    'type' => 'textarea', 'rows' => 3, 'new_lines' => 'br', 'default_value' => 'Zapewniamy kompleksową obsługę kadrowo-płacową firm o różnej skali działalności. Przejmujemy odpowiedzialność za poprawność, terminowość i ciągłość procesów, aby organizacja mogła działać stabilnie i bez zakłóceń.'],
         ['key' => 'field_kp_hero_b1t',   'label' => 'Przycisk 1 — tekst', 'name' => 'kp_hero_btn1_text', 'type' => 'text', 'default_value' => 'Poznaj ofertę'],
         ['key' => 'field_kp_hero_b1u',   'label' => 'Przycisk 1 — link',  'name' => 'kp_hero_btn1_url',  'type' => 'text', 'default_value' => '#oferta'],
@@ -2206,7 +2206,7 @@ acf_add_local_field_group([
         // ── TAB: Oferta ──────────────────────────────────────────
         ['key' => 'field_kp_tab_oferta', 'label' => 'Oferta', 'name' => '', 'type' => 'tab'],
 
-        ['key' => 'field_kp_oferta_title',    'label' => 'Tytuł',    'name' => 'kp_oferta_title',    'type' => 'text',     'default_value' => 'Oferta rozwiązań kadrowych'],
+        ['key' => 'field_kp_oferta_title',    'label' => 'Tytuł (H2)',    'name' => 'kp_oferta_title',    'type' => 'text',     'default_value' => 'Oferta rozwiązań kadrowych'],
         ['key' => 'field_kp_oferta_subtitle', 'label' => 'Podtytuł', 'name' => 'kp_oferta_subtitle', 'type' => 'textarea', 'rows' => 2, 'default_value' => 'Przejmujemy całość lub wybrane obszary, które wymagają uporządkowania i stałego nadzoru.'],
         ['key' => 'field_kp_oferta_items',    'label' => 'Elementy listy (1 linia = 1 kafelek)', 'name' => 'kp_oferta_items', 'type' => 'textarea', 'rows' => 10, 'default_value' => "Prowadzenie dokumentacji kadrowej\nNaliczanie wynagrodzeń i świadczeń\nObsługa umów o pracę i umów cywilnoprawnych\nRozliczenia z ZUS i instytucjami publicznymi\nSporządzanie deklaracji podatkowych\nKontrolowanie limitów urlopowych, terminów badań lekarskich, szkoleń BHP oraz wygasających umów\nReprezentowanie podczas kontroli i czynności sprawdzających\nZarządzanie programami PPK i PPE\nPlatforma pracownicza z dostępem do wniosków urlopowych i dokumentów online"],
         ['key' => 'field_kp_oferta_btn1t',    'label' => 'Przycisk 1 — tekst', 'name' => 'kp_oferta_btn1_text', 'type' => 'text', 'default_value' => 'Wyceń usługę'],
@@ -2225,7 +2225,7 @@ acf_add_local_field_group([
         // ── TAB: Model współpracy ────────────────────────────────
         ['key' => 'field_kp_tab_model', 'label' => 'Model współpracy', 'name' => '', 'type' => 'tab'],
 
-        ['key' => 'field_kp_model_title',    'label' => 'Tytuł',    'name' => 'kp_model_title',    'type' => 'text',     'default_value' => 'Model współpracy'],
+        ['key' => 'field_kp_model_title',    'label' => 'Tytuł (H2)',    'name' => 'kp_model_title',    'type' => 'text',     'default_value' => 'Model współpracy'],
         ['key' => 'field_kp_model_subtitle', 'label' => 'Podtytuł', 'name' => 'kp_model_subtitle', 'type' => 'textarea', 'rows' => 2, 'default_value' => 'Możesz powierzyć nam całość procesów kadrowych lub wybrane obszary wymagające uporządkowania. Dopasowujemy zakres wsparcia do realnej sytuacji Twojej firmy.'],
 
         ['key' => 'field_kp_model1', 'label' => 'Karta 1 — Kompleksowa obsługa', 'name' => 'kp_model1', 'type' => 'group', 'layout' => 'block', 'sub_fields' => [
@@ -2265,7 +2265,7 @@ acf_add_local_field_group([
         // ── TAB: Jak wygląda współpraca ──────────────────────────
         ['key' => 'field_kp_tab_wsp', 'label' => 'Jak wygląda współpraca', 'name' => '', 'type' => 'tab'],
 
-        ['key' => 'field_kp_wsp_title', 'label' => 'Tytuł sekcji', 'name' => 'kp_wsp_title', 'type' => 'text', 'default_value' => 'Jak wygląda bieżąca współpraca'],
+        ['key' => 'field_kp_wsp_title', 'label' => 'Tytuł sekcji (H2)', 'name' => 'kp_wsp_title', 'type' => 'text', 'default_value' => 'Jak wygląda bieżąca współpraca'],
         ['key' => 'field_kp_wsp_step1', 'label' => 'Krok 01', 'name' => 'kp_wsp_step1', 'type' => 'group', 'layout' => 'block', 'sub_fields' => [
             ['key' => 'field_kp_s1_title', 'label' => 'Tytuł',  'name' => 'title', 'type' => 'text',     'default_value' => 'Indywidualna organizacja pracy'],
             ['key' => 'field_kp_s1_lead',  'label' => 'Lead',   'name' => 'lead',  'type' => 'text',     'default_value' => 'W zależności od potrzeb możemy pracować:'],
@@ -2345,7 +2345,7 @@ acf_add_local_field_group([
         // ── TAB: Historie klientów ───────────────────────────────
         ['key' => 'field_kp_tab_hist', 'label' => 'Historie klientów', 'name' => '', 'type' => 'tab'],
 
-        ['key' => 'field_kp_hist_title',    'label' => 'Tytuł sekcji',   'name' => 'kp_hist_title',    'type' => 'text', 'default_value' => 'Historie naszych klientów'],
+        ['key' => 'field_kp_hist_title',    'label' => 'Tytuł sekcji (H2)',   'name' => 'kp_hist_title',    'type' => 'text', 'default_value' => 'Historie naszych klientów'],
         ['key' => 'field_kp_hist_btn_text', 'label' => 'Przycisk — tekst', 'name' => 'kp_hist_btn_text', 'type' => 'text', 'default_value' => 'Poznaj więcej historii'],
         ['key' => 'field_kp_hist_btn_url',  'label' => 'Przycisk — link',  'name' => 'kp_hist_btn_url',  'type' => 'text', 'default_value' => '/blog/'],
 
@@ -2371,7 +2371,7 @@ acf_add_local_field_group([
         // ── TAB: Systemy ─────────────────────────────────────────
         ['key' => 'field_kp_tab_sys', 'label' => 'Systemy', 'name' => '', 'type' => 'tab'],
 
-        ['key' => 'field_kp_sys_title', 'label' => 'Tytuł', 'name' => 'kp_sys_title', 'type' => 'textarea', 'rows' => 2, 'default_value' => "Obsługa wielu systemów\nksiągowych"],
+        ['key' => 'field_kp_sys_title', 'label' => 'Tytuł (H2)', 'name' => 'kp_sys_title', 'type' => 'textarea', 'rows' => 2, 'default_value' => "Obsługa wielu systemów\nksiągowych"],
         ['key' => 'field_kp_sys_text',  'label' => 'Tekst', 'name' => 'kp_sys_text',  'type' => 'textarea', 'rows' => 3, 'default_value' => 'Nasz zespół obsługuje wiele systemów księgowych, m.in. Comarch Optima, SAP czy Enova. Współpracę dostosowujemy do istniejących narzędzi i procesów oraz wymagań klienta. Istnieje także możliwość pracy na preferowanych przez klienta programach księgowych.'],
         ['key' => 'field_kp_sys_logo1', 'label' => 'Logo 1', 'name' => 'kp_sys_logo1', 'type' => 'image', 'return_format' => 'array', 'preview_size' => 'thumbnail'],
         ['key' => 'field_kp_sys_logo2', 'label' => 'Logo 2', 'name' => 'kp_sys_logo2', 'type' => 'image', 'return_format' => 'array', 'preview_size' => 'thumbnail'],
@@ -2402,15 +2402,15 @@ acf_add_local_field_group([
         // ── HERO ──────────────────────────────────────────────────────
         ['key' => 'field_kar_tab_hero', 'label' => 'Hero', 'name' => '', 'type' => 'tab'],
         ['key' => 'field_kar_hero_bg',       'label' => 'Zdjęcie tła',   'name' => 'kar_hero_bg',       'type' => 'image',    'return_format' => 'array', 'preview_size' => 'medium'],
-        ['key' => 'field_kar_hero_title',    'label' => 'Tytuł',         'name' => 'kar_hero_title',    'type' => 'textarea', 'rows' => 2, 'default_value' => "Dołącz do\nnaszego zespołu"],
+        ['key' => 'field_kar_hero_title',    'label' => 'Tytuł (H1)',         'name' => 'kar_hero_title',    'type' => 'textarea', 'rows' => 2, 'default_value' => "Dołącz do\nnaszego zespołu"],
         ['key' => 'field_kar_hero_text',     'label' => 'Opis',          'name' => 'kar_hero_text',     'type' => 'textarea', 'rows' => 3, 'new_lines' => 'br', 'default_value' => "Budujemy uporządkowane procesy i dobrą atmosferę.\nJeśli cenisz jasne zasady, rozwój i pracę zespołową – sprawdź,\nczy mamy ofertę dla Ciebie."],
         ['key' => 'field_kar_hero_btn_text', 'label' => 'Tekst przycisku', 'name' => 'kar_hero_btn_text', 'type' => 'text', 'default_value' => 'Aktualne oferty pracy'],
         ['key' => 'field_kar_hero_btn_url',  'label' => 'Link przycisku',  'name' => 'kar_hero_btn_url',  'type' => 'text', 'default_value' => '#oferty'],
 
         // ── JAKOŚĆ ────────────────────────────────────────────────────
         ['key' => 'field_kar_tab_jakosc', 'label' => 'Twórz z nami jakość', 'name' => '', 'type' => 'tab'],
-        ['key' => 'field_kar_jakosc_title', 'label' => 'Tytuł',          'name' => 'kar_jakosc_title', 'type' => 'text',     'default_value' => 'Twórz z nami jakość'],
-        ['key' => 'field_kar_jakosc_green', 'label' => 'Tekst zielony',  'name' => 'kar_jakosc_green', 'type' => 'text',     'default_value' => '#Meritoros'],
+        ['key' => 'field_kar_jakosc_title', 'label' => 'Tytuł (H2)',          'name' => 'kar_jakosc_title', 'type' => 'text',     'default_value' => 'Twórz z nami jakość'],
+        ['key' => 'field_kar_jakosc_green', 'label' => 'Tekst zielony (H2)',  'name' => 'kar_jakosc_green', 'type' => 'text',     'default_value' => '#Meritoros'],
         ['key' => 'field_kar_jakosc_text1', 'label' => 'Akapit 1',       'name' => 'kar_jakosc_text1', 'type' => 'textarea', 'rows' => 3, 'default_value' => 'W Meritoros wspieramy firmy w księgowości, kadrach i płacach oraz procesach back-office od 2004 roku. Pracujemy tak, żeby być dumni z jakości informacji, które dostarczamy.'],
         ['key' => 'field_kar_jakosc_text2', 'label' => 'Akapit 2',       'name' => 'kar_jakosc_text2', 'type' => 'textarea', 'rows' => 3, 'default_value' => 'Jednocześnie wiemy, że dobre wyniki robią ludzie: dbamy o partnerską współpracę, szacunek i realne wsparcie w zespole. Pracujemy w zadaniowym z elastycznością, która działa wtedy, gdy idzie w parze z odpowiedzialnością i dotrzymywaniem ustaleń.'],
         ['key' => 'field_kar_jakosc_img1',  'label' => 'Slider – zdjęcie 1', 'name' => 'kar_jakosc_img1', 'type' => 'image', 'return_format' => 'array', 'preview_size' => 'thumbnail'],
@@ -2432,7 +2432,7 @@ acf_add_local_field_group([
 
         // ── DLACZEGO ──────────────────────────────────────────────────
         ['key' => 'field_kar_tab_dlaczego', 'label' => 'Dlaczego warto', 'name' => '', 'type' => 'tab'],
-        ['key' => 'field_kar_dlaczego_title', 'label' => 'Tytuł', 'name' => 'kar_dlaczego_title', 'type' => 'text', 'default_value' => 'Dlaczego warto do nas dołączyć?'],
+        ['key' => 'field_kar_dlaczego_title', 'label' => 'Tytuł (H2)', 'name' => 'kar_dlaczego_title', 'type' => 'text', 'default_value' => 'Dlaczego warto do nas dołączyć?'],
         ['key' => 'field_kar_dlaczego_1', 'label' => 'Karta 1', 'name' => 'kar_dlaczego_1', 'type' => 'group', 'layout' => 'row', 'sub_fields' => [
             ['key' => 'field_kar_d1_title', 'label' => 'Tytuł',   'name' => 'title', 'type' => 'textarea', 'rows' => 2],
             ['key' => 'field_kar_d1_text',  'label' => 'Tekst',   'name' => 'text',  'type' => 'textarea', 'rows' => 3],
@@ -2460,7 +2460,7 @@ acf_add_local_field_group([
 
         // ── BENEFITY ──────────────────────────────────────────────────
         ['key' => 'field_kar_tab_ben', 'label' => 'Benefity', 'name' => '', 'type' => 'tab'],
-        ['key' => 'field_kar_ben_title', 'label' => 'Tytuł sekcji', 'name' => 'kar_ben_title', 'type' => 'text', 'default_value' => 'Nasze benefity'],
+        ['key' => 'field_kar_ben_title', 'label' => 'Tytuł sekcji (H2)', 'name' => 'kar_ben_title', 'type' => 'text', 'default_value' => 'Nasze benefity'],
         ['key' => 'field_kar_ben_1', 'label' => 'Benefit 1', 'name' => 'kar_ben_1', 'type' => 'group', 'layout' => 'row', 'sub_fields' => [
             ['key' => 'field_kar_b1_icon',  'label' => 'Ikona (nazwa Lucide, np. clock)',  'name' => 'icon',  'type' => 'text', 'default_value' => 'clock'],
             ['key' => 'field_kar_b1_image', 'label' => 'Własna ikonka (zastępuje pole Ikona)', 'name' => 'image', 'type' => 'image', 'return_format' => 'array', 'preview_size' => 'thumbnail'],
@@ -2512,7 +2512,7 @@ acf_add_local_field_group([
 
         // ── OFERTY PRACY ──────────────────────────────────────────────
         ['key' => 'field_kar_tab_oferty', 'label' => 'Oferty pracy', 'name' => '', 'type' => 'tab'],
-        ['key' => 'field_kar_oferty_title', 'label' => 'Tytuł sekcji', 'name' => 'kar_oferty_title', 'type' => 'text', 'default_value' => 'Aktualne oferty'],
+        ['key' => 'field_kar_oferty_title', 'label' => 'Tytuł sekcji (H2)', 'name' => 'kar_oferty_title', 'type' => 'text', 'default_value' => 'Aktualne oferty'],
         ['key' => 'field_kar_oferta_1', 'label' => 'Oferta 1', 'name' => 'kar_oferta_1', 'type' => 'group', 'layout' => 'row', 'sub_fields' => [
             ['key' => 'field_kar_o1_title',    'label' => 'Stanowisko', 'name' => 'title',    'type' => 'text'],
             ['key' => 'field_kar_o1_salary',   'label' => 'Wynagrodzenie / lokalizacja', 'name' => 'salary', 'type' => 'text'],
@@ -2567,7 +2567,7 @@ acf_add_local_field_group([
 
         // ── REKRUTACJA ────────────────────────────────────────────────
         ['key' => 'field_kar_tab_rek', 'label' => 'Proces rekrutacji', 'name' => '', 'type' => 'tab'],
-        ['key' => 'field_kar_rek_title',    'label' => 'Tytuł',   'name' => 'kar_rek_title',    'type' => 'text',     'default_value' => 'Jak wygląda nasz proces rekrutacji'],
+        ['key' => 'field_kar_rek_title',    'label' => 'Tytuł (H2)',   'name' => 'kar_rek_title',    'type' => 'text',     'default_value' => 'Jak wygląda nasz proces rekrutacji'],
         ['key' => 'field_kar_rek_subtitle', 'label' => 'Podtytuł','name' => 'kar_rek_subtitle', 'type' => 'textarea', 'rows' => 2, 'default_value' => 'Zależy nam na przejrzystości — dlatego chcemy, żebyś wiedział/-a, czego się spodziewać na każdym etapie.'],
         ['key' => 'field_kar_rek_1', 'label' => 'Krok 1', 'name' => 'kar_rek_1', 'type' => 'group', 'layout' => 'row', 'sub_fields' => [
             ['key' => 'field_kar_r1_icon',  'label' => 'Ikona', 'name' => 'icon',  'type' => 'text', 'default_value' => 'file-text'],
@@ -2592,7 +2592,7 @@ acf_add_local_field_group([
 
         // ── OPINIE ────────────────────────────────────────────────────
         ['key' => 'field_kar_tab_opinie', 'label' => 'Opinie', 'name' => '', 'type' => 'tab'],
-        ['key' => 'field_kar_opinie_title', 'label' => 'Tytuł sekcji', 'name' => 'kar_opinie_title', 'type' => 'text', 'default_value' => 'Co mówią nasi pracownicy'],
+        ['key' => 'field_kar_opinie_title', 'label' => 'Tytuł sekcji (H2)', 'name' => 'kar_opinie_title', 'type' => 'text', 'default_value' => 'Co mówią nasi pracownicy'],
         ['key' => 'field_kar_opinia_1', 'label' => 'Opinia 1', 'name' => 'kar_opinia_1', 'type' => 'group', 'layout' => 'row', 'sub_fields' => [
             ['key' => 'field_kar_op1_quote', 'label' => 'Cytat',    'name' => 'quote', 'type' => 'textarea', 'rows' => 3],
             ['key' => 'field_kar_op1_name',  'label' => 'Imię',     'name' => 'name',  'type' => 'text'],
@@ -2620,7 +2620,7 @@ acf_add_local_field_group([
 
         // ── CULTUREBOOK ───────────────────────────────────────────────
         ['key' => 'field_kar_tab_cult', 'label' => 'Culturebook', 'name' => '', 'type' => 'tab'],
-        ['key' => 'field_kar_cult_title',    'label' => 'Tytuł',          'name' => 'kar_cult_title',    'type' => 'text',     'default_value' => 'Poznaj nasz Culturebook'],
+        ['key' => 'field_kar_cult_title',    'label' => 'Tytuł (H2)',          'name' => 'kar_cult_title',    'type' => 'text',     'default_value' => 'Poznaj nasz Culturebook'],
         ['key' => 'field_kar_cult_text1',    'label' => 'Akapit 1',       'name' => 'kar_cult_text1',    'type' => 'textarea', 'rows' => 3, 'default_value' => 'Culturebook powstał po to, żebyśmy wszyscy w Meritoros w ten sam sposób rozumieli, kim jesteśmy, dokąd zmierzamy i jakie wartości są dla nas ważne. Opisuje naszą misję, sposób działania i standard współpracy – wewnątrz zespołu i z klientami.'],
         ['key' => 'field_kar_cult_text2',    'label' => 'Akapit 2 (pogrubiony)', 'name' => 'kar_cult_text2', 'type' => 'textarea', 'rows' => 2, 'default_value' => 'Jeśli chcesz lepiej poznać nasz styl pracy, pobierz Culturebook i sprawdź, czy to podejście jest Ci bliskie'],
         ['key' => 'field_kar_cult_btn_text', 'label' => 'Tekst przycisku',         'name' => 'kar_cult_btn_text',      'type' => 'text', 'default_value' => 'Pobierz plik'],
@@ -2659,14 +2659,14 @@ acf_add_local_field_group([
 
         // ── WIDEO ─────────────────────────────────────────────────────
         ['key' => 'field_kar_tab_vid', 'label' => 'Wideo', 'name' => '', 'type' => 'tab'],
-        ['key' => 'field_kar_vid_title',     'label' => 'Tytuł',             'name' => 'kar_vid_title',     'type' => 'text', 'default_value' => 'Sprawdź jak się u nas pracuje'],
+        ['key' => 'field_kar_vid_title',     'label' => 'Tytuł (H2)',             'name' => 'kar_vid_title',     'type' => 'text', 'default_value' => 'Sprawdź jak się u nas pracuje'],
         ['key' => 'field_kar_vid_thumbnail', 'label' => 'Miniatura (thumb)', 'name' => 'kar_vid_thumbnail', 'type' => 'image', 'return_format' => 'array', 'preview_size' => 'medium'],
         ['key' => 'field_kar_vid_file',      'label' => 'Plik wideo (mp4/webm)', 'name' => 'kar_vid_file', 'type' => 'file', 'return_format' => 'array', 'mime_types' => 'mp4,webm'],
         ['key' => 'field_kar_vid_url',       'label' => 'URL wideo (YouTube/Vimeo) – alternatywnie', 'name' => 'kar_vid_url', 'type' => 'text'],
 
         // ── PYTANIA ───────────────────────────────────────────────────
         ['key' => 'field_kar_tab_pyt', 'label' => 'Kontakt HR', 'name' => '', 'type' => 'tab'],
-        ['key' => 'field_kar_pyt_title',    'label' => 'Tytuł',          'name' => 'kar_pyt_title',    'type' => 'text', 'default_value' => 'Masz pytania? Chętnie odpowiemy'],
+        ['key' => 'field_kar_pyt_title',    'label' => 'Tytuł (H2)',          'name' => 'kar_pyt_title',    'type' => 'text', 'default_value' => 'Masz pytania? Chętnie odpowiemy'],
         ['key' => 'field_kar_pyt_name',     'label' => 'Imię i nazwisko','name' => 'kar_pyt_name',     'type' => 'text', 'default_value' => 'Anna Kowalska'],
         ['key' => 'field_kar_pyt_role',     'label' => 'Stanowisko',     'name' => 'kar_pyt_role',     'type' => 'text', 'default_value' => 'Marketing manager'],
         ['key' => 'field_kar_pyt_phone',    'label' => 'Telefon (wyświetlany)', 'name' => 'kar_pyt_phone', 'type' => 'text', 'default_value' => '(+48) 12 423 32 99'],
@@ -2730,7 +2730,7 @@ acf_add_local_field_group([
     'fields' => [
 
         ['key' => 'field_hk_tab_hero', 'label' => 'Hero', 'name' => '', 'type' => 'tab'],
-        ['key' => 'field_hk_hero_title',    'label' => 'Tytuł',          'name' => 'hk_hero_title',    'type' => 'textarea', 'rows' => 2, 'default_value' => 'Historie klientów'],
+        ['key' => 'field_hk_hero_title',    'label' => 'Tytuł (H1)',          'name' => 'hk_hero_title',    'type' => 'textarea', 'rows' => 2, 'default_value' => 'Historie klientów'],
         ['key' => 'field_hk_hero_text',     'label' => 'Opis',           'name' => 'hk_hero_text',     'type' => 'textarea', 'rows' => 2, 'new_lines' => 'br', 'default_value' => 'Konkretne przypadki. Konkretny efekt. Zobacz, jak pomagamy firmom działać stabilnie i bezpiecznie.'],
         ['key' => 'field_hk_hero_btn_text', 'label' => 'Tekst przycisku','name' => 'hk_hero_btn_text', 'type' => 'text',     'default_value' => 'Poznaj więcej'],
         ['key' => 'field_hk_hero_btn_url',  'label' => 'Link przycisku', 'name' => 'hk_hero_btn_url',  'type' => 'text',     'default_value' => '#hk-video-section'],
@@ -2795,7 +2795,7 @@ acf_add_local_field_group([
         // ── TAB: Hero ─────────────────────────────────────────────
         ['key' => 'field_kupimy_tab_hero',     'label' => 'Hero',     'name' => '', 'type' => 'tab'],
         ['key' => 'field_kupimy_hero_image',    'label' => 'Zdjęcie w tle', 'name' => 'kupimy_hero_image', 'type' => 'image', 'return_format' => 'array', 'preview_size' => 'medium'],
-        ['key' => 'field_kupimy_hero_heading',  'label' => 'Nagłówek',    'name' => 'kupimy_hero_heading',  'type' => 'textarea', 'rows' => 2, 'default_value' => 'Myślisz o sprzedaży swojego biura rachunkowego?'],
+        ['key' => 'field_kupimy_hero_heading',  'label' => 'Nagłówek (H1)',    'name' => 'kupimy_hero_heading',  'type' => 'textarea', 'rows' => 2, 'default_value' => 'Myślisz o sprzedaży swojego biura rachunkowego?'],
         ['key' => 'field_kupimy_hero_subtitle', 'label' => 'Podtytuł',    'name' => 'kupimy_hero_subtitle', 'type' => 'textarea', 'rows' => 2, 'new_lines' => 'br', 'default_value' => 'Oferujemy dwa modele współpracy: całkowitą sprzedaż biura rachunkowego albo partnerstwo kapitałowe z zachowaniem operacyjnej autonomii.'],
         ['key' => 'field_kupimy_hero_btn1_text', 'label' => 'Przycisk 1 — tekst', 'name' => 'kupimy_hero_btn1_text', 'type' => 'text', 'default_value' => 'Porozmawiajmy'],
         ['key' => 'field_kupimy_hero_btn1_url',  'label' => 'Przycisk 1 — link',  'name' => 'kupimy_hero_btn1_url',  'type' => 'text', 'default_value' => '#porozmawiajmy', 'instructions' => 'Wpisz #id sekcji (np. #porozmawiajmy) lub pełny URL.'],
@@ -2886,13 +2886,13 @@ acf_add_local_field_group([
 
         // ── TAB: Hero ─────────────────────────────────────────────
         ['key' => 'field_ri_tab_hero', 'label' => 'Hero', 'name' => '', 'type' => 'tab'],
-        ['key' => 'field_ri_hero_title', 'label' => 'Naglowek H1',        'name' => 'ri_hero_title', 'type' => 'textarea', 'rows' => 2, 'default_value' => 'Relacje inwestorskie'],
+        ['key' => 'field_ri_hero_title', 'label' => 'Nagłówek (H1)',        'name' => 'ri_hero_title', 'type' => 'textarea', 'rows' => 2, 'default_value' => 'Relacje inwestorskie'],
         ['key' => 'field_ri_hero_text',  'label' => 'Tekst pod naglowkiem','name' => 'ri_hero_text',  'type' => 'textarea', 'rows' => 3, 'new_lines' => 'br', 'default_value' => 'Ponizej udostepniamy kluczowe informacje i dokumenty dotyczace Meritoros SA, w tym sprawozdania finansowe i raporty okresowe.'],
         ['key' => 'field_ri_hero_image', 'label' => 'Zdjecie w tle',      'name' => 'ri_hero_image', 'type' => 'image',    'return_format' => 'array', 'preview_size' => 'medium'],
 
         // ── TAB: Informacje o spolce ───────────────────────────────
         ['key' => 'field_ri_tab_info',    'label' => 'Informacje o spolce', 'name' => '', 'type' => 'tab'],
-        ['key' => 'field_ri_info_title',  'label' => 'Naglowek sekcji',     'name' => 'ri_info_title',  'type' => 'textarea', 'rows' => 2],
+        ['key' => 'field_ri_info_title',  'label' => 'Nagłówek sekcji (H2)',     'name' => 'ri_info_title',  'type' => 'textarea', 'rows' => 2],
         ['key' => 'field_ri_info_photo',  'label' => 'Zdjecie prawa kolumna', 'name' => 'ri_info_photo', 'type' => 'image', 'return_format' => 'array', 'preview_size' => 'medium'],
 
         // ── Podsekcje w lewej kolumnie (O nas) ────────────────────
@@ -2913,13 +2913,13 @@ acf_add_local_field_group([
 
         // ── TAB: Rośniemy ─────────────────────────────────────────
         ['key' => 'field_ri_tab_rosniemy',   'label' => 'Rosniemy',        'name' => '',                  'type' => 'tab'],
-        ['key' => 'field_ri_rosniemy_title', 'label' => 'Naglowek H2',     'name' => 'ri_rosniemy_title', 'type' => 'text',     'default_value' => 'Rośniemy'],
+        ['key' => 'field_ri_rosniemy_title', 'label' => 'Nagłówek (H2)',     'name' => 'ri_rosniemy_title', 'type' => 'text',     'default_value' => 'Rośniemy'],
         ['key' => 'field_ri_rosniemy_text',  'label' => 'Tekst',           'name' => 'ri_rosniemy_text',  'type' => 'textarea', 'rows' => 3],
         ['key' => 'field_ri_rosniemy_photo', 'label' => 'Zdjecie / wykres','name' => 'ri_rosniemy_photo', 'type' => 'image',    'return_format' => 'array', 'preview_size' => 'medium'],
 
         // ── TAB: Zarząd ───────────────────────────────────────────
         ['key' => 'field_ri_tab_zarzad',   'label' => 'Zarzad',      'name' => '',              'type' => 'tab'],
-        ['key' => 'field_ri_zarzad_title', 'label' => 'Naglowek H2', 'name' => 'ri_zarzad_title', 'type' => 'text', 'default_value' => 'Zarząd'],
+        ['key' => 'field_ri_zarzad_title', 'label' => 'Nagłówek (H2)', 'name' => 'ri_zarzad_title', 'type' => 'text', 'default_value' => 'Zarząd'],
         ['key' => 'field_ri_zarzad_m1', 'label' => 'Czlonek 1', 'name' => 'ri_zarzad_member_1', 'type' => 'group', 'sub_fields' => [
             ['key' => 'field_ri_zarzad_m1_name',  'label' => 'Imie i nazwisko', 'name' => 'name',  'type' => 'text'],
             ['key' => 'field_ri_zarzad_m1_role',  'label' => 'Stanowisko',      'name' => 'role',  'type' => 'text'],
@@ -3194,7 +3194,7 @@ acf_add_local_field_group([
 
         // ── TAB: Hero ─────────────────────────────────────────
         ['key' => 'field_op_tab_hero', 'label' => 'Hero', 'name' => '', 'type' => 'tab'],
-        ['key' => 'field_op_title',    'label' => 'Tytuł stanowiska (h1)', 'name' => 'op_title',    'type' => 'text',  'instructions' => 'Np. Księgowa / Księgowy z językiem ukraińskim'],
+        ['key' => 'field_op_title',    'label' => 'Tytuł stanowiska (H1)', 'name' => 'op_title',    'type' => 'text',  'instructions' => 'Np. Księgowa / Księgowy z językiem ukraińskim'],
         ['key' => 'field_op_salary',   'label' => 'Wynagrodzenie',         'name' => 'op_salary',   'type' => 'text',  'default_value' => '6 500 – 7 500 zł brutto'],
         ['key' => 'field_op_location', 'label' => 'Lokalizacja / tryb',    'name' => 'op_location', 'type' => 'text',  'default_value' => 'Praca zdalna'],
         ['key' => 'field_op_category', 'label' => 'Dział',                 'name' => 'op_category', 'type' => 'text',  'default_value' => 'Księgowość'],
