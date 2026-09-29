@@ -1,11 +1,12 @@
 <?php
 defined('ABSPATH') || exit;
 
-$_bpo_id = apply_filters('wpml_object_id', get_the_ID(), 'page', true);
+$_page_id = get_the_ID();
+$_orig_id = (int) apply_filters('wpml_object_id', $_page_id, 'page', true, apply_filters('wpml_default_language', null));
 
-$section_title = __( get_field('bpo_hist_title', $_bpo_id) ?: 'Jak wyglada BPO w praktyce?', 'meritoros' );
-$btn_text      = __( get_field('bpo_hist_btn_text', $_bpo_id) ?: 'Poznaj wiecej historii', 'meritoros' );
-$btn_url       = get_field('bpo_hist_btn_url', $_bpo_id) ?: home_url('/historie-klientow/');
+$section_title = __( get_field('bpo_hist_title', $_orig_id) ?: 'Jak wyglada BPO w praktyce?', 'meritoros' );
+$btn_text      = __( get_field('bpo_hist_btn_text', $_orig_id) ?: 'Poznaj wiecej historii', 'meritoros' );
+$btn_url       = get_field('bpo_hist_btn_url', $_orig_id) ?: home_url('/historie-klientow/');
 
 $slide_defaults = [
     1 => [
@@ -46,7 +47,7 @@ $slide_defaults = [
 
 $slides = [];
 for ($i = 1; $i <= 4; $i++) {
-    $s   = get_field("bpo_hist_{$i}", $_bpo_id);
+    $s   = get_field("bpo_hist_{$i}", $_orig_id);
     $def = $slide_defaults[$i];
 
     $heading = trim(is_array($s) && !empty($s['scope']) ? $s['scope'] : $def['scope']);
