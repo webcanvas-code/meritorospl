@@ -1,221 +1,284 @@
 <?php
-$_fp_id = (int) get_option('page_on_front');
-$title  = __( get_field('hist_title',    $_fp_id) ?: 'Historie naszych klientów', 'meritoros' );
-$btn_t  = __( get_field('hist_btn_text', $_fp_id) ?: 'Poznaj więcej historii', 'meritoros' );
-$btn_u  = (get_field('hist_btn_url',  $_fp_id) ?: home_url('/historie-klientow/'));
+defined('ABSPATH') || exit;
+
+$_bpo_id = apply_filters('wpml_object_id', get_the_ID(), 'page', true);
+
+$section_title = __( get_field('bpo_hist_title', $_bpo_id) ?: 'Jak wyglada BPO w praktyce?', 'meritoros' );
+$btn_text      = __( get_field('bpo_hist_btn_text', $_bpo_id) ?: 'Poznaj wiecej historii', 'meritoros' );
+$btn_url       = get_field('bpo_hist_btn_url', $_bpo_id) ?: home_url('/historie-klientow/');
 
 $slide_defaults = [
-    [
-        'logo'       => null,
-        'logo_alt'   => 'HPC',
-        'industries' => __("Geologia inżynierska\nOchrona środowiska", 'meritoros'),
-        'scope'      => __('Usługi rachunkowe, kadry i płace, wsparcie w procesie audytu', 'meritoros'),
-        'text'       => __('Po kilku zmianach głównej księgowej spółka potrzebowała szybkiego uporządkowania księgowości i bezpiecznego zamknięcia roku obrotowego.', 'meritoros'),
-        'image'      => null,
-        'video_url'  => '',
+    1 => [
+        'logo'         => null,
+        'logo_alt'     => 'Dentity',
+        'industries'   => "Stomatologia\nOchrona zdrowia",
+        'scope'        => 'Pelna obsluga BPO dla sieci gabinetow stomatologicznych',
+        'text'         => 'Dynamicznie rozwijajaca sie siec gabinetow Dentity potrzebowala partnera, ktory przejmie caly obszar finansowo-ksiegowy i kadrowy, odciazajac zarzad od administracji.',
+        'points'       => "Ksiegowosc pelna i kadrowo-placowa dla kilku podmiotow\nMiesieczna analiza rentownosci na poziomie gabinetu\nObsluga rozliczen z NFZ i podmiotami powiazanymi",
+        'stat1_val'    => '',
+        'stat1_label'  => '',
+        'stat2_val'    => '',
+        'stat2_label'  => '',
+        'stat3_val'    => '',
+        'stat3_label'  => '',
+        'quote'        => '',
+        'quote_author' => '',
+        'image'        => null,
+        'url'          => '#',
     ],
-    [
-        'logo'       => null,
-        'logo_alt'   => 'Printbox',
-        'industries' => __("E-commerce\nTechnologia", 'meritoros'),
-        'scope'      => __('Pełna księgowość, raportowanie zarządcze, wsparcie podczas audytu', 'meritoros'),
-        'text'       => __('Dynamicznie rosnąca spółka technologiczna potrzebowała partnera, który zapewni rzetelną sprawozdawczość i gotowość do pozyskania inwestora.', 'meritoros'),
-        'image'      => null,
-        'video_url'  => '',
+    2 => [
+        'logo'         => null,
+        'logo_alt'     => '',
+        'industries'   => '',
+        'scope'        => '',
+        'text'         => '',
+        'points'       => '',
+        'stat1_val'    => '',
+        'stat1_label'  => '',
+        'stat2_val'    => '',
+        'stat2_label'  => '',
+        'stat3_val'    => '',
+        'stat3_label'  => '',
+        'quote'        => '',
+        'quote_author' => '',
+        'image'        => null,
+        'url'          => '#',
     ],
 ];
 
-/**
- * Convert a YouTube or Vimeo URL to an embeddable iframe src.
- */
-function bpo_video_embed_url(string $url): string {
-    if (!$url) return '';
-    // YouTube watch or short URL
-    if (preg_match('/(?:youtube\.com\/watch\?v=|youtu\.be\/)([a-zA-Z0-9_-]+)/', $url, $m)) {
-        return 'https://www.youtube.com/embed/' . $m[1] . '?autoplay=1&rel=0';
-    }
-    // Vimeo
-    if (preg_match('/vimeo\.com\/(\d+)/', $url, $m)) {
-        return 'https://player.vimeo.com/video/' . $m[1] . '?autoplay=1';
-    }
-    return $url;
-}
-
-/**
- * Return a thumbnail URL from a YouTube link (auto-fetched poster).
- */
-function bpo_video_thumbnail(string $url): string {
-    if (preg_match('/(?:youtube\.com\/watch\?v=|youtu\.be\/)([a-zA-Z0-9_-]+)/', $url, $m)) {
-        return 'https://img.youtube.com/vi/' . $m[1] . '/maxresdefault.jpg';
-    }
-    return '';
-}
-
 $slides = [];
 for ($i = 1; $i <= 2; $i++) {
-    $s = get_field("hist_{$i}", $_fp_id);
-    $d = $slide_defaults[$i - 1];
-    $logo_img   = is_array($s) && !empty($s['logo'])       ? $s['logo']       : $d['logo'];
-    $slide_img  = is_array($s) && !empty($s['image'])      ? $s['image']      : $d['image'];
-    $video_file = is_array($s) && !empty($s['video_file']) ? $s['video_file'] : null;
-    $video_url  = is_array($s) && !empty($s['video_url'])  ? trim($s['video_url']) : $d['video_url'];
+    $s   = get_field("bpo_hist_{$i}", $_bpo_id);
+    $def = $slide_defaults[$i];
 
-    // Uploaded file takes priority over external URL
-    if (is_array($video_file) && !empty($video_file['url'])) {
-        $play_src  = esc_url($video_file['url']);
-        $play_type = 'file';
-    } elseif ($video_url) {
-        $play_src  = bpo_video_embed_url($video_url);
-        $play_type = 'embed';
-    } else {
-        $play_src  = '';
-        $play_type = '';
+    $heading = trim(is_array($s) && !empty($s['scope']) ? $s['scope'] : $def['scope']);
+    if ($i > 1 && $heading === '') continue; // slajd 2+ ukryj jesli brak naglowka
+
+    $logo_img  = is_array($s) && !empty($s['logo'])  ? $s['logo']  : $def['logo'];
+    $slide_img = is_array($s) && !empty($s['image']) ? $s['image'] : $def['image'];
+
+    $industries_raw = is_array($s) && isset($s['industries']) && $s['industries'] !== ''
+        ? $s['industries'] : $def['industries'];
+    $industries = array_values(array_filter(array_map('trim', explode("\n", $industries_raw))));
+
+    $points_raw = is_array($s) && isset($s['points']) && $s['points'] !== ''
+        ? $s['points'] : $def['points'];
+    $points = array_values(array_filter(array_map('trim', explode("\n", $points_raw))));
+
+    $stats = [];
+    foreach ([1, 2, 3] as $n) {
+        $val   = trim(is_array($s) && !empty($s["stat{$n}_val"])   ? $s["stat{$n}_val"]   : $def["stat{$n}_val"]);
+        $label = trim(is_array($s) && !empty($s["stat{$n}_label"]) ? $s["stat{$n}_label"] : $def["stat{$n}_label"]);
+        if ($val !== '') {
+            $stats[] = ['val' => $val, 'label' => $label];
+        }
     }
 
+    $quote        = trim(is_array($s) && !empty($s['quote'])        ? $s['quote']        : $def['quote']);
+    $quote_author = trim(is_array($s) && !empty($s['quote_author']) ? $s['quote_author'] : $def['quote_author']);
+
     $slides[] = [
-        'logo'       => $logo_img,
-        'logo_alt'   => is_array($logo_img) ? esc_attr($logo_img['alt'] ?: $d['logo_alt']) : esc_attr($d['logo_alt']),
-        'industries' => array_filter(array_map('trim', explode("\n", is_array($s) && !empty($s['industries']) ? $s['industries'] : $d['industries']))),
-        'scope'      => is_array($s) && !empty($s['scope']) ? $s['scope'] : $d['scope'],
-        'text'       => is_array($s) && !empty($s['text'])  ? $s['text']  : $d['text'],
-        'image'      => $slide_img,
-        'video_url'  => $video_url,
-        'play_src'   => $play_src,
-        'play_type'  => $play_type,
-        'slide_url'  => is_array($s) && !empty($s['url'])   ? $s['url']   : '#',
-        'btn_text'   => $btn_t,
+        'logo'         => $logo_img,
+        'logo_alt'     => is_array($logo_img) ? esc_attr($logo_img['alt'] ?: $def['logo_alt']) : esc_attr($def['logo_alt']),
+        'industries'   => $industries,
+        'heading'      => __($heading, 'meritoros'),
+        'text'         => __( is_array($s) && !empty($s['text']) ? $s['text'] : $def['text'], 'meritoros' ),
+        'points'       => $points,
+        'stats'        => $stats,
+        'quote'        => $quote,
+        'quote_author' => $quote_author,
+        'image'        => $slide_img,
+        'url'          => is_array($s) && !empty($s['url']) ? $s['url'] : $def['url'],
+        'btn_text'     => $btn_text,
     ];
 }
+
+$total = count($slides);
+if ($total === 0) return;
 ?>
 
-<section id="bpo-historie" class="py-10 md:py-20 bg-white relative">
-    <div class="max-w-7xl mx-auto px-6 mb-10 flex flex-col sm:flex-row sm:items-end sm:justify-between gap-4">
-        <h2 class="text-pretty text-4xl md:text-5xl font-bold tracking-tight text-slate-900"><?php echo mer_esc($title); ?></h2>
-        <div class="hidden sm:flex items-center gap-2 shrink-0">
-            <button id="historie-prev" type="button" class="w-12 h-12 rounded-full bg-white border border-slate-200 flex items-center justify-center shadow-sm hover:bg-slate-50 transition-colors" style="opacity:0.35;pointer-events:none">
-                <i data-lucide="chevron-left" class="w-5 h-5 text-slate-700 stroke-[2]"></i>
-            </button>
-            <button id="historie-next" type="button" class="w-12 h-12 rounded-full bg-[#00d084] flex items-center justify-center shadow-md hover:bg-[#00b872] transition-colors">
-                <i data-lucide="chevron-right" class="w-5 h-5 text-white stroke-[2]"></i>
-            </button>
+<section id="bpo-historie" class="py-16 md:py-24 bg-white border-t border-slate-100">
+    <div class="max-w-6xl mx-auto px-6">
+
+        <!-- Naglowek sekcji -->
+        <div class="flex items-end justify-between gap-4 mb-10">
+            <div>
+                <p class="text-[#00d084] uppercase tracking-widest text-sm font-bold mb-3">
+                    <?php esc_html_e('Historie klientow BPO', 'meritoros'); ?>
+                </p>
+                <h2 class="text-pretty text-3xl sm:text-4xl font-bold tracking-tight text-slate-900">
+                    <?php echo mer_esc($section_title); ?>
+                </h2>
+            </div>
+            <?php if ($total > 1) : ?>
+            <div class="hidden sm:flex items-center gap-2 shrink-0">
+                <button id="bpoh-prev" type="button"
+                        class="w-11 h-11 rounded-full border border-slate-200 bg-white flex items-center justify-center text-slate-500 hover:bg-slate-50 transition-colors"
+                        aria-label="<?php esc_attr_e('Poprzednia historia', 'meritoros'); ?>">
+                    <i data-lucide="chevron-left" class="w-5 h-5 stroke-[2]"></i>
+                </button>
+                <button id="bpoh-next" type="button"
+                        class="w-11 h-11 rounded-full bg-[#00d084] flex items-center justify-center text-white hover:bg-[#00b872] transition-colors"
+                        aria-label="<?php esc_attr_e('Nastepna historia', 'meritoros'); ?>">
+                    <i data-lucide="chevron-right" class="w-5 h-5 stroke-[2]"></i>
+                </button>
+            </div>
+            <?php endif; ?>
         </div>
-    </div>
 
-    <div class="max-w-7xl mx-auto px-6">
-        <div class="overflow-hidden">
-        <div id="historie-track" class="flex gap-6 transition-transform duration-500 ease-in-out">
+        <!-- Slider -->
+        <div class="overflow-hidden rounded-3xl bg-white border border-slate-100 shadow-sm">
+            <div id="bpoh-track" class="flex transition-transform duration-500 ease-out will-change-transform">
 
-            <?php foreach ($slides as $slide) :
-                if (is_array($slide['image'])) {
-                    $thumb_url = esc_url($slide['image']['url']);
-                    $thumb_alt = esc_attr($slide['image']['alt'] ?: __('Zdjęcie klienta', 'meritoros'));
-                } elseif ($slide['video_url'] && $auto = bpo_video_thumbnail($slide['video_url'])) {
-                    $thumb_url = esc_url($auto);
-                    $thumb_alt = __('Miniatura wideo', 'meritoros');
-                } else {
-                    $thumb_url = 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&q=80&w=1200';
-                    $thumb_alt = __('Zdjęcie klienta', 'meritoros');
-                }
-                $logo_url  = is_array($slide['logo']) ? esc_url($slide['logo']['url']) : '';
-                $has_video = !empty($slide['play_src']);
-            ?>
-                <div class="min-w-[85%] sm:min-w-[calc(50%-12px)] lg:w-[400px] lg:min-w-[400px] rounded-2xl overflow-hidden border border-slate-200 flex flex-col">
-                    <div class="relative h-[155px] shrink-0">
-                        <img src="<?php echo $thumb_url; ?>" alt="<?php echo $thumb_alt; ?>" class="absolute inset-0 w-full h-full object-cover" loading="lazy">
-                        <div class="absolute inset-0 bg-slate-900/20"></div>
-                        <?php if ($has_video) : ?>
-                        <button class="bpo-play-btn absolute inset-0 flex items-center justify-center group"
-                                data-src="<?php echo esc_attr($slide['play_src']); ?>"
-                                data-type="<?php echo esc_attr($slide['play_type']); ?>"
-                                aria-label="<?php echo esc_attr(__('Odtwórz film', 'meritoros')); ?>">
-                        <?php else : ?>
-                        <div class="absolute inset-0 flex items-center justify-center pointer-events-none">
-                        <?php endif; ?>
-                            <div class="w-12 h-12 rounded-full bg-[#00d084] flex items-center justify-center shadow-xl group-hover:scale-110 transition-transform duration-200">
-                                <i data-lucide="play" fill="#fff" class="w-4 h-4 text-white ml-0.5" stroke-width="0"></i>
-                            </div>
-                        <?php if ($has_video) : ?>
-                        </button>
-                        <?php else : ?>
-                        </div>
-                        <?php endif; ?>
-                    </div>
-                    <div class="p-5 flex flex-col flex-1">
+                <?php foreach ($slides as $slide) :
+                    $logo_url  = is_array($slide['logo']) ? esc_url($slide['logo']['url']) : '';
+                    $img_url   = is_array($slide['image']) ? esc_url($slide['image']['url']) : '';
+                    $img_alt   = is_array($slide['image']) ? esc_attr($slide['image']['alt'] ?: $slide['logo_alt']) : esc_attr($slide['logo_alt']);
+                    $has_stats = !empty($slide['stats']);
+                ?>
+                <article class="min-w-full grid grid-cols-1 lg:grid-cols-2">
+
+                    <!-- Lewa: tresc -->
+                    <div class="flex flex-col justify-center p-8 sm:p-10 xl:p-12 gap-5">
+
+                        <!-- Logo lub nazwa -->
                         <?php if ($logo_url) : ?>
-                            <img src="<?php echo $logo_url; ?>" alt="<?php echo $slide['logo_alt']; ?>" class="h-7 w-auto object-contain object-left mb-3" loading="lazy">
-                        <?php else : ?>
-                            <p class="text-sm font-bold text-slate-800 mb-3"><?php echo $slide['logo_alt']; ?></p>
+                            <img src="<?php echo $logo_url; ?>" alt="<?php echo $slide['logo_alt']; ?>"
+                                 class="h-8 w-auto object-contain object-left" loading="lazy">
+                        <?php elseif ($slide['logo_alt']) : ?>
+                            <p class="text-xl font-black text-slate-900"><?php echo esc_html($slide['logo_alt']); ?></p>
                         <?php endif; ?>
-                        <div class="flex flex-wrap gap-1 mb-3">
+
+                        <!-- Branze -->
+                        <?php if (!empty($slide['industries'])) : ?>
+                        <div class="flex flex-wrap gap-2">
                             <?php foreach ($slide['industries'] as $ind) : ?>
-                                <span class="mer-btn mer-btn--secondary px-2 py-0.5 rounded-full border border-slate-300 text-[10px] text-slate-600"><?php echo mer_esc($ind); ?></span>
+                                <span class="inline-flex rounded-lg bg-slate-100 px-2.5 py-1 text-xs font-medium text-slate-600">
+                                    <?php echo mer_esc($ind); ?>
+                                </span>
                             <?php endforeach; ?>
                         </div>
-                        <p class="text-xs text-slate-500 leading-relaxed line-clamp-3 mb-3"><?php echo mer_esc($slide['text']); ?></p>
-                        <a href="<?php echo esc_url($slide['slide_url']); ?>" class="mer-btn mer-btn--white mt-auto inline-flex px-5 py-2.5 rounded-full bg-white text-slate-700 text-xs font-semibold border border-slate-200 hover:border-slate-300 hover:bg-slate-50 transition-colors self-start">
-                            <?php echo mer_esc($slide['btn_text']); ?>
-                        </a>
+                        <?php endif; ?>
+
+                        <!-- Naglowek + opis w ramce -->
+                        <div class="rounded-2xl bg-slate-50 p-5">
+                            <h3 class="text-lg sm:text-xl font-bold text-slate-900 leading-snug mb-2">
+                                <?php echo mer_esc($slide['heading']); ?>
+                            </h3>
+                            <?php if ($slide['text']) : ?>
+                            <p class="text-sm text-slate-600 leading-relaxed">
+                                <?php echo mer_esc($slide['text']); ?>
+                            </p>
+                            <?php endif; ?>
+                        </div>
+
+                        <!-- Punkty -->
+                        <?php if (!empty($slide['points'])) : ?>
+                        <ul class="space-y-2.5">
+                            <?php foreach ($slide['points'] as $point) : ?>
+                            <li class="flex items-start gap-3">
+                                <span class="mt-0.5 w-5 h-5 rounded-full bg-[#00d084]/15 flex items-center justify-center shrink-0">
+                                    <i data-lucide="check" class="w-3 h-3 text-[#00d084]" stroke-width="3"></i>
+                                </span>
+                                <span class="text-sm text-slate-700 leading-relaxed"><?php echo mer_esc($point); ?></span>
+                            </li>
+                            <?php endforeach; ?>
+                        </ul>
+                        <?php endif; ?>
+
+                        <!-- Statystyki (opcjonalne) -->
+                        <?php if ($has_stats) : ?>
+                        <div class="grid grid-cols-<?php echo count($slide['stats']); ?> gap-3">
+                            <?php foreach ($slide['stats'] as $stat) : ?>
+                            <div class="rounded-xl bg-slate-50 p-3 text-center">
+                                <p class="text-2xl font-black text-[#00d084]"><?php echo esc_html($stat['val']); ?></p>
+                                <?php if ($stat['label']) : ?>
+                                <p class="text-[11px] text-slate-500 mt-0.5 leading-tight"><?php echo esc_html($stat['label']); ?></p>
+                                <?php endif; ?>
+                            </div>
+                            <?php endforeach; ?>
+                        </div>
+                        <?php endif; ?>
+
+                        <!-- Cytat (opcjonalny) -->
+                        <?php if ($slide['quote']) : ?>
+                        <blockquote class="border-l-4 border-[#00d084] pl-4">
+                            <p class="text-sm text-slate-700 italic leading-relaxed">"<?php echo mer_esc($slide['quote']); ?>"</p>
+                            <?php if ($slide['quote_author']) : ?>
+                            <footer class="mt-1.5 text-xs text-slate-400 font-semibold"><?php echo esc_html($slide['quote_author']); ?></footer>
+                            <?php endif; ?>
+                        </blockquote>
+                        <?php endif; ?>
+
+                        <!-- CTA -->
+                        <div class="pt-1">
+                            <a href="<?php echo esc_url($slide['url']); ?>"
+                               class="mer-btn mer-btn--white inline-flex items-center gap-2 rounded-full border border-slate-200 bg-white px-5 py-3 text-sm font-semibold text-slate-700 hover:border-slate-300 hover:bg-slate-50 transition-colors">
+                                <?php echo mer_esc($slide['btn_text']); ?>
+                                <i data-lucide="arrow-right" class="w-4 h-4 stroke-[2]"></i>
+                            </a>
+                        </div>
+
                     </div>
-                </div>
-            <?php endforeach; ?>
 
-        </div>
-        </div>
-    </div>
+                    <!-- Prawa: zdjecie -->
+                    <div class="p-6 lg:p-8 flex items-center order-first lg:order-last">
+                        <div class="w-full aspect-[4/3] rounded-2xl overflow-hidden bg-slate-100 relative">
+                            <?php if ($img_url) : ?>
+                                <img src="<?php echo $img_url; ?>" alt="<?php echo $img_alt; ?>"
+                                     class="absolute inset-0 w-full h-full object-cover"
+                                     loading="lazy">
+                            <?php else : ?>
+                                <div class="absolute inset-0 flex items-center justify-center bg-slate-100">
+                                    <i data-lucide="image" class="w-12 h-12 text-slate-300"></i>
+                                </div>
+                            <?php endif; ?>
+                        </div>
+                    </div>
 
-    <div class="max-w-7xl mx-auto px-6 mt-6">
-        <div class="flex items-center gap-4 sm:justify-center">
-            <button id="historie-prev-m" class="sm:hidden w-12 h-12 rounded-full bg-white border border-slate-200 flex items-center justify-center shadow-sm hover:bg-slate-50 transition-colors" style="opacity:0.35;pointer-events:none">
-                <i data-lucide="chevron-left" class="w-5 h-5 text-slate-700 stroke-[2]"></i>
-            </button>
-            <div class="flex flex-1 sm:flex-none items-center justify-center gap-2" id="historie-dots">
-                <?php foreach ($slides as $idx => $slide) : ?>
-                <button class="rounded-full transition-all duration-300 <?php echo $idx === 0 ? 'w-6 h-2 bg-[#00d084]' : 'w-2 h-2 bg-slate-300'; ?>" data-i="<?php echo $idx; ?>"></button>
+                </article>
                 <?php endforeach; ?>
+
             </div>
-            <button id="historie-next-m" class="sm:hidden w-12 h-12 rounded-full bg-[#00d084] flex items-center justify-center shadow-md hover:bg-[#00b872] transition-colors">
-                <i data-lucide="chevron-right" class="w-5 h-5 text-white stroke-[2]"></i>
-            </button>
         </div>
+
+        <!-- Nawigacja kropki (tylko gdy >1 slajd) -->
+        <?php if ($total > 1) : ?>
+        <div class="mt-6 flex items-center justify-between gap-4">
+            <div id="bpoh-dots" class="flex items-center gap-2">
+                <?php for ($i = 0; $i < $total; $i++) : ?>
+                <button type="button" data-i="<?php echo $i; ?>"
+                        class="rounded-full transition-all duration-300 <?php echo $i === 0 ? 'w-6 h-2 bg-[#00d084]' : 'w-2 h-2 bg-slate-300'; ?>"
+                        aria-label="<?php printf(esc_attr__('Historia %d', 'meritoros'), $i + 1); ?>">
+                </button>
+                <?php endfor; ?>
+            </div>
+            <div class="sm:hidden flex items-center gap-2">
+                <button id="bpoh-prev-m" type="button"
+                        class="w-11 h-11 rounded-full border border-slate-200 bg-white flex items-center justify-center text-slate-500">
+                    <i data-lucide="chevron-left" class="w-5 h-5 stroke-[2]"></i>
+                </button>
+                <button id="bpoh-next-m" type="button"
+                        class="w-11 h-11 rounded-full bg-[#00d084] flex items-center justify-center text-white">
+                    <i data-lucide="chevron-right" class="w-5 h-5 stroke-[2]"></i>
+                </button>
+            </div>
+        </div>
+        <?php endif; ?>
+
     </div>
 </section>
 
-<!-- Video modal -->
-<div id="bpo-video-modal" class="fixed inset-0 z-[200] flex items-center justify-center p-4" style="display:none!important" aria-modal="true" role="dialog">
-    <div id="bpo-modal-backdrop" class="absolute inset-0 bg-slate-900/80 backdrop-blur-sm"></div>
-    <div class="relative z-10 w-full max-w-4xl">
-        <!-- iframe for YouTube / Vimeo -->
-        <div id="bpo-embed-wrap" class="relative w-full hidden" style="padding-bottom:56.25%">
-            <iframe id="bpo-video-iframe" src="" frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; fullscreen"
-                allowfullscreen
-                class="absolute inset-0 w-full h-full rounded-2xl bg-black"></iframe>
-        </div>
-        <!-- <video> for uploaded files -->
-        <div id="bpo-file-wrap" class="hidden">
-            <video id="bpo-video-file" controls autoplay playsinline
-                class="w-full rounded-2xl bg-black max-h-[80vh]" src=""></video>
-        </div>
-        <button id="bpo-modal-close"
-            class="absolute -top-12 right-0 w-10 h-10 rounded-full bg-white/20 hover:bg-white/40 text-white flex items-center justify-center transition-colors"
-            aria-label="<?php echo esc_attr(__('Zamknij', 'meritoros')); ?>">
-            <i data-lucide="x" class="w-5 h-5"></i>
-        </button>
-    </div>
-</div>
-
+<?php if ($total > 1) : ?>
 <script>
 (function () {
-    // ── Slider ────────────────────────────────────────────────────
-    var track   = document.getElementById('historie-track');
-    var nextBtn = document.getElementById('historie-next');
-    var prevBtn = document.getElementById('historie-prev');
-    var prevBtnM = document.getElementById('historie-prev-m');
-    var nextBtnM = document.getElementById('historie-next-m');
-    var dots    = document.querySelectorAll('#historie-dots button');
-    if (!track) return;
-    var cards   = track.querySelectorAll(':scope > div');
-    var total   = cards.length;
+    var track   = document.getElementById('bpoh-track');
+    var dots    = document.querySelectorAll('#bpoh-dots button');
+    var prevBtn = document.getElementById('bpoh-prev');
+    var nextBtn = document.getElementById('bpoh-next');
+    var prevBtnM = document.getElementById('bpoh-prev-m');
+    var nextBtnM = document.getElementById('bpoh-next-m');
+    var total   = <?php echo (int) $total; ?>;
     var current = 0;
 
     function updateDots() {
@@ -224,74 +287,30 @@ for ($i = 1; $i <= 2; $i++) {
         });
     }
 
-    function getMax() {
-        var cardWidth = cards[0].offsetWidth + 24;
-        var visible   = Math.max(1, Math.round(track.parentElement.offsetWidth / cardWidth));
-        return Math.max(0, total - visible);
-    }
-
     function update() {
-        var max = getMax();
-        if (current > max) current = max;
-        var cardWidth = cards[0].offsetWidth + 24;
-        track.style.transform = 'translateX(-' + (current * cardWidth) + 'px)';
-        [prevBtn, prevBtnM].forEach(function(b) { if (b) { b.style.opacity = current === 0  ? '0.35' : '1'; b.style.pointerEvents = current === 0  ? 'none' : ''; } });
-        [nextBtn, nextBtnM].forEach(function(b) { if (b) { b.style.opacity = current >= max ? '0.35' : '1'; b.style.pointerEvents = current >= max ? 'none' : ''; } });
+        track.style.transform = 'translateX(-' + (current * 100) + '%)';
+        [prevBtn, prevBtnM].forEach(function (b) {
+            if (!b) return;
+            b.style.opacity      = current === 0          ? '0.35' : '1';
+            b.style.pointerEvents = current === 0          ? 'none' : '';
+        });
+        [nextBtn, nextBtnM].forEach(function (b) {
+            if (!b) return;
+            b.style.opacity      = current >= total - 1 ? '0.35' : '1';
+            b.style.pointerEvents = current >= total - 1 ? 'none' : '';
+        });
         updateDots();
     }
 
-    nextBtn.addEventListener('click', function () { if (current < getMax()) { current++; update(); } });
-    prevBtn.addEventListener('click', function () { if (current > 0) { current--; update(); } });
-    if (nextBtnM) nextBtnM.addEventListener('click', function () { if (current < getMax()) { current++; update(); } });
-    if (prevBtnM) prevBtnM.addEventListener('click', function () { if (current > 0)        { current--; update(); } });
+    if (prevBtn) prevBtn.addEventListener('click', function () { if (current > 0) { current--; update(); } });
+    if (nextBtn) nextBtn.addEventListener('click', function () { if (current < total - 1) { current++; update(); } });
+    if (prevBtnM) prevBtnM.addEventListener('click', function () { if (current > 0) { current--; update(); } });
+    if (nextBtnM) nextBtnM.addEventListener('click', function () { if (current < total - 1) { current++; update(); } });
     dots.forEach(function (d) {
         d.addEventListener('click', function () { current = parseInt(d.dataset.i); update(); });
     });
-    window.addEventListener('resize', update);
-    (function tryInit() { if (cards[0] && cards[0].offsetWidth > 0) { update(); } else { requestAnimationFrame(tryInit); } })();
 
-    // ── Video modal ───────────────────────────────────────────────
-    var modal      = document.getElementById('bpo-video-modal');
-    var embedWrap  = document.getElementById('bpo-embed-wrap');
-    var fileWrap   = document.getElementById('bpo-file-wrap');
-    var iframe     = document.getElementById('bpo-video-iframe');
-    var videoEl    = document.getElementById('bpo-video-file');
-    var closeBtn   = document.getElementById('bpo-modal-close');
-    var backdrop   = document.getElementById('bpo-modal-backdrop');
-
-    function openModal(src, type) {
-        if (type === 'file') {
-            embedWrap.classList.add('hidden');
-            fileWrap.classList.remove('hidden');
-            videoEl.src = src;
-            videoEl.play();
-        } else {
-            fileWrap.classList.add('hidden');
-            embedWrap.classList.remove('hidden');
-            iframe.src = src;
-        }
-        modal.style.cssText = '';
-        modal.style.display = 'flex';
-        document.body.style.overflow = 'hidden';
-    }
-
-    function closeModal() {
-        modal.style.display = 'none';
-        iframe.src = '';
-        videoEl.pause();
-        videoEl.src = '';
-        document.body.style.overflow = '';
-    }
-
-    document.querySelectorAll('.bpo-play-btn').forEach(function (btn) {
-        btn.addEventListener('click', function () {
-            openModal(this.dataset.src, this.dataset.type);
-        });
-    });
-    if (closeBtn)  closeBtn.addEventListener('click', closeModal);
-    if (backdrop)  backdrop.addEventListener('click', closeModal);
-    document.addEventListener('keydown', function (e) {
-        if (e.key === 'Escape') closeModal();
-    });
+    update();
 })();
 </script>
+<?php endif; ?>
