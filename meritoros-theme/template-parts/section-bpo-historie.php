@@ -47,7 +47,7 @@ $slide_defaults = [
 ];
 
 $slides = [];
-for ($i = 1; $i <= 2; $i++) {
+for ($i = 1; $i <= 4; $i++) {
     $s   = get_field("bpo_hist_{$i}", $_bpo_id);
     $def = $slide_defaults[$i];
 
