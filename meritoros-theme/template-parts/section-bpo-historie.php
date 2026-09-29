@@ -14,7 +14,6 @@ $slide_defaults = [
         'industries'   => "Stomatologia\nOchrona zdrowia",
         'scope'        => 'Pelna obsluga BPO dla sieci gabinetow stomatologicznych',
         'text'         => 'Dynamicznie rozwijajaca sie siec gabinetow Dentity potrzebowala partnera, ktory przejmie caly obszar finansowo-ksiegowy i kadrowy, odciazajac zarzad od administracji.',
-        'points'       => "Ksiegowosc pelna i kadrowo-placowa dla kilku podmiotow\nMiesieczna analiza rentownosci na poziomie gabinetu\nObsluga rozliczen z NFZ i podmiotami powiazanymi",
         'stat1_val'    => '',
         'stat1_label'  => '',
         'stat2_val'    => '',
@@ -32,7 +31,6 @@ $slide_defaults = [
         'industries'   => '',
         'scope'        => '',
         'text'         => '',
-        'points'       => '',
         'stat1_val'    => '',
         'stat1_label'  => '',
         'stat2_val'    => '',
@@ -60,10 +58,6 @@ for ($i = 1; $i <= 4; $i++) {
     $industries_raw = is_array($s) && isset($s['industries']) && $s['industries'] !== ''
         ? $s['industries'] : $def['industries'];
     $industries = array_values(array_filter(array_map('trim', explode("\n", $industries_raw))));
-
-    $points_raw = is_array($s) && isset($s['points']) && $s['points'] !== ''
-        ? $s['points'] : $def['points'];
-    $points = array_values(array_filter(array_map('trim', explode("\n", $points_raw))));
 
     $stats = [];
     foreach ([1, 2, 3] as $n) {
@@ -171,20 +165,6 @@ if ($total === 0) return;
                             </p>
                             <?php endif; ?>
                         </div>
-
-                        <!-- Punkty -->
-                        <?php if (!empty($slide['points'])) : ?>
-                        <ul class="space-y-2.5">
-                            <?php foreach ($slide['points'] as $point) : ?>
-                            <li class="flex items-start gap-3">
-                                <span class="mt-0.5 w-5 h-5 rounded-full bg-[#00d084]/15 flex items-center justify-center shrink-0">
-                                    <i data-lucide="check" class="w-3 h-3 text-[#00d084]" stroke-width="3"></i>
-                                </span>
-                                <span class="text-sm text-slate-700 leading-relaxed"><?php echo mer_esc($point); ?></span>
-                            </li>
-                            <?php endforeach; ?>
-                        </ul>
-                        <?php endif; ?>
 
                         <!-- Statystyki (opcjonalne) -->
                         <?php if ($has_stats) : ?>
