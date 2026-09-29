@@ -9,6 +9,7 @@ get_header();
     <?php get_template_part('template-parts/section', 'kupimy-partnerski'); ?>
     <?php get_template_part('template-parts/section', 'kupimy-kontakt'); ?>
     <?php get_template_part('template-parts/section', 'kupimy-wycena'); ?>
+    <?php get_template_part('template-parts/section', 'kupimy-blog'); ?>
     <?php get_template_part('template-parts/section', 'kupimy-wideo'); ?>
     <?php get_template_part('template-parts/section', 'kupimy-kalkulator'); ?>
 </main>
