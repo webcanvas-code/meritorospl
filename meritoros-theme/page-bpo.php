@@ -13,7 +13,7 @@ get_header();
     <?php get_template_part('template-parts/section', 'bpo-dlaczego'); ?>
     <?php get_template_part('template-parts/section', 'bpo-model'); ?>
     <?php get_template_part('template-parts/section', 'bpo-wspolpraca'); ?>
-    <?php get_template_part('template-parts/section', 'case-studies'); ?>
+    <?php get_template_part('template-parts/section', 'bpo-historie'); ?>
     <?php get_template_part('template-parts/section', 'bpo-systemy'); ?>
     <?php get_template_part('template-parts/section', 'blog'); ?>
     <?php get_template_part('template-parts/section', 'newsletter'); ?>
