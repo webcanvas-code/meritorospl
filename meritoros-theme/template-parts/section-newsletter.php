@@ -90,15 +90,11 @@ for ($i = 1; $i <= 4; $i++) {
                     <?php echo mer_esc($form_sub); ?>
                 </p>
 
-                <!-- Checkboxy zainteresowań -->
+                <!-- Checkbox zainteresowań -->
                 <div style="display:flex;flex-wrap:wrap;align-items:center;gap:6px 24px;margin-bottom:12px">
                     <label style="display:inline-flex;align-items:center;gap:8px;cursor:pointer">
                         <input type="checkbox" id="nl-interest-tax" style="width:16px;height:16px;accent-color:#00d084">
                         <span style="font-size:0.8125rem;color:#334155;font-weight:500"><?php esc_html_e('Informacje podatkowo-księgowe', 'meritoros'); ?></span>
-                    </label>
-                    <label style="display:inline-flex;align-items:center;gap:8px;cursor:pointer">
-                        <input type="checkbox" id="nl-interest-jobs" style="width:16px;height:16px;accent-color:#00d084">
-                        <span style="font-size:0.8125rem;color:#334155;font-weight:500"><?php esc_html_e('Oferty pracy', 'meritoros'); ?></span>
                     </label>
                 </div>
 
@@ -112,28 +108,19 @@ for ($i = 1; $i <= 4; $i++) {
 
                 <script>
                 (function () {
-                    var cbTax  = document.getElementById('nl-interest-tax');
-                    var cbJobs = document.getElementById('nl-interest-jobs');
-                    var wrapper = cbTax && cbTax.closest('.mer-nl-form') ? cbTax.closest('.mer-nl-form') : document.querySelector('.mer-nl-form');
+                    var cbTax = document.getElementById('nl-interest-tax');
 
                     function getForm() {
                         return document.querySelector('.mer-nl-form form');
                     }
 
                     function injectHidden(form) {
-                        ['nl_interest_tax', 'nl_interest_jobs'].forEach(function (name) {
-                            var old = form.querySelector('input[name="' + name + '"]');
-                            if (old) old.parentNode.removeChild(old);
-                        });
+                        var old = form.querySelector('input[name="nl_interest_tax"]');
+                        if (old) old.parentNode.removeChild(old);
                         var t = document.createElement('input');
                         t.type = 'hidden'; t.name = 'nl_interest_tax';
                         t.value = (cbTax && cbTax.checked) ? '1' : '';
                         form.appendChild(t);
-
-                        var j = document.createElement('input');
-                        j.type = 'hidden'; j.name = 'nl_interest_jobs';
-                        j.value = (cbJobs && cbJobs.checked) ? '1' : '';
-                        form.appendChild(j);
                     }
 
                     // CF7 ładuje formularz przez AJAX — czekamy na niego
