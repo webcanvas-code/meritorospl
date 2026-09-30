@@ -1,0 +1,578 @@
+# =============================================================================
+# 301 Redirects - meritoros.pl migration (old WPML structure -> new structure)
+# Old: /pl/ prefix for Polish, /en/ /uk/ /ru/ for other languages
+# New: no prefix for Polish, /en/ /uk/ /ru/ for other languages
+# Generated: 2026-09-26
+# =============================================================================
+
+RewriteEngine On
+
+# =============================================================================
+# POLISH PAGES (old /pl/... -> new /...)
+# =============================================================================
+
+# Homepage
+RewriteRule ^pl/?$ / [R=301,L]
+
+# O nas / Poznaj nas
+RewriteRule ^pl/o-nas/?$ /meritoros-ksiegowosc-poznaj-nas/ [R=301,L]
+
+# Zespol (no direct equivalent -> Poznaj nas)
+RewriteRule ^pl/zespol/?$ /meritoros-ksiegowosc-poznaj-nas/ [R=301,L]
+
+# Relacje inwestorskie
+RewriteRule ^pl/relacje-inwestorskie/?$ /relacje-inwestorskie/ [R=301,L]
+
+# Kontakt
+RewriteRule ^pl/kontakt/?$ /kontakt/ [R=301,L]
+
+# Kariera
+RewriteRule ^pl/kariera/?$ /kariera/ [R=301,L]
+
+# Kupie biuro rachunkowe
+RewriteRule ^pl/kupie-biuro-rachunkowe/?$ /kupimy-biuro-rachunkowe/ [R=301,L]
+
+# Uslugi ksiegowe
+RewriteRule ^pl/uslugi-ksiegowe/?$ /uslugi-ksiegowe/ [R=301,L]
+
+# Uslugi kadr i plac
+RewriteRule ^pl/uslugi-kadr-plac/?$ /kadry-i-place/ [R=301,L]
+
+# Uslugi (generic -> uslugi ksiegowe)
+RewriteRule ^pl/uslugi/?$ /uslugi-ksiegowe/ [R=301,L]
+
+# Fundacje rodzinne
+RewriteRule ^pl/uslugi/fundacje-rodzinne/?$ /fundacje-rodzinne/ [R=301,L]
+
+# Dlaczego BPO
+RewriteRule ^pl/dlaczego-bpo/?$ /bpo/ [R=301,L]
+
+# Cennik (no direct equivalent -> uslugi ksiegowe)
+RewriteRule ^pl/cennik/?$ /uslugi-ksiegowe/ [R=301,L]
+
+# Cennik BPO (no direct equivalent -> BPO)
+RewriteRule ^pl/cennik-bpo/?$ /bpo/ [R=301,L]
+
+# Ksiegowosc dla duzych firm
+RewriteRule ^pl/ksiegowosc-dla-duzych-firm/?$ /uslugi-ksiegowe/ [R=301,L]
+
+# Kadry i place dla duzych firm
+RewriteRule ^pl/kadry-i-place-dla-duzych-firm/?$ /kadry-i-place/ [R=301,L]
+
+# Outsourcing ksiegowosci oraz kadr i plac
+RewriteRule ^pl/outsourcing-ksiegowosci-oraz-kadr-i-plac/?$ /bpo/ [R=301,L]
+
+# Outsourcing pojedynczych procesow
+RewriteRule ^pl/outsourcing-pojedynczych-procesow/?$ /bpo/ [R=301,L]
+
+# BR outsourcing pojedynczych procesow
+RewriteRule ^pl/br-outsourcing-pojedynczych-procesow/?$ /bpo/ [R=301,L]
+
+# Audyt automatyzacji i procesow ksiegowych
+RewriteRule ^pl/audyt-automatyzacji-i-procesow-ksiegowych/?$ /uslugi-ksiegowe/ [R=301,L]
+
+# Uslugi IT i transformacja cyfrowa
+RewriteRule ^pl/uslugi-it-i-transformacja-cyfrowa/?$ /uslugi-ksiegowe/ [R=301,L]
+
+# Blog
+RewriteRule ^pl/blog/?$ /blog/ [R=301,L]
+
+# Oferty pracy
+RewriteRule ^pl/oferty-pracy/specjalista-specjalistka-ds-hr-2/?$ /specjalista-specjalistka-ds-hr/ [R=301,L]
+RewriteRule ^pl/oferty-pracy/power-platform-specialist/?$ /power-platform-specialist/ [R=301,L]
+RewriteRule ^pl/oferty-pracy/doradca-podatkowy-wspolpraca-b2b/?$ /doradca-podatkowy/ [R=301,L]
+RewriteRule ^pl/oferty-pracy/chcesz-dolaczyc-do-naszego-zespolu/?$ /kariera/ [R=301,L]
+
+# =============================================================================
+# ENGLISH PAGES (old /en/... -> new /en/...)
+# =============================================================================
+
+# EN Homepage
+RewriteRule ^en/?$ /en/ [R=301,L]
+
+# EN About us
+RewriteRule ^en/about_us/?$ /en/about-us/ [R=301,L]
+
+# EN Team (no direct equivalent -> about us)
+RewriteRule ^en/team/?$ /en/about-us/ [R=301,L]
+
+# EN Investor relations
+RewriteRule ^en/investor_relations/?$ /en/investor-relations/ [R=301,L]
+
+# EN Contact
+RewriteRule ^en/contact/?$ /en/contact/ [R=301,L]
+
+# EN Career
+RewriteRule ^en/career/?$ /en/careers/ [R=301,L]
+
+# EN Purchase accounting office
+RewriteRule ^en/purchase_accounting_office/?$ /en/we-buy-accounting-firms/ [R=301,L]
+
+# EN Accounting services
+RewriteRule ^en/accounting-services/?$ /en/accounting-services/ [R=301,L]
+
+# EN HR payroll services
+RewriteRule ^en/hr-payroll-services/?$ /en/hr-and-payroll/ [R=301,L]
+
+# EN Services
+RewriteRule ^en/services/?$ /en/accounting-services/ [R=301,L]
+
+# EN Why BPO
+RewriteRule ^en/why-bpo/?$ /en/bpo/ [R=301,L]
+
+# EN Outsourcing of individual processes
+RewriteRule ^en/outsourcing-of-individual-processes/?$ /en/bpo/ [R=301,L]
+
+# EN IT services and digital transformation
+RewriteRule ^en/it-services-and-digital-transformation/?$ /en/accounting-services/ [R=301,L]
+
+# EN HR payroll services for big companies
+RewriteRule ^en/hrpayroll-services-for-big-companies/?$ /en/hr-and-payroll/ [R=301,L]
+
+# EN Accounting services for big companies
+RewriteRule ^en/accounting-services-for-big-companies/?$ /en/accounting-services/ [R=301,L]
+
+# EN Accounting HR and payroll outsourcing
+RewriteRule ^en/accounting-hr-amp-payroll-outsourcing/?$ /en/bpo/ [R=301,L]
+
+# EN Blog
+RewriteRule ^en/blog/?$ /en/knowledge-and-guides/ [R=301,L]
+
+# =============================================================================
+# UKRAINIAN PAGES (old /uk/... -> new /uk/...)
+# =============================================================================
+
+# UK Homepage (same)
+RewriteRule ^uk/?$ /uk/ [R=301,L]
+
+# UK O nas
+RewriteRule ^uk/o-nas/?$ /uk/%d0%bf%d1%80%d0%be-%d0%bd%d0%b0%d1%81/ [R=301,L]
+
+# UK Zespol (no direct equivalent -> pro nas)
+RewriteRule ^uk/zespol/?$ /uk/%d0%bf%d1%80%d0%be-%d0%bd%d0%b0%d1%81/ [R=301,L]
+
+# UK Relacje inwestorskie
+RewriteRule ^uk/relacje-inwestorskie/?$ /uk/%d0%b2%d1%96%d0%b4%d0%bd%d0%be%d1%81%d0%b8%d0%bd%d0%b8-%d0%b7-%d1%96%d0%bd%d0%b2%d0%b5%d1%81%d1%82%d0%be%d1%80%d0%b0%d0%bc%d0%b8/ [R=301,L]
+
+# UK Kariera
+RewriteRule ^uk/kariera/?$ /uk/%d0%ba%d0%b0%d1%80%d1%94%d1%80%d0%b0/ [R=301,L]
+
+# UK Kupie biuro rachunkowe
+RewriteRule ^uk/kupie-biuro-rachunkowe/?$ /uk/%d0%ba%d1%83%d0%bf%d0%b8%d0%bc%d0%be-%d0%b1%d1%83%d1%85%d0%b3%d0%b0%d0%bb%d1%82%d0%b5%d1%80%d1%81%d1%8c%d0%ba%d1%83-%d1%84%d1%96%d1%80%d0%bc%d1%83/ [R=301,L]
+
+# UK Buhgalterski poslugy (accounting services)
+RewriteRule ^uk/%d0%b1%d1%83%d1%85%d0%b3%d0%b0%d0%bb%d1%82%d0%b5%d1%80%d1%81%d1%8c%d0%ba%d1%96-%d0%bf%d0%be%d1%81%d0%bb%d1%83%d0%b3%d0%b8/?$ /uk/%d0%b1%d1%83%d1%85%d0%b3%d0%b0%d0%bb%d1%82%d0%b5%d1%80%d1%81%d1%8c%d0%ba%d1%96-%d0%bf%d0%be%d1%81%d0%bb%d1%83%d0%b3%d0%b8/ [R=301,L]
+
+# UK Kadrove obslugovuvannya ta rozrakhunok (HR payroll - old)
+RewriteRule ^uk/%d0%ba%d0%b0%d0%b4%d1%80%d0%be%d0%b2%d0%b5-%d0%be%d0%b1%d1%81%d0%bb%d1%83%d0%b3%d0%be%d0%b2%d1%83%d0%b2%d0%b0%d0%bd%d0%bd%d1%8f-%d1%82%d0%b0-%d1%80%d0%be%d0%b7%d1%80%d0%b0%d1%85%d1%83%d0%bd%d0%be/?$ /uk/%d0%ba%d0%b0%d0%b4%d1%80%d0%b8-%d1%82%d0%b0-%d0%b7%d0%b0%d1%80%d0%be%d0%b1%d1%96%d1%82%d0%bd%d0%b0-%d0%bf%d0%bb%d0%b0%d1%82%d0%b0/ [R=301,L]
+
+# UK Poslugy (services)
+RewriteRule ^uk/%d0%bf%d0%be%d1%81%d0%bb%d1%83%d0%b3%d0%b8/?$ /uk/%d0%b1%d1%83%d1%85%d0%b3%d0%b0%d0%bb%d1%82%d0%b5%d1%80%d1%81%d1%8c%d0%ba%d1%96-%d0%bf%d0%be%d1%81%d0%bb%d1%83%d0%b3%d0%b8/ [R=301,L]
+
+# UK Chomu BPO (why BPO)
+RewriteRule ^uk/%d1%87%d0%be%d0%bc%d1%83-bpo/?$ /uk/bpo/ [R=301,L]
+
+# UK Autsorsyng okremykh protsesiv (outsourcing individual processes)
+RewriteRule ^uk/%d0%b0%d1%83%d1%82%d1%81%d0%be%d1%80%d1%81%d0%b8%d0%bd%d0%b3-%d0%be%d0%ba%d1%80%d0%b5%d0%bc%d0%b8%d1%85-%d0%bf%d1%80%d0%be%d1%86%d0%b5%d1%81%d1%96%d0%b2/?$ /uk/bpo/ [R=301,L]
+
+# UK IT poslugy ta tsyfrova transformatsiya
+RewriteRule ^uk/%d1%96%d1%82-%d0%bf%d0%be%d1%81%d0%bb%d1%83%d0%b3%d0%b8-%d1%82%d0%b0-%d1%86%d0%b8%d1%84%d1%80%d0%be%d0%b2%d0%b0-%d1%82%d1%80%d0%b0%d0%bd%d1%81%d1%84%d0%be%d1%80%d0%bc%d0%b0%d1%86%d1%96%d1%8f/?$ /uk/%d0%b1%d1%83%d1%85%d0%b3%d0%b0%d0%bb%d1%82%d0%b5%d1%80%d1%81%d1%8c%d0%ba%d1%96-%d0%bf%d0%be%d1%81%d0%bb%d1%83%d0%b3%d0%b8/ [R=301,L]
+
+# UK Kadry ta rozrakhunok zarobitnoyi platy (HR payroll big companies)
+RewriteRule ^uk/%d0%ba%d0%b0%d0%b4%d1%80%d0%b8-%d1%82%d0%b0-%d1%80%d0%be%d0%b7%d1%80%d0%b0%d1%85%d1%83%d0%bd%d0%be%d0%ba-%d0%b7%d0%b0%d1%80%d0%be%d0%b1%d1%96%d1%82%d0%bd%d0%be%d1%97-%d0%bf%d0%bb%d0%b0%d1%82%d0%b8/?$ /uk/%d0%ba%d0%b0%d0%b4%d1%80%d0%b8-%d1%82%d0%b0-%d0%b7%d0%b0%d1%80%d0%be%d0%b1%d1%96%d1%82%d0%bd%d0%b0-%d0%bf%d0%bb%d0%b0%d1%82%d0%b0/ [R=301,L]
+
+# UK Bukhgalterskyi oblik dlya velykykh kompaniy (accounting big companies)
+RewriteRule ^uk/%d0%b1%d1%83%d1%85%d0%b3%d0%b0%d0%bb%d1%82%d0%b5%d1%80%d1%81%d1%8c%d0%ba%d0%b8%d0%b9-%d0%be%d0%b1%d0%bb%d1%96%d0%ba-%d0%b4%d0%bb%d1%8f-%d0%b2%d0%b5%d0%bb%d0%b8%d0%ba%d0%b8%d1%85-%d0%ba%d0%be%d0%bc/?$ /uk/%d0%b1%d1%83%d1%85%d0%b3%d0%b0%d0%bb%d1%82%d0%b5%d1%80%d1%81%d1%8c%d0%ba%d1%96-%d0%bf%d0%be%d1%81%d0%bb%d1%83%d0%b3%d0%b8/ [R=301,L]
+
+# UK Autsorsyng bukhgalterskogo i kadrovogo (accounting & HR outsourcing)
+RewriteRule ^uk/%d0%b0%d1%83%d1%82%d1%81%d0%be%d1%80%d1%81%d0%b8%d0%bd%d0%b3-%d0%b1%d1%83%d1%85%d0%b3%d0%b0%d0%bb%d1%82%d0%b5%d1%80%d1%81%d1%8c%d0%ba%d0%be%d0%b3%d0%be-%d1%96-%d0%ba%d0%b0%d0%b4%d1%80%d0%be%d0%b2/?$ /uk/bpo/ [R=301,L]
+
+# UK Kontakt
+RewriteRule ^uk/%d0%ba%d0%be%d0%bd%d1%82%d0%b0%d0%ba%d1%82/?$ /uk/%d0%ba%d0%be%d0%bd%d1%82%d0%b0%d0%ba%d1%82%d0%b8/ [R=301,L]
+
+# UK Blog
+RewriteRule ^uk/blog/?$ /uk/%d0%b7%d0%bd%d0%b0%d0%bd%d0%bd%d1%8f-%d1%82%d0%b0-%d0%bf%d0%be%d1%81%d1%96%d0%b1%d0%bd%d0%b8%d0%ba%d0%b8/ [R=301,L]
+
+# =============================================================================
+# RUSSIAN PAGES (old /ru/... -> new /ru/...)
+# =============================================================================
+
+# RU Homepage (same)
+RewriteRule ^ru/?$ /ru/ [R=301,L]
+
+# RU O nas
+RewriteRule ^ru/o-nas/?$ /ru/%d0%be-%d0%bd%d0%b0%d1%81/ [R=301,L]
+
+# RU Zespol (no direct equivalent -> o nas)
+RewriteRule ^ru/zespol/?$ /ru/%d0%be-%d0%bd%d0%b0%d1%81/ [R=301,L]
+
+# RU Relacje inwestorskie
+RewriteRule ^ru/relacje-inwestorskie/?$ /ru/%d1%81%d0%b2%d1%8f%d0%b7%d0%b8-%d1%81-%d0%b8%d0%bd%d0%b2%d0%b5%d1%81%d1%82%d0%be%d1%80%d0%b0%d0%bc%d0%b8/ [R=301,L]
+
+# RU Kariera
+RewriteRule ^ru/kariera/?$ /ru/%d0%ba%d0%b0%d1%80%d1%8c%d0%b5%d1%80%d0%b0/ [R=301,L]
+
+# RU Kupie biuro rachunkowe
+RewriteRule ^ru/kupie-biuro-rachunkowe/?$ /ru/%d0%ba%d1%83%d0%bf%d0%b8%d0%bc-%d0%b1%d1%83%d1%85%d0%b3%d0%b0%d0%bb%d1%82%d0%b5%d1%80%d1%81%d0%ba%d1%83%d1%8e-%d1%84%d0%b8%d1%80%d0%bc%d1%83/ [R=301,L]
+
+# RU Bukhgalterskie uslugi (accounting services)
+RewriteRule ^ru/%d0%b1%d1%83%d1%85%d0%b3%d0%b0%d0%bb%d1%82%d0%b5%d1%80%d1%81%d0%ba%d0%b8%d0%b5-%d1%83%d1%81%d0%bb%d1%83%d0%b3%d0%b8/?$ /ru/%d0%b1%d1%83%d1%85%d0%b3%d0%b0%d0%bb%d1%82%d0%b5%d1%80%d1%81%d0%ba%d0%b8%d0%b5-%d1%83%d1%81%d0%bb%d1%83%d0%b3%d0%b8/ [R=301,L]
+
+# RU Uslugi po kadrovomu uchetu i raschetu za (HR payroll)
+RewriteRule ^ru/%d1%83%d1%81%d0%bb%d1%83%d0%b3%d0%b8-%d0%bf%d0%be-%d0%ba%d0%b0%d0%b4%d1%80%d0%be%d0%b2%d0%be%d0%bc%d1%83-%d1%83%d1%87%d0%b5%d1%82%d1%83-%d0%b8-%d1%80%d0%b0%d1%81%d1%87%d0%b5%d1%82%d1%83-%d0%b7%d0%b0/?$ /ru/%d0%ba%d0%b0%d0%b4%d1%80%d1%8b-%d0%b8-%d1%80%d0%b0%d1%81%d1%87%d0%b5%d1%82-%d0%b7%d0%b0%d1%80%d0%b0%d0%b1%d0%be%d1%82%d0%bd%d0%be%d0%b9-%d0%bf%d0%bb%d0%b0%d1%82%d1%8b/ [R=301,L]
+
+# RU Uslugi (services)
+RewriteRule ^ru/%d1%83%d1%81%d0%bb%d1%83%d0%b3%d0%b8/?$ /ru/%d0%b1%d1%83%d1%85%d0%b3%d0%b0%d0%bb%d1%82%d0%b5%d1%80%d1%81%d0%ba%d0%b8%d0%b5-%d1%83%d1%81%d0%bb%d1%83%d0%b3%d0%b8/ [R=301,L]
+
+# RU Pochemu BPO (why BPO)
+RewriteRule ^ru/%d0%bf%d0%be%d1%87%d0%b5%d0%bc%d1%83-bpo/?$ /ru/bpo/ [R=301,L]
+
+# RU Autsorsyng otdelnykh protsessov (outsourcing individual processes)
+RewriteRule ^ru/%d0%b0%d1%83%d1%82%d1%81%d0%be%d1%80%d1%81%d0%b8%d0%bd%d0%b3-%d0%be%d1%82%d0%b4%d0%b5%d0%bb%d1%8c%d0%bd%d1%8b%d1%85-%d0%bf%d1%80%d0%be%d1%86%d0%b5%d1%81%d1%81%d0%be%d0%b2/?$ /ru/bpo/ [R=301,L]
+
+# RU IT uslugi i tsifrovaya transformatsiya
+RewriteRule ^ru/i%d1%82-%d1%83%d1%81%d0%bb%d1%83%d0%b3%d0%b8-%d0%b8-%d1%86%d0%b8%d1%84%d1%80%d0%be%d0%b2%d0%b0%d1%8f-%d1%82%d1%80%d0%b0%d0%bd%d1%81%d1%84%d0%be%d1%80%d0%bc%d0%b0%d1%86%d0%b8%d1%8f/?$ /ru/%d0%b1%d1%83%d1%85%d0%b3%d0%b0%d0%bb%d1%82%d0%b5%d1%80%d1%81%d0%ba%d0%b8%d0%b5-%d1%83%d1%81%d0%bb%d1%83%d0%b3%d0%b8/ [R=301,L]
+
+# RU Kadry i raschet zarabotnoy platy dlya krupnykh (HR payroll big companies)
+RewriteRule ^ru/%d0%ba%d0%b0%d0%b4%d1%80%d1%8b-%d0%b8-%d1%80%d0%b0%d1%81%d1%87%d0%b5%d1%82-%d0%b7%d0%b0%d1%80%d0%b0%d0%b1%d0%be%d1%82%d0%bd%d0%be%d0%b8-%d0%bf%d0%bb%d0%b0%d1%82%d1%8b-%d0%b4%d0%bb%d1%8f-%d0%ba%d1%80/?$ /ru/%d0%ba%d0%b0%d0%b4%d1%80%d1%8b-%d0%b8-%d1%80%d0%b0%d1%81%d1%87%d0%b5%d1%82-%d0%b7%d0%b0%d1%80%d0%b0%d0%b1%d0%be%d1%82%d0%bd%d0%be%d0%b9-%d0%bf%d0%bb%d0%b0%d1%82%d1%8b/ [R=301,L]
+
+# RU Bukhgalterskiy uchet dlya krupnykh kompaniy (accounting big companies)
+RewriteRule ^ru/%d0%b1%d1%83%d1%85%d0%b3%d0%b0%d0%bb%d1%82%d0%b5%d1%80%d1%81%d0%ba%d0%b8%d0%b9-%d1%83%d1%87%d0%b5%d1%82-%d0%b4%d0%bb%d1%8f-%d0%ba%d1%80%d1%83%d0%bf%d0%bd%d1%8b%d1%85-%d0%ba%d0%be%d0%bc%d0%bf%d0%b0/?$ /ru/%d0%b1%d1%83%d1%85%d0%b3%d0%b0%d0%bb%d1%82%d0%b5%d1%80%d1%81%d0%ba%d0%b8%d0%b5-%d1%83%d1%81%d0%bb%d1%83%d0%b3%d0%b8/ [R=301,L]
+
+# RU Autsorsyng bukhgalterskogo i kadrovogo (accounting & HR outsourcing)
+RewriteRule ^ru/%d0%b0%d1%83%d1%82%d1%81%d0%be%d1%80%d1%81%d0%b8%d0%bd%d0%b3-%d0%b1%d1%83%d1%85%d0%b3%d0%b0%d0%bb%d1%82%d0%b5%d1%80%d1%81%d0%ba%d0%be%d0%b3%d0%be-%d0%b8-%d0%ba%d0%b0%d0%b4%d1%80%d0%be%d0%b2%d0%be/?$ /ru/bpo/ [R=301,L]
+
+# RU Kontakt
+RewriteRule ^ru/%d0%ba%d0%be%d0%bd%d1%82%d0%b0%d0%ba%d1%82/?$ /ru/%d0%ba%d0%be%d0%bd%d1%82%d0%b0%d0%ba%d1%82%d1%8b/ [R=301,L]
+
+# RU Blog
+RewriteRule ^ru/blog/?$ /ru/%d0%b7%d0%bd%d0%b0%d0%bd%d0%b8%d1%8f-%d0%b8-%d1%80%d1%83%d0%ba%d0%be%d0%b2%d0%be%d0%b4%d1%81%d1%82%d0%b2%d0%b0/ [R=301,L]
+
+# =============================================================================
+# CATEGORIES (old /pl/category-slug/ -> new /category/category-slug/)
+# =============================================================================
+
+RewriteRule ^pl/blog-podatkowo-ksiegowe/?$ /category/blog-podatkowo-ksiegowe/ [R=301,L]
+RewriteRule ^pl/rynek-biur-rachunkowych/?$ /category/rynek-biur-rachunkowych/ [R=301,L]
+RewriteRule ^pl/bpo/?$ /category/bpo/ [R=301,L]
+RewriteRule ^pl/case-studies/?$ /category/case-studies/ [R=301,L]
+RewriteRule ^pl/blog-wolontariat/?$ /category/blog-wolontariat/ [R=301,L]
+RewriteRule ^pl/blog-inne/?$ /category/blog-inne/ [R=301,L]
+
+# =============================================================================
+# BLOG POSTS - blog-podatkowo-ksiegowe category
+# (old /pl/blog-podatkowo-ksiegowe/slug/ -> new /slug/)
+# =============================================================================
+
+# IMPORTANT: wakacje-od-zus slug changed to wakacje-od-zus-2
+RewriteRule ^pl/blog-podatkowo-ksiegowe/wakacje-od-zus/?$ /wakacje-od-zus-2/ [R=301,L]
+
+RewriteRule ^pl/blog-podatkowo-ksiegowe/fundacja-rodzinna-w-2026-roku-co-zmienilo-sie-po-trzech-latach-obowiazywania-przepisow/?$ /fundacja-rodzinna-w-2026-roku-co-zmienilo-sie-po-trzech-latach-obowiazywania-przepisow/ [R=301,L]
+RewriteRule ^pl/blog-podatkowo-ksiegowe/automatycznie-zapisany-szkic-3zwrot-nadwyzki-vat-w-2026-roku-terminy-i-pulapki/?$ /automatycznie-zapisany-szkic-3zwrot-nadwyzki-vat-w-2026-roku-terminy-i-pulapki/ [R=301,L]
+RewriteRule ^pl/blog-podatkowo-ksiegowe/swieto-w-sobote-a-dzien-wolny/?$ /swieto-w-sobote-a-dzien-wolny/ [R=301,L]
+RewriteRule ^pl/blog-podatkowo-ksiegowe/umowa-zlecenie-z-pracownikiem/?$ /umowa-zlecenie-z-pracownikiem/ [R=301,L]
+RewriteRule ^pl/blog-podatkowo-ksiegowe/zmieniasz-biuro-rachunkowe-lub-dostawce-bpo-sprawdz-czy-nowy-partner-naprawde-zarzadza-procesami/?$ /zmieniasz-biuro-rachunkowe-lub-dostawce-bpo-sprawdz-czy-nowy-partner-naprawde-zarzadza-procesami/ [R=301,L]
+RewriteRule ^pl/blog-podatkowo-ksiegowe/rozliczanie-delegacji-2026/?$ /rozliczanie-delegacji-2026/ [R=301,L]
+RewriteRule ^pl/blog-podatkowo-ksiegowe/wartosciowanie-stanowisk-i-raportowanie-luki-placowej-jak-przygotowac-firme-przed-2027-rokiem/?$ /wartosciowanie-stanowisk-i-raportowanie-luki-placowej-jak-przygotowac-firme-przed-2027-rokiem/ [R=301,L]
+RewriteRule ^pl/blog-podatkowo-ksiegowe/posilki-i-napoje-dla-pracownikow-obowiazek-benefit-i-konsekwencje-rozliczeniowe/?$ /posilki-i-napoje-dla-pracownikow-obowiazek-benefit-i-konsekwencje-rozliczeniowe/ [R=301,L]
+RewriteRule ^pl/blog-podatkowo-ksiegowe/automatycznie-zapisany-szkic-2reforma-pip-2026/?$ /automatycznie-zapisany-szkic-2reforma-pip-2026/ [R=301,L]
+RewriteRule ^pl/blog-podatkowo-ksiegowe/potracenia-z-zasilkow-w-2026-r-praktyczny-przewodnik-dla-dzialow-kadr/?$ /potracenia-z-zasilkow-w-2026-r-praktyczny-przewodnik-dla-dzialow-kadr/ [R=301,L]
+RewriteRule ^pl/blog-podatkowo-ksiegowe/praca-zdalna-ekwiwalent-i-ryczalt/?$ /praca-zdalna-ekwiwalent-i-ryczalt/ [R=301,L]
+RewriteRule ^pl/blog-podatkowo-ksiegowe/wynagrodzenie-brutto-a-netto-w-2026-roku-jak-poprawnie-wyliczyc-swoja-pensje/?$ /wynagrodzenie-brutto-a-netto-w-2026-roku-jak-poprawnie-wyliczyc-swoja-pensje/ [R=301,L]
+RewriteRule ^pl/blog-podatkowo-ksiegowe/zamkniecie-roku-w-pit-praktyczna-checklista-dla-ksiegowego/?$ /zamkniecie-roku-w-pit-praktyczna-checklista-dla-ksiegowego/ [R=301,L]
+RewriteRule ^pl/blog-podatkowo-ksiegowe/kpir-w-2026-roku/?$ /kpir-w-2026-roku/ [R=301,L]
+RewriteRule ^pl/blog-podatkowo-ksiegowe/ksef-w-praktyce/?$ /ksef-w-praktyce/ [R=301,L]
+RewriteRule ^pl/blog-podatkowo-ksiegowe/zamkniecie-roku-podatkowego/?$ /zamkniecie-roku-podatkowego/ [R=301,L]
+RewriteRule ^pl/blog-podatkowo-ksiegowe/pit-11-obowiazki-pracodawcy-i-pytania-ktore-pracownicy-zadaja-co-roku/?$ /pit-11-obowiazki-pracodawcy-i-pytania-ktore-pracownicy-zadaja-co-roku/ [R=301,L]
+RewriteRule ^pl/blog-podatkowo-ksiegowe/podatkowa-rewolucja-2026-najwazniejsze-zmiany-w-pigulce/?$ /podatkowa-rewolucja-2026-najwazniejsze-zmiany-w-pigulce/ [R=301,L]
+RewriteRule ^pl/blog-podatkowo-ksiegowe/zwolnienia-lekarskie-na-przelomie-roku/?$ /zwolnienia-lekarskie-na-przelomie-roku/ [R=301,L]
+RewriteRule ^pl/blog-podatkowo-ksiegowe/ksiegi-handlowe-kontra-kpir-fakty-i-mity/?$ /ksiegi-handlowe-kontra-kpir-fakty-i-mity/ [R=301,L]
+RewriteRule ^pl/blog-podatkowo-ksiegowe/kilka-umow-zlecenia-a-skladki-zus-kompleksowy-przewodnik-dla-pracodawcow-przedsiebiorcow-i-zleceniobiorcow/?$ /kilka-umow-zlecenia-a-skladki-zus-kompleksowy-przewodnik-dla-pracodawcow-przedsiebiorcow-i-zleceniobiorcow/ [R=301,L]
+RewriteRule ^pl/blog-podatkowo-ksiegowe/staz-urlopowy-zmiany-od-2026-roku/?$ /staz-urlopowy-zmiany-od-2026-roku/ [R=301,L]
+RewriteRule ^pl/blog-podatkowo-ksiegowe/koszt-wytworzenia-srodka-trwalego-we-wlasnym-zakresie/?$ /koszt-wytworzenia-srodka-trwalego-we-wlasnym-zakresie/ [R=301,L]
+RewriteRule ^pl/blog-podatkowo-ksiegowe/zwolnienie-od-pracy-2025-jakie-sa-zasady-i-komu-przysluguje/?$ /zwolnienie-od-pracy-2025-jakie-sa-zasady-i-komu-przysluguje/ [R=301,L]
+RewriteRule ^pl/blog-podatkowo-ksiegowe/limit-platnosci-gotowka-w-2025-roku/?$ /limit-platnosci-gotowka-w-2025-roku/ [R=301,L]
+RewriteRule ^pl/blog-podatkowo-ksiegowe/jawnosc-wynagrodzen-w-polsce-co-zmieni-sie-od-2025-roku-i-jak-sie-przygotowac/?$ /jawnosc-wynagrodzen-w-polsce-co-zmieni-sie-od-2025-roku-i-jak-sie-przygotowac/ [R=301,L]
+RewriteRule ^pl/blog-podatkowo-ksiegowe/umowa-na-zastepstwo-i-ciaza-pracownika-zastepujacego/?$ /umowa-na-zastepstwo-i-ciaza-pracownika-zastepujacego/ [R=301,L]
+RewriteRule ^pl/blog-podatkowo-ksiegowe/umowa-szkoleniowa-lojalka-czy-to-dobre-rozwiazanie/?$ /umowa-szkoleniowa-lojalka-czy-to-dobre-rozwiazanie/ [R=301,L]
+RewriteRule ^pl/blog-podatkowo-ksiegowe/ukryte-zyski-w-estonskim-cit-co-to-jest-i-dlaczego-warto-uwazac/?$ /ukryte-zyski-w-estonskim-cit-co-to-jest-i-dlaczego-warto-uwazac/ [R=301,L]
+RewriteRule ^pl/blog-podatkowo-ksiegowe/swiadczenie-urlopowe-a-wczasy-pod-grusza/?$ /swiadczenie-urlopowe-a-wczasy-pod-grusza/ [R=301,L]
+RewriteRule ^pl/blog-podatkowo-ksiegowe/vat-nieruchomosci-za-granica/?$ /vat-nieruchomosci-za-granica/ [R=301,L]
+RewriteRule ^pl/blog-podatkowo-ksiegowe/umowa-o-prace-na-czas-okreslony-umowa-na-zastepstwo/?$ /umowa-o-prace-na-czas-okreslony-umowa-na-zastepstwo/ [R=301,L]
+RewriteRule ^pl/blog-podatkowo-ksiegowe/czas-pracy-kadry-zarzadzajacej-i-nadgodziny-aspekty-prawne/?$ /czas-pracy-kadry-zarzadzajacej-i-nadgodziny-aspekty-prawne/ [R=301,L]
+RewriteRule ^pl/blog-podatkowo-ksiegowe/ekwiwalent-za-pranie-odziezy/?$ /ekwiwalent-za-pranie-odziezy/ [R=301,L]
+RewriteRule ^pl/blog-podatkowo-ksiegowe/fundusz-pracy-obowiazki-i-zwolnienia/?$ /fundusz-pracy-obowiazki-i-zwolnienia/ [R=301,L]
+RewriteRule ^pl/blog-podatkowo-ksiegowe/procedura-sme/?$ /procedura-sme/ [R=301,L]
+RewriteRule ^pl/blog-podatkowo-ksiegowe/nowe-uprawnienie-dla-rodzicow-wczesniakow/?$ /nowe-uprawnienie-dla-rodzicow-wczesniakow/ [R=301,L]
+RewriteRule ^pl/blog-podatkowo-ksiegowe/z-powrotem-w-meritoros-historia-justyny-kurbiel/?$ /z-powrotem-w-meritoros-historia-justyny-kurbiel/ [R=301,L]
+RewriteRule ^pl/blog-podatkowo-ksiegowe/wartosc-wynagrodzenia/?$ /wartosc-wynagrodzenia/ [R=301,L]
+RewriteRule ^pl/blog-podatkowo-ksiegowe/umowa-zlecenie-do-200-zl/?$ /umowa-zlecenie-do-200-zl/ [R=301,L]
+RewriteRule ^pl/blog-podatkowo-ksiegowe/fundacje-rodzinne-korzysci-podatkowe/?$ /fundacje-rodzinne-korzysci-podatkowe/ [R=301,L]
+RewriteRule ^pl/blog-podatkowo-ksiegowe/obowiazki-pracodawcy-wzgledem-pfron/?$ /obowiazki-pracodawcy-wzgledem-pfron/ [R=301,L]
+RewriteRule ^pl/blog-podatkowo-ksiegowe/dzialalnosc-gospodarcza-osoba-z-niepelnosprawnoscia/?$ /dzialalnosc-gospodarcza-osoba-z-niepelnosprawnoscia/ [R=301,L]
+RewriteRule ^pl/blog-podatkowo-ksiegowe/niewykonywani-pracy-z-zachowaniem-wynagrodzenia/?$ /niewykonywani-pracy-z-zachowaniem-wynagrodzenia/ [R=301,L]
+RewriteRule ^pl/blog-podatkowo-ksiegowe/jpk-cit/?$ /jpk-cit/ [R=301,L]
+RewriteRule ^pl/blog-podatkowo-ksiegowe/rozwiazanie-umowy-o-prace/?$ /rozwiazanie-umowy-o-prace/ [R=301,L]
+RewriteRule ^pl/blog-podatkowo-ksiegowe/upominki-swiateczne-podatkowe-ujecie/?$ /upominki-swiateczne-podatkowe-ujecie/ [R=301,L]
+RewriteRule ^pl/blog-podatkowo-ksiegowe/kasowy-pit/?$ /kasowy-pit/ [R=301,L]
+RewriteRule ^pl/blog-podatkowo-ksiegowe/minimalne-wynagrodzenie-za-prace/?$ /minimalne-wynagrodzenie-za-prace/ [R=301,L]
+RewriteRule ^pl/blog-podatkowo-ksiegowe/dyrektywa-dac7/?$ /dyrektywa-dac7/ [R=301,L]
+RewriteRule ^pl/blog-podatkowo-ksiegowe/pomoc-de-minimis-jednorazowa-amortyzacja-powyzej-10tys/?$ /pomoc-de-minimis-jednorazowa-amortyzacja-powyzej-10tys/ [R=301,L]
+RewriteRule ^pl/blog-podatkowo-ksiegowe/nadgodziny-w-pracy/?$ /nadgodziny-w-pracy/ [R=301,L]
+RewriteRule ^pl/blog-podatkowo-ksiegowe/wynagrodzenie-chorobowe-a-zasilek-chorobowy/?$ /wynagrodzenie-chorobowe-a-zasilek-chorobowy/ [R=301,L]
+RewriteRule ^pl/blog-podatkowo-ksiegowe/obowiazek-skladania-vat-23-i-zaplaty-podatku-przy-nabyciu-srodkow-transportu-z-innych-krajow-ue/?$ /obowiazek-skladania-vat-23-i-zaplaty-podatku-przy-nabyciu-srodkow-transportu-z-innych-krajow-ue/ [R=301,L]
+RewriteRule ^pl/blog-podatkowo-ksiegowe/na-czym-polega-odliczenie-vat/?$ /na-czym-polega-odliczenie-vat/ [R=301,L]
+RewriteRule ^pl/blog-podatkowo-ksiegowe/fundacja-rodzinna-podstawowe-informacje/?$ /fundacja-rodzinna-podstawowe-informacje/ [R=301,L]
+RewriteRule ^pl/blog-podatkowo-ksiegowe/zakladowy-fundusz-swiadczen-socjalnych-zfss/?$ /zakladowy-fundusz-swiadczen-socjalnych-zfss/ [R=301,L]
+RewriteRule ^pl/blog-podatkowo-ksiegowe/podatek-od-przerzuconych-dochodow/?$ /podatek-od-przerzuconych-dochodow/ [R=301,L]
+RewriteRule ^pl/blog-podatkowo-ksiegowe/urlop-wypoczynkowy-to-warto-wiedziec/?$ /urlop-wypoczynkowy-to-warto-wiedziec/ [R=301,L]
+RewriteRule ^pl/blog-podatkowo-ksiegowe/minimalny-podatek-dochodowy/?$ /minimalny-podatek-dochodowy/ [R=301,L]
+RewriteRule ^pl/blog-podatkowo-ksiegowe/jak-wyliczyc-wartosc-wynagrodzenia/?$ /jak-wyliczyc-wartosc-wynagrodzenia/ [R=301,L]
+RewriteRule ^pl/blog-podatkowo-ksiegowe/rozliczenie-skladki-zdrowotnej-za-2023-rok/?$ /rozliczenie-skladki-zdrowotnej-za-2023-rok/ [R=301,L]
+RewriteRule ^pl/blog-podatkowo-ksiegowe/ip-box/?$ /ip-box/ [R=301,L]
+RewriteRule ^pl/blog-podatkowo-ksiegowe/e-teczki-elektroniczne-akta-pracownicze/?$ /e-teczki-elektroniczne-akta-pracownicze/ [R=301,L]
+RewriteRule ^pl/blog-podatkowo-ksiegowe/odpowiedzialnosc-materialna-pracownika/?$ /odpowiedzialnosc-materialna-pracownika/ [R=301,L]
+RewriteRule ^pl/blog-podatkowo-ksiegowe/refundacja-skladek-zus-z-pfron/?$ /refundacja-skladek-zus-z-pfron/ [R=301,L]
+RewriteRule ^pl/blog-podatkowo-ksiegowe/sprawozdanie-z-dzialalnosci-zarzadu/?$ /sprawozdanie-z-dzialalnosci-zarzadu/ [R=301,L]
+RewriteRule ^pl/blog-podatkowo-ksiegowe/inwestycje-w-obcym-srodku-trwalym/?$ /inwestycje-w-obcym-srodku-trwalym/ [R=301,L]
+RewriteRule ^pl/blog-podatkowo-ksiegowe/odprawa-dla-zwalnianego-pracownika/?$ /odprawa-dla-zwalnianego-pracownika/ [R=301,L]
+RewriteRule ^pl/blog-podatkowo-ksiegowe/danina-solidarnosciowa-2/?$ /danina-solidarnosciowa-2/ [R=301,L]
+RewriteRule ^pl/blog-podatkowo-ksiegowe/hipotetyczne-odsetki-od-kapitalu-wlasnego-spolki/?$ /hipotetyczne-odsetki-od-kapitalu-wlasnego-spolki/ [R=301,L]
+RewriteRule ^pl/blog-podatkowo-ksiegowe/ekwiwalent-za-niewykorzystany-urlop/?$ /ekwiwalent-za-niewykorzystany-urlop/ [R=301,L]
+RewriteRule ^pl/blog-podatkowo-ksiegowe/swiadczenia-niepieniezne-na-rzecz-spolki/?$ /swiadczenia-niepieniezne-na-rzecz-spolki/ [R=301,L]
+RewriteRule ^pl/blog-podatkowo-ksiegowe/zmiana-urzedu-skarbowego-na-wyspecjalizowany/?$ /zmiana-urzedu-skarbowego-na-wyspecjalizowany/ [R=301,L]
+RewriteRule ^pl/blog-podatkowo-ksiegowe/delegacja-pracownicza/?$ /delegacja-pracownicza/ [R=301,L]
+RewriteRule ^pl/blog-podatkowo-ksiegowe/swiadczenie-rehabilitacyjne/?$ /swiadczenie-rehabilitacyjne/ [R=301,L]
+RewriteRule ^pl/blog-podatkowo-ksiegowe/oddelegowanie/?$ /oddelegowanie/ [R=301,L]
+RewriteRule ^pl/blog-podatkowo-ksiegowe/zasilek-opiekunczy/?$ /zasilek-opiekunczy/ [R=301,L]
+RewriteRule ^pl/blog-podatkowo-ksiegowe/limity-podatkowe-na-2024-rok/?$ /limity-podatkowe-na-2024-rok/ [R=301,L]
+RewriteRule ^pl/blog-podatkowo-ksiegowe/mozliwosc-opodatkowania-eksportu-towarow-stawka-vat-0/?$ /mozliwosc-opodatkowania-eksportu-towarow-stawka-vat-0/ [R=301,L]
+RewriteRule ^pl/blog-podatkowo-ksiegowe/mobbing-i-zasada-rownego-traktowania-w-miejscu-pracy/?$ /mobbing-i-zasada-rownego-traktowania-w-miejscu-pracy/ [R=301,L]
+RewriteRule ^pl/blog-podatkowo-ksiegowe/podatek-lesny/?$ /podatek-lesny/ [R=301,L]
+RewriteRule ^pl/blog-podatkowo-ksiegowe/zatrudnienie-pracownika-mlodocianego/?$ /zatrudnienie-pracownika-mlodocianego/ [R=301,L]
+RewriteRule ^pl/blog-podatkowo-ksiegowe/wykreslenie-z-rejestru-vat/?$ /blog/ [R=301,L]
+# NOTE: wykreslenie-z-rejestru-vat - no match on new site, redirect to blog
+RewriteRule ^pl/blog-podatkowo-ksiegowe/jednostki-male-w-ustawie-o-rachunkowosci/?$ /jednostki-male-w-ustawie-o-rachunkowosci/ [R=301,L]
+RewriteRule ^pl/blog-podatkowo-ksiegowe/wydzielenie-czesci-mieszkania-na-cele-dzialalnosci-gospodarczej/?$ /wydzielenie-czesci-mieszkania-na-cele-dzialalnosci-gospodarczej/ [R=301,L]
+RewriteRule ^pl/blog-podatkowo-ksiegowe/prawa-autorskie-i-koszty-uzyskania-przychodow/?$ /prawa-autorskie-i-koszty-uzyskania-przychodow/ [R=301,L]
+RewriteRule ^pl/blog-podatkowo-ksiegowe/ksef-krajowy-system-e-faktur/?$ /ksef-krajowy-system-e-faktur/ [R=301,L]
+RewriteRule ^pl/blog-podatkowo-ksiegowe/praca-zdalna-oraz-obowiazki-pracodawcy-w-zakresie-bhp/?$ /praca-zdalna-oraz-obowiazki-pracodawcy-w-zakresie-bhp/ [R=301,L]
+RewriteRule ^pl/blog-podatkowo-ksiegowe/leasing-operacyjny-i-finansowy/?$ /leasing-operacyjny-i-finansowy/ [R=301,L]
+RewriteRule ^pl/blog-podatkowo-ksiegowe/zatrudnienie-osob-niepelnosprawnych-szansa-na-obopolne-korzysci/?$ /zatrudnienie-osob-niepelnosprawnych-szansa-na-obopolne-korzysci/ [R=301,L]
+RewriteRule ^pl/blog-podatkowo-ksiegowe/korekta-vat-naliczonego/?$ /korekta-vat-naliczonego/ [R=301,L]
+RewriteRule ^pl/blog-podatkowo-ksiegowe/roznice-kursowe/?$ /roznice-kursowe/ [R=301,L]
+RewriteRule ^pl/blog-podatkowo-ksiegowe/podzial-urlopu-wypoczynkowego-na-czesci/?$ /podzial-urlopu-wypoczynkowego-na-czesci/ [R=301,L]
+RewriteRule ^pl/blog-podatkowo-ksiegowe/pfron-kogo-dotycza-wplaty/?$ /pfron-kogo-dotycza-wplaty/ [R=301,L]
+RewriteRule ^pl/blog-podatkowo-ksiegowe/zmiany-w-umowach-o-prace-i-informacji-o-warunkach-zatrudnienia/?$ /zmiany-w-umowach-o-prace-i-informacji-o-warunkach-zatrudnienia/ [R=301,L]
+RewriteRule ^pl/blog-podatkowo-ksiegowe/kody-chorobowe-i-okres-zasilkowy/?$ /kody-chorobowe-i-okres-zasilkowy/ [R=301,L]
+RewriteRule ^pl/blog-podatkowo-ksiegowe/kodeks-pracy-dla-pracownika/?$ /kodeks-pracy-dla-pracownika/ [R=301,L]
+RewriteRule ^pl/blog-podatkowo-ksiegowe/najem-prywatny-a-dzialalnosc-gospodarcza-podatek-dochodowy-i-podatek-vat/?$ /najem-prywatny-a-dzialalnosc-gospodarcza-podatek-dochodowy-i-podatek-vat/ [R=301,L]
+RewriteRule ^pl/blog-podatkowo-ksiegowe/zmiany-w-uprawnieniach-rodzicielskich/?$ /zmiany-w-uprawnieniach-rodzicielskich/ [R=301,L]
+RewriteRule ^pl/blog-podatkowo-ksiegowe/roznice-kursowe-przy-rozliczeniu-ryczaltem-ewidencjonowanym/?$ /roznice-kursowe-przy-rozliczeniu-ryczaltem-ewidencjonowanym/ [R=301,L]
+RewriteRule ^pl/blog-podatkowo-ksiegowe/luka-w-numeracji-faktur/?$ /luka-w-numeracji-faktur/ [R=301,L]
+RewriteRule ^pl/blog-podatkowo-ksiegowe/kontrola-trzezwosci-pracownikow-zmiany-w-kodeksie-pracy/?$ /kontrola-trzezwosci-pracownikow-zmiany-w-kodeksie-pracy/ [R=301,L]
+RewriteRule ^pl/blog-podatkowo-ksiegowe/praca-zdalna-zmiany-w-kodeksie-pracy-od-7-kwietnia-2023-roku/?$ /praca-zdalna-zmiany-w-kodeksie-pracy-od-7-kwietnia-2023-roku/ [R=301,L]
+RewriteRule ^pl/blog-podatkowo-ksiegowe/skladki-zus-dla-przedsiebiorcy-wykonujacego-prace-dla-bylego-pracodawcy-rozne-przypadki/?$ /skladki-zus-dla-przedsiebiorcy-wykonujacego-prace-dla-bylego-pracodawcy-rozne-przypadki/ [R=301,L]
+RewriteRule ^pl/blog-podatkowo-ksiegowe/maly-zus-plus-kto-i-jak-dlugo-moze-skorzystac/?$ /maly-zus-plus-kto-i-jak-dlugo-moze-skorzystac/ [R=301,L]
+RewriteRule ^pl/blog-podatkowo-ksiegowe/kto-powinien-rozliczyc-sie-za-pomoca-deklaracji-pit-38/?$ /kto-powinien-rozliczyc-sie-za-pomoca-deklaracji-pit-38/ [R=301,L]
+RewriteRule ^pl/blog-podatkowo-ksiegowe/ulgi-podatkowe-opodatkowanie-podatkiem-liniowym/?$ /ulgi-podatkowe-opodatkowanie-podatkiem-liniowym/ [R=301,L]
+RewriteRule ^pl/blog-podatkowo-ksiegowe/ulgi-podatkowe-odliczone-od-dochodu-w-zeznaniu-rocznym-na-skali-podatkowej-2022/?$ /ulgi-podatkowe-odliczone-od-dochodu-w-zeznaniu-rocznym-na-skali-podatkowej-2022/ [R=301,L]
+RewriteRule ^pl/blog-podatkowo-ksiegowe/ulgi-podatkowe-odliczane-od-podatku-w-2022-roku/?$ /ulgi-podatkowe-odliczane-od-podatku-w-2022-roku/ [R=301,L]
+RewriteRule ^pl/blog-podatkowo-ksiegowe/zmiana-formy-opodatkowania-za-2022-rok/?$ /zmiana-formy-opodatkowania-za-2022-rok/ [R=301,L]
+RewriteRule ^pl/blog-podatkowo-ksiegowe/zmiany-w-projekcie-krajowego-systemu-e-faktur/?$ /zmiany-w-projekcie-krajowego-systemu-e-faktur/ [R=301,L]
+RewriteRule ^pl/blog-podatkowo-ksiegowe/podatek-od-spadkow-i-darowizn-nowe-limity-podatkowe/?$ /podatek-od-spadkow-i-darowizn-nowe-limity-podatkowe/ [R=301,L]
+RewriteRule ^pl/blog-podatkowo-ksiegowe/usluga-twoj-e-pit/?$ /usluga-twoj-e-pit/ [R=301,L]
+RewriteRule ^pl/blog-podatkowo-ksiegowe/ryczalt-od-przychodow-ewidencjonowanych/?$ /ryczalt-od-przychodow-ewidencjonowanych/ [R=301,L]
+RewriteRule ^pl/blog-podatkowo-ksiegowe/ulga-pit-dla-mlodych/?$ /ulga-pit-dla-mlodych/ [R=301,L]
+RewriteRule ^pl/blog-podatkowo-ksiegowe/faktura-zaliczkowa/?$ /faktura-zaliczkowa/ [R=301,L]
+RewriteRule ^pl/blog-podatkowo-ksiegowe/zawieszenie-dzialalnosci-gospodarczej/?$ /zawieszenie-dzialalnosci-gospodarczej/ [R=301,L]
+RewriteRule ^pl/blog-podatkowo-ksiegowe/zmiana-rachunku-bankowego-na-bialej-liscie/?$ /zmiana-rachunku-bankowego-na-bialej-liscie/ [R=301,L]
+RewriteRule ^pl/blog-podatkowo-ksiegowe/faktura-vat-marza/?$ /faktura-vat-marza/ [R=301,L]
+RewriteRule ^pl/blog-podatkowo-ksiegowe/termin-zwrotu-vat/?$ /termin-zwrotu-vat/ [R=301,L]
+RewriteRule ^pl/blog-podatkowo-ksiegowe/tarcza-branzowa-9-0/?$ /tarcza-branzowa-9-0/ [R=301,L]
+RewriteRule ^pl/blog-podatkowo-ksiegowe/wymiar-urlopu-wypoczynkowego/?$ /wymiar-urlopu-wypoczynkowego/ [R=301,L]
+RewriteRule ^pl/blog-podatkowo-ksiegowe/danina-solidarnosciowa/?$ /danina-solidarnosciowa/ [R=301,L]
+RewriteRule ^pl/blog-podatkowo-ksiegowe/czynny-zal/?$ /czynny-zal/ [R=301,L]
+RewriteRule ^pl/blog-podatkowo-ksiegowe/zalozenia-programu-nowy-polski-lad/?$ /zalozenia-programu-nowy-polski-lad/ [R=301,L]
+RewriteRule ^pl/blog-podatkowo-ksiegowe/rozliczenie-subwencji-pfr-1-0/?$ /rozliczenie-subwencji-pfr-1-0/ [R=301,L]
+RewriteRule ^pl/blog-podatkowo-ksiegowe/slim-vat-2/?$ /slim-vat-2/ [R=301,L]
+RewriteRule ^pl/blog-podatkowo-ksiegowe/podatnik-bezgotowkowy/?$ /podatnik-bezgotowkowy/ [R=301,L]
+RewriteRule ^pl/blog-podatkowo-ksiegowe/wymiar-czasu-urlopu-macierzynskiego-i-rodzicielskiego/?$ /wymiar-czasu-urlopu-macierzynskiego-i-rodzicielskiego/ [R=301,L]
+RewriteRule ^pl/blog-podatkowo-ksiegowe/zmiany-w-jpk_vat-od-1-lipca-2021-r/?$ /zmiany-w-jpk_vat-od-1-lipca-2021-r/ [R=301,L]
+RewriteRule ^pl/blog-podatkowo-ksiegowe/numer-pesel-dla-cudzoziemcow/?$ /numer-pesel-dla-cudzoziemcow/ [R=301,L]
+RewriteRule ^pl/blog-podatkowo-ksiegowe/jednorazowa-amortyzacja-srodka-trwalego/?$ /jednorazowa-amortyzacja-srodka-trwalego/ [R=301,L]
+RewriteRule ^pl/blog-podatkowo-ksiegowe/nagrody-w-loterii-szczepionkowej-bez-podatku-dochodowego/?$ /nagrody-w-loterii-szczepionkowej-bez-podatku-dochodowego/ [R=301,L]
+RewriteRule ^pl/blog-podatkowo-ksiegowe/nota-korygujaca/?$ /nota-korygujaca/ [R=301,L]
+RewriteRule ^pl/blog-podatkowo-ksiegowe/koszty-niepodatkowe-nkup/?$ /koszty-niepodatkowe-nkup/ [R=301,L]
+RewriteRule ^pl/blog-podatkowo-ksiegowe/dobrowolne-ubezpieczenie-chorobowe/?$ /dobrowolne-ubezpieczenie-chorobowe/ [R=301,L]
+RewriteRule ^pl/blog-podatkowo-ksiegowe/obowiazek-podatkowy-w-vat/?$ /obowiazek-podatkowy-w-vat/ [R=301,L]
+RewriteRule ^pl/blog-podatkowo-ksiegowe/podwyzki-diet-sluzbowych/?$ /blog/ [R=301,L]
+# NOTE: podwyzki-diet-sluzbowych - no match on new site, redirect to blog
+RewriteRule ^pl/blog-podatkowo-ksiegowe/duplikat-faktury/?$ /blog/ [R=301,L]
+# NOTE: duplikat-faktury - no match on new site, redirect to blog
+RewriteRule ^pl/blog-podatkowo-ksiegowe/1091/?$ /blog/ [R=301,L]
+# NOTE: 1091 - no match on new site (numeric slug), redirect to blog
+RewriteRule ^pl/blog-podatkowo-ksiegowe/metoda-kasowa-w-podatku-vat/?$ /metoda-kasowa-w-podatku-vat/ [R=301,L]
+RewriteRule ^pl/blog-podatkowo-ksiegowe/podatek-od-wygranej/?$ /podatek-od-wygranej/ [R=301,L]
+RewriteRule ^pl/blog-podatkowo-ksiegowe/druk-zaw-nr/?$ /druk-zaw-nr/ [R=301,L]
+RewriteRule ^pl/blog-podatkowo-ksiegowe/oczywista-pomylka-na-kasie-fiskalnej/?$ /oczywista-pomylka-na-kasie-fiskalnej/ [R=301,L]
+RewriteRule ^pl/blog-podatkowo-ksiegowe/urlop-okoliocznosciowy/?$ /urlop-okoliocznosciowy/ [R=301,L]
+RewriteRule ^pl/blog-podatkowo-ksiegowe/wsto-wewnatrzwspolnotowa-sprzedaz-towarow-na-odleglosc/?$ /wsto-wewnatrzwspolnotowa-sprzedaz-towarow-na-odleglosc/ [R=301,L]
+RewriteRule ^pl/blog-podatkowo-ksiegowe/zmiany-do-ustawy-o-systemie-ubezpieczen-spolecznych/?$ /zmiany-do-ustawy-o-systemie-ubezpieczen-spolecznych/ [R=301,L]
+RewriteRule ^pl/blog-podatkowo-ksiegowe/kod-wykonywanego-zawodu/?$ /kod-wykonywanego-zawodu/ [R=301,L]
+RewriteRule ^pl/blog-podatkowo-ksiegowe/infolinia-dla-przedsiebiorcow-dot-polskiego-ladu/?$ /infolinia-dla-przedsiebiorcow-dot-polskiego-ladu/ [R=301,L]
+RewriteRule ^pl/blog-podatkowo-ksiegowe/sprzedaz-mieszana/?$ /sprzedaz-mieszana/ [R=301,L]
+RewriteRule ^pl/blog-podatkowo-ksiegowe/okres-wypowiedzenia-umowy-o-prace/?$ /okres-wypowiedzenia-umowy-o-prace/ [R=301,L]
+RewriteRule ^pl/blog-podatkowo-ksiegowe/ulga-dla-klasy-sredniej/?$ /ulga-dla-klasy-sredniej/ [R=301,L]
+RewriteRule ^pl/blog-podatkowo-ksiegowe/skladka-zdrowotna-od-2022-roku/?$ /skladka-zdrowotna-od-2022-roku/ [R=301,L]
+RewriteRule ^pl/blog-podatkowo-ksiegowe/wycofanie-srodka-trwalego-na-cele-prywatne/?$ /wycofanie-srodka-trwalego-na-cele-prywatne/ [R=301,L]
+RewriteRule ^pl/blog-podatkowo-ksiegowe/tarcza-antyinflacyjna/?$ /tarcza-antyinflacyjna/ [R=301,L]
+RewriteRule ^pl/blog-podatkowo-ksiegowe/oswiadczenie-pit-2/?$ /oswiadczenie-pit-2/ [R=301,L]
+RewriteRule ^pl/blog-podatkowo-ksiegowe/spis-z-natury-na-31-12/?$ /spis-z-natury-na-31-12/ [R=301,L]
+RewriteRule ^pl/blog-podatkowo-ksiegowe/potwierdzenie-salda/?$ /potwierdzenie-salda/ [R=301,L]
+RewriteRule ^pl/blog-podatkowo-ksiegowe/kwota-wolna-od-podatku/?$ /kwota-wolna-od-podatku/ [R=301,L]
+RewriteRule ^pl/blog-podatkowo-ksiegowe/zmiana-formy-opodatkowania/?$ /zmiana-formy-opodatkowania/ [R=301,L]
+RewriteRule ^pl/blog-podatkowo-ksiegowe/stawka-podatku-cit/?$ /stawka-podatku-cit/ [R=301,L]
+RewriteRule ^pl/blog-podatkowo-ksiegowe/split-payment/?$ /split-payment/ [R=301,L]
+RewriteRule ^pl/blog-podatkowo-ksiegowe/termin-wystawienia-faktury/?$ /termin-wystawienia-faktury/ [R=301,L]
+RewriteRule ^pl/blog-podatkowo-ksiegowe/pomoc-humanitarna-dla-ukrainy-z-0-vat/?$ /pomoc-humanitarna-dla-ukrainy-z-0-vat/ [R=301,L]
+RewriteRule ^pl/blog-podatkowo-ksiegowe/dluzsze-terminy-sprawozdawcze-za-2021-rok/?$ /dluzsze-terminy-sprawozdawcze-za-2021-rok/ [R=301,L]
+RewriteRule ^pl/blog-podatkowo-ksiegowe/zmiany-w-systemie-podatkowym/?$ /zmiany-w-systemie-podatkowym/ [R=301,L]
+RewriteRule ^pl/blog-podatkowo-ksiegowe/krajowy-system-e-faktur/?$ /krajowy-system-e-faktur/ [R=301,L]
+RewriteRule ^pl/blog-podatkowo-ksiegowe/zwolnienie-podmiotowe-z-vat/?$ /zwolnienie-podmiotowe-z-vat/ [R=301,L]
+RewriteRule ^pl/blog-podatkowo-ksiegowe/amortyzacja-srodkow-trwalych/?$ /amortyzacja-srodkow-trwalych/ [R=301,L]
+RewriteRule ^pl/blog-podatkowo-ksiegowe/formy-opodatkowania-dzialalnosci-gospodarczej/?$ /formy-opodatkowania-dzialalnosci-gospodarczej/ [R=301,L]
+RewriteRule ^pl/blog-podatkowo-ksiegowe/objasnienia-podatkowe-dotyczace-uznania-paragonow-fiskalnych-za-faktury-uproszczone/?$ /objasnienia-podatkowe-dotyczace-uznania-paragonow-fiskalnych-za-faktury-uproszczone/ [R=301,L]
+RewriteRule ^pl/blog-podatkowo-ksiegowe/slim-vat/?$ /slim-vat/ [R=301,L]
+RewriteRule ^pl/blog-podatkowo-ksiegowe/podatek-pcc/?$ /podatek-pcc/ [R=301,L]
+RewriteRule ^pl/blog-podatkowo-ksiegowe/koszty-reprezentacji-a-reklama/?$ /blog/ [R=301,L]
+# NOTE: koszty-reprezentacji-a-reklama - no match on new site, redirect to blog
+RewriteRule ^pl/blog-podatkowo-ksiegowe/1175/?$ /blog/ [R=301,L]
+# NOTE: 1175 - no match on new site (numeric slug), redirect to blog
+RewriteRule ^pl/blog-podatkowo-ksiegowe/zmiany-w-pit-po-konsultacjach-spolecznych/?$ /zmiany-w-pit-po-konsultacjach-spolecznych/ [R=301,L]
+RewriteRule ^pl/blog-podatkowo-ksiegowe/praca-dla-ukraincow-poradnik-dla-przedsiebiorcow/?$ /praca-dla-ukraincow-poradnik-dla-przedsiebiorcow/ [R=301,L]
+RewriteRule ^pl/blog-podatkowo-ksiegowe/biuletyn-informacyjny-maj/?$ /biuletyn-informacyjny-maj/ [R=301,L]
+RewriteRule ^pl/blog-podatkowo-ksiegowe/wiazaca-informacja-stawkowa-wis/?$ /wiazaca-informacja-stawkowa-wis/ [R=301,L]
+RewriteRule ^pl/blog-podatkowo-ksiegowe/obowiazek-prowadzenia-pelnej-ksiegowosci/?$ /obowiazek-prowadzenia-pelnej-ksiegowosci/ [R=301,L]
+RewriteRule ^pl/blog-podatkowo-ksiegowe/biuletyn-informacyjny-czerwiec/?$ /blog/ [R=301,L]
+# NOTE: biuletyn-informacyjny-czerwiec - no match on new site, redirect to blog
+RewriteRule ^pl/blog-podatkowo-ksiegowe/kilometrowka-na-potrzeby-delegacji-pracownikow/?$ /blog/ [R=301,L]
+# NOTE: kilometrowka-na-potrzeby-delegacji-pracownikow - no match on new site, redirect to blog
+RewriteRule ^pl/blog-podatkowo-ksiegowe/odliczenie-skladki-zdrowotnej-od-lipca-2022/?$ /blog/ [R=301,L]
+# NOTE: odliczenie-skladki-zdrowotnej-od-lipca-2022 - no match on new site, redirect to blog
+RewriteRule ^pl/blog-podatkowo-ksiegowe/podatek-od-nieruchomosci/?$ /blog/ [R=301,L]
+# NOTE: podatek-od-nieruchomosci - no match on new site, redirect to blog
+RewriteRule ^pl/blog-podatkowo-ksiegowe/zalegly-urlop-wypoczynkowy/?$ /blog/ [R=301,L]
+# NOTE: zalegly-urlop-wypoczynkowy - no match on new site, redirect to blog
+RewriteRule ^pl/blog-podatkowo-ksiegowe/refaktura/?$ /blog/ [R=301,L]
+# NOTE: refaktura - no match on new site, redirect to blog
+RewriteRule ^pl/blog-podatkowo-ksiegowe/zwrot-vat-w-15-dni/?$ /blog/ [R=301,L]
+# NOTE: zwrot-vat-w-15-dni - no match on new site, redirect to blog
+RewriteRule ^pl/blog-podatkowo-ksiegowe/numer-eori-economic-operators-registration-and-identification/?$ /blog/ [R=301,L]
+# NOTE: numer-eori - no match on new site, redirect to blog
+RewriteRule ^pl/blog-podatkowo-ksiegowe/zwolnienie-przedmiotowe-z-vat/?$ /blog/ [R=301,L]
+# NOTE: zwolnienie-przedmiotowe-z-vat - no match on new site, redirect to blog
+RewriteRule ^pl/blog-podatkowo-ksiegowe/zmiany-w-cit-od-2023-roku/?$ /blog/ [R=301,L]
+# NOTE: zmiany-w-cit-od-2023-roku - no match on new site, redirect to blog
+RewriteRule ^pl/blog-podatkowo-ksiegowe/procedura-vat-oss/?$ /blog/ [R=301,L]
+# NOTE: procedura-vat-oss - no match on new site, redirect to blog
+RewriteRule ^pl/blog-podatkowo-ksiegowe/sprawozdawczosc-gus/?$ /blog/ [R=301,L]
+# NOTE: sprawozdawczosc-gus - no match on new site, redirect to blog
+
+# =============================================================================
+# BLOG POSTS - blog-inne category
+# (old /pl/blog-inne/slug/ -> new /slug/)
+# =============================================================================
+
+RewriteRule ^pl/blog-inne/meritoros-z-nominacja-do-nagrody-ikona-polskiego-biznesu/?$ /meritoros-z-nominacja-do-nagrody-ikona-polskiego-biznesu/ [R=301,L]
+RewriteRule ^pl/blog-inne/recertyfikacja-iso/?$ /recertyfikacja-iso/ [R=301,L]
+RewriteRule ^pl/blog-inne/trzy-certyfikaty-z-aideas-na-pokladzie-meritoros/?$ /trzy-certyfikaty-z-aideas-na-pokladzie-meritoros/ [R=301,L]
+RewriteRule ^pl/blog-inne/razem-budujemy-przyjazne-miejsce-pracy-webinar-o-nieplodnosci-w-srodowisku-zawodowym/?$ /razem-budujemy-przyjazne-miejsce-pracy-webinar-o-nieplodnosci-w-srodowisku-zawodowym/ [R=301,L]
+RewriteRule ^pl/blog-inne/coroczna-firmowa-konferencja-2024-2025/?$ /coroczna-firmowa-konferencja-2024-2025/ [R=301,L]
+RewriteRule ^pl/blog-inne/meritoros-w-gronie-laureatow-diamentow-forbes-2023/?$ /meritoros-w-gronie-laureatow-diamentow-forbes-2023/ [R=301,L]
+RewriteRule ^pl/blog-inne/jak-i-kiedy-zmienic-ksiegowosc-w-firmie/?$ /jak-i-kiedy-zmienic-ksiegowosc-w-firmie/ [R=301,L]
+RewriteRule ^pl/blog-inne/wspolpraca-meritoros-wyzsza-szkola-europejska/?$ /wspolpraca-meritoros-wyzsza-szkola-europejska/ [R=301,L]
+RewriteRule ^pl/blog-inne/brakuje-specjalistow-na-rynku-zwlaszcza-w-obszarze-ksiegowosci/?$ /brakuje-specjalistow-na-rynku-zwlaszcza-w-obszarze-ksiegowosci/ [R=301,L]
+RewriteRule ^pl/blog-inne/meritoros-czlonkiem-krajowej-izby-biur-rachunkowych/?$ /meritoros-czlonkiem-krajowej-izby-biur-rachunkowych/ [R=301,L]
+RewriteRule ^pl/blog-inne/jak-wyglada-wspolpraca-z-meritoros/?$ /jak-wyglada-wspolpraca-z-meritoros/ [R=301,L]
+RewriteRule ^pl/blog-inne/gazele-biznesu-2023/?$ /gazele-biznesu-2023/ [R=301,L]
+RewriteRule ^pl/blog-inne/gazele-biznesu-2022/?$ /gazele-biznesu-2022/ [R=301,L]
+RewriteRule ^pl/blog-inne/coroczna-firmowa-konferencja-2023/?$ /coroczna-firmowa-konferencja-2023/ [R=301,L]
+RewriteRule ^pl/blog-inne/jestesmy-laureatem-diamentow-forbes-2023/?$ /jestesmy-laureatem-diamentow-forbes-2023/ [R=301,L]
+RewriteRule ^pl/blog-inne/otwarcie-oddzialu-w-lodzi/?$ /otwarcie-oddzialu-w-lodzi/ [R=301,L]
+RewriteRule ^pl/blog-inne/konferencja-nowoczesne-biuro-rachunkowe-zakopane-2021/?$ /konferencja-nowoczesne-biuro-rachunkowe-zakopane-2021/ [R=301,L]
+RewriteRule ^pl/blog-inne/otwarcie-oddzialu-we-wroclawiu/?$ /otwarcie-oddzialu-we-wroclawiu/ [R=301,L]
+RewriteRule ^pl/blog-inne/x-otwarta-konferencja-spin/?$ /x-otwarta-konferencja-spin/ [R=301,L]
+RewriteRule ^pl/blog-inne/meritoros-laureatem-konkursu-100-najlepszych-projektow-na-zwiekszenie-poziomu-cyfryzacji-w-firmie/?$ /meritoros-laureatem-konkursu-100-najlepszych-projektow-na-zwiekszenie-poziomu-cyfryzacji-w-firmie/ [R=301,L]
+RewriteRule ^pl/blog-inne/meritoros-otrzymuje-wyroznienie-w-konkursie-solidarnie-zwyciezymy/?$ /meritoros-otrzymuje-wyroznienie-w-konkursie-solidarnie-zwyciezymy/ [R=301,L]
+RewriteRule ^pl/blog-inne/coroczna-firmowa-konferencja-2020/?$ /coroczna-firmowa-konferencja-2020/ [R=301,L]
+RewriteRule ^pl/blog-inne/gazele-biznesu-2021/?$ /gazele-biznesu-2021/ [R=301,L]
+RewriteRule ^pl/blog-inne/coroczna-firmowa-konferencja-2021/?$ /coroczna-firmowa-konferencja-2021/ [R=301,L]
+RewriteRule ^pl/blog-inne/certyfikacja-iso/?$ /blog/ [R=301,L]
+# NOTE: certyfikacja-iso - no match on new site, redirect to blog
+RewriteRule ^pl/blog-inne/gazele-biznesu-2025/?$ /gazele-biznesu-2025/ [R=301,L]
+
+# =============================================================================
+# BLOG POSTS - blog-wolontariat category
+# (old /pl/blog-wolontariat/slug/ -> new /slug/)
+# =============================================================================
+
+RewriteRule ^pl/blog-wolontariat/szlachetna-paczka-2025/?$ /szlachetna-paczka-2025/ [R=301,L]
+RewriteRule ^pl/blog-wolontariat/swiety-mikolaj-dla-seniora-wolontariat-pracowniczy/?$ /swiety-mikolaj-dla-seniora-wolontariat-pracowniczy/ [R=301,L]
+RewriteRule ^pl/blog-wolontariat/dzien-kundelka-2025/?$ /dzien-kundelka-2025/ [R=301,L]
+RewriteRule ^pl/blog-wolontariat/dzien-ziemi-2025/?$ /dzien-ziemi-2025/ [R=301,L]
+RewriteRule ^pl/blog-wolontariat/szlachetna-paczka-2024/?$ /szlachetna-paczka-2024/ [R=301,L]
+RewriteRule ^pl/blog-wolontariat/dzien-kundelka-2024/?$ /dzien-kundelka-2024/ [R=301,L]
+RewriteRule ^pl/blog-wolontariat/dzien-kundelka-w-meritoros/?$ /dzien-kundelka-w-meritoros/ [R=301,L]
+RewriteRule ^pl/blog-wolontariat/dzien-dziecka-w-meritoros/?$ /dzien-dziecka-w-meritoros/ [R=301,L]
+RewriteRule ^pl/blog-wolontariat/dzien-ziemi-w-meritoros/?$ /dzien-ziemi-w-meritoros/ [R=301,L]
+RewriteRule ^pl/blog-wolontariat/szlachetna-paczka-2023/?$ /szlachetna-paczka-2023/ [R=301,L]
+
+# =============================================================================
+# BLOG POSTS - rynek-biur-rachunkowych category
+# (old /pl/rynek-biur-rachunkowych/slug/ -> new /slug/)
+# =============================================================================
+
+RewriteRule ^pl/rynek-biur-rachunkowych/jak-zwiekszyc-wartosc-swojego-biura-rachunkowego/?$ /jak-zwiekszyc-wartosc-swojego-biura-rachunkowego/ [R=301,L]
+RewriteRule ^pl/rynek-biur-rachunkowych/od-lutego-dzialamy-juz-w-siedmiu-polskich-miastach/?$ /od-lutego-dzialamy-juz-w-siedmiu-polskich-miastach/ [R=301,L]
+RewriteRule ^pl/rynek-biur-rachunkowych/strategiczne-polaczenie-meritoros-z-atl-accounting-payroll/?$ /strategiczne-polaczenie-meritoros-z-atl-accounting-payroll/ [R=301,L]
+RewriteRule ^pl/rynek-biur-rachunkowych/przyszlosc-ksiegowosci-robotyzacja-i-ai-w-biurach-rachunkowych/?$ /przyszlosc-ksiegowosci-robotyzacja-i-ai-w-biurach-rachunkowych/ [R=301,L]
+RewriteRule ^pl/rynek-biur-rachunkowych/wycena-biura-rachunkowego/?$ /wycena-biura-rachunkowego/ [R=301,L]
+
+# =============================================================================
+# BLOG POSTS - bpo category
+# (old /pl/bpo/slug/ -> new /slug/)
+# =============================================================================
+
+RewriteRule ^pl/bpo/automatycznie-zapisany-szkic-2/?$ /automatycznie-zapisany-szkic-2/ [R=301,L]
+RewriteRule ^pl/bpo/automatycznie-zapisany-szkic/?$ /automatycznie-zapisany-szkic/ [R=301,L]
+RewriteRule ^pl/bpo/automatyzacja-list-plac-proces-ktory-wymaga-precyzyjnej-architektury-a-nie-jednego-narzedzia/?$ /automatyzacja-list-plac-proces-ktory-wymaga-precyzyjnej-architektury-a-nie-jednego-narzedzia/ [R=301,L]
+RewriteRule ^pl/bpo/wspolne-kpi-w-uslugach-bpo-praktyczne-narzedzie-optymalizacji/?$ /wspolne-kpi-w-uslugach-bpo-praktyczne-narzedzie-optymalizacji/ [R=301,L]
+RewriteRule ^pl/bpo/automatyzacja-procesow-wsparcia/?$ /automatyzacja-procesow-wsparcia/ [R=301,L]
+RewriteRule ^pl/bpo/przedsiebiorcy-cierpia-na-brak-specjalistow/?$ /przedsiebiorcy-cierpia-na-brak-specjalistow/ [R=301,L]
+RewriteRule ^pl/bpo/bpo-business-process-outsourcing/?$ /bpo-business-process-outsourcing/ [R=301,L]
+RewriteRule ^pl/bpo/brakuje-wykwalifikowanych-specjalistow/?$ /brakuje-wykwalifikowanych-specjalistow/ [R=301,L]
+RewriteRule ^pl/bpo/bpo-wydajnosc-pracownikow/?$ /bpo-wydajnosc-pracownikow/ [R=301,L]
+RewriteRule ^pl/bpo/konsolidacja-firm-z-branzy-tsl-konieczna-jest-dobra-strategia/?$ /konsolidacja-firm-z-branzy-tsl-konieczna-jest-dobra-strategia/ [R=301,L]
+RewriteRule ^pl/bpo/ksiegowosc-w-branzy-tsl-pelna-wyzwan/?$ /ksiegowosc-w-branzy-tsl-pelna-wyzwan/ [R=301,L]
+RewriteRule ^pl/bpo/bpo-jedna-z-najbardziej-konkurencyjnych-branz-polskiej-gospodarki/?$ /bpo-jedna-z-najbardziej-konkurencyjnych-branz-polskiej-gospodarki/ [R=301,L]
+RewriteRule ^pl/bpo/skalowanie-organizacyjne-jak-robia-to-liderzy-rynkowi/?$ /skalowanie-organizacyjne-jak-robia-to-liderzy-rynkowi/ [R=301,L]
+RewriteRule ^pl/bpo/kryzys-w-branzy-tsl-bpo-oferuje-konkretne-rozwiazania/?$ /kryzys-w-branzy-tsl-bpo-oferuje-konkretne-rozwiazania/ [R=301,L]
+RewriteRule ^pl/bpo/otworzylismy-centrum-bpo-dla-polskich-srednich-i-duzych-firm/?$ /otworzylismy-centrum-bpo-dla-polskich-srednich-i-duzych-firm/ [R=301,L]
+RewriteRule ^pl/bpo/skuteczne-strategie-wzrostu-jak-wspierac-rozwoj-korzystajac-z-uslug-bpo/?$ /skuteczne-strategie-wzrostu-jak-wspierac-rozwoj-korzystajac-z-uslug-bpo/ [R=301,L]
+RewriteRule ^pl/bpo/czy-polskie-firmy-moga-isc-sladami-globalnych-liderow/?$ /czy-polskie-firmy-moga-isc-sladami-globalnych-liderow/ [R=301,L]
+RewriteRule ^pl/bpo/zielony-lad-i-raportowanie-esg-nakladaja-na-firmy-nowe-obowiazki/?$ /zielony-lad-i-raportowanie-esg-nakladaja-na-firmy-nowe-obowiazki/ [R=301,L]
+RewriteRule ^pl/bpo/wysokie-koszty-rekrutacji-sa-obciazeniem-dla-firm/?$ /wysokie-koszty-rekrutacji-sa-obciazeniem-dla-firm/ [R=301,L]
+
+# =============================================================================
+# BLOG POSTS - case-studies category
+# (old /pl/case-studies/slug/ -> new /slug/)
+# =============================================================================
+
+RewriteRule ^pl/case-studies/case-study-fundacja-rodzinna/?$ /case-study-fundacja-rodzinna/ [R=301,L]
+
+# =============================================================================
+# CATCH-ALL: any remaining /pl/... URLs not matched above -> strip /pl/ prefix
+# =============================================================================
+
+RewriteRule ^pl/(.*)$ /$1 [R=301,L]
