@@ -174,7 +174,7 @@ if ($total === 0) return;
                             <div class="rounded-xl bg-slate-50 p-3 text-center">
                                 <p class="text-2xl font-black text-[#00d084]"><?php echo esc_html($stat['val']); ?></p>
                                 <?php if ($stat['label']) : ?>
-                                <p class="text-[11px] text-slate-500 mt-0.5 leading-tight"><?php echo esc_html($stat['label']); ?></p>
+                                <p class="text-xs text-slate-500 mt-0.5 leading-tight"><?php echo esc_html($stat['label']); ?></p>
                                 <?php endif; ?>
                             </div>
                             <?php endforeach; ?>
