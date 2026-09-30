@@ -71,12 +71,12 @@ $duped = array_merge($logos, $logos);
             width: auto;
             max-width: 120px;
             object-fit: contain;
-            filter: grayscale(100%) opacity(0.65);
-            transition: filter .25s ease;
+            opacity: 0.75;
+            transition: opacity .25s ease;
             display: block;
         }
         .hk-logo-card:hover img {
-            filter: grayscale(0%) opacity(1);
+            opacity: 1;
         }
         @media (prefers-reduced-motion: reduce) {
             .hk-logos-track { animation: none; }
