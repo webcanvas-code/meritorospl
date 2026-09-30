@@ -55,7 +55,8 @@ $duped = array_merge($logos, $logos);
             width: auto;
             max-width: 140px;
             object-fit: contain;
-            filter: grayscale(100%) opacity(0.55);
+            filter: grayscale(100%) opacity(0.6);
+            mix-blend-mode: multiply;
             transition: filter .25s ease;
             flex-shrink: 0;
         }
