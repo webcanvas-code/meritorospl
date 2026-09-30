@@ -6,47 +6,78 @@ $text_post = __( get_field('hk_logos_text_post', $page_id) ?: 'klientów', 'meri
 
 $_img = get_template_directory_uri() . '/images/';
 $_defaults = [
-    ['url' => $_img . 'streamsoft.png', 'alt' => 'Streamsoft'],
-    ['url' => $_img . 'sitech.png',     'alt' => 'Sitech'],
-    ['url' => $_img . 'arco.svg',       'alt' => 'Arco'],
-    ['url' => $_img . 'rofa.png',       'alt' => 'ROFA'],
+    1  => ['url' => $_img . 'streamsoft.png', 'alt' => 'Streamsoft'],
+    2  => ['url' => $_img . 'sitech.png',     'alt' => 'Sitech'],
+    3  => ['url' => $_img . 'arco.svg',       'alt' => 'Arco'],
+    4  => ['url' => $_img . 'rofa.png',       'alt' => 'ROFA'],
 ];
 
 $logos = [];
-for ($i = 1; $i <= 4; $i++) {
+for ($i = 1; $i <= 20; $i++) {
     $acf = get_field("hk_logos_logo{$i}", $page_id);
-    $logos[] = is_array($acf) && !empty($acf['url']) ? $acf : $_defaults[$i - 1];
+    if (is_array($acf) && !empty($acf['url'])) {
+        $logos[] = ['url' => $acf['url'], 'alt' => $acf['alt'] ?: ''];
+    } elseif (isset($_defaults[$i])) {
+        $logos[] = $_defaults[$i];
+    }
 }
+
+if (empty($logos)) return;
+
+// Powiel loga żeby zapewnić ciągłość animacji
+$duped = array_merge($logos, $logos);
 ?>
 
-<section id="hk-logos" class="py-12 md:py-16 bg-white border-t border-slate-100">
-    <div class="max-w-7xl mx-auto px-6">
-
-        <p class="text-base md:text-lg text-slate-500 font-medium mb-6">
-            <?php echo mer_esc($text_pre); ?> <?php echo mer_esc($number); ?> <?php echo mer_esc($text_post); ?>
+<section id="hk-logos" class="py-10 md:py-14 bg-white border-t border-slate-100 overflow-hidden">
+    <div class="max-w-7xl mx-auto px-6 mb-6">
+        <p class="text-base md:text-lg text-slate-500 font-medium">
+            <?php echo esc_html($text_pre); ?> <strong class="text-slate-700"><?php echo esc_html($number); ?></strong> <?php echo esc_html($text_post); ?>
         </p>
+    </div>
 
-        <style>
-            .hk-logos { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.25rem; align-items: center; }
-            .hk-logos img { width: auto; height: auto; max-height: 36px; max-width: 100%; object-fit: contain; }
-            @media (min-width: 640px) {
-                .hk-logos { display: flex; justify-content: space-between; align-items: center; gap: 1rem; }
-                .hk-logos img { max-height: none; }
-                .hk-logos img:nth-child(1) { width: 207px;    height: 41.99px; }
-                .hk-logos img:nth-child(2) { width: 139px;    height: 48px; }
-                .hk-logos img:nth-child(3) { width: 156px;    height: 35px; }
-                .hk-logos img:nth-child(4) { width: 129.21px; height: 59.87px; }
-            }
-        </style>
-        <div class="hk-logos">
-            <?php foreach ($logos as $logo) :
-                if (!is_array($logo)) continue;
-            ?>
+    <style>
+        .hk-logos-track {
+            display: flex;
+            align-items: center;
+            gap: 3rem;
+            width: max-content;
+            animation: hk-marquee 35s linear infinite;
+        }
+        .hk-logos-track:hover {
+            animation-play-state: paused;
+        }
+        @keyframes hk-marquee {
+            from { transform: translateX(0); }
+            to   { transform: translateX(-50%); }
+        }
+        .hk-logos-track img {
+            height: 40px;
+            width: auto;
+            max-width: 140px;
+            object-fit: contain;
+            filter: grayscale(100%) opacity(0.55);
+            transition: filter .25s ease;
+            flex-shrink: 0;
+        }
+        .hk-logos-track img:hover {
+            filter: grayscale(0%) opacity(1);
+        }
+        @media (prefers-reduced-motion: reduce) {
+            .hk-logos-track { animation: none; }
+        }
+    </style>
+
+    <div class="relative">
+        <!-- fade edges -->
+        <div class="pointer-events-none absolute inset-y-0 left-0 w-16 z-10" style="background: linear-gradient(to right, #fff, transparent);"></div>
+        <div class="pointer-events-none absolute inset-y-0 right-0 w-16 z-10" style="background: linear-gradient(to left, #fff, transparent);"></div>
+
+        <div class="hk-logos-track">
+            <?php foreach ($duped as $logo) : ?>
                 <img src="<?php echo esc_url($logo['url']); ?>"
                      alt="<?php echo esc_attr($logo['alt'] ?: __('Logo klienta', 'meritoros')); ?>"
                      loading="lazy">
             <?php endforeach; ?>
         </div>
-
     </div>
 </section>
