@@ -172,7 +172,7 @@ $hk_url  = $hk_page ? get_permalink($hk_page) : home_url('/historie-klientow/');
     <!-- ════════════════════════════════════════════════════════════
          KLIENT + WIDEO  |  WYZWANIE + CTA
     ════════════════════════════════════════════════════════════════ -->
-    <?php $has_video = $thumb_url || $play_src; ?>
+    <?php $has_video = (bool) $play_src; ?>
     <section class="py-14 md:py-20">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
@@ -221,11 +221,13 @@ $hk_url  = $hk_page ? get_permalink($hk_page) : home_url('/historie-klientow/');
                         <img src="<?php echo esc_url($thumb_url); ?>" alt="<?php the_title_attribute(); ?>"
                              class="w-full h-full object-contain transition-transform duration-500 group-hover:scale-105" loading="lazy">
                         <?php endif; ?>
+                        <?php if ( $play_src ) : ?>
                         <div class="absolute inset-0 flex items-center justify-center bg-slate-900/25 group-hover:bg-slate-900/20 transition-colors duration-300">
-                            <div class="w-20 h-20 rounded-full bg-[#00d084] flex items-center justify-center shadow-xl group-hover:scale-110 transition-transform duration-300<?php echo ! $play_src ? ' pointer-events-none' : ''; ?>">
+                            <div class="w-20 h-20 rounded-full bg-[#00d084] flex items-center justify-center shadow-xl group-hover:scale-110 transition-transform duration-300">
                                 <i data-lucide="play" fill="#fff" class="w-8 h-8 text-white ml-0.5" stroke-width="0"></i>
                             </div>
                         </div>
+                        <?php endif; ?>
                     </div>
 
                 </div>
@@ -272,6 +274,13 @@ $hk_url  = $hk_page ? get_permalink($hk_page) : home_url('/historie-klientow/');
                     <div class="prose prose-lg prose-slate max-w-none text-slate-600 leading-relaxed">
                         <?php echo wp_kses_post($challenge); ?>
                     </div>
+                </div>
+                <?php endif; ?>
+
+                <?php if ( $thumb_url ) : ?>
+                <div class="rounded-2xl overflow-hidden bg-slate-100 aspect-video">
+                    <img src="<?php echo esc_url($thumb_url); ?>" alt="<?php the_title_attribute(); ?>"
+                         class="w-full h-full object-cover" loading="lazy">
                 </div>
                 <?php endif; ?>
 

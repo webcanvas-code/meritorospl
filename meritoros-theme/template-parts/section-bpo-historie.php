@@ -8,41 +8,34 @@ $section_title = __( get_field('bpo_hist_title', $_orig_id) ?: 'Jak wyglada BPO 
 $btn_text      = __( get_field('bpo_hist_btn_text', $_orig_id) ?: 'Poznaj wiecej historii', 'meritoros' );
 $btn_url       = get_field('bpo_hist_btn_url', $_orig_id) ?: home_url('/historie-klientow/');
 
+$slide_default_empty = [
+    'logo'         => null,
+    'logo_alt'     => '',
+    'industries'   => '',
+    'scope'        => '',
+    'text'         => '',
+    'stat1_val'    => '',
+    'stat1_label'  => '',
+    'stat2_val'    => '',
+    'stat2_label'  => '',
+    'stat3_val'    => '',
+    'stat3_label'  => '',
+    'quote'        => '',
+    'quote_author' => '',
+    'image'        => null,
+    'url'          => '#',
+];
+
 $slide_defaults = [
-    1 => [
-        'logo'         => null,
-        'logo_alt'     => 'Dentity',
-        'industries'   => "Stomatologia\nOchrona zdrowia",
-        'scope'        => 'Pelna obsluga BPO dla sieci gabinetow stomatologicznych',
-        'text'         => 'Dynamicznie rozwijajaca sie siec gabinetow Dentity potrzebowala partnera, ktory przejmie caly obszar finansowo-ksiegowy i kadrowy, odciazajac zarzad od administracji.',
-        'stat1_val'    => '',
-        'stat1_label'  => '',
-        'stat2_val'    => '',
-        'stat2_label'  => '',
-        'stat3_val'    => '',
-        'stat3_label'  => '',
-        'quote'        => '',
-        'quote_author' => '',
-        'image'        => null,
-        'url'          => '#',
-    ],
-    2 => [
-        'logo'         => null,
-        'logo_alt'     => '',
-        'industries'   => '',
-        'scope'        => '',
-        'text'         => '',
-        'stat1_val'    => '',
-        'stat1_label'  => '',
-        'stat2_val'    => '',
-        'stat2_label'  => '',
-        'stat3_val'    => '',
-        'stat3_label'  => '',
-        'quote'        => '',
-        'quote_author' => '',
-        'image'        => null,
-        'url'          => '#',
-    ],
+    1 => array_merge($slide_default_empty, [
+        'logo_alt'   => 'Dentity',
+        'industries' => "Stomatologia\nOchrona zdrowia",
+        'scope'      => 'Pelna obsluga BPO dla sieci gabinetow stomatologicznych',
+        'text'       => 'Dynamicznie rozwijajaca sie siec gabinetow Dentity potrzebowala partnera, ktory przejmie caly obszar finansowo-ksiegowy i kadrowy, odciazajac zarzad od administracji.',
+    ]),
+    2 => $slide_default_empty,
+    3 => $slide_default_empty,
+    4 => $slide_default_empty,
 ];
 
 $slides = [];
@@ -78,7 +71,7 @@ for ($i = 1; $i <= 4; $i++) {
         'industries'   => $industries,
         'heading'      => __($heading, 'meritoros'),
         'text'         => __( is_array($s) && !empty($s['text']) ? $s['text'] : $def['text'], 'meritoros' ),
-        'points'       => $points,
+        'points'       => [],
         'stats'        => $stats,
         'quote'        => $quote,
         'quote_author' => $quote_author,
