@@ -172,11 +172,11 @@ $hk_url  = $hk_page ? get_permalink($hk_page) : home_url('/historie-klientow/');
     <!-- ════════════════════════════════════════════════════════════
          KLIENT + WIDEO  |  WYZWANIE + CTA
     ════════════════════════════════════════════════════════════════ -->
-    <?php $has_video = (bool) $play_src; ?>
+    <?php $has_media = $thumb_url || $play_src; ?>
     <section class="py-14 md:py-20">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
-        <?php if ( $has_video ) : ?>
+        <?php if ( $has_media ) : ?>
             <!-- Layout z wideo: 2 kolumny -->
             <div class="grid grid-cols-1 lg:grid-cols-5 gap-12 lg:gap-20">
 
@@ -274,13 +274,6 @@ $hk_url  = $hk_page ? get_permalink($hk_page) : home_url('/historie-klientow/');
                     <div class="prose prose-lg prose-slate max-w-none text-slate-600 leading-relaxed">
                         <?php echo wp_kses_post($challenge); ?>
                     </div>
-                </div>
-                <?php endif; ?>
-
-                <?php if ( $thumb_url ) : ?>
-                <div class="rounded-2xl overflow-hidden bg-slate-100 aspect-video">
-                    <img src="<?php echo esc_url($thumb_url); ?>" alt="<?php the_title_attribute(); ?>"
-                         class="w-full h-full object-cover" loading="lazy">
                 </div>
                 <?php endif; ?>
 
