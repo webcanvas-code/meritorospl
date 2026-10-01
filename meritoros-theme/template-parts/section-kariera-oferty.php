@@ -20,6 +20,7 @@ for ($i = 1; $i <= 6; $i++) {
     if ($offer_url) {
         $page_id = url_to_postid($offer_url);
         if ($page_id) {
+            if (get_post_status($page_id) !== 'publish') continue;
             $translated_id = apply_filters('wpml_object_id', $page_id, 'page', true);
             $offer_url = get_permalink($translated_id);
         }
