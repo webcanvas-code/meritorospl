@@ -2614,6 +2614,7 @@ acf_add_local_field_group([
         ['key' => 'field_kar_cv_tag_text',    'label' => 'Tag na zdjęciu',  'name' => 'kar_cv_tag_text',    'type' => 'text',     'default_value' => 'Dołącz do nas!'],
         ['key' => 'field_kar_cf7_id', 'label' => 'ID formularza CF7', 'name' => 'kar_cf7_id', 'type' => 'text', 'instructions' => 'ID formularza Contact Form 7 (numeryczne lub hash, np. "0ea1040").'],
         ['key' => 'field_kar_cv_photo',       'label' => 'Zdjęcie',        'name' => 'kar_cv_photo',       'type' => 'image',    'return_format' => 'array', 'preview_size' => 'medium'],
+        ['key' => 'field_kar_traffit_url',    'label' => 'Link Traffit (przycisk)', 'name' => 'kar_traffit_url', 'type' => 'url', 'instructions' => 'URL do ofert w Traffit. Gdy ustawiony, wyświetla się przycisk zamiast formularza.'],
 
         // ── REKRUTACJA ────────────────────────────────────────────────
         ['key' => 'field_kar_tab_rek', 'label' => 'Proces rekrutacji', 'name' => '', 'type' => 'tab'],
