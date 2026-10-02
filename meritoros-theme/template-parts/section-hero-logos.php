@@ -4,7 +4,7 @@
  * ACF pola: hero_logo_1..24, hero_trust_text (z front page)
  */
 $_fp = (int) get_option('page_on_front');
-$trust_text = __( get_field('hero_trust_text', $_fp) ?: 'Zaufało nam ponad <span class="text-slate-900 font-bold">1200 klientów</span>', 'meritoros' );
+$trust_text = __( get_field('hero_trust_text', $_fp) ?: 'Zaufało nam ponad <span class="text-slate-800 font-bold">1200 klientów</span>', 'meritoros' );
 $_img = get_template_directory_uri() . '/images/';
 
 $_defaults = [
@@ -29,7 +29,7 @@ if (empty($logos)) return;
 
 <section id="hero-logos" class="bg-white py-8 overflow-hidden">
     <div class="max-w-7xl mx-auto px-6 mb-5">
-        <p class="text-sm uppercase tracking-widest text-slate-400 font-semibold">
+        <p class="text-sm uppercase tracking-widest text-slate-500 font-semibold">
             <?php echo wp_kses($trust_text, ['span' => ['class' => []]]); ?>
         </p>
     </div>
