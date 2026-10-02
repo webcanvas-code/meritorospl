@@ -2629,10 +2629,12 @@ acf_add_local_field_group([
 
         // ── FORMULARZ CV ──────────────────────────────────────────────
         ['key' => 'field_kar_tab_cv', 'label' => 'Formularz CV', 'name' => '', 'type' => 'tab'],
-        ['key' => 'field_kar_cv_title',    'label' => 'Nagłówek',      'name' => 'kar_cv_title',    'type' => 'textarea', 'rows' => 2, 'default_value' => "Chcesz do nas dołączyć?\nSprawdź aktualne oferty"],
-        ['key' => 'field_kar_cv_desc',     'label' => 'Akapit',        'name' => 'kar_cv_desc',     'type' => 'textarea', 'rows' => 3],
-        ['key' => 'field_kar_cv_btn_text', 'label' => 'Tekst przycisku', 'name' => 'kar_cv_btn_text', 'type' => 'text',  'default_value' => 'Aplikuj teraz'],
-        ['key' => 'field_kar_traffit_url', 'label' => 'Link Traffit',  'name' => 'kar_traffit_url', 'type' => 'url',     'instructions' => 'URL do ofert w Traffit.'],
+        ['key' => 'field_kar_cv_title',    'label' => 'Nagłówek',        'name' => 'kar_cv_title',    'type' => 'textarea', 'rows' => 2, 'default_value' => "Chcesz do nas dołączyć?\nSprawdź aktualne oferty"],
+        ['key' => 'field_kar_cv_desc',     'label' => 'Akapit',         'name' => 'kar_cv_desc',     'type' => 'textarea', 'rows' => 3],
+        ['key' => 'field_kar_cv_btn_text', 'label' => 'Tekst przycisku','name' => 'kar_cv_btn_text', 'type' => 'text',     'default_value' => 'Aplikuj teraz'],
+        ['key' => 'field_kar_traffit_url', 'label' => 'Link Traffit',   'name' => 'kar_traffit_url', 'type' => 'url',      'instructions' => 'URL do ofert w Traffit.'],
+        ['key' => 'field_kar_cv_tag_text', 'label' => 'Tag na zdjęciu', 'name' => 'kar_cv_tag_text', 'type' => 'text',     'default_value' => 'Dołącz do nas!'],
+        ['key' => 'field_kar_cv_photo',    'label' => 'Zdjęcie',        'name' => 'kar_cv_photo',    'type' => 'image',    'return_format' => 'array', 'preview_size' => 'medium'],
 
         // ── REKRUTACJA ────────────────────────────────────────────────
         ['key' => 'field_kar_tab_rek', 'label' => 'Proces rekrutacji', 'name' => '', 'type' => 'tab'],
