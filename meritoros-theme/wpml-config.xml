@@ -178,7 +178,8 @@
         <custom-field action="translate">kar_jakosc_text2</custom-field>
         <custom-field action="translate">kar_jakosc_title</custom-field>
         <custom-field action="translate">kar_cv_title</custom-field>
-        <custom-field action="translate">kar_cv_tag_text</custom-field>
+        <custom-field action="translate">kar_cv_desc</custom-field>
+        <custom-field action="translate">kar_cv_btn_text</custom-field>
         <custom-field action="translate">kar_pyt_title</custom-field>
         <custom-field action="translate">kar_pyt_name</custom-field>
         <custom-field action="translate">kar_pyt_role</custom-field>
