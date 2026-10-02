@@ -3,8 +3,8 @@
  * Sekcja: marquee slider logotypów klientów (pod hero, biała)
  * ACF pola: hero_logo_1..24, hero_trust_text (z front page)
  */
-$_fp = (int) get_option('page_on_front');
-$trust_text = __( get_field('hero_trust_text', $_fp) ?: 'Zaufało nam ponad <span class="text-slate-800 font-bold">1200 klientów</span>', 'meritoros' );
+$_fp  = (int) get_option('page_on_front');
+$number    = get_field('hero_trust_number', $_fp) ?: '1200';
 $_img = get_template_directory_uri() . '/images/';
 
 $_defaults = [
@@ -27,10 +27,13 @@ for ($i = 1; $i <= 24; $i++) {
 if (empty($logos)) return;
 ?>
 
-<section id="hero-logos" class="bg-white py-8 overflow-hidden">
-    <div class="max-w-7xl mx-auto px-6 mb-5">
-        <p class="text-sm uppercase tracking-widest text-slate-500 font-semibold">
-            <?php echo wp_kses($trust_text, ['span' => ['class' => []]]); ?>
+<section id="hero-logos" class="bg-slate-50 py-10 md:py-12 overflow-hidden border-b border-slate-100">
+    <div class="max-w-7xl mx-auto px-6 mb-8 text-center">
+        <p class="text-3xl md:text-4xl font-bold text-slate-800 mb-1">
+            <?php echo esc_html($number); ?>+
+        </p>
+        <p class="text-sm uppercase tracking-widest text-slate-400 font-medium">
+            <?php echo esc_html(__('firm nam zaufało', 'meritoros')); ?>
         </p>
     </div>
 
@@ -55,10 +58,17 @@ if (empty($logos)) return;
         .mer-marquee-track img {
             flex-shrink: 0;
             display: block;
-            height: 40px;
+            height: 36px;
             width: auto;
             max-width: 140px;
             object-fit: contain;
+            filter: grayscale(100%);
+            opacity: 0.5;
+            transition: filter .3s ease, opacity .3s ease;
+        }
+        .mer-marquee-track img:hover {
+            filter: grayscale(0%);
+            opacity: 1;
         }
         @media (prefers-reduced-motion: reduce) {
             .mer-marquee-track { animation-play-state: paused; }
