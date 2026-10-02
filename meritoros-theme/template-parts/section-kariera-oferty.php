@@ -29,6 +29,7 @@ for ($i = 1; $i <= 6; $i++) {
     $oferty[] = [
         'title'       => $g['title'],
         'salary'      => $g['salary'] ?? '',
+        'location'    => $g['location'] ?? '',
         'cat'         => strtolower(trim($g['cat'] ?? 'inne')),
         'traffit_url' => $g['traffit_url'] ?? '',
         'url'         => $offer_url,
@@ -56,11 +57,14 @@ for ($i = 1; $i <= 6; $i++) {
                 <i data-lucide="file-text" stroke-width="1" class="w-10 h-10 text-[#00d084] group-hover:text-white/80 transition-colors duration-300"></i>
                 <div class="flex-1">
                     <h3 class="text-xl font-bold text-slate-900 group-hover:text-white leading-snug mb-4 transition-colors duration-300"><?php echo mer_esc($o['title']); ?></h3>
-                    <?php if (!empty($o['salary'])) : ?>
+                    <?php if (!empty($o['salary']) || !empty($o['location'])) : ?>
                     <div class="flex flex-wrap gap-2">
-                        <?php foreach (array_filter(array_map('trim', explode('·', $o['salary']))) as $badge) : ?>
-                        <span class="mer-btn mer-btn--light inline-flex items-center px-3 py-1.5 rounded-full text-sm font-medium bg-slate-100 text-slate-600 group-hover:bg-[#00b872] group-hover:text-white transition-colors duration-300"><?php echo mer_esc($badge); ?></span>
-                        <?php endforeach; ?>
+                        <?php if (!empty($o['salary'])) : ?>
+                        <span class="mer-btn mer-btn--light inline-flex items-center px-3 py-1.5 rounded-full text-sm font-medium bg-slate-100 text-slate-600 group-hover:bg-[#00b872] group-hover:text-white transition-colors duration-300"><?php echo mer_esc($o['salary']); ?></span>
+                        <?php endif; ?>
+                        <?php if (!empty($o['location'])) : ?>
+                        <span class="mer-btn mer-btn--light inline-flex items-center px-3 py-1.5 rounded-full text-sm font-medium bg-slate-100 text-slate-600 group-hover:bg-[#00b872] group-hover:text-white transition-colors duration-300"><?php echo mer_esc($o['location']); ?></span>
+                        <?php endif; ?>
                     </div>
                     <?php endif; ?>
                 </div>
