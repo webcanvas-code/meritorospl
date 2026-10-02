@@ -27,61 +27,67 @@ for ($i = 1; $i <= 24; $i++) {
 if (empty($logos)) return;
 ?>
 
-<section id="hero-logos" class="bg-slate-50 py-10 md:py-12 overflow-hidden border-b border-slate-100">
-    <div class="max-w-7xl mx-auto px-6 mb-8 text-center">
-        <p class="text-3xl md:text-4xl font-bold text-slate-800 mb-1">
-            <?php echo esc_html($number); ?>+
-        </p>
-        <p class="text-sm uppercase tracking-widest text-slate-400 font-medium">
-            <?php echo esc_html(__('firm nam zaufało', 'meritoros')); ?>
-        </p>
-    </div>
+<section id="hero-logos" class="bg-white py-6 overflow-hidden">
+    <div class="max-w-7xl mx-auto px-6">
+        <div class="flex flex-col md:flex-row md:items-center gap-6 md:gap-10">
 
-    <style>
-        @keyframes mer-marquee {
-            from { transform: translateX(0); }
-            to   { transform: translateX(-50%); }
-        }
-        .mer-marquee-wrap {
-            overflow: hidden;
-            -webkit-mask-image: linear-gradient(90deg, transparent, #000 6%, #000 94%, transparent);
-            mask-image: linear-gradient(90deg, transparent, #000 6%, #000 94%, transparent);
-        }
-        .mer-marquee-track {
-            display: flex;
-            align-items: center;
-            gap: 3rem;
-            width: max-content;
-            animation: mer-marquee 50s linear infinite;
-        }
-        .mer-marquee-track:hover { animation-play-state: paused; }
-        .mer-marquee-track img {
-            flex-shrink: 0;
-            display: block;
-            height: 36px;
-            width: auto;
-            max-width: 140px;
-            object-fit: contain;
-            filter: grayscale(100%);
-            opacity: 0.5;
-            transition: filter .3s ease, opacity .3s ease;
-        }
-        .mer-marquee-track img:hover {
-            filter: grayscale(0%);
-            opacity: 1;
-        }
-        @media (prefers-reduced-motion: reduce) {
-            .mer-marquee-track { animation-play-state: paused; }
-        }
-    </style>
+            <!-- Tekst po lewej -->
+            <div class="flex items-center gap-4 flex-shrink-0">
+                <span class="text-[#00d084] text-4xl font-black leading-none"><?php echo esc_html($number); ?>+</span>
+                <span class="text-slate-500 text-sm font-medium leading-tight uppercase tracking-wide"><?php echo esc_html(__("zaufanych\nklientów", 'meritoros')); ?></span>
+            </div>
 
-    <div class="mer-marquee-wrap">
-        <div class="mer-marquee-track">
-            <?php for ($r = 0; $r < 2; $r++) : foreach ($logos as $l) : ?>
-                <img src="<?php echo esc_url($l['src']); ?>"
-                     alt="<?php echo esc_attr($l['alt'] ?: __('Logo klienta', 'meritoros')); ?>"
-                     loading="eager">
-            <?php endforeach; endfor; ?>
+            <div class="hidden md:block w-px h-10 bg-slate-200 flex-shrink-0"></div>
+
+            <!-- Slider po prawej -->
+            <style>
+                @keyframes mer-marquee {
+                    from { transform: translateX(0); }
+                    to   { transform: translateX(-50%); }
+                }
+                .mer-marquee-wrap {
+                    overflow: hidden;
+                    flex: 1;
+                    min-width: 0;
+                    -webkit-mask-image: linear-gradient(90deg, transparent, #000 4%, #000 96%, transparent);
+                    mask-image: linear-gradient(90deg, transparent, #000 4%, #000 96%, transparent);
+                }
+                .mer-marquee-track {
+                    display: flex;
+                    align-items: center;
+                    gap: 3rem;
+                    width: max-content;
+                    animation: mer-marquee 50s linear infinite;
+                }
+                .mer-marquee-track:hover { animation-play-state: paused; }
+                .mer-marquee-track img {
+                    flex-shrink: 0;
+                    display: block;
+                    height: 36px;
+                    width: auto;
+                    max-width: 130px;
+                    object-fit: contain;
+                    opacity: 0.7;
+                    transition: opacity .3s ease;
+                }
+                .mer-marquee-track img:hover {
+                    opacity: 1;
+                }
+                @media (prefers-reduced-motion: reduce) {
+                    .mer-marquee-track { animation-play-state: paused; }
+                }
+            </style>
+
+            <div class="mer-marquee-wrap">
+                <div class="mer-marquee-track">
+                    <?php for ($r = 0; $r < 2; $r++) : foreach ($logos as $l) : ?>
+                        <img src="<?php echo esc_url($l['src']); ?>"
+                             alt="<?php echo esc_attr($l['alt'] ?: __('Logo klienta', 'meritoros')); ?>"
+                             loading="eager">
+                    <?php endforeach; endfor; ?>
+                </div>
+            </div>
+
         </div>
     </div>
 </section>
