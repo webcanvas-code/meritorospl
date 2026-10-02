@@ -8,17 +8,6 @@ $btn1_text = __( mer_field('hero_btn1_text', 'Poznaj ofertę'), 'meritoros' );
 $btn1_url  = mer_field('hero_btn1_url', '#uslugi');
 $btn2_text = __( mer_field('hero_btn2_text', 'Porozmawiajmy'), 'meritoros' );
 $btn2_url  = mer_field('hero_btn2_url', '#kontakt');
-$trust_text= __( mer_field('hero_trust_text', 'Zaufało nam ponad <span class="text-white">1200 klientów</span>'), 'meritoros' );
-$clients   = mer_field('hero_clients', []);
-
-if (empty($clients)) {
-    $clients = [
-        ['name' => 'Streamsoft'],
-        ['name' => 'SITECH'],
-        ['name' => 'arco'],
-        ['name' => 'ROFA'],
-    ];
-}
 ?>
 
 <section id="hero" class="relative min-h-screen min-h-[100svh] flex flex-col overflow-hidden px-6 lg:px-12">
@@ -54,11 +43,5 @@ if (empty($clients)) {
             </div>
         </div>
 
-        <!-- Trust text -->
-        <div class="mt-auto pt-5 border-t border-white/15">
-            <p class="text-xs uppercase tracking-widest text-slate-400 font-semibold">
-                <?php echo wp_kses($trust_text, ['span' => ['class' => []]]); ?>
-            </p>
-        </div>
     </div>
 </section>
