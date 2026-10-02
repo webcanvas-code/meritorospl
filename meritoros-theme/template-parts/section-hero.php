@@ -54,72 +54,11 @@ if (empty($clients)) {
             </div>
         </div>
 
-        <!-- Trust banner -->
+        <!-- Trust text -->
         <div class="mt-auto pt-5 border-t border-white/15">
-            <p class="text-xs uppercase tracking-widest text-slate-400 mb-3 font-semibold">
+            <p class="text-xs uppercase tracking-widest text-slate-400 font-semibold">
                 <?php echo wp_kses($trust_text, ['span' => ['class' => []]]); ?>
             </p>
-            <style>
-                @keyframes mer-marquee {
-                    from { transform: translateX(0); }
-                    to   { transform: translateX(-50%); }
-                }
-                .mer-marquee-wrap {
-                    overflow: hidden;
-                    position: relative;
-                    -webkit-mask-image: linear-gradient(90deg, transparent, #000 6%, #000 94%, transparent);
-                    mask-image: linear-gradient(90deg, transparent, #000 6%, #000 94%, transparent);
-                }
-                .mer-marquee-track {
-                    display: flex;
-                    align-items: center;
-                    gap: 1rem;
-                    width: max-content;
-                    animation: mer-marquee 60s linear infinite;
-                }
-                .mer-marquee-track:hover { animation-play-state: paused; }
-                .mer-marquee-track img {
-                    flex-shrink: 0;
-                    display: block;
-                    height: 44px;
-                    width: auto;
-                    max-width: 140px;
-                    object-fit: contain;
-                    filter: brightness(0) invert(1);
-                    mix-blend-mode: screen;
-                    opacity: 0.9;
-                }
-                @media (prefers-reduced-motion: reduce) {
-                    .mer-marquee-track { animation-play-state: paused; }
-                }
-            </style>
-            <?php
-            $_fp = (int) get_option('page_on_front');
-            $_hero_logo_defaults = [
-                1 => ['src' => get_template_directory_uri() . '/images/streamsoft.png', 'alt' => 'Streamsoft'],
-                2 => ['src' => get_template_directory_uri() . '/images/sitech.png',     'alt' => 'SITECH'],
-                3 => ['src' => get_template_directory_uri() . '/images/arco.svg',       'alt' => 'Arco'],
-                4 => ['src' => get_template_directory_uri() . '/images/rofa.png',       'alt' => 'ROFA'],
-            ];
-            $logo_items = [];
-            for ($i = 1; $i <= 24; $i++) {
-                $acf = get_field("hero_logo_{$i}", $_fp);
-                if (is_array($acf) && !empty($acf['url'])) {
-                    $logo_items[] = ['src' => $acf['url'], 'alt' => $acf['alt'] ?: "Logo klienta {$i}"];
-                } elseif (isset($_hero_logo_defaults[$i])) {
-                    $logo_items[] = $_hero_logo_defaults[$i];
-                }
-            }
-            ?>
-            <div class="mer-marquee-wrap">
-                <div class="mer-marquee-track">
-                    <?php for ($r = 0; $r < 2; $r++) : foreach ($logo_items as $l) : ?>
-                        <img src="<?php echo esc_url($l['src']); ?>"
-                             alt="<?php echo esc_attr($l['alt']); ?>"
-                             loading="eager">
-                    <?php endforeach; endfor; ?>
-                </div>
-            </div>
         </div>
     </div>
 </section>
