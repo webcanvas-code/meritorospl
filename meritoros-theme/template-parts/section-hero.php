@@ -78,22 +78,16 @@ if (empty($clients)) {
                     animation: mer-marquee 60s linear infinite;
                 }
                 .mer-marquee-track:hover { animation-play-state: paused; }
-                .mer-logo-pill {
+                .mer-marquee-track img {
                     flex-shrink: 0;
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                    background: rgba(255,255,255,0.95);
-                    border-radius: 10px;
-                    padding: 8px 16px;
-                    height: 48px;
-                }
-                .mer-logo-pill img {
                     display: block;
-                    height: 28px;
+                    height: 44px;
                     width: auto;
-                    max-width: 120px;
+                    max-width: 140px;
                     object-fit: contain;
+                    filter: brightness(0) invert(1);
+                    mix-blend-mode: screen;
+                    opacity: 0.9;
                 }
                 @media (prefers-reduced-motion: reduce) {
                     .mer-marquee-track { animation-play-state: paused; }
@@ -120,11 +114,9 @@ if (empty($clients)) {
             <div class="mer-marquee-wrap">
                 <div class="mer-marquee-track">
                     <?php for ($r = 0; $r < 2; $r++) : foreach ($logo_items as $l) : ?>
-                        <div class="mer-logo-pill">
-                            <img src="<?php echo esc_url($l['src']); ?>"
-                                 alt="<?php echo esc_attr($l['alt']); ?>"
-                                 loading="eager">
-                        </div>
+                        <img src="<?php echo esc_url($l['src']); ?>"
+                             alt="<?php echo esc_attr($l['alt']); ?>"
+                             loading="eager">
                     <?php endforeach; endfor; ?>
                 </div>
             </div>
