@@ -1,8 +1,7 @@
 <?php
 /**
- * Sekcja: slider logotypów klientów (marquee)
+ * Sekcja: slider logotypów klientów (JS marquee)
  * Używana na: page-historie-klientow.php
- * ACF pola: hk_logos_text_pre, hk_logos_number, hk_logos_text_post, hk_logos_logo1..20
  */
 $page_id   = get_queried_object_id();
 $text_pre  = __( get_field('hk_logos_text_pre',  $page_id) ?: 'Zaufało nam ponad', 'meritoros' );
@@ -28,71 +27,62 @@ for ($i = 1; $i <= 20; $i++) {
 }
 
 if (empty($logos)) return;
-
-$count = count($logos);
-$speed = max(20, $count * 4);
 ?>
 
-<section id="hk-logos" class="py-10 md:py-14 bg-slate-50 border-t border-slate-100 overflow-hidden">
-    <div class="max-w-7xl mx-auto px-6 mb-8">
-        <p class="text-base md:text-lg text-slate-500 font-medium">
+<section id="hk-logos" style="padding:40px 0; background:#f1f5f9; border-top:1px solid #e2e8f0; overflow:hidden;">
+    <div style="max-width:1280px; margin:0 auto; padding:0 24px 32px;">
+        <p style="font-size:16px; color:#64748b; font-weight:500; margin:0;">
             <?php echo esc_html($text_pre); ?>
-            <strong class="text-slate-700"><?php echo esc_html($number); ?></strong>
+            <strong style="color:#334155;"><?php echo esc_html($number); ?></strong>
             <?php echo esc_html($text_post); ?>
         </p>
     </div>
 
-    <div class="hk-marquee" style="--hk-speed: <?php echo $speed; ?>s;">
-        <div class="hk-marquee__track">
-            <?php for ($r = 0; $r < 2; $r++) : ?>
-                <?php foreach ($logos as $logo) : ?>
-                    <div class="hk-marquee__item">
-                        <img src="<?php echo esc_url($logo['url']); ?>"
-                             alt="<?php echo esc_attr($logo['alt'] ?: __('Logo klienta', 'meritoros')); ?>"
-                             loading="lazy"
-                             decoding="async">
-                    </div>
-                <?php endforeach; ?>
-            <?php endfor; ?>
-        </div>
+    <div id="hk-logos-slider" style="display:flex; align-items:center; gap:48px;">
+        <?php foreach ($logos as $logo) : ?>
+            <img src="<?php echo esc_url($logo['url']); ?>"
+                 alt="<?php echo esc_attr($logo['alt'] ?: __('Logo klienta', 'meritoros')); ?>"
+                 loading="eager"
+                 decoding="async"
+                 style="height:44px; width:auto; max-width:160px; flex-shrink:0; display:block; object-fit:contain;">
+        <?php endforeach; ?>
     </div>
 </section>
 
-<style>
-.hk-marquee {
-    position: relative;
-    -webkit-mask-image: linear-gradient(90deg, transparent, #000 8%, #000 92%, transparent);
-    mask-image: linear-gradient(90deg, transparent, #000 8%, #000 92%, transparent);
-}
-.hk-marquee__track {
-    display: flex;
-    align-items: center;
-    gap: 2.5rem;
-    width: max-content;
-    animation: hk-scroll var(--hk-speed, 40s) linear infinite;
-}
-.hk-marquee:hover .hk-marquee__track {
-    animation-play-state: paused;
-}
-@keyframes hk-scroll {
-    0%   { transform: translateX(0); }
-    100% { transform: translateX(-50%); }
-}
-.hk-marquee__item {
-    flex-shrink: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 48px;
-}
-.hk-marquee__item img {
-    display: block;
-    height: 100%;
-    width: auto;
-    max-width: 160px;
-    object-fit: contain;
-}
-@media (prefers-reduced-motion: reduce) {
-    .hk-marquee__track { animation-play-state: paused; }
-}
-</style>
+<script>
+(function() {
+    var slider = document.getElementById('hk-logos-slider');
+    if (!slider) return;
+
+    // Duplikuj loga dla ciągłej pętli
+    var original = slider.innerHTML;
+    slider.innerHTML = original + original;
+
+    var pos = 0;
+    var speed = 0.5;
+    var paused = false;
+    var half = 0;
+
+    slider.addEventListener('mouseenter', function() { paused = true; });
+    slider.addEventListener('mouseleave', function() { paused = false; });
+
+    function measure() {
+        half = slider.scrollWidth / 2;
+    }
+
+    function tick() {
+        if (!paused && half > 0) {
+            pos -= speed;
+            if (Math.abs(pos) >= half) pos = 0;
+            slider.style.transform = 'translateX(' + pos + 'px)';
+        }
+        requestAnimationFrame(tick);
+    }
+
+    // Poczekaj na załadowanie obrazków
+    window.addEventListener('load', function() {
+        measure();
+        requestAnimationFrame(tick);
+    });
+})();
+</script>
