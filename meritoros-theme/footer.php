@@ -18,6 +18,39 @@ $copyright   = get_field('footer_copyright', $_ft_id) ?: __('© ' . date('Y') . 
 $credit_text = get_field('footer_credit_text', $_ft_id) ?: 'Web-Canvas';
 $credit_url  = get_field('footer_credit_url',  $_ft_id) ?: '#';
 
+// Kolumny nawigacyjne — nagłówki i linki edytowalne w ACF
+$nav_services_title = get_field('footer_nav_services_title', $_ft_id) ?: __('Usługi', 'meritoros');
+$nav_info_title     = get_field('footer_nav_info_title',     $_ft_id) ?: __('Informacje', 'meritoros');
+$nav_contact_title  = get_field('footer_nav_contact_title',  $_ft_id) ?: __('Kontakt', 'meritoros');
+
+$nav_services = [];
+$svc_defaults = [
+    ['text' => __('Usługi księgowe', 'meritoros'),        'url_fallback' => get_permalink(get_page_by_path('uslugi-ksiegowe'))],
+    ['text' => __('Kadry i płace', 'meritoros'),           'url_fallback' => get_permalink(get_page_by_path('kadry-i-place'))],
+    ['text' => __('Fundacje rodzinne', 'meritoros'),       'url_fallback' => get_permalink(get_page_by_path('fundacje-rodzinne'))],
+    ['text' => __('Skup biur rachunkowych', 'meritoros'), 'url_fallback' => get_permalink(get_page_by_path('kupimy-biuro-rachunkowe'))],
+];
+foreach ([1,2,3,4] as $n) {
+    $def  = $svc_defaults[$n - 1];
+    $text = get_field("footer_nav_services_{$n}_text", $_ft_id) ?: $def['text'];
+    $url  = get_field("footer_nav_services_{$n}_url",  $_ft_id) ?: $def['url_fallback'];
+    if ($text && $url) $nav_services[] = ['text' => $text, 'url' => $url];
+}
+
+$info_defaults = [
+    ['text' => __('Polityka prywatności', 'meritoros'),   'url_fallback' => defined('MER_PRIVACY_PDF') ? MER_PRIVACY_PDF : '#'],
+    ['text' => __('Regulamin newslettera', 'meritoros'),  'url_fallback' => defined('MER_TERMS_PDF')   ? MER_TERMS_PDF   : '#'],
+    ['text' => __('Wiedza i poradniki', 'meritoros'),     'url_fallback' => home_url('/blog/')],
+    ['text' => '',                                         'url_fallback' => ''],
+];
+$nav_info = [];
+foreach ([1,2,3,4] as $n) {
+    $def  = $info_defaults[$n - 1];
+    $text = get_field("footer_nav_info_{$n}_text", $_ft_id) ?: $def['text'];
+    $url  = get_field("footer_nav_info_{$n}_url",  $_ft_id) ?: $def['url_fallback'];
+    if ($text && $url) $nav_info[] = ['text' => $text, 'url' => $url];
+}
+
 $social_defaults = [
     1 => ['icon' => 'facebook',  'url' => 'https://www.facebook.com/Meritoros'],
     2 => ['icon' => 'instagram', 'url' => 'https://www.instagram.com/meritoros/'],
@@ -108,32 +141,31 @@ for ($i = 1; $i <= 4; $i++) {
             <!-- Services column -->
             <div>
                 <h4 class="text-xs uppercase tracking-widest font-bold text-slate-400 mb-5">
-                    <?php esc_html_e('Usługi', 'meritoros'); ?>
+                    <?php echo esc_html($nav_services_title); ?>
                 </h4>
                 <ul class="space-y-3 text-sm text-slate-300">
-                    <li><a href="<?php echo esc_url(get_permalink(get_page_by_path('uslugi-ksiegowe'))); ?>" class="hover:text-white hover:translate-x-0.5 transition-all inline-block"><?php esc_html_e('Usługi księgowe', 'meritoros'); ?></a></li>
-                    <li><a href="<?php echo esc_url(get_permalink(get_page_by_path('kadry-i-place'))); ?>" class="hover:text-white hover:translate-x-0.5 transition-all inline-block"><?php esc_html_e('Kadry i płace', 'meritoros'); ?></a></li>
-                    <li><a href="<?php echo esc_url(get_permalink(get_page_by_path('fundacje-rodzinne'))); ?>" class="hover:text-white hover:translate-x-0.5 transition-all inline-block"><?php esc_html_e('Fundacje rodzinne', 'meritoros'); ?></a></li>
-                    <li><a href="<?php echo esc_url(get_permalink(get_page_by_path('kupimy-biuro-rachunkowe'))); ?>" class="hover:text-white hover:translate-x-0.5 transition-all inline-block"><?php esc_html_e('Skup biur rachunkowych', 'meritoros'); ?></a></li>
+                    <?php foreach ($nav_services as $link) : ?>
+                    <li><a href="<?php echo esc_url($link['url']); ?>" class="hover:text-white hover:translate-x-0.5 transition-all inline-block"><?php echo esc_html($link['text']); ?></a></li>
+                    <?php endforeach; ?>
                 </ul>
             </div>
 
             <!-- Info column -->
             <div>
                 <h4 class="text-xs uppercase tracking-widest font-bold text-slate-400 mb-5">
-                    <?php esc_html_e('Informacje', 'meritoros'); ?>
+                    <?php echo esc_html($nav_info_title); ?>
                 </h4>
                 <ul class="space-y-3 text-sm text-slate-300">
-                    <li><a href="<?php echo esc_url(MER_PRIVACY_PDF); ?>" target="_blank" rel="noopener" class="hover:text-white hover:translate-x-0.5 transition-all inline-block"><?php esc_html_e('Polityka prywatności', 'meritoros'); ?></a></li>
-                    <li><a href="<?php echo esc_url(MER_TERMS_PDF); ?>" target="_blank" rel="noopener" class="hover:text-white hover:translate-x-0.5 transition-all inline-block"><?php esc_html_e('Regulamin newslettera', 'meritoros'); ?></a></li>
-                    <li><a href="<?php echo esc_url(home_url('/blog/')); ?>" class="hover:text-white hover:translate-x-0.5 transition-all inline-block"><?php esc_html_e('Wiedza i poradniki', 'meritoros'); ?></a></li>
+                    <?php foreach ($nav_info as $link) : ?>
+                    <li><a href="<?php echo esc_url($link['url']); ?>" class="hover:text-white hover:translate-x-0.5 transition-all inline-block"><?php echo esc_html($link['text']); ?></a></li>
+                    <?php endforeach; ?>
                 </ul>
             </div>
 
             <!-- Contact column -->
             <div>
                 <h4 class="text-xs uppercase tracking-widest font-bold text-slate-400 mb-5">
-                    <?php esc_html_e('Kontakt', 'meritoros'); ?>
+                    <?php echo esc_html($nav_contact_title); ?>
                 </h4>
                 <ul class="space-y-3 text-sm text-slate-300">
                     <?php if ($address) : ?>

@@ -580,6 +580,25 @@
         <custom-field action="copy">footer_phone</custom-field>
         <custom-field action="copy">footer_email</custom-field>
         <custom-field action="copy">footer_credit_url</custom-field>
+        <custom-field action="translate">footer_nav_services_title</custom-field>
+        <custom-field action="translate">footer_nav_services_1_text</custom-field>
+        <custom-field action="translate">footer_nav_services_2_text</custom-field>
+        <custom-field action="translate">footer_nav_services_3_text</custom-field>
+        <custom-field action="translate">footer_nav_services_4_text</custom-field>
+        <custom-field action="copy">footer_nav_services_1_url</custom-field>
+        <custom-field action="copy">footer_nav_services_2_url</custom-field>
+        <custom-field action="copy">footer_nav_services_3_url</custom-field>
+        <custom-field action="copy">footer_nav_services_4_url</custom-field>
+        <custom-field action="translate">footer_nav_info_title</custom-field>
+        <custom-field action="translate">footer_nav_info_1_text</custom-field>
+        <custom-field action="translate">footer_nav_info_2_text</custom-field>
+        <custom-field action="translate">footer_nav_info_3_text</custom-field>
+        <custom-field action="translate">footer_nav_info_4_text</custom-field>
+        <custom-field action="copy">footer_nav_info_1_url</custom-field>
+        <custom-field action="copy">footer_nav_info_2_url</custom-field>
+        <custom-field action="copy">footer_nav_info_3_url</custom-field>
+        <custom-field action="copy">footer_nav_info_4_url</custom-field>
+        <custom-field action="translate">footer_nav_contact_title</custom-field>
 
         <!-- ═══════════════════════════════════════════
              NAV CTA (przyciski w navbarze)
