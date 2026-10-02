@@ -67,41 +67,36 @@ if (empty($clients)) {
                 .mer-marquee-wrap {
                     overflow: hidden;
                     position: relative;
-                }
-                .mer-marquee-wrap::before,
-                .mer-marquee-wrap::after {
-                    content: '';
-                    position: absolute;
-                    top: 0;
-                    bottom: 0;
-                    width: 80px;
-                    z-index: 2;
-                    pointer-events: none;
-                }
-                .mer-marquee-wrap::before {
-                    left: 0;
-                    background: linear-gradient(to right, #0f172a, transparent);
-                }
-                .mer-marquee-wrap::after {
-                    right: 0;
-                    background: linear-gradient(to left, #0f172a, transparent);
+                    -webkit-mask-image: linear-gradient(90deg, transparent, #000 6%, #000 94%, transparent);
+                    mask-image: linear-gradient(90deg, transparent, #000 6%, #000 94%, transparent);
                 }
                 .mer-marquee-track {
                     display: flex;
                     align-items: center;
-                    gap: 3.5rem;
+                    gap: 1rem;
                     width: max-content;
-                    animation: mer-marquee 100s linear infinite;
+                    animation: mer-marquee 60s linear infinite;
                 }
                 .mer-marquee-track:hover { animation-play-state: paused; }
-                .mer-marquee-track img {
-                    height: 48px;
-                    width: auto;
-                    max-width: 140px;
-                    object-fit: contain;
-                    filter: brightness(0) invert(1);
-                    opacity: 0.85;
+                .mer-logo-pill {
                     flex-shrink: 0;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    background: rgba(255,255,255,0.95);
+                    border-radius: 10px;
+                    padding: 8px 16px;
+                    height: 48px;
+                }
+                .mer-logo-pill img {
+                    display: block;
+                    height: 28px;
+                    width: auto;
+                    max-width: 120px;
+                    object-fit: contain;
+                }
+                @media (prefers-reduced-motion: reduce) {
+                    .mer-marquee-track { animation-play-state: paused; }
                 }
             </style>
             <?php
@@ -120,16 +115,16 @@ if (empty($clients)) {
                 } elseif (isset($_hero_logo_defaults[$i])) {
                     $logo_items[] = $_hero_logo_defaults[$i];
                 }
-                // loga 5–8 bez ACF są pomijane
             }
             ?>
             <div class="mer-marquee-wrap">
                 <div class="mer-marquee-track">
-                    <?php for ($r = 0; $r < 4; $r++) : foreach ($logo_items as $l) : ?>
-                        <img src="<?php echo esc_url($l['src']); ?>" alt="<?php echo esc_attr($l['alt']); ?>" loading="eager">
-                    <?php endforeach; endfor; ?>
-                    <?php for ($r = 0; $r < 4; $r++) : foreach ($logo_items as $l) : ?>
-                        <img src="<?php echo esc_url($l['src']); ?>" alt="" aria-hidden="true" loading="eager">
+                    <?php for ($r = 0; $r < 2; $r++) : foreach ($logo_items as $l) : ?>
+                        <div class="mer-logo-pill">
+                            <img src="<?php echo esc_url($l['src']); ?>"
+                                 alt="<?php echo esc_attr($l['alt']); ?>"
+                                 loading="eager">
+                        </div>
                     <?php endforeach; endfor; ?>
                 </div>
             </div>
