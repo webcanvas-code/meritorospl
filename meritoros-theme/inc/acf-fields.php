@@ -2587,7 +2587,8 @@ acf_add_local_field_group([
         ['key' => 'field_kar_oferta_1', 'label' => 'Oferta 1', 'name' => 'kar_oferta_1', 'type' => 'group', 'layout' => 'row', 'sub_fields' => [
             ['key' => 'field_kar_o1_title',    'label' => 'Stanowisko', 'name' => 'title',    'type' => 'text'],
             ['key' => 'field_kar_o1_salary',   'label' => 'Wynagrodzenie', 'name' => 'salary', 'type' => 'text'],
-            ['key' => 'field_kar_o1_location', 'label' => 'Lokalizacja / tryb pracy', 'name' => 'location', 'type' => 'text'],
+            ['key' => 'field_kar_o1_location',  'label' => 'Lokalizacja', 'name' => 'location', 'type' => 'text'],
+            ['key' => 'field_kar_o1_work_mode', 'label' => 'Tryb pracy',   'name' => 'work_mode', 'type' => 'text'],
             ['key' => 'field_kar_o1_cat',      'label' => 'Kategoria (ksiegowosc / kadry / it / inne / praktyki)', 'name' => 'cat', 'type' => 'text'],
             ['key' => 'field_kar_o1_traffit',  'label' => 'Link do oferty w Traffit (przycisk "Aplikuj teraz")', 'name' => 'traffit_url', 'type' => 'url'],
             ['key' => 'field_kar_o1_url',      'label' => 'Link do szczegółów oferty (opcjonalnie)', 'name' => 'url', 'type' => 'url'],
@@ -2595,7 +2596,8 @@ acf_add_local_field_group([
         ['key' => 'field_kar_oferta_2', 'label' => 'Oferta 2', 'name' => 'kar_oferta_2', 'type' => 'group', 'layout' => 'row', 'sub_fields' => [
             ['key' => 'field_kar_o2_title',    'label' => 'Stanowisko', 'name' => 'title',    'type' => 'text'],
             ['key' => 'field_kar_o2_salary',   'label' => 'Wynagrodzenie', 'name' => 'salary', 'type' => 'text'],
-            ['key' => 'field_kar_o2_location', 'label' => 'Lokalizacja / tryb pracy', 'name' => 'location', 'type' => 'text'],
+            ['key' => 'field_kar_o2_location',  'label' => 'Lokalizacja', 'name' => 'location', 'type' => 'text'],
+            ['key' => 'field_kar_o2_work_mode', 'label' => 'Tryb pracy',   'name' => 'work_mode', 'type' => 'text'],
             ['key' => 'field_kar_o2_cat',      'label' => 'Kategoria', 'name' => 'cat', 'type' => 'text'],
             ['key' => 'field_kar_o2_traffit',  'label' => 'Link do oferty w Traffit (przycisk "Aplikuj teraz")', 'name' => 'traffit_url', 'type' => 'url'],
             ['key' => 'field_kar_o2_url',      'label' => 'Link do szczegółów oferty (opcjonalnie)', 'name' => 'url', 'type' => 'url'],
@@ -2603,7 +2605,8 @@ acf_add_local_field_group([
         ['key' => 'field_kar_oferta_3', 'label' => 'Oferta 3', 'name' => 'kar_oferta_3', 'type' => 'group', 'layout' => 'row', 'sub_fields' => [
             ['key' => 'field_kar_o3_title',    'label' => 'Stanowisko', 'name' => 'title',    'type' => 'text'],
             ['key' => 'field_kar_o3_salary',   'label' => 'Wynagrodzenie', 'name' => 'salary', 'type' => 'text'],
-            ['key' => 'field_kar_o3_location', 'label' => 'Lokalizacja / tryb pracy', 'name' => 'location', 'type' => 'text'],
+            ['key' => 'field_kar_o3_location',  'label' => 'Lokalizacja', 'name' => 'location', 'type' => 'text'],
+            ['key' => 'field_kar_o3_work_mode', 'label' => 'Tryb pracy',   'name' => 'work_mode', 'type' => 'text'],
             ['key' => 'field_kar_o3_cat',      'label' => 'Kategoria', 'name' => 'cat', 'type' => 'text'],
             ['key' => 'field_kar_o3_traffit',  'label' => 'Link do oferty w Traffit (przycisk "Aplikuj teraz")', 'name' => 'traffit_url', 'type' => 'url'],
             ['key' => 'field_kar_o3_url',      'label' => 'Link do szczegółów oferty (opcjonalnie)', 'name' => 'url', 'type' => 'url'],
@@ -2611,7 +2614,8 @@ acf_add_local_field_group([
         ['key' => 'field_kar_oferta_4', 'label' => 'Oferta 4', 'name' => 'kar_oferta_4', 'type' => 'group', 'layout' => 'row', 'sub_fields' => [
             ['key' => 'field_kar_o4_title',    'label' => 'Stanowisko', 'name' => 'title',    'type' => 'text'],
             ['key' => 'field_kar_o4_salary',   'label' => 'Wynagrodzenie', 'name' => 'salary', 'type' => 'text'],
-            ['key' => 'field_kar_o4_location', 'label' => 'Lokalizacja / tryb pracy', 'name' => 'location', 'type' => 'text'],
+            ['key' => 'field_kar_o4_location',  'label' => 'Lokalizacja', 'name' => 'location', 'type' => 'text'],
+            ['key' => 'field_kar_o4_work_mode', 'label' => 'Tryb pracy',   'name' => 'work_mode', 'type' => 'text'],
             ['key' => 'field_kar_o4_cat',      'label' => 'Kategoria', 'name' => 'cat', 'type' => 'text'],
             ['key' => 'field_kar_o4_traffit',  'label' => 'Link do oferty w Traffit (przycisk "Aplikuj teraz")', 'name' => 'traffit_url', 'type' => 'url'],
             ['key' => 'field_kar_o4_url',      'label' => 'Link do szczegółów oferty (opcjonalnie)', 'name' => 'url', 'type' => 'url'],
@@ -2619,7 +2623,8 @@ acf_add_local_field_group([
         ['key' => 'field_kar_oferta_5', 'label' => 'Oferta 5', 'name' => 'kar_oferta_5', 'type' => 'group', 'layout' => 'row', 'sub_fields' => [
             ['key' => 'field_kar_o5_title',    'label' => 'Stanowisko', 'name' => 'title',    'type' => 'text'],
             ['key' => 'field_kar_o5_salary',   'label' => 'Wynagrodzenie', 'name' => 'salary', 'type' => 'text'],
-            ['key' => 'field_kar_o5_location', 'label' => 'Lokalizacja / tryb pracy', 'name' => 'location', 'type' => 'text'],
+            ['key' => 'field_kar_o5_location',  'label' => 'Lokalizacja', 'name' => 'location', 'type' => 'text'],
+            ['key' => 'field_kar_o5_work_mode', 'label' => 'Tryb pracy',   'name' => 'work_mode', 'type' => 'text'],
             ['key' => 'field_kar_o5_cat',      'label' => 'Kategoria', 'name' => 'cat', 'type' => 'text'],
             ['key' => 'field_kar_o5_traffit',  'label' => 'Link do oferty w Traffit (przycisk "Aplikuj teraz")', 'name' => 'traffit_url', 'type' => 'url'],
             ['key' => 'field_kar_o5_url',      'label' => 'Link do szczegółów oferty (opcjonalnie)', 'name' => 'url', 'type' => 'url'],
@@ -2627,7 +2632,8 @@ acf_add_local_field_group([
         ['key' => 'field_kar_oferta_6', 'label' => 'Oferta 6', 'name' => 'kar_oferta_6', 'type' => 'group', 'layout' => 'row', 'sub_fields' => [
             ['key' => 'field_kar_o6_title',    'label' => 'Stanowisko', 'name' => 'title',    'type' => 'text'],
             ['key' => 'field_kar_o6_salary',   'label' => 'Wynagrodzenie', 'name' => 'salary', 'type' => 'text'],
-            ['key' => 'field_kar_o6_location', 'label' => 'Lokalizacja / tryb pracy', 'name' => 'location', 'type' => 'text'],
+            ['key' => 'field_kar_o6_location',  'label' => 'Lokalizacja', 'name' => 'location', 'type' => 'text'],
+            ['key' => 'field_kar_o6_work_mode', 'label' => 'Tryb pracy',   'name' => 'work_mode', 'type' => 'text'],
             ['key' => 'field_kar_o6_cat',      'label' => 'Kategoria', 'name' => 'cat', 'type' => 'text'],
             ['key' => 'field_kar_o6_traffit',  'label' => 'Link do oferty w Traffit (przycisk "Aplikuj teraz")', 'name' => 'traffit_url', 'type' => 'url'],
             ['key' => 'field_kar_o6_url',     'label' => 'Link do szczegółów oferty (opcjonalnie)', 'name' => 'url', 'type' => 'url'],
@@ -3289,8 +3295,9 @@ acf_add_local_field_group([
         ['key' => 'field_op_tab_hero', 'label' => 'Hero', 'name' => '', 'type' => 'tab'],
         ['key' => 'field_op_title',    'label' => 'Tytuł stanowiska (H1)', 'name' => 'op_title',    'type' => 'text',  'instructions' => 'Np. Księgowa / Księgowy z językiem ukraińskim'],
         ['key' => 'field_op_salary',   'label' => 'Wynagrodzenie',         'name' => 'op_salary',   'type' => 'text',  'default_value' => '6 500 – 7 500 zł brutto'],
-        ['key' => 'field_op_location', 'label' => 'Lokalizacja / tryb',    'name' => 'op_location', 'type' => 'text',  'default_value' => 'Praca zdalna'],
-        ['key' => 'field_op_category', 'label' => 'Dział',                 'name' => 'op_category', 'type' => 'text',  'default_value' => 'Księgowość'],
+        ['key' => 'field_op_location',  'label' => 'Lokalizacja',  'name' => 'op_location',  'type' => 'text',  'default_value' => 'Kielce'],
+        ['key' => 'field_op_work_mode','label' => 'Tryb pracy',   'name' => 'op_work_mode', 'type' => 'text',  'default_value' => 'Praca zdalna'],
+        ['key' => 'field_op_category', 'label' => 'Dział',        'name' => 'op_category',  'type' => 'text',  'default_value' => 'Księgowość'],
         ['key' => 'field_op_hero_bg',  'label' => 'Zdjęcie tła hero',      'name' => 'op_hero_bg',  'type' => 'image', 'return_format' => 'array', 'preview_size' => 'thumbnail'],
 
         // ── TAB: Wstęp ───────────────────────────────────────

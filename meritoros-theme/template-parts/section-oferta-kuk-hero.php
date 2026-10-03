@@ -1,8 +1,9 @@
 <?php
 $title    = mer_field('op_title',    get_the_title());
 $salary   = mer_field('op_salary',   '');
-$location = mer_field('op_location', '');
-$category = mer_field('op_category', '');
+$location  = mer_field('op_location', '');
+$work_mode = mer_field('op_work_mode', '');
+$category  = mer_field('op_category', '');
 $bg       = get_field('op_hero_bg');
 $bg_url   = is_array($bg) ? esc_url($bg['url']) : 'https://images.unsplash.com/photo-1521737711867-e3b97375f902?w=1600&q=80';
 
@@ -52,6 +53,12 @@ if ($_kariera_pl) {
             <span class="mer-btn mer-btn--ghost inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-white/10 text-white/80 text-base font-medium border border-white/20">
                 <i data-lucide="map-pin" class="w-4 h-4"></i>
                 <?php echo mer_esc($location); ?>
+            </span>
+            <?php endif; ?>
+            <?php if ($work_mode) : ?>
+            <span class="mer-btn mer-btn--ghost inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-white/10 text-white/80 text-base font-medium border border-white/20">
+                <i data-lucide="monitor" class="w-4 h-4"></i>
+                <?php echo mer_esc($work_mode); ?>
             </span>
             <?php endif; ?>
             <?php if ($salary) : ?>
