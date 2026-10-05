@@ -253,3 +253,59 @@ section, main > * {
 
 /* BPO dlaczego slider — karty z minimalną wysokością */
 @media (min-width: 1024px) { .lg\:min-h-\[325px\] { min-height: 325px; } }
+
+/* ---------------------------------------------------------------
+   CF7 success modal
+   --------------------------------------------------------------- */
+.mer-modal-overlay {
+    position: fixed; inset: 0; z-index: 99999;
+    display: flex; align-items: center; justify-content: center;
+    background: rgba(15, 23, 42, 0);
+    backdrop-filter: blur(0);
+    transition: background .3s, backdrop-filter .3s;
+    padding: 16px;
+}
+.mer-modal-overlay.mer-modal-visible {
+    background: rgba(15, 23, 42, .45);
+    backdrop-filter: blur(4px);
+}
+.mer-modal-box {
+    background: #fff; border-radius: 20px;
+    padding: 40px 32px 32px;
+    max-width: 420px; width: 100%;
+    text-align: center;
+    box-shadow: 0 25px 50px -12px rgba(0,0,0,.25);
+    transform: scale(.9) translateY(20px);
+    opacity: 0;
+    transition: transform .35s cubic-bezier(.16,1,.3,1), opacity .3s;
+}
+.mer-modal-visible .mer-modal-box {
+    transform: scale(1) translateY(0);
+    opacity: 1;
+}
+.mer-modal-icon {
+    width: 64px; height: 64px; margin: 0 auto 20px;
+    background: #ecfdf5; border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    color: #00d084;
+}
+.mer-modal-icon svg { width: 32px; height: 32px; }
+.mer-modal-title {
+    font-size: 22px; font-weight: 700;
+    color: #0f172a; margin: 0 0 8px;
+}
+.mer-modal-text {
+    font-size: 15px; line-height: 1.6;
+    color: #64748b; margin: 0 0 28px;
+}
+.mer-modal-btn {
+    display: inline-block;
+    padding: 12px 40px;
+    background: #00d084; color: #fff;
+    font-size: 15px; font-weight: 600;
+    border: none; border-radius: 12px;
+    cursor: pointer;
+    transition: background .2s, transform .15s;
+}
+.mer-modal-btn:hover { background: #00b870; transform: translateY(-1px); }
+.mer-modal-btn:active { transform: translateY(0); }

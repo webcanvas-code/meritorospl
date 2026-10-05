@@ -332,6 +332,47 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     // ----------------------------------------------------------------
+    // CF7 success modal — popup po wysłaniu formularza
+    // ----------------------------------------------------------------
+    const successMessages = {
+        pl: { title: 'Wiadomość wysłana!',  text: 'Dziękujemy za kontakt. Odezwiemy się najszybciej, jak to możliwe.', btn: 'Zamknij' },
+        en: { title: 'Message sent!',       text: 'Thank you for reaching out. We will get back to you as soon as possible.', btn: 'Close' },
+        uk: { title: 'Повідомлення надіслано!', text: 'Дякуємо за звернення. Ми зв\'яжемося з вами якнайшвидше.', btn: 'Закрити' },
+        ru: { title: 'Сообщение отправлено!',   text: 'Спасибо за обращение. Мы свяжемся с вами как можно скорее.', btn: 'Закрыть' },
+    };
+    const sMsg = successMessages[pageLang] || successMessages.en;
+
+    document.addEventListener('wpcf7mailsent', () => {
+        // Build modal
+        const overlay = document.createElement('div');
+        overlay.className = 'mer-modal-overlay';
+        overlay.innerHTML = `
+            <div class="mer-modal-box">
+                <div class="mer-modal-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
+                </div>
+                <h3 class="mer-modal-title">${sMsg.title}</h3>
+                <p class="mer-modal-text">${sMsg.text}</p>
+                <button class="mer-modal-btn" type="button">${sMsg.btn}</button>
+            </div>`;
+        document.body.appendChild(overlay);
+
+        // Animate in
+        requestAnimationFrame(() => overlay.classList.add('mer-modal-visible'));
+
+        // Close handlers
+        const close = () => {
+            overlay.classList.remove('mer-modal-visible');
+            overlay.addEventListener('transitionend', () => overlay.remove(), { once: true });
+        };
+        overlay.querySelector('.mer-modal-btn').addEventListener('click', close);
+        overlay.addEventListener('click', e => { if (e.target === overlay) close(); });
+        document.addEventListener('keydown', function esc(e) {
+            if (e.key === 'Escape') { close(); document.removeEventListener('keydown', esc); }
+        });
+    });
+
+    // ----------------------------------------------------------------
     // Smooth scroll z offsetem dla fixed headera
     // ----------------------------------------------------------------
     const getHeaderOffset = () => {
