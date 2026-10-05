@@ -27,6 +27,47 @@ function meritoros_setup(): void {
 add_action('after_setup_theme', 'meritoros_setup');
 
 /* ------------------------------------------------------------------
+   Admin bar — WPML translation links for current post
+------------------------------------------------------------------ */
+add_action('admin_bar_menu', function ($wp_admin_bar) {
+    if (!is_singular() || !function_exists('icl_get_languages')) return;
+
+    $post_id   = get_the_ID();
+    $post_type = get_post_type($post_id);
+    $languages = icl_get_languages('skip_missing=0');
+    $current   = apply_filters('wpml_current_language', null);
+
+    if (empty($languages)) return;
+
+    $wp_admin_bar->add_node([
+        'id'    => 'mer-wpml-translations',
+        'title' => '🌐 ' . __('Tłumaczenia', 'meritoros'),
+        'meta'  => ['class' => 'mer-wpml-admin-bar'],
+    ]);
+
+    foreach ($languages as $code => $lang) {
+        if ($code === $current) continue;
+
+        $translated_id = apply_filters('wpml_object_id', $post_id, $post_type, false, $code);
+
+        if ($translated_id) {
+            $edit_url = get_edit_post_link($translated_id, 'raw');
+            $label    = $lang['native_name'] . ' — ✏️ ' . __('Edytuj', 'meritoros');
+        } else {
+            $edit_url = admin_url('admin.php?page=wpml-translation-management/menu/main.php&post_type=' . $post_type);
+            $label    = $lang['native_name'] . ' — ➕ ' . __('Dodaj tłumaczenie', 'meritoros');
+        }
+
+        $wp_admin_bar->add_node([
+            'id'     => 'mer-wpml-lang-' . $code,
+            'parent' => 'mer-wpml-translations',
+            'title'  => $label,
+            'href'   => $edit_url,
+        ]);
+    }
+}, 100);
+
+/* ------------------------------------------------------------------
    Read WP nav menu items from the 'primary' location.
    WPML automatically serves the correct language menu.
 ------------------------------------------------------------------ */
