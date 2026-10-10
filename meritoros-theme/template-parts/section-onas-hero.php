@@ -29,7 +29,7 @@ $bg_url = is_array($hero_bg) ? esc_url($hero_bg['url']) : '';
 
         <div class="max-w-4xl">
             <h1 class="text-pretty text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight mb-6 leading-[1.1] text-white">
-                <?php echo nl2br(esc_html($hero_title)); ?>
+                <?php echo mer_esc_bold($hero_title); ?>
             </h1>
             <p class="text-base sm:text-lg text-white/70 mb-10 leading-relaxed max-w-5xl">
                 <?php echo wp_kses_post($hero_sub); ?>

@@ -31,6 +31,11 @@ section, main > * {
     overflow-x: clip;
 }
 
+/* ── H1 bold (ACF <strong> support) ──────────────────────────── */
+h1 strong, h1 b {
+    font-weight: 900;
+}
+
 /* ── Contact Form 7 ──────────────────────────────────────────── */
 .wpcf7 { margin: 0; }
 .wpcf7 br { display: none; }

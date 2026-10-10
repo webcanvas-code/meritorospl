@@ -115,7 +115,7 @@ usort($all_posts, function ($a, $b) {
 
         <div class="max-w-3xl">
             <h1 class="text-pretty text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-slate-900 mb-6 leading-[1.1]">
-                <?php echo nl2br(esc_html($hero_title)); ?>
+                <?php echo mer_esc_bold($hero_title); ?>
             </h1>
             <p class="text-slate-600 text-base leading-relaxed max-w-2xl mb-10">
                 <?php echo mer_esc($hero_desc); ?>

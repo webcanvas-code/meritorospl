@@ -503,7 +503,7 @@ function _mer_register_blog_page_fields(): void {
 
             // ── Tab: Hero ──────────────────────────────────────────────
             ['key' => 'field_blog_tab_hero', 'label' => 'Hero', 'name' => '', 'type' => 'tab'],
-            ['key' => 'field_blog_hero_title',    'label' => 'Tytuł hero',        'name' => 'blog_hero_title',    'type' => 'textarea', 'rows' => 2, 'default_value' => 'Wiedza i poradniki'],
+            ['key' => 'field_blog_hero_title',    'label' => 'Tytuł hero',        'name' => 'blog_hero_title',    'type' => 'textarea', 'rows' => 2, 'default_value' => 'Wiedza i poradniki', 'instructions' => 'Użyj &lt;strong&gt;tekst&lt;/strong&gt; aby pogrubić wybrane słowa.'],
             ['key' => 'field_blog_hero_desc',     'label' => 'Opis hero',         'name' => 'blog_hero_desc',     'type' => 'textarea', 'rows' => 3, 'default_value' => 'Publikujemy treści dotyczące księgowości, kadr, BPO i zmian, które mają realny wpływ na prowadzenie firmy. Znajdziesz tu zarówno materiały eksperckie, jak i aktualności dotyczące rynku oraz działalności Meritoros.'],
             ['key' => 'field_blog_btn1_text',     'label' => 'Przycisk 1 — tekst','name' => 'blog_btn1_text',     'type' => 'text',     'default_value' => 'Pobierz e-book'],
             ['key' => 'field_blog_btn1_url',      'label' => 'Przycisk 1 — link', 'name' => 'blog_btn1_url',      'type' => 'text'],
@@ -790,6 +790,7 @@ function _mer_register_media_fields(): void {
                 'type'          => 'textarea',
                 'rows'          => 2,
                 'default_value' => 'Media i informacje firmowe',
+                'instructions'  => 'Użyj &lt;strong&gt;tekst&lt;/strong&gt; aby pogrubić wybrane słowa.',
             ],
             [
                 'key'           => 'field_media_hero_text',
@@ -1133,6 +1134,14 @@ add_filter('acf/format_value', function ($value) {
  */
 function mer_esc(string $text): string {
     return nl2br(esc_html($text));
+}
+
+/**
+ * Escape text allowing only <strong> and <b> tags, converting newlines to <br>.
+ * Use for H1 headings where selective bolding is needed from ACF fields.
+ */
+function mer_esc_bold(string $text): string {
+    return nl2br(wp_kses($text, array('strong' => array(), 'b' => array())));
 }
 
 /**

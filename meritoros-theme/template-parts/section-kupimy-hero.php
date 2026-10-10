@@ -34,7 +34,7 @@ $img_alt = is_array($image) ? esc_attr($image['alt'] ?: __('Kupimy biuro rachunk
 
         <div class="max-w-3xl">
             <h1 class="text-pretty text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-white leading-[1.1] mb-6">
-                <?php echo nl2br(esc_html($heading)); ?>
+                <?php echo mer_esc_bold($heading); ?>
             </h1>
             <p class="text-base sm:text-lg text-white/75 leading-relaxed mb-8 max-w-5xl">
                 <?php echo wp_kses_post($subtitle); ?>

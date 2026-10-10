@@ -49,7 +49,7 @@ $text  = __( mer_field('media_hero_text',  'Najważniejsze wydarzenia z życia f
 
         <div class="max-w-3xl">
             <h1 class="text-pretty text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-slate-900 leading-[1.1] mb-6">
-                <?php echo nl2br(esc_html($title)); ?>
+                <?php echo mer_esc_bold($title); ?>
             </h1>
             <p class="text-base sm:text-lg text-slate-500 leading-relaxed max-w-3xl">
                 <?php echo wp_kses_post($text); ?>

@@ -71,7 +71,7 @@ if ($_kariera_pl) {
 
         <!-- Nagłówek -->
         <h1 class="text-pretty text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-white leading-[1.1] mb-8 max-w-3xl">
-            <?php echo nl2br(esc_html($title)); ?>
+            <?php echo mer_esc_bold($title); ?>
         </h1>
 
         <!-- CTA -->

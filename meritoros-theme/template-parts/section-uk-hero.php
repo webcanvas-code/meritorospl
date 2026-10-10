@@ -55,7 +55,7 @@ $btn2_url     = mer_field('uk_hero_btn2_url',  home_url('/kontakt/'));
 
         <div class="max-w-4xl">
             <h1 class="text-pretty text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight mb-6 leading-[1.1] text-slate-900">
-                <?php echo mer_esc($title_before); ?> <span class="text-[#00d084]"><?php echo mer_esc($title_green); ?></span> <?php echo mer_esc($title_after); ?>
+                <?php echo mer_esc_bold($title_before); ?> <span class="text-[#00d084]"><?php echo mer_esc_bold($title_green); ?></span> <?php echo mer_esc_bold($title_after); ?>
             </h1>
             <p class="text-base sm:text-lg text-slate-500 mb-8 leading-relaxed max-w-5xl">
                 <?php echo wp_kses_post($subtitle); ?>

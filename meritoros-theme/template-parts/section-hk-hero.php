@@ -35,7 +35,7 @@ if (!$btn_url || $btn_url === '#case-studies') $btn_url = '#hk-video-section';
 
         <div class="max-w-3xl">
             <h1 class="text-pretty text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-slate-900 leading-[1.1] mb-6">
-                <?php echo nl2br(esc_html($title)); ?>
+                <?php echo mer_esc_bold($title); ?>
             </h1>
             <p class="text-lg sm:text-xl text-slate-500 leading-relaxed mb-10 max-w-4xl">
                 <?php echo wp_kses_post($text); ?>

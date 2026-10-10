@@ -20,7 +20,7 @@ $bg_url   = is_array($bg) ? esc_url($bg['url']) : 'https://images.unsplash.com/p
         </div>
         <div class="max-w-2xl">
             <h1 class="text-pretty text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-white leading-[1.1] mb-6">
-                <?php echo nl2br(esc_html($title)); ?>
+                <?php echo mer_esc_bold($title); ?>
             </h1>
             <p class="text-base sm:text-lg text-white/75 leading-relaxed mb-10 max-w-3xl">
                 <?php echo wp_kses_post($text); ?>

@@ -24,7 +24,7 @@ $btn2_url  = mer_field('hero_btn2_url', '#kontakt');
         <div class="max-w-3xl w-full flex flex-col justify-center flex-1">
 
             <h1 class="text-pretty text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-white leading-[1.1] mb-5 drop-shadow-md">
-                <?php echo nl2br(esc_html($headline)); ?>
+                <?php echo mer_esc_bold($headline); ?>
             </h1>
 
             <p class="text-base sm:text-lg font-light text-slate-200 mb-8 max-w-4xl leading-relaxed">
