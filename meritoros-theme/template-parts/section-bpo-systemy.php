@@ -22,7 +22,7 @@ if (empty($valid_logos)) {
 
 <section id="bpo-systemy" class="py-12 md:py-24 border-t border-slate-100 bg-white">
     <div class="max-w-7xl mx-auto px-6">
-        <h2 class="text-pretty text-4xl md:text-5xl font-bold tracking-tight mb-6 text-slate-900"><?php echo nl2br(esc_html($title)); ?></h2>
+        <h2 class="text-pretty text-4xl md:text-5xl font-bold tracking-tight mb-6 text-slate-900"><?php echo mer_esc($title); ?></h2>
         <p class="text-lg text-slate-600 mb-16 leading-relaxed max-w-4xl"><?php echo mer_esc($text); ?></p>
         <?php if (!empty($valid_logos)) : ?>
         <div class="flex flex-wrap items-center justify-between gap-y-8">

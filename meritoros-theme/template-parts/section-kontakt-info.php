@@ -67,7 +67,7 @@ if (empty($offices)) {
                 </a>
             </div>
             <p class="text-white text-base leading-relaxed">
-                <?php echo nl2br(esc_html($phone_desc)); ?>
+                <?php echo mer_esc($phone_desc); ?>
             </p>
         </div>
 
@@ -80,7 +80,7 @@ if (empty($offices)) {
                     <i data-lucide="map-pin" class="w-4 h-4 text-[#00d084] mt-0.5 shrink-0 stroke-[1.5]"></i>
                     <div>
                         <p class="text-slate-400 text-xs mb-0.5"><?php esc_html_e('Adres', 'meritoros'); ?></p>
-                        <p class="text-slate-700"><?php echo nl2br(esc_html($address)); ?></p>
+                        <p class="text-slate-700"><?php echo mer_esc($address); ?></p>
                     </div>
                 </div>
 
@@ -129,7 +129,7 @@ if (empty($offices)) {
                         <div>
                             <p class="text-slate-400 text-xs mb-0.5"><?php esc_html_e('Krajowy Rejestr Sądowy (KRS)', 'meritoros'); ?></p>
                             <p class="text-slate-700 text-sm leading-relaxed">
-                                <?php echo nl2br(esc_html($krs_court)); ?><br>
+                                <?php echo mer_esc($krs_court); ?><br>
                                 <?php esc_html_e('Nr KRS:', 'meritoros'); ?> <?php echo mer_esc($krs_number); ?>
                             </p>
                         </div>
@@ -144,7 +144,7 @@ if (empty($offices)) {
 <section class="py-10 md:py-16 bg-white">
     <div class="max-w-7xl mx-auto px-6">
         <h2 class="text-pretty text-4xl md:text-5xl font-bold tracking-tight text-slate-900 mb-12 leading-tight">
-            <?php echo nl2br(esc_html($offices_title)); ?>
+            <?php echo mer_esc($offices_title); ?>
         </h2>
 
         <div class="grid lg:grid-cols-2 gap-12 items-center">
@@ -170,7 +170,7 @@ if (empty($offices)) {
                 ?>
                     <div class="border border-slate-200 rounded-xl p-4 hover:border-emerald-300 hover:shadow-sm transition-all">
                         <p class="text-base font-semibold text-slate-900 mb-1.5"><?php echo mer_esc($office['city']); ?></p>
-                        <p class="text-sm text-slate-500 leading-relaxed"><?php echo nl2br(esc_html($office['address'])); ?></p>
+                        <p class="text-sm text-slate-500 leading-relaxed"><?php echo mer_esc($office['address']); ?></p>
                     </div>
                 <?php endforeach; ?>
 
@@ -178,7 +178,7 @@ if (empty($offices)) {
                 <div class="border-2 border-emerald-400 bg-emerald-50 rounded-xl p-4 hover:bg-emerald-100 transition-all col-span-1">
                     <div class="flex items-center gap-2 mb-1.5">
                         <i data-lucide="monitor" class="w-4 h-4 text-[#00d084] stroke-[1.5]"></i>
-                        <p class="text-base font-semibold text-emerald-700"><?php echo nl2br(esc_html($virtual_label)); ?></p>
+                        <p class="text-base font-semibold text-emerald-700"><?php echo mer_esc($virtual_label); ?></p>
                     </div>
                     <p class="text-sm font-semibold text-slate-700 leading-relaxed"><?php echo mer_esc($virtual_desc); ?></p>
                 </div>

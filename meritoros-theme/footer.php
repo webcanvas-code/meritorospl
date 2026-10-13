@@ -82,7 +82,7 @@ for ($i = 1; $i <= 4; $i++) {
                     <?php echo mer_esc($cta_label); ?>
                 </span>
                 <h2 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight leading-tight">
-                    <?php echo nl2br(esc_html($cta_title)); ?><br>
+                    <?php echo mer_esc($cta_title); ?><br>
                     <span class="text-[#00d084]"><?php echo mer_esc($cta_accent); ?></span>
                 </h2>
             </div>
@@ -171,7 +171,7 @@ for ($i = 1; $i <= 4; $i++) {
                     <?php if ($address) : ?>
                         <li class="flex items-start gap-2">
                             <i data-lucide="map-pin" class="w-4 h-4 text-[#00d084] mt-0.5 shrink-0 stroke-[1.5]"></i>
-                            <span><?php echo nl2br(esc_html($address)); ?></span>
+                            <span><?php echo mer_esc($address); ?></span>
                         </li>
                     <?php endif; ?>
                     <?php if ($phone) : ?>

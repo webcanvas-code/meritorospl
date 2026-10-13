@@ -1130,18 +1130,15 @@ add_filter('acf/format_value', function ($value) {
 
 /**
  * Escape text for HTML output, converting newlines to <br> tags.
- * Use instead of esc_html() for any content that may contain intentional line breaks.
+ * Allows <strong> and <b> tags for selective bolding from ACF fields.
  */
 function mer_esc(string $text): string {
-    return nl2br(esc_html($text));
+    return nl2br(wp_kses($text, array('strong' => array(), 'b' => array())));
 }
 
-/**
- * Escape text allowing only <strong> and <b> tags, converting newlines to <br>.
- * Use for H1 headings where selective bolding is needed from ACF fields.
- */
+/** @deprecated Use mer_esc() instead. */
 function mer_esc_bold(string $text): string {
-    return nl2br(wp_kses($text, array('strong' => array(), 'b' => array())));
+    return mer_esc($text);
 }
 
 /**

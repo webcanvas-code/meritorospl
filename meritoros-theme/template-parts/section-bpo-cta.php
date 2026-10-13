@@ -15,7 +15,7 @@ $btn_url  = mer_field('bpo_cta_btn_url',  home_url('/kontakt/'));
                     <i data-lucide="message-square-text" stroke-width="1.5" class="w-10 h-10 text-white"></i>
                 </div>
                 <div>
-                    <h3 class="text-3xl font-bold tracking-tight mb-2"><?php echo nl2br(esc_html($title)); ?></h3>
+                    <h3 class="text-3xl font-bold tracking-tight mb-2"><?php echo mer_esc($title); ?></h3>
                     <p class="text-emerald-50 text-lg"><?php echo mer_esc($subtitle); ?></p>
                 </div>
             </div>

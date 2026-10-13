@@ -21,7 +21,7 @@ $btn_url  = mer_field('kp_cta_btn_url',  home_url('/kontakt/'));
                 </svg>
             </div>
             <div class="flex-1 text-white text-center md:text-left">
-                <h3 class="text-xl md:text-2xl font-bold tracking-tight mb-1"><?php echo nl2br(esc_html($title)); ?></h3>
+                <h3 class="text-xl md:text-2xl font-bold tracking-tight mb-1"><?php echo mer_esc($title); ?></h3>
                 <p class="text-white/75 text-lg mt-2"><?php echo mer_esc($text); ?></p>
             </div>
             <a href="<?php echo esc_url($btn_url); ?>" class="mer-btn mer-btn--light shrink-0 px-7 py-3.5 rounded-full bg-white text-slate-900 text-base font-semibold hover:bg-slate-100 transition-colors whitespace-nowrap">

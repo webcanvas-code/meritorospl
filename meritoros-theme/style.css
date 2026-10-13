@@ -31,8 +31,10 @@ section, main > * {
     overflow-x: clip;
 }
 
-/* ── H1 bold (ACF <strong> support) ──────────────────────────── */
-h1 strong, h1 b {
+/* ── Bold w naglowkach (ACF <strong> support) ────────────────── */
+h1 strong, h1 b,
+h2 strong, h2 b,
+h3 strong, h3 b {
     font-weight: 900;
 }
 

@@ -13,7 +13,7 @@ $btn_url  = mer_field('uk_cta_btn_url',  home_url('/kontakt/'));
                     <i data-lucide="message-square-text" stroke-width="1" class="w-16 h-16 text-white opacity-90"></i>
                 </div>
                 <div>
-                    <h3 class="text-xl md:text-2xl font-bold text-white mb-1"><?php echo nl2br(esc_html($title)); ?></h3>
+                    <h3 class="text-xl md:text-2xl font-bold text-white mb-1"><?php echo mer_esc($title); ?></h3>
                     <p class="text-white/75 text-lg"><?php echo mer_esc($text); ?></p>
                 </div>
             </div>

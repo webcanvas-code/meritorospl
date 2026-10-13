@@ -29,7 +29,7 @@ for ($i = 1; $i <= 8; $i++) {
 <section id="uk-dlaczego" class="py-10 md:py-20 bg-white relative">
     <div class="max-w-7xl mx-auto px-6 mb-10 flex flex-col sm:flex-row sm:items-end sm:justify-between gap-4">
         <h2 class="text-pretty text-4xl md:text-5xl font-bold tracking-tight text-slate-900">
-            <?php echo nl2br(esc_html($title)); ?>
+            <?php echo mer_esc($title); ?>
         </h2>
         <div class="hidden sm:flex items-center gap-2 shrink-0">
             <button id="uk-dlaczego-prev" type="button" class="w-12 h-12 rounded-full bg-white border border-slate-200 flex items-center justify-center shadow-sm hover:bg-slate-50 transition-colors" style="opacity:0.35;pointer-events:none">
@@ -47,7 +47,7 @@ for ($i = 1; $i <= 8; $i++) {
             <?php foreach ($cards as $card) : ?>
             <div class="bg-white border border-slate-200 rounded-2xl p-8 flex flex-col min-w-[85%] sm:min-w-[calc(50%-12px)] lg:w-[400px] lg:min-w-[400px] lg:h-[325px]">
                 <i data-lucide="<?php echo esc_attr($card['icon']); ?>" stroke-width="1" class="w-14 h-14 text-[#00d084] mb-8"></i>
-                <h3 class="text-xl md:text-2xl font-bold text-slate-900 mb-3 leading-snug"><?php echo nl2br(esc_html($card['title'])); ?></h3>
+                <h3 class="text-xl md:text-2xl font-bold text-slate-900 mb-3 leading-snug"><?php echo mer_esc($card['title']); ?></h3>
                 <p class="text-base md:text-lg text-slate-500 leading-relaxed"><?php echo mer_esc($card['text']); ?></p>
             </div>
             <?php endforeach; ?>

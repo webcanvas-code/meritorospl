@@ -74,7 +74,7 @@ for ($i = 1; $i <= 4; $i++) {
 
                             <div class="relative z-10">
                                 <h3 class="text-2xl font-bold text-[#00d084] leading-snug mb-4" style="min-height:3.75rem">
-                                    <?php echo nl2br(esc_html($card['title'])); ?>
+                                    <?php echo mer_esc($card['title']); ?>
                                 </h3>
                                 <p class="text-slate-600 text-base leading-relaxed">
                                     <?php echo mer_esc($card['text']); ?>

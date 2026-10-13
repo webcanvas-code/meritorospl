@@ -14,7 +14,7 @@ $bg_url   = is_array($bg) && !empty($bg['url']) ? esc_url($bg['url']) : 'https:/
 
     <div class="relative z-10 max-w-3xl mx-auto px-6 text-center">
         <h2 class="text-pretty text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight text-white leading-tight mb-6">
-            <?php echo nl2br(esc_html($title)); ?>
+            <?php echo mer_esc($title); ?>
         </h2>
         <p class="text-base sm:text-lg text-white/70 leading-relaxed mb-10 max-w-lg mx-auto">
             <?php echo mer_esc($text); ?>

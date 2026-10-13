@@ -61,7 +61,7 @@ if (empty($cards)) {
                         <p class="text-lg font-bold text-slate-900 mb-1"><?php echo mer_esc($name); ?></p>
                         <p class="text-sm text-slate-400"><?php echo mer_esc($role); ?></p>
                     </div>
-                    <p class="text-base text-slate-600 leading-relaxed"><?php echo nl2br(esc_html($desc)); ?></p>
+                    <p class="text-base text-slate-600 leading-relaxed"><?php echo mer_esc($desc); ?></p>
                 </div>
             <?php endforeach; ?>
         </div>

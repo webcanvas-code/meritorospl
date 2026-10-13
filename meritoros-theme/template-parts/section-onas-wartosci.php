@@ -60,7 +60,7 @@ $_iso9_url    = is_array($w6_badge) ? esc_url($w6_badge['url']) : esc_url($_img 
             <?php echo mer_esc($w_label); ?>
         </span>
         <h2 class="text-pretty text-4xl md:text-5xl font-bold tracking-tight max-w-3xl mx-auto text-slate-900">
-            <?php echo nl2br(esc_html($w_title)); ?>
+            <?php echo mer_esc($w_title); ?>
         </h2>
     </div>
 
@@ -72,7 +72,7 @@ $_iso9_url    = is_array($w6_badge) ? esc_url($w6_badge['url']) : esc_url($_img 
                 <i data-lucide="<?php echo esc_attr($w1_icon); ?>" class="w-6 h-6 stroke-[1.5]"></i>
             </div>
             <h3 class="text-lg lg:text-xl font-bold tracking-tight mb-2 text-slate-900">
-                <?php echo nl2br(esc_html($w1_title)); ?>
+                <?php echo mer_esc($w1_title); ?>
             </h3>
             <p class="text-base text-slate-600 leading-relaxed font-light">
                 <?php echo mer_esc($w1_text); ?>
@@ -96,7 +96,7 @@ $_iso9_url    = is_array($w6_badge) ? esc_url($w6_badge['url']) : esc_url($_img 
                 <i data-lucide="<?php echo esc_attr($w3_icon); ?>" class="w-6 h-6 stroke-[1.5]"></i>
             </div>
             <h3 class="text-lg lg:text-xl font-bold tracking-tight mb-2">
-                <?php echo nl2br(esc_html($w3_title)); ?>
+                <?php echo mer_esc($w3_title); ?>
             </h3>
             <p class="text-base text-slate-300 leading-relaxed font-light relative z-10">
                 <?php echo mer_esc($w3_text); ?>
@@ -115,7 +115,7 @@ $_iso9_url    = is_array($w6_badge) ? esc_url($w6_badge['url']) : esc_url($_img 
                 <i data-lucide="<?php echo esc_attr($w4_icon); ?>" class="w-6 h-6 stroke-[1.5]"></i>
             </div>
             <h3 class="text-lg lg:text-xl font-bold tracking-tight mb-2 relative z-10">
-                <?php echo nl2br(esc_html($w4_title)); ?>
+                <?php echo mer_esc($w4_title); ?>
             </h3>
             <p class="text-base text-white leading-relaxed font-light relative z-10">
                 <?php echo mer_esc($w4_text); ?>
@@ -144,7 +144,7 @@ $_iso9_url    = is_array($w6_badge) ? esc_url($w6_badge['url']) : esc_url($_img 
                 <i data-lucide="<?php echo esc_attr($w6_icon); ?>" class="w-6 h-6 stroke-[1.5]"></i>
             </div>
             <h3 class="text-lg lg:text-xl font-bold tracking-tight mb-2 text-white">
-                <?php echo nl2br(esc_html($w6_title)); ?>
+                <?php echo mer_esc($w6_title); ?>
             </h3>
             <p class="text-base text-white leading-relaxed font-light">
                 <?php echo mer_esc($w6_text); ?>

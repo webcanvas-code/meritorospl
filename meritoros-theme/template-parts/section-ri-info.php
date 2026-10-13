@@ -91,7 +91,7 @@ $award_text  = get_field('ri_award_text',  $_ri_pid) ?: __('Wyróżnienia są ef
                         <?php else : ?>
                         <div class="space-y-3 text-base text-slate-500 leading-relaxed">
                             <?php foreach (array_values(array_filter(array_map('trim', explode("\n\n", $sub['text'])))) as $p) : ?>
-                                <p><?php echo nl2br(esc_html($p)); ?></p>
+                                <p><?php echo mer_esc($p); ?></p>
                             <?php endforeach; ?>
                         </div>
                         <?php endif; ?>

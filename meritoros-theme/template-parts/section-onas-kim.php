@@ -46,7 +46,7 @@ for ($i = 1; $i <= 6; $i++) {
             <?php foreach ($stats as $stat) : ?>
                 <div class="flex flex-col items-center text-center px-6 py-8 gap-5">
                     <i data-lucide="<?php echo esc_attr($stat['icon']); ?>" stroke-width="1" class="w-16 h-16 text-[#00d084]"></i>
-                    <p class="text-sm text-slate-600 leading-snug"><?php echo nl2br(esc_html($stat['text'])); ?></p>
+                    <p class="text-sm text-slate-600 leading-snug"><?php echo mer_esc($stat['text']); ?></p>
                 </div>
             <?php endforeach; ?>
         </div>

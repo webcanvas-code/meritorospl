@@ -35,7 +35,7 @@ for ($i = 1; $i <= 5; $i++) {
     <div class="max-w-5xl mx-auto px-6">
         <div class="text-center mb-8 md:mb-12">
             <h2 class="text-pretty text-4xl md:text-5xl font-bold tracking-tight mb-4 text-slate-900"><?php echo mer_esc($title); ?></h2>
-            <p class="text-base md:text-lg text-slate-500 max-w-2xl mx-auto"><?php echo nl2br(esc_html($subtitle)); ?></p>
+            <p class="text-base md:text-lg text-slate-500 max-w-2xl mx-auto"><?php echo mer_esc($subtitle); ?></p>
         </div>
 
         <div class="grid md:grid-cols-2 gap-6">

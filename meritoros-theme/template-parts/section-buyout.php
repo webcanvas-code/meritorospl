@@ -61,7 +61,7 @@ for ($i = 1; $i <= 5; $i++) {
                         <?php echo mer_esc($label); ?>
                     </span>
                     <h2 class="text-pretty text-2xl sm:text-3xl md:text-5xl font-bold tracking-tight mb-4 lg:mb-6 leading-tight">
-                        <?php echo nl2br(esc_html($title)); ?>
+                        <?php echo mer_esc($title); ?>
                     </h2>
                     <p class="text-sm sm:text-base lg:text-lg text-white/80 mb-8 leading-relaxed max-w-lg font-light">
                         <?php echo mer_esc($desc); ?>

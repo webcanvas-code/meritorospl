@@ -33,7 +33,7 @@ for ($i = 1; $i <= 4; $i++) {
 
     <div class="max-w-7xl mx-auto px-6 mb-10 relative z-10 flex flex-col sm:flex-row sm:items-end sm:justify-between gap-4">
         <h2 class="text-pretty text-4xl md:text-5xl font-bold tracking-tight text-slate-900 max-w-2xl leading-tight">
-            <?php echo nl2br(esc_html($title)); ?>
+            <?php echo mer_esc($title); ?>
         </h2>
         <div class="flex items-center gap-2 shrink-0">
             <button id="zysk-prev" type="button" class="w-12 h-12 rounded-full bg-white border border-slate-200 flex items-center justify-center shadow-sm hover:bg-slate-50 transition-colors" style="opacity:0.35;pointer-events:none">

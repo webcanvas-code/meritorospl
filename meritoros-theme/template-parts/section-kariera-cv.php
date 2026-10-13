@@ -16,7 +16,7 @@ $photo_alt   = is_array($photo) ? esc_attr($photo['alt'] ?: '') : '';
 
             <div class="flex flex-col gap-6">
                 <h2 class="text-pretty text-4xl md:text-5xl font-bold tracking-tight text-slate-900 leading-tight">
-                    <?php echo nl2br(esc_html($title)); ?>
+                    <?php echo mer_esc($title); ?>
                 </h2>
 
                 <?php if ($desc) : ?>

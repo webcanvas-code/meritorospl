@@ -56,7 +56,7 @@ $c6_cert       = mer_field('val_c6_cert', 'ISO 9001:2015');
             <?php echo mer_esc($label); ?>
         </span>
         <h2 class="text-pretty text-4xl md:text-5xl font-bold tracking-tight max-w-3xl mx-auto text-slate-900">
-            <?php echo nl2br(esc_html($title)); ?>
+            <?php echo mer_esc($title); ?>
         </h2>
     </div>
 
@@ -68,7 +68,7 @@ $c6_cert       = mer_field('val_c6_cert', 'ISO 9001:2015');
                 <i data-lucide="<?php echo esc_attr($c1_icon); ?>" class="w-6 h-6 stroke-[1.5]"></i>
             </div>
             <h3 class="text-lg lg:text-xl font-bold tracking-tight mb-2 text-slate-900">
-                <?php echo nl2br(esc_html($c1_title)); ?>
+                <?php echo mer_esc($c1_title); ?>
             </h3>
             <p class="text-base text-slate-600 leading-relaxed font-light">
                 <?php echo mer_esc($c1_desc); ?>
@@ -89,7 +89,7 @@ $c6_cert       = mer_field('val_c6_cert', 'ISO 9001:2015');
                 <i data-lucide="<?php echo esc_attr($c3_icon); ?>" class="w-6 h-6 stroke-[1.5]"></i>
             </div>
             <h3 class="text-lg lg:text-xl font-bold tracking-tight mb-2">
-                <?php echo nl2br(esc_html($c3_title)); ?>
+                <?php echo mer_esc($c3_title); ?>
             </h3>
             <p class="text-base text-slate-300 leading-relaxed font-light relative z-10">
                 <?php echo mer_esc($c3_desc); ?>
@@ -112,7 +112,7 @@ $c6_cert       = mer_field('val_c6_cert', 'ISO 9001:2015');
                 <i data-lucide="<?php echo esc_attr($c4_icon); ?>" class="w-6 h-6 stroke-[1.5]"></i>
             </div>
             <h3 class="text-lg lg:text-xl font-bold tracking-tight mb-2 relative z-10">
-                <?php echo nl2br(esc_html($c4_title)); ?>
+                <?php echo mer_esc($c4_title); ?>
             </h3>
             <p class="text-base text-slate-300 leading-relaxed font-light relative z-10">
                 <?php echo mer_esc($c4_desc); ?>
