@@ -111,6 +111,14 @@
         <custom-field action="translate">kon_title_green</custom-field>
         <custom-field action="translate">kon_title_dark</custom-field>
         <custom-field action="translate">kon_subtitle</custom-field>
+        <custom-field action="translate">kon_step_1_label</custom-field>
+        <custom-field action="copy">kon_step_1_active</custom-field>
+        <custom-field action="translate">kon_step_2_label</custom-field>
+        <custom-field action="copy">kon_step_2_active</custom-field>
+        <custom-field action="translate">kon_step_3_label</custom-field>
+        <custom-field action="copy">kon_step_3_active</custom-field>
+        <custom-field action="translate">kon_step_4_label</custom-field>
+        <custom-field action="copy">kon_step_4_active</custom-field>
         <custom-field action="translate">kon_phone_label</custom-field>
         <custom-field action="translate">kon_phone_desc</custom-field>
         <custom-field action="translate">kon_virtual_label</custom-field>
@@ -1741,6 +1749,7 @@
         <custom-field action="translate">bpo_wsp_step_3_items</custom-field>
         <custom-field action="translate">bpo_wsp_step_3_note</custom-field>
         <!-- BPO — historie klientow (bpo_hist_1 do bpo_hist_4) -->
+        <custom-field action="translate">bpo_hist_label</custom-field>
         <custom-field action="translate">bpo_hist_title</custom-field>
         <custom-field action="translate">bpo_hist_btn_text</custom-field>
         <custom-field action="copy">bpo_hist_btn_url</custom-field>

@@ -69,7 +69,7 @@ for ($i = 1; $i <= 4; $i++) {
                     .bpo-hero-logos img { max-height: none; }
                     .bpo-hero-logos img:nth-child(1) { width: 207px;    height: 41.99px; }
                     .bpo-hero-logos img:nth-child(2) { width: 139px;    height: 48px; }
-                    .bpo-hero-logos img:nth-child(3) { width: 156px;    height: 35px; }
+                    .bpo-hero-logos img:nth-child(3) { width: 120px;    height: 27px; }
                     .bpo-hero-logos img:nth-child(4) { width: 129.21px; height: 59.87px; }
                 }
             </style>

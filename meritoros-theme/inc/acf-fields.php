@@ -1288,6 +1288,7 @@ acf_add_local_field_group([
 
         // ── TAB: Historie klientów ────────────────────────────────
         ['key' => 'field_bpo_tab_hist', 'label' => 'Historie klientów', 'name' => '', 'type' => 'tab'],
+        ['key' => 'field_bpo_hist_label',    'label' => 'Etykieta sekcji (nad tytułem)', 'name' => 'bpo_hist_label', 'type' => 'textarea', 'rows' => 1, 'default_value' => 'Historie klientów BPO', 'instructions' => 'Zielony tekst nad nagłówkiem H2. Użyj &lt;strong&gt;tekst&lt;/strong&gt; aby pogrubić.'],
         ['key' => 'field_bpo_hist_title',    'label' => 'Tytuł sekcji (H2)',   'name' => 'bpo_hist_title',    'type' => 'textarea', 'rows' => 1, 'default_value' => 'Historie naszych klientów'],
         ['key' => 'field_bpo_hist_btn_text', 'label' => 'Przycisk — tekst','name' => 'bpo_hist_btn_text', 'type' => 'textarea', 'rows' => 1, 'default_value' => 'Poznaj więcej historii'],
         ['key' => 'field_bpo_hist_btn_url',  'label' => 'Przycisk — link', 'name' => 'bpo_hist_btn_url',  'type' => 'text', 'default_value' => '#'],

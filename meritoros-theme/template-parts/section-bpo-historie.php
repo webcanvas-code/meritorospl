@@ -92,7 +92,7 @@ if ($total === 0) return;
         <div class="flex items-end justify-between gap-4 mb-10">
             <div>
                 <p class="text-[#00d084] uppercase tracking-widest text-sm font-bold mb-3">
-                    <?php esc_html_e('Historie klientow BPO', 'meritoros'); ?>
+                    <?php echo mer_esc(__( get_field('bpo_hist_label', $_orig_id) ?: 'Historie klientów BPO', 'meritoros' )); ?>
                 </p>
                 <h2 class="text-pretty text-3xl sm:text-4xl font-bold tracking-tight text-slate-900">
                     <?php echo mer_esc($section_title); ?>

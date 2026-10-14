@@ -7,8 +7,21 @@ $cta_label   = (get_field('footer_cta_label',  $_ft_id) ?: __('Zacznij teraz', '
 $cta_title   = (get_field('footer_cta_title',  $_ft_id) ?: __("Dołącz do grona naszych\nklientów i rozwijaj biznes", 'meritoros'));
 $cta_accent  = (get_field('footer_cta_accent', $_ft_id) ?: __('bez stresu', 'meritoros'));
 $btn1_text   = (get_field('footer_btn1_text',  $_ft_id) ?: __('Umów rozmowę', 'meritoros'));
-$btn1_url    = (get_field('footer_btn1_url',   $_ft_id) ?: '#kontakt');
+$_btn1_raw   = (get_field('footer_btn1_url',   $_ft_id) ?: '#kontakt');
 $tagline     = (get_field('footer_tagline',    $_ft_id) ?: __('Profesjonalne biuro rachunkowe i BPO dla firm z ambicjami.', 'meritoros'));
+
+// Przetłumacz URL CTA na aktualny język WPML (wzorzec z header.php)
+$btn1_url = $_btn1_raw;
+if ($_btn1_raw && $_btn1_raw[0] === '/' && has_filter('wpml_object_id')) {
+    $_default_lang = apply_filters('wpml_default_language', null);
+    do_action('wpml_switch_language', $_default_lang);
+    $_btn_page = get_page_by_path(trim($_btn1_raw, '/'));
+    do_action('wpml_switch_language', null);
+    if ($_btn_page) {
+        $_btn_translated = (int) apply_filters('wpml_object_id', $_btn_page->ID, 'page', true);
+        $btn1_url = get_permalink($_btn_translated) ?: $_btn1_raw;
+    }
+}
 
 // Dane kontaktowe i meta — czytaj z front page (jak CTA wyżej)
 $address     = get_field('footer_address',   $_ft_id) ?: 'Aleja Pokoju 62/8, Kraków';
@@ -18,6 +31,21 @@ $copyright   = get_field('footer_copyright', $_ft_id) ?: __('© ' . date('Y') . 
 $credit_text = get_field('footer_credit_text', $_ft_id) ?: 'Web-Canvas';
 $credit_url  = get_field('footer_credit_url',  $_ft_id) ?: '#';
 
+// Helper: rozwiąż URL strony z tłumaczeniem WPML
+function _mer_footer_page_url($slug) {
+    if (has_filter('wpml_object_id')) {
+        $_default_lang = apply_filters('wpml_default_language', null);
+        do_action('wpml_switch_language', $_default_lang);
+        $page = get_page_by_path($slug);
+        do_action('wpml_switch_language', null);
+        if ($page) {
+            $translated_id = (int) apply_filters('wpml_object_id', $page->ID, 'page', true);
+            return get_permalink($translated_id);
+        }
+    }
+    return get_permalink(get_page_by_path($slug));
+}
+
 // Kolumny nawigacyjne — nagłówki i linki edytowalne w ACF
 $nav_services_title = get_field('footer_nav_services_title', $_ft_id) ?: __('Usługi', 'meritoros');
 $nav_info_title     = get_field('footer_nav_info_title',     $_ft_id) ?: __('Informacje', 'meritoros');
@@ -25,10 +53,10 @@ $nav_contact_title  = get_field('footer_nav_contact_title',  $_ft_id) ?: __('Kon
 
 $nav_services = [];
 $svc_defaults = [
-    ['text' => __('Usługi księgowe', 'meritoros'),        'url_fallback' => get_permalink(get_page_by_path('uslugi-ksiegowe'))],
-    ['text' => __('Kadry i płace', 'meritoros'),           'url_fallback' => get_permalink(get_page_by_path('kadry-i-place'))],
-    ['text' => __('Fundacje rodzinne', 'meritoros'),       'url_fallback' => get_permalink(get_page_by_path('fundacje-rodzinne'))],
-    ['text' => __('Skup biur rachunkowych', 'meritoros'), 'url_fallback' => get_permalink(get_page_by_path('kupimy-biuro-rachunkowe'))],
+    ['text' => __('Usługi księgowe', 'meritoros'),        'url_fallback' => _mer_footer_page_url('uslugi-ksiegowe')],
+    ['text' => __('Kadry i płace', 'meritoros'),           'url_fallback' => _mer_footer_page_url('kadry-i-place')],
+    ['text' => __('Fundacje rodzinne', 'meritoros'),       'url_fallback' => _mer_footer_page_url('fundacje-rodzinne')],
+    ['text' => __('Skup biur rachunkowych', 'meritoros'), 'url_fallback' => _mer_footer_page_url('kupimy-biuro-rachunkowe')],
 ];
 foreach ([1,2,3,4] as $n) {
     $def  = $svc_defaults[$n - 1];
@@ -40,7 +68,7 @@ foreach ([1,2,3,4] as $n) {
 $info_defaults = [
     ['text' => __('Polityka prywatności', 'meritoros'),   'url_fallback' => defined('MER_PRIVACY_PDF') ? MER_PRIVACY_PDF : '#'],
     ['text' => __('Regulamin newslettera', 'meritoros'),  'url_fallback' => defined('MER_TERMS_PDF')   ? MER_TERMS_PDF   : '#'],
-    ['text' => __('Wiedza i poradniki', 'meritoros'),     'url_fallback' => home_url('/blog/')],
+    ['text' => __('Wiedza i poradniki', 'meritoros'),     'url_fallback' => _mer_footer_page_url('blog')],
     ['text' => '',                                         'url_fallback' => ''],
 ];
 $nav_info = [];

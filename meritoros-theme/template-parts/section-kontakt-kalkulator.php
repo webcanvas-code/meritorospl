@@ -126,10 +126,10 @@ $rate_sub = (float) mer_field('kp_kalk_rate_sub', 42);
         'podwykonawcy': <?php echo $rate_sub; ?>
     };
     var labelsKP = {
-        'kadry-place':  'Kadry i płace',
-        'kadry':        'Same kadry',
-        'place':        'Same płace',
-        'podwykonawcy': 'Rozliczenie umów (podwykonawcy)'
+        'kadry-place':  '<?php echo esc_js(__('Kadry i płace', 'meritoros')); ?>',
+        'kadry':        '<?php echo esc_js(__('Same kadry', 'meritoros')); ?>',
+        'place':        '<?php echo esc_js(__('Same płace', 'meritoros')); ?>',
+        'podwykonawcy': '<?php echo esc_js(__('Rozliczenie umów (podwykonawcy)', 'meritoros')); ?>'
     };
 
     // Progi UK
@@ -207,7 +207,7 @@ $rate_sub = (float) mer_field('kp_kalk_rate_sub', 42);
             kpLabel.classList.remove('text-slate-500');
             kpLabel.classList.add('text-slate-800');
             var inputP = document.getElementById('ktk-kp-pracownicy');
-            if (inputP) inputP.placeholder = kpScope === 'podwykonawcy' ? 'Liczba podwykonawców' : 'Liczba pracowników';
+            if (inputP) inputP.placeholder = kpScope === 'podwykonawcy' ? '<?php echo esc_js(__('Liczba podwykonawców', 'meritoros')); ?>' : '<?php echo esc_js(__('Liczba pracowników', 'meritoros')); ?>';
             kpList.classList.add('hidden');
             kpChevron.style.transform = '';
             kpBtn.setAttribute('aria-expanded', 'false');
