@@ -1,15 +1,6 @@
 <?php
 defined('ABSPATH') || exit;
 
-// Jednorazowy skrypt tlumaczen - usun po uzyciu
-if ( is_admin() && isset($_GET['fix-translations']) && $_GET['fix-translations'] === '2026-10-14' ) {
-    add_action('admin_init', function() {
-        if ( current_user_can('manage_options') ) {
-            require_once __DIR__ . '/fix-translations-2026-10-14.php';
-            exit;
-        }
-    });
-}
 
 /* ------------------------------------------------------------------
    PDF Document URLs
