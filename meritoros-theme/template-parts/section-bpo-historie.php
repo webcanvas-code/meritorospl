@@ -51,19 +51,19 @@ for ($i = 1; $i <= 4; $i++) {
 
     $industries_raw = is_array($s) && isset($s['industries']) && $s['industries'] !== ''
         ? $s['industries'] : $def['industries'];
-    $industries = array_values(array_filter(array_map('trim', explode("\n", $industries_raw))));
+    $industries = array_values(array_filter(array_map(function($s) { return __($s, 'meritoros'); }, array_map('trim', explode("\n", $industries_raw)))));
 
     $stats = [];
     foreach ([1, 2, 3] as $n) {
         $val   = trim(is_array($s) && !empty($s["stat{$n}_val"])   ? $s["stat{$n}_val"]   : $def["stat{$n}_val"]);
         $label = trim(is_array($s) && !empty($s["stat{$n}_label"]) ? $s["stat{$n}_label"] : $def["stat{$n}_label"]);
         if ($val !== '') {
-            $stats[] = ['val' => $val, 'label' => $label];
+            $stats[] = ['val' => __($val, 'meritoros'), 'label' => __($label, 'meritoros')];
         }
     }
 
-    $quote        = trim(is_array($s) && !empty($s['quote'])        ? $s['quote']        : $def['quote']);
-    $quote_author = trim(is_array($s) && !empty($s['quote_author']) ? $s['quote_author'] : $def['quote_author']);
+    $quote        = __( trim(is_array($s) && !empty($s['quote'])        ? $s['quote']        : $def['quote']), 'meritoros' );
+    $quote_author = __( trim(is_array($s) && !empty($s['quote_author']) ? $s['quote_author'] : $def['quote_author']), 'meritoros' );
 
     $slides[] = [
         'logo'         => $logo_img,
