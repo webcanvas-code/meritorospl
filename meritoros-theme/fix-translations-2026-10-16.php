@@ -184,29 +184,16 @@ add_action('admin_init', function () {
         // ══════════════════════════════════════════════
         'Sprawdź'                  => ['en' => 'Learn more'],
 
-        // BPO HISTORIE (section-bpo-historie) - etykiety
+        // BPO HISTORIE — UI stringi i hardkodowane defaulty (wartości ACF tłumaczy ACFML via wpml-config.xml)
         'Historie klientów BPO'    => ['en' => 'BPO client stories'],
         'Jak wyglada BPO w praktyce?' => ['en' => 'What does BPO look like in practice?'],
-        'Jak wygląda BPO w praktyce?' => ['en' => 'What does BPO look like in practice?'],
         'Poznaj wiecej historii'   => ['en' => 'Explore more stories'],
         'Historia %d'              => ['en' => 'Story %d'],
-
-        // BPO HISTORIE - slajd 1 (Dentity) - defaults bez diakrytykow
+        // Defaults slajdu 1 (bez diakrytykow — fallback gdy ACF puste)
         'Stomatologia'             => ['en' => 'Dentistry'],
         'Ochrona zdrowia'          => ['en' => 'Healthcare'],
         'Pelna obsluga BPO dla sieci gabinetow stomatologicznych' => ['en' => 'Full BPO service for a dental clinic network'],
         'Dynamicznie rozwijajaca sie siec gabinetow Dentity potrzebowala partnera, ktory przejmie caly obszar finansowo-ksiegowy i kadrowy, odciazajac zarzad od administracji.' => ['en' => 'The rapidly growing Dentity dental clinic network needed a partner to take over the entire financial, accounting and HR area, relieving management from administration.'],
-
-        // BPO HISTORIE - slajd 2 (Grupa kapitałowa) - z ACF
-        'Grupa kapitałowa'         => ['en' => 'Capital group'],
-        'Cyfryzacja procesów kadrowych' => ['en' => 'Digitisation of HR processes'],
-        'Naszym zadaniem było uporządkowanie ewidencji czasu pracy' => ['en' => 'Our task was to organise working time records'],
-        '-70%'                     => ['en' => '-70%'],
-        'czasu obsługi wniosków'   => ['en' => 'request handling time'],
-        '40h'                      => ['en' => '40h'],
-        'oszczędności miesięcznie' => ['en' => 'monthly savings'],
-        '15'                       => ['en' => '15'],
-        'spółek objętych procesem' => ['en' => 'companies covered'],
 
         // ══════════════════════════════════════════════
         // TESTIMONIALS

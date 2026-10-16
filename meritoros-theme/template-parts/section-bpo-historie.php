@@ -1,12 +1,12 @@
 <?php
 defined('ABSPATH') || exit;
 
+// Czytaj z bieżącej strony — ACFML tłumaczy pola ACF via wpml-config.xml (action="translate")
 $_page_id = get_the_ID();
-$_orig_id = (int) apply_filters('wpml_object_id', $_page_id, 'page', true, apply_filters('wpml_default_language', null));
 
-$section_title = __( get_field('bpo_hist_title', $_orig_id) ?: 'Jak wyglada BPO w praktyce?', 'meritoros' );
-$btn_text      = __( get_field('bpo_hist_btn_text', $_orig_id) ?: 'Poznaj wiecej historii', 'meritoros' );
-$btn_url       = get_field('bpo_hist_btn_url', $_orig_id) ?: home_url('/historie-klientow/');
+$section_title = get_field('bpo_hist_title', $_page_id) ?: __('Jak wyglada BPO w praktyce?', 'meritoros');
+$btn_text      = get_field('bpo_hist_btn_text', $_page_id) ?: __('Poznaj wiecej historii', 'meritoros');
+$btn_url       = get_field('bpo_hist_btn_url', $_page_id) ?: home_url('/historie-klientow/');
 
 $slide_default_empty = [
     'logo'         => null,
@@ -40,10 +40,11 @@ $slide_defaults = [
 
 $slides = [];
 for ($i = 1; $i <= 4; $i++) {
-    $s   = get_field("bpo_hist_{$i}", $_orig_id);
+    $s   = get_field("bpo_hist_{$i}", $_page_id); // ACFML tłumaczy sub-pola
     $def = $slide_defaults[$i];
 
-    $heading = trim(is_array($s) && !empty($s['scope']) ? $s['scope'] : $def['scope']);
+    // ACF value -> bezpośrednio (ACFML tłumaczy); default -> __()
+    $heading = trim(is_array($s) && !empty($s['scope']) ? $s['scope'] : __($def['scope'], 'meritoros'));
     if ($i > 1 && $heading === '') continue; // slajd 2+ ukryj jesli brak naglowka
 
     $logo_img  = is_array($s) && !empty($s['logo'])  ? $s['logo']  : $def['logo'];
@@ -51,26 +52,31 @@ for ($i = 1; $i <= 4; $i++) {
 
     $industries_raw = is_array($s) && isset($s['industries']) && $s['industries'] !== ''
         ? $s['industries'] : $def['industries'];
-    $industries = array_values(array_filter(array_map(function($s) { return __($s, 'meritoros'); }, array_map('trim', explode("\n", $industries_raw)))));
+    // ACF industries już przetłumaczone przez ACFML; defaulty przez __()
+    $is_from_acf = is_array($s) && isset($s['industries']) && $s['industries'] !== '';
+    $industries = array_values(array_filter(array_map(
+        $is_from_acf ? 'trim' : function($v) { return __($v, 'meritoros'); },
+        array_map('trim', explode("\n", $industries_raw))
+    )));
 
     $stats = [];
     foreach ([1, 2, 3] as $n) {
         $val   = trim(is_array($s) && !empty($s["stat{$n}_val"])   ? $s["stat{$n}_val"]   : $def["stat{$n}_val"]);
         $label = trim(is_array($s) && !empty($s["stat{$n}_label"]) ? $s["stat{$n}_label"] : $def["stat{$n}_label"]);
         if ($val !== '') {
-            $stats[] = ['val' => __($val, 'meritoros'), 'label' => __($label, 'meritoros')];
+            $stats[] = ['val' => $val, 'label' => $label];
         }
     }
 
-    $quote        = __( trim(is_array($s) && !empty($s['quote'])        ? $s['quote']        : $def['quote']), 'meritoros' );
-    $quote_author = __( trim(is_array($s) && !empty($s['quote_author']) ? $s['quote_author'] : $def['quote_author']), 'meritoros' );
+    $quote        = trim(is_array($s) && !empty($s['quote'])        ? $s['quote']        : $def['quote']);
+    $quote_author = trim(is_array($s) && !empty($s['quote_author']) ? $s['quote_author'] : $def['quote_author']);
 
     $slides[] = [
         'logo'         => $logo_img,
         'logo_alt'     => is_array($logo_img) ? esc_attr($logo_img['alt'] ?: $def['logo_alt']) : esc_attr($def['logo_alt']),
         'industries'   => $industries,
-        'heading'      => __($heading, 'meritoros'),
-        'text'         => __( is_array($s) && !empty($s['text']) ? $s['text'] : $def['text'], 'meritoros' ),
+        'heading'      => $heading,
+        'text'         => is_array($s) && !empty($s['text']) ? $s['text'] : __($def['text'], 'meritoros'),
         'points'       => [],
         'stats'        => $stats,
         'quote'        => $quote,
@@ -92,7 +98,7 @@ if ($total === 0) return;
         <div class="flex items-end justify-between gap-4 mb-10">
             <div>
                 <p class="text-[#00d084] uppercase tracking-widest text-sm font-bold mb-3">
-                    <?php echo mer_esc(__( get_field('bpo_hist_label', $_orig_id) ?: 'Historie klientów BPO', 'meritoros' )); ?>
+                    <?php echo mer_esc(get_field('bpo_hist_label', $_page_id) ?: __('Historie klientów BPO', 'meritoros')); ?>
                 </p>
                 <h2 class="text-pretty text-3xl sm:text-4xl font-bold tracking-tight text-slate-900">
                     <?php echo mer_esc($section_title); ?>
