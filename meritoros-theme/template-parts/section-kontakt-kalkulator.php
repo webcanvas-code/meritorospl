@@ -228,7 +228,7 @@ $rate_sub = (float) mer_field('kp_kalk_rate_sub', 42);
     var ukLabel   = document.getElementById('ktk-uk-label');
     var ukChevron = document.getElementById('ktk-uk-chevron');
     var ukType    = null;
-    var ukLabels  = { uproszczona: 'Księgowość uproszczona (KPiR, ryczałt)', pelna: 'Pełna księgowość (KH)' };
+    var ukLabels  = { uproszczona: '<?php echo esc_js(__('Księgowość uproszczona (KPiR, ryczałt)', 'meritoros')); ?>', pelna: '<?php echo esc_js(__('Pełna księgowość (KH)', 'meritoros')); ?>' };
 
     ukBtn.addEventListener('click', function () {
         var isOpen = !ukList.classList.contains('hidden');

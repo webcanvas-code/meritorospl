@@ -1,6 +1,7 @@
 <?php
 defined('ABSPATH') || exit;
 
+require_once __DIR__ . '/fix-translations-2026-10-16.php';
 
 /* ------------------------------------------------------------------
    PDF Document URLs
