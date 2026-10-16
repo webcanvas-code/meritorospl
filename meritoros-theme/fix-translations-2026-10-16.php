@@ -209,6 +209,67 @@ add_action('admin_init', function () {
         // ZAUFANYCH KLIENTOW (hero-logos)
         // ══════════════════════════════════════════════
         "zaufanych\nklientów"      => ['en' => "trusted\nclients"],
+
+        // ══════════════════════════════════════════════
+        // RELACJE INWESTORSKIE
+        // ══════════════════════════════════════════════
+        'Wybrane dane finansowe'   => ['en' => 'Selected financial data'],
+        'Dane finansowe (tys. PLN)' => ['en' => 'Financial data (PLN thousands)'],
+        'Przychody ze sprzedaży'   => ['en' => 'Sales revenue'],
+        'Zysk brutto ze sprzedaży' => ['en' => 'Gross profit'],
+        'Zysk z działalności operacyjnej' => ['en' => 'Operating profit'],
+        'Zysk netto'               => ['en' => 'Net profit'],
+        'Aktywa trwałe'            => ['en' => 'Non-current assets'],
+        'Aktywa obrotowe'          => ['en' => 'Current assets'],
+        'Aktywa razem'             => ['en' => 'Total assets'],
+        'Kapitał własny'           => ['en' => 'Equity'],
+        'Zobowiązania razem'       => ['en' => 'Total liabilities'],
+        'Informacje o strukturze akcjonariatu' => ['en' => 'Shareholding structure'],
+        'Kapitał zakładowy spółki wynosi 120 000 PLN i dzieli się na 1 200 000 akcji serii A o wartości nominalnej 0,10 PLN.' => ['en' => 'The share capital of the company amounts to PLN 120,000 and is divided into 1,200,000 series A shares with a nominal value of PLN 0.10.'],
+        'Akcjonariusz'             => ['en' => 'Shareholder'],
+        'Łączna liczba posiadanych akcji' => ['en' => 'Total number of shares held'],
+        'Udział w łącznej liczbie głosów' => ['en' => 'Share in total voting rights'],
+        'Sprawozdania finansowe spółki' => ['en' => 'Company financial statements'],
+        'Pobierz PDF'              => ['en' => 'Download PDF'],
+        'Pobierz XLSX'             => ['en' => 'Download XLSX'],
+        'Sprawozdania z działalności zarządu spółki' => ['en' => 'Management board activity reports'],
+        'Opinie biegłego rewidenta' => ['en' => "Auditor's opinions"],
+        'Uchwały podejmowane przez Zgromadzenie Akcjonariuszy' => ['en' => 'Resolutions of the General Meeting of Shareholders'],
+        'O nas'                    => ['en' => 'About us'],
+        'Nagrody i wyróżnienia'    => ['en' => 'Awards and distinctions'],
+        'Wyróżnienia są efektem tego, jak rozwijamy Meritoros: konsekwentnie i procesowo. Trzymamy standard, który ma działać w praktyce – codziennie.' => ['en' => 'Awards reflect how we develop Meritoros: consistently and process-driven. We maintain standards that work in practice - every day.'],
+        'Lista nadzorcza'          => ['en' => 'Supervisory board'],
+        'przewodnicząca rady nadzorczej' => ['en' => 'chairwoman of the supervisory board'],
+        'członek rady nadzorczej'  => ['en' => 'member of the supervisory board'],
+        'Rośniemy'                 => ['en' => 'We are growing'],
+        'Rozwój Meritoros SA znajduje odzwierciedlenie w systematycznym wzroście skali działalności i przychodów na przestrzeni ostatnich lat.' => ['en' => 'The development of Meritoros SA is reflected in the systematic growth of operations and revenue over the past years.'],
+        'Ogłoszenia w Monitorze Sądowym i Gospodarczym' => ['en' => 'Announcements in the Court and Commercial Gazette'],
+        'Brak'                     => ['en' => 'None'],
+        'Pobierz dokument'         => ['en' => 'Download document'],
+        'Sprawozdanie finansowe za 2024 rok' => ['en' => 'Financial statement for 2024'],
+        'Sprawozdanie finansowe za 2023 rok' => ['en' => 'Financial statement for 2023'],
+        'Sprawozdanie finansowe za 2022 rok' => ['en' => 'Financial statement for 2022'],
+        'Sprawozdanie finansowe za 2021 rok' => ['en' => 'Financial statement for 2021'],
+        'Sprawozdanie finansowe za 2020 rok' => ['en' => 'Financial statement for 2020'],
+        'Sprawozdanie finansowe za 2019 rok' => ['en' => 'Financial statement for 2019'],
+
+        // ══════════════════════════════════════════════
+        // CF7 FORMULARZE
+        // ══════════════════════════════════════════════
+        'Imię'                     => ['en' => 'First name'],
+        'Nazwisko (opcjonalne)'    => ['en' => 'Last name (optional)'],
+        'Adres e-mail'             => ['en' => 'Email address'],
+        'Numer telefonu'           => ['en' => 'Phone number'],
+        'Treść wiadomości'         => ['en' => 'Message'],
+        'Wyślij wiadomość'         => ['en' => 'Send message'],
+        'Imię i nazwisko'          => ['en' => 'Full name'],
+        'E-mail'                   => ['en' => 'Email'],
+        'Wiadomość'                => ['en' => 'Message'],
+        'Zapisuję się'             => ['en' => 'Subscribe'],
+        'Załącznik (opcjonalny · maks. 10 MB · pdf, doc, docx, jpg, png)' => ['en' => 'Attachment (optional, max 10 MB, pdf, doc, docx, jpg, png)'],
+        'Wyrażam zgodę na przetwarzanie moich danych osobowych przez Meritoros SA w celu odpowiedzi na przesłane zapytanie, zgodnie z' => ['en' => 'I consent to the processing of my personal data by Meritoros SA in order to respond to my inquiry, in accordance with the'],
+        'Polityką Prywatności'     => ['en' => 'Privacy Policy'],
+        'Wyrażam zgodę na przetwarzanie moich danych osobowych przez Meritoros SA w celu przeprowadzenia procesu rekrutacji, zgodnie z obowiązującymi przepisami o ochronie danych osobowych (RODO) oraz' => ['en' => 'I consent to the processing of my personal data by Meritoros SA for the recruitment process, in accordance with applicable data protection regulations (GDPR) and the'],
     ];
 
     $added   = 0;

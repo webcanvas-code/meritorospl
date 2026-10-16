@@ -385,6 +385,53 @@ function mer_cf7_body_newsletter(string $privacy_url, string $terms_url): string
 </div>';
 }
 /* ------------------------------------------------------------------
+   CF7 — dynamiczne tłumaczenie formularzy na podstawie języka WPML
+------------------------------------------------------------------ */
+add_filter('wpcf7_form_elements', function (string $html): string {
+    $lang = apply_filters('wpml_current_language', 'pl');
+    if ($lang === 'pl') {
+        return $html;
+    }
+
+    $map = [
+        // Placeholdery
+        'placeholder="Imię"'                    => 'placeholder="First name"',
+        'placeholder="Nazwisko (opcjonalne)"'    => 'placeholder="Last name (optional)"',
+        'placeholder="Adres e-mail"'             => 'placeholder="Email address"',
+        'placeholder="Numer telefonu"'            => 'placeholder="Phone number"',
+        'placeholder="Treść wiadomości"'          => 'placeholder="Message"',
+        'placeholder="Imię i nazwisko"'           => 'placeholder="Full name"',
+        'placeholder="E-mail"'                    => 'placeholder="Email"',
+        'placeholder="Wiadomość"'                 => 'placeholder="Message"',
+        'placeholder="Twój adres e-mail"'         => 'placeholder="Your email address"',
+        // Select opcje
+        '"Usługi księgowe"'                       => '"Accounting services"',
+        '"Kadry i płace"'                         => '"Payroll &amp; HR"',
+        '"Fundacje rodzinne"'                     => '"Family foundations"',
+        '"Inne"'                                  => '"Other"',
+        // Buttony
+        '>Wyślij wiadomość<'                      => '>Send message<',
+        '>Zapisuję się<'                          => '>Subscribe<',
+        // Labele
+        'Załącznik (opcjonalny · maks. 10 MB · pdf, doc, docx, jpg, png)' => 'Attachment (optional, max 10 MB, pdf, doc, docx, jpg, png)',
+        // Consent - kontakt
+        'Wyrażam zgodę na przetwarzanie moich danych osobowych przez Meritoros SA w celu odpowiedzi na przesłane zapytanie, zgodnie z' => 'I consent to the processing of my personal data by Meritoros SA in order to respond to my inquiry, in accordance with the',
+        // Consent - kupimy
+        'Wyrażam zgodę na przetwarzanie moich danych osobowych przez Meritoros sp. z o.o. w celu odpowiedzi na przesłane zapytanie, zgodnie z' => 'I consent to the processing of my personal data by Meritoros sp. z o.o. in order to respond to my inquiry, in accordance with the',
+        // Consent - CV/rekrutacja
+        'Wyrażam zgodę na przetwarzanie moich danych osobowych przez Meritoros SA w celu przeprowadzenia procesu rekrutacji, zgodnie z obowiązującymi przepisami o ochronie danych osobowych (RODO) oraz' => 'I consent to the processing of my personal data by Meritoros SA for the recruitment process, in accordance with applicable data protection regulations (GDPR) and the',
+        // Consent linki
+        'Polityką Prywatności'                    => 'Privacy Policy',
+        // Newsletter RODO
+        'Administratorem danych jest Meritoros SA, Aleja Pokoju 62/8, Kraków. Dane przetwarzane są wyłącznie w celu wysyłki newslettera.' => 'Data controller is Meritoros SA, Aleja Pokoju 62/8, Krakow. Data is processed solely for the purpose of sending the newsletter.',
+        'Polityka Prywatności'                    => 'Privacy Policy',
+        'Regulamin Newslettera'                   => 'Newsletter Terms',
+    ];
+
+    return str_replace(array_keys($map), array_values($map), $html);
+});
+
+/* ------------------------------------------------------------------
    CF7 — jednorazowa aktualizacja v2: dodanie pola załącznika do formularza kontaktowego
 ------------------------------------------------------------------ */
 add_action('admin_init', 'mer_cf7_update_v2_attachment');
