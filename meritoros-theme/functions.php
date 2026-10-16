@@ -170,8 +170,8 @@ function mer_setup_cf7_forms(): void {
         [
             'title'       => '[Meritoros] Formularz kontaktowy',
             'form'        => mer_cf7_body_kontakt($privacy_url),
-            'mail_subject'=> '[Meritoros] Nowe zapytanie od [your-name]',
-            'mail_body'   => "Imię i nazwisko: [your-name]\nE-mail: [your-email]\nTelefon: [your-phone]\nObszar: [your-area]\n\nWiadomość:\n[your-message]",
+            'mail_subject'=> '[Meritoros] Nowe zapytanie od [your-firstname] [your-lastname]',
+            'mail_body'   => "Imię: [your-firstname]\nNazwisko: [your-lastname]\nE-mail: [your-email]\nTelefon: [your-phone]\nWybrany obszar usług: [your-area]\n\nWiadomość:\n[your-message]",
             'reply_to'    => '[your-email]',
             'attachments' => '[your-attachment]',
             'template'    => 'page-kontakt.php',
@@ -192,8 +192,8 @@ function mer_setup_cf7_forms(): void {
         [
             'title'       => '[Meritoros] Formularz CV — Kariera',
             'form'        => mer_cf7_body_cv($privacy_url),
-            'mail_subject'=> '[Meritoros] Nowe CV od [your-name]',
-            'mail_body'   => "Imię i nazwisko: [your-name]\nE-mail: [your-email]\nTelefon: [your-phone]\n\nWiadomość:\n[your-message]",
+            'mail_subject'=> '[Meritoros] Nowe CV od [your-firstname] [your-lastname]',
+            'mail_body'   => "Imię: [your-firstname]\nNazwisko: [your-lastname]\nE-mail: [your-email]\nTelefon: [your-phone]\n\nWiadomość:\n[your-message]",
             'reply_to'    => '[your-email]',
             'attachments' => '[your-cv]',
             'template'    => 'page-kariera.php',
@@ -486,6 +486,82 @@ function mer_cf7_update_v3_name_split(): void {
     }
 
     update_option('mer_cf7_v3_name_split', true);
+}
+
+/* -- v4: pełna aktualizacja mail body (wszystkie pola formularzy) -- */
+add_action('admin_init', 'mer_cf7_update_v4_mail_body');
+function mer_cf7_update_v4_mail_body(): void {
+    if (!class_exists('WPCF7_ContactForm')) return;
+    if (get_option('mer_cf7_v4_mail_body')) return;
+
+    $admin_email = get_option('admin_email');
+    $site_name   = get_bloginfo('name');
+
+    // Formularz kontaktowy
+    $kontakt_id = (int) get_option('mer_cf7_kontakt_id');
+    if ($kontakt_id && get_post_status($kontakt_id) === 'publish') {
+        update_post_meta($kontakt_id, '_form', mer_cf7_body_kontakt(MER_PRIVACY_PDF));
+        update_post_meta($kontakt_id, '_mail', [
+            'subject'            => '[Meritoros] Nowe zapytanie od [your-firstname] [your-lastname]',
+            'sender'             => "{$site_name} <{$admin_email}>",
+            'recipient'          => $admin_email,
+            'body'               => "Imię: [your-firstname]\nNazwisko: [your-lastname]\nE-mail: [your-email]\nTelefon: [your-phone]\nWybrany obszar usług: [your-area]\n\nWiadomość:\n[your-message]",
+            'additional_headers' => 'Reply-To: [your-email]',
+            'attachments'        => '[your-attachment]',
+            'use_html'           => false,
+            'exclude_blank'      => false,
+        ]);
+    }
+
+    // Formularz CV / Kariera
+    $cv_id = (int) get_option('mer_cf7_kariera_id');
+    if ($cv_id && get_post_status($cv_id) === 'publish') {
+        update_post_meta($cv_id, '_form', mer_cf7_body_cv(MER_PRIVACY_PDF));
+        update_post_meta($cv_id, '_mail', [
+            'subject'            => '[Meritoros] Nowe CV od [your-firstname] [your-lastname]',
+            'sender'             => "{$site_name} <{$admin_email}>",
+            'recipient'          => $admin_email,
+            'body'               => "Imię: [your-firstname]\nNazwisko: [your-lastname]\nE-mail: [your-email]\nTelefon: [your-phone]\n\nWiadomość:\n[your-message]",
+            'additional_headers' => 'Reply-To: [your-email]',
+            'attachments'        => '[your-cv]',
+            'use_html'           => false,
+            'exclude_blank'      => false,
+        ]);
+    }
+
+    // Formularz Kupimy biuro rachunkowe
+    $kupimy_id = (int) get_option('mer_cf7_kupimy_id');
+    if ($kupimy_id && get_post_status($kupimy_id) === 'publish') {
+        update_post_meta($kupimy_id, '_form', mer_cf7_body_kupimy(MER_PRIVACY_PDF));
+        update_post_meta($kupimy_id, '_mail', [
+            'subject'            => '[Meritoros] Nowe zapytanie — Kupimy biuro rachunkowe od [your-name]',
+            'sender'             => "{$site_name} <{$admin_email}>",
+            'recipient'          => $admin_email,
+            'body'               => "Imię i nazwisko: [your-name]\nE-mail: [your-email]\n\nWiadomość:\n[your-message]",
+            'additional_headers' => 'Reply-To: [your-email]',
+            'attachments'        => '',
+            'use_html'           => false,
+            'exclude_blank'      => false,
+        ]);
+    }
+
+    // Newsletter
+    $nl_id = (int) get_option('mer_cf7_newsletter_id');
+    if ($nl_id && get_post_status($nl_id) === 'publish') {
+        update_post_meta($nl_id, '_form', mer_cf7_body_newsletter(MER_PRIVACY_PDF, MER_TERMS_PDF));
+        update_post_meta($nl_id, '_mail', [
+            'subject'            => '[Meritoros] Nowy zapis do newslettera',
+            'sender'             => "{$site_name} <{$admin_email}>",
+            'recipient'          => $admin_email,
+            'body'               => "Nowy zapis do newslettera.\nE-mail: [your-email]",
+            'additional_headers' => '',
+            'attachments'        => '',
+            'use_html'           => false,
+            'exclude_blank'      => false,
+        ]);
+    }
+
+    update_option('mer_cf7_v4_mail_body', true);
 }
 
 /* ------------------------------------------------------------------
