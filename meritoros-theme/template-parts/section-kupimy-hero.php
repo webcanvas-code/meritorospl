@@ -37,7 +37,7 @@ $img_alt = is_array($image) ? esc_attr($image['alt'] ?: __('Kupimy biuro rachunk
                 <?php echo mer_esc($heading); ?>
             </h1>
             <p class="text-base sm:text-lg text-white/75 leading-relaxed mb-8 max-w-5xl">
-                <?php echo wp_kses_post($subtitle); ?>
+                <?php echo wp_kses_post(mer_bold($subtitle)); ?>
             </p>
             <div class="flex flex-wrap items-center gap-4">
                 <a href="<?php echo esc_url($btn1_url); ?>"
@@ -60,7 +60,7 @@ $img_alt = is_array($image) ? esc_attr($image['alt'] ?: __('Kupimy biuro rachunk
 <section class="py-10 md:py-12 bg-white">
     <div class="max-w-7xl mx-auto px-6">
         <p class="text-base sm:text-lg text-slate-700 leading-relaxed max-w-5xl font-semibold">
-            <?php echo wp_kses_post($intro); ?>
+            <?php echo wp_kses_post(mer_bold($intro)); ?>
         </p>
     </div>
 </section>

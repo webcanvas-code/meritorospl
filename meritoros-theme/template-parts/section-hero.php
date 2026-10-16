@@ -28,7 +28,7 @@ $btn2_url  = mer_field('hero_btn2_url', '#kontakt');
             </h1>
 
             <p class="text-base sm:text-lg font-light text-slate-200 mb-8 max-w-4xl leading-relaxed">
-                <?php echo wp_kses_post($sub); ?>
+                <?php echo wp_kses_post(mer_bold($sub)); ?>
             </p>
 
             <div class="flex flex-col sm:flex-row gap-3">

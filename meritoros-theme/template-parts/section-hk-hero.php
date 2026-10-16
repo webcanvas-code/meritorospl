@@ -38,7 +38,7 @@ if (!$btn_url || $btn_url === '#case-studies') $btn_url = '#hk-video-section';
                 <?php echo mer_esc($title); ?>
             </h1>
             <p class="text-lg sm:text-xl text-slate-500 leading-relaxed mb-10 max-w-4xl">
-                <?php echo wp_kses_post($text); ?>
+                <?php echo wp_kses_post(mer_bold($text)); ?>
             </p>
             <a href="<?php echo esc_url($btn_url); ?>" class="mer-btn mer-btn--secondary inline-flex items-center gap-2 px-7 py-3.5 rounded-full border border-slate-300 text-slate-700 text-base font-semibold hover:bg-slate-50 transition-colors">
                 <?php echo mer_esc($btn_text); ?>

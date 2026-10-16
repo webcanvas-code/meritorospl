@@ -1129,11 +1129,19 @@ add_filter('acf/format_value', function ($value) {
 }, 5);
 
 /**
+ * Convert **text** to <strong>text</strong>.
+ * Works on raw or already-escaped strings.
+ */
+function mer_bold(string $text): string {
+    return preg_replace('/\*\*(.+?)\*\*/', '<strong>$1</strong>', $text);
+}
+
+/**
  * Escape text for HTML output, converting newlines to <br> tags.
- * Allows <strong> and <b> tags for selective bolding from ACF fields.
+ * Converts **text** to <strong>text</strong> for selective bolding from ACF fields.
  */
 function mer_esc(string $text): string {
-    return nl2br(wp_kses($text, array('strong' => array(), 'b' => array())));
+    return nl2br(mer_bold(esc_html($text)));
 }
 
 /** @deprecated Use mer_esc() instead. */

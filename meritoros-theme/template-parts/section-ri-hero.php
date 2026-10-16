@@ -32,7 +32,7 @@ $img_alt = is_array($image) ? esc_attr($image['alt'] ?: __('Relacje inwestorskie
                 <?php echo mer_esc($title); ?>
             </h1>
             <p class="text-base sm:text-lg text-white/75 leading-relaxed max-w-4xl">
-                <?php echo wp_kses_post($text); ?>
+                <?php echo wp_kses_post(mer_bold($text)); ?>
             </p>
         </div>
 

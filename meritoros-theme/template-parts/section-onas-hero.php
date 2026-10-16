@@ -32,7 +32,7 @@ $bg_url = is_array($hero_bg) ? esc_url($hero_bg['url']) : '';
                 <?php echo mer_esc($hero_title); ?>
             </h1>
             <p class="text-base sm:text-lg text-white/70 mb-10 leading-relaxed max-w-5xl">
-                <?php echo wp_kses_post($hero_sub); ?>
+                <?php echo wp_kses_post(mer_bold($hero_sub)); ?>
             </p>
             <div class="flex flex-col sm:flex-row gap-3">
                 <a href="<?php echo esc_url($btn2_url); ?>"

@@ -38,7 +38,8 @@ ACF fields are registered in `inc/acf-fields.php` (the main file, ~1200 fields) 
 | Function | Use |
 |---|---|
 | `mer_field($name, $fallback)` | Get ACF field with fallback |
-| `mer_esc($text)` | `nl2br(esc_html())` — use for all ACF text output |
+| `mer_esc($text)` | Escape + convert `**text**` to `<strong>` + `nl2br` — use for all ACF text output |
+| `mer_bold($text)` | Convert `**text**` to `<strong>` only (no escaping) — use with `wp_kses_post()` |
 | `mer_text($name, $fallback, $nl2br)` | Echo escaped ACF text, optional nl2br |
 | `mer_img($name, $class, $alt)` | Render `<img>` from ACF image array |
 | `mer_img_url($name, $fallback)` | Get URL from ACF image array |

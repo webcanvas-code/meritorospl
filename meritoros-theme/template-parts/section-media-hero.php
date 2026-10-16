@@ -52,7 +52,7 @@ $text  = __( mer_field('media_hero_text',  'Najważniejsze wydarzenia z życia f
                 <?php echo mer_esc($title); ?>
             </h1>
             <p class="text-base sm:text-lg text-slate-500 leading-relaxed max-w-3xl">
-                <?php echo wp_kses_post($text); ?>
+                <?php echo wp_kses_post(mer_bold($text)); ?>
             </p>
         </div>
     </div>
