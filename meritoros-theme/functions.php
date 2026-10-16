@@ -1198,6 +1198,36 @@ function mer_esc_bold(string $text): string {
 }
 
 /**
+ * Translate an internal URL to the current WPML language.
+ * Handles full URLs, relative paths, and anchors. External URLs pass through unchanged.
+ */
+function mer_translate_url(string $url): string {
+    if (!$url || $url[0] === '#' || !has_filter('wpml_object_id')) return $url;
+
+    $parsed    = wp_parse_url($url);
+    $site_host = wp_parse_url(site_url(), PHP_URL_HOST);
+
+    if (!empty($parsed['host']) && $parsed['host'] !== $site_host) {
+        return $url; // URL zewnętrzny
+    }
+
+    $path = trim($parsed['path'] ?? '', '/');
+    if (!$path) return $url;
+
+    $_default_lang = apply_filters('wpml_default_language', null);
+    do_action('wpml_switch_language', $_default_lang);
+    $page = get_page_by_path($path);
+    do_action('wpml_switch_language', null);
+
+    if ($page) {
+        $translated_id = (int) apply_filters('wpml_object_id', $page->ID, 'page', true);
+        $translated_url = get_permalink($translated_id);
+        if ($translated_url) return $translated_url;
+    }
+    return $url;
+}
+
+/**
  * Get ACF field with optional fallback.
  */
 function mer_field(string $name, $fallback = ''): mixed {
