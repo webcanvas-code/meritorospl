@@ -28,14 +28,10 @@ for ($i = 1; $i <= 4; $i++) {
 
         <style>
             .hk-logos { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.25rem; align-items: center; }
-            .hk-logos img { width: auto; height: auto; max-height: 36px; max-width: 100%; object-fit: contain; }
+            .hk-logos img { width: auto; height: 36px; max-width: 100%; object-fit: contain; }
             @media (min-width: 640px) {
-                .hk-logos { display: flex; justify-content: space-between; align-items: center; gap: 1rem; }
-                .hk-logos img { max-height: none; }
-                .hk-logos img:nth-child(1) { width: 207px;    height: 41.99px; }
-                .hk-logos img:nth-child(2) { width: 139px;    height: 48px; }
-                .hk-logos img:nth-child(3) { width: 120px;    height: 27px; }
-                .hk-logos img:nth-child(4) { width: 129.21px; height: 59.87px; }
+                .hk-logos { display: flex; justify-content: space-between; align-items: center; gap: 2.5rem; }
+                .hk-logos img { height: 40px; max-width: 180px; }
             }
         </style>
         <div class="hk-logos">
