@@ -36,6 +36,15 @@ h1 strong, h1 b,
 h2 strong, h2 b,
 h3 strong, h3 b {
     font-weight: 900;
+    color: #00d084;
+}
+
+/* ── Bold w paragrafach i pozostalych tekstach ───────────────── */
+p strong, p b,
+span strong, span b,
+li strong, li b {
+    font-weight: 700;
+    color: #00d084;
 }
 
 /* ── Contact Form 7 ──────────────────────────────────────────── */
