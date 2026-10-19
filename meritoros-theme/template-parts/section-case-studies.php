@@ -270,9 +270,9 @@ $total = count($items);
                         <a href="<?php echo esc_url($item['cta_url']); ?>"
                            class="mer-btn mer-btn--white inline-flex w-full sm:w-auto min-h-[48px] items-center justify-center gap-2 rounded-full bg-white border border-slate-200 px-5 py-3.5 text-sm font-semibold text-slate-700 transition hover:border-slate-300 hover:bg-slate-50 group/cta">
                             <?php if (!empty($item['is_general'])) : ?>
-                                <?php echo esc_html($cs_cta_general_text); ?>
+                                <?php echo mer_esc($cs_cta_general_text); ?>
                             <?php else : ?>
-                                <?php echo esc_html($cs_cta_text); ?>
+                                <?php echo mer_esc($cs_cta_text); ?>
                             <?php endif; ?>
                             <i data-lucide="arrow-right" class="w-4 h-4 transition group-hover/cta:translate-x-0.5"></i>
                         </a>

@@ -75,8 +75,8 @@ for ($i = 1; $i <= 5; $i++) {
                 <div class="grid grid-cols-2 gap-3 lg:gap-4">
                     <?php foreach ($stats as $stat) :
                         $icon   = esc_attr($stat['icon'] ?? 'check');
-                        $val    = esc_html($stat['value'] ?? '');
-                        $slabel = esc_html($stat['label'] ?? '');
+                        $val    = mer_esc($stat['value'] ?? '');
+                        $slabel = mer_esc($stat['label'] ?? '');
                         $accent = !empty($stat['accent']);
                     ?>
                         <div class="bg-white/10 backdrop-blur-sm border border-white/20 hover:bg-white/15 rounded-xl lg:rounded-2xl p-4 lg:p-6 transition-colors overflow-hidden min-w-0">

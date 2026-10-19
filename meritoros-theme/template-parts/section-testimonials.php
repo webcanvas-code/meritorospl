@@ -79,11 +79,11 @@ for ($i = 1; $i <= 4; $i++) {
                     'span' => ['class' => []],
                     'div'  => ['class' => []],
                 ]);
-                $quote    = esc_html($item['quote'] ?? '');
-                $author   = esc_html($item['author'] ?? '');
-                $role     = esc_html($item['role'] ?? '');
+                $quote    = mer_esc($item['quote'] ?? '');
+                $author   = mer_esc($item['author'] ?? '');
+                $role     = mer_esc($item['role'] ?? '');
                 $initials = esc_html($item['initials'] ?? mb_substr($item['author'] ?? 'XX', 0, 2));
-                $industry = esc_html($item['industry'] ?? '');
+                $industry = mer_esc($item['industry'] ?? '');
             ?>
                 <div class="bg-white border border-slate-200 rounded-[2rem] p-5 sm:p-6 lg:p-8 flex flex-col justify-between">
                     <div>
@@ -116,8 +116,8 @@ for ($i = 1; $i <= 4; $i++) {
         <?php if (!empty($stats)) : ?>
             <div class="mt-8 pt-6 border-t border-slate-200 grid grid-cols-2 md:grid-cols-4 gap-6">
                 <?php foreach ($stats as $stat) :
-                    $val    = esc_html($stat['value'] ?? '');
-                    $slabel = esc_html($stat['label'] ?? '');
+                    $val    = mer_esc($stat['value'] ?? '');
+                    $slabel = mer_esc($stat['label'] ?? '');
                     $accent = !empty($stat['accent']);
                 ?>
                     <div class="text-center">
