@@ -171,6 +171,8 @@ function mer_setup_cf7_forms(): void {
             'title'       => '[Meritoros] Formularz kontaktowy',
             'form'        => mer_cf7_body_kontakt($privacy_url),
             'mail_subject'=> '[Meritoros] Nowe zapytanie od [your-firstname] [your-lastname]',
+            'mail_sender' => 'Meritoros <formularz@meritoros.eu>',
+            'mail_recipient' => 'oferta@meritoros.pl',
             'mail_body'   => "Imię: [your-firstname]\nNazwisko: [your-lastname]\nE-mail: [your-email]\nTelefon: [your-phone]\nWybrany obszar usług: [your-area]\n\nWiadomość:\n[your-message]",
             'reply_to'    => '[your-email]',
             'attachments' => '[your-attachment]',
@@ -182,6 +184,8 @@ function mer_setup_cf7_forms(): void {
             'title'       => '[Meritoros] Formularz — Kupimy biuro rachunkowe',
             'form'        => mer_cf7_body_kupimy($privacy_url),
             'mail_subject'=> '[Meritoros] Nowe zapytanie — Kupimy biuro rachunkowe od [your-name]',
+            'mail_sender' => 'Meritoros <formularz@meritoros.eu>',
+            'mail_recipient' => 'maciej.paraszczak@meritoros.pl, raportzapytan@meritoros.pl, aleksandra.pawelec@meritoros.pl',
             'mail_body'   => "Imię i nazwisko: [your-name]\nE-mail: [your-email]\n\nWiadomość:\n[your-message]",
             'reply_to'    => '[your-email]',
             'attachments' => '',
@@ -193,6 +197,8 @@ function mer_setup_cf7_forms(): void {
             'title'       => '[Meritoros] Formularz CV — Kariera',
             'form'        => mer_cf7_body_cv($privacy_url),
             'mail_subject'=> '[Meritoros] Nowe CV od [your-firstname] [your-lastname]',
+            'mail_sender' => 'Meritoros <rekrutacja@meritoros.pl>',
+            'mail_recipient' => 'rekrutacja@meritoros.pl',
             'mail_body'   => "Imię: [your-firstname]\nNazwisko: [your-lastname]\nE-mail: [your-email]\nTelefon: [your-phone]\n\nWiadomość:\n[your-message]",
             'reply_to'    => '[your-email]',
             'attachments' => '[your-cv]',
@@ -221,6 +227,9 @@ function mer_setup_cf7_forms(): void {
             continue;
         }
 
+        $sender    = $config['mail_sender'] ?? "{$site_name} <{$admin_email}>";
+        $recipient = $config['mail_recipient'] ?? $admin_email;
+
         $form_id = mer_cf7_create(
             $config['title'],
             $config['form'],
@@ -228,8 +237,8 @@ function mer_setup_cf7_forms(): void {
             $config['mail_body'],
             $config['reply_to'],
             $config['attachments'],
-            $admin_email,
-            $site_name
+            $sender,
+            $recipient
         );
 
         if ($form_id) {
@@ -252,8 +261,8 @@ function mer_cf7_create(
     string $mail_body,
     string $reply_to,
     string $attachments,
-    string $admin_email,
-    string $site_name
+    string $sender,
+    string $recipient
 ): int {
     $post_id = wp_insert_post([
         'post_title'  => wp_slash($title),
@@ -267,8 +276,8 @@ function mer_cf7_create(
     update_post_meta($post_id, '_form', $form_body);
     update_post_meta($post_id, '_mail', [
         'subject'            => $mail_subject,
-        'sender'             => "{$site_name} <{$admin_email}>",
-        'recipient'          => $admin_email,
+        'sender'             => $sender,
+        'recipient'          => $recipient,
         'body'               => $mail_body,
         'additional_headers' => $reply_to ? "Reply-To: {$reply_to}" : '',
         'attachments'        => $attachments,
@@ -278,7 +287,7 @@ function mer_cf7_create(
     update_post_meta($post_id, '_mail_2', [
         'active'             => false,
         'subject'            => '',
-        'sender'             => "{$site_name} <{$admin_email}>",
+        'sender'             => $sender,
         'recipient'          => '',
         'body'               => '',
         'additional_headers' => '',
@@ -328,7 +337,7 @@ function mer_cf7_body_kontakt(string $privacy_url): string {
 [email* your-email placeholder "Adres e-mail"]
 [tel your-phone placeholder "Numer telefonu"]
 </div>
-[select* your-area "Usługi księgowe" "Kadry i płace" "Fundacje rodzinne" "BPO" "Inne"]
+[select* your-area "Usługi księgowe" "Kadry i płace" "Fundacje rodzinne" "Księgowość oraz kadry i płace" "BPO" "Inne"]
 [textarea your-message rows:5 maxlength:500 placeholder "Treść wiadomości"]
 <div class="flex justify-end mt-1"><span class="cf7-char-counter text-xs text-slate-400">0 / 500</span></div>
 <div class="space-y-1 mt-2">
@@ -408,6 +417,7 @@ add_filter('wpcf7_form_elements', function (string $html): string {
         '"Usługi księgowe"'                       => '"Accounting services"',
         '"Kadry i płace"'                         => '"Payroll &amp; HR"',
         '"Fundacje rodzinne"'                     => '"Family foundations"',
+        '"Księgowość oraz kadry i płace"'         => '"Accounting & Payroll"',
         '"Inne"'                                  => '"Other"',
         // Buttony
         '>Wyślij wiadomość<'                      => '>Send message<',
@@ -562,6 +572,49 @@ function mer_cf7_update_v4_mail_body(): void {
     }
 
     update_option('mer_cf7_v4_mail_body', true);
+}
+
+/* -- v5: poprawne adresy e-mail nadawcy/odbiorcy + nowa opcja select -- */
+add_action('admin_init', 'mer_cf7_update_v5_emails');
+function mer_cf7_update_v5_emails(): void {
+    if (!class_exists('WPCF7_ContactForm')) return;
+    if (get_option('mer_cf7_v5_emails')) return;
+
+    // Formularz kontaktowy
+    $kontakt_id = (int) get_option('mer_cf7_kontakt_id');
+    if ($kontakt_id && get_post_status($kontakt_id) === 'publish') {
+        update_post_meta($kontakt_id, '_form', mer_cf7_body_kontakt(MER_PRIVACY_PDF));
+        $mail = get_post_meta($kontakt_id, '_mail', true);
+        if (is_array($mail)) {
+            $mail['sender']    = 'Meritoros <formularz@meritoros.eu>';
+            $mail['recipient'] = 'oferta@meritoros.pl';
+            update_post_meta($kontakt_id, '_mail', $mail);
+        }
+    }
+
+    // Formularz Kupimy biuro rachunkowe
+    $kupimy_id = (int) get_option('mer_cf7_kupimy_id');
+    if ($kupimy_id && get_post_status($kupimy_id) === 'publish') {
+        $mail = get_post_meta($kupimy_id, '_mail', true);
+        if (is_array($mail)) {
+            $mail['sender']    = 'Meritoros <formularz@meritoros.eu>';
+            $mail['recipient'] = 'maciej.paraszczak@meritoros.pl, raportzapytan@meritoros.pl, aleksandra.pawelec@meritoros.pl';
+            update_post_meta($kupimy_id, '_mail', $mail);
+        }
+    }
+
+    // Formularz CV / Kariera
+    $cv_id = (int) get_option('mer_cf7_kariera_id');
+    if ($cv_id && get_post_status($cv_id) === 'publish') {
+        $mail = get_post_meta($cv_id, '_mail', true);
+        if (is_array($mail)) {
+            $mail['sender']    = 'Meritoros <rekrutacja@meritoros.pl>';
+            $mail['recipient'] = 'rekrutacja@meritoros.pl';
+            update_post_meta($cv_id, '_mail', $mail);
+        }
+    }
+
+    update_option('mer_cf7_v5_emails', true);
 }
 
 /* ------------------------------------------------------------------
