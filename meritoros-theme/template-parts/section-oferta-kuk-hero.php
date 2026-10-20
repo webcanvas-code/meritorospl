@@ -75,7 +75,9 @@ if ($_kariera_pl) {
         </h1>
 
         <!-- CTA -->
-        <a href="#aplikuj" class="mer-btn mer-btn--ghost inline-flex items-center px-7 py-3.5 rounded-full bg-white/10 backdrop-blur-md border border-white/20 text-white text-base font-semibold hover:bg-white/20 hover:border-white/30 transition-colors self-start">
+        <?php $cv_url = mer_field('op_cv_url', ''); ?>
+        <a href="<?php echo $cv_url ? esc_url($cv_url) : '#aplikuj'; ?>"<?php if ($cv_url) echo ' target="_blank" rel="noopener noreferrer"'; ?>
+           class="mer-btn mer-btn--ghost inline-flex items-center px-7 py-3.5 rounded-full bg-white/10 backdrop-blur-md border border-white/20 text-white text-base font-semibold hover:bg-white/20 hover:border-white/30 transition-colors self-start">
             <?php esc_html_e('Aplikuj teraz', 'meritoros'); ?>
         </a>
 
