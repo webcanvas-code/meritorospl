@@ -14,9 +14,13 @@ $slide_defaults = [
     'https://images.unsplash.com/photo-1542744173-8e7e53415bb0?w=800&q=80',
 ];
 $slides = [];
-for ($i = 1; $i <= 4; $i++) {
+for ($i = 1; $i <= 8; $i++) {
     $img = get_field("kar_jakosc_img{$i}") ?: ($_orig_id !== $_page_id ? get_field("kar_jakosc_img{$i}", $_orig_id) : null);
-    $slides[] = is_array($img) ? ['url' => esc_url($img['url']), 'alt' => esc_attr($img['alt'] ?: '')] : ['url' => $slide_defaults[$i - 1], 'alt' => ''];
+    if (is_array($img)) {
+        $slides[] = ['url' => esc_url($img['url']), 'alt' => esc_attr($img['alt'] ?: '')];
+    } elseif (isset($slide_defaults[$i - 1])) {
+        $slides[] = ['url' => $slide_defaults[$i - 1], 'alt' => ''];
+    }
 }
 
 $card_defaults = [

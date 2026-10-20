@@ -2491,6 +2491,10 @@ acf_add_local_field_group([
         ['key' => 'field_kar_jakosc_img2',  'label' => 'Slider – zdjęcie 2', 'name' => 'kar_jakosc_img2', 'type' => 'image', 'return_format' => 'array', 'preview_size' => 'thumbnail'],
         ['key' => 'field_kar_jakosc_img3',  'label' => 'Slider – zdjęcie 3', 'name' => 'kar_jakosc_img3', 'type' => 'image', 'return_format' => 'array', 'preview_size' => 'thumbnail'],
         ['key' => 'field_kar_jakosc_img4',  'label' => 'Slider – zdjęcie 4', 'name' => 'kar_jakosc_img4', 'type' => 'image', 'return_format' => 'array', 'preview_size' => 'thumbnail'],
+        ['key' => 'field_kar_jakosc_img5',  'label' => 'Slider – zdjęcie 5', 'name' => 'kar_jakosc_img5', 'type' => 'image', 'return_format' => 'array', 'preview_size' => 'thumbnail'],
+        ['key' => 'field_kar_jakosc_img6',  'label' => 'Slider – zdjęcie 6', 'name' => 'kar_jakosc_img6', 'type' => 'image', 'return_format' => 'array', 'preview_size' => 'thumbnail'],
+        ['key' => 'field_kar_jakosc_img7',  'label' => 'Slider – zdjęcie 7', 'name' => 'kar_jakosc_img7', 'type' => 'image', 'return_format' => 'array', 'preview_size' => 'thumbnail'],
+        ['key' => 'field_kar_jakosc_img8',  'label' => 'Slider – zdjęcie 8', 'name' => 'kar_jakosc_img8', 'type' => 'image', 'return_format' => 'array', 'preview_size' => 'thumbnail'],
         ['key' => 'field_kar_jakosc_card1', 'label' => 'Karta wartości 1', 'name' => 'kar_jakosc_card1', 'type' => 'group', 'layout' => 'row', 'sub_fields' => [
             ['key' => 'field_kar_jc1_icon', 'label' => 'Ikona (lucide)', 'name' => 'icon', 'type' => 'text', 'default_value' => 'award'],
             ['key' => 'field_kar_jc1_text', 'label' => 'Tekst',          'name' => 'text', 'type' => 'text', 'default_value' => 'Jakość i standard'],
