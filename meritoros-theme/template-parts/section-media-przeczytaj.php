@@ -5,8 +5,8 @@ $posts = get_posts([
     'post_type'      => 'media-article',
     'posts_per_page' => -1,
     'post_status'    => 'publish',
-    'orderby'        => 'menu_order date',
-    'order'          => 'ASC',
+    'orderby'        => 'date',
+    'order'          => 'DESC',
 ]);
 
 if (empty($posts)) return;
