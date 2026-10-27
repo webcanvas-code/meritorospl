@@ -273,7 +273,8 @@ $rate_sub = (float) mer_field('kp_kalk_rate_sub', 42);
             var result = null;
             for (var i = 0; i < tiers.length; i++) {
                 if (docs <= tiers[i].max) {
-                    result = typeof tiers[i].price !== 'undefined' ? tiers[i].price : docs * tiers[i].rate;
+                    result = typeof tiers[i].price !== 'undefined' ? tiers[i].price
+                        : tiers[i - 1].price + (docs - tiers[i - 1].max) * tiers[i].rate;
                     break;
                 }
             }

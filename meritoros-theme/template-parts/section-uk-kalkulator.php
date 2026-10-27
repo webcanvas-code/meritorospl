@@ -118,7 +118,8 @@ $disclaimer  = __( mer_field('uk_kalk_disclaimer', '* to jest wstępny szacunek,
         var result = null;
         for (var i = 0; i < tiers.length; i++) {
             if (docs <= tiers[i].max) {
-                result = typeof tiers[i].price !== 'undefined' ? tiers[i].price : docs * tiers[i].rate;
+                result = typeof tiers[i].price !== 'undefined' ? tiers[i].price
+                    : tiers[i - 1].price + (docs - tiers[i - 1].max) * tiers[i].rate;
                 break;
             }
         }
