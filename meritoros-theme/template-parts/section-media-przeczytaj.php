@@ -1,13 +1,49 @@
 <?php
 $title = __( mer_field('media_prz_title', 'Przeczytaj również'), 'meritoros' );
 
-$posts = get_posts([
-    'post_type'      => 'media-article',
-    'posts_per_page' => -1,
-    'post_status'    => 'publish',
-    'orderby'        => 'date',
-    'order'          => 'DESC',
-]);
+// Źródło wpisów wybierane w panelu (fallback z oryginału PL dla tłumaczeń WPML)
+$_prz_page_id = get_queried_object_id();
+$_prz_orig_id = apply_filters('wpml_object_id', $_prz_page_id, 'page', true, apply_filters('wpml_default_language', null));
+$source = get_field('media_prz_source', $_prz_page_id) ?: get_field('media_prz_source', $_prz_orig_id) ?: 'blog';
+$count  = (int) (get_field('media_prz_count', $_prz_page_id) ?: get_field('media_prz_count', $_prz_orig_id) ?: 9);
+
+if ($source === 'all') {
+    $posts = get_posts([
+        'post_type'      => 'media-article',
+        'posts_per_page' => $count,
+        'post_status'    => 'publish',
+        'orderby'        => 'date',
+        'order'          => 'DESC',
+    ]);
+} elseif ($source === 'przeczytaj') {
+    $posts = get_posts([
+        'post_type'      => 'media-article',
+        'posts_per_page' => $count,
+        'post_status'    => 'publish',
+        'orderby'        => 'date',
+        'order'          => 'DESC',
+        'meta_query'     => [[
+            'key'     => 'article_category',
+            'value'   => '"przeczytaj"',
+            'compare' => 'LIKE',
+        ]],
+    ]);
+} else {
+    // Najnowsze wpisy blogowe: artykuły bez kategorii medialnych/filmów + zwykłe wpisy WP
+    $_excluded = ['mowia', 'medialne', 'filmy'];
+    $posts = array_filter(get_posts([
+        'post_type'      => ['media-article', 'post'],
+        'posts_per_page' => $count * 4,
+        'post_status'    => 'publish',
+        'orderby'        => 'date',
+        'order'          => 'DESC',
+    ]), function ($p) use ($_excluded) {
+        if ($p->post_type !== 'media-article') return true;
+        $cats = get_field('article_category', $p->ID);
+        return !(is_array($cats) && array_intersect($cats, $_excluded));
+    });
+    $posts = array_slice(array_values($posts), 0, $count);
+}
 
 if (empty($posts)) return;
 ?>
@@ -41,10 +77,10 @@ if (empty($posts)) return;
 
             <?php foreach ($posts as $p) :
                 $photo     = get_field('ma_photo', $p->ID);
-                $photo_url = is_array($photo) ? ($photo['url'] ?? '') : '';
+                $photo_url = is_array($photo) ? ($photo['url'] ?? '') : (get_the_post_thumbnail_url($p, 'large') ?: '');
                 $photo_alt = is_array($photo) ? ($photo['alt'] ?? get_the_title($p)) : get_the_title($p);
-                $source    = get_field('ma_source',   $p->ID) ?: '';
-                $text      = get_field('ma_text',     $p->ID) ?: '';
+                $src_label = get_field('ma_source',   $p->ID) ?: '';
+                $text      = get_field('ma_text',     $p->ID) ?: ($p->post_type === 'post' ? wp_trim_words(get_the_excerpt($p), 25) : '');
                 $btn_text  = __( get_field('ma_btn_text', $p->ID) ?: 'Przeczytaj artykuł', 'meritoros' );
                 $btn_url   = get_field('ma_btn_url',  $p->ID) ?: get_permalink($p->ID);
             ?>
@@ -68,9 +104,9 @@ if (empty($posts)) return;
 
                         <!-- Treść -->
                         <div class="p-6 flex flex-col flex-1">
-                            <?php if ($source) : ?>
+                            <?php if ($src_label) : ?>
                                 <span class="text-xs font-semibold text-[#00d084] uppercase tracking-wide mb-2 block">
-                                    <?php echo mer_esc($source); ?>
+                                    <?php echo mer_esc($src_label); ?>
                                 </span>
                             <?php endif; ?>
                             <p class="text-base font-semibold text-slate-900 leading-snug mb-2 line-clamp-3">

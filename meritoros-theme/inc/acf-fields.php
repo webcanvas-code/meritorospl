@@ -3399,3 +3399,40 @@ acf_add_local_field_group([
 
 
 
+/* ==================================================================
+   MEDIA — źródło sekcji „Przeczytaj również"
+================================================================== */
+acf_add_local_field_group([
+    'key'      => 'group_mer_media_prz',
+    'title'    => '📰 Media — sekcja „Przeczytaj również"',
+    'fields'   => [
+        [
+            'key'           => 'field_media_prz_source',
+            'label'         => 'Jakie wpisy pokazywać?',
+            'name'          => 'media_prz_source',
+            'type'          => 'select',
+            'choices'       => [
+                'blog'       => 'Najnowsze wpisy z bloga',
+                'przeczytaj' => 'Wybrane ręcznie (artykuły z zaznaczoną kategorią „Przeczytaj również")',
+                'all'        => 'Wszystkie artykuły medialne',
+            ],
+            'default_value' => 'blog',
+            'ui'            => 0,
+            'instructions'  => '„Najnowsze wpisy z bloga" pomija artykuły oznaczone jako „Mówią o nas", „Artykuły medialne" i „Filmy", więc nie dublują się z sekcją „Mówią o nas".',
+        ],
+        [
+            'key'           => 'field_media_prz_count',
+            'label'         => 'Liczba wpisów',
+            'name'          => 'media_prz_count',
+            'type'          => 'number',
+            'default_value' => 9,
+            'min'           => 1,
+            'max'           => 24,
+        ],
+    ],
+    'location'   => [
+        [['param' => 'page_template', 'operator' => '==', 'value' => 'page-media.php']],
+    ],
+    'menu_order' => 90,
+    'position'   => 'normal',
+]);

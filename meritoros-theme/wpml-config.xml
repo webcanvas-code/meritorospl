@@ -497,6 +497,8 @@
         <custom-field action="translate">media_hero_title</custom-field>
         <custom-field action="translate">media_hero_text</custom-field>
         <custom-field action="translate">media_prz_title</custom-field>
+        <custom-field action="copy">media_prz_source</custom-field>
+        <custom-field action="copy">media_prz_count</custom-field>
         <custom-field action="translate">media_mowia_title</custom-field>
         <custom-field action="translate">media_art_title</custom-field>
         <custom-field action="translate">media_art_quote</custom-field>
